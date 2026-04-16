@@ -11,6 +11,7 @@
 - **Part 1 — 商户中心前端部署**：基于 Docker 镜像一键启动商户中心 Web 应用。
 - **Part 2 — 收银台前端部署**：基于 Docker 镜像一键启动收银台 Web 应用。
 - **Part 3 — 后台服务环境部署**：使用 Docker Compose 部署核心基础设施服务，包括 Redis、MySQL 和 Keycloak。
+- **Part 4 — 核心服务部署**：略。
 
 📎 **相关文件**：[docker-compose.yml](./docker-compose.yml) — 点击下载或查看后台服务编排配置。
 
