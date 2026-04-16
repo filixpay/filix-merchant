@@ -1,6 +1,6 @@
-# FilixPay 商户管控平台 · 系统白皮书
+# [FilixPay](https://www.filixpay.com) 商户管控平台 · 系统白皮书
 
-让支付更简单，让生意更全球 — 全面了解 FilixPay 聚合支付平台的功能架构、业务模式与技术能力
+让支付更简单，让生意更全球 — 全面了解 [FilixPay](https://www.filixpay.com) 聚合支付平台的功能架构、业务模式与技术能力
 
 ---
 
