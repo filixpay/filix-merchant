@@ -229,7 +229,7 @@
 - **极简部署**：4 核 8G 服务器，`docker-compose up`，30 分钟完成
 - **数据主权**：100% 私有存储，满足各地合规
 - **费用**：28,000 USD 含一年技术维护
-- **资源**：[下载中心](https://www.filixpay.com/resources/downloads)（部署指南 · 授权协议 · [API 规范](https://www.filixpay.com/openapi/v1/swagger)）
+- **资源**：[下载中心](https://www.filixpay.com/resources/downloads) [部署指南](https://github.com/filixpay/filix-merchant/blob/main/deployment.md) · (授权协议 · [API 规范](https://www.filixpay.com/openapi/v1/swagger)）
 
 ---
 
