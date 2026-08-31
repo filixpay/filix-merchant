@@ -20,14 +20,43 @@ type OnboardingConfirmSummaryProps = {
     onEditStep: (step: number) => void;
 };
 
-function SummaryItem({ label, value }: { label: string; value?: string | null }) {
+const REGISTRATION_ID_FIELDS = new Set([
+    "uscc",
+    "brn",
+    "ein",
+    "uen",
+    "ssmNumber",
+    "companyRegistrationNumber",
+    "companyNumber",
+    "handelsregisterNumber",
+    "krsNumber",
+    "cnpj",
+]);
+
+function SummaryItem({
+    label,
+    value,
+    fullWidth = false,
+    multiline = false,
+}: {
+    label: string;
+    value?: string | null;
+    fullWidth?: boolean;
+    multiline?: boolean;
+}) {
     if (!value) {
         return null;
     }
     return (
-        <div className={styles.summaryItem}>
+        <div
+            className={`${styles.summaryItem}${fullWidth ? ` ${styles.summaryItemFull}` : ""}`}
+        >
             <span className={styles.summaryLabel}>{label}</span>
-            <span className={styles.summaryValue}>{value}</span>
+            <span
+                className={`${styles.summaryValue}${multiline ? ` ${styles.summaryValueMultiline}` : ""}`}
+            >
+                {value}
+            </span>
         </div>
     );
 }
@@ -72,11 +101,25 @@ export default function OnboardingConfirmSummary({
 
     const textFields = schema.fields.filter((field) => (field.type ?? "text") !== "document");
     const documentFields = schema.fields.filter((field) => field.type === "document");
+    const registrationIdField = textFields.find((field) => REGISTRATION_ID_FIELDS.has(field.name));
+    const otherExtraFields = textFields.filter(
+        (field) =>
+            !["registrationCountry", "businessName", "phone", "email", "businessDescription"].includes(
+                field.name,
+            ) && !REGISTRATION_ID_FIELDS.has(field.name),
+    );
 
     const settlementLabel = profile.settlementCurrency
         ? `${formatSettlementCurrencyLabel(profile.settlementCurrency, locale)}${
               profile.settlementCurrencyLocked ? ` (${t("settlementCurrencyLockedShort")})` : ""
           }`
+        : undefined;
+
+    const registrationIdLabel = registrationIdField
+        ? (() => {
+              const meta = getFieldMeta(registrationIdField.name);
+              return meta ? t(meta.labelKey) : (registrationIdField.label ?? registrationIdField.name);
+          })()
         : undefined;
 
     return (
@@ -99,18 +142,27 @@ export default function OnboardingConfirmSummary({
                 <SummaryItem label={t("fields.businessName")} value={profile.businessName} />
                 <SummaryItem label={t("fields.phone")} value={profile.phone} />
                 <SummaryItem label={t("fields.email")} value={profile.email} />
-                {textFields
-                    .filter((field) => !["registrationCountry"].includes(field.name))
-                    .filter((field) => !["businessName", "phone", "email"].includes(field.name))
-                    .map((field) => {
-                        const meta = getFieldMeta(field.name);
-                        const label = meta ? t(meta.labelKey) : (field.label ?? field.name);
-                        const value = extra[field.name];
-                        if (value == null || value === "") {
-                            return null;
-                        }
-                        return <SummaryItem key={field.name} label={label} value={String(value)} />;
-                    })}
+                {registrationIdField ? (
+                    <SummaryItem
+                        label={registrationIdLabel ?? registrationIdField.name}
+                        value={extra[registrationIdField.name] == null ? undefined : String(extra[registrationIdField.name])}
+                    />
+                ) : null}
+                <SummaryItem
+                    label={t("fields.businessDescription")}
+                    value={extra.businessDescription == null ? undefined : String(extra.businessDescription)}
+                    fullWidth
+                    multiline
+                />
+                {otherExtraFields.map((field) => {
+                    const meta = getFieldMeta(field.name);
+                    const label = meta ? t(meta.labelKey) : (field.label ?? field.name);
+                    const value = extra[field.name];
+                    if (value == null || value === "") {
+                        return null;
+                    }
+                    return <SummaryItem key={field.name} label={label} value={String(value)} />;
+                })}
                 {documentFields.map((field) => {
                     const meta = getFieldMeta(field.name);
                     const label = meta ? t(meta.labelKey) : (field.label ?? field.name);

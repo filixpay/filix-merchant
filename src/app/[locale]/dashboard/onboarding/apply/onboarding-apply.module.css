@@ -158,6 +158,15 @@
     min-width: 0;
 }
 
+.summaryItemFull {
+    grid-column: 1 / -1;
+}
+
+.summaryValueMultiline {
+    white-space: pre-wrap;
+    line-height: 1.6;
+}
+
 .summaryLabel {
     display: block;
     font-size: 12px;
