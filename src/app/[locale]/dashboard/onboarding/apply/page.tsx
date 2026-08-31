@@ -27,11 +27,7 @@ import SchemaDynamicForm, {
 } from "@/components/onboarding/SchemaDynamicForm";
 import { canUpgradeToFormal } from "@/lib/merchant/merchant-tier";
 import { SETTLEMENT_CURRENCY_OPTIONS, formatSettlementCurrencyLabel } from "@/lib/onboarding/settlement-currency";
-
-const COUNTRY_OPTIONS = [
-    { value: "CN", label: "China (CN)" },
-    { value: "US", label: "United States (US)" },
-];
+import { REGISTRATION_COUNTRY_GROUPS } from "@/lib/onboarding/registration-countries";
 
 export default function OnboardingApplyPage() {
     const t = useTranslations("Onboarding");
@@ -297,7 +293,15 @@ export default function OnboardingApplyPage() {
                             <div style={{ marginBottom: 8 }}>{t("countryLabel")}</div>
                             <Select
                                 style={{ width: "100%", maxWidth: 360 }}
-                                options={COUNTRY_OPTIONS}
+                                showSearch
+                                optionFilterProp="label"
+                                options={REGISTRATION_COUNTRY_GROUPS.map((group) => ({
+                                    label: t(`regions.${group.region}`),
+                                    options: group.options.map((item) => ({
+                                        value: item.value,
+                                        label: t(`countries.${item.labelKey}`),
+                                    })),
+                                }))}
                                 value={country}
                                 onChange={setCountry}
                             />

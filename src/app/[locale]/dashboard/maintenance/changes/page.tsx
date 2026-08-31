@@ -18,6 +18,7 @@ import {
 import { normalizePagedResponse } from "@/lib/dashboard/normalize-paged-response";
 import DashboardPage from "@/components/layout/DashboardPage";
 import { getMaintenanceStatusTagColor, sortChangeRequestsByIdDesc, truncateIdMiddle, formatChangeSubmittedAtDisplay } from "@/components/maintenance/maintenance-change-ui";
+import { REGISTRATION_COUNTRY_GROUPS } from "@/lib/onboarding/registration-countries";
 
 export default function MaintenanceChangesPage() {
     const t = useTranslations("Maintenance");
@@ -403,10 +404,15 @@ export default function MaintenanceChangesPage() {
                                 style={{ width: "100%" }}
                                 value={registrationCountry}
                                 onChange={setRegistrationCountry}
-                                options={[
-                                    { value: "CN", label: t("countries.CN") },
-                                    { value: "US", label: t("countries.US") },
-                                ]}
+                                showSearch
+                                optionFilterProp="label"
+                                options={REGISTRATION_COUNTRY_GROUPS.map((group) => ({
+                                    label: t(`regions.${group.region}` as "regions.GREATER_CHINA"),
+                                    options: group.options.map((item) => ({
+                                        value: item.value,
+                                        label: t(`countries.${item.labelKey}`),
+                                    })),
+                                }))}
                             />
                             {requireCountry ? (
                                 <div style={{ color: "var(--ant-color-warning)" }}>

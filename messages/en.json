@@ -6384,6 +6384,20 @@
       "confirm": "Confirm & Submit"
     },
     "countryLabel": "Registration country / region",
+    "regions": {
+      "GREATER_CHINA": "Greater China",
+      "ASIA_PACIFIC": "Asia Pacific",
+      "NORTH_AMERICA": "North America",
+      "EUROPE": "Europe"
+    },
+    "countries": {
+      "CN": "Mainland China (CN)",
+      "HK": "Hong Kong (HK)",
+      "SG": "Singapore (SG)",
+      "US": "United States (US)",
+      "GB": "United Kingdom (GB)",
+      "DE": "Germany (DE)"
+    },
     "settlementCurrencyLabel": "Settlement currency",
     "settlementCurrencyHint": "Settlement currency is used for payouts and cross-currency payment conversion. It cannot be changed after registration. Choose carefully.",
     "settlementCurrencyLockedHint": "Settlement currency was chosen when you registered and cannot be changed.",
@@ -6432,12 +6446,18 @@
       "legalPersonIdNumber": "Legal representative ID number",
       "ein": "EIN",
       "stateOfIncorporation": "State of incorporation",
+      "brn": "Business Registration Number (BRN)",
+      "uen": "Unique Entity Number (UEN)",
+      "companyNumber": "Companies House number",
+      "handelsregisterNumber": "Commercial register number",
+      "vatId": "VAT ID",
       "bankName": "Bank name",
       "accountHolderName": "Account holder name",
       "accountNumber": "Account number",
       "swiftCode": "SWIFT code",
       "bankCountry": "Bank country",
-      "businessLicense": "Business license"
+      "businessLicense": "Business license",
+      "certificateOfIncorporation": "Certificate of incorporation"
     },
     "status": {
       "DRAFT": "Draft",
@@ -6552,9 +6572,19 @@
     "createSuccess": "Change request created",
     "changeTypeLabel": "Change type",
     "registrationCountryLabel": "Registration country / region",
+    "regions": {
+      "GREATER_CHINA": "Greater China",
+      "ASIA_PACIFIC": "Asia Pacific",
+      "NORTH_AMERICA": "North America",
+      "EUROPE": "Europe"
+    },
     "countries": {
       "CN": "China (CN)",
-      "US": "United States (US)"
+      "HK": "Hong Kong (HK)",
+      "SG": "Singapore (SG)",
+      "US": "United States (US)",
+      "GB": "United Kingdom (GB)",
+      "DE": "Germany (DE)"
     },
     "columns": {
       "id": "ID",
@@ -6639,6 +6669,12 @@
       "legalPersonIdNumber": "Legal representative ID number",
       "ein": "EIN",
       "stateOfIncorporation": "State of incorporation",
+      "brn": "Business Registration Number (BRN)",
+      "uen": "Unique Entity Number (UEN)",
+      "companyNumber": "Companies House number",
+      "handelsregisterNumber": "Commercial register number",
+      "vatId": "VAT ID",
+      "certificateOfIncorporation": "Certificate of incorporation",
       "bankName": "Bank name",
       "accountHolderName": "Account holder name",
       "accountNumber": "Account number",

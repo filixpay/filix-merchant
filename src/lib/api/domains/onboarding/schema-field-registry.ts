@@ -88,6 +88,42 @@ const FIELD_REGISTRY: Record<string, FieldMeta> = {
         required: true,
         storage: "extra",
     },
+    brn: {
+        labelKey: "fields.brn",
+        inputType: "text",
+        required: true,
+        storage: "extra",
+    },
+    uen: {
+        labelKey: "fields.uen",
+        inputType: "text",
+        required: true,
+        storage: "extra",
+    },
+    companyNumber: {
+        labelKey: "fields.companyNumber",
+        inputType: "text",
+        required: true,
+        storage: "extra",
+    },
+    handelsregisterNumber: {
+        labelKey: "fields.handelsregisterNumber",
+        inputType: "text",
+        required: true,
+        storage: "extra",
+    },
+    vatId: {
+        labelKey: "fields.vatId",
+        inputType: "text",
+        required: false,
+        storage: "extra",
+    },
+    certificateOfIncorporation: {
+        labelKey: "fields.certificateOfIncorporation",
+        inputType: "text",
+        required: true,
+        storage: "extra",
+    },
 };
 
 export function getFieldMeta(name: string): FieldMeta | undefined {

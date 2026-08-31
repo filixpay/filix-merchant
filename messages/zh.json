@@ -6432,6 +6432,20 @@
       "confirm": "确认提交"
     },
     "countryLabel": "注册国家/地区",
+    "regions": {
+      "GREATER_CHINA": "中国大陆",
+      "ASIA_PACIFIC": "亚太",
+      "NORTH_AMERICA": "北美",
+      "EUROPE": "欧洲"
+    },
+    "countries": {
+      "CN": "中国大陆 (CN)",
+      "HK": "中国香港 (HK)",
+      "SG": "新加坡 (SG)",
+      "US": "美国 (US)",
+      "GB": "英国 (GB)",
+      "DE": "德国 (DE)"
+    },
     "settlementCurrencyLabel": "结算币种",
     "settlementCurrencyHint": "结算币种用于资金结算与跨币种支付换算，选择后不可修改。请按实际收款与结算需求选择。",
     "settlementCurrencyLockedHint": "结算币种已在注册时选定，不可修改。",
@@ -6480,6 +6494,13 @@
       "legalPersonIdNumber": "法人身份证号",
       "ein": "EIN",
       "stateOfIncorporation": "注册州",
+      "brn": "商业登记号码 (BRN)",
+      "uen": "企业识别号码 (UEN)",
+      "companyNumber": "公司注册号",
+      "handelsregisterNumber": "商业登记号",
+      "vatId": "增值税号 (VAT ID)",
+      "businessLicense": "营业执照",
+      "certificateOfIncorporation": "公司注册证明",
       "bankName": "银行名称",
       "accountHolderName": "账户户名",
       "accountNumber": "银行账号",
@@ -6599,9 +6620,19 @@
     "createSuccess": "已创建变更申请",
     "changeTypeLabel": "变更类型",
     "registrationCountryLabel": "注册国家/地区",
+    "regions": {
+      "GREATER_CHINA": "中国大陆",
+      "ASIA_PACIFIC": "亚太",
+      "NORTH_AMERICA": "北美",
+      "EUROPE": "欧洲"
+    },
     "countries": {
       "CN": "中国 (CN)",
-      "US": "美国 (US)"
+      "HK": "中国香港 (HK)",
+      "SG": "新加坡 (SG)",
+      "US": "美国 (US)",
+      "GB": "英国 (GB)",
+      "DE": "德国 (DE)"
     },
     "columns": {
       "id": "编号",
@@ -6686,6 +6717,12 @@
       "legalPersonIdNumber": "法人身份证号",
       "ein": "EIN",
       "stateOfIncorporation": "注册州",
+      "brn": "商业登记号码 (BRN)",
+      "uen": "企业识别号码 (UEN)",
+      "companyNumber": "公司注册号",
+      "handelsregisterNumber": "商业登记号",
+      "vatId": "增值税号 (VAT ID)",
+      "certificateOfIncorporation": "公司注册证明",
       "bankName": "银行名称",
       "accountHolderName": "账户户名",
       "accountNumber": "银行账号",
