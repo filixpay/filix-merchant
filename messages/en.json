@@ -6386,6 +6386,7 @@
     "countryLabel": "Registration country / region",
     "settlementCurrencyLabel": "Settlement currency",
     "settlementCurrencyHint": "Settlement currency is used for payouts and cross-currency payment conversion. It cannot be changed after registration. Choose carefully.",
+    "settlementCurrencyLockedHint": "Settlement currency was chosen when you registered and cannot be changed.",
     "settlementCurrencyRequired": "Please select a settlement currency",
     "settlementConfirm": "I confirm settlement currency {currency} and understand it cannot be changed later.",
     "settlementConfirmRequired": "Please confirm that the settlement currency cannot be changed before submitting",

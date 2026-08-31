@@ -61,6 +61,8 @@ export interface ApplicationProfile {
     phone?: string;
     email?: string;
     settlementCurrency?: string;
+    /** True when upgrading from trial — currency was fixed at registration. */
+    settlementCurrencyLocked?: boolean;
     extraAttributes?: Record<string, string>;
 }
 

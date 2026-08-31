@@ -161,7 +161,7 @@ export default function OnboardingApplyPage() {
             signIn();
             return;
         }
-        if (!settlementCurrency) {
+        if (!isCurrencyLocked && !settlementCurrency) {
             message.error(t("settlementCurrencyRequired"));
             return;
         }
@@ -174,11 +174,21 @@ export default function OnboardingApplyPage() {
                 registrationCountry: country,
                 merchantType: "LEGAL_ENTITY",
             });
-            const withCurrency = await api.onboarding.updateProfile(accessToken, created.id, {
+            const profilePayload: Parameters<typeof api.onboarding.updateProfile>[2] = {
                 registrationCountry: country,
                 merchantType: "LEGAL_ENTITY",
-                settlementCurrency,
-            });
+            };
+            if (!isCurrencyLocked) {
+                profilePayload.settlementCurrency = settlementCurrency;
+            }
+            const withCurrency = await api.onboarding.updateProfile(
+                accessToken,
+                created.id,
+                profilePayload,
+            );
+            if (withCurrency.profile?.settlementCurrency) {
+                setSettlementCurrency(withCurrency.profile.settlementCurrency);
+            }
             setApplication(withCurrency);
             localStorage.setItem(APPLICATION_ID_STORAGE_KEY, created.id);
             setStep(1);
@@ -214,7 +224,9 @@ export default function OnboardingApplyPage() {
         try {
             const updated = await api.onboarding.updateProfile(accessToken, application.id, {
                 ...buildProfileRequest(schema, values),
-                settlementCurrency: application.profile?.settlementCurrency ?? settlementCurrency,
+                ...(isCurrencyLocked
+                    ? {}
+                    : { settlementCurrency: application.profile?.settlementCurrency ?? settlementCurrency }),
             });
             setApplication(updated);
             setSettlementConfirmed(false);
@@ -253,6 +265,11 @@ export default function OnboardingApplyPage() {
     };
 
     const displaySettlement = application?.profile?.settlementCurrency ?? settlementCurrency;
+    const isCurrencyLocked =
+        applicationType === "UPGRADE" || application?.profile?.settlementCurrencyLocked === true;
+    const currencyHint = isCurrencyLocked
+        ? t("settlementCurrencyLockedHint")
+        : t("settlementCurrencyHint");
 
     return (
         <DashboardPage
@@ -287,23 +304,39 @@ export default function OnboardingApplyPage() {
                         </div>
                         <div>
                             <div style={{ marginBottom: 8 }}>{t("settlementCurrencyLabel")}</div>
-                            <Select
-                                style={{ width: "100%", maxWidth: 360 }}
-                                showSearch
-                                optionFilterProp="label"
-                                options={SETTLEMENT_CURRENCY_OPTIONS.map((item) => ({
-                                    value: item.value,
-                                    label: formatSettlementCurrencyLabel(item.value, locale),
-                                }))}
-                                value={settlementCurrency}
-                                onChange={setSettlementCurrency}
-                            />
-                            <Alert
-                                type="info"
-                                showIcon
-                                style={{ marginTop: 12, maxWidth: 560 }}
-                                message={t("settlementCurrencyHint")}
-                            />
+                            {isCurrencyLocked ? (
+                                <Alert
+                                    type="info"
+                                    showIcon
+                                    style={{ maxWidth: 560 }}
+                                    message={
+                                        displaySettlement
+                                            ? formatSettlementCurrencyLabel(displaySettlement, locale)
+                                            : t("settlementCurrencyLabel")
+                                    }
+                                    description={currencyHint}
+                                />
+                            ) : (
+                                <>
+                                    <Select
+                                        style={{ width: "100%", maxWidth: 360 }}
+                                        showSearch
+                                        optionFilterProp="label"
+                                        options={SETTLEMENT_CURRENCY_OPTIONS.map((item) => ({
+                                            value: item.value,
+                                            label: formatSettlementCurrencyLabel(item.value, locale),
+                                        }))}
+                                        value={settlementCurrency}
+                                        onChange={setSettlementCurrency}
+                                    />
+                                    <Alert
+                                        type="info"
+                                        showIcon
+                                        style={{ marginTop: 12, maxWidth: 560 }}
+                                        message={currencyHint}
+                                    />
+                                </>
+                            )}
                         </div>
                         <Button type="primary" loading={loading} onClick={handleCountryNext}>
                             {t("continue")}
@@ -319,7 +352,7 @@ export default function OnboardingApplyPage() {
                         showIcon
                         style={{ marginBottom: 16 }}
                         message={`${t("settlementCurrencyLabel")}: ${displaySettlement}`}
-                        description={t("settlementCurrencyHint")}
+                        description={currencyHint}
                     />
                     <SchemaDynamicForm
                         schema={schema}
