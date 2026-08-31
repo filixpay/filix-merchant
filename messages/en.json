@@ -6388,15 +6388,20 @@
       "GREATER_CHINA": "Greater China",
       "ASIA_PACIFIC": "Asia Pacific",
       "NORTH_AMERICA": "North America",
-      "EUROPE": "Europe"
+      "EUROPE": "Europe",
+      "SOUTH_AMERICA": "South America"
     },
     "countries": {
       "CN": "Mainland China (CN)",
       "HK": "Hong Kong (HK)",
       "SG": "Singapore (SG)",
+      "MY": "Malaysia (MY)",
+      "TH": "Thailand (TH)",
       "US": "United States (US)",
       "GB": "United Kingdom (GB)",
-      "DE": "Germany (DE)"
+      "DE": "Germany (DE)",
+      "PL": "Poland (PL)",
+      "BR": "Brazil (BR)"
     },
     "settlementCurrencyLabel": "Settlement currency",
     "settlementCurrencyHint": "Settlement currency is used for payouts and cross-currency payment conversion. It cannot be changed after registration. Choose carefully.",
@@ -6448,8 +6453,12 @@
       "stateOfIncorporation": "State of incorporation",
       "brn": "Business Registration Number (BRN)",
       "uen": "Unique Entity Number (UEN)",
+      "ssmNumber": "SSM company number",
+      "companyRegistrationNumber": "Company registration number",
       "companyNumber": "Companies House number",
       "handelsregisterNumber": "Commercial register number",
+      "krsNumber": "KRS number",
+      "cnpj": "CNPJ",
       "vatId": "VAT ID",
       "bankName": "Bank name",
       "accountHolderName": "Account holder name",
@@ -6576,15 +6585,20 @@
       "GREATER_CHINA": "Greater China",
       "ASIA_PACIFIC": "Asia Pacific",
       "NORTH_AMERICA": "North America",
-      "EUROPE": "Europe"
+      "EUROPE": "Europe",
+      "SOUTH_AMERICA": "South America"
     },
     "countries": {
       "CN": "China (CN)",
       "HK": "Hong Kong (HK)",
       "SG": "Singapore (SG)",
+      "MY": "Malaysia (MY)",
+      "TH": "Thailand (TH)",
       "US": "United States (US)",
       "GB": "United Kingdom (GB)",
-      "DE": "Germany (DE)"
+      "DE": "Germany (DE)",
+      "PL": "Poland (PL)",
+      "BR": "Brazil (BR)"
     },
     "columns": {
       "id": "ID",
@@ -6671,8 +6685,12 @@
       "stateOfIncorporation": "State of incorporation",
       "brn": "Business Registration Number (BRN)",
       "uen": "Unique Entity Number (UEN)",
+      "ssmNumber": "SSM company number",
+      "companyRegistrationNumber": "Company registration number",
       "companyNumber": "Companies House number",
       "handelsregisterNumber": "Commercial register number",
+      "krsNumber": "KRS number",
+      "cnpj": "CNPJ",
       "vatId": "VAT ID",
       "certificateOfIncorporation": "Certificate of incorporation",
       "bankName": "Bank name",

@@ -100,6 +100,18 @@ const FIELD_REGISTRY: Record<string, FieldMeta> = {
         required: true,
         storage: "extra",
     },
+    ssmNumber: {
+        labelKey: "fields.ssmNumber",
+        inputType: "text",
+        required: true,
+        storage: "extra",
+    },
+    companyRegistrationNumber: {
+        labelKey: "fields.companyRegistrationNumber",
+        inputType: "text",
+        required: true,
+        storage: "extra",
+    },
     companyNumber: {
         labelKey: "fields.companyNumber",
         inputType: "text",
@@ -108,6 +120,18 @@ const FIELD_REGISTRY: Record<string, FieldMeta> = {
     },
     handelsregisterNumber: {
         labelKey: "fields.handelsregisterNumber",
+        inputType: "text",
+        required: true,
+        storage: "extra",
+    },
+    krsNumber: {
+        labelKey: "fields.krsNumber",
+        inputType: "text",
+        required: true,
+        storage: "extra",
+    },
+    cnpj: {
+        labelKey: "fields.cnpj",
         inputType: "text",
         required: true,
         storage: "extra",

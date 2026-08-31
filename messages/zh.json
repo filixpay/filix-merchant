@@ -6436,15 +6436,20 @@
       "GREATER_CHINA": "中国大陆",
       "ASIA_PACIFIC": "亚太",
       "NORTH_AMERICA": "北美",
-      "EUROPE": "欧洲"
+      "EUROPE": "欧洲",
+      "SOUTH_AMERICA": "南美"
     },
     "countries": {
       "CN": "中国大陆 (CN)",
       "HK": "中国香港 (HK)",
       "SG": "新加坡 (SG)",
+      "MY": "马来西亚 (MY)",
+      "TH": "泰国 (TH)",
       "US": "美国 (US)",
       "GB": "英国 (GB)",
-      "DE": "德国 (DE)"
+      "DE": "德国 (DE)",
+      "PL": "波兰 (PL)",
+      "BR": "巴西 (BR)"
     },
     "settlementCurrencyLabel": "结算币种",
     "settlementCurrencyHint": "结算币种用于资金结算与跨币种支付换算，选择后不可修改。请按实际收款与结算需求选择。",
@@ -6496,8 +6501,12 @@
       "stateOfIncorporation": "注册州",
       "brn": "商业登记号码 (BRN)",
       "uen": "企业识别号码 (UEN)",
+      "ssmNumber": "公司注册号 (SSM)",
+      "companyRegistrationNumber": "公司注册号",
       "companyNumber": "公司注册号",
       "handelsregisterNumber": "商业登记号",
+      "krsNumber": "KRS 登记号",
+      "cnpj": "CNPJ",
       "vatId": "增值税号 (VAT ID)",
       "businessLicense": "营业执照",
       "certificateOfIncorporation": "公司注册证明",
@@ -6624,15 +6633,20 @@
       "GREATER_CHINA": "中国大陆",
       "ASIA_PACIFIC": "亚太",
       "NORTH_AMERICA": "北美",
-      "EUROPE": "欧洲"
+      "EUROPE": "欧洲",
+      "SOUTH_AMERICA": "南美"
     },
     "countries": {
       "CN": "中国 (CN)",
       "HK": "中国香港 (HK)",
       "SG": "新加坡 (SG)",
+      "MY": "马来西亚 (MY)",
+      "TH": "泰国 (TH)",
       "US": "美国 (US)",
       "GB": "英国 (GB)",
-      "DE": "德国 (DE)"
+      "DE": "德国 (DE)",
+      "PL": "波兰 (PL)",
+      "BR": "巴西 (BR)"
     },
     "columns": {
       "id": "编号",
@@ -6719,8 +6733,12 @@
       "stateOfIncorporation": "注册州",
       "brn": "商业登记号码 (BRN)",
       "uen": "企业识别号码 (UEN)",
+      "ssmNumber": "公司注册号 (SSM)",
+      "companyRegistrationNumber": "公司注册号",
       "companyNumber": "公司注册号",
       "handelsregisterNumber": "商业登记号",
+      "krsNumber": "KRS 登记号",
+      "cnpj": "CNPJ",
       "vatId": "增值税号 (VAT ID)",
       "certificateOfIncorporation": "公司注册证明",
       "bankName": "银行名称",

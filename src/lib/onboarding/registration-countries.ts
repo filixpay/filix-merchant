@@ -2,13 +2,24 @@
  * Registration countries for formal onboarding / maintenance.
  * Only countries with a backend Application Schema are listed.
  */
-export type RegistrationCountryCode = "CN" | "HK" | "SG" | "US" | "GB" | "DE";
+export type RegistrationCountryCode =
+  | "CN"
+  | "HK"
+  | "SG"
+  | "MY"
+  | "TH"
+  | "US"
+  | "GB"
+  | "DE"
+  | "PL"
+  | "BR";
 
 export type RegistrationCountryRegion =
   | "GREATER_CHINA"
   | "ASIA_PACIFIC"
   | "NORTH_AMERICA"
-  | "EUROPE";
+  | "EUROPE"
+  | "SOUTH_AMERICA";
 
 export type RegistrationCountryOption = {
   value: RegistrationCountryCode;
@@ -32,6 +43,8 @@ export const REGISTRATION_COUNTRY_GROUPS: RegistrationCountryGroup[] = [
     options: [
       { value: "HK", labelKey: "HK" },
       { value: "SG", labelKey: "SG" },
+      { value: "MY", labelKey: "MY" },
+      { value: "TH", labelKey: "TH" },
     ],
   },
   {
@@ -43,7 +56,12 @@ export const REGISTRATION_COUNTRY_GROUPS: RegistrationCountryGroup[] = [
     options: [
       { value: "GB", labelKey: "GB" },
       { value: "DE", labelKey: "DE" },
+      { value: "PL", labelKey: "PL" },
     ],
+  },
+  {
+    region: "SOUTH_AMERICA",
+    options: [{ value: "BR", labelKey: "BR" }],
   },
 ];
 
