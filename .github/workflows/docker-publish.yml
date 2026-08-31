@@ -1,14 +1,13 @@
 name: Docker Publish
-# Docs-only changes do not trigger image build.
+# Builds and pushes GHCR image after CI passes on main (workflow_run).
+# PRs: docker build-only check. Version tags and manual runs supported directly.
 on:
-  push:
+  workflow_run:
+    workflows: ["CI"]
+    types: [completed]
     branches: [main]
+  push:
     tags: ["v*"]
-    paths-ignore:
-      - "docs/**"
-      - "**/*.md"
-      - "**/*.txt"
-      - ".trellis/**"
   pull_request:
     branches: [main]
     paths-ignore:
@@ -19,7 +18,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: docker-publish-${{ github.ref }}
+  group: docker-publish-${{ github.event.workflow_run.head_branch || github.ref }}
   cancel-in-progress: false
 
 env:
@@ -33,12 +32,18 @@ permissions:
 
 jobs:
   build:
+    if: >
+      github.event_name != 'workflow_run' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.event == 'push')
     runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
 
       - uses: docker/setup-buildx-action@v3
 
