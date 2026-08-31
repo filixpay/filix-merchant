@@ -280,6 +280,123 @@
   font-weight: 600 !important;
 }
 
+.modeCard {
+  margin-bottom: 18px;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(191, 219, 254, 0.9);
+  background: rgba(239, 246, 255, 0.7);
+}
+
+.modeHeader {
+  margin-bottom: 12px;
+}
+
+.modeTitle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #1e40af;
+}
+
+.modeHint {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.5;
+  color: rgba(30, 64, 175, 0.85);
+}
+
+.modeOptionGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.modeOptionGroup :global(.ant-radio-wrapper) {
+  align-items: flex-start;
+  margin: 0;
+  padding: 12px 14px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(191, 219, 254, 0.9);
+  background: #ffffff;
+  transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.modeOptionGroup :global(.ant-radio-wrapper:hover) {
+  border-color: rgba(37, 99, 235, 0.45);
+}
+
+.modeOptionGroup :global(.ant-radio-wrapper-checked) {
+  border-color: #2563eb;
+  background: rgba(239, 246, 255, 0.95);
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.12);
+}
+
+.modeOptionGroup :global(.ant-radio) {
+  margin-top: 2px;
+}
+
+.modeOptionGroup :global(.ant-radio + span) {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-inline: 8px 0 !important;
+  min-width: 0;
+}
+
+.modeOptionTitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.3;
+}
+
+.modeOptionDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.modeOptionFlow {
+  display: block;
+  font-size: 11px;
+  line-height: 1.55;
+  color: #64748b;
+}
+
+.modeOptionFlowLabel {
+  display: inline-block;
+  margin-right: 4px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: rgba(37, 99, 235, 0.1);
+  color: #2563eb;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  vertical-align: baseline;
+}
+
+.modeOptionGroup :global(.ant-radio-wrapper-checked) .modeOptionTitle {
+  color: #1e40af;
+}
+
+.modeOptionGroup :global(.ant-radio-wrapper-checked) .modeOptionFlow {
+  color: #475569;
+}
+
+.modeNote {
+  margin: 12px 0 0;
+  font-size: 11px;
+  line-height: 1.5;
+  color: rgba(30, 64, 175, 0.75);
+}
+
 .currencyCard {
   margin-bottom: 24px;
   padding: 16px;

@@ -6329,10 +6329,23 @@
       "currentAccount": "Signed-in account",
       "emailUnavailable": "Email unavailable",
       "verified": "Verified",
+      "settlementMode": "Settlement mode",
+      "settlementModeShort": "Determines how funds are settled and your merchant account type.",
+      "settlementModeNote": "To use a different settlement mode, add a business account in Merchant Center.",
       "settlementCurrency": "Settlement currency",
       "settlementCurrencyShort": "Used for payouts and cross-currency conversion.",
       "settlementCurrencyHint": "Settlement currency is used for payouts and cross-currency payment conversion. It cannot be changed after registration. Choose carefully.",
       "settlementImmutable": "Cannot change later"
+    },
+    "modes": {
+      "platform": "Platform settlement",
+      "direct": "Direct settlement",
+      "flowLabel": "Fund flow",
+      "channelLabel": "Payment channels",
+      "platformFlow": "Customer payment → Platform collects → Platform clears & settles → Credited to your merchant account",
+      "platformChannel": "Uses the platform's unified payment channel configuration",
+      "directFlow": "Customer payment → Direct payment channel → Funds settled directly to your merchant account",
+      "directChannel": "Uses your merchant-owned payment channel configuration"
     },
     "currency": {
       "USD": "USD — US Dollar",
@@ -6347,6 +6360,7 @@
       "phonePrefixInvalid": "Enter a valid country code (e.g. +33)",
       "officialIdInvalid": "Enter a 15–18 character official ID number",
       "settlementCurrencyRequired": "Please select a settlement currency",
+      "settlementModeRequired": "Please select a settlement mode",
       "duplicateName": "This merchant name is already taken",
       "registrationTaken": "This ID is already registered to an organization. Use another ID or join with an existing account.",
       "alreadyHasMerchant": "This account already has a merchant",

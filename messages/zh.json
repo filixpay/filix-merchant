@@ -6377,10 +6377,23 @@
       "currentAccount": "当前登录账号",
       "emailUnavailable": "未获取到登录邮箱",
       "verified": "已验证",
+      "settlementMode": "结算模式",
+      "settlementModeShort": "用于确定资金结算方式与商户账户类型。",
+      "settlementModeNote": "如需使用其他结算模式，可在商户中心新增业务账号。",
       "settlementCurrency": "结算币种",
       "settlementCurrencyShort": "用于资金结算与跨币种支付换算。",
       "settlementCurrencyHint": "结算币种用于资金结算与跨币种支付换算，选择后不可修改。请按实际收款与结算需求选择。",
       "settlementImmutable": "选择后不可修改"
+    },
+    "modes": {
+      "platform": "平台结算",
+      "direct": "直连结算",
+      "flowLabel": "资金走向",
+      "channelLabel": "支付渠道",
+      "platformFlow": "消费者付款 → 平台统一收款 → 平台清分结算 → 汇入您的商户账户",
+      "platformChannel": "采用平台统一支付渠道配置",
+      "directFlow": "消费者付款 → 直连支付通道 → 资金直接结算至您的商户账户",
+      "directChannel": "采用商户自有支付渠道配置"
     },
     "currency": {
       "USD": "USD — 美元 (US Dollar)",
@@ -6395,6 +6408,7 @@
       "phonePrefixInvalid": "请输入有效的国际区号（如 +33）",
       "officialIdInvalid": "请输入15–18位官方证件号码",
       "settlementCurrencyRequired": "请选择结算币种",
+      "settlementModeRequired": "请选择结算模式",
       "duplicateName": "商户名称已被使用，请更换",
       "registrationTaken": "该证件号已注册组织。请使用已有账号加入，或更换证件号。",
       "alreadyHasMerchant": "当前账号已关联商户",

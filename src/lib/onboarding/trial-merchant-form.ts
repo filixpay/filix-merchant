@@ -1,9 +1,12 @@
+export type TrialMerchantSettlementMode = "PLATFORM" | "DIRECT";
+
 export type TrialMerchantFormValues = {
   name: string;
   mobile: string;
   /** International dialing code, e.g. +86. Defaults to +86 when omitted. */
   phonePrefix?: string;
   officialIdNumber: string;
+  settlementMode: TrialMerchantSettlementMode;
   settlementCurrency: string;
 };
 
@@ -42,6 +45,9 @@ export function validateTrialMerchantForm(
 
   const id = values.officialIdNumber?.trim() ?? "";
   if (id.length < 15 || id.length > 18) errors.officialIdNumber = "errors.officialIdInvalid";
+  if (!values.settlementMode) {
+    errors.settlementMode = "errors.settlementModeRequired";
+  }
   if (!values.settlementCurrency?.trim()) {
     errors.settlementCurrency = "errors.settlementCurrencyRequired";
   }

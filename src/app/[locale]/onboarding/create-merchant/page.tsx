@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useSession, signIn } from "next-auth/react";
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
-import { Alert, Button, Form, Input, Select, Spin, Tooltip } from "antd";
+import { Alert, Button, Form, Input, Radio, Select, Spin, Tooltip } from "antd";
 import {
   AlertTriangle,
   ArrowRight,
@@ -13,6 +13,7 @@ import {
   CreditCard,
   HelpCircle,
   Mail,
+  Network,
   ShieldCheck,
 } from "lucide-react";
 import { api, ApiError } from "@/lib/api";
@@ -141,6 +142,7 @@ export default function CreateMerchantPage() {
           mobile: composeTrialMobile(effectivePhonePrefix, values.mobile),
           officialIdNumber: values.officialIdNumber.trim(),
           email: emailReadonly,
+          settlementMode: values.settlementMode,
           settlementCurrency: values.settlementCurrency.trim(),
         },
         accessToken,
@@ -275,7 +277,7 @@ export default function CreateMerchantPage() {
             className={styles.form}
             onFinish={(values) => void onFinish(values)}
             disabled={submitting}
-            initialValues={{ settlementCurrency: "USD" }}
+            initialValues={{ settlementMode: "PLATFORM", settlementCurrency: "USD" }}
           >
             <div className={styles.grid}>
               <div className={styles.fullWidth}>
@@ -362,6 +364,7 @@ export default function CreateMerchantPage() {
                                 mobile: value ?? "",
                                 phonePrefix: effectivePhonePrefix,
                                 officialIdNumber: "123456789012345",
+                                settlementMode: "PLATFORM",
                                 settlementCurrency: "USD",
                               });
                               if (errors.mobile) {
@@ -411,6 +414,52 @@ export default function CreateMerchantPage() {
                   />
                 </Form.Item>
               </div>
+            </div>
+
+            <div className={styles.modeCard}>
+              <div className={styles.modeHeader}>
+                <div>
+                  <p className={styles.modeTitle}>
+                    <Network size={15} strokeWidth={2} aria-hidden />
+                    {t("fields.settlementMode")} <span className={styles.required}>*</span>
+                  </p>
+                  <p className={styles.modeHint}>{t("fields.settlementModeShort")}</p>
+                </div>
+              </div>
+              <Form.Item
+                name="settlementMode"
+                rules={[{ required: true, message: t("errors.settlementModeRequired") }]}
+              >
+                <Radio.Group className={styles.modeOptionGroup}>
+                  <Radio value="PLATFORM">
+                    <span className={styles.modeOptionTitle}>{t("modes.platform")}</span>
+                    <span className={styles.modeOptionDetail}>
+                      <span className={styles.modeOptionFlow}>
+                        <span className={styles.modeOptionFlowLabel}>{t("modes.flowLabel")}</span>
+                        {t("modes.platformFlow")}
+                      </span>
+                      <span className={styles.modeOptionFlow}>
+                        <span className={styles.modeOptionFlowLabel}>{t("modes.channelLabel")}</span>
+                        {t("modes.platformChannel")}
+                      </span>
+                    </span>
+                  </Radio>
+                  <Radio value="DIRECT">
+                    <span className={styles.modeOptionTitle}>{t("modes.direct")}</span>
+                    <span className={styles.modeOptionDetail}>
+                      <span className={styles.modeOptionFlow}>
+                        <span className={styles.modeOptionFlowLabel}>{t("modes.flowLabel")}</span>
+                        {t("modes.directFlow")}
+                      </span>
+                      <span className={styles.modeOptionFlow}>
+                        <span className={styles.modeOptionFlowLabel}>{t("modes.channelLabel")}</span>
+                        {t("modes.directChannel")}
+                      </span>
+                    </span>
+                  </Radio>
+                </Radio.Group>
+              </Form.Item>
+              <p className={styles.modeNote}>{t("fields.settlementModeNote")}</p>
             </div>
 
             <div className={styles.currencyCard}>

@@ -7,6 +7,7 @@ export interface MerchantRequest {
     email: string;
     name: string;
     officialIdNumber: string;
+    settlementMode: 'DIRECT' | 'PLATFORM';
     /** ISO 4217; required; immutable after create. */
     settlementCurrency: string;
 }
