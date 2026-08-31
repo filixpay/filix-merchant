@@ -221,7 +221,9 @@ export default function WorkspaceSwitcher({
                 <div className={styles.divider} />
                 <div className={styles.sectionHeader}>
                   <div className={styles.sectionLabel}>{t("switch_organization")}</div>
-                  {canCreateBusinessAccount ? (
+                </div>
+                {canCreateBusinessAccount ? (
+                  <div className={styles.addOrgRow}>
                     <Link
                       href={`/${locale}/dashboard/organization?create=1`}
                       className={styles.sectionAddLink}
@@ -230,8 +232,8 @@ export default function WorkspaceSwitcher({
                     >
                       +
                     </Link>
-                  ) : null}
-                </div>
+                  </div>
+                ) : null}
                 {organizations.map((item) => {
                   const code = organizationCodeToString(item.code);
                   const isSelected = code === resolvedOrgCode;
@@ -261,6 +263,8 @@ export default function WorkspaceSwitcher({
                 <div className={styles.divider} />
                 <div className={styles.sectionHeader}>
                   <div className={styles.sectionLabel}>{t("affiliated_organization")}</div>
+                </div>
+                <div className={styles.addOrgRow}>
                   <a
                     href={`https://www.filixpay.com/${locale}/dashboard/organization`}
                     className={styles.sectionAddLink}
