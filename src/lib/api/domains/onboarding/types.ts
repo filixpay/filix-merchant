@@ -95,6 +95,8 @@ export interface MerchantApplication {
     submittedAt?: string;
     approvedAt?: string;
     completedAt?: string;
+    createdAt?: string;
+    updatedAt?: string;
     profile?: ApplicationProfile;
     reviews?: ApplicationReview[];
 }

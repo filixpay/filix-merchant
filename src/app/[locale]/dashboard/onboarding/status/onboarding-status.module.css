@@ -1,0 +1,92 @@
+.summaryCard {
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.summaryCardHeader {
+    padding: 12px 16px;
+    background: #fafafa;
+    border-bottom: 1px solid #f0f0f0;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.88);
+}
+
+.summaryCardBody {
+    padding: 16px;
+}
+
+.timelineCard {
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.timelineCardHeader {
+    padding: 12px 16px;
+    background: #fafafa;
+    border-bottom: 1px solid #f0f0f0;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.88);
+}
+
+.timelineCardBody {
+    padding: 16px 16px 4px;
+}
+
+.draftProgressHeader {
+    margin-bottom: 12px;
+}
+
+.draftSteps {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.draftStepRow {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    padding-top: 4px;
+}
+
+.draftStepMain {
+    min-width: 0;
+    flex: 1;
+}
+
+.draftStepTitleRow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+    flex-wrap: wrap;
+}
+
+.draftMissingList {
+    margin-top: 4px;
+}
+
+.actionsBar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.actionsGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.statusPageContent {
+    max-width: 880px;
+}

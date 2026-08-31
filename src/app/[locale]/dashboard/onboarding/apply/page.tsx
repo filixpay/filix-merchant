@@ -55,6 +55,7 @@ export default function OnboardingApplyPage() {
 
     const queryApplicationId = searchParams.get("id");
     const forceUpgrade = searchParams.get("type") === "UPGRADE";
+    const requestedStep = Number(searchParams.get("step"));
 
     const highlightFields = useMemo(() => {
         const latestReview = application?.reviews?.[application.reviews.length - 1];
@@ -108,10 +109,20 @@ export default function OnboardingApplyPage() {
                     "LEGAL_ENTITY",
                 );
                 setSchema(loadedSchema);
-                setStep(1);
+                setStep(
+                    Number.isInteger(requestedStep) && requestedStep >= 0 && requestedStep <= 2
+                        ? requestedStep
+                        : 1,
+                );
+            } else {
+                setStep(
+                    Number.isInteger(requestedStep) && requestedStep >= 0 && requestedStep <= 2
+                        ? requestedStep
+                        : 0,
+                );
             }
         },
-        [accessToken, locale, router],
+        [accessToken, locale, requestedStep, router],
     );
 
     useEffect(() => {
