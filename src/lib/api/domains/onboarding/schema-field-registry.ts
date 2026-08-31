@@ -38,7 +38,7 @@ const FIELD_REGISTRY: Record<string, FieldMeta> = {
     businessDescription: {
         labelKey: "fields.businessDescription",
         inputType: "textarea",
-        required: true,
+        required: false,
         storage: "extra",
         maxLength: 1000,
     },

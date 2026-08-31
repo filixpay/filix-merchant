@@ -2,10 +2,11 @@
 
 import { useState } from "react";
 import { App, Button, Space, Typography, Upload } from "antd";
-import { DeleteOutlined, InboxOutlined } from "@ant-design/icons";
+import { DeleteOutlined, FileOutlined, InboxOutlined } from "@ant-design/icons";
 import { useTranslations } from "next-intl";
 import { useSession } from "next-auth/react";
 import { api, ApiError, type ApplicationDocument } from "@/lib/api";
+import { formatFileSize } from "@/lib/utils/format-file-size";
 
 type ApplicationDocumentFieldProps = {
     applicationId: string;
@@ -66,21 +67,42 @@ export default function ApplicationDocumentField({
     return (
         <Space direction="vertical" size="small" style={{ width: "100%" }}>
             {document ? (
-                <Space>
-                    <Typography.Text>{document.fileName}</Typography.Text>
+                <Space wrap>
+                    <Space size={8}>
+                        <FileOutlined />
+                        <Typography.Text>{document.fileName}</Typography.Text>
+                        <Typography.Text type="secondary">
+                            ({formatFileSize(document.sizeBytes)})
+                        </Typography.Text>
+                    </Space>
                     {editable ? (
-                        <Button
-                            type="text"
-                            danger
-                            icon={<DeleteOutlined />}
-                            loading={deleting}
-                            disabled={uploading}
-                            onClick={handleDelete}
-                        />
+                        <>
+                            <Upload
+                                multiple={false}
+                                beforeUpload={handleUpload}
+                                showUploadList={false}
+                                disabled={uploading || deleting}
+                            >
+                                <Button size="small" loading={uploading} disabled={deleting}>
+                                    {t("documentReplace")}
+                                </Button>
+                            </Upload>
+                            <Button
+                                type="text"
+                                danger
+                                size="small"
+                                icon={<DeleteOutlined />}
+                                loading={deleting}
+                                disabled={uploading}
+                                onClick={handleDelete}
+                            >
+                                {t("documentDelete")}
+                            </Button>
+                        </>
                     ) : null}
                 </Space>
             ) : null}
-            {editable ? (
+            {editable && !document ? (
                 <Upload.Dragger
                     multiple={false}
                     beforeUpload={handleUpload}

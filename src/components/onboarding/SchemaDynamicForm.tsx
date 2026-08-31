@@ -6,8 +6,10 @@ import type { FormInstance, Rule } from "antd/es/form";
 import { useTranslations } from "next-intl";
 import type { ApplicationDocument, ApplicationSchemaDto } from "@/lib/api/domains/onboarding";
 import { getFieldMeta, schemaFieldsWithMeta } from "@/lib/api/domains/onboarding";
+import { organizeOnboardingFieldRows } from "@/lib/api/domains/onboarding/onboarding-field-layout";
 import type { ChangeProfileRequest } from "@/lib/api/domains/maintenance";
 import ApplicationDocumentField from "@/components/onboarding/ApplicationDocumentField";
+import styles from "@/app/[locale]/dashboard/onboarding/apply/onboarding-apply.module.css";
 
 export type SchemaFormValues = {
     businessName?: string;
@@ -62,7 +64,6 @@ function filterSchemaFields(
     editable = true,
 ) {
     const fields = schema.fields.filter((field) => {
-        // registrationCountry is chosen in step 1 / schema resolve — never re-enter on onboarding.
         if (mode === "onboarding" && field.name === "registrationCountry") {
             return false;
         }
@@ -126,8 +127,106 @@ export default function SchemaDynamicForm({
         form.setFieldsValue(profileValues);
     }, [form, initialProfile, schema.schemaCode]);
 
-    const fields = schemaFieldsWithMeta(filterSchemaFields(schema, mode, editable));
+    const filteredFields = filterSchemaFields(schema, mode, editable);
+    const fieldRows =
+        mode === "onboarding"
+            ? organizeOnboardingFieldRows(filteredFields)
+            : filteredFields.map((field) => [field]);
+    const fieldsWithMeta = schemaFieldsWithMeta(filteredFields);
+    const metaByName = new Map(fieldsWithMeta.map(({ field, meta }) => [field.name, meta]));
+    const fieldByName = new Map(filteredFields.map((field) => [field.name, field]));
     const showActions = editable && (showDefaultSubmit || Boolean(extraActions));
+
+    const renderField = (fieldName: string) => {
+        const field = fieldByName.get(fieldName);
+        if (!field) {
+            return null;
+        }
+        const meta = metaByName.get(field.name);
+        const label = meta ? t(meta.labelKey) : (field.label ?? field.name);
+        const required = editable ? (field.required ?? meta?.required ?? false) : false;
+        const highlight = editable ? highlightFields[field.name] : undefined;
+        const fieldType = field.type ?? "text";
+
+        if (fieldType === "document") {
+            if (!applicationId || !onDocumentsChange) {
+                return null;
+            }
+            const document = documents.find((item) => item.fieldCode === field.name);
+            return (
+                <Form.Item
+                    key={field.name}
+                    label={label}
+                    required={required}
+                    validateStatus={highlight ? "error" : undefined}
+                    help={highlight}
+                >
+                    <ApplicationDocumentField
+                        applicationId={applicationId}
+                        fieldCode={field.name}
+                        editable={editable}
+                        document={document}
+                        onDocumentChange={onDocumentsChange}
+                    />
+                </Form.Item>
+            );
+        }
+
+        const inputType = meta?.inputType === "password" ? "password" : "text";
+        const rules: Rule[] = [];
+        if (required) {
+            rules.push({ required: true, message: t("validation.required") });
+        }
+        if (meta?.maxLength) {
+            rules.push({
+                max: meta.maxLength,
+                message: t("validation.maxLength", { max: meta.maxLength }),
+            });
+        }
+        const control =
+            meta?.inputType === "textarea" ? (
+                <Input.TextArea
+                    rows={4}
+                    maxLength={meta.maxLength}
+                    showCount={Boolean(meta.maxLength)}
+                    autoComplete="off"
+                    readOnly={!editable}
+                    placeholder={
+                        meta.labelKey === "fields.businessDescription"
+                            ? t("fields.businessDescriptionPlaceholder")
+                            : undefined
+                    }
+                />
+            ) : (
+                <Input type={inputType} autoComplete="off" readOnly={!editable} />
+            );
+
+        const itemProps = {
+            key: field.name,
+            label,
+            required,
+            rules,
+            validateStatus: highlight ? ("error" as const) : undefined,
+            help: highlight,
+        };
+
+        if (field.storage === "core") {
+            return (
+                <Form.Item
+                    {...itemProps}
+                    name={field.name as "businessName" | "phone" | "email"}
+                >
+                    {control}
+                </Form.Item>
+            );
+        }
+
+        return (
+            <Form.Item {...itemProps} name={["extraAttributes", field.name]}>
+                {control}
+            </Form.Item>
+        );
+    };
 
     return (
         <Form
@@ -137,96 +236,22 @@ export default function SchemaDynamicForm({
             initialValues={profileValues}
             onFinish={onSubmit}
         >
-            {fields.map(({ field, meta }) => {
-                // Prefer localized field meta; backend schema labels are often English-only.
-                const label = meta ? t(meta.labelKey) : (field.label ?? field.name);
-                const required = editable
-                    ? (field.required ?? meta?.required ?? false)
-                    : false;
-                const highlight = editable ? highlightFields[field.name] : undefined;
-                const fieldType = field.type ?? "text";
-
-                if (fieldType === "document") {
-                    if (!applicationId || !onDocumentsChange) {
-                        return null;
-                    }
-                    const document = documents.find((item) => item.fieldCode === field.name);
-                    return (
-                        <Form.Item
-                            key={field.name}
-                            label={label}
-                            required={required}
-                            validateStatus={highlight ? "error" : undefined}
-                            help={highlight}
-                        >
-                            <ApplicationDocumentField
-                                applicationId={applicationId}
-                                fieldCode={field.name}
-                                editable={editable}
-                                document={document}
-                                onDocumentChange={onDocumentsChange}
-                            />
-                        </Form.Item>
-                    );
-                }
-
-                const inputType = meta?.inputType === "password" ? "password" : "text";
-                const rules: Rule[] = [];
-                if (required) {
-                    rules.push({ required: true, message: t("validation.required") });
-                }
-                if (meta?.maxLength) {
-                    rules.push({
-                        max: meta.maxLength,
-                        message: t("validation.maxLength", { max: meta.maxLength }),
-                    });
-                }
-                const control =
-                    meta?.inputType === "textarea" ? (
-                        <Input.TextArea
-                            rows={4}
-                            maxLength={meta.maxLength}
-                            showCount={Boolean(meta.maxLength)}
-                            autoComplete="off"
-                            readOnly={!editable}
-                            placeholder={
-                                meta.labelKey === "fields.businessDescription"
-                                    ? t("fields.businessDescriptionPlaceholder")
-                                    : undefined
-                            }
-                        />
-                    ) : (
-                        <Input type={inputType} autoComplete="off" readOnly={!editable} />
-                    );
-
-                if (field.storage === "core") {
-                    return (
-                        <Form.Item
-                            key={field.name}
-                            name={field.name as "businessName" | "phone" | "email"}
-                            label={label}
-                            rules={rules}
-                            validateStatus={highlight ? "error" : undefined}
-                            help={highlight}
-                        >
-                            {control}
-                        </Form.Item>
-                    );
-                }
-
-                return (
-                    <Form.Item
-                        key={field.name}
-                        name={["extraAttributes", field.name]}
-                        label={label}
-                        rules={rules}
-                        validateStatus={highlight ? "error" : undefined}
-                        help={highlight}
-                    >
-                        {control}
-                    </Form.Item>
-                );
-            })}
+            <div className={mode === "onboarding" ? styles.formGrid : undefined}>
+                {fieldRows.map((row, rowIndex) =>
+                    row.map((field) => {
+                        const isFullWidth =
+                            mode !== "onboarding" || row.length === 1;
+                        return (
+                            <div
+                                key={`${rowIndex}-${field.name}`}
+                                className={isFullWidth ? styles.formGridFull : undefined}
+                            >
+                                {renderField(field.name)}
+                            </div>
+                        );
+                    }),
+                )}
+            </div>
 
             {showActions ? (
                 <Form.Item>
@@ -305,5 +330,4 @@ export function extractReturnHighlights(
     return Object.fromEntries(returnItems.map((item) => [item.fieldCode, item.reason]));
 }
 
-// keep registry referenced for tree-shaking tests
 void getFieldMeta;

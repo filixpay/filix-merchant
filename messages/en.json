@@ -6384,6 +6384,18 @@
       "confirm": "Confirm & Submit"
     },
     "countryLabel": "Registration country / region",
+    "merchantTypeLabel": "Merchant type",
+    "merchantTypes": {
+      "LEGAL_ENTITY": {
+        "title": "Business entity",
+        "description": "Corporations, LLCs, and other legal entities"
+      },
+      "INDIVIDUAL": {
+        "title": "Individual / freelancer",
+        "description": "Receive and settle payments as an individual"
+      },
+      "comingSoon": "Coming soon"
+    },
     "regions": {
       "GREATER_CHINA": "Greater China",
       "ASIA_PACIFIC": "Asia Pacific",
@@ -6406,13 +6418,22 @@
     "settlementCurrencyLabel": "Settlement currency",
     "settlementCurrencyHint": "Settlement currency is used for payouts and cross-currency payment conversion. It cannot be changed after registration. Choose carefully.",
     "settlementCurrencyLockedHint": "Settlement currency was chosen when you registered and cannot be changed.",
+    "settlementCurrencyLockedShort": "cannot be changed",
     "settlementCurrencyRequired": "Please select a settlement currency",
     "settlementConfirm": "I confirm settlement currency {currency} and understand it cannot be changed later.",
-    "settlementConfirmRequired": "Please confirm that the settlement currency cannot be changed before submitting",
+    "settlementConfirmAll": "I confirm the information above and settlement currency ({currency}) are accurate and cannot be changed after submission.",
+    "settlementConfirmRequired": "Please confirm the information is accurate before submitting",
     "continue": "Continue",
     "saveAndContinue": "Save and continue",
     "confirmHint": "Review your information before submitting for approval.",
+    "confirmReviewTitle": "Please review your application",
     "back": "Back",
+    "backToPrevious": "Back to previous step",
+    "editStep": "Edit",
+    "summary": {
+      "basicInfo": "Basic information",
+      "qualification": "Business credentials"
+    },
     "submit": "Submit application",
     "submitSuccess": "Application submitted",
     "cancel": "Withdraw application",
@@ -6437,6 +6458,8 @@
     "documentUploadHint": "Click or drag a file to upload (PDF, JPEG, or PNG, max 10 MB)",
     "documentUploaded": "Document uploaded",
     "documentRemoved": "Document removed",
+    "documentReplace": "Replace",
+    "documentDelete": "Delete",
     "documentMissing": "No document uploaded",
     "errors": {
       "generic": "Something went wrong. Please try again.",

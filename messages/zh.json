@@ -6432,6 +6432,18 @@
       "confirm": "确认提交"
     },
     "countryLabel": "注册国家/地区",
+    "merchantTypeLabel": "商户主体类型",
+    "merchantTypes": {
+      "LEGAL_ENTITY": {
+        "title": "企业商户",
+        "description": "有限公司、股份公司等法人主体"
+      },
+      "INDIVIDUAL": {
+        "title": "个人 / 自由职业者",
+        "description": "以个人身份收款与结算"
+      },
+      "comingSoon": "即将开放"
+    },
     "regions": {
       "GREATER_CHINA": "中国大陆",
       "ASIA_PACIFIC": "亚太",
@@ -6454,13 +6466,22 @@
     "settlementCurrencyLabel": "结算币种",
     "settlementCurrencyHint": "结算币种用于资金结算与跨币种支付换算，选择后不可修改。请按实际收款与结算需求选择。",
     "settlementCurrencyLockedHint": "结算币种已在注册时选定，不可修改。",
+    "settlementCurrencyLockedShort": "不可修改",
     "settlementCurrencyRequired": "请选择结算币种",
     "settlementConfirm": "我已确认结算币种为 {currency}，并理解此后无法修改。",
-    "settlementConfirmRequired": "请确认结算币种后不可修改后再提交",
+    "settlementConfirmAll": "我已确认上述信息及结算币种 ({currency}) 准确无误，提交后不可更改。",
+    "settlementConfirmRequired": "请确认信息准确无误后再提交",
     "continue": "继续",
     "saveAndContinue": "保存并继续",
     "confirmHint": "提交前请确认以下信息。",
+    "confirmReviewTitle": "请核对您的申请信息",
     "back": "返回",
+    "backToPrevious": "返回上一步",
+    "editStep": "编辑",
+    "summary": {
+      "basicInfo": "基础信息",
+      "qualification": "企业资质"
+    },
     "submit": "提交申请",
     "submitSuccess": "申请已提交",
     "cancel": "撤回申请",
@@ -6485,6 +6506,8 @@
     "documentUploadHint": "点击或拖拽上传文件（PDF、JPEG 或 PNG，最大 10 MB）",
     "documentUploaded": "证件已上传",
     "documentRemoved": "证件已移除",
+    "documentReplace": "替换",
+    "documentDelete": "删除",
     "documentMissing": "尚未上传证件",
     "errors": {
       "generic": "操作失败，请稍后重试。",

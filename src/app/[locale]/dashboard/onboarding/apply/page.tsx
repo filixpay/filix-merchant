@@ -1,7 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { Alert, Button, Card, Checkbox, Select, Space, Steps, message } from "antd";
+import { Alert, Button, Card, Checkbox, Input, Select, Space, Steps, Tag, message } from "antd";
+import { LockOutlined } from "@ant-design/icons";
 import { useSession, signIn } from "next-auth/react";
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -25,9 +26,13 @@ import SchemaDynamicForm, {
     getMissingRequiredDocumentFieldCodes,
     type SchemaFormValues,
 } from "@/components/onboarding/SchemaDynamicForm";
+import OnboardingConfirmSummary from "@/components/onboarding/OnboardingConfirmSummary";
 import { canUpgradeToFormal } from "@/lib/merchant/merchant-tier";
 import { SETTLEMENT_CURRENCY_OPTIONS, formatSettlementCurrencyLabel } from "@/lib/onboarding/settlement-currency";
 import { REGISTRATION_COUNTRY_GROUPS } from "@/lib/onboarding/registration-countries";
+import styles from "./onboarding-apply.module.css";
+
+type MerchantTypeChoice = "LEGAL_ENTITY" | "INDIVIDUAL";
 
 export default function OnboardingApplyPage() {
     const t = useTranslations("Onboarding");
@@ -40,6 +45,7 @@ export default function OnboardingApplyPage() {
     const [step, setStep] = useState(0);
     const [loading, setLoading] = useState(false);
     const [country, setCountry] = useState("CN");
+    const [merchantType, setMerchantType] = useState<MerchantTypeChoice>("LEGAL_ENTITY");
     const [settlementCurrency, setSettlementCurrency] = useState<string>("USD");
     const [settlementConfirmed, setSettlementConfirmed] = useState(false);
     const [schema, setSchema] = useState<ApplicationSchemaDto | null>(null);
@@ -54,6 +60,14 @@ export default function OnboardingApplyPage() {
         const latestReview = application?.reviews?.[application.reviews.length - 1];
         return extractReturnHighlights(latestReview?.returnItems);
     }, [application?.reviews]);
+
+    const countryLabel = useMemo(() => {
+        const code = application?.profile?.registrationCountry ?? country;
+        const key = REGISTRATION_COUNTRY_GROUPS.flatMap((group) => group.options).find(
+            (item) => item.value === code,
+        )?.labelKey;
+        return key ? t(`countries.${key}`) : code;
+    }, [application?.profile?.registrationCountry, country, t]);
 
     const loadDocuments = useCallback(async () => {
         if (!accessToken || !application?.id) {
@@ -150,11 +164,15 @@ export default function OnboardingApplyPage() {
                 console.error(err);
             }
         })();
-    }, [accessToken, forceUpgrade, loadExisting, queryApplicationId]);
+    }, [accessToken, forceUpgrade, loadExisting, queryApplicationId, locale, router]);
 
     const handleCountryNext = async () => {
         if (!accessToken) {
             signIn();
+            return;
+        }
+        if (merchantType !== "LEGAL_ENTITY") {
+            message.info(t("merchantTypes.comingSoon"));
             return;
         }
         if (!isCurrencyLocked && !settlementCurrency) {
@@ -266,6 +284,9 @@ export default function OnboardingApplyPage() {
     const currencyHint = isCurrencyLocked
         ? t("settlementCurrencyLockedHint")
         : t("settlementCurrencyHint");
+    const settlementDisplayValue = displaySettlement
+        ? formatSettlementCurrencyLabel(displaySettlement, locale)
+        : "";
 
     return (
         <DashboardPage
@@ -277,8 +298,9 @@ export default function OnboardingApplyPage() {
             ) : null}
 
             <Steps
+                className={styles.steps}
                 current={step}
-                style={{ marginBottom: 24 }}
+                responsive
                 items={[
                     { title: t("steps.country") },
                     { title: t("steps.profile") },
@@ -287,12 +309,12 @@ export default function OnboardingApplyPage() {
             />
 
             {step === 0 ? (
-                <Card>
+                <Card className={styles.stepCard}>
                     <Space direction="vertical" size="large" style={{ width: "100%" }}>
                         <div>
                             <div style={{ marginBottom: 8 }}>{t("countryLabel")}</div>
                             <Select
-                                style={{ width: "100%", maxWidth: 360 }}
+                                style={{ width: "100%", maxWidth: 480 }}
                                 showSearch
                                 optionFilterProp="label"
                                 options={REGISTRATION_COUNTRY_GROUPS.map((group) => ({
@@ -306,24 +328,63 @@ export default function OnboardingApplyPage() {
                                 onChange={setCountry}
                             />
                         </div>
+
+                        <div>
+                            <div style={{ marginBottom: 8 }}>{t("merchantTypeLabel")}</div>
+                            <div className={styles.merchantTypeGroup}>
+                                <button
+                                    type="button"
+                                    className={`${styles.merchantTypeCard} ${
+                                        merchantType === "LEGAL_ENTITY"
+                                            ? styles.merchantTypeCardSelected
+                                            : ""
+                                    }`}
+                                    onClick={() => setMerchantType("LEGAL_ENTITY")}
+                                >
+                                    <div>
+                                        <div className={styles.merchantTypeCardTitle}>
+                                            {t("merchantTypes.LEGAL_ENTITY.title")}
+                                        </div>
+                                        <div className={styles.merchantTypeCardDesc}>
+                                            {t("merchantTypes.LEGAL_ENTITY.description")}
+                                        </div>
+                                    </div>
+                                </button>
+                                <button
+                                    type="button"
+                                    className={`${styles.merchantTypeCard} ${styles.merchantTypeCardDisabled}`}
+                                    onClick={() => message.info(t("merchantTypes.comingSoon"))}
+                                >
+                                    <div style={{ flex: 1 }}>
+                                        <div className={styles.merchantTypeCardTitle}>
+                                            {t("merchantTypes.INDIVIDUAL.title")}
+                                            <Tag style={{ marginLeft: 8 }}>{t("merchantTypes.comingSoon")}</Tag>
+                                        </div>
+                                        <div className={styles.merchantTypeCardDesc}>
+                                            {t("merchantTypes.INDIVIDUAL.description")}
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
                         <div>
                             <div style={{ marginBottom: 8 }}>{t("settlementCurrencyLabel")}</div>
                             {isCurrencyLocked ? (
-                                <Alert
-                                    type="info"
-                                    showIcon
-                                    style={{ maxWidth: 560 }}
-                                    message={
-                                        displaySettlement
-                                            ? formatSettlementCurrencyLabel(displaySettlement, locale)
-                                            : t("settlementCurrencyLabel")
-                                    }
-                                    description={currencyHint}
-                                />
+                                <>
+                                    <Input
+                                        className={styles.lockedInput}
+                                        style={{ maxWidth: 480 }}
+                                        readOnly
+                                        value={settlementDisplayValue}
+                                        suffix={<LockOutlined />}
+                                    />
+                                    <div className={styles.fieldHint}>{currencyHint}</div>
+                                </>
                             ) : (
                                 <>
                                     <Select
-                                        style={{ width: "100%", maxWidth: 360 }}
+                                        style={{ width: "100%", maxWidth: 480 }}
                                         showSearch
                                         optionFilterProp="label"
                                         options={SETTLEMENT_CURRENCY_OPTIONS.map((item) => ({
@@ -333,15 +394,11 @@ export default function OnboardingApplyPage() {
                                         value={settlementCurrency}
                                         onChange={setSettlementCurrency}
                                     />
-                                    <Alert
-                                        type="info"
-                                        showIcon
-                                        style={{ marginTop: 12, maxWidth: 560 }}
-                                        message={currencyHint}
-                                    />
+                                    <div className={styles.fieldHint}>{currencyHint}</div>
                                 </>
                             )}
                         </div>
+
                         <Button type="primary" loading={loading} onClick={handleCountryNext}>
                             {t("continue")}
                         </Button>
@@ -350,14 +407,7 @@ export default function OnboardingApplyPage() {
             ) : null}
 
             {step === 1 && schema ? (
-                <Card>
-                    <Alert
-                        type="info"
-                        showIcon
-                        style={{ marginBottom: 16 }}
-                        message={`${t("settlementCurrencyLabel")}: ${displaySettlement}`}
-                        description={currencyHint}
-                    />
+                <Card className={styles.stepCard}>
                     <SchemaDynamicForm
                         schema={schema}
                         initialProfile={application?.profile}
@@ -372,35 +422,30 @@ export default function OnboardingApplyPage() {
                 </Card>
             ) : null}
 
-            {step === 2 && application?.profile ? (
-                <Card>
-                    <Space direction="vertical" size="middle">
-                        <div>{t("confirmHint")}</div>
-                        <div>
-                            <strong>{t("fields.businessName")}:</strong> {application.profile.businessName}
-                        </div>
-                        <div>
-                            <strong>{t("fields.phone")}:</strong> {application.profile.phone}
-                        </div>
-                        <div>
-                            <strong>{t("fields.email")}:</strong> {application.profile.email}
-                        </div>
-                        <div>
-                            <strong>{t("settlementCurrencyLabel")}:</strong> {displaySettlement}
-                        </div>
-                        <Checkbox
-                            checked={settlementConfirmed}
-                            onChange={(e) => setSettlementConfirmed(e.target.checked)}
-                        >
-                            {t("settlementConfirm", { currency: displaySettlement })}
-                        </Checkbox>
-                        <Space>
-                            <Button onClick={() => setStep(1)}>{t("back")}</Button>
-                            <Button type="primary" loading={loading} onClick={handleSubmit}>
-                                {t("submit")}
-                            </Button>
-                        </Space>
-                    </Space>
+            {step === 2 && application?.profile && schema ? (
+                <Card className={styles.stepCard}>
+                    <div className={styles.confirmIntro}>{t("confirmReviewTitle")}</div>
+                    <OnboardingConfirmSummary
+                        profile={application.profile}
+                        schema={schema}
+                        documents={documents}
+                        countryLabel={countryLabel}
+                        merchantTypeLabel={t("merchantTypes.LEGAL_ENTITY.title")}
+                        locale={locale}
+                        onEditStep={setStep}
+                    />
+                    <Checkbox
+                        checked={settlementConfirmed}
+                        onChange={(e) => setSettlementConfirmed(e.target.checked)}
+                    >
+                        {t("settlementConfirmAll", { currency: displaySettlement })}
+                    </Checkbox>
+                    <div className={styles.confirmActions}>
+                        <Button onClick={() => setStep(1)}>{t("backToPrevious")}</Button>
+                        <Button type="primary" loading={loading} onClick={handleSubmit}>
+                            {t("submit")}
+                        </Button>
+                    </div>
                 </Card>
             ) : null}
         </DashboardPage>
