@@ -238,20 +238,24 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    width: 24px;
-    height: 24px;
-    border-radius: 6px;
-    font-size: 1.25rem;
-    font-weight: 600;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-size: 1.625rem;
+    font-weight: 700;
     line-height: 1;
-    color: #475569;
+    color: #2563eb;
+    background: #eff6ff;
+    border: 1.5px solid #bfdbfe;
     text-decoration: none;
-    transition: color 0.15s ease, background 0.15s ease;
+    transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
 }
 
 .sectionAddLink:hover {
-    color: #2563eb;
-    background: #eff6ff;
+    color: #1d4ed8;
+    background: #dbeafe;
+    border-color: #93c5fd;
+    transform: scale(1.05);
 }
 
 .sectionAddLink:focus-visible {

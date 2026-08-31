@@ -180,16 +180,6 @@ export default function WorkspaceSwitcher({
           <div className={styles.dropdown} role="listbox">
             <div className={styles.sectionHeader}>
               <div className={styles.sectionLabel}>{t("switch_business_account")}</div>
-              {canCreateBusinessAccount ? (
-                <Link
-                  href={`/${locale}/dashboard/organization?create=1`}
-                  className={styles.sectionAddLink}
-                  aria-label={t("add_business_account")}
-                  onClick={() => setIsOpen(false)}
-                >
-                  +
-                </Link>
-              ) : null}
             </div>
             {merchants.length === 0 ? (
               <div className={styles.emptyHint}>{t("no_business_accounts")}</div>
@@ -231,6 +221,16 @@ export default function WorkspaceSwitcher({
                 <div className={styles.divider} />
                 <div className={styles.sectionHeader}>
                   <div className={styles.sectionLabel}>{t("switch_organization")}</div>
+                  {canCreateBusinessAccount ? (
+                    <Link
+                      href={`/${locale}/dashboard/organization?create=1`}
+                      className={styles.sectionAddLink}
+                      aria-label={t("add_business_account")}
+                      onClick={() => setIsOpen(false)}
+                    >
+                      +
+                    </Link>
+                  ) : null}
                 </div>
                 {organizations.map((item) => {
                   const code = organizationCodeToString(item.code);
@@ -257,26 +257,29 @@ export default function WorkspaceSwitcher({
                 })}
               </>
             ) : organization ? (
-              <div className={styles.detailBlock}>
-                <div className={styles.addOrgRow}>
+              <>
+                <div className={styles.divider} />
+                <div className={styles.sectionHeader}>
+                  <div className={styles.sectionLabel}>{t("affiliated_organization")}</div>
                   <a
-                    href="https://www.filixpay.com/zh/dashboard/organization"
-                    className={styles.addOrgLink}
+                    href={`https://www.filixpay.com/${locale}/dashboard/organization`}
+                    className={styles.sectionAddLink}
                     aria-label={t("add_organization")}
                     onClick={() => setIsOpen(false)}
                   >
                     +
                   </a>
                 </div>
-                <div className={styles.detailTitle}>{t("affiliated_organization")}</div>
-                <div className={styles.detailBody}>{organization.name}</div>
-                <CopyableCodeMeta
-                  label={tOrg("org_code")}
-                  value={organizationCodeToString(organization.code)}
-                  copyLabel={t("copy_code")}
-                  copiedLabel={t("copy_success")}
-                />
-              </div>
+                <div className={styles.detailBlock}>
+                  <div className={styles.detailBody}>{organization.name}</div>
+                  <CopyableCodeMeta
+                    label={tOrg("org_code")}
+                    value={organizationCodeToString(organization.code)}
+                    copyLabel={t("copy_code")}
+                    copiedLabel={t("copy_success")}
+                  />
+                </div>
+              </>
             ) : null}
 
             {canAccessEnterprisePortal ? (
