@@ -5,6 +5,7 @@ import { getApplication } from "./get-application";
 import { getCurrentApplication } from "./get-current-application";
 import { getApplicationSchema } from "./get-schema";
 import { listApplicationDocuments } from "./list-documents";
+import { resolveAccessibleApplication } from "./resolve-accessible-application";
 import { submitApplication } from "./submit-application";
 import { updateApplicationProfile } from "./update-profile";
 import { uploadApplicationDocument } from "./upload-document";
@@ -14,6 +15,7 @@ export const onboardingApi = {
     createOrLoad: createOrLoadApplication,
     get: getApplication,
     getCurrent: getCurrentApplication,
+    resolveAccessible: resolveAccessibleApplication,
     updateProfile: updateApplicationProfile,
     submit: submitApplication,
     cancel: cancelApplication,
@@ -23,6 +25,10 @@ export const onboardingApi = {
 };
 
 export { ApplicationConflictError } from "./create-application";
+export {
+    isApplicationAccessDeniedError,
+    isApplicationNotFoundError,
+} from "./resolve-accessible-application";
 export type {
     ApplicationDocument,
     ApplicationMerchantType,

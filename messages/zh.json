@@ -6467,7 +6467,9 @@
     "documentMissing": "尚未上传证件",
     "errors": {
       "generic": "操作失败，请稍后重试。",
-      "conflict": "您已有进行中的申请。"
+      "conflict": "您已有进行中的申请。",
+      "applicationAccessDenied": "该申请不属于当前账号，无法访问。",
+      "staleApplicationCleared": "已清除无效的申请链接，正在显示您当前的申请。"
     },
     "fields": {
       "businessName": "企业名称",

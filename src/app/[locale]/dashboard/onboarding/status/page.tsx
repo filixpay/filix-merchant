@@ -65,16 +65,26 @@ export default function OnboardingStatusPage() {
         }
         setLoading(true);
         try {
-            let loaded: MerchantApplication | null = null;
-            if (applicationId) {
-                loaded = await api.onboarding.get(accessToken, applicationId);
-            } else {
-                loaded = await api.onboarding.getCurrent(accessToken);
+            const { application: loaded, discardedPreferredId } =
+                await api.onboarding.resolveAccessible(accessToken, applicationId);
+
+            if (discardedPreferredId) {
+                localStorage.removeItem(APPLICATION_ID_STORAGE_KEY);
+                setStoredApplicationId(null);
+                if (queryApplicationId) {
+                    router.replace(`/${locale}/dashboard/onboarding/status`);
+                }
+                if (loaded) {
+                    message.info(t("errors.staleApplicationCleared"));
+                } else {
+                    message.warning(t("errors.applicationAccessDenied"));
+                }
             }
+
             if (loaded) {
                 setApplication(loaded);
                 localStorage.setItem(APPLICATION_ID_STORAGE_KEY, loaded.id);
-                if (!applicationId) {
+                if (!applicationId || discardedPreferredId) {
                     setStoredApplicationId(loaded.id);
                 }
             } else {
@@ -85,7 +95,7 @@ export default function OnboardingStatusPage() {
         } finally {
             setLoading(false);
         }
-    }, [accessToken, applicationId, storageReady, t]);
+    }, [accessToken, applicationId, locale, queryApplicationId, router, storageReady, t]);
 
     useEffect(() => {
         if (!accessToken) {

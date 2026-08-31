@@ -114,18 +114,34 @@ export default function OnboardingApplyPage() {
                     forceUpgrade || canUpgradeToFormal(merchant) ? "UPGRADE" : "NEW";
                 setApplicationType(resolvedType);
 
-                const storedId =
+                const preferredId =
                     parseApplicationId(queryApplicationId) ??
                     parseApplicationId(localStorage.getItem(APPLICATION_ID_STORAGE_KEY));
-                if (storedId) {
-                    if (!queryApplicationId) {
-                        const loaded = await api.onboarding.get(accessToken, storedId);
-                        if (TERMINAL_APPLICATION_STATUSES.includes(loaded.status)) {
-                            localStorage.removeItem(APPLICATION_ID_STORAGE_KEY);
-                            return;
+                if (preferredId) {
+                    const { application: resolved, discardedPreferredId } =
+                        await api.onboarding.resolveAccessible(accessToken, preferredId);
+                    if (discardedPreferredId) {
+                        localStorage.removeItem(APPLICATION_ID_STORAGE_KEY);
+                        if (queryApplicationId) {
+                            router.replace(
+                                forceUpgrade
+                                    ? `/${locale}/dashboard/onboarding/apply?type=UPGRADE`
+                                    : `/${locale}/dashboard/onboarding/apply`,
+                            );
                         }
                     }
-                    await loadExisting(storedId);
+                    if (!resolved) {
+                        return;
+                    }
+                    if (
+                        !queryApplicationId &&
+                        !discardedPreferredId &&
+                        TERMINAL_APPLICATION_STATUSES.includes(resolved.status)
+                    ) {
+                        localStorage.removeItem(APPLICATION_ID_STORAGE_KEY);
+                        return;
+                    }
+                    await loadExisting(resolved.id);
                     return;
                 }
 

@@ -6419,7 +6419,9 @@
     "documentMissing": "No document uploaded",
     "errors": {
       "generic": "Something went wrong. Please try again.",
-      "conflict": "You already have an application in progress."
+      "conflict": "You already have an application in progress.",
+      "applicationAccessDenied": "That application is not available for this account.",
+      "staleApplicationCleared": "The saved application link is no longer available. Showing your current application instead."
     },
     "fields": {
       "businessName": "Legal business name",
