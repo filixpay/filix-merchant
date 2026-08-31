@@ -1,0 +1,160 @@
+.drawer :global(.ant-drawer-header) {
+  padding: 18px 24px;
+  background: #f8fafc;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.drawer :global(.ant-drawer-title) {
+  font-size: 16px;
+  font-weight: 650;
+  color: #0f172a;
+}
+
+.drawerSubtitle {
+  margin: 4px 0 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.drawer :global(.ant-drawer-body) {
+  padding: 20px 24px;
+  background: #fff;
+}
+
+.drawer :global(.ant-drawer-footer) {
+  padding: 14px 24px;
+  background: #f8fafc;
+  border-top: 1px solid #eef2f7;
+}
+
+.form :global(.ant-form-item-label > label) {
+  font-size: 12px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 520px) {
+  .row2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fieldSelect :global(.ant-select-selector),
+.fieldInput {
+  border-radius: 10px !important;
+}
+
+.addressLabelRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+}
+
+.addressHint {
+  font-size: 10px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.addressInput {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+  border-radius: 10px !important;
+  resize: none;
+}
+
+.addressInputValid {
+  border-color: #10b981 !important;
+  background: rgba(16, 185, 129, 0.04) !important;
+}
+
+.addressInputInvalid {
+  border-color: #f43f5e !important;
+  background: rgba(244, 63, 94, 0.04) !important;
+}
+
+.validationRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: -8px;
+  margin-bottom: 12px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.validationValid {
+  color: #059669;
+}
+
+.validationInvalid {
+  color: #e11d48;
+}
+
+.confirmCard {
+  margin-top: 4px;
+  padding: 14px 14px 12px;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.confirmWarn {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.confirmWarnIcon {
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: #f59e0b;
+}
+
+.confirmWarnText {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.55;
+  color: #475569;
+}
+
+.confirmCheck :global(.ant-checkbox + span) {
+  font-size: 12px;
+  font-weight: 650;
+  color: #0f172a;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 100%;
+}
+
+.cancelBtn {
+  min-width: 72px;
+  height: 38px !important;
+  border-radius: 10px !important;
+}
+
+.submitBtn {
+  min-width: 112px;
+  height: 38px !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+}

@@ -1,0 +1,18 @@
+.select {
+  min-width: 148px;
+}
+
+.select :global(.ant-select-selector) {
+  min-height: 36px !important;
+  border-radius: 10px !important;
+}
+
+.select :global(.ant-select-selection-item) {
+  display: flex;
+  align-items: center;
+}
+
+.allOption {
+  font-size: 13px;
+  color: #475569;
+}

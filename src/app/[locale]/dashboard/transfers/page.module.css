@@ -1,0 +1,38 @@
+.auditTabs :global(.ant-tabs-nav) {
+  margin-bottom: 12px;
+}
+
+.auditTabs :global(.ant-tabs-tab) {
+  padding: 8px 4px;
+  margin-right: 20px;
+}
+
+.auditTabs :global(.ant-tabs-tab-btn) {
+  color: #595959;
+}
+
+.auditTabs :global(.ant-tabs-tab-active .ant-tabs-tab-btn) {
+  color: #1677ff !important;
+  font-weight: 600;
+}
+
+.auditTabs :global(.ant-tabs-ink-bar) {
+  height: 2px;
+  background: #1677ff;
+}
+
+.tabLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badgePending :global(.ant-badge-count) {
+  background: #1677ff;
+}
+
+.badgeNeutral :global(.ant-badge-count) {
+  background: #f0f0f0;
+  color: #595959;
+  box-shadow: none;
+}

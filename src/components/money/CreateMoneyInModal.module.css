@@ -1,0 +1,217 @@
+.modal :global(.ant-modal-content) {
+  padding: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.12);
+}
+
+.modal :global(.ant-modal-body) {
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px 24px;
+  border-bottom: 1px solid #f1f5f9;
+  background: rgba(248, 250, 252, 0.6);
+}
+
+.headerMain {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.headerIcon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid #dbeafe;
+  background: #eff6ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerTitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+.headerSubtitle {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+.closeBtn {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.closeBtn:hover {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.form {
+  padding: 20px 24px 24px;
+}
+
+.form :global(.ant-form-item) {
+  margin-bottom: 18px;
+}
+
+.form :global(.ant-form-item-label > label) {
+  font-size: 12px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.assetSelect :global(.ant-select-selector) {
+  min-height: 44px !important;
+  padding-inline: 12px !important;
+  border-radius: 12px !important;
+  background: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+
+.assetSelect :global(.ant-select-selection-item) {
+  display: flex;
+  align-items: center;
+}
+
+.amountField {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.amountInput {
+  height: 52px !important;
+  border-radius: 12px !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  padding-left: 14px !important;
+  padding-right: 52px !important;
+}
+
+.amountInput::placeholder {
+  color: #cbd5e1 !important;
+  font-weight: 600 !important;
+}
+
+.amountCode {
+  position: absolute;
+  right: 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #94a3b8;
+  pointer-events: none;
+  user-select: none;
+}
+
+.settlementHint {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin: -4px 0 16px;
+  font-size: 11px;
+  line-height: 1.45;
+  color: #64748b;
+}
+
+.settlementHint svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: #94a3b8;
+}
+
+.quickAmounts {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.quickAmountsLabel {
+  font-size: 11px;
+  font-weight: 500;
+  color: #94a3b8;
+  flex-shrink: 0;
+}
+
+.quickAmountsGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.quickAmountBtn {
+  padding: 4px 10px;
+  border: none;
+  border-radius: 8px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.quickAmountBtn:hover {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+.errorAlert {
+  margin-bottom: 12px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.cancelBtn {
+  height: 36px;
+  border-radius: 10px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+
+.submitBtn {
+  height: 36px;
+  border-radius: 10px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  padding-inline: 18px !important;
+}

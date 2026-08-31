@@ -1,0 +1,150 @@
+.table :global(.ant-table) {
+  background: #ffffff;
+}
+
+.table :global(.ant-table-thead > tr > th) {
+  padding: 12px 16px !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  color: #6b7280 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: #f9fafb !important;
+  border-bottom: 1px solid #e5e7eb !important;
+}
+
+.table :global(.ant-table-measure-row),
+.table :global(.ant-table-measure-row > td) {
+  height: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  overflow: hidden !important;
+}
+
+.table :global(.ant-table-tbody > tr:not(.ant-table-measure-row) > td) {
+  padding: 14px 16px !important;
+  font-size: 13px;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb !important;
+}
+
+.idRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.idTextWrap {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.idPrimary {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  font-size: 12px;
+  font-weight: 400;
+  color: #111827;
+  cursor: default;
+}
+
+.copyButton {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: #9ca3af;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.table :global(.ant-table-tbody > tr:hover) .copyButton,
+.copyButton:focus-visible {
+  opacity: 1;
+}
+
+.amountStack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.amountPrimary {
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  font-variant-numeric: tabular-nums;
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+  white-space: nowrap;
+}
+
+.amountMuted {
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.amountSymbol {
+  margin-right: 2px;
+}
+
+.mutedDash {
+  color: #9ca3af;
+}
+
+.badge {
+  display: inline-flex;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badgePending {
+  background: #fffbeb;
+  color: #b45309;
+  border: 1px solid rgba(251, 191, 36, 0.55);
+}
+
+.badgeMatched {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.badgeException {
+  background: #fff1f2;
+  color: #be123c;
+  border: 1px solid #fecdd3;
+}
+
+.detailLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.detailLink:hover {
+  color: #1d4ed8;
+}

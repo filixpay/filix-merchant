@@ -1,0 +1,909 @@
+{
+  "Layout": {
+    "title": "FilixPay – Ihr bevorzugter Partner für grenzüberschreitende Zahlungen und internationales Unternehmenswachstum",
+    "sidebar_title": "Händlerplattform",
+    "workspace": {
+      "workspace": "Workspace",
+      "switch_business_account": "Switch business account",
+      "no_business_accounts": "No business accounts in this organization",
+      "affiliated_organization": "Organization",
+      "add_organization": "Add organization",
+      "add_business_account": "New business account",
+      "manage_organization": "Manage organization"
+    },
+    "logout": "Abmelden",
+    "nav": {
+      "overview": "Übersicht",
+      "payment_configs": "Zahlungskonfiguration",
+      "checkout_counters": "Kassensystem-Konfiguration",
+      "orders": "Bestellungen",
+      "refunds": "Erstattungen",
+      "service_plan": "Serviceplan",
+      "customers": "Kunden",
+      "locations": "Standorte",
+      "bank_accounts": "Empfangskonten",
+      "transfers": "Überweisungsprüfung",
+      "reviews": "Überweisungsbestätigung",
+      "sub_merchants": "Unterhändler",
+      "acquiring_management": "Akzeptanzverwaltung",
+      "developer": "Entwicklerzentrum",
+      "refund_settings": "Refund settings",
+      "refund_approvals": "Refund approvals"
+    }
+  },
+  "ServicePlan": {
+    "title": "Serviceplan",
+    "subtitle": "Wählen Sie den Plan, der zu Ihrem Unternehmenswachstum passt, und sehen Sie sich Ihre Zahlungshistorie an.",
+    "choose_plan": "Plan wählen",
+    "payment_records": "Zahlungshistorie",
+    "plans": {
+      "weekly": "Wochenplan",
+      "monthly": "Monatsplan",
+      "half_year": "Halbjahresplan",
+      "yearly": "Jahresplan"
+    },
+    "pay": "Bezahlen"
+  },
+  "Login": {
+    "title": "FilixPay Management Center",
+    "subtitle": "Manage merchants, organizations, payments, and developer resources in one place",
+    "button": "Sign In",
+    "connecting": "Connecting...",
+    "back_to_home": "← Back to Home",
+    "merchant_title": "Merchant Operations Center",
+    "merchant_body": "Manage payments, settlement, APIs, and applications",
+    "merchant_cta": "Enter Merchant Center",
+    "enterprise_title": "Enterprise Center",
+    "enterprise_body": "Manage organizations, members, permissions, and multi-merchant relationships",
+    "enterprise_cta": "Enter Enterprise Center"
+  },
+  "Dashboard": {
+    "title": "Dashboard",
+    "overview": "Übersicht",
+    "stats": {
+      "revenue": "Heutiger Gesamtumsatz",
+      "orders": "Heutige Gesamtbestellungen",
+      "channels": "Aktive Kanäle",
+      "available_funds": "Available funds",
+      "today_funds_revenue": "Today's funds revenue",
+      "asset_count": "{count} assets",
+      "other_assets": "+ {count} other assets",
+      "no_available_funds": "No available funds",
+      "view_balance": "View balance",
+      "view_activity": "View activity",
+      "view_orders": "View orders",
+      "settlement_cycle_label": "Settlement cycle",
+      "settlement_cycle_title": "T+1 automatic settlement",
+      "settlement_cycle_desc": "Funds settle directly from the upstream channel to your designated corporate bank account. Available balance follows bank statement reconciliation."
+    },
+    "recent_transactions": "Letzte Transaktionen",
+    "no_transactions": "Derzeit keine kürzlichen Transaktionen vorhanden."
+  },
+  "Configs": {
+    "title": "Zahlungskonfiguration",
+    "subtitle": "Verwalten Sie Ihre angeschlossenen Zahlungskanäle und Zugangsdaten.",
+    "add_config": "Konfiguration hinzufügen",
+    "headers": {
+      "payment_brand": "Zahlungsmarke",
+      "payment_channel": "Zahlungskanal",
+      "payment_scenario": "Zahlungsszenario",
+      "rate": "Gebührensatz",
+      "status": "Status",
+      "actions": "Aktionen"
+    },
+    "loading": "Konfigurationen werden geladen...",
+    "empty": "Derzeit keine Konfigurationen vorhanden. Fügen Sie eine hinzu, um Zahlungen zu akzeptieren.",
+    "confirm_delete": "Sind Sie sicher, dass Sie diese Konfiguration löschen möchten?",
+    "edit_secret_hint": "Secrets are never shown. Leave a secret blank to keep the current value.",
+    "sections": {
+      "alipay": "Alipay Configuration",
+      "wechat": "WeChat Configuration",
+      "stripe": "Stripe Configuration",
+      "paypal": "PayPal Configuration",
+      "nowpayments": "NowPayments Configuration"
+    },
+    "fields": {
+      "required": "This field is required",
+      "secret_keep_placeholder": "Leave blank to keep current secret",
+      "app_id": "App ID",
+      "partner_id": "Partner ID",
+      "sandbox_mode": "Sandbox Mode",
+      "alipay_public_key": "Alipay Public Key",
+      "app_private_key": "App Private Key",
+      "app_secret": "App Secret",
+      "mch_id": "Merchant ID",
+      "v2_api_key": "V2 API Key",
+      "v3_api_key": "V3 API Key",
+      "v3_serial_no": "V3 Serial No",
+      "v3_private_key": "V3 Private Key",
+      "v3_public_key": "V3 Public Key",
+      "secret_key": "Secret Key",
+      "publishable_key": "Publishable Key (Optional)",
+      "webhook_secret": "Webhook Secret (Optional)",
+      "client_id": "Client ID",
+      "client_secret": "Client Secret",
+      "webhook_id": "Webhook ID (Optional)",
+      "api_key": "API Key",
+      "ipn_secret": "IPN Secret (Optional)",
+      "default_currency": "Default Currency (Optional)"
+    }
+  },
+  "Checkouts": {
+    "title": "Kassensystem-Konfiguration",
+    "subtitle": "Verwalten und konfigurieren Sie Ihre mehrsprachigen, gebündelten Kassensysteme.",
+    "create_counter": "Konfiguration hinzufügen",
+    "edit_counter": "Konfiguration bearbeiten",
+    "loading": "Kassensysteme werden geladen...",
+    "empty": "Derzeit keine Kassensysteme vorhanden. Erstellen Sie eines, um Zahlungen zu akzeptieren.",
+    "prompt_name": "Bitte geben Sie den Namen des Kassensystems ein:",
+    "headers": {
+      "name": "Kassensystem-Name",
+      "code": "Code",
+      "status": "Status",
+      "actions": "Aktionen"
+    },
+    "form": {
+      "checkout_code": "Kassensystem-Code (eindeutige ID)",
+      "checkout_name": "Standard-Anzeigename",
+      "status_active": "Aktiviert",
+      "status_inactive": "Deaktiviert",
+      "tabs": "Tab-Konfiguration",
+      "add_tab": "Tab hinzufügen",
+      "tab_key": "Eindeutige Tab-ID (z.B.: card, crypto)",
+      "tab_title": "Tab-Titel",
+      "display_order": "Reihenfolge",
+      "enabled": "Aktivieren",
+      "gateways": "Enthaltene Zahlungs-Gateways",
+      "add_gateway": "Gateway hinzufügen",
+      "gateway_code": "Gateway-Code",
+      "recommended": "Empfohlen",
+      "logo": "Logo-URL",
+      "color": "Markenfarbe",
+      "currencies": "Unterstützte Währungen (kommagetrennt, * für alle)",
+      "countries": "Käuferregion (kommagetrennt, * für alle)",
+      "config_list": "Zahlungskonfigurationsliste",
+      "priority": "Priorität",
+      "save": "Kassensystem speichern",
+      "cancel": "Abbrechen"
+    },
+    "delete_confirm": "Sind Sie sicher, dass Sie dieses Kassensystem löschen möchten?"
+  },
+  "Home": {
+    "hero": {
+      "title": "FilixPay: Globale, integrierte Zahlungslösungen,\nmit denen Händler weltweit einfach Zahlungen akzeptieren können",
+      "subtitle": "FilixPay – eine technische Dienstleistungsplattform für Vier-Parteien-Zahlungen, speziell für international expandierende Unternehmen entwickelt. Wir bieten eine sichere, flexible und effiziente Infrastruktur für gebündelte Zahlungen, mit der Sie mehrere Hauptzahlungsmethoden einbinden und global vereinheitlicht verwalten können – ohne komplexe Integrationen.",
+      "start": "Jetzt starten",
+      "contact": "Vertrieb kontaktieren"
+    },
+    "trial_experience": {
+      "title": "🌍 Globale Zahlungen, sofort testen",
+      "subtitle": "Testen Sie jetzt alle FilixPay-Funktionen kostenlos",
+      "features": [
+        "Keine Unternehmensunterlagen erforderlich",
+        "Keine technische Integration erforderlich",
+        "Mit E-Mail registrieren, in 30 Sekunden im echten Händler-Dashboard"
+      ],
+      "cta": "FilixPay kostenlos testen"
+    },
+    "features": {
+      "title": "All-in-One gebündelte Zahlungen – nahtlose Integration globaler Hauptkanäle",
+      "subtitle": "Über das Händlercenter von FilixPay können Sie bequem verschiedene Zahlungskanäle konfigurieren, darunter Alipay, WeChat Pay, PayPal, Stripe, NowPayments und mehr. Ob lokal oder international – mit einer Integration verwalten Sie alle Zahlungsmethoden zentral.",
+      "items": {
+        "unified": {
+          "title": "Standardisierte Kassenschnittstelle",
+          "desc": "Eine standardisierte Zahlungsoberfläche für ein flüssiges, konsistentes Kundenerlebnis ohne Weiterleitungen."
+        },
+        "sdk": {
+          "title": "Einbettbares SDK",
+          "desc": "Einfache Integration in Ihre eigene Website zur Steigerung der Markenvertrauens und der Conversion-Rate."
+        },
+        "extension": {
+          "title": "Offene Erweiterbarkeit",
+          "desc": "Wenn Sie andere Zahlungskanäle nutzen, die FilixPay noch nicht unterstützt, kontaktieren Sie uns. Wir integrieren diese innerhalb einer Woche."
+        },
+        "mobile": {
+          "title": "Mobile First-Erlebnis",
+          "desc": "Vollständig responsives Design für Mobilgeräte, mit dem Sie auch unterwegs Zahlungen initiieren, Rechnungen einsehen und Ihr Geschäft über das Smartphone verwalten können."
+        }
+      }
+    },
+    "pricing": {
+      "title": "Flexible Service-Pläne für jede Wachstumsphase",
+      "subtitle": "Wir bieten verschiedene Zahlungsoptionen, damit Sie je nach Geschäftsrhythmus frei wählen können",
+      "choose": "Jetzt kaufen",
+      "plans": {
+        "weekly": {
+          "name": "Wochenplan",
+          "price": "50 USD/Woche",
+          "desc": "Kernfunktionen einfach testen"
+        },
+        "monthly": {
+          "name": "Monatsplan",
+          "price": "200 USD/Monat",
+          "desc": "Stabile Unterstützung für den täglichen Betrieb"
+        },
+        "half_year": {
+          "name": "Halbjahresplan",
+          "price": "1100 USD/6 Monate",
+          "desc": "Preiswerte Option"
+        },
+        "yearly": {
+          "name": "Jahresplan",
+          "price": "2000 USD/Jahr",
+          "desc": "Sorglos und kostensparend"
+        }
+      }
+    },
+    "deployment": {
+      "title": "🖥️ Eigenständige Bereitstellungsversion: Volle Stack-Kontrolle · Finanzinstituts-Zuverlässigkeit · Datenautonomie",
+      "subtitle": "Geeignet für Banken, Zahlungsdienstleister, Großkonzerne und international tätige Unternehmen mit strengen Datensicherheitsanforderungen",
+      "intro": "Wenn Sie volle Systemkontrolle benötigen, Transaktionsdaten im internen Netzwerk behalten müssen und Compliance- sowie Audit-Anforderungen erfüllen müssen, bietet FilixPay eine eigenständige Unternehmenslösung – ohne Abhängigkeit von der Public Cloud, einmalige Bereitstellung, dauerhafter Betrieb.",
+      "benefits_title": "✅ Warum FilixPay Eigenständige Bereitstellung wählen?",
+      "features": [
+        {
+          "title": "Echte Datenhoheit",
+          "desc": "Alle Händlerdaten, Transaktionsaufzeichnungen, API-Schlüssel werden zu 100 % auf Ihrem eigenen Server gespeichert, ohne externe Abhängigkeiten. Erfüllt GDPR, PCI-DSS und Sicherheitsstufe-3-Anforderungen."
+        },
+        {
+          "title": "Einsatzbereite Unternehmensarchitektur",
+          "desc": "Docker-containerisiert, vorintegriert mit: Multi-Tenant-Engine (unterstützt Splitting), einheitlicher Authentifizierung (OIDC/SAML), All-in-One-Entwicklerzentrum, verschlüsselten Zahlungsadaptern und Hochlast-Mechanismen."
+        },
+        {
+          "title": "Einfachste Bereitstellung, geringer Ressourcenbedarf",
+          "desc": "Benötigt nur 1 Server mit 4 Kernen, 8 GB RAM (Linux). Führen Sie docker-compose up aus, um eine vollständige Produktionsumgebung zu starten – Bereitstellung in 30 Minuten abgeschlossen."
+        },
+        {
+          "title": "Cluster-ready, elastisch skalierbar",
+          "desc": "Architektur unterstützt von Haus aus horizontale Skalierung. Zukunftssicher für nahtlose Migration zu Kubernetes, um Traffic-Wachstum problemlos zu bewältigen."
+        }
+      ],
+      "price": "Einmalige Gebühr: 28.000 USD",
+      "maintenance": "Inklusive einjähriger kostenloser technischer Wartung; ab dem zweiten Jahr nur 10 % Jahresgebühr für kontinuierliche Wartung, um langfristige Systemstabilität und Updates zu gewährleisten."
+    },
+    "investment": {
+      "title": "Wir suchen Investoren – gemeinsam gestalten wir die neue globale Zahlungslandschaft",
+      "subtitle": "Als schnell wachsendes Fintech-Startup zeigt FilixPay mit seiner innovativen Vier-Parteien-Architektur und flexiblen Bereitstellung großes Potenzial im grenzüberschreitenden Zahlungsverkehr. Wir öffnen jetzt Möglichkeiten für strategische Investitionen und Beteiligungen.",
+      "contact_btn": "Kontaktieren Sie uns (E-Mail: {email})"
+    },
+    "footer": {
+      "slogan": "Zahlungen einfacher machen, Ihr Geschäft globaler",
+      "rights": "© 2026 Filix.com. Alle Rechte vorbehalten."
+    },
+    "onboarding": {
+      "title": "Händler-Onboarding",
+      "subtitle": "Beantragen Sie ein Händlerkonto, um Zahlungen zu akzeptieren. Der Händlername muss genau mit dem Namen in den offiziellen Dokumenten übereinstimmen.",
+      "form": {
+        "mobile": "Mobiltelefonnummer",
+        "email": "E-Mail-Adresse",
+        "name": "Offizieller Händlername",
+        "officialId": "Amtliche Dokumentennummer",
+        "submit": "Jetzt beantragen",
+        "success": "Antrag erfolgreich eingereicht!",
+        "error": "Antrag konnte nicht eingereicht werden. Bitte versuchen Sie es erneut.",
+        "login_required": "Bitte melden Sie sich an, um einen Antrag zu stellen."
+      }
+    },
+    "core_capabilities": {
+      "title": "Kernkompetenz-Highlights",
+      "items": {
+        "multi_tenant": {
+          "title": "Unternehmensweite Multi-Tenant-Architektur",
+          "desc": "Unterstützt Institutionen, ISVs und Großkonzerne mit vollständiger Datenisolierung zwischen Haupt- und Subhändlern. Bietet Splitting, unabhängige Abrechnung und unabhängigen Betrieb."
+        },
+        "flexible_mode": {
+          "title": "Flexibel kompatibel mit Drei- & Vier-Parteien-Modellen",
+          "desc": "Kann als gebündeltes Zahlungsgateway (Vier-Parteien) globale Hauptkanäle anbinden; oder als einheitliche Zahlungsabwicklungsschnittstelle (Drei-Parteien) Konzernen helfen, zentrale Zahlungsannahme, Splitting-Management und Mittelkonsolidierung zu vereinheitlichen."
+        },
+        "iam": {
+          "title": "Unternehmensweite einheitliche Identitätsauthentifizierung",
+          "desc": "Nativ unterstützte OIDC/SAML-Protokolle, nahtlose Integration in bestehende IAM-Systeme der Kunden. Bietet Single Sign-On (SSO) und feingranulare RBAC-Berechtigungskontrolle für Finanzinstituts-Compliance-Anforderungen."
+        },
+        "developer": {
+          "title": "All-in-One-Entwicklerzentrum",
+          "desc": "Bietet interaktive API-Dokumentation, Sandbox-Umgebung, Schlüsselverwaltung, Webhook-Debugging und Wiederholungstools für fehlgeschlagene Zustellungen. Schnelle Integration in 30 Minuten, deutliche Senkung der technischen Integrationskosten."
+        },
+        "concurrency": {
+          "title": "Hochlast-Sicherung für Kernprozesse",
+          "desc": "Für kritische Szenarien wie Buchungen auf viel genutzten Konten (Hot Accounts) werden asynchrone Warteschlangen zur Lastspitzenreduzierung + sequentielle Schreibmechanismen eingesetzt, um Datenkonsistenz und Systemstabilität auch bei hohem Verkehr sicherzustellen."
+        },
+        "cloud_native": {
+          "title": "Cloud-native elastische Skalierung",
+          "desc": "Microservices-Architektur basierend auf Kubernetes, unterstützt sekundenschnelle horizontale Skalierung. Bewältigt problemlos Traffic-Spitzen bei Großveranstaltungen (z.B. 11.11, Black Friday) und erfüllt Hochverfügbarkeits-SLAs für mittlere und große Kunden."
+        }
+      }
+    },
+    "ecommerce_solution": {
+      "title": "Spezielle Lösung für grenzüberschreitenden E-Commerce: Aktivieren und empfangen, weltweit sorgenfrei",
+      "subtitle": "Unterstützt Fiat- und Kryptowährungs-Kanäle parallel – Heute konfigurieren, morgen Zahlungen empfangen!",
+      "fiat": {
+        "title": "Fiat-Zahlungen empfangen",
+        "desc": "Nachdem der Händler Konten bei Hauptkanälen wie Stripe, PayPal, Alipay+ eröffnet hat, bindet er API-Zugangsdaten im FilixPay-Backend an, um sofort Zahlungsmethoden wie Kreditkarten, lokale Geldbörsen usw. zu aktivieren."
+      },
+      "crypto": {
+        "title": "Kryptowährungs-Zahlungen empfangen",
+        "desc": "Der Händler registriert sich und schließt KYC bei kooperierenden Krypto-Zahlungsdienstleistern wie NowPayments, Coinbase Commerce, OKX Pay ab, um eine eigene Empfangsadresse oder API-Key zu erhalten; konfiguriert mit einem Klick in FilixPay, um Zahlungen in 100+ Haupt-Digital-Assets wie BTC, ETH, USDT, USDC zu akzeptieren."
+      },
+      "tagline": "Keine Entwicklung erforderlich, keine Coin-Haltung, keine eigene Wallet-Infrastruktur – Alle Gelder gehen direkt auf Ihr Konto bei der entsprechenden Zahlungsinstitution. FilixPay ist nur für einheitliche Darstellung, Routing und Benachrichtigungen zuständig.",
+      "processing": {
+        "title": "Das System verarbeitet automatisch für Sie:",
+        "items": [
+          "Abrechnung mehrerer Fiat-Währungen (USD/EUR/GBP/CNY usw.)",
+          "Echtzeit-Callbacks für Krypto-Zahlungen und Status-Synchronisation",
+          "Einheitliche Transaktionsübersicht, Webhook-Benachrichtigungen, automatische Abrechnung",
+          "Unterstützung für automatischen Umtausch von Krypto-Einnahmen in Stablecoins oder Fiat (von Zahlungsinstitution durchgeführt)"
+        ]
+      },
+      "advantages": {
+        "title": "Warum die Krypto-Zahlungslösung von FilixPay wählen?",
+        "headers": {
+          "advantage": "Vorteil",
+          "description": "Beschreibung"
+        },
+        "items": [
+          {
+            "label": "Compliant & sicher",
+            "value": "Gelder werden von lizenzierten Dienstleistern wie NowPayments verwahrt, erfüllen FATF Travel Rule"
+          },
+          {
+            "label": "Blitzschnelle Aktivierung",
+            "value": "Keine technische Blockchain-Node-Integration erforderlich, Konfiguration in 10 Minuten abgeschlossen"
+          },
+          {
+            "label": "Rückbuchungsrisiko vermeiden",
+            "value": "Krypto-Transaktionen sind irreversibel, eliminieren Chargeback-Risiken vollständig"
+          },
+          {
+            "label": "Breite Abdeckung",
+            "value": "Unterstützt globale Haupt-Krypto-Zahlungsgateways, erreicht über 600 Millionen Web3-Nutzer"
+          },
+          {
+            "label": "Null Haltungsrisiko",
+            "value": "Sie können Einnahmen sofort in Fiat umtauschen lassen, um Kursschwankungen zu vermeiden"
+          }
+        ]
+      },
+      "customers": {
+        "title": "Geeignete Kunden",
+        "items": [
+          "Shopify / WooCommerce Shop-Betreiber",
+          "Web3-E-Commerce (NFTs, digitale Güter, GameFi)",
+          "Grenzüberschreitende DTC-Marken, SaaS, Abonnementdienste",
+          "Traditionelle Händler, die Krypto-Zahlungen kostengünstig testen möchten"
+        ]
+      },
+      "footer_tagline": "FilixPay – Wir erfinden das Rad nicht neu, wir verbinden.",
+      "footer_sub": "Damit Sie auf die einfachste und complianteste Weise jede Währung der Welt empfangen können."
+    }
+  },
+  "Orders": {
+    "title": "Bestellverwaltung",
+    "subtitle": "Alle Ihre Transaktionen einsehen und durchsuchen.",
+    "search_placeholder": "Nach Händler-Bestellnummer oder Produkt suchen…",
+    "filter": "Filter",
+    "create_order": "Bestellung erstellen",
+    "create_modal": {
+      "title": "Manuell Zahlungsbestellung erstellen",
+      "merchant_order_id": "Händler-Bestellnummer",
+      "subject": "Bestellüberschrift",
+      "return_url": "Rückkehr-URL (optional)",
+      "buyer_id": "Käufer-ID (optional)",
+      "currency": "Währung",
+      "amount": "Gesamtbetrag",
+      "expiry": "Ablaufzeit",
+      "items": "Produktdetails",
+      "add_item": "Produkt hinzufügen",
+      "product_id": "Produkt-ID",
+      "desc": "Beschreibung",
+      "qty": "Menge",
+      "price": "Stückpreis",
+      "submit": "Absenden und erstellen",
+      "cancel": "Abbrechen"
+    },
+    "headers": {
+      "order_id": "Bestellnummer",
+      "order_type": "Bestelltyp",
+      "buyer_code_trade_no": "Transakt.-Nr. / Kundennr.",
+      "sub_merchant_location": "Unterhändler / Standort",
+      "amount": "Betrag",
+      "status": "Status",
+      "created_at": "Erstellungszeit"
+    },
+    "empty": "Derzeit keine Bestelldaten vorhanden.",
+    "initiate_payment": "Zahlung einleiten",
+    "initiate_refund": "Erstattung einleiten",
+    "details": {
+      "title": "Bestelldetails",
+      "subject": "Produktname",
+      "order_type": "Bestelltyp",
+      "merchant_order_id": "Händler-Bestellnummer",
+      "trade_no": "Transaktionsnummer",
+      "amount": "Bestellbetrag",
+      "paid_amount": "Bezahlter Betrag",
+      "refunded_amount": "Erstatteter Betrag",
+      "refundable_amount": "Erstattbarer Betrag",
+      "status": "Transaktionsstatus",
+      "payment_expiry": "Zahlungsablauf",
+      "channel": "Zahlungskanal",
+      "created_at": "Erstellungszeit",
+      "seller_info": "Verkäuferinformationen",
+      "buyer_info": "Käuferinformationen",
+      "name": "Name",
+      "merchant_id": "Händler-ID",
+      "buyer_code": "Kundennummer",
+      "close": "Schließen",
+      "grand_total": "Gesamtsumme"
+    },
+    "orderTypes": {
+      "TRADE": "Handelsauftrag",
+      "DEPOSIT": "Einzahlung",
+      "TRANSFER": "Überweisung",
+      "PAYOUT": "Auszahlung",
+      "WITHDRAWAL": "Abhebung",
+      "REFUND": "Erstattung",
+      "DIRECT_DEBIT": "Lastschrift",
+      "PLATFORM_SERVICE_FEE": "Plattformgebühr"
+    },
+    "payment_modal": {
+      "title": "Sicheres Bezahlen - FilixPay.com",
+      "amount_to_pay": "Zu zahlender Betrag",
+      "expires_at": "Link gültig bis: {time}",
+      "go_to_pay": "Zum Kassensystem gehen",
+      "copy_link": "Link kopieren",
+      "share_link": "Link teilen",
+      "share_whatsapp": "WhatsApp",
+      "share_email": "Per E-Mail senden",
+      "copy_success": "Link kopiert"
+    }
+  },
+  "Developer": {
+    "title": "Entwicklerzentrum",
+    "api_credentials": "API-Zugangsdaten",
+    "api_credentials_desc": "Verwalten Sie Ihre API-Schlüssel für programmatischen Zugriff.",
+    "view_swagger": "Unsere Swagger API-Dokumentation ansehen.",
+    "generate_button": "API-Schlüssel generieren/zurücksetzen",
+    "webhook_endpoints": "Webhook-Endpunkte",
+    "webhook_endpoints_desc": "Konfigurieren Sie Webhook-Endpunkte, um Ereignisbenachrichtigungen zu empfangen.",
+    "view_docs": "Signaturverifizierungsanleitung ansehen.",
+    "add_webhook": "Webhook hinzufügen",
+    "webhook_deliveries": "Webhook-Zustellhistorie",
+    "webhook_deliveries_desc": "Sehen Sie sich den Verlauf der an Ihren Server gesendeten Webhook-Ereignisse an. Wenn Sie erwartete Ereignisse nicht sehen oder Zustellungen fehlschlagen, prüfen Sie die Verfügbarkeit Ihres Endpunkts.",
+    "delivery_headers": {
+      "url": "Webhook-URL",
+      "delivery_status": "Status",
+      "attempt": "Versuch",
+      "created_at": "Sendezeit",
+      "payload": "Nutzlast"
+    },
+    "payload_modal_title": "Webhook-Nutzlast",
+    "copy_payload": "Nutzlast kopieren",
+    "close": "Schließen",
+    "explorer": {
+      "tab": "API Explorer",
+      "title": "Sandbox API Explorer",
+      "subtitle": "Select an Application and operation, then execute via the server-side Explorer proxy. Credentials and tokens stay on the server.",
+      "application": "Application",
+      "application_placeholder": "Select application",
+      "no_applications": "No applications available",
+      "operation": "Operation",
+      "operation_placeholder": "Select operation",
+      "no_operations": "No published operations",
+      "path_params": "Path parameters",
+      "query_json": "Query parameters (JSON object)",
+      "header_json": "Headers (JSON object)",
+      "header_hint": "Only Artifact-declared headers. Do not send Authorization, Cookie, or merchant/org headers.",
+      "body_json": "Request body (JSON)",
+      "execute": "Execute",
+      "execute_failed": "Explorer execute failed",
+      "select_required": "Select an application and operation",
+      "response": "Response",
+      "status": "Status",
+      "latency": "Latency",
+      "trace_id": "Trace ID",
+      "headers": "Headers",
+      "body": "Body",
+      "retry": "Retry",
+      "load_apps_failed": "Failed to load applications",
+      "load_ops_failed": "Failed to load operations"
+    }
+  },
+  "Common": {
+    "loading": "Wird geladen…",
+    "error": "Ein Fehler ist aufgetreten",
+    "success": "Erfolg",
+    "confirm_delete": "Sind Sie sicher, dass Sie dieses Element löschen möchten?",
+    "cancel": "Abbrechen",
+    "submit": "Absenden",
+    "reset": "Zurücksetzen",
+    "previous": "Zurück",
+    "next": "Weiter",
+    "page_of": "Seite {current} von {total}",
+    "close": "Schließen",
+    "add": "Hinzufügen",
+    "delete": "Löschen",
+    "actions": "Aktionen"
+  },
+  "Refunds": {
+    "title": "Erstattungsverwaltung",
+    "subtitle": "Erstattungsaufträge einsehen und durchsuchen.",
+    "search_placeholder": "Erstattungs-ID oder Bestellnummer suchen…",
+    "filter": "Filter",
+    "headers": {
+      "refund_id": "Erstattungs-ID",
+      "order_id": "Bestellnummer",
+      "amount": "Betrag",
+      "status": "Status",
+      "created_at": "Eingereicht am"
+    },
+    "empty": "Keine Erstattungsdaten gefunden.",
+    "create_refund": "Erstattung erstellen",
+    "create_modal": {
+      "title": "Erstattungsauftrag erstellen",
+      "trade_no": "Transaktionsnummer",
+      "merchant_refund_id": "Händler-Erstattungs-ID",
+      "reason": "Erstattungsgrund",
+      "currency": "Währung",
+      "amount": "Erstattungsbetrag",
+      "default_reason": "Vom Händler initiierte Erstattung",
+      "submit": "Erstattung einreichen",
+      "cancel": "Abbrechen"
+    },
+    "details": {
+      "title": "Erstattungsdetails",
+      "view": "Details",
+      "refund_no": "Erstattungsnummer",
+      "merchant_refund_id": "Händler-Erstattungs-ID",
+      "amount": "Erstattungsbetrag",
+      "merchant_amount": "Tatsächliche Händlererstattung",
+      "status": "Erstattungsstatus",
+      "reason": "Erstattungsgrund",
+      "applicant": "Antragsteller",
+      "created_at": "Erstellt am",
+      "updated_at": "Letzte Aktualisierung",
+      "service_fee": "Erstattete Servicegebühr",
+      "order_info": "Originalbestellinformationen",
+      "order_id": "Händler-Bestellnummer",
+      "trade_no": "Transaktionsnummer",
+      "order_amount": "Bestellbetrag",
+      "order_status": "Bestellstatus",
+      "close": "Schließen"
+    },
+    "settings": {
+      "title": "Refund settings",
+      "subtitle": "Configure when refunds execute automatically versus requiring merchant approval.",
+      "settlement_currency": "Settlement currency",
+      "threshold": "Auto-execute threshold",
+      "threshold_help": "Refunds at or below this amount (in settlement currency) execute automatically. Larger amounts stay pending until approved.",
+      "threshold_required": "Enter a threshold",
+      "threshold_min": "Threshold cannot be negative",
+      "unlimited": "Skip amount-based approval",
+      "unlimited_help": "When enabled, amount alone never triggers approval. FX conversion failures can still require approval.",
+      "fx_help": "Cross-currency refunds are converted to settlement currency via FX before comparison. If no quote is available, the refund still creates but awaits approval.",
+      "using_platform_default": "Using platform default threshold: {threshold}",
+      "save": "Save settings",
+      "save_success": "Refund settings saved",
+      "save_failed": "Failed to save refund settings",
+      "load_failed": "Failed to load refund settings"
+    },
+    "approvals": {
+      "title": "Refund approvals",
+      "subtitle": "Review refunds that exceeded the auto-execute threshold and are waiting for approval.",
+      "empty": "No refunds awaiting approval.",
+      "approve": "Approve",
+      "reject": "Reject",
+      "approve_confirm": "Approve this refund?",
+      "approve_confirm_desc": "Approval will execute the refund through the payment channel.",
+      "reject_confirm": "Reject this refund?",
+      "reject_confirm_desc": "Rejection cancels the refund request. It will not hit the channel.",
+      "approve_success": "Refund approved and execution started",
+      "reject_success": "Refund rejected and cancelled",
+      "approve_failed": "Failed to approve refund",
+      "reject_failed": "Failed to reject refund",
+      "detail_failed": "Failed to load refund details"
+    }
+  },
+  "Customers": {
+    "title": "Kundenverwaltung",
+    "subtitle": "Kundeninformationen einsehen und verwalten.",
+    "search": "Suchen",
+    "headers": {
+      "name": "Name",
+      "code": "Kundennummer",
+      "email": "E-Mail",
+      "mobile": "Mobilnummer",
+      "phone": "Telefon",
+      "status": "Status",
+      "created_at": "Erstellt am"
+    },
+    "loading": "Kunden werden geladen…",
+    "empty": "Keine Kundendaten gefunden."
+  },
+  "Locations": {
+    "title": "Betriebsstandorte",
+    "subtitle": "Standortinformationen Ihres Unternehmens verwalten.",
+    "create_location": "Standort hinzufügen",
+    "headers": {
+      "name": "Name",
+      "address": "Adresse",
+      "contact": "Kontakt",
+      "status": "Status",
+      "default": "Standard",
+      "created_at": "Erstellt am"
+    },
+    "form": {
+      "name": "Standortname",
+      "sub_merchant": "Unterhändler",
+      "address": "Adresse",
+      "country": "Land",
+      "mobile_phone": "Mobiltelefon",
+      "email": "Kontakt-E-Mail",
+      "service_phone": "Service-Telefon",
+      "submit": "Absenden",
+      "cancel": "Abbrechen",
+      "success": "Standort erfolgreich erstellt"
+    },
+    "empty": "Keine Standortdaten gefunden."
+  },
+  "BankAccounts": {
+    "title": "Empfangskonten",
+    "subtitle": "Bankkontoinformationen für den Zahlungsempfang verwalten.",
+    "create_account": "Konto erstellen",
+    "headers": {
+      "bank_name": "Bankname",
+      "branch_name": "Filialname",
+      "account_holder": "Kontoinhaber",
+      "account_number": "Kontonummer",
+      "city": "Stadt",
+      "status": "Status",
+      "primary": "Primär",
+      "created_at": "Erstellt am"
+    },
+    "form": {
+      "create_title": "Empfangskonto erstellen",
+      "bank_name": "Bankname",
+      "branch_name": "Filialname",
+      "account_holder": "Kontoinhaber",
+      "account_number": "Kontonummer",
+      "city": "Stadt",
+      "primary": "Als Hauptkonto festlegen",
+      "cancel": "Abbrechen",
+      "submit": "Absenden",
+      "success": "Erfolgreich erstellt"
+    },
+    "empty": "Keine Empfangskonten gefunden."
+  },
+  "Transfers": {
+    "title": "Überweisungsprüfung",
+    "subtitle": "Überweisungs- und Abrechnungsanträge verwalten und prüfen.",
+    "headers": {
+      "merchant_order_id": "Händler-Bestellnummer",
+      "subject": "Betreff",
+      "transaction_id": "Bank-Transaktionsreferenz",
+      "payer": "Zahler",
+      "payee": "Empfänger",
+      "amount": "Betrag",
+      "audit_operator": "Prüfer",
+      "created_at": "Erstellt am",
+      "actions": "Aktionen"
+    },
+    "tabs": {
+      "waiting": "Ausstehende Prüfung",
+      "passed": "Genehmigt",
+      "rejected": "Abgelehnt"
+    },
+    "audit_btn": "Prüfen",
+    "view_btn": "Details",
+    "empty": "Keine Prüfungsdatensätze gefunden.",
+    "audit": {
+      "title": "Überweisungsprüfung",
+      "title_view": "Überweisungsdetails",
+      "zoom_in": "Vergrößern",
+      "transfer_info": "Überweisungsinformationen",
+      "audit_info": "Prüfungsinformationen",
+      "amount": "Betrag",
+      "payee": "Empfänger",
+      "payee_bank": "Empfängerbank",
+      "payee_account": "Empfängerkonto",
+      "status": "Status",
+      "audit_status": "Prüfungsstatus",
+      "audit_operator": "Prüfer",
+      "proof_image": "Überweisungsbeleg",
+      "audit_form": "Prüfungsinformationen",
+      "transaction_id": "Bank-Transaktions-ID",
+      "transaction_id_placeholder": "Transaktions-ID aus dem Kontoauszug eingeben",
+      "payer_name": "Name des Zahlerkontos",
+      "payer_account": "Zahlerkonto-Nummer",
+      "payer_bank": "Zahlerbank",
+      "audit_decision": "Prüfungsentscheidung",
+      "pass": "Genehmigen",
+      "reject": "Ablehnen",
+      "reject_reason": "Ablehnungsgrund",
+      "reject_reason_placeholder": "Bitte geben Sie den Ablehnungsgrund an",
+      "reject_reason_required": "Ablehnungsgrund erforderlich",
+      "not_found": "Überweisungsdetails nicht gefunden"
+    }
+  },
+  "Reviews": {
+    "title": "Überweisungsbestätigung",
+    "subtitle": "Überweisungsaufträge bestätigen, die die Prüfung bestanden haben.",
+    "headers": {
+      "merchant_order_id": "Händler-Bestellnummer",
+      "subject": "Betreff",
+      "transaction_id": "Bank-Transaktionsreferenz",
+      "payer": "Zahler",
+      "payee": "Empfänger",
+      "amount": "Betrag",
+      "audit_operator": "Prüfer",
+      "review_operator": "Bestätiger",
+      "created_at": "Erstellt am",
+      "actions": "Aktionen"
+    },
+    "tabs": {
+      "pending": "Ausstehend",
+      "active": "Bestätigt",
+      "rejected": "Abgelehnt"
+    },
+    "confirm_btn": "Bestätigen",
+    "view_btn": "Details",
+    "empty": "Keine Datensätze zur Bestätigung gefunden.",
+    "confirm_success": "Erfolgreich bestätigt",
+    "confirm_confirm": "Möchten Sie diese Überweisung wirklich bestätigen?",
+    "confirm_deposit": "Eingang bestätigen",
+    "audit_operator": "Prüfer",
+    "review_operator": "Bestätiger",
+    "review_status": "Bestätigungsstatus",
+    "review_decision": "Bestätigungsentscheidung",
+    "review_form": "Bestätigungsaktion"
+  },
+  "SubMerchants": {
+    "title": "Unterhändlerverwaltung",
+    "subtitle": "Unterhändlerinformationen einsehen und verwalten.",
+    "create_sub_merchant": "Unterhändler hinzufügen",
+    "form": {
+      "name": "Händlername",
+      "alias": "Abrechnungsalias",
+      "success": "Unterhändler erfolgreich erstellt"
+    },
+    "headers": {
+      "name": "Händlername",
+      "alias": "Alias",
+      "code": "Händlercode",
+      "merchant_id": "Händler-ID",
+      "status": "Status",
+      "created_at": "Erstellt am"
+    },
+    "empty": "Keine Unterhändlerdaten gefunden."
+  },
+  "Organization": {
+    "title": "Organization",
+    "no_active_org": "Select an organization from the sidebar first.",
+    "tabs": {
+      "members": "Members",
+      "roles": "Roles",
+      "business_accounts": "Business Accounts"
+    },
+    "scope_denied": "You no longer have access to the selected business account. Switched to an available account.",
+    "actions": {
+      "refresh": "Refresh",
+      "cancel": "Cancel"
+    },
+    "roles": {
+      "create": "Create Role",
+      "edit": "Edit",
+      "view": "View",
+      "delete": "Delete",
+      "save": "Save",
+      "create_title": "Create Custom Role",
+      "edit_title": "Edit Role",
+      "delete_confirm": "Delete this custom role?",
+      "delete_success": "Role deleted",
+      "delete_failed": "Failed to delete role",
+      "create_success": "Role created",
+      "edit_success": "Role updated",
+      "save_failed": "Failed to save role",
+      "load_failed": "Failed to load roles",
+      "no_permission": "Your role cannot manage organization roles.",
+      "no_permissions": "No permissions",
+      "permissions_summary": "{count} permissions",
+      "role_in_use": "This role is assigned to members and cannot be deleted.",
+      "code_required": "Role code is required",
+      "display_name_required": "Display name is required",
+      "permissions_required": "Select at least one permission",
+      "description": "Description",
+      "columns": {
+        "code": "Code",
+        "display_name": "Display Name",
+        "kind": "Kind",
+        "permissions": "Permissions",
+        "actions": "Actions"
+      },
+      "kind": {
+        "SYSTEM": "System",
+        "CUSTOM": "Custom"
+      },
+      "permissions": {
+        "MERCHANT_VIEW": "View merchants",
+        "MERCHANT_EDIT": "Edit merchants",
+        "MERCHANT_CREATE": "Create merchants",
+        "USER_VIEW": "View members",
+        "USER_INVITE": "Invite members",
+        "USER_REMOVE": "Remove members",
+        "PAYMENT_VIEW": "View payments",
+        "APIKEY_VIEW": "View API keys",
+        "APIKEY_CREATE": "Create API keys",
+        "WEBHOOK_MANAGE": "Manage webhooks",
+        "ROLE_MANAGE": "Manage roles"
+      },
+      "scope": {
+        "label": "Merchant scope",
+        "empty_means_all": "Leave empty to allow access to all merchants in the organization.",
+        "placeholder": "Select merchants (optional)",
+        "system_readonly": "System roles have full organization access. Merchant scope cannot be changed.",
+        "orphan_warning": "{count} merchant(s) in this role's scope are no longer visible to you."
+      }
+    },
+    "members": {
+      "invite": "Invite Member",
+      "invite_title": "Invite to Organization",
+      "send_invite": "Send Invitation",
+      "invite_success": "Invitation sent",
+      "invite_failed": "Failed to send invitation",
+      "remove": "Remove",
+      "remove_confirm": "Remove this member?",
+      "remove_success": "Member removed",
+      "remove_failed": "Failed to remove member",
+      "load_failed": "Failed to load members",
+      "no_permission": "Your role cannot view the member list.",
+      "email": "Email",
+      "email_required": "Email is required",
+      "email_invalid": "Invalid email address",
+      "role": "Role",
+      "role_required": "Select a role",
+      "role_placeholder": "Choose a role",
+      "change_role": "Change Role",
+      "change_role_title": "Change Member Role",
+      "change_role_submit": "Update Role",
+      "change_role_success": "Member role updated",
+      "change_role_failed": "Failed to update member role",
+      "columns": {
+        "email": "Email",
+        "roles": "Roles",
+        "status": "Status",
+        "joined_at": "Joined",
+        "actions": "Actions"
+      }
+    },
+    "accounts": {
+      "hint": "Create multiple business accounts under one organization (e.g. 3-party / 4-party). Switch accounts from the sidebar after creation.",
+      "create": "New Business Account",
+      "create_title": "New Business Account",
+      "submit_create": "Create",
+      "create_success": "Business account created",
+      "create_failed": "Failed to create business account",
+      "name": "Account name",
+      "name_required": "Account name is required",
+      "settlement_mode": "Settlement mode",
+      "mode": {
+        "platform": "Platform settlement",
+        "direct": "Direct settlement"
+      },
+      "columns": {
+        "name": "Name",
+        "code": "Account code",
+        "mode": "Mode",
+        "status": "Status"
+      }
+    },
+    "invitation_accept": {
+      "title": "Accept Invitation",
+      "processing": "Processing invitation…",
+      "missing_token": "Invalid invitation link or missing token.",
+      "success": "You have joined the organization",
+      "success_title": "Welcome",
+      "success_description": "Invitation accepted. Refresh or sign in again to load your updated organization access.",
+      "failed": "Failed to accept invitation",
+      "retry": "Retry",
+      "go_dashboard": "Go to Dashboard",
+      "go_organization": "View Organization"
+    }
+  }
+}

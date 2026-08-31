@@ -1,0 +1,140 @@
+.panel {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.panelHeader {
+    padding: 12px 16px;
+    border-bottom: 1px solid #eef2f6;
+    background: #f8fafc;
+}
+
+.panelTitle {
+    margin: 0 !important;
+    font-size: 14px !important;
+}
+
+.panelExtra {
+    font-size: 12px;
+}
+
+.panelBody {
+    padding: 16px;
+}
+
+.filterBar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding: 10px 12px;
+    border: 1px solid #eef2f6;
+    border-radius: 8px;
+    background: #fafbfc;
+}
+
+.filterSegmented :global(.ant-segmented-item-label) {
+    min-height: 28px;
+    line-height: 28px;
+    padding-inline: 10px;
+    font-size: 12px;
+}
+
+.filterCheckbox {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.timeline :global(.ant-timeline-item-label) {
+    width: 148px !important;
+    min-width: 148px;
+    padding-inline-end: 12px !important;
+    text-align: right;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #64748b;
+    white-space: nowrap;
+}
+
+.timeline :global(.ant-timeline-item-content) {
+    min-width: 0;
+    inset-block-start: -4px !important;
+}
+
+.eventBlock {
+    padding-bottom: 4px;
+}
+
+.eventHeader {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.eventTitle {
+    font-size: 14px;
+}
+
+.categoryTag {
+    margin-inline-end: 0;
+    font-size: 11px;
+    line-height: 18px;
+    padding-inline: 6px;
+}
+
+.metaList {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.metaRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #64748b;
+}
+
+.metaLabel {
+    color: #94a3b8;
+    flex-shrink: 0;
+}
+
+.metaValue {
+    color: #475569;
+    word-break: break-all;
+}
+
+.metaLink {
+    color: #2563eb;
+}
+
+.detailsToggle {
+    font-size: 12px;
+    margin-top: 6px;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .timeline :global(.ant-timeline-item-label) {
+        width: 112px !important;
+        min-width: 112px;
+        font-size: 11px;
+    }
+
+    .filterBar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

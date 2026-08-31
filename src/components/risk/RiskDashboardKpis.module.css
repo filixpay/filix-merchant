@@ -1,0 +1,211 @@
+.card {
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 12px;
+  box-shadow: var(--dashboard-shadow-sm);
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 24px;
+  border-bottom: 1px solid #f1f5f9;
+  background: rgba(248, 250, 252, 0.7);
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.headerIcon {
+  color: #64748b;
+}
+
+.headerLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.headerLink:hover {
+  color: #1d4ed8;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 992px) {
+  .body {
+    grid-template-columns: 5fr 7fr;
+  }
+}
+
+.actions {
+  padding: 24px;
+  background: rgba(248, 250, 252, 0.45);
+  border-bottom: 1px solid #f1f5f9;
+}
+
+@media (min-width: 992px) {
+  .actions {
+    border-bottom: 0;
+    border-right: 1px solid #f1f5f9;
+  }
+}
+
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.sectionDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f59e0b;
+}
+
+.actionGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.actionCard {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  background: #ffffff;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.actionCardWarn {
+  background: rgba(255, 251, 235, 0.7);
+  border-color: rgba(253, 230, 138, 0.9);
+}
+
+.actionCardDanger {
+  background: rgba(255, 241, 242, 0.7);
+  border-color: rgba(254, 205, 211, 0.9);
+}
+
+.actionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.actionTitle {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.actionTitleActiveWarn {
+  font-weight: 500;
+  color: #b45309;
+}
+
+.actionTitleActiveDanger {
+  font-weight: 500;
+  color: #be123c;
+}
+
+.pulseWarn {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f59e0b;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.pulseDanger {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f43f5e;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.actionValue {
+  display: block;
+  margin-top: 4px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+}
+
+.actionValueWarn {
+  color: #78350f;
+}
+
+.actionValueDanger {
+  color: #881337;
+}
+
+.metrics {
+  padding: 24px;
+}
+
+.metricGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 24px;
+}
+
+@media (min-width: 576px) {
+  .metricGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.metricLabel {
+  display: block;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.metricValue {
+  display: block;
+  margin-top: 2px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #334155;
+  letter-spacing: -0.02em;
+}
+
+.metricValuePositive {
+  color: #059669;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}

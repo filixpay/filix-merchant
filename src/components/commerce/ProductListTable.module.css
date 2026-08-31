@@ -1,0 +1,127 @@
+.tableWrap {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tableWrap :global(.ant-table) {
+  background: transparent;
+}
+
+.tableWrap :global(.ant-table-measure-row),
+.tableWrap :global(.ant-table-measure-row > td) {
+  height: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  overflow: hidden !important;
+}
+
+.tableWrap :global(.ant-table-thead > tr > th) {
+  padding: 12px 16px !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  color: #6b7280 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: #f9fafb !important;
+  border-bottom: 1px solid #e5e7eb !important;
+}
+
+.tableWrap :global(.ant-table-tbody > tr:not(.ant-table-measure-row) > td) {
+  padding: 12px 16px !important;
+  font-size: 13px;
+  color: #374151;
+  border-bottom: 1px solid #f1f5f9 !important;
+  vertical-align: middle;
+}
+
+.thumbnail {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #e5e7eb;
+  background: #f8fafc;
+}
+
+.thumbnailPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px dashed #d1d5db;
+  background: #f8fafc;
+  color: #9ca3af;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.priceCell {
+  display: block;
+  text-align: right;
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  font-variant-numeric: tabular-nums;
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+  white-space: nowrap;
+}
+
+.stockCell {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.stockValue {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: #111827;
+}
+
+.stockOut {
+  color: #dc2626;
+}
+
+.stockLow {
+  color: #d97706;
+}
+
+.stockTagOut {
+  margin: 0;
+  font-size: 11px;
+  line-height: 18px;
+}
+
+.stockTagLow {
+  margin: 0;
+  font-size: 11px;
+  line-height: 18px;
+}
+
+.detailLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.detailLink:hover {
+  color: #1d4ed8;
+}
+
+.moreButton {
+  padding: 0 4px;
+}

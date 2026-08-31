@@ -1,0 +1,1610 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "FilixPay Mercahnt API",
+        "version": "1.0.0",
+        "description": "FilixPay Mercahnt API"
+    },
+    "servers": [
+        {
+            "url": "/merchant/service",
+            "description": "Merchant Platform"
+        }
+    ],
+    "tags": [
+        {
+            "name": "????",
+            "description": "????API"
+        },
+        {
+            "name": "????????,
+            "description": "?????????API"
+        }
+    ],
+    "paths": {
+        "/portal/banks": {
+            "get": {
+                "tags": [
+                    "??????"
+                ],
+                "summary": "????",
+                "description": "???????????????????ClientBankView.List??????,
+                "operationId": "listBanks",
+                "parameters": [
+                    {
+                        "name": "bankCode",
+                        "in": "query",
+                        "description": "??????????",
+                        "schema": {
+                            "type": "string",
+                            "maxLength": 32
+                        }
+                    },
+                    {
+                        "name": "bankName",
+                        "in": "query",
+                        "description": "??????????",
+                        "schema": {
+                            "type": "string",
+                            "maxLength": 100
+                        }
+                    },
+                    {
+                        "name": "financialInstitutionType",
+                        "in": "query",
+                        "description": "??????",
+                        "schema": {
+                            "$ref": "#/components/schemas/FinancialInstitutionType"
+                        }
+                    },
+                    {
+                        "name": "pageNumber",
+                        "in": "query",
+                        "description": "????0???",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32",
+                            "default": 0,
+                            "minimum": 0
+                        }
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "??????-1000??,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32",
+                            "default": 100,
+                            "minimum": 1,
+                            "maximum": 1000
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "?????????????ClientBankView.List????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_PagedResponse_ClientBankView_List"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "??????",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/portal/channels": {
+            "get": {
+                "tags": [
+                    "??????"
+                ],
+                "summary": "????",
+                "description": "???????????????PaymentChannelView.List??????,
+                "operationId": "listPaymentChannels",
+                "parameters": [
+                    {
+                        "name": "channelCode",
+                        "in": "query",
+                        "description": "??????????",
+                        "schema": {
+                            "type": "string",
+                            "maxLength": 32
+                        }
+                    },
+                    {
+                        "name": "active",
+                        "in": "query",
+                        "description": "?????true: ???? false: ????",
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "pageNumber",
+                        "in": "query",
+                        "description": "????0???",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32",
+                            "default": 0,
+                            "minimum": 0
+                        }
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "??????-1000??,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32",
+                            "default": 10,
+                            "minimum": 1,
+                            "maximum": 1000
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "?????????????PaymentChannelView.List????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_PagedResponse_PaymentChannelView_List"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "??????",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/portal/capabilities": {
+            "get": {
+                "tags": [
+                    "??????"
+                ],
+                "summary": "????",
+                "description": "???????????????PaymentChannelView.List??????,
+                "operationId": "listPaymentGateways",
+                "parameters": [
+                    {
+                        "name": "bankCode",
+                        "in": "query",
+                        "description": "??????????",
+                        "schema": {
+                            "type": "string",
+                            "maxLength": 32
+                        }
+                    },
+                    {
+                        "name": "capabilityCode",
+                        "in": "query",
+                        "description": "????????????",
+                        "schema": {
+                            "type": "string",
+                            "maxLength": 32
+                        }
+                    },
+                    {
+                        "name": "pageNumber",
+                        "in": "query",
+                        "description": "????0???",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32",
+                            "default": 0,
+                            "minimum": 0
+                        }
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "??????-1000??,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32",
+                            "default": 10,
+                            "minimum": 1,
+                            "maximum": 1000
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "?????????????PaymentChannelView.List????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_PagedResponse_PaymentChannelView_List"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "??????",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/portal/{merchantId}/configs": {
+            "get": {
+                "tags": [
+                    "??????"
+                ],
+                "summary": "????",
+                "description": "??????????????????PaymentConfigView.List??????,
+                "operationId": "listConfigs",
+                "parameters": [
+                    {
+                        "name": "merchantId",
+                        "in": "path",
+                        "required": true,
+                        "description": "??ID",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64",
+                            "minimum": 1,
+                            "example": 1001
+                        }
+                    },
+                    {
+                        "name": "bankCode",
+                        "in": "query",
+                        "description": "??????????",
+                        "schema": {
+                            "type": "string",
+                            "maxLength": 32
+                        }
+                    },
+                    {
+                        "name": "capabilityCode",
+                        "in": "query",
+                        "description": "????????????",
+                        "schema": {
+                            "type": "string",
+                            "maxLength": 32
+                        }
+                    },
+                    {
+                        "name": "pageNumber",
+                        "in": "query",
+                        "description": "????0???",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32",
+                            "default": 0,
+                            "minimum": 0
+                        }
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "??????-1000??,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32",
+                            "default": 10,
+                            "minimum": 1,
+                            "maximum": 1000
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "?????????????PaymentConfigView.List????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_PagedResponse_PaymentConfigView_List"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "??????",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "??????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "??????"
+                ],
+                "summary": "????",
+                "description": "??????????????,
+                "operationId": "createConfig",
+                "parameters": [
+                    {
+                        "name": "merchantId",
+                        "in": "path",
+                        "required": true,
+                        "description": "??ID",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64",
+                            "minimum": 1,
+                            "example": 1001
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "description": "????????",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PaymentConfigCreateRequest"
+                            },
+                            "examples": {
+                                "wechatConfig": {
+                                    "summary": "??????",
+                                    "value": {
+                                        "bankCode": "WECHAT",
+                                        "channelCode": "WECHAT_APP",
+                                        "capabilityCode": "WECHAT_PAY"
+                                    }
+                                },
+                                "alipayConfig": {
+                                    "summary": "??????,
+                                    "value": {
+                                        "bankCode": "ALIPAY",
+                                        "channelCode": "ALIPAY_H5",
+                                        "capabilityCode": "ALIPAY"
+                                    }
+                                },
+                                "nowpaymentsConfig": {
+                                    "summary": "NowPayments ????????",
+                                    "value": {
+                                        "bankCode": "NOWPAYMENTS",
+                                        "channelCode": "NOWPAYMENTS_WEB",
+                                        "capabilityCode": "CRYPTO"
+                                    }
+                                },
+                                "stripeConfig": {
+                                    "summary": "Stripe ????",
+                                    "value": {
+                                        "bankCode": "STRIPE",
+                                        "channelCode": "STRIPE_CHECKOUT",
+                                        "capabilityCode": "INTERNATIONAL"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "????????",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_PaymentConfigView"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "????????????",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "????????????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/portal/{merchantId}/configs/{configId}": {
+            "get": {
+                "tags": [
+                    "??????"
+                ],
+                "summary": "????",
+                "description": "????ID??????????",
+                "operationId": "getConfig",
+                "parameters": [
+                    {
+                        "name": "merchantId",
+                        "in": "path",
+                        "required": true,
+                        "description": "??ID",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64",
+                            "minimum": 1,
+                            "example": 1001
+                        }
+                    },
+                    {
+                        "name": "configId",
+                        "in": "path",
+                        "required": true,
+                        "description": "??ID",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64",
+                            "minimum": 1,
+                            "example": 1
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "??????????",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_PaymentConfigView"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "????????ID????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "??????"
+                ],
+                "summary": "????",
+                "description": "????????????",
+                "operationId": "updateConfig",
+                "parameters": [
+                    {
+                        "name": "merchantId",
+                        "in": "path",
+                        "required": true,
+                        "description": "??ID",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64",
+                            "minimum": 1,
+                            "example": 1001
+                        }
+                    },
+                    {
+                        "name": "configId",
+                        "in": "path",
+                        "required": true,
+                        "description": "??ID",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64",
+                            "minimum": 1,
+                            "example": 1
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "description": "????????",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PaymentConfigUpdateRequest"
+                            },
+                            "examples": {
+                                "alipayUpdate": {
+                                    "summary": "????????,
+                                    "description": "??????????????",
+                                    "value": {
+                                        "rate": 0.03,
+                                        "channelCode": "ALIPAY_H5",
+                                        "parameters": {
+                                            "type": "ALIPAY",
+                                            "appId": "your_alipay_app_id",
+                                            "partner": "your_alipay_partner_id",
+                                            "appPrivateKey": "your_alipay_app_private_key_pem"
+                                        }
+                                    }
+                                },
+                                "wechatUpdate": {
+                                    "summary": "????????",
+                                    "description": "??????????????,
+                                    "value": {
+                                        "rate": 0.025,
+                                        "channelCode": "WECHAT_APP",
+                                        "parameters": {
+                                            "type": "WECHAT",
+                                            "appId": "wx_your_wechat_app_id",
+                                            "mchId": "your_wechat_mch_id",
+                                            "apiV3Key": "your_wechat_api_v3_key"
+                                        }
+                                    }
+                                },
+                                "unionpayUpdate": {
+                                    "summary": "????????",
+                                    "description": "??????????????,
+                                    "value": {
+                                        "rate": 0.028,
+                                        "channelCode": "UNIONPAY_WEB",
+                                        "parameters": {
+                                            "type": "UNIONPAY",
+                                            "merId": "your_unionpay_mer_id",
+                                            "secureKey": "your_unionpay_secure_key"
+                                        }
+                                    }
+                                },
+                                "paypalUpdate": {
+                                    "summary": "PayPal????",
+                                    "description": "??PayPal??????????,
+                                    "value": {
+                                        "rate": 0.035,
+                                        "channelCode": "PAYPAL_WEB",
+                                        "parameters": {
+                                            "type": "PAYPAL",
+                                            "clientId": "your_paypal_client_id",
+                                            "clientSecret": "your_paypal_client_secret",
+                                            "sandbox": true,
+                                            "webhookId": "8TJ12345AB67890"
+                                        }
+                                    }
+                                },
+                                "nowpaymentsUpdate": {
+                                    "summary": "NowPayments????",
+                                    "description": "??NowPayments??????????????,
+                                    "value": {
+                                        "rate": 0.018,
+                                        "channelCode": "NOWPAYMENTS_WEB",
+                                        "parameters": {
+                                            "type": "NOWPAYMENTS",
+                                            "apiKey": "your_nowpayments_api_key",
+                                            "ipnSecret": "your_nowpayments_ipn_secret",
+                                            "sandbox": true,
+                                            "apiVersion": "v1",
+                                            "baseUrl": "https://api-sandbox.nowpayments.io",
+                                            "defaultCurrency": "usd"
+                                        }
+                                    }
+                                },
+                                "nowpaymentsProduction": {
+                                    "summary": "NowPayments??????",
+                                    "description": "NowPayments????????",
+                                    "value": {
+                                        "rate": 0.018,
+                                        "channelCode": "NOWPAYMENTS_WEB",
+                                        "parameters": {
+                                            "type": "NOWPAYMENTS",
+                                            "apiKey": "your_nowpayments_production_api_key",
+                                            "ipnSecret": "your_nowpayments_production_ipn_secret",
+                                            "sandbox": false,
+                                            "apiVersion": "v1",
+                                            "defaultCurrency": "usd",
+                                            "baseUrl": "https://api.nowpayments.io"
+                                        }
+                                    }
+                                },
+                                "stripeUpdate": {
+                                    "summary": "Stripe????",
+                                    "description": "??Stripe??????????,
+                                    "value": {
+                                        "rate": 0.029,
+                                        "channelCode": "STRIPE_CHECKOUT",
+                                        "parameters": {
+                                            "type": "STRIPE",
+                                            "secretKey": "sk_test_your_stripe_secret_key",
+                                            "publishableKey": "pk_test_your_stripe_publishable_key",
+                                            "webhookSecret": "whsec_your_stripe_webhook_secret",
+                                            "sandbox": true
+                                        }
+                                    }
+                                },
+                                "stripeProduction": {
+                                    "summary": "Stripe??????",
+                                    "description": "Stripe????????",
+                                    "value": {
+                                        "rate": 0.029,
+                                        "channelCode": "STRIPE_CHECKOUT",
+                                        "parameters": {
+                                            "type": "STRIPE",
+                                            "secretKey": "sk_live_your_stripe_secret_key",
+                                            "publishableKey": "pk_live_your_stripe_publishable_key",
+                                            "webhookSecret": "whsec_your_stripe_live_webhook_secret",
+                                            "sandbox": false
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "????????",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_PaymentConfigView"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "??????",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "????????ID????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/portal/{merchantId}/checkouts": {
+            "post": {
+                "tags": [
+                    "????????
+                ],
+                "summary": "??",
+                "description": "????????,
+                "operationId": "createCheckout",
+                "parameters": [
+                    {
+                        "name": "merchantId",
+                        "in": "path",
+                        "required": true,
+                        "description": "??ID",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/MerchantCheckoutRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "??????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_MerchantCheckoutView_Info_"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "??????",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object_"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object_"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "tags": [
+                    "????????
+                ],
+                "summary": "??",
+                "description": "??????????,
+                "operationId": "listCheckoutCounters",
+                "parameters": [
+                    {
+                        "name": "merchantId",
+                        "in": "path",
+                        "required": true,
+                        "description": "??ID",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "???ID",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    },
+                    {
+                        "name": "code",
+                        "in": "query",
+                        "description": "??????,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "creationFromTime",
+                        "in": "query",
+                        "description": "???????,
+                        "schema": {
+                            "type": "string",
+                            "format": "date-time"
+                        }
+                    },
+                    {
+                        "name": "creationToTime",
+                        "in": "query",
+                        "description": "??????",
+                        "schema": {
+                            "type": "string",
+                            "format": "date-time"
+                        }
+                    },
+                    {
+                        "name": "pageNumber",
+                        "in": "query",
+                        "description": "??",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32",
+                            "default": 0,
+                            "minimum": 0
+                        }
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "????",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32",
+                            "default": 10,
+                            "minimum": 1,
+                            "maximum": 1000
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "??????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_PagedResponse_MerchantCheckoutView_List_"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "??????",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object_"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object_"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/portal/{merchantId}/checkouts/{id}": {
+            "get": {
+                "tags": [
+                    "????????
+                ],
+                "summary": "??",
+                "description": "??????????,
+                "operationId": "getCheckout",
+                "parameters": [
+                    {
+                        "name": "merchantId",
+                        "in": "path",
+                        "required": true,
+                        "description": "??ID",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "description": "???ID",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "??????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_MerchantCheckoutView_Info_"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "??????",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object_"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object_"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "????????
+                ],
+                "summary": "??",
+                "description": "????????,
+                "operationId": "updateCheckout",
+                "parameters": [
+                    {
+                        "name": "merchantId",
+                        "in": "path",
+                        "required": true,
+                        "description": "??ID",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "description": "???ID",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/MerchantCheckoutModel"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_MerchantCheckoutView_Info_"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "??????",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object_"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "??????",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object_"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object_"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "????????
+                ],
+                "summary": "??",
+                "description": "????????,
+                "operationId": "deleteCheckout",
+                "parameters": [
+                    {
+                        "name": "merchantId",
+                        "in": "path",
+                        "required": true,
+                        "description": "??ID",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "description": "???ID",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object_"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "??????",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object_"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object_"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/portal/{merchantId}/checkouts/{id}/active": {
+            "put": {
+                "tags": [
+                    "????????
+                ],
+                "summary": "??",
+                "description": "????????,
+                "operationId": "activateCheckout",
+                "parameters": [
+                    {
+                        "name": "merchantId",
+                        "in": "path",
+                        "required": true,
+                        "description": "??ID",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "description": "???ID",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_MerchantCheckoutView_Info_"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "??????",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object_"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object_"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/portal/{merchantId}/checkouts/{id}/inactive": {
+            "put": {
+                "tags": [
+                    "????????
+                ],
+                "summary": "??",
+                "description": "????????,
+                "operationId": "deactivateCheckout",
+                "parameters": [
+                    {
+                        "name": "merchantId",
+                        "in": "path",
+                        "required": true,
+                        "description": "??ID",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "description": "???ID",
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_MerchantCheckoutView_Info_"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "??????",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object_"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "????????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_Object_"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/portal/{merchantId}/orders": {
+            "post": {
+                "tags": [
+                    "?????Order??
+                ],
+                "summary": "????",
+                "description": "????????????\n??????????????????????\n??????OrderView.Info??????\n\n???\n1. ?????????????????buyerId????merchantId?\n2. ???????platformSettled????true?????????\n3. ?????false??????????????\n",
+                "operationId": "createOrder",
+                "parameters": [
+                    {
+                        "name": "merchantId",
+                        "in": "path",
+                        "required": true,
+                        "description": "??ID????????,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64",
+                            "minimum": 1,
+                            "example": 1001
+                        },
+                        "x-validation": {
+                            "notNull": true,
+                            "min": 1
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "description": "??????",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/OrderCreateRequest"
+                            },
+                            "examples": {
+                                "normalOrder": {
+                                    "summary": "?????????????,
+                                    "description": "??????????????,
+                                    "value": {
+                                        "merchantOrderId": "ORD202512250001",
+                                        "subject": "iPhone 15 Pro Max ????",
+                                        "notifyUrl": "https://api.comt",
+                                        "returnUrl": "https://merc.com",
+                                        "buyerId": 177351,
+                                        "platformSettled": true,
+                                        "orderItems": [
+                                            {
+                                                "businessProductId": "PROD_001",
+                                                "description": "iPhone 15 Pro Max 256GB",
+                                                "quantity": 1,
+                                                "unitPrice": 2.0
+                                            },
+                                            {
+                                                "businessProductId": "PROD_002",
+                                                "description": "Apple Care+ ??",
+                                                "quantity": 1,
+                                                "unitPrice": 3.0
+                                            }
+                                        ],
+                                        "totalAmount": {
+                                            "currency": "USD",
+                                            "amount": 5.0
+                                        },
+                                        "paymentExpiredAt": "2029-12-15T23:59:59Z"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "???????????????OrderView.Info????,
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse_OrderCreateResponse_"
+                                },
+                                "examples": {
+                                    "created": {
+                                        "summary": "??????",
+                                        "value": {
+                                            "code": 0,
+                                            "message": "??????",
+                                            "timestamp": "2023-12-15T10:30:00Z",
+                                            "data": {
+                                                "orderId": "FILIX202312150001",
+                                                "merchantOrderId": "ORD202312150001",
+                                                "orderStatus": "CREATED",
+                                                "totalAmount": {
+                                                    "currency": "CNY",
+                                                    "amount": 10498.0
+                                                },
+                                                "platformSettled": true,
+                                                "paymentUrl": "https://pay.filixpay.com/order/FILIX202312150001",
+                                                "expiresAt": "2023-12-15T23:59:59Z",
+                                                "createdAt": "2023-12-15T10:30:00Z",
+                                                "buyerId": 100001
+                                            }
+                                        }
+                                    },
+                                    "alreadyExists": {
+                                        "summary": "??????,
+                                        "value": {
+                                            "code": 0,
+                                            "message": "??????",
+                                            "timestamp": "2023-12-15T10:30:00Z",
+                                            "data": {
+                                                "orderId": "FILIX202312140001",
+                                                "merchantOrderId": "ORD202312150001",
+                                                "orderStatus": "CREATED",
+                                                "totalAmount": {
+                                                    "currency": "CNY",
+                                                    "amount": 10498.0
+                                                },
+                                                "platformSettled": true,
+                                                "paymentUrl": "https://pay.filixpay.com/order/FILIX202312140001",
+                                                "expiresAt": "2023-12-14T23:59:59Z",
+                                                "createdAt": "2023-12-14T10:30:00Z",
+                                                "buyerId": 100001
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "??????"
+                    },
+                    "404": {
+                        "description": "????????"
+                    },
+                    "500": {
+                        "description": "????????
+                    }
+                }
+            },
+            "/portal/{merchantId}/orders/{merchantOrderId}": {
+                "get": {
+                    "tags": [
+                        "?????Order??
+                    ],
+                    "summary": "??????",
+                    "description": "????ID??????????????,
+                    "operationId": "readOrder",
+                    "parameters": [
+                        {
+                            "name": "merchantId",
+                            "in": "path",
+                            "required": true,
+                            "description": "??ID",
+                            "schema": {
+                                "type": "integer",
+                                "format": "int64"
+                            }
+                        },
+                        {
+                            "name": "merchantOrderId",
+                            "in": "path",
+                            "required": true,
+                            "description": "??????,
+                            "schema": {
+                                "type": "string"
+                            }
+                        }
+                    ],
+                    "responses": {
+                        "200": {
+                            "description": "????????",
+                            "content": {
+                                "application/json": {
+                                    "schema": {
+                                        "$ref": "#/components/schemas/ApiResponse_OrderView"
+                                    }
+                                }
+                            }
+                        },
+                        "404": {
+                            "description": "??????
+                        },
+                        "500": {
+                            "description": "????????
+                        }
+                    }
+                }
+            }
+        },
+        "components": {
+            "schemas": {
+                "RefundOrderCreateRequest": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "MonetaryAmount": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "ApiResponse_OrderView": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "ApiResponse": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "ApiResponse_Object": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "AlipayParameters": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "WechatPayParameters": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "UnionPayParameters": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "OtherPaymentParameters": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "PagedResponse": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "PaymentConfigCreateRequest": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "PaymentConfigUpdateRequest": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "ApiConfig": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "AlipayApiConfig": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "WechatApiConfig": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "UnionpayApiConfig": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "PayPalApiConfig": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "NowPaymentsApiConfig": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "StripeApiConfig": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "MerchantCheckoutRequest": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "TabConfig": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "TabItem": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "TabGateway": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "MerchantCheckoutModel": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "MerchantCheckoutResponse": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "OrderCreateRequest": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "OrderItemRequest": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "InstantSerialization": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "OrderCreateResponse": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "ApiResponse_OrderCreateResponse_": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "RefundOrder": {
+                    "type": "object",
+                    "properties": {}
+                },
+                "RefundOrderView": {
+                    "type": "object",
+                    "properties": {}
+                }
+            }
+        }
+    }

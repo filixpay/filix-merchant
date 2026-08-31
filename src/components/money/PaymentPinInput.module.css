@@ -1,0 +1,40 @@
+.pinGroup {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+
+.pinCell {
+  width: 100%;
+  min-width: 0;
+  height: 48px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  color: #0f172a;
+  outline: none;
+  padding: 0;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.pinCell:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.pinCell:disabled {
+  background: #f8fafc;
+  color: #cbd5e1;
+  cursor: not-allowed;
+}
+
+.pinCellFilled {
+  border-color: #cbd5e1;
+  background: #fafafa;
+}

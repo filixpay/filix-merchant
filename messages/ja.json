@@ -1,0 +1,935 @@
+{
+  "Layout": {
+    "title": "FilixPay - 国際決済と企業のグローバル展開における選ばれるパートナー",
+    "sidebar_title": "マーチャントプラットフォーム",
+    "identity": {
+      "current_identity": "現在の身元",
+      "independent": {
+        "title": "マイ・インディペンデント・マーチャント",
+        "desc": "四者間モデル（銀行直接決済）"
+      },
+      "sub_merchant": {
+        "title": "プラットフォーム加盟店",
+        "desc": "三者間モデル（プラットフォーム代行集金）"
+      },
+      "open_platform_service": "➕ プラットフォーム集金サービスを開通する",
+      "modal": {
+        "title": "プラットフォーム集金サービスを開通する",
+        "bank_holder": "決済銀行口座名義",
+        "bank_account": "決済口座番号",
+        "holder_hint": "名称は会社名と一致している必要があります",
+        "submit": "今すぐ開通",
+        "cancel": "キャンセル",
+        "success": "サービスの開通に成功しました"
+      }
+    },
+    "workspace": {
+      "workspace": "Workspace",
+      "switch_business_account": "Switch business account",
+      "no_business_accounts": "No business accounts in this organization",
+      "affiliated_organization": "Organization",
+      "add_organization": "Add organization",
+      "add_business_account": "New business account",
+      "manage_organization": "Manage organization"
+    },
+    "logout": "サインアウト",
+    "nav": {
+      "overview": "概要",
+      "payment_configs": "決済設定",
+      "checkout_counters": "決済カウンター設定",
+      "orders": "注文",
+      "refunds": "返金",
+      "service_plan": "サービスプラン",
+      "customers": "顧客",
+      "locations": "店舗",
+      "bank_accounts": "受取口座",
+      "transfers": "振込審査",
+      "reviews": "振込確認",
+      "sub_merchants": "サブマーチャント",
+      "acquiring_management": "アクワイアリング管理",
+      "developer": "開発者センター",
+      "refund_settings": "Refund settings",
+      "refund_approvals": "Refund approvals"
+    }
+  },
+  "ServicePlan": {
+    "title": "サービスプラン",
+    "subtitle": "ビジネス成長に合わせたプランを選択し、支払い履歴を確認します。",
+    "choose_plan": "プランを選択",
+    "payment_records": "支払い履歴",
+    "plans": {
+      "weekly": "週払いプラン",
+      "monthly": "月払いプラン",
+      "half_year": "半年プラン",
+      "yearly": "年払いプラン"
+    },
+    "pay": "支払う"
+  },
+  "Login": {
+    "title": "FilixPay Management Center",
+    "subtitle": "Manage merchants, organizations, payments, and developer resources in one place",
+    "button": "Sign In",
+    "connecting": "Connecting...",
+    "back_to_home": "← Back to Home",
+    "merchant_title": "Merchant Operations Center",
+    "merchant_body": "Manage payments, settlement, APIs, and applications",
+    "merchant_cta": "Enter Merchant Center",
+    "enterprise_title": "Enterprise Center",
+    "enterprise_body": "Manage organizations, members, permissions, and multi-merchant relationships",
+    "enterprise_cta": "Enter Enterprise Center"
+  },
+  "Dashboard": {
+    "title": "ダッシュボード",
+    "overview": "概要",
+    "stats": {
+      "revenue": "本日の総収益",
+      "orders": "本日の総注文件数",
+      "channels": "アクティブなチャネル",
+      "available_funds": "Available funds",
+      "today_funds_revenue": "Today's funds revenue",
+      "asset_count": "{count} assets",
+      "other_assets": "+ {count} other assets",
+      "no_available_funds": "No available funds",
+      "view_balance": "View balance",
+      "view_activity": "View activity",
+      "view_orders": "View orders",
+      "settlement_cycle_label": "Settlement cycle",
+      "settlement_cycle_title": "T+1 automatic settlement",
+      "settlement_cycle_desc": "Funds settle directly from the upstream channel to your designated corporate bank account. Available balance follows bank statement reconciliation."
+    },
+    "recent_transactions": "最近の取引",
+    "no_transactions": "現在、最近の取引はありません。"
+  },
+  "Configs": {
+    "title": "決済設定",
+    "subtitle": "接続された決済チャネルと認証情報を管理します。",
+    "add_config": "設定を追加",
+    "headers": {
+      "payment_brand": "決済ブランド",
+      "payment_channel": "決済チャネル",
+      "payment_scenario": "決済シナリオ",
+      "rate": "料率",
+      "status": "ステータス",
+      "actions": "アクション"
+    },
+    "loading": "設定を読み込んでいます...",
+    "empty": "現在、設定はありません。決済を受け付けるには設定を追加してください。",
+    "confirm_delete": "この設定を削除してもよろしいですか？",
+    "edit_secret_hint": "Secrets are never shown. Leave a secret blank to keep the current value.",
+    "sections": {
+      "alipay": "Alipay Configuration",
+      "wechat": "WeChat Configuration",
+      "stripe": "Stripe Configuration",
+      "paypal": "PayPal Configuration",
+      "nowpayments": "NowPayments Configuration"
+    },
+    "fields": {
+      "required": "This field is required",
+      "secret_keep_placeholder": "Leave blank to keep current secret",
+      "app_id": "App ID",
+      "partner_id": "Partner ID",
+      "sandbox_mode": "Sandbox Mode",
+      "alipay_public_key": "Alipay Public Key",
+      "app_private_key": "App Private Key",
+      "app_secret": "App Secret",
+      "mch_id": "Merchant ID",
+      "v2_api_key": "V2 API Key",
+      "v3_api_key": "V3 API Key",
+      "v3_serial_no": "V3 Serial No",
+      "v3_private_key": "V3 Private Key",
+      "v3_public_key": "V3 Public Key",
+      "secret_key": "Secret Key",
+      "publishable_key": "Publishable Key (Optional)",
+      "webhook_secret": "Webhook Secret (Optional)",
+      "client_id": "Client ID",
+      "client_secret": "Client Secret",
+      "webhook_id": "Webhook ID (Optional)",
+      "api_key": "API Key",
+      "ipn_secret": "IPN Secret (Optional)",
+      "default_currency": "Default Currency (Optional)"
+    }
+  },
+  "Checkouts": {
+    "title": "決済カウンター設定",
+    "subtitle": "多言語集約決済カウンターを管理・設定します。",
+    "create_counter": "設定を追加",
+    "edit_counter": "設定を編集",
+    "loading": "決済カウンターを読み込んでいます...",
+    "empty": "現在、決済カウンターはありません。作成して決済を受け付けましょう。",
+    "prompt_name": "決済カウンター名を入力してください：",
+    "headers": {
+      "name": "決済カウンター名",
+      "code": "コード",
+      "status": "ステータス",
+      "actions": "アクション"
+    },
+    "form": {
+      "checkout_code": "決済カウンターコード（ユニークID）",
+      "checkout_name": "デフォルト表示名",
+      "status_active": "有効",
+      "status_inactive": "無効",
+      "tabs": "タブ設定",
+      "add_tab": "タブを追加",
+      "tab_key": "タブユニークID（例: card, crypto）",
+      "tab_title": "タブタイトル",
+      "display_order": "表示順",
+      "enabled": "有効化",
+      "gateways": "含まれる決済ゲートウェイ",
+      "add_gateway": "ゲートウェイを追加",
+      "gateway_code": "ゲートウェイコード",
+      "recommended": "おすすめ",
+      "logo": "ロゴリンク",
+      "color": "ブランドカラー",
+      "currencies": "対応通貨（カンマ区切り、*は全通貨）",
+      "countries": "購入者地域（カンマ区切り、*は全地域）",
+      "config_list": "決済設定リスト",
+      "priority": "優先度",
+      "save": "決済カウンターを保存",
+      "cancel": "キャンセル"
+    },
+    "delete_confirm": "この決済カウンターを削除してもよろしいですか？"
+  },
+  "Home": {
+    "hero": {
+      "title": "FilixPay：グローバルで統合された決済ソリューション、\n世界中で簡単に決済を受け付けるための支援",
+      "subtitle": "FilixPay – グローバル展開する企業向けに特別に設計された、四方決済技術サービスプラットフォームです。安全で柔軟かつ効率的な集約決済インフラを提供し、複雑な連携なしで複数の主要な決済方法を導入・一元管理できます。",
+      "start": "今すぐ始める",
+      "contact": "営業に問い合わせる"
+    },
+    "trial_experience": {
+      "title": "🌍 グローバル決済、いますぐ体験",
+      "subtitle": "今すぐFilixPayの全機能を無料で体験",
+      "features": [
+        "会社書類不要",
+        "技術連携不要",
+        "メール登録で30秒で本番マーチャントダッシュボードへ"
+      ],
+      "cta": "FilixPayを無料体験"
+    },
+    "features": {
+      "title": "オールインワン集約決済 – 主要グローバルチャネルとのシームレスな統合",
+      "subtitle": "FilixPayマーチャントセンターを通じて、Alipay、WeChat Pay、PayPal、Stripe、NowPaymentsなど、複数の決済チャネルを簡単に設定できます。ローカルでも国際的でも、一度の統合で全ての決済方法を一元的に管理できます。",
+      "items": {
+        "unified": {
+          "title": "標準化決済インターフェース",
+          "desc": "リダイレクトなしで、スムーズで一貫した顧客体験を提供する標準化された決済インターフェース。"
+        },
+        "sdk": {
+          "title": "組み込み可能なSDK",
+          "desc": "自社ウェブサイトに簡単に展開でき、ブランド信頼とコンバージョン率向上に貢献します。"
+        },
+        "extension": {
+          "title": "オープンな拡張性",
+          "desc": "FilixPayがまだサポートしていない他の決済チャネルをお使いの場合は、ご連絡ください。1週間以内に技術統合を完了することをお約束します。"
+        },
+        "mobile": {
+          "title": "モバイルファースト体験",
+          "desc": "完全なモバイル対応デザインで、外出先でもスマートフォンから決済を開始、請求書を確認、ビジネスを管理できます。"
+        }
+      }
+    },
+    "pricing": {
+      "title": "成長段階に合わせた柔軟なサービスプラン",
+      "subtitle": "ビジネスのペースに合わせて選べる、さまざまな支払いオプションをご用意しています",
+      "choose": "今すぐ購入",
+      "plans": {
+        "weekly": {
+          "name": "週払いプラン",
+          "price": "50 USD/週",
+          "desc": "コア機能を手軽に試す"
+        },
+        "monthly": {
+          "name": "月払いプラン",
+          "price": "200 USD/月",
+          "desc": "日常業務を安定してサポート"
+        },
+        "half_year": {
+          "name": "半年プラン",
+          "price": "1100 USD/半年",
+          "desc": "コストパフォーマンスに優れた選択肢"
+        },
+        "yearly": {
+          "name": "年払いプラン",
+          "price": "2000 USD/年",
+          "desc": "安心とコスト削減"
+        }
+      }
+    },
+    "deployment": {
+      "title": "🖥️ 独立導入バージョン：フルスタック制御・金融級信頼性・データ自律性",
+      "subtitle": "銀行、決済サービスプロバイダー、大規模グループ、データセキュリティ要件が厳しいグローバル企業に適しています",
+      "intro": "システムを完全に制御し、決済データを社内ネットワーク内に留め、コンプライアンス監査要件を満たす必要がある場合、FilixPayはエンタープライズレベルの独立導入ソリューションを提供します – パブリッククラウドへの依存なし、一度の導入で永続稼働。",
+      "benefits_title": "✅ FilixPay独立導入を選ぶ理由",
+      "features": [
+        {
+          "title": "真のデータ主権",
+          "desc": "すべてのマーチャントデータ、取引記録、APIキーは100％お客様のプライベートサーバーに保存され、外部依存ゼロ。GDPR、PCI-DSS、情報保護レベル3の要件を満たします。"
+        },
+        {
+          "title": "すぐに使えるエンタープライズアーキテクチャ",
+          "desc": "Dockerコンテナ化、事前統合済み：マルチテナントエンジン（決済分割対応）、統一認証（OIDC/SAML）、オールインワン開発者センター、暗号化決済アダプタ、高同時実行保証メカニズム。"
+        },
+        {
+          "title": "極めてシンプルな導入、低リソース消費",
+          "desc": "4コア8GB RAMのLinuxサーバー1台のみで稼働。docker-compose upを実行するだけで本番環境が起動、30分で導入完了。"
+        },
+        {
+          "title": "クラスタ対応、弾力的な拡張性",
+          "desc": "アーキテクチャがネイティブで水平拡張をサポート、将来Kubernetesへのシームレスな移行が可能で、トラフィック増加に容易に対応。"
+        }
+      ],
+      "price": "導入費用：28,000 USD（一括）",
+      "maintenance": "1年間の無料技術メンテナンス付き。2年目以降は、システムの長期的な安定性と更新を確保するため、年間費用の10％のみ継続メンテナンス費用がかかります。"
+    },
+    "investment": {
+      "title": "投資パートナーを募集 – 共に新たなグローバル決済の未来を築く",
+      "subtitle": "急成長中のフィンテックスタートアップとして、FilixPayは革新的な四方決済アーキテクチャと柔軟な導入により、国際決済分野で大きな可能性を示しています。戦略的投資および株式パートナーシップの機会を提供しています。",
+      "contact_btn": "お問い合わせ（メール: {email}）"
+    },
+    "footer": {
+      "slogan": "決済をもっとシンプルに、ビジネスをもっとグローバルに",
+      "rights": "© 2026 Filix.com. 無断複写・転載を禁じます。"
+    },
+    "onboarding": {
+      "title": "マーチャント登録",
+      "subtitle": "決済を受け付けるためのマーチャントアカウントを申請します。マーチャント名は公式文書と完全に一致している必要があります。",
+      "form": {
+        "mobile": "携帯電話番号",
+        "email": "メールアドレス",
+        "name": "マーチャント正式名称",
+        "officialId": "公式書類番号",
+        "submit": "今すぐ申請",
+        "success": "申請が送信されました！",
+        "error": "申請の送信に失敗しました。もう一度お試しください。",
+        "login_required": "申請するにはログインしてください。"
+      }
+    },
+    "core_capabilities": {
+      "title": "コア機能ハイライト",
+      "items": {
+        "multi_tenant": {
+          "title": "エンタープライズレベルのマルチテナントアーキテクチャ",
+          "desc": "機関、ISV、大規模グループ顧客をサポートし、親マーチャントと子マーチャント間の完全なデータ分離を実現、決済分割、独立した決済処理、独立した運用をサポートします。"
+        },
+        "flexible_mode": {
+          "title": "三面と四面モデルに柔軟対応",
+          "desc": "集約決済ゲートウェイ（四面）としてグローバル主要チャネルに接続可能、または統一決済取得インターフェース（三面）としてグループ企業の決済一元化、決済分割管理、資金プール化の一体化を支援します。"
+        },
+        "iam": {
+          "title": "エンタープライズレベルの統一アイデンティティ認証",
+          "desc": "OIDC/SAMLプロトコルをネイティブサポート、お客様の既存IAMシステムとシームレスに統合、シングルサインオン（SSO）と詳細なRBAC権限制御を提供し、金融レベルのセキュリティコンプライアンス要件を満たします。"
+        },
+        "developer": {
+          "title": "オールインワン開発者センター",
+          "desc": "インタラクティブなAPIドキュメント、サンドボックス環境、キー管理、Webhookデバッグおよび失敗再送ツールを提供、30分での迅速な統合により技術連携コストを大幅に削減します。"
+        },
+        "concurrency": {
+          "title": "高同時実行コアプロセス保証",
+          "desc": "ホットアカウント記帳などの重要なシナリオに対して、非同期キューによるピークカット＋順次書き込みメカニズムを採用し、高同時実行下でもデータ一貫性とシステム安定性を保証します。"
+        },
+        "cloud_native": {
+          "title": "クラウドネイティブ弾力的拡張",
+          "desc": "Kubernetesベースのマイクロサービスアーキテクチャ、秒単位での水平スケーリングをサポートし、大型セール（11.11、ブラックフライデーなど）のトラフィック急増に容易に対応、中大型顧客の高可用性SLA要件を満たします。"
+        }
+      }
+    },
+    "ecommerce_solution": {
+      "title": "クロスボーダーEコマース専用ソリューション：有効化すれば受領、グローバルで安心",
+      "subtitle": "法定通貨＋暗号通貨の二重チャネルをサポート – 今日設定、明日決済受領！",
+      "fiat": {
+        "title": "法定通貨決済受領",
+        "desc": "マーチャントがStripe、PayPal、Alipay+などの主要チャネルでアカウントを開設後、FilixPay管理画面でAPI認証情報を連携すれば、即座にクレジットカード、現地ウォレットなどの決済方法が利用可能に。"
+      },
+      "crypto": {
+        "title": "暗号通貨決済受領",
+        "desc": "マーチャントがNowPayments、Coinbase Commerce、OKX Payなどの提携暗号決済サービスプロバイダーに登録・KYC完了後、専用の受領アドレスまたはAPIキーを取得。FilixPayでワンクリック設定でBTC、ETH、USDT、USDCなど100以上の主要デジタル資産による決済を受領可能。"
+      },
+      "tagline": "開発不要・通貨保有不要・独自ウォレット構築不要 – すべての資金は対応する決済機関のあなたの口座に直接入金、FilixPayは統一表示、ルーティング、通知のみを担当します。",
+      "processing": {
+        "title": "システムが自動的に処理します：",
+        "items": [
+          "多通貨法定通貨決済処理（USD/EUR/GBP/CNY等）",
+          "暗号決済のリアルタイムコールバックとステータス同期",
+          "統一取引ダッシュボード、Webhook通知、自動照合",
+          "暗号通貨受領額の安定通貨または法定通貨への自動変換サポート（決済機関により実行）"
+        ]
+      },
+      "advantages": {
+        "title": "なぜFilixPayの暗号決済受領ソリューションを選ぶのか？",
+        "headers": {
+          "advantage": "強み",
+          "description": "説明"
+        },
+        "items": [
+          {
+            "label": "コンプライアンスとセキュリティ",
+            "value": "資金はNowPaymentsなどのライセンス保有プロバイダーが管理、FATFトラベルルール準拠"
+          },
+          {
+            "label": "極めて迅速な導入",
+            "value": "ブロックチェーンノードとの技術連携不要、10分で設定完了"
+          },
+          {
+            "label": "チャージバックリスク排除",
+            "value": "暗号取引は不可逆、チャージバックリスクを完全に排除"
+          },
+          {
+            "label": "広範なカバレッジ",
+            "value": "グローバル主要暗号決済ゲートウェイをサポート、6億人以上のWeb3ユーザーに到達"
+          },
+          {
+            "label": "保有リスクゼロ",
+            "value": "リアルタイムで法定通貨に変換可能、価格変動リスクを回避"
+          }
+        ]
+      },
+      "customers": {
+        "title": "適した顧客",
+        "items": [
+          "Shopify / WooCommerce 独立系店舗販売者",
+          "Web3 Eコマース（NFT、デジタル商品、GameFi）",
+          "クロスボーダーDTCブランド、SaaS、サブスクリプションサービス",
+          "低コストで暗号決済を試したい伝統的Eコマース事業者"
+        ]
+      },
+      "footer_tagline": "FilixPay – 車輪の再発明はせず、接続を提供します。",
+      "footer_sub": "最もコンプライアントで簡単な方法で、世界中のあらゆる種類の通貨を受け取れます。"
+    }
+  },
+  "Orders": {
+    "title": "注文管理",
+    "subtitle": "すべての取引を表示・検索します。",
+    "search_placeholder": "マーチャント注文番号または商品で検索...",
+    "filter": "フィルター",
+    "create_order": "注文を作成",
+    "create_modal": {
+      "title": "手動で決済注文を作成",
+      "merchant_order_id": "マーチャント注文番号",
+      "subject": "注文タイトル",
+      "return_url": "リダイレクトURL（任意）",
+      "buyer_id": "購入者ID（任意）",
+      "currency": "通貨",
+      "amount": "合計金額",
+      "expiry": "有効期限",
+      "items": "商品明細",
+      "add_item": "商品を追加",
+      "product_id": "商品SKU",
+      "desc": "説明",
+      "qty": "数量",
+      "price": "単価",
+      "submit": "送信して作成",
+      "cancel": "キャンセル"
+    },
+    "headers": {
+      "order_id": "注文番号",
+      "order_type": "注文タイプ",
+      "buyer_code_trade_no": "取引番号 / 顧客コード",
+      "sub_merchant_location": "サブマーチャント / 店舗",
+      "payment_channel": "決済チャネル",
+      "amount": "金額",
+      "status": "ステータス",
+      "created_at": "作成日時",
+      "created_at_range": "作成日時範囲"
+    },
+    "empty": "現在、注文データはありません。",
+    "initiate_payment": "決済を開始",
+    "initiate_refund": "返金を開始",
+    "details": {
+      "title": "注文詳細",
+      "subject": "商品名",
+      "order_type": "注文タイプ",
+      "merchant_order_id": "マーチャント注文番号",
+      "trade_no": "取引番号",
+      "amount": "注文金額",
+      "paid_amount": "支払済み金額",
+      "refunded_amount": "返金額",
+      "refundable_amount": "返金可能額",
+      "status": "取引ステータス",
+      "payment_expiry": "決済有効期限",
+      "channel": "決済チャネル",
+      "created_at": "作成日時",
+      "seller_info": "販売者情報",
+      "buyer_info": "購入者情報",
+      "name": "名前",
+      "merchant_id": "マーチャントID",
+      "buyer_code": "顧客コード",
+      "close": "閉じる",
+      "grand_total": "合計金額"
+    },
+    "orderTypes": {
+      "TRADE": "取引注文",
+      "DEPOSIT": "入金",
+      "TRANSFER": "振替",
+      "PAYOUT": "代行払い",
+      "WITHDRAWAL": "出金",
+      "REFUND": "返金",
+      "DIRECT_DEBIT": "口座振替",
+      "PLATFORM_SERVICE_FEE": "プラットフォーム手数料"
+    },
+    "payment_modal": {
+      "title": "セキュア決済 - FilixPay.com",
+      "amount_to_pay": "支払い金額",
+      "expires_at": "リンク有効期限：{time}",
+      "go_to_pay": "決済カウンターへ移動",
+      "copy_link": "リンクをコピー",
+      "share_link": "リンクを共有",
+      "share_whatsapp": "WhatsApp",
+      "share_email": "メールで送信",
+      "copy_success": "リンクをコピーしました"
+    }
+  },
+  "Developer": {
+    "title": "開発者センター",
+    "api_credentials": "API認証情報",
+    "api_credentials_desc": "プログラムによるアクセスのためのAPIキーを管理します。",
+    "view_swagger": "Swagger APIドキュメントを表示します。",
+    "generate_button": "APIキーの生成/リセット",
+    "webhook_endpoints": "Webhookエンドポイント",
+    "webhook_endpoints_desc": "イベント通知を受け取るためのWebhookエンドポイントを設定します。",
+    "view_docs": "署名検証手順を表示します。",
+    "add_webhook": "Webhookを追加",
+    "webhook_deliveries": "Webhook配信記録",
+    "webhook_deliveries_desc": "サーバーに送信されたWebhookイベントの履歴を表示します。予想されるイベントが表示されない、または配信が失敗する場合は、エンドポイントの可用性を確認してください。",
+    "delivery_headers": {
+      "url": "Webhook URL",
+      "delivery_status": "ステータス",
+      "attempt": "試行回数",
+      "created_at": "送信日時",
+      "payload": "ペイロード"
+    },
+    "payload_modal_title": "Webhookペイロード",
+    "copy_payload": "ペイロードをコピー",
+    "redeliver": "再配信",
+    "redeliver_success": "Webhookの再配信がトリガーされました",
+    "redeliver_failed": "Webhookの再配信に失敗しました",
+    "close": "閉じる",
+    "explorer": {
+      "tab": "API Explorer",
+      "title": "Sandbox API Explorer",
+      "subtitle": "Select an Application and operation, then execute via the server-side Explorer proxy. Credentials and tokens stay on the server.",
+      "application": "Application",
+      "application_placeholder": "Select application",
+      "no_applications": "No applications available",
+      "operation": "Operation",
+      "operation_placeholder": "Select operation",
+      "no_operations": "No published operations",
+      "path_params": "Path parameters",
+      "query_json": "Query parameters (JSON object)",
+      "header_json": "Headers (JSON object)",
+      "header_hint": "Only Artifact-declared headers. Do not send Authorization, Cookie, or merchant/org headers.",
+      "body_json": "Request body (JSON)",
+      "execute": "Execute",
+      "execute_failed": "Explorer execute failed",
+      "select_required": "Select an application and operation",
+      "response": "Response",
+      "status": "Status",
+      "latency": "Latency",
+      "trace_id": "Trace ID",
+      "headers": "Headers",
+      "body": "Body",
+      "retry": "Retry",
+      "load_apps_failed": "Failed to load applications",
+      "load_ops_failed": "Failed to load operations"
+    }
+  },
+  "Common": {
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました",
+    "success": "成功",
+    "confirm_delete": "この項目を削除してもよろしいですか？",
+    "cancel": "キャンセル",
+    "submit": "送信",
+    "reset": "リセット",
+    "previous": "前へ",
+    "next": "次へ",
+    "page_of": "ページ {current} / {total}",
+    "close": "閉じる",
+    "add": "追加",
+    "delete": "削除",
+    "actions": "アクション"
+  },
+  "Refunds": {
+    "title": "返金管理",
+    "subtitle": "返金記録を表示・検索します。",
+    "search_placeholder": "返金IDまたは注文番号で検索...",
+    "filter": "フィルター",
+    "headers": {
+      "refund_id": "返金ID",
+      "order_id": "注文番号",
+      "amount": "金額",
+      "status": "ステータス",
+      "created_at": "申請日"
+    },
+    "empty": "返金データが見つかりません。",
+    "create_refund": "返金を作成",
+    "create_modal": {
+      "title": "返金注文を作成",
+      "trade_no": "取引番号",
+      "merchant_refund_id": "マーチャント返金ID",
+      "reason": "返金理由",
+      "currency": "通貨",
+      "amount": "返金額",
+      "default_reason": "マーチャント開始の返金",
+      "submit": "返金を送信",
+      "cancel": "キャンセル"
+    },
+    "details": {
+      "title": "返金詳細",
+      "view": "詳細",
+      "refund_no": "返金番号",
+      "merchant_refund_id": "マーチャント返金ID",
+      "amount": "返金額",
+      "merchant_amount": "マーチャント実際返金額",
+      "status": "返金ステータス",
+      "reason": "返金理由",
+      "applicant": "申請者",
+      "created_at": "作成日",
+      "updated_at": "最終更新",
+      "service_fee": "返金サービス料",
+      "order_info": "元注文情報",
+      "order_id": "マーチャント注文番号",
+      "trade_no": "取引番号",
+      "order_amount": "注文金額",
+      "order_status": "注文ステータス",
+      "close": "閉じる"
+    },
+    "settings": {
+      "title": "Refund settings",
+      "subtitle": "Configure when refunds execute automatically versus requiring merchant approval.",
+      "settlement_currency": "Settlement currency",
+      "threshold": "Auto-execute threshold",
+      "threshold_help": "Refunds at or below this amount (in settlement currency) execute automatically. Larger amounts stay pending until approved.",
+      "threshold_required": "Enter a threshold",
+      "threshold_min": "Threshold cannot be negative",
+      "unlimited": "Skip amount-based approval",
+      "unlimited_help": "When enabled, amount alone never triggers approval. FX conversion failures can still require approval.",
+      "fx_help": "Cross-currency refunds are converted to settlement currency via FX before comparison. If no quote is available, the refund still creates but awaits approval.",
+      "using_platform_default": "Using platform default threshold: {threshold}",
+      "save": "Save settings",
+      "save_success": "Refund settings saved",
+      "save_failed": "Failed to save refund settings",
+      "load_failed": "Failed to load refund settings"
+    },
+    "approvals": {
+      "title": "Refund approvals",
+      "subtitle": "Review refunds that exceeded the auto-execute threshold and are waiting for approval.",
+      "empty": "No refunds awaiting approval.",
+      "approve": "Approve",
+      "reject": "Reject",
+      "approve_confirm": "Approve this refund?",
+      "approve_confirm_desc": "Approval will execute the refund through the payment channel.",
+      "reject_confirm": "Reject this refund?",
+      "reject_confirm_desc": "Rejection cancels the refund request. It will not hit the channel.",
+      "approve_success": "Refund approved and execution started",
+      "reject_success": "Refund rejected and cancelled",
+      "approve_failed": "Failed to approve refund",
+      "reject_failed": "Failed to reject refund",
+      "detail_failed": "Failed to load refund details"
+    }
+  },
+  "Customers": {
+    "title": "顧客管理",
+    "subtitle": "顧客情報を表示・管理します。",
+    "search": "検索",
+    "headers": {
+      "name": "名前",
+      "code": "顧客コード",
+      "email": "メール",
+      "mobile": "携帯",
+      "phone": "電話",
+      "status": "ステータス",
+      "created_at": "作成日"
+    },
+    "loading": "顧客を読み込み中...",
+    "empty": "顧客データが見つかりません。"
+  },
+  "Locations": {
+    "title": "店舗情報",
+    "subtitle": "事業の店舗情報を管理します。",
+    "create_location": "店舗を追加",
+    "headers": {
+      "name": "名前",
+      "address": "住所",
+      "contact": "連絡先",
+      "status": "ステータス",
+      "default": "デフォルト",
+      "created_at": "作成日"
+    },
+    "form": {
+      "name": "店舗名",
+      "sub_merchant": "サブマーチャント",
+      "address": "住所",
+      "country": "国",
+      "mobile_phone": "携帯電話",
+      "email": "連絡用メール",
+      "service_phone": "サービス電話",
+      "submit": "送信",
+      "cancel": "キャンセル",
+      "success": "店舗が正常に作成されました"
+    },
+    "empty": "店舗データが見つかりません。"
+  },
+  "BankAccounts": {
+    "title": "受取口座",
+    "subtitle": "決済受取用の銀行口座情報を管理します。",
+    "create_account": "口座を作成",
+    "headers": {
+      "bank_name": "銀行名",
+      "branch_name": "支店名",
+      "account_holder": "口座名義",
+      "account_number": "口座番号",
+      "city": "都市",
+      "status": "ステータス",
+      "primary": "メイン",
+      "created_at": "作成日"
+    },
+    "form": {
+      "create_title": "受取口座を作成",
+      "bank_name": "銀行名",
+      "branch_name": "支店名",
+      "account_holder": "口座名義",
+      "account_number": "口座番号",
+      "city": "都市",
+      "primary": "メインに設定",
+      "cancel": "キャンセル",
+      "submit": "送信",
+      "success": "正常に作成されました"
+    },
+    "empty": "受取口座が見つかりません。"
+  },
+  "Transfers": {
+    "title": "振込審査",
+    "subtitle": "振込および決済リクエストを管理・審査します。",
+    "headers": {
+      "merchant_order_id": "注文番号",
+      "subject": "件名",
+      "transaction_id": "銀行取引参照",
+      "payer": "支払者",
+      "payee": "受取人",
+      "amount": "金額",
+      "audit_operator": "審査担当者",
+      "created_at": "作成日",
+      "actions": "アクション"
+    },
+    "tabs": {
+      "waiting": "審査待ち",
+      "passed": "承認済み",
+      "rejected": "却下"
+    },
+    "audit_btn": "審査",
+    "view_btn": "詳細",
+    "empty": "審査記録が見つかりません。",
+    "audit": {
+      "title": "振込審査",
+      "title_view": "振込詳細",
+      "zoom_in": "拡大",
+      "transfer_info": "振込情報",
+      "audit_info": "審査情報",
+      "amount": "金額",
+      "payee": "受取人",
+      "payee_bank": "受取人銀行",
+      "payee_account": "受取人口座",
+      "status": "ステータス",
+      "audit_status": "審査ステータス",
+      "audit_operator": "審査担当者",
+      "proof_image": "振込証明",
+      "audit_form": "審査情報",
+      "transaction_id": "銀行取引ID",
+      "transaction_id_placeholder": "銀行明細の取引IDを入力",
+      "payer_name": "支払者口座名",
+      "payer_account": "支払者口座番号",
+      "payer_bank": "支払者銀行",
+      "audit_decision": "審査決定",
+      "pass": "承認",
+      "reject": "却下",
+      "reject_reason": "却下理由",
+      "reject_reason_placeholder": "却下理由を入力してください",
+      "reject_reason_required": "却下理由は必須です",
+      "not_found": "振込詳細が見つかりません"
+    }
+  },
+  "Reviews": {
+    "title": "振込確認",
+    "subtitle": "審査済みの振込を確認します。",
+    "headers": {
+      "merchant_order_id": "注文番号",
+      "subject": "件名",
+      "transaction_id": "銀行取引参照",
+      "payer": "支払者",
+      "payee": "受取人",
+      "amount": "金額",
+      "audit_operator": "審査担当者",
+      "review_operator": "確認担当者",
+      "created_at": "作成日",
+      "actions": "アクション"
+    },
+    "tabs": {
+      "pending": "保留中",
+      "active": "確認済み",
+      "rejected": "却下"
+    },
+    "confirm_btn": "確認",
+    "view_btn": "詳細",
+    "empty": "確認待ちの記録がありません。",
+    "confirm_success": "正常に確認されました",
+    "confirm_confirm": "この振込を確認してもよろしいですか？",
+    "confirm_deposit": "入金を確認",
+    "audit_operator": "審査担当者",
+    "review_operator": "確認担当者",
+    "review_status": "確認ステータス",
+    "review_decision": "確認決定",
+    "review_form": "確認アクション"
+  },
+  "SubMerchants": {
+    "title": "サブマーチャント管理",
+    "subtitle": "サブマーチャント情報を表示・管理します。",
+    "create_sub_merchant": "サブマーチャントを追加",
+    "form": {
+      "name": "マーチャント名",
+      "alias": "決済エイリアス",
+      "success": "サブマーチャントが正常に作成されました"
+    },
+    "headers": {
+      "name": "マーチャント名",
+      "alias": "エイリアス",
+      "code": "マーチャントコード",
+      "merchant_id": "マーチャントID",
+      "status": "ステータス",
+      "created_at": "作成日"
+    },
+    "empty": "サブマーチャントデータが見つかりません。"
+  },
+  "Organization": {
+    "title": "Organization",
+    "no_active_org": "Select an organization from the sidebar first.",
+    "tabs": {
+      "members": "Members",
+      "roles": "Roles",
+      "business_accounts": "Business Accounts"
+    },
+    "scope_denied": "You no longer have access to the selected business account. Switched to an available account.",
+    "actions": {
+      "refresh": "Refresh",
+      "cancel": "Cancel"
+    },
+    "roles": {
+      "create": "Create Role",
+      "edit": "Edit",
+      "view": "View",
+      "delete": "Delete",
+      "save": "Save",
+      "create_title": "Create Custom Role",
+      "edit_title": "Edit Role",
+      "delete_confirm": "Delete this custom role?",
+      "delete_success": "Role deleted",
+      "delete_failed": "Failed to delete role",
+      "create_success": "Role created",
+      "edit_success": "Role updated",
+      "save_failed": "Failed to save role",
+      "load_failed": "Failed to load roles",
+      "no_permission": "Your role cannot manage organization roles.",
+      "no_permissions": "No permissions",
+      "permissions_summary": "{count} permissions",
+      "role_in_use": "This role is assigned to members and cannot be deleted.",
+      "code_required": "Role code is required",
+      "display_name_required": "Display name is required",
+      "permissions_required": "Select at least one permission",
+      "description": "Description",
+      "columns": {
+        "code": "Code",
+        "display_name": "Display Name",
+        "kind": "Kind",
+        "permissions": "Permissions",
+        "actions": "Actions"
+      },
+      "kind": {
+        "SYSTEM": "System",
+        "CUSTOM": "Custom"
+      },
+      "permissions": {
+        "MERCHANT_VIEW": "View merchants",
+        "MERCHANT_EDIT": "Edit merchants",
+        "MERCHANT_CREATE": "Create merchants",
+        "USER_VIEW": "View members",
+        "USER_INVITE": "Invite members",
+        "USER_REMOVE": "Remove members",
+        "PAYMENT_VIEW": "View payments",
+        "APIKEY_VIEW": "View API keys",
+        "APIKEY_CREATE": "Create API keys",
+        "WEBHOOK_MANAGE": "Manage webhooks",
+        "ROLE_MANAGE": "Manage roles"
+      },
+      "scope": {
+        "label": "Merchant scope",
+        "empty_means_all": "Leave empty to allow access to all merchants in the organization.",
+        "placeholder": "Select merchants (optional)",
+        "system_readonly": "System roles have full organization access. Merchant scope cannot be changed.",
+        "orphan_warning": "{count} merchant(s) in this role's scope are no longer visible to you."
+      }
+    },
+    "members": {
+      "invite": "Invite Member",
+      "invite_title": "Invite to Organization",
+      "send_invite": "Send Invitation",
+      "invite_success": "Invitation sent",
+      "invite_failed": "Failed to send invitation",
+      "remove": "Remove",
+      "remove_confirm": "Remove this member?",
+      "remove_success": "Member removed",
+      "remove_failed": "Failed to remove member",
+      "load_failed": "Failed to load members",
+      "no_permission": "Your role cannot view the member list.",
+      "email": "Email",
+      "email_required": "Email is required",
+      "email_invalid": "Invalid email address",
+      "role": "Role",
+      "role_required": "Select a role",
+      "role_placeholder": "Choose a role",
+      "change_role": "Change Role",
+      "change_role_title": "Change Member Role",
+      "change_role_submit": "Update Role",
+      "change_role_success": "Member role updated",
+      "change_role_failed": "Failed to update member role",
+      "columns": {
+        "email": "Email",
+        "roles": "Roles",
+        "status": "Status",
+        "joined_at": "Joined",
+        "actions": "Actions"
+      }
+    },
+    "accounts": {
+      "hint": "Create multiple business accounts under one organization (e.g. 3-party / 4-party). Switch accounts from the sidebar after creation.",
+      "create": "New Business Account",
+      "create_title": "New Business Account",
+      "submit_create": "Create",
+      "create_success": "Business account created",
+      "create_failed": "Failed to create business account",
+      "name": "Account name",
+      "name_required": "Account name is required",
+      "settlement_mode": "Settlement mode",
+      "mode": {
+        "platform": "Platform settlement",
+        "direct": "Direct settlement"
+      },
+      "columns": {
+        "name": "Name",
+        "code": "Account code",
+        "mode": "Mode",
+        "status": "Status"
+      }
+    },
+    "invitation_accept": {
+      "title": "Accept Invitation",
+      "processing": "Processing invitation…",
+      "missing_token": "Invalid invitation link or missing token.",
+      "success": "You have joined the organization",
+      "success_title": "Welcome",
+      "success_description": "Invitation accepted. Refresh or sign in again to load your updated organization access.",
+      "failed": "Failed to accept invitation",
+      "retry": "Retry",
+      "go_dashboard": "Go to Dashboard",
+      "go_organization": "View Organization"
+    }
+  }
+}

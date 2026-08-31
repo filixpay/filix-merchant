@@ -1,0 +1,930 @@
+{
+  "Layout": {
+    "title": "FilixPay - 국제 결제 및 글로벌 기업 성장을 위한 선택받은 파트너",
+    "sidebar_title": "판매자 플랫폼",
+    "identity": {
+      "current_identity": "현재 신원",
+      "independent": {
+        "title": "독립 판매자",
+        "desc": "4자 모드 (은행 직접 정산)"
+      },
+      "sub_merchant": {
+        "title": "서브 판매자",
+        "desc": "3자 모드 (플랫폼 대행 수취)"
+      },
+      "open_platform_service": "➕ 플랫폼 수취 서비스 개통",
+      "modal": {
+        "title": "플랫폼 수취 서비스 개통",
+        "bank_holder": "정산 은행 예금주",
+        "bank_account": "정산 계좌 번호",
+        "holder_hint": "성함은 회사명과 일치해야 합니다",
+        "submit": "지금 개통",
+        "cancel": "취소",
+        "success": "서비스가 성공적으로 개통되었습니다"
+      }
+    },
+    "workspace": {
+      "workspace": "Workspace",
+      "switch_business_account": "Switch business account",
+      "no_business_accounts": "No business accounts in this organization",
+      "affiliated_organization": "Organization",
+      "add_organization": "Add organization",
+      "add_business_account": "New business account",
+      "manage_organization": "Manage organization"
+    },
+    "logout": "로그아웃",
+    "nav": {
+      "overview": "개요",
+      "payment_configs": "결제 설정",
+      "checkout_counters": "결제 카운터 설정",
+      "orders": "주문",
+      "refunds": "환불",
+      "service_plan": "서비스 플랜",
+      "customers": "고객",
+      "locations": "매장",
+      "bank_accounts": "수취 계좌",
+      "transfers": "송금 심사",
+      "reviews": "송금 확인",
+      "sub_merchants": "서브 판매자",
+      "acquiring_management": "아쿠아이어링 관리",
+      "developer": "개발자 센터",
+      "refund_settings": "Refund settings",
+      "refund_approvals": "Refund approvals"
+    }
+  },
+  "ServicePlan": {
+    "title": "서비스 플랜",
+    "subtitle": "비즈니스 성장에 맞는 플랜을 선택하고 결제 기록을 확인하세요.",
+    "choose_plan": "플랜 선택",
+    "payment_records": "결제 기록",
+    "plans": {
+      "weekly": "주간 플랜",
+      "monthly": "월간 플랜",
+      "half_year": "반기 플랜",
+      "yearly": "연간 플랜"
+    },
+    "pay": "결제"
+  },
+  "Login": {
+    "title": "FilixPay Management Center",
+    "subtitle": "Manage merchants, organizations, payments, and developer resources in one place",
+    "button": "Sign In",
+    "connecting": "Connecting...",
+    "back_to_home": "← Back to Home",
+    "merchant_title": "Merchant Operations Center",
+    "merchant_body": "Manage payments, settlement, APIs, and applications",
+    "merchant_cta": "Enter Merchant Center",
+    "enterprise_title": "Enterprise Center",
+    "enterprise_body": "Manage organizations, members, permissions, and multi-merchant relationships",
+    "enterprise_cta": "Enter Enterprise Center"
+  },
+  "Dashboard": {
+    "title": "대시보드",
+    "overview": "개요",
+    "stats": {
+      "revenue": "오늘 총 수익",
+      "orders": "오늘 총 주문",
+      "channels": "활성 채널",
+      "available_funds": "Available funds",
+      "today_funds_revenue": "Today's funds revenue",
+      "asset_count": "{count} assets",
+      "other_assets": "+ {count} other assets",
+      "no_available_funds": "No available funds",
+      "view_balance": "View balance",
+      "view_activity": "View activity",
+      "view_orders": "View orders",
+      "settlement_cycle_label": "Settlement cycle",
+      "settlement_cycle_title": "T+1 automatic settlement",
+      "settlement_cycle_desc": "Funds settle directly from the upstream channel to your designated corporate bank account. Available balance follows bank statement reconciliation."
+    },
+    "recent_transactions": "최근 거래",
+    "no_transactions": "현재 최근 거래 내역이 없습니다."
+  },
+  "Configs": {
+    "title": "결제 설정",
+    "subtitle": "연결된 결제 채널 및 인증 정보를 관리합니다.",
+    "add_config": "설정 추가",
+    "headers": {
+      "payment_brand": "결제 브랜드",
+      "payment_channel": "결제 채널",
+      "payment_scenario": "결제 시나리오",
+      "rate": "요율",
+      "status": "상태",
+      "actions": "작업"
+    },
+    "loading": "설정을 불러오는 중...",
+    "empty": "현재 설정이 없습니다. 결제를 받으려면 추가하세요.",
+    "confirm_delete": "이 설정을 삭제하시겠습니까?",
+    "edit_secret_hint": "Secrets are never shown. Leave a secret blank to keep the current value.",
+    "sections": {
+      "alipay": "Alipay Configuration",
+      "wechat": "WeChat Configuration",
+      "stripe": "Stripe Configuration",
+      "paypal": "PayPal Configuration",
+      "nowpayments": "NowPayments Configuration"
+    },
+    "fields": {
+      "required": "This field is required",
+      "secret_keep_placeholder": "Leave blank to keep current secret",
+      "app_id": "App ID",
+      "partner_id": "Partner ID",
+      "sandbox_mode": "Sandbox Mode",
+      "alipay_public_key": "Alipay Public Key",
+      "app_private_key": "App Private Key",
+      "app_secret": "App Secret",
+      "mch_id": "Merchant ID",
+      "v2_api_key": "V2 API Key",
+      "v3_api_key": "V3 API Key",
+      "v3_serial_no": "V3 Serial No",
+      "v3_private_key": "V3 Private Key",
+      "v3_public_key": "V3 Public Key",
+      "secret_key": "Secret Key",
+      "publishable_key": "Publishable Key (Optional)",
+      "webhook_secret": "Webhook Secret (Optional)",
+      "client_id": "Client ID",
+      "client_secret": "Client Secret",
+      "webhook_id": "Webhook ID (Optional)",
+      "api_key": "API Key",
+      "ipn_secret": "IPN Secret (Optional)",
+      "default_currency": "Default Currency (Optional)"
+    }
+  },
+  "Checkouts": {
+    "title": "결제 카운터 설정",
+    "subtitle": "다국어 통합 결제 카운터를 관리 및 설정합니다.",
+    "create_counter": "설정 추가",
+    "edit_counter": "설정 편집",
+    "loading": "결제 카운터를 불러오는 중...",
+    "empty": "현재 결제 카운터가 없습니다. 생성하여 결제를 받으세요.",
+    "prompt_name": "결제 카운터 이름을 입력하세요:",
+    "headers": {
+      "name": "결제 카운터 이름",
+      "code": "코드",
+      "status": "상태",
+      "actions": "작업"
+    },
+    "form": {
+      "checkout_code": "결제 카운터 코드 (고유 ID)",
+      "checkout_name": "기본 표시 이름",
+      "status_active": "활성화",
+      "status_inactive": "비활성화",
+      "tabs": "탭 설정",
+      "add_tab": "탭 추가",
+      "tab_key": "탭 고유 ID (예: card, crypto)",
+      "tab_title": "탭 제목",
+      "display_order": "정렬 순서",
+      "enabled": "활성화",
+      "gateways": "포함된 결제 게이트웨이",
+      "add_gateway": "게이트웨이 추가",
+      "gateway_code": "게이트웨이 코드",
+      "recommended": "추천",
+      "logo": "로고 링크",
+      "color": "브랜드 색상",
+      "currencies": "지원 통화 (쉼표로 구분, *는 전체)",
+      "countries": "구매자 지역 (쉼표로 구분, *는 전체)",
+      "config_list": "결제 설정 목록",
+      "priority": "우선순위",
+      "save": "결제 카운터 저장",
+      "cancel": "취소"
+    },
+    "delete_confirm": "이 결제 카운터를 삭제하시겠습니까?"
+  },
+  "Home": {
+    "hero": {
+      "title": "FilixPay: 글로벌 통합 결제 솔루션,\n전 세계에서 쉽게 결제를 받을 수 있도록 지원",
+      "subtitle": "FilixPay – 글로벌 진출 기업을 위해 특별히 설계된 4자 결제 기술 서비스 플랫폼입니다. 안전하고 유연하며 효율적인 통합 결제 인프라를 제공하여 복잡한 연동 없이도 여러 주요 결제 방식을 통합 관리할 수 있습니다.",
+      "start": "지금 시작하기",
+      "contact": "영업팀에 문의"
+    },
+    "trial_experience": {
+      "title": "🌍 글로벌 결제, 지금 체험하세요",
+      "subtitle": "지금 FilixPay의 모든 기능을 무료로 체험해 보세요",
+      "features": [
+        "회사 서류 불필요",
+        "기술 연동 불필요",
+        "이메일로 등록, 30초 만에 실제 판매자 대시보드 입장"
+      ],
+      "cta": "FilixPay 무료 체험"
+    },
+    "features": {
+      "title": "올인원 통합 결제 – 글로벌 주요 채널과의 원활한 연동",
+      "subtitle": "FilixPay 판매자 센터를 통해 Alipay, WeChat Pay, PayPal, Stripe, NowPayments 등 여러 결제 채널을 쉽게 설정할 수 있습니다. 국내 및 해외 고객을 대상으로 하더라도 단 한 번의 연동으로 모든 결제 방식을 중앙에서 관리할 수 있습니다.",
+      "items": {
+        "unified": {
+          "title": "표준화된 결제 인터페이스",
+          "desc": "리디렉션 없이도 매끄럽고 일관된 고객 경험을 제공하는 표준화된 결제 인터페이스."
+        },
+        "sdk": {
+          "title": "임베디드 SDK",
+          "desc": "자사 웹사이트에 쉽게 배포하여 브랜드 신뢰도와 전환율을 높일 수 있습니다."
+        },
+        "extension": {
+          "title": "확장성 개방",
+          "desc": "FilixPay에서 아직 지원하지 않는 다른 결제 채널을 사용 중이라면 문의해 주세요. 일주일 내에 기술 연동을 완료해 드립니다."
+        },
+        "mobile": {
+          "title": "모바일 퍼스트 경험",
+          "desc": "완전한 모바일 반응형 디자인으로 이동 중에도 스마트폰으로 결제를 시작하고, 청구서를 확인하며, 비즈니스를 관리할 수 있습니다."
+        }
+      }
+    },
+    "pricing": {
+      "title": "성장 단계에 맞는 유연한 서비스 플랜",
+      "subtitle": "비즈니스 진행 속도에 맞게 선택할 수 있는 다양한 결제 옵션을 제공합니다",
+      "choose": "지금 구매하기",
+      "plans": {
+        "weekly": {
+          "name": "주간 플랜",
+          "price": "50 USD/주",
+          "desc": "핵심 기능을 쉽게 체험"
+        },
+        "monthly": {
+          "name": "월간 플랜",
+          "price": "200 USD/월",
+          "desc": "일상 운영을 안정적으로 지원"
+        },
+        "half_year": {
+          "name": "반기 플랜",
+          "price": "1100 USD/6개월",
+          "desc": "가성비 좋은 선택"
+        },
+        "yearly": {
+          "name": "연간 플랜",
+          "price": "2000 USD/년",
+          "desc": "안심과 비용 절감"
+        }
+      }
+    },
+    "deployment": {
+      "title": "🖥️ 독립 배포 버전: 풀 스택 제어 · 금융 수준 신뢰성 · 데이터 자율성",
+      "subtitle": "은행, 결제 서비스 제공업체, 대규모 그룹 및 데이터 보안 요구사항이 엄격한 글로벌 기업에 적합합니다",
+      "intro": "시스템 완전 제어, 거래 데이터를 내부 네트워크에 유지, 규정 준수 및 감사 요구사항 충족이 필요하다면, FilixPay는 엔터프라이즈 수준 독립 배포 솔루션을 제공합니다 – 퍼블릭 클라우드 의존성 없이, 한 번의 배포로 영구 운영.",
+      "benefits_title": "✅ FilixPay 독립 배포를 선택하는 이유",
+      "features": [
+        {
+          "title": "진정한 데이터 주권",
+          "desc": "모든 판매자 데이터, 거래 기록, API 키가 100% 고객의 개인 서버에 저장되며 외부 의존성 없음. GDPR, PCI-DSS 및 정보 보호 등급 3 요구사항 충족."
+        },
+        {
+          "title": "즉시 사용 가능한 엔터프라이즈 아키텍처",
+          "desc": "Docker 컨테이너화, 사전 통합: 멀티테넌트 엔진(정산 분할 지원), 통합 인증(OIDC/SAML), 올인원 개발자 센터, 암호화 결제 어댑터 및 높은 동시성 보장 메커니즘."
+        },
+        {
+          "title": "극도로 간단한 배포, 낮은 리소스 사용",
+          "desc": "4코어 8GB RAM Linux 서버 1대만 필요. docker-compose up 실행으로 전체 프로덕션 환경 시작, 배포는 30분 내 완료."
+        },
+        {
+          "title": "클러스터 준비 완료, 탄력적 확장",
+          "desc": "아키텍처가 기본적으로 수평 확장을 지원, 향후 Kubernetes로 원활한 마이그레이션 가능하여 트래픽 증가에 쉽게 대응."
+        }
+      ],
+      "price": "일회성 배포 비용: 28,000 USD",
+      "maintenance": "1년 무료 기술 유지보수 포함; 2년차부터는 시스템 장기 안정성과 업데이트 보장을 위해 연간 비용의 10%만 지속 유지보수 비용이 청구됩니다."
+    },
+    "investment": {
+      "title": "투자자 모집 – 함께 새로운 글로벌 결제 생태계를 만들어 갑니다",
+      "subtitle": "급성장 중인 핀테크 스타트업으로서, FilixPay는 혁신적인 4자 결제 아키텍처와 유연한 배포 방식을 통해 국제 결제 분야에서 큰 성장 가능성을 보여주고 있습니다. 전략적 투자 및 지분 협력 기회를 열어 둡니다.",
+      "contact_btn": "문의하기 (이메일: {email})"
+    },
+    "footer": {
+      "slogan": "결제를 더 쉽게, 비즈니스를 더 글로벌하게",
+      "rights": "© 2026 Filix.com. 모든 권리 보유."
+    },
+    "onboarding": {
+      "title": "판매자 가입",
+      "subtitle": "결제를 받기 위한 판매자 계정을 신청합니다. 판매자 이름은 공식 서류와 정확히 일치해야 합니다.",
+      "form": {
+        "mobile": "휴대폰 번호",
+        "email": "이메일 주소",
+        "name": "판매자 공식 명칭",
+        "officialId": "공식 문서 번호",
+        "submit": "지금 신청하기",
+        "success": "신청이 성공적으로 제출되었습니다!",
+        "error": "신청 제출에 실패했습니다. 다시 시도해 주세요.",
+        "login_required": "신청하려면 로그인해 주세요."
+      }
+    },
+    "core_capabilities": {
+      "title": "핵심 역량 하이라이트",
+      "items": {
+        "multi_tenant": {
+          "title": "엔터프라이즈 수준 멀티테넌트 아키텍처",
+          "desc": "기관, ISV 및 대규모 그룹 고객 지원, 마스터 판매자와 서브 판매자 간 완전한 데이터 분리 구현, 정산 분할, 독립적인 결제 처리 및 독립 운영 지원."
+        },
+        "flexible_mode": {
+          "title": "유연한 3자 & 4자 모드 호환",
+          "desc": "통합 결제 게이트웨이(4자)로 글로벌 주요 채널 연결 가능, 또는 통합 결제 획득 인터페이스(3자)로 그룹 기업의 중앙 집중식 결제 수취, 정산 분할 관리, 자금 집중화 일체화 지원."
+        },
+        "iam": {
+          "title": "엔터프라이즈 수준 통합 신원 인증",
+          "desc": "기본 지원 OIDC/SAML 프로토콜, 고객 기존 IAM 시스템과 원활 통합, Single Sign-On(SSO) 및 세분화된 RBAC 권한 제어 제공, 금융 수준 보안 규정 준수 요구사항 충족."
+        },
+        "developer": {
+          "title": "올인원 개발자 센터",
+          "desc": "대화형 API 문서, 샌드박스 환경, 키 관리, Webhook 디버깅 및 실패 재시도 도구 제공, 30분 내 빠른 연동으로 기술 연동 비용 대폭 절감."
+        },
+        "concurrency": {
+          "title": "높은 동시성 핵심 프로세스 보장",
+          "desc": "핫 계정 장부 처리 등 중요한 시나리오에서 비동기 큐를 통한 피크 조절 + 순차적 쓰기 메커니즘 채택, 높은 동시성 환경에서도 데이터 일관성과 시스템 안정성 보장."
+        },
+        "cloud_native": {
+          "title": "클라우드 네이티브 탄력적 확장",
+          "desc": "Kubernetes 기반 마이크로서비스 아키텍처, 초 단위 수평 확장/축소 지원, 대형 행사(예: 11.11, 블랙프라이데이) 트래픽 급증에 쉽게 대응, 중대형 고객의 고가용성 SLA 요구사항 충족."
+        }
+      }
+    },
+    "ecommerce_solution": {
+      "title": "크로스보더 전자상거래 전용 솔루션: 활성화 즉시 수취, 글로벌 걱정 없이",
+      "subtitle": "법정화폐 + 암호화폐 이중 채널 지원 – 오늘 설정, 내일 결제 수취!",
+      "fiat": {
+        "title": "법정화폐 결제 수취",
+        "desc": "판매자가 Stripe, PayPal, Alipay+ 등의 주요 채널에서 계좌 개설 후, FilixPay 백엔드에서 API 인증 정보를 연동하면 신용카드, 현지 지갑 등의 결제 방식이 즉시 활성화됩니다."
+      },
+      "crypto": {
+        "title": "암호화폐 결제 수취",
+        "desc": "판매자가 NowPayments, Coinbase Commerce, OKX Pay 등의 협력 암호화폐 결제 서비스 제공업체에 등록 및 KYC 완료 후, 전용 수취 주소 또는 API 키 획득; FilixPay에서 한 번의 클릭 설정으로 BTC, ETH, USDT, USDC 등 100개 이상의 주요 디지털 자산 결제 수취 가능."
+      },
+      "tagline": "개발 불필요, 암호화폐 보유 불필요, 자체 지갑 구축 불필요 – 모든 자금은 해당 결제 기관의 고객 계좌로 직접 입금되며, FilixPay는 통합 표시, 라우팅 및 알림만 담당합니다.",
+      "processing": {
+        "title": "시스템이 자동으로 처리합니다:",
+        "items": [
+          "다중 통화 법정화폐 결제 처리 (USD/EUR/GBP/CNY 등)",
+          "암호화폐 결제 실시간 콜백 및 상태 동기화",
+          "통합 거래 대시보드, Webhook 알림, 자동 대조",
+          "암호화폐 수취액을 스테이블코인 또는 법정화폐로 자동 전환 지원 (결제 기관에서 실행)"
+        ]
+      },
+      "advantages": {
+        "title": "FilixPay의 암호화폐 결제 수취 솔루션을 선택하는 이유?",
+        "headers": {
+          "advantage": "강점",
+          "description": "설명"
+        },
+        "items": [
+          {
+            "label": "규정 준수 및 보안",
+            "value": "자금은 NowPayments 등 라이선스 보유 서비스 제공업체가 관리, FATF 여행 규칙(Travel Rule) 준수"
+          },
+          {
+            "label": "극히 빠른 활성화",
+            "value": "블록체인 노드와의 기술 연동 불필요, 설정 10분 내 완료"
+          },
+          {
+            "label": "전자지불 거절 위험 제거",
+            "value": "암호화폐 거래는 취소 불가, Chargeback 위험 완전 제거"
+          },
+          {
+            "label": "광범위한 커버리지",
+            "value": "글로벌 주요 암호화폐 결제 게이트웨이 지원, 6억 명 이상의 Web3 사용자 도달"
+          },
+          {
+            "label": "보유 위험 제로",
+            "value": "실시간 법정화폐 전환 가능, 가격 변동성 회피"
+          }
+        ]
+      },
+      "customers": {
+        "title": "적합한 고객",
+        "items": [
+          "Shopify / WooCommerce 독립형 스토어 판매자",
+          "Web3 전자상거래 (NFT, 디지털 상품, GameFi)",
+          "크로스보더 DTC 브랜드, SaaS, 구독 서비스",
+          "저비용으로 암호화폐 결제 시도하고자 하는 기존 전자상거래 업체"
+        ]
+      },
+      "footer_tagline": "FilixPay – 바퀴를 재발명하지 않고, 연결을 만듭니다.",
+      "footer_sub": "가장 규정 준수하고 간단한 방법으로 전 세계 모든 종류의 돈을 받을 수 있도록 합니다."
+    }
+  },
+  "Orders": {
+    "title": "주문 관리",
+    "subtitle": "모든 거래 내역을 조회하고 검색합니다.",
+    "search_placeholder": "판매자 주문 번호 또는 상품명으로 검색...",
+    "filter": "필터",
+    "create_order": "주문 생성",
+    "create_modal": {
+      "title": "수동으로 결제 주문 생성",
+      "merchant_order_id": "판매자 주문 번호",
+      "subject": "주문 제목",
+      "return_url": "리턴 URL (선택사항)",
+      "buyer_id": "구매자 ID (선택사항)",
+      "currency": "통화",
+      "amount": "총액",
+      "expiry": "만료 시간",
+      "items": "상품 상세",
+      "add_item": "상품 추가",
+      "product_id": "상품 ID",
+      "desc": "설명",
+      "qty": "수량",
+      "price": "단가",
+      "submit": "제출 및 생성",
+      "cancel": "취소"
+    },
+    "headers": {
+      "order_id": "주문 번호",
+      "order_type": "주문 유형",
+      "buyer_code_trade_no": "거래 번호 / 고객 코드",
+      "sub_merchant_location": "서브 판매자 / 매장",
+      "amount": "금액",
+      "status": "상태",
+      "created_at": "생성 일시"
+    },
+    "empty": "현재 주문 데이터가 없습니다.",
+    "initiate_payment": "결제 시작",
+    "initiate_refund": "환불 시작",
+    "details": {
+      "title": "주문 상세",
+      "subject": "상품명",
+      "order_type": "주문 유형",
+      "merchant_order_id": "판매자 주문 번호",
+      "trade_no": "거래 번호",
+      "amount": "주문 금액",
+      "paid_amount": "지불 금액",
+      "refunded_amount": "환불 금액",
+      "refundable_amount": "환불 가능 금액",
+      "status": "거래 상태",
+      "payment_expiry": "결제 만료 시간",
+      "channel": "결제 채널",
+      "created_at": "생성 일시",
+      "seller_info": "판매자 정보",
+      "buyer_info": "구매자 정보",
+      "name": "이름",
+      "merchant_id": "판매자 ID",
+      "buyer_code": "고객 코드",
+      "close": "닫기",
+      "grand_total": "합계 금액"
+    },
+    "orderTypes": {
+      "TRADE": "거래 주문",
+      "DEPOSIT": "충전",
+      "TRANSFER": "이체",
+      "PAYOUT": "지급",
+      "WITHDRAWAL": "출금",
+      "REFUND": "환불",
+      "DIRECT_DEBIT": "자동이체",
+      "PLATFORM_SERVICE_FEE": "플랫폼 수수료"
+    },
+    "payment_modal": {
+      "title": "보안 결제 - FilixPay.com",
+      "amount_to_pay": "결제할 금액",
+      "expires_at": "링크 유효 기간: {time}",
+      "go_to_pay": "결제 카운터로 이동",
+      "copy_link": "링크 복사",
+      "share_link": "링크 공유",
+      "share_whatsapp": "WhatsApp",
+      "share_email": "이메일로 보내기",
+      "copy_success": "링크가 복사되었습니다"
+    }
+  },
+  "Developer": {
+    "title": "개발자 센터",
+    "api_credentials": "API 인증 정보",
+    "api_credentials_desc": "프로그래밍 방식 접근을 위한 API 키를 관리합니다.",
+    "view_swagger": "Swagger API 문서를 확인하세요.",
+    "generate_button": "API 키 생성/재설정",
+    "webhook_endpoints": "Webhook 엔드포인트",
+    "webhook_endpoints_desc": "이벤트 알림을 받을 Webhook 엔드포인트를 구성합니다.",
+    "view_docs": "서명 검증 안내를 확인하세요.",
+    "add_webhook": "Webhook 추가",
+    "webhook_deliveries": "Webhook 전송 기록",
+    "webhook_deliveries_desc": "서버로 전송된 Webhook 이벤트 내역을 확인합니다. 예상 이벤트가 보이지 않거나 전송 실패 시 엔드포인트 가용성을 확인하세요.",
+    "delivery_headers": {
+      "url": "Webhook URL",
+      "delivery_status": "상태",
+      "attempt": "시도 횟수",
+      "created_at": "전송 시간",
+      "payload": "페이로드"
+    },
+    "payload_modal_title": "Webhook 페이로드",
+    "copy_payload": "페이로드 복사",
+    "close": "닫기",
+    "explorer": {
+      "tab": "API Explorer",
+      "title": "Sandbox API Explorer",
+      "subtitle": "Select an Application and operation, then execute via the server-side Explorer proxy. Credentials and tokens stay on the server.",
+      "application": "Application",
+      "application_placeholder": "Select application",
+      "no_applications": "No applications available",
+      "operation": "Operation",
+      "operation_placeholder": "Select operation",
+      "no_operations": "No published operations",
+      "path_params": "Path parameters",
+      "query_json": "Query parameters (JSON object)",
+      "header_json": "Headers (JSON object)",
+      "header_hint": "Only Artifact-declared headers. Do not send Authorization, Cookie, or merchant/org headers.",
+      "body_json": "Request body (JSON)",
+      "execute": "Execute",
+      "execute_failed": "Explorer execute failed",
+      "select_required": "Select an application and operation",
+      "response": "Response",
+      "status": "Status",
+      "latency": "Latency",
+      "trace_id": "Trace ID",
+      "headers": "Headers",
+      "body": "Body",
+      "retry": "Retry",
+      "load_apps_failed": "Failed to load applications",
+      "load_ops_failed": "Failed to load operations"
+    }
+  },
+  "Common": {
+    "loading": "로딩 중...",
+    "error": "오류가 발생했습니다",
+    "success": "성공",
+    "confirm_delete": "이 항목을 삭제하시겠습니까?",
+    "cancel": "취소",
+    "submit": "제출",
+    "reset": "초기화",
+    "previous": "이전",
+    "next": "다음",
+    "page_of": "페이지 {current} / {total}",
+    "close": "닫기",
+    "add": "추가",
+    "delete": "삭제",
+    "actions": "작업"
+  },
+  "Refunds": {
+    "title": "환불 관리",
+    "subtitle": "환불 기록을 조회하고 검색합니다.",
+    "search_placeholder": "환불 ID 또는 주문 번호로 검색...",
+    "filter": "필터",
+    "headers": {
+      "refund_id": "환불 ID",
+      "order_id": "주문 번호",
+      "amount": "금액",
+      "status": "상태",
+      "created_at": "신청일"
+    },
+    "empty": "환불 데이터가 없습니다.",
+    "create_refund": "환불 생성",
+    "create_modal": {
+      "title": "환불 주문 생성",
+      "trade_no": "거래 번호",
+      "merchant_refund_id": "판매자 환불 ID",
+      "reason": "환불 사유",
+      "currency": "통화",
+      "amount": "환불 금액",
+      "default_reason": "판매자 개시 환불",
+      "submit": "환불 제출",
+      "cancel": "취소"
+    },
+    "details": {
+      "title": "환불 상세",
+      "view": "상세",
+      "refund_no": "환불 번호",
+      "merchant_refund_id": "판매자 환불 ID",
+      "amount": "환불 금액",
+      "merchant_amount": "판매자 실제 환불액",
+      "status": "환불 상태",
+      "reason": "환불 사유",
+      "applicant": "신청자",
+      "created_at": "생성일",
+      "updated_at": "최종 업데이트",
+      "service_fee": "환불 서비스 수수료",
+      "order_info": "원래 주문 정보",
+      "order_id": "판매자 주문 번호",
+      "trade_no": "거래 번호",
+      "order_amount": "주문 금액",
+      "order_status": "주문 상태",
+      "close": "닫기"
+    },
+    "settings": {
+      "title": "Refund settings",
+      "subtitle": "Configure when refunds execute automatically versus requiring merchant approval.",
+      "settlement_currency": "Settlement currency",
+      "threshold": "Auto-execute threshold",
+      "threshold_help": "Refunds at or below this amount (in settlement currency) execute automatically. Larger amounts stay pending until approved.",
+      "threshold_required": "Enter a threshold",
+      "threshold_min": "Threshold cannot be negative",
+      "unlimited": "Skip amount-based approval",
+      "unlimited_help": "When enabled, amount alone never triggers approval. FX conversion failures can still require approval.",
+      "fx_help": "Cross-currency refunds are converted to settlement currency via FX before comparison. If no quote is available, the refund still creates but awaits approval.",
+      "using_platform_default": "Using platform default threshold: {threshold}",
+      "save": "Save settings",
+      "save_success": "Refund settings saved",
+      "save_failed": "Failed to save refund settings",
+      "load_failed": "Failed to load refund settings"
+    },
+    "approvals": {
+      "title": "Refund approvals",
+      "subtitle": "Review refunds that exceeded the auto-execute threshold and are waiting for approval.",
+      "empty": "No refunds awaiting approval.",
+      "approve": "Approve",
+      "reject": "Reject",
+      "approve_confirm": "Approve this refund?",
+      "approve_confirm_desc": "Approval will execute the refund through the payment channel.",
+      "reject_confirm": "Reject this refund?",
+      "reject_confirm_desc": "Rejection cancels the refund request. It will not hit the channel.",
+      "approve_success": "Refund approved and execution started",
+      "reject_success": "Refund rejected and cancelled",
+      "approve_failed": "Failed to approve refund",
+      "reject_failed": "Failed to reject refund",
+      "detail_failed": "Failed to load refund details"
+    }
+  },
+  "Customers": {
+    "title": "고객 관리",
+    "subtitle": "고객 정보를 조회하고 관리합니다.",
+    "search": "검색",
+    "headers": {
+      "name": "이름",
+      "code": "고객 코드",
+      "email": "이메일",
+      "mobile": "휴대폰",
+      "phone": "전화",
+      "status": "상태",
+      "created_at": "생성일"
+    },
+    "loading": "고객 로딩 중...",
+    "empty": "고객 데이터가 없습니다."
+  },
+  "Locations": {
+    "title": "매장 정보",
+    "subtitle": "사업장 매장 정보를 관리합니다.",
+    "create_location": "매장 추가",
+    "headers": {
+      "name": "이름",
+      "address": "주소",
+      "contact": "연락처",
+      "status": "상태",
+      "default": "기본값",
+      "created_at": "생성일"
+    },
+    "form": {
+      "name": "매장명",
+      "sub_merchant": "서브 판매자",
+      "address": "주소",
+      "country": "국가",
+      "mobile_phone": "휴대폰",
+      "email": "연락 이메일",
+      "service_phone": "서비스 전화",
+      "submit": "제출",
+      "cancel": "취소",
+      "success": "매장이 성공적으로 생성되었습니다"
+    },
+    "empty": "매장 데이터가 없습니다."
+  },
+  "BankAccounts": {
+    "title": "수취 계좌",
+    "subtitle": "결제 수취용 은행 계좌 정보를 관리합니다.",
+    "create_account": "계좌 생성",
+    "headers": {
+      "bank_name": "은행명",
+      "branch_name": "지점명",
+      "account_holder": "계좌 명의자",
+      "account_number": "계좌번호",
+      "city": "도시",
+      "status": "상태",
+      "primary": "기본",
+      "created_at": "생성일"
+    },
+    "form": {
+      "create_title": "수취 계좌 생성",
+      "bank_name": "은행명",
+      "branch_name": "지점명",
+      "account_holder": "계좌 명의자",
+      "account_number": "계좌번호",
+      "city": "도시",
+      "primary": "기본으로 설정",
+      "cancel": "취소",
+      "submit": "제출",
+      "success": "성공적으로 생성되었습니다"
+    },
+    "empty": "수취 계좌가 없습니다."
+  },
+  "Transfers": {
+    "title": "송금 심사",
+    "subtitle": "송금 및 정산 요청을 관리하고 심사합니다.",
+    "headers": {
+      "merchant_order_id": "주문 번호",
+      "subject": "제목",
+      "transaction_id": "은행 거래 참조",
+      "payer": "지불자",
+      "payee": "수취인",
+      "amount": "금액",
+      "audit_operator": "심사 담당자",
+      "created_at": "생성일",
+      "actions": "작업"
+    },
+    "tabs": {
+      "waiting": "심사 대기",
+      "passed": "승인됨",
+      "rejected": "반려"
+    },
+    "audit_btn": "심사",
+    "view_btn": "상세",
+    "empty": "심사 기록이 없습니다.",
+    "audit": {
+      "title": "송금 심사",
+      "title_view": "송금 상세",
+      "zoom_in": "확대",
+      "transfer_info": "송금 정보",
+      "audit_info": "심사 정보",
+      "amount": "금액",
+      "payee": "수취인",
+      "payee_bank": "수취인 은행",
+      "payee_account": "수취인 계좌",
+      "status": "상태",
+      "audit_status": "심사 상태",
+      "audit_operator": "심사 담당자",
+      "proof_image": "송금 증빙서",
+      "audit_form": "심사 정보",
+      "transaction_id": "은행 거래 ID",
+      "transaction_id_placeholder": "은행 명세서의 거래 ID를 입력하세요",
+      "payer_name": "지불자 계좌 명의",
+      "payer_account": "지불자 계좌번호",
+      "payer_bank": "지불자 은행",
+      "audit_decision": "심사 결정",
+      "pass": "승인",
+      "reject": "반려",
+      "reject_reason": "반려 사유",
+      "reject_reason_placeholder": "반려 사유를 입력하세요",
+      "reject_reason_required": "반려 사유는 필수입니다",
+      "not_found": "송금 상세를 찾을 수 없습니다"
+    }
+  },
+  "Reviews": {
+    "title": "송금 확인",
+    "subtitle": "심사 통과한 송금을 확인합니다.",
+    "headers": {
+      "merchant_order_id": "주문 번호",
+      "subject": "제목",
+      "transaction_id": "은행 거래 참조",
+      "payer": "지불자",
+      "payee": "수취인",
+      "amount": "금액",
+      "audit_operator": "심사 담당자",
+      "review_operator": "확인 담당자",
+      "created_at": "생성일",
+      "actions": "작업"
+    },
+    "tabs": {
+      "pending": "대기 중",
+      "active": "확인됨",
+      "rejected": "반려"
+    },
+    "confirm_btn": "확인",
+    "view_btn": "상세",
+    "empty": "확인 대기 기록이 없습니다.",
+    "confirm_success": "성공적으로 확인되었습니다",
+    "confirm_confirm": "이 송금을 확인하시겠습니까?",
+    "confirm_deposit": "입금 확인",
+    "audit_operator": "심사 담당자",
+    "review_operator": "확인 담당자",
+    "review_status": "확인 상태",
+    "review_decision": "확인 결정",
+    "review_form": "확인 작업"
+  },
+  "SubMerchants": {
+    "title": "서브 판매자 관리",
+    "subtitle": "서브 판매자 정보를 조회하고 관리합니다.",
+    "create_sub_merchant": "서브 판매자 추가",
+    "form": {
+      "name": "판매자명",
+      "alias": "정산 별칭",
+      "success": "서브 판매자가 성공적으로 생성되었습니다"
+    },
+    "headers": {
+      "name": "판매자명",
+      "alias": "별칭",
+      "code": "판매자 코드",
+      "merchant_id": "판매자 ID",
+      "status": "상태",
+      "created_at": "생성일"
+    },
+    "empty": "서브 판매자 데이터가 없습니다."
+  },
+  "Organization": {
+    "title": "Organization",
+    "no_active_org": "Select an organization from the sidebar first.",
+    "tabs": {
+      "members": "Members",
+      "roles": "Roles",
+      "business_accounts": "Business Accounts"
+    },
+    "scope_denied": "You no longer have access to the selected business account. Switched to an available account.",
+    "actions": {
+      "refresh": "Refresh",
+      "cancel": "Cancel"
+    },
+    "roles": {
+      "create": "Create Role",
+      "edit": "Edit",
+      "view": "View",
+      "delete": "Delete",
+      "save": "Save",
+      "create_title": "Create Custom Role",
+      "edit_title": "Edit Role",
+      "delete_confirm": "Delete this custom role?",
+      "delete_success": "Role deleted",
+      "delete_failed": "Failed to delete role",
+      "create_success": "Role created",
+      "edit_success": "Role updated",
+      "save_failed": "Failed to save role",
+      "load_failed": "Failed to load roles",
+      "no_permission": "Your role cannot manage organization roles.",
+      "no_permissions": "No permissions",
+      "permissions_summary": "{count} permissions",
+      "role_in_use": "This role is assigned to members and cannot be deleted.",
+      "code_required": "Role code is required",
+      "display_name_required": "Display name is required",
+      "permissions_required": "Select at least one permission",
+      "description": "Description",
+      "columns": {
+        "code": "Code",
+        "display_name": "Display Name",
+        "kind": "Kind",
+        "permissions": "Permissions",
+        "actions": "Actions"
+      },
+      "kind": {
+        "SYSTEM": "System",
+        "CUSTOM": "Custom"
+      },
+      "permissions": {
+        "MERCHANT_VIEW": "View merchants",
+        "MERCHANT_EDIT": "Edit merchants",
+        "MERCHANT_CREATE": "Create merchants",
+        "USER_VIEW": "View members",
+        "USER_INVITE": "Invite members",
+        "USER_REMOVE": "Remove members",
+        "PAYMENT_VIEW": "View payments",
+        "APIKEY_VIEW": "View API keys",
+        "APIKEY_CREATE": "Create API keys",
+        "WEBHOOK_MANAGE": "Manage webhooks",
+        "ROLE_MANAGE": "Manage roles"
+      },
+      "scope": {
+        "label": "Merchant scope",
+        "empty_means_all": "Leave empty to allow access to all merchants in the organization.",
+        "placeholder": "Select merchants (optional)",
+        "system_readonly": "System roles have full organization access. Merchant scope cannot be changed.",
+        "orphan_warning": "{count} merchant(s) in this role's scope are no longer visible to you."
+      }
+    },
+    "members": {
+      "invite": "Invite Member",
+      "invite_title": "Invite to Organization",
+      "send_invite": "Send Invitation",
+      "invite_success": "Invitation sent",
+      "invite_failed": "Failed to send invitation",
+      "remove": "Remove",
+      "remove_confirm": "Remove this member?",
+      "remove_success": "Member removed",
+      "remove_failed": "Failed to remove member",
+      "load_failed": "Failed to load members",
+      "no_permission": "Your role cannot view the member list.",
+      "email": "Email",
+      "email_required": "Email is required",
+      "email_invalid": "Invalid email address",
+      "role": "Role",
+      "role_required": "Select a role",
+      "role_placeholder": "Choose a role",
+      "change_role": "Change Role",
+      "change_role_title": "Change Member Role",
+      "change_role_submit": "Update Role",
+      "change_role_success": "Member role updated",
+      "change_role_failed": "Failed to update member role",
+      "columns": {
+        "email": "Email",
+        "roles": "Roles",
+        "status": "Status",
+        "joined_at": "Joined",
+        "actions": "Actions"
+      }
+    },
+    "accounts": {
+      "hint": "Create multiple business accounts under one organization (e.g. 3-party / 4-party). Switch accounts from the sidebar after creation.",
+      "create": "New Business Account",
+      "create_title": "New Business Account",
+      "submit_create": "Create",
+      "create_success": "Business account created",
+      "create_failed": "Failed to create business account",
+      "name": "Account name",
+      "name_required": "Account name is required",
+      "settlement_mode": "Settlement mode",
+      "mode": {
+        "platform": "Platform settlement",
+        "direct": "Direct settlement"
+      },
+      "columns": {
+        "name": "Name",
+        "code": "Account code",
+        "mode": "Mode",
+        "status": "Status"
+      }
+    },
+    "invitation_accept": {
+      "title": "Accept Invitation",
+      "processing": "Processing invitation…",
+      "missing_token": "Invalid invitation link or missing token.",
+      "success": "You have joined the organization",
+      "success_title": "Welcome",
+      "success_description": "Invitation accepted. Refresh or sign in again to load your updated organization access.",
+      "failed": "Failed to accept invitation",
+      "retry": "Retry",
+      "go_dashboard": "Go to Dashboard",
+      "go_organization": "View Organization"
+    }
+  }
+}

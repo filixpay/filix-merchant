@@ -1,0 +1,65 @@
+.modalBody {
+  margin-top: 24px;
+}
+
+.modalLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 420px);
+  gap: 24px;
+  align-items: start;
+}
+
+.previewColumn,
+.formColumn {
+  min-width: 0;
+}
+
+.previewCard {
+  min-height: 420px;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.previewImage {
+  max-width: 100%;
+}
+
+.descriptionList :global(.ant-descriptions-view) {
+  background: transparent;
+}
+
+.descriptionList :global(.ant-descriptions-item-label) {
+  width: 112px;
+  color: #8c8c8c;
+}
+
+.descriptionList :global(.ant-descriptions-item-content) {
+  color: #262626;
+}
+
+.amountValue {
+  color: #cf1322 !important;
+  font-size: 20px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.accountSummary {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.metaText {
+  color: #8c8c8c !important;
+  font-size: 12px;
+}
+
+.readonlySection {
+  margin-top: 16px;
+}

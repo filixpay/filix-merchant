@@ -1,0 +1,84 @@
+.amount {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: -0.01em;
+  color: #0f172a;
+  white-space: nowrap;
+}
+
+.channel {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #475569;
+}
+
+.time {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  line-height: 1.4;
+}
+
+.statusDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.statusSuccess {
+  background: #ecfdf5;
+  border-color: rgba(167, 243, 208, 0.9);
+  color: #047857;
+}
+
+.statusSuccess .statusDot {
+  background: #10b981;
+}
+
+.statusWarning {
+  background: #fffbeb;
+  border-color: #fde68a;
+  color: #b45309;
+}
+
+.statusWarning .statusDot {
+  background: #f59e0b;
+}
+
+.statusDanger {
+  background: #fff1f2;
+  border-color: #fecdd3;
+  color: #be123c;
+}
+
+.statusDanger .statusDot {
+  background: #f43f5e;
+}
+
+.statusNeutral {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+  color: #475569;
+}
+
+.statusNeutral .statusDot {
+  background: #94a3b8;
+}

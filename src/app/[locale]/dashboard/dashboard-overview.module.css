@@ -1,0 +1,257 @@
+.kpiRow {
+  margin-bottom: 16px;
+}
+
+.analyticsRow {
+  margin-bottom: 16px;
+}
+
+.quickActions {
+  display: flex;
+  gap: 8px;
+}
+
+.panel {
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 12px;
+  box-shadow: var(--dashboard-shadow-sm);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.panelHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.panelBody {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 4px;
+}
+
+.panelLabel {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.panelLink {
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2563eb;
+  white-space: nowrap;
+}
+
+.panelLink:hover {
+  color: #1d4ed8;
+}
+
+.panelValue {
+  display: block;
+  margin-top: 8px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.panelValueCompact {
+  display: block;
+  margin-top: 8px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.assetList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.panelFoot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.panelMeta {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.panelHint {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+.revenueList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.metricStack {
+  height: 100%;
+}
+
+.emptyValue {
+  margin-top: 8px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #94a3b8;
+}
+
+.segmentActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.trendChart {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16px, 1fr));
+  align-items: stretch;
+  gap: 8px;
+  height: 180px;
+  padding: 12px 0;
+}
+
+.trendBarItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  min-height: 0;
+  height: 100%;
+}
+
+.trendBarTrack {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  min-height: 0;
+}
+
+.trendBar {
+  width: 100%;
+  border-radius: 6px 6px 3px 3px;
+  background: linear-gradient(180deg, #3b82f6 0%, #1d4ed8 100%);
+  min-height: 4px;
+}
+
+.trendLabel {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.trendSummary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 12px;
+}
+
+.trendValue {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+}
+
+.trendMeta {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.healthGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 12px;
+}
+
+.healthValue {
+  display: block;
+  margin-top: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.activityList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.activityRow {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #ffffff;
+}
+
+.activityTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.activityId {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.activityAmount {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.activityMeta {
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+@media (max-width: 768px) {
+  .quickActions {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="800" viewBox="0 0 1120 800">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1120" height="800" fill="url(#bg2)"/>
+  <!-- Header bar -->
+  <rect x="0" y="0" width="1120" height="64" fill="#0c1222"/>
+  <rect x="32" y="18" width="140" height="28" rx="6" fill="url(#accent2)" opacity="0.3"/>
+  <rect x="800" y="22" width="80" height="20" rx="4" fill="#334155"/>
+  <rect x="900" y="22" width="80" height="20" rx="4" fill="#334155"/>
+  <rect x="1000" y="16" width="88" height="32" rx="8" fill="url(#bar2)" opacity="0.8"/>
+  <!-- Page title -->
+  <rect x="48" y="96" width="260" height="28" rx="4" fill="#e2e8f0" opacity="0.9"/>
+  <rect x="48" y="136" width="400" height="14" rx="4" fill="#64748b"/>
+  <!-- Analytics grid -->
+  <rect x="48" y="180" width="520" height="380" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <rect x="72" y="204" width="140" height="18" rx="4" fill="#e2e8f0" opacity="0.8"/>
+  <!-- Bar chart -->
+  <rect x="100" y="460" width="40" height="80" rx="4" fill="url(#bar2)" opacity="0.9"/>
+  <rect x="160" y="420" width="40" height="120" rx="4" fill="url(#bar2)" opacity="0.9"/>
+  <rect x="220" y="380" width="40" height="160" rx="4" fill="url(#bar2)" opacity="0.9"/>
+  <rect x="280" y="340" width="40" height="200" rx="4" fill="url(#accent2)" opacity="0.9"/>
+  <rect x="340" y="370" width="40" height="170" rx="4" fill="url(#bar2)" opacity="0.9"/>
+  <rect x="400" y="310" width="40" height="230" rx="4" fill="url(#bar2)" opacity="0.9"/>
+  <rect x="460" y="350" width="40" height="190" rx="4" fill="url(#bar2)" opacity="0.9"/>
+  <!-- Labels -->
+  <rect x="105" y="508" width="30" height="8" rx="2" fill="#64748b"/>
+  <rect x="165" y="508" width="30" height="8" rx="2" fill="#64748b"/>
+  <rect x="225" y="508" width="30" height="8" rx="2" fill="#64748b"/>
+  <rect x="285" y="508" width="30" height="8" rx="2" fill="#64748b"/>
+  <rect x="345" y="508" width="30" height="8" rx="2" fill="#64748b"/>
+  <rect x="405" y="508" width="30" height="8" rx="2" fill="#64748b"/>
+  <rect x="465" y="508" width="30" height="8" rx="2" fill="#64748b"/>
+  <!-- Right side: Pie chart area -->
+  <rect x="592" y="180" width="480" height="380" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <rect x="616" y="204" width="160" height="18" rx="4" fill="#e2e8f0" opacity="0.8"/>
+  <!-- Donut chart -->
+  <circle cx="832" cy="400" r="100" fill="none" stroke="#3b82f6" stroke-width="24" stroke-dasharray="200 429" transform="rotate(-90 832 400)"/>
+  <circle cx="832" cy="400" r="100" fill="none" stroke="#8b5cf6" stroke-width="24" stroke-dasharray="120 509" stroke-dashoffset="-200" transform="rotate(-90 832 400)"/>
+  <circle cx="832" cy="400" r="100" fill="none" stroke="#ec4899" stroke-width="24" stroke-dasharray="80 549" stroke-dashoffset="-320" transform="rotate(-90 832 400)"/>
+  <circle cx="832" cy="400" r="100" fill="none" stroke="#22c55e" stroke-width="24" stroke-dasharray="60 569" stroke-dashoffset="-400" transform="rotate(-90 832 400)"/>
+  <!-- Center text -->
+  <rect x="797" y="390" width="70" height="20" rx="4" fill="#e2e8f0"/>
+  <!-- Legend -->
+  <rect x="616" y="510" width="12" height="12" rx="3" fill="#3b82f6"/>
+  <rect x="636" y="512" width="60" height="8" rx="2" fill="#94a3b8"/>
+  <rect x="730" y="510" width="12" height="12" rx="3" fill="#8b5cf6"/>
+  <rect x="750" y="512" width="60" height="8" rx="2" fill="#94a3b8"/>
+  <rect x="844" y="510" width="12" height="12" rx="3" fill="#ec4899"/>
+  <rect x="864" y="512" width="60" height="8" rx="2" fill="#94a3b8"/>
+  <rect x="958" y="510" width="12" height="12" rx="3" fill="#22c55e"/>
+  <rect x="978" y="512" width="60" height="8" rx="2" fill="#94a3b8"/>
+  <!-- Bottom stats row -->
+  <rect x="48" y="584" width="340" height="180" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <rect x="72" y="608" width="100" height="14" rx="4" fill="#64748b"/>
+  <rect x="72" y="636" width="200" height="32" rx="4" fill="#e2e8f0"/>
+  <rect x="72" y="690" width="120" height="18" rx="6" fill="#22c55e" opacity="0.2"/>
+  <rect x="72" y="726" width="280" height="8" rx="2" fill="#334155"/>
+  <rect x="72" y="726" width="196" height="8" rx="2" fill="url(#bar2)" opacity="0.6"/>
+  <rect x="412" y="584" width="340" height="180" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <rect x="436" y="608" width="100" height="14" rx="4" fill="#64748b"/>
+  <rect x="436" y="636" width="180" height="32" rx="4" fill="#e2e8f0"/>
+  <rect x="436" y="690" width="100" height="18" rx="6" fill="#f59e0b" opacity="0.2"/>
+  <rect x="436" y="726" width="280" height="8" rx="2" fill="#334155"/>
+  <rect x="436" y="726" width="140" height="8" rx="2" fill="url(#accent2)" opacity="0.6"/>
+  <rect x="776" y="584" width="296" height="180" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <rect x="800" y="608" width="100" height="14" rx="4" fill="#64748b"/>
+  <rect x="800" y="636" width="160" height="32" rx="4" fill="#e2e8f0"/>
+  <rect x="800" y="690" width="80" height="18" rx="6" fill="#3b82f6" opacity="0.2"/>
+  <rect x="800" y="726" width="240" height="8" rx="2" fill="#334155"/>
+  <rect x="800" y="726" width="216" height="8" rx="2" fill="#22c55e" opacity="0.6"/>
+</svg>

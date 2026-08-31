@@ -1,0 +1,166 @@
+/* Login Page - Minimalist Business Blue Theme */
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--slate-50);
+    font-family: var(--font-sans);
+    position: relative;
+}
+
+.card {
+    position: relative;
+    z-index: 10;
+    background-color: #ffffff;
+    border: 1px solid var(--slate-200);
+    padding: 48px 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 720px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 32px;
+}
+
+.logoImg {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--slate-900);
+}
+
+.subtitle {
+    font-size: 15px;
+    color: var(--slate-500);
+    margin-bottom: 28px;
+    max-width: 36rem;
+    line-height: 1.5;
+}
+
+.portalGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 640px) {
+    .portalGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 36px 24px;
+    }
+}
+
+.portalCard {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+    border: 1px solid var(--slate-200);
+    border-radius: 10px;
+    padding: 20px 18px;
+    background: var(--slate-50);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.portalCardHighlighted {
+    border-color: var(--primary-600);
+    box-shadow: 0 0 0 1px var(--primary-600);
+    background: #fff;
+}
+
+.portalTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--slate-900);
+    margin: 0 0 8px;
+}
+
+.portalBody {
+    font-size: 13px;
+    line-height: 1.45;
+    color: var(--slate-500);
+    margin: 0 0 16px;
+    flex: 1;
+}
+
+.button {
+    background-color: var(--primary-600);
+    color: #ffffff;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: var(--primary-700);
+    transform: translateY(-1px);
+}
+
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.backLink {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--slate-600);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.2s;
+    background-color: transparent;
+}
+
+.backLink:hover {
+    color: var(--primary-600);
+    background-color: var(--slate-50);
+}
+
+.footer {
+    margin-top: 32px;
+    font-size: 13px;
+    color: var(--slate-400);
+}
+
+.footer a {
+    color: var(--slate-500);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer a:hover {
+    color: var(--primary-600);
+}
+
+/* Remove blob animations for cleaner look */
+.blob {
+    display: none;
+}

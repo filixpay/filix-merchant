@@ -1,0 +1,214 @@
+.drawerBody {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-height: 100%;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    text-align: left;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    padding: 14px 16px;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.listItem:hover {
+    border-color: #1677ff;
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+}
+
+.listItemUnread {
+    border-color: rgba(255, 77, 79, 0.45);
+    background: #fff7f7;
+}
+
+.listItemNumber {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.88);
+}
+
+.unreadDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ff4d4f;
+    flex-shrink: 0;
+}
+
+.listItemHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.listItemSubject {
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 14px;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.subjectLabel {
+    color: rgba(0, 0, 0, 0.45);
+    font-weight: 400;
+    margin-right: 4px;
+}
+
+.listItemFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.listItemTime {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 12px;
+}
+
+.viewDetail {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    color: #1677ff;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.statusOpen {
+    margin-inline-end: 0 !important;
+    color: #d46b08 !important;
+    background: #fff7e6 !important;
+    border: 1px solid #ffd591 !important;
+}
+
+.statusAnswered {
+    margin-inline-end: 0 !important;
+    color: #237804 !important;
+    background: #f6ffed !important;
+    border: 1px solid #b7eb8f !important;
+}
+
+.detailTitle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+}
+
+.detailBody {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 160px);
+}
+
+.messageList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+.messageRow {
+    display: flex;
+    flex-direction: column;
+    max-width: 82%;
+}
+
+.messageRowMerchant {
+    align-self: flex-end;
+    align-items: flex-end;
+}
+
+.messageRowOperator {
+    align-self: flex-start;
+    align-items: flex-start;
+}
+
+.messageMeta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 12px;
+}
+
+.messageBubble {
+    border-radius: 12px;
+    padding: 10px 12px;
+    max-width: 100%;
+}
+
+.messageBubbleMerchant {
+    background: #1677ff;
+    color: #fff;
+    border-top-right-radius: 4px;
+}
+
+.messageBubbleOperator {
+    background: #f5f5f5;
+    color: rgba(0, 0, 0, 0.88);
+    border: 1px solid #f0f0f0;
+    border-top-left-radius: 4px;
+}
+
+.messageContent {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.emptyState {
+    color: rgba(0, 0, 0, 0.45);
+    text-align: center;
+    padding: 32px 12px;
+}
+
+.createForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.answeredFooter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: auto;
+    padding: 12px 0 16px;
+    border-top: 1px solid #f0f0f0;
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 12px;
+}
+
+.newTicketLink {
+    padding-inline: 0 !important;
+    height: auto !important;
+    font-size: 12px !important;
+}

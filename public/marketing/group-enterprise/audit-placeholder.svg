@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-hidden="true">
+  <rect width="1600" height="900" fill="#f1f5f9"/>
+  <rect x="40" y="40" width="1520" height="820" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="40" y="40" width="1520" height="56" rx="16" fill="#e2e8f0"/>
+  <rect x="40" y="80" width="1520" height="16" fill="#e2e8f0"/>
+  <circle cx="72" cy="68" r="8" fill="#94a3b8"/>
+  <circle cx="96" cy="68" r="8" fill="#94a3b8"/>
+  <circle cx="120" cy="68" r="8" fill="#94a3b8"/>
+  <text x="800" y="74" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#475569">Example Enterprise</text>
+  <rect x="64" y="120" width="240" height="716" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="88" y="160" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#64748b">ENTERPRISE PORTAL</text>
+  <rect x="80" y="180" width="208" height="32" rx="6" fill="#ffffff"/>
+  <text x="96" y="201" font-family="system-ui, sans-serif" font-size="13" fill="#64748b">Organizations</text>
+  <rect x="80" y="220" width="208" height="32" rx="6" fill="#ffffff"/>
+  <text x="96" y="241" font-family="system-ui, sans-serif" font-size="13" fill="#64748b">Members</text>
+  <rect x="80" y="260" width="208" height="36" rx="8" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="96" y="283" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#1e40af">Audit</text>
+  <text x="336" y="160" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#0f172a">Governance Audit</text>
+  <rect x="336" y="188" width="1184" height="44" rx="8" fill="#f1f5f9" stroke="#e2e8f0"/>
+  <text x="360" y="216" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#64748b">Timestamp</text>
+  <text x="560" y="216" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#64748b">Actor</text>
+  <text x="800" y="216" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#64748b">Action</text>
+  <text x="1120" y="216" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#64748b">Target</text>
+  <rect x="336" y="248" width="1184" height="52" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="360" y="280" font-family="system-ui, sans-serif" font-size="14" fill="#64748b">2026-01-15 10:24</text>
+  <text x="560" y="280" font-family="system-ui, sans-serif" font-size="14" fill="#0f172a">admin@example.com</text>
+  <text x="800" y="280" font-family="system-ui, sans-serif" font-size="14" fill="#0f172a">Create Organization</text>
+  <text x="1120" y="280" font-family="system-ui, sans-serif" font-size="14" fill="#64748b">Example Organization</text>
+  <rect x="336" y="312" width="1184" height="52" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="360" y="344" font-family="system-ui, sans-serif" font-size="14" fill="#64748b">2026-01-14 16:08</text>
+  <text x="560" y="344" font-family="system-ui, sans-serif" font-size="14" fill="#0f172a">admin@example.com</text>
+  <text x="800" y="344" font-family="system-ui, sans-serif" font-size="14" fill="#0f172a">Add Member</text>
+  <text x="1120" y="344" font-family="system-ui, sans-serif" font-size="14" fill="#64748b">Example Organization</text>
+  <rect x="336" y="376" width="1184" height="52" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="360" y="408" font-family="system-ui, sans-serif" font-size="14" fill="#64748b">2026-01-12 09:41</text>
+  <text x="560" y="408" font-family="system-ui, sans-serif" font-size="14" fill="#0f172a">viewer@example.com</text>
+  <text x="800" y="408" font-family="system-ui, sans-serif" font-size="14" fill="#0f172a">View Directory</text>
+  <text x="1120" y="408" font-family="system-ui, sans-serif" font-size="14" fill="#64748b">Example Enterprise</text>
+  <rect x="336" y="440" width="1184" height="52" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-dasharray="6 4"/>
+  <text x="360" y="472" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">…</text>
+  <text x="800" y="860" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">Placeholder — Governance Audit</text>
+</svg>

@@ -1,0 +1,109 @@
+.shell {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.scopeNote {
+  margin: 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px 20px;
+}
+
+.sectionTitle {
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(140px, 200px) 1fr;
+  gap: 8px 16px;
+  margin: 0;
+}
+
+.grid dt {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.grid dd {
+  margin: 0;
+}
+
+.muted {
+  color: #9ca3af;
+}
+
+.mono {
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  font-size: 12px;
+  word-break: break-all;
+}
+
+.badge {
+  display: inline-flex;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badgePending {
+  background: #fff7ed;
+  color: #c2410c;
+  border: 1px solid #fed7aa;
+}
+
+.badgeMatched {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.badgeMismatch {
+  background: #fff1f2;
+  color: #be123c;
+  border: 1px solid #fecdd3;
+}
+
+.badgeNotReconciled {
+  background: #f3f4f6;
+  color: #4b5563;
+  border: 1px solid #e5e7eb;
+}
+
+.compareGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .compareGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.compareColumn {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: #fafafa;
+}
+
+.compareHeading {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}

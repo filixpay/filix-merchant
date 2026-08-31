@@ -1,0 +1,91 @@
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  transition: border-color 0.15s ease, background 0.15s ease, opacity 0.15s ease;
+}
+
+.rowClosed {
+  background: #fff;
+  border-color: #e2e8f0;
+  opacity: 0.72;
+}
+
+.identity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  flex: 1;
+}
+
+.providerMark {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.meta {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1e293b;
+  line-height: 1.3;
+}
+
+.routeHint {
+  font-size: 11px;
+  color: #94a3b8;
+  line-height: 1.2;
+}
+
+.routeHintActive {
+  color: #64748b;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.actionGroup {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.actionDivider {
+  width: 1px;
+  height: 16px;
+  background: #e2e8f0;
+  margin: 0;
+}
+
+.switchOpen.ant-switch-checked,
+.switchOpen.ant-switch.ant-switch-checked {
+  background: #2563eb !important;
+}
+
+.switchClosed.ant-switch:not(.ant-switch-checked) {
+  background: #cbd5e1 !important;
+}

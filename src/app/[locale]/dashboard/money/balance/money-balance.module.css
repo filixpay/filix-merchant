@@ -1,0 +1,395 @@
+.page {
+  width: 100%;
+}
+
+.walletGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .walletGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .walletGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.walletCard {
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 12px;
+  box-shadow: var(--dashboard-shadow-sm);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.walletCard:hover {
+  border-color: rgba(203, 213, 225, 0.95);
+  box-shadow: var(--dashboard-shadow-card);
+}
+
+.cardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.assetIdentity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.assetCode {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e293b;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.assetAccount {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.statusBadge {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+  border: 1px solid transparent;
+}
+
+.statusHealthy {
+  background: #f0fdf4;
+  color: #047857;
+  border-color: rgba(167, 243, 208, 0.8);
+}
+
+.statusRestricted {
+  background: #fffbeb;
+  color: #b45309;
+  border-color: rgba(253, 230, 138, 0.9);
+}
+
+.statusBadgeInteractive {
+  cursor: help;
+}
+
+.statusTooltipList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.statusTooltipList li {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.statusTooltipList li + li {
+  margin-top: 4px;
+}
+
+.statusDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+}
+
+.statusDotHealthy {
+  background: #10b981;
+}
+
+.statusDotRestricted {
+  background: #f59e0b;
+}
+
+.amountBlock {
+  margin: 20px 0;
+}
+
+.amountLabel {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #94a3b8;
+}
+
+.amountValue {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.amountSymbol {
+  margin-right: 2px;
+}
+
+.amountCode {
+  margin-left: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #94a3b8;
+  vertical-align: middle;
+}
+
+.pendingLine {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.footerMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.updatedAt {
+  font-size: 11px;
+  color: #94a3b8;
+  font-variant-numeric: tabular-nums;
+}
+
+.detailsLink {
+  padding: 0;
+  height: auto;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.actionGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.actionButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  height: 32px;
+  padding-inline: 12px;
+  border-radius: 8px;
+}
+
+.actionGhost {
+  color: #334155;
+  border-color: #e2e8f0;
+  background: #ffffff;
+}
+
+.actionGhost:hover:not(:disabled) {
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+  background: #f8fafc !important;
+}
+
+.actionPrimary {
+  box-shadow: 0 1px 2px rgba(37, 99, 235, 0.12);
+}
+
+.skeletonGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.skeletonCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.emptyPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 56px 24px;
+  background: transparent;
+}
+
+.emptyIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  background: #f8fafc;
+  color: #94a3b8;
+}
+
+.emptyTitle {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.01em;
+}
+
+.emptyDesc {
+  margin: 6px auto 0;
+  max-width: 360px;
+  font-size: 12px;
+  line-height: 1.55;
+  color: #94a3b8;
+}
+
+.emptyActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.emptyPrimaryBtn {
+  height: 36px !important;
+  border-radius: 10px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  padding-inline: 16px !important;
+}
+
+.emptySecondaryBtn {
+  height: 36px !important;
+  border-radius: 10px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  color: #64748b !important;
+  border-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.emptySecondaryBtn:hover:not(:disabled) {
+  color: #0f172a !important;
+  background: #f8fafc !important;
+}
+
+.sectionCard {
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 16px;
+  box-shadow: var(--dashboard-shadow-sm);
+  overflow: hidden;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 20px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #334155;
+}
+
+.refreshBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.refreshBtn:hover {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.sectionBody {
+  padding: 20px;
+}
+
+.sectionBodyEmpty {
+  padding: 0;
+}
+
+.headerActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.headerGhostBtn {
+  height: 34px !important;
+  border-radius: 10px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+
+.headerPrimaryBtn {
+  height: 34px !important;
+  border-radius: 10px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+
+.errorState {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

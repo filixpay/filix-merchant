@@ -1,0 +1,44 @@
+.filterBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.filterField {
+  margin-inline-end: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.filterSearch {
+  flex: 1 1 220px;
+  min-width: 180px;
+}
+
+.filterSelect {
+  flex: 0 1 160px;
+  min-width: 140px;
+}
+
+.filterChannel {
+  flex: 0 1 160px;
+  min-width: 140px;
+}
+
+.filterAmount {
+  flex: 0 1 240px;
+  min-width: 200px;
+}
+
+.filterDate {
+  flex: 1 1 300px;
+  min-width: 260px;
+}
+
+.filterActions {
+  flex: 0 0 auto;
+  margin-left: auto !important;
+  margin-inline-end: 0 !important;
+  margin-bottom: 0 !important;
+}

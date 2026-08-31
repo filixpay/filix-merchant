@@ -1,0 +1,38 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.compact {
+  gap: 6px;
+}
+
+.flag {
+  width: 20px !important;
+  height: 20px !important;
+  flex-shrink: 0;
+}
+
+.code {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1e293b;
+  line-height: 1.2;
+}
+
+.account {
+  font-size: 12px;
+  font-weight: 400;
+  color: #94a3b8;
+  line-height: 1.2;
+}
+
+.compact .code {
+  font-size: 12px;
+}
+
+.compact .account {
+  display: none;
+}

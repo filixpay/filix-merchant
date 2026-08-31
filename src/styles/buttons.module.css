@@ -1,0 +1,276 @@
+/* ============================================================
+   FilixPay Unified Button System
+   Inspired by Stripe, Linear, and Vercel design systems.
+   ============================================================ */
+
+/* ------- Base Reset ------- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+    text-decoration: none;
+    border: 1px solid transparent;
+    line-height: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:focus-visible {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #3b82f6;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* ============================================================
+   Sizes
+   ============================================================ */
+.xs {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.6875rem;
+    border-radius: 0.375rem;
+    height: 1.625rem;
+    letter-spacing: 0.01em;
+}
+
+.sm {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    height: 1.875rem;
+    letter-spacing: 0.01em;
+}
+
+.md {
+    padding: 0.5rem 1rem;
+    font-size: 0.8125rem;
+    border-radius: 0.5rem;
+    height: 2.25rem;
+    letter-spacing: 0.01em;
+}
+
+.lg {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+    border-radius: 0.625rem;
+    height: 2.625rem;
+}
+
+.xl {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9375rem;
+    border-radius: 0.625rem;
+    height: 3rem;
+    font-weight: 600;
+}
+
+/* ============================================================
+   Primary  — Indigo/Blue gradient, the "hero" CTA
+   ============================================================ */
+.primary {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);
+    color: #fff;
+    box-shadow:
+        0 1px 2px rgba(37, 99, 235, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.primary:hover {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e40af 100%);
+    box-shadow:
+        0 2px 8px rgba(37, 99, 235, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transform: translateY(-0.5px);
+}
+
+.primary:active {
+    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(37, 99, 235, 0.2);
+}
+
+/* ============================================================
+   Secondary — Subtle bordered button
+   ============================================================ */
+.secondary {
+    background-color: #fff;
+    color: #334155;
+    border-color: #e2e8f0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.secondary:hover {
+    background-color: #f8fafc;
+    border-color: #cbd5e1;
+    color: #1e293b;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.secondary:active {
+    background-color: #f1f5f9;
+}
+
+/* ============================================================
+   Ghost — No background, hover reveals
+   ============================================================ */
+.ghost {
+    background: transparent;
+    color: #64748b;
+    border-color: transparent;
+}
+
+.ghost:hover {
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+.ghost:active {
+    background-color: #e2e8f0;
+}
+
+/* ============================================================
+   Danger — Destructive actions
+   ============================================================ */
+.danger {
+    background: linear-gradient(135deg, #f87171 0%, #ef4444 50%, #dc2626 100%);
+    color: #fff;
+    box-shadow:
+        0 1px 2px rgba(220, 38, 38, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.danger:hover {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 50%, #b91c1c 100%);
+    box-shadow:
+        0 2px 8px rgba(220, 38, 38, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transform: translateY(-0.5px);
+}
+
+.danger:active {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+    transform: translateY(0);
+}
+
+/* ============================================================
+   Success — Approval / confirm
+   ============================================================ */
+.success {
+    background: linear-gradient(135deg, #34d399 0%, #10b981 50%, #059669 100%);
+    color: #fff;
+    box-shadow:
+        0 1px 2px rgba(16, 185, 129, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.success:hover {
+    background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);
+    box-shadow:
+        0 2px 8px rgba(16, 185, 129, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transform: translateY(-0.5px);
+}
+
+.success:active {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    transform: translateY(0);
+}
+
+/* ============================================================
+   Dark — Premium dark button (service plans, etc.)
+   ============================================================ */
+.dark {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: #fff;
+    box-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.dark:hover {
+    background: linear-gradient(135deg, #334155 0%, #1e293b 100%);
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    transform: translateY(-0.5px);
+}
+
+.dark:active {
+    background: #0f172a;
+    transform: translateY(0);
+}
+
+/* ============================================================
+   Icon-only button
+   ============================================================ */
+.iconOnly {
+    padding: 0;
+    aspect-ratio: 1;
+    border-radius: 0.5rem;
+}
+
+.iconOnly.sm { width: 1.875rem; height: 1.875rem; }
+.iconOnly.md { width: 2.25rem; height: 2.25rem; }
+.iconOnly.lg { width: 2.625rem; height: 2.625rem; }
+
+/* ============================================================
+   Full-width
+   ============================================================ */
+.fullWidth {
+    width: 100%;
+}
+
+/* ============================================================
+   Icon inside button
+   ============================================================ */
+.icon {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+}
+
+.xs .icon { width: 0.75rem; height: 0.75rem; }
+.sm .icon { width: 0.875rem; height: 0.875rem; }
+.lg .icon { width: 1.125rem; height: 1.125rem; }
+
+/* ============================================================
+   Loading spinner
+   ============================================================ */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.loading {
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.spinner {
+    width: 0.875rem;
+    height: 0.875rem;
+    border: 2px solid currentColor;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+
+/* ============================================================
+   Responsive: full width on small screens
+   ============================================================ */
+@media (max-width: 640px) {
+    .responsiveFullWidth {
+        width: 100%;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,20 @@
+.amount {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+/* Align with LedgerMovementModal .amountCredit — not --error */
+.toneInflow {
+  color: #059669;
+}
+
+.toneOutflow {
+  color: var(--slate-900, #0f172a);
+}
+
+.toneTransfer,
+.toneNeutral {
+  color: var(--slate-700, #334155);
+}

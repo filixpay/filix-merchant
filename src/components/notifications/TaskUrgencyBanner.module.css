@@ -1,0 +1,103 @@
+.bar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+    min-width: 0;
+    width: auto;
+    max-width: 100%;
+    padding: 4px 32px 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 1.35;
+    position: relative;
+}
+
+.stripBar {
+    display: flex;
+    width: 100%;
+    max-width: none;
+    margin: 8px 0;
+    padding: 8px 36px 8px 12px;
+    border-radius: 8px;
+}
+
+.critical {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #991b1b;
+}
+
+.warning {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    color: #92400e;
+}
+
+.icon {
+    flex-shrink: 0;
+    font-size: 13px;
+}
+
+.title {
+    flex-shrink: 0;
+    font-weight: 600;
+}
+
+.separator {
+    flex-shrink: 0;
+    opacity: 0.55;
+}
+
+.message {
+    min-width: 0;
+    flex: 0 1 auto;
+    max-width: 280px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    opacity: 0.9;
+}
+
+.action {
+    flex-shrink: 0;
+    padding-inline: 4px !important;
+    height: 22px !important;
+    font-size: 12px !important;
+}
+
+.dismiss {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    flex-shrink: 0;
+    width: 22px !important;
+    height: 22px !important;
+    color: inherit !important;
+    opacity: 0.65;
+}
+
+.dismiss:hover {
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .message,
+    .separator {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .bar {
+        padding: 3px 8px;
+    }
+
+    .title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 120px;
+    }
+}

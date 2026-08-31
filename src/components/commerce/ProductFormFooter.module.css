@@ -1,0 +1,18 @@
+.footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  margin: 24px -20px -24px;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.92);
+  border-top: 1px solid #e5e7eb;
+  backdrop-filter: blur(8px);
+}
+
+.inner {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  max-width: 1200px;
+  margin: 0 auto;
+}

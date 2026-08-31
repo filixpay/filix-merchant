@@ -1,0 +1,121 @@
+.form :global(.ant-form-item-label > label) {
+  width: 100%;
+}
+
+.securityBanner {
+  margin-bottom: 16px !important;
+}
+
+.envToggle {
+  margin-bottom: 16px;
+}
+
+.envSegmented {
+  padding: 4px;
+  background: #e2e8f0 !important;
+  border-radius: 10px;
+}
+
+.envSegmented :global(.ant-segmented-item) {
+  font-weight: 600;
+  color: #64748b;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.envSegmented :global(.ant-segmented-item:hover:not(.ant-segmented-item-selected)) {
+  color: #334155;
+}
+
+.envLive :global(.ant-segmented-item-selected),
+.envLive :global(.ant-segmented-thumb) {
+  background: #2563eb !important;
+  color: #ffffff !important;
+}
+
+.envLive :global(.ant-segmented-item-selected) {
+  color: #ffffff !important;
+}
+
+.envLive :global(.ant-segmented-item-selected .ant-segmented-item-label) {
+  color: #ffffff !important;
+}
+
+.envTest :global(.ant-segmented-item-selected),
+.envTest :global(.ant-segmented-thumb) {
+  background: #f59e0b !important;
+  color: #ffffff !important;
+}
+
+.envTest :global(.ant-segmented-item-selected) {
+  color: #ffffff !important;
+}
+
+.envTest :global(.ant-segmented-item-selected .ant-segmented-item-label) {
+  color: #ffffff !important;
+}
+
+.labelWithBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+
+.badgeConfigured {
+  color: #047857;
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+}
+
+.badgeMissing {
+  color: #64748b;
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+.badgeDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.85;
+}
+
+.helpRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.helpLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.monoInput :global(.ant-input),
+.monoInput :global(textarea.ant-input) {
+  font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+}

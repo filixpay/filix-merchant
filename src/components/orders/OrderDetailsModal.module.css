@@ -1,0 +1,82 @@
+.hero {
+    background: #f8fafc;
+    padding: 20px 24px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.heroLabel {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.heroAmount {
+    font-family: var(--font-mono);
+}
+
+.heroCurrency {
+    font-size: 18px;
+    color: #64748b;
+    margin-right: 4px;
+}
+
+.heroValue {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.section {
+    width: 100%;
+}
+
+.sectionTitle {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.partiesRow {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.partyCard {
+    padding: 14px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.partyLabel {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #64748b;
+}
+
+.partyName {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.partyCode {
+    display: block;
+    margin-top: 4px;
+    font-size: 13px;
+    color: #64748b;
+    font-family: var(--font-mono);
+}
+
+@media (max-width: 768px) {
+    .partiesRow {
+        grid-template-columns: 1fr;
+    }
+}

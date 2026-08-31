@@ -1,0 +1,7 @@
+.table :global(.ant-table-tbody > tr.ant-table-row:hover > td) {
+  background: #f8fafc !important;
+}
+
+.table :global(.ant-table-tbody > tr.clickable-row) {
+  cursor: pointer;
+}

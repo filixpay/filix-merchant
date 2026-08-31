@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "docs/**"
+      - "**/*.md"
+      - "**/*.txt"
+      - ".trellis/**"
+  pull_request:
+    branches: [main]
+    paths-ignore:
+      - "docs/**"
+      - "**/*.md"
+      - "**/*.txt"
+      - ".trellis/**"
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Verify message catalogs
+        run: npm run verify:messages
+
+      - name: Build
+        run: npm run build
+        env:
+          NEXTAUTH_SECRET: ci-build-placeholder-secret
+          NEXTAUTH_URL: https://www.filixpay.com/auth-api/auth
+          NEXT_PUBLIC_SITE_URL: https://www.filixpay.com
+          NEXT_PUBLIC_CHECKOUT_URL: https://www.filixpay.com

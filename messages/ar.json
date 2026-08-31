@@ -1,0 +1,972 @@
+{
+  "Layout": {
+    "title": "FilixPay - شريكك المفضل للمدفوعات عبر الحدود والتوسع الدولي للشركات",
+    "sidebar_title": "منصة التاجر",
+    "workspace": {
+      "workspace": "Workspace",
+      "switch_business_account": "Switch business account",
+      "no_business_accounts": "No business accounts in this organization",
+      "affiliated_organization": "Organization",
+      "add_organization": "Add organization",
+      "add_business_account": "New business account",
+      "manage_organization": "Manage organization"
+    },
+    "logout": "تسجيل الخروج",
+    "nav": {
+      "overview": "نظرة عامة",
+      "payment_configs": "تكوينات الدفع",
+      "checkout_counters": "تكوين نقاط الدفع",
+      "orders": "الطلبات",
+      "refunds": "المبالغ المستردة",
+      "service_plan": "الخطة الخدمية",
+      "customers": "العملاء",
+      "locations": "المواقع",
+      "bank_accounts": "حسابات الاستلام",
+      "transfers": "تدقيق التحويلات",
+      "reviews": "تأكيد التحويلات",
+      "sub_merchants": "التجار الفرعيون",
+      "acquiring_management": "إدارة التحصيل",
+      "developer": "مركز المطورين",
+      "refund_settings": "Refund settings",
+      "refund_approvals": "Refund approvals"
+    }
+  },
+  "ServicePlan": {
+    "title": "الخطة الخدمية",
+    "subtitle": "اختر الخطة التي تناسب نمو أعمالك، واطلع على سجل مدفوعاتك.",
+    "choose_plan": "اختر الخطة",
+    "payment_records": "سجل المدفوعات",
+    "plans": {
+      "weekly": "الخطة الأسبوعية",
+      "monthly": "الخطة الشهرية",
+      "half_year": "خطة الستة أشهر",
+      "yearly": "الخطة السنوية"
+    },
+    "pay": "دفع"
+  },
+  "Login": {
+    "title": "FilixPay Management Center",
+    "subtitle": "Manage merchants, organizations, payments, and developer resources in one place",
+    "button": "Sign In",
+    "connecting": "Connecting...",
+    "back_to_home": "← Back to Home",
+    "merchant_title": "Merchant Operations Center",
+    "merchant_body": "Manage payments, settlement, APIs, and applications",
+    "merchant_cta": "Enter Merchant Center",
+    "enterprise_title": "Enterprise Center",
+    "enterprise_body": "Manage organizations, members, permissions, and multi-merchant relationships",
+    "enterprise_cta": "Enter Enterprise Center"
+  },
+  "Dashboard": {
+    "title": "لوحة التحكم",
+    "overview": "نظرة عامة",
+    "stats": {
+      "revenue": "إجمالي الإيرادات اليوم",
+      "orders": "إجمالي الطلبات اليوم",
+      "channels": "القنوات النشطة",
+      "available_funds": "Available funds",
+      "today_funds_revenue": "Today's funds revenue",
+      "asset_count": "{count} assets",
+      "other_assets": "+ {count} other assets",
+      "no_available_funds": "No available funds",
+      "view_balance": "View balance",
+      "view_activity": "View activity",
+      "view_orders": "View orders",
+      "settlement_cycle_label": "Settlement cycle",
+      "settlement_cycle_title": "T+1 automatic settlement",
+      "settlement_cycle_desc": "Funds settle directly from the upstream channel to your designated corporate bank account. Available balance follows bank statement reconciliation."
+    },
+    "recent_transactions": "المعاملات الأخيرة",
+    "no_transactions": "لا توجد معاملات حديثة حالياً."
+  },
+  "Configs": {
+    "title": "تكوينات الدفع",
+    "subtitle": "إدارة قنوات الدفع المتصلة وبيانات الاعتماد الخاصة بك.",
+    "add_config": "إضافة تكوين",
+    "headers": {
+      "payment_brand": "علامة الدفع التجارية",
+      "payment_channel": "قناة الدفع",
+      "payment_scenario": "سيناريو الدفع",
+      "rate": "المعدل",
+      "status": "الحالة",
+      "actions": "إجراءات"
+    },
+    "loading": "جارٍ تحميل التكوينات...",
+    "empty": "لا توجد تكوينات حالياً. أضف واحدة لبدء قبول المدفوعات.",
+    "confirm_delete": "هل أنت متأكد أنك تريد حذف هذا التكوين؟",
+    "edit_secret_hint": "Secrets are never shown. Leave a secret blank to keep the current value.",
+    "sections": {
+      "alipay": "Alipay Configuration",
+      "wechat": "WeChat Configuration",
+      "stripe": "Stripe Configuration",
+      "paypal": "PayPal Configuration",
+      "nowpayments": "NowPayments Configuration"
+    },
+    "fields": {
+      "required": "This field is required",
+      "secret_keep_placeholder": "Leave blank to keep current secret",
+      "app_id": "App ID",
+      "partner_id": "Partner ID",
+      "sandbox_mode": "Sandbox Mode",
+      "alipay_public_key": "Alipay Public Key",
+      "app_private_key": "App Private Key",
+      "app_secret": "App Secret",
+      "mch_id": "Merchant ID",
+      "v2_api_key": "V2 API Key",
+      "v3_api_key": "V3 API Key",
+      "v3_serial_no": "V3 Serial No",
+      "v3_private_key": "V3 Private Key",
+      "v3_public_key": "V3 Public Key",
+      "secret_key": "Secret Key",
+      "publishable_key": "Publishable Key (Optional)",
+      "webhook_secret": "Webhook Secret (Optional)",
+      "client_id": "Client ID",
+      "client_secret": "Client Secret",
+      "webhook_id": "Webhook ID (Optional)",
+      "api_key": "API Key",
+      "ipn_secret": "IPN Secret (Optional)",
+      "default_currency": "Default Currency (Optional)"
+    }
+  },
+  "Checkouts": {
+    "title": "تكوين نقاط الدفع",
+    "subtitle": "إدارة وتكوين نقاط الدفع المجمعة متعددة اللغات.",
+    "create_counter": "إضافة تكوين",
+    "edit_counter": "تعديل التكوين",
+    "loading": "جارٍ تحميل نقاط الدفع...",
+    "empty": "لا توجد نقاط دفع حالياً. أنشئ واحدة لبدء قبول المدفوعات.",
+    "prompt_name": "الرجاء إدخال اسم نقطة الدفع:",
+    "headers": {
+      "name": "اسم نقطة الدفع",
+      "code": "الرمز",
+      "status": "الحالة",
+      "actions": "إجراءات"
+    },
+    "form": {
+      "checkout_code": "رمز نقطة الدفع (معرّف فريد)",
+      "checkout_name": "اسم العرض الافتراضي",
+      "status_active": "مفعل",
+      "status_inactive": "معطّل",
+      "tabs": "تكوين علامات التبويب",
+      "add_tab": "إضافة علامة تبويب",
+      "tab_key": "المعرّف الفريد لعلامة التبويب (مثل: card, crypto)",
+      "tab_title": "عنوان علامة التبويب",
+      "display_order": "الترتيب",
+      "enabled": "تفعيل",
+      "gateways": "بوابات الدفع المضمنة",
+      "add_gateway": "إضافة بوابة",
+      "gateway_code": "رمز البوابة",
+      "recommended": "مُوصى به",
+      "logo": "رابط الشعار",
+      "color": "لون العلامة التجارية",
+      "currencies": "العملات المدعومة (مفصولة بفواصل، * تعني الكل)",
+      "countries": "منطقة المشتري (مفصولة بفواصل، * تعني الكل)",
+      "config_list": "قائمة تكوينات الدفع",
+      "priority": "الأولوية",
+      "save": "حفظ نقطة الدفع",
+      "cancel": "إلغاء"
+    },
+    "delete_confirm": "هل أنت متأكد من حذف نقطة الدفع هذه؟"
+  },
+  "Home": {
+    "hero": {
+      "title": "FilixPay: حلول دفع عالمية متكاملة،\nتمكن التجار من قبول المدفوعات حول العالم بسهولة",
+      "subtitle": "FilixPay – منصة خدمات تقنية للدفع الرباعي مصممة خصيصًا للشركات المتوسعة عالميًا. نهدف إلى توفير بنية تحتية آمنة ومرنة وفعالة للمدفوعات المجمعة، مما يمكنك من الوصول إلى طرق دفع رئيسية متعددة وإدارتها بشكل موحد دون حاجة لعمليات تكامل معقدة.",
+      "start": "ابدأ الآن",
+      "contact": "اتصل بالمبيعات"
+    },
+    "trial_experience": {
+      "title": "🌍 دفع عالمي، جرب الآن",
+      "subtitle": "جرب جميع ميزات FilixPay مجانًا الآن",
+      "features": [
+        "لا حاجة لمستندات الشركة",
+        "لا حاجة للتكامل التقني",
+        "سجل باستخدام بريدك الإلكتروني، وادخل إلى لوحة تحكم التاجر الحقيقية خلال 30 ثانية"
+      ],
+      "cta": "جرب FilixPay مجانًا"
+    },
+    "business_modes": {
+      "title": "مركز تاجر FilixPay: نظام واحد، وضعان، يتكيفان بالكامل مع هيكل عملك",
+      "subtitle": "في FilixPay، ندعم هيكل تسوية مرن للأموال. سواء كنت تريد تسوية الأموال مباشرة إلى حسابك، أو تحتاج إلى تجميعها في حساب موحد ثم تقاسمها، فإن مركز التاجر الخاص بنا يطابق هويتك التجارية بذكاء ويوفر عرضًا دقيقًا للوظائف.",
+      "modes": {
+        "independent": {
+          "title": "تاجر مستقل (الوضع الرباعي)",
+          "slogan": "يتم تسوية الأموال مباشرة إلى حسابك بواسطة مؤسسة تحصيل مرخصة",
+          "desc": "عند اختيارك لوضع التسوية المباشرة الرباعي، يعمل FilixPay كقناة دفع، حيث يتم توجيه المعاملات إلى مؤسسات التحصيل الشريكة المرخصة لإكمال التسوية. لا تحتاج إلى مرور عبر حسابات وسيطة، فالأموال تذهب مباشرة إلى حسابك المصرفي."
+        },
+        "sub_merchant": {
+          "title": "تاجر فرعي (الوضع الثلاثي)",
+          "slogan": "يقوم FilixPay (أو نسخة النشر التابعة للمجموعة) بالتحصيل نيابةً عنك، ثم يُسوّي لك",
+          "desc": "عند انضمامك كتاجر فرعي إلى النظام الثلاثي لـ FilixPay (عبر منصة دفع موحدة تابعة للمجموعة)، سيتم تحصيل جميع أموال المعاملات أولاً بواسطة FilixPay أو الكيان المخوّل له، ثم تُسوّى إلى حسابك المحدد وفقًا للفترات المتفق عليها."
+        }
+      }
+    },
+    "features": {
+      "title": "دفع مجمع متكامل، تكامل سلس مع القنوات العالمية الرئيسية",
+      "subtitle": "من خلال مركز التاجر في FilixPay، يمكنك تكوين قنوات دفع متعددة بسهولة، بما في ذلك Alipay وWeChat Pay وPayPal وStripe وNowPayments وغيرها. سواء كنت تستهدف العملاء المحليين أو الدوليين، فإن تكامل واحد يمنحك إدارة موحدة لطرق الدفع المتعددة.",
+      "items": {
+        "unified": {
+          "title": "واجهة دفع قياسية",
+          "desc": "واجهة دفع قياسية توفر تجربة سلسة ومتسقة للعملاء دون الحاجة لإعادة التوجيه."
+        },
+        "sdk": {
+          "title": "SDK قابل للتضمين",
+          "desc": "نشر سهل على موقعك الإلكتروني لتعزيز ثقة العلامة التجارية وزيادة معدل التحويل."
+        },
+        "extension": {
+          "title": "توسيع مفتوح",
+          "desc": "إذا كان لديك قنوات دفع أخرى غير مدعومة حاليًا في FilixPay، فاتصل بنا. نلتزم بإكمال التكامل الفني في غضون أسبوع."
+        },
+        "mobile": {
+          "title": "تجربة مُحسّنة للهاتف المحمول",
+          "desc": "تصميم متجاوب كامل للهاتف المحمول يتيح لك بدء تحصيل المدفوعات وعرض الفواتير وإدارة أعمالك من هاتفك حتى أثناء السفر."
+        }
+      }
+    },
+    "pricing": {
+      "title": "خطط خدمة مرنة تلبي احتياجاتك في كل مرحلة",
+      "subtitle": "نقدم مجموعة متنوعة من خيارات الدفع لتختار ما يناسب إيقاع عملك",
+      "choose": "اشتري الآن",
+      "plans": {
+        "weekly": {
+          "name": "الخطة الأسبوعية",
+          "price": "50 دولار أمريكي / أسبوع",
+          "desc": "جرب الميزات الأساسية بسهولة"
+        },
+        "monthly": {
+          "name": "الخطة الشهرية",
+          "price": "200 دولار أمريكي / شهر",
+          "desc": "دعم مستقر للعمليات اليومية"
+        },
+        "half_year": {
+          "name": "خطة الستة أشهر",
+          "price": "1100 دولار أمريكي / ستة أشهر",
+          "desc": "خيار اقتصادي"
+        },
+        "yearly": {
+          "name": "الخطة السنوية",
+          "price": "2000 دولار أمريكي / سنة",
+          "desc": "راحة البال وتوفير المال"
+        }
+      }
+    },
+    "deployment": {
+      "title": "🖥️ نسخة النشر المستقل: تحكم كامل · موثوقية على مستوى مالي · استقلالية البيانات",
+      "subtitle": "مناسبة للبنوك ومقدمي خدمات الدفع والمجموعات الكبيرة والشركات الدولية التي لديها متطلبات صارمة لأمن البيانات",
+      "intro": "إذا كنت بحاجة إلى التحكم الكامل في النظام، وضمان بقاء بيانات المعاملات داخل شبكتك الخاصة، وتلبية متطلبات التوافق والمراجعة، فإن FilixPay تقدم حل نشر مستقل على مستوى المؤسسات – لا حاجة إلى الاعتماد على السحابة العامة، نشر واحد، تشغيل دائم.",
+      "benefits_title": "✅ لماذا تختار النسخة المستقلة من FilixPay؟",
+      "features": [
+        {
+          "title": "سيادة حقيقية على البيانات",
+          "desc": "جميع بيانات التاجر وسجلات المعاملات ومفاتيح API مُخزّنة بنسبة 100٪ على خادمك الخاص، دون أي اعتماد خارجي، لتلبية متطلبات التوافق مع GDPR وPCI-DSS والمستوى الثالث من حماية المعلومات."
+        },
+        {
+          "title": "هيكل على مستوى المؤسسات جاهز للاستخدام",
+          "desc": "مُغلفًا بتقنية الحاويات Docker، ومتكامل مُسبقًا مع: محرك متعدد المستأجرين (يدعم تقاسم الحسابات)، المصادقة الموحدة (OIDC/SAML)، مركز مطورين متكامل، ومُحول دفع مشفر وآلية ضمان التعامل مع الأحمال العالية."
+        },
+        {
+          "title": "نشر بسيط للغاية، واستهلاك منخفض للموارد",
+          "desc": "كل ما تحتاجه هو خادم واحد بمواصفات 4 نوى و8 جيجابايت ذاكرة (Linux)، تشغيل الأمر docker-compose up لبدء بيئة إنتاج كاملة، وإكمال النشر في 30 دقيقة."
+        },
+        {
+          "title": "جاهز للتجميع، وتوسع مرن",
+          "desc": "الهيكل يدعم التوسع الأفقي بشكل أصلي، ويمكن الانتقال بسلاسة إلى Kubernetes في المستقبل للتعامل بسهولة مع زيادة الحركة."
+        }
+      ],
+      "price": "رسوم لمرة واحدة 28,000 دولار أمريكي",
+      "maintenance": "يشمل سنة واحدة من الصيانة التقنية المجانية؛ بعد ذلك، يتم فرض رسوم صيانة مستمرة بنسبة 10٪ سنويًا فقط لضمان استقرار وتحديث النظام على المدى الطويل."
+    },
+    "source_licensing": {
+      "title": "توضيح ترخيص شفرة المصدر FilixPay",
+      "subtitle": "لتلبية متطلبات المؤسسات المالية والمجموعات الكبيرة وشركاء ISV فيما يتعلق بقابلية التحكم في النظام والامتثال الأمني، تقدم FilixPay ترخيص استخدام لشفرة المصدر الكاملة القابلة للتشغيل.",
+      "sections": {
+        "included": {
+          "title": "✅ ما ستجنيه:",
+          "items": [
+            "شفرة المصدر الكاملة لنظام FilixPay الأساسي (بما في ذلك مركز التاجر، وبوابة الدفع، ومحرك التسوية، وغيرها من الوحدات).",
+            "وثائق النشر، ونصوص قاعدة البيانات، ومواصفات واجهات برمجة التطبيقات API.",
+            "خدمة دعم نشر لمرة واحدة ونقل المعرفة التقنية."
+          ]
+        },
+        "scope": {
+          "title": "⚖️ نطاق الترخيص (ترخيص تجاري محدود):",
+          "items": [
+            "يُسمح لك باستخدام وتعديل ونشر شفرة المصدر هذه ضمن أنظمة عملك الداخلية لدعم أعمال الدفع أو إدارة الأموال الخاصة بك."
+          ]
+        },
+        "prohibited": {
+          "title": "🚫 السلوكيات المحظورة صراحةً:",
+          "subtitle": "في أي حالة، لا يجوز لك:",
+          "items": [
+            "التقدم بطلب للحصول على حقوق طبع أو براءة اختراع أو علامة تجارية أو أي حقوق ملكية فكرية أخرى لشفرة مصدر FilixPay أو الأعمال المشتقة منها.",
+            "إعادة بيع أو تأجير أو إقراض أو منح ترخيص فرعي أو توفير شفرة المصدر بأي شكل من الأشكال لأي طرف ثالث.",
+            "تطوير منتج يوفر خدمات بوابات دفع أو مدفوعات مجمعة أو تحصيل مماثلة للجمهور بناءً على شفرة المصدر هذه.",
+            "إزالة أو تعديل شعار حقوق الطبع والنشر (© FilixPay) في شفرة المصدر."
+          ]
+        },
+        "ip_ownership": {
+          "title": "📜 ملكية الملكية الفكرية:",
+          "items": [
+            "تبقى جميع حقوق الملكية الفكرية لشفرة المصخر والوثائق ذات الصلة حصريًا ملكًا لـ FilixPay والجهات المانحة للترخيص.",
+            "لا يشكل هذا الترخيص ترخيصًا مفتوح المصدر، ولا يمنح أي حقوق تتجاوز النطاق المذكور أعلاه.",
+            "يستند الترخيص إلى \"اتفاقية ترخيص استخدام شفرة مصدر FilixPay\" (نسخة الترخيص التجاري المحدود)، وتخضع الشروط المحددة للاتفاقية المكتوبة الموقعة بين الطرفين."
+          ]
+        }
+      },
+      "footer": {
+        "trust": "نحن نؤمن: إن الثقة التقنية الحقيقية تنبع من الشفافية، وتتحقق من خلال وضع الحدود.",
+        "slogan": "FilixPay تفتح شفرة المصدر لتجعلك تشعر بمزيد من الطمأنينة عند استخدامها؛ وتضع قيودًا واضحة لحماية استدامة الابتكار.",
+        "cta": "للاستفسار عن تفاصيل خطة النشر الخاص أو ترخيص شفرة المصدر، يرجى الاتصال بنا (البريد الإلكتروني: invest@filixpay.com)",
+        "download_sample": "تنزيل \"نموذج اتفاقية ترخيص شفرة المصدر\""
+      }
+    },
+    "investment": {
+      "title": "نرحب بالتعاون الاستثماري، لنوسع معًا خريطة الدفع العالمية الجديدة",
+      "subtitle": "كشركة ناشئة سريعة النمو في مجال التكنولوجيا المالية، تظهر FilixPay إمكانات نمو قوية في مجال المدفوعات عبر الحدود بهندستها الرباعية المبتكرة وخطة النشر المرنة. نفتح الآن فرصًا للاستثمار الاستراتيجي والتعاون في حقوق الملكية.",
+      "contact_btn": "اتصل بنا (البريد الإلكتروني: {email})"
+    },
+    "footer": {
+      "slogan": "اجعل الدفع أسهل، واجعل عملك عالميًا",
+      "rights": "© 2026 Filix.com جميع الحقوق محفوظة."
+    },
+    "onboarding": {
+      "title": "انضمام التاجر",
+      "subtitle": "تقديم طلب للحصول على حساب تاجر لبدء قبول المدفوعات. يجب أن يتطابق اسم التاجر تمامًا مع الاسم الموجود على المستندات الرسمية.",
+      "form": {
+        "mobile": "رقم الهاتف المحمول",
+        "email": "عنوان البريد الإلكتروني",
+        "name": "الاسم الرسمي للتاجر",
+        "officialId": "رقم الوثيقة الرسمية",
+        "submit": "تقديم الطلب الآن",
+        "success": "تم تقديم الطلب بنجاح!",
+        "error": "فشل تقديم الطلب، يرجى المحاولة مرة أخرى.",
+        "login_required": "يرجى تسجيل الدخول أولاً لتقديم الطلب."
+      }
+    },
+    "core_capabilities": {
+      "title": "أبرز القدرات الأساسية",
+      "items": {
+        "multi_tenant": {
+          "title": "هيكل متعدد المستأجرين على مستوى المؤسسات",
+          "desc": "يدعم المؤسسات ومزودي البرمجيات المستقلة ISV والعملاء من المجموعات الكبيرة، لتحقيق عزل بيانات كامل بين التاجر الرئيسي والتجار الفرعيين، مع دعم تقاسم الحسابات والتسوية المستقلة والتشغيل المستقل."
+        },
+        "flexible_mode": {
+          "title": "توافق مرن مع النمط الثلاثي والرباعي",
+          "desc": "يمكن أن تعمل كبوابة دفع مجمعة (رباعية)، تتصل بالقنوات الرئيسية العالمية؛ ويمكن أيضًا أن تعمل كواجهة تحصيل موحدة (ثلاثية)، تساعد الشركات التابعة للمجموعات في تحقيق تحصيل مركزي، وإدارة تقاسم الحسابات، وتوحيد الأموال في نظام واحد."
+        },
+        "iam": {
+          "title": "مصادقة هوية موحدة على مستوى المؤسسات",
+          "desc": "يدعم بشكل أصلي بروتوكولات OIDC / SAML، ويتكامل بسلاسة مع نظام إدارة الهوية والوصول الحالي للعميل، ويوفر تسجيل دخول موحد (SSO) وتحكمًا تفصيليًا في الصلاحيات (RBAC)، لتلبية متطلبات الأمان والتوافق على المستوى المالي."
+        },
+        "developer": {
+          "title": "مركز مطورين متكامل",
+          "desc": "يوفر وثائق API تفاعلية، وبيئة تجريبية، وإدارة المفاتيح، وأدوات تصحيح Webhook وإعادة محاولة الفشل، وتكامل سريع في 30 دقيقة، مما يقلل بشكل كبير من تكاليف التكامل التقني."
+        },
+        "concurrency": {
+          "title": "ضمان مسار أساسي عالي التزامن",
+          "desc": "بالنسبة لحالات الاستخدام الحاسمة مثل مسك الدفعات في الحسابات عالية الحركة، يتم استخدام تقنية قوائم الانتظار غير المتزامنة لتخفيف الذروات وآلية الكتابة المتسلسلة، لضمان اتساق البيانات واستقرار النظام حتى تحت الأحمال العالية."
+        },
+        "cloud_native": {
+          "title": "توسع مرن قائم على الحوسبة السحابية الأصلية",
+          "desc": "هيكل خدمات مصغرة قائم على Kubernetes، يدعم التوسع الأفقي والتصغير في ثوانٍ، للتعامل بسهولة مع ذروات حركة المبيعات الكبيرة (مثل 11.11، والجمعة السوداء)، وتلبية متطلبات SLA للتوفير العالي للعملاء المتوسطين والكبار."
+        }
+      }
+    },
+    "ecommerce_solution": {
+      "title": "حل خاص للتجارة الإلكترونية عبر الحدود: ابدأ واستلم، بلا قلق عالميًا",
+      "subtitle": "تدعم قنوات العملة القانونية والعملات المشفرة معًا — قم بالتكوين اليوم، واقبل المدفوعات غدًا!",
+      "fiat": {
+        "title": "قبول العملات القانونية",
+        "desc": "بعد أن يفتح التاجر حسابًا على القنوات الرئيسية مثل Stripe وPayPal وAlipay+، يقوم بربط بيانات اعتماد API في واجهة FilixPay الخلفية لتمكين طرق الدفع مثل البطاقات الائتمانية والمحافظ المحلية على الفور."
+      },
+      "crypto": {
+        "title": "قبول العملات المشفرة",
+        "desc": "يقوم التاجر بالتسجيل وإكمال KYC لدى مزودي خدمات الدفع المشفرة المتعاونين مثل NowPayments وCoinbase Commerce وOKX Pay، للحصول على عنوان تحصيل خاص أو مفتاح API؛ ثم يقوم بالتكوين بنقرة واحدة في FilixPay لقبول الدفع بأكثر من 100 أصل رقمي رئيسي مثل BTC وETH وUSDT وUSDC."
+      },
+      "tagline": "لا حاجة للتطوير، ولا لحيازة العملات، ولا لبناء محفظة خاصة — جميع الأموال تذهب مباشرة إلى حسابك لدى مؤسسة الدفع المقابلة، FilixPay مسؤولة فقط عن العرض الموحّد والتوجيه والإشعارات.",
+      "processing": {
+        "title": "يقوم النظام تلقائيًا بمعالجة:",
+        "items": [
+          "تسوية العملات القانونية متعددة العملات (مثل USD/EUR/GBP/CNY)",
+          "استدعاءات فورية لمدفوعات العملات المشفرة ومزامنة الحالة",
+          "لوحة تحكم موحدة للمعاملات، وإشعارات Webhook، والتسوية التلقائية",
+          "دعم تحويل مدفوعات العملات المشفرة تلقائيًا إلى عملات مستقرة أو عملات قانونية (يتم تنفيذها من قبل مؤسسة الدفع)"
+        ]
+      },
+      "advantages": {
+        "title": "لماذا تختار حل قبول العملات المشفرة من FilixPay؟",
+        "headers": {
+          "advantage": "الميزة",
+          "description": "الوصف"
+        },
+        "items": [
+          {
+            "label": "متوافق وآمن",
+            "value": "الأموال مُدارة من قبل مزودين مرخصين مثل NowPayments، متوافقة مع قاعدة السفر (Travel Rule) من FATF"
+          },
+          {
+            "label": "تفعيل سريع للغاية",
+            "value": "لا حاجة للتكامل التقني مع عُقد البلوكشين، يكتمل التكوين في 10 دقائق"
+          },
+          {
+            "label": "تجنب عمليات الاسترجاع",
+            "value": "معاملات العملات المشفرة غير قابلة للعكس، مما يزيل تمامًا مخاطر استرجاع المبالغ (Chargeback)"
+          },
+          {
+            "label": "تغطية واسعة",
+            "value": "تدعم بوابات الدفع المشفرة العالمية الرئيسية، للوصول إلى أكثر من 600 مليون مستخدم Web3"
+          },
+          {
+            "label": "خطر حيازة صفر",
+            "value": "يمكنك اختيار التحويل الفوري إلى عملات قانونية، لتجنب تقلبات الأسعار"
+          }
+        ]
+      },
+      "customers": {
+        "title": "العملاء المناسبون",
+        "items": [
+          "بائعي المتاجر المستقلة على Shopify / WooCommerce",
+          "تجارة Web3 الإلكترونية (NFT، السلع الرقمية، GameFi)",
+          "العلامات التجارية المباشرة للمستهلك عبر الحدود، SaaS، خدمات الاشتراك",
+          "تجار التجزئة التقليديين الذين يرغبون في تجربة دفع العملات المشفرة بتكلفة منخفضة"
+        ]
+      },
+      "footer_tagline": "FilixPay — لا نبني العجلة، نحن نبني الاتصال.",
+      "footer_sub": "نمكنك من قبول كل أنواع المال حول العالم، بأكثر الطرق توافقًا وبساطة."
+    }
+  },
+  "Orders": {
+    "title": "إدارة الطلبات",
+    "subtitle": "عرض وسجل جميع معاملاتك والبحث فيها.",
+    "search_placeholder": "ابحث عن رقم طلب التاجر أو المنتج...",
+    "filter": "تصفية",
+    "create_order": "إنشاء طلب",
+    "create_modal": {
+      "title": "إنشاء طلب دفع يدويًا",
+      "merchant_order_id": "رقم طلب التاجر",
+      "subject": "عنوان الطلب",
+      "return_url": "عنوان العودة (اختياري)",
+      "buyer_id": "معرّف المشتري (اختياري)",
+      "customer_name": "اسم العميل",
+      "customer_email": "بريد العميل الإلكتروني",
+      "customer_mobile": "هاتف العميل المحمول",
+      "currency": "العملة",
+      "amount": "المبلغ الإجمالي",
+      "expiry": "وقت الانتهاء",
+      "items": "تفاصيل المنتجات",
+      "add_item": "إضافة منتج",
+      "product_id": "معرّف المنتج",
+      "desc": "الوصف",
+      "qty": "الكمية",
+      "price": "سعر الوحدة",
+      "submit": "إرسال وإنشاء",
+      "cancel": "إلغاء"
+    },
+    "headers": {
+      "order_id": "رقم طلب التاجر",
+      "order_type": "نوع الطلب",
+      "buyer_code_trade_no": "رقم المعاملة / رمز العميل",
+      "sub_merchant_location": "تاجر فرعي / موقع",
+      "amount": "المبلغ",
+      "status": "الحالة",
+      "created_at": "وقت الإنشاء"
+    },
+    "empty": "لا توجد بيانات طلبات حالياً.",
+    "initiate_payment": "بدء التحصيل",
+    "initiate_refund": "بدء استرداد الأموال",
+    "details": {
+      "title": "تفاصيل الطلب",
+      "subject": "اسم المنتج",
+      "order_type": "نوع الطلب",
+      "merchant_order_id": "رقم طلب التاجر",
+      "trade_no": "رقم حركة التجارة",
+      "amount": "مبلغ الطلب",
+      "paid_amount": "المبلغ المدفوع",
+      "refunded_amount": "المبلغ المسترد",
+      "refundable_amount": "المبلغ القابل للاسترداد",
+      "status": "حالة المعاملة",
+      "payment_expiry": "انتهاء صلاحية الدفع",
+      "channel": "قناة الدفع",
+      "created_at": "وقت الإنشاء",
+      "seller_info": "معلومات البائع",
+      "buyer_info": "معلومات المشتري",
+      "name": "الاسم",
+      "merchant_id": "معرّف التاجر",
+      "buyer_code": "رمز العميل",
+      "close": "إغلاق",
+      "grand_total": "الإجمالي المستحق"
+    },
+    "orderTypes": {
+      "TRADE": "طلب تجاري",
+      "DEPOSIT": "إيداع",
+      "TRANSFER": "تحويل",
+      "PAYOUT": "دفع",
+      "WITHDRAWAL": "سحب",
+      "REFUND": "استرداد",
+      "DIRECT_DEBIT": "خصم مباشر",
+      "PLATFORM_SERVICE_FEE": "رسوم خدمة المنصة"
+    },
+    "payment_modal": {
+      "title": "دفع آمن - FilixPay.com",
+      "amount_to_pay": "المبلغ المطلوب دفعه",
+      "expires_at": "انتهاء صلاحية الرابط: {time}",
+      "go_to_pay": "انتقال إلى نقطة الدفع للدفع",
+      "copy_link": "نسخ الرابط",
+      "share_link": "مشاركة الرابط",
+      "share_whatsapp": "واتساب",
+      "share_email": "إرسال بالبريد",
+      "copy_success": "تم نسخ الرابط"
+    }
+  },
+  "Refunds": {
+    "title": "إدارة المبالغ المستردة",
+    "subtitle": "عرض وسجل طلبات المبالغ المستردة والبحث فيها.",
+    "search_placeholder": "ابحث عن رقم طلب الاسترداد أو رقم طلب التاجر...",
+    "filter": "تصفية",
+    "headers": {
+      "refund_id": "رقم طلب الاسترداد",
+      "order_id": "رقم طلب التاجر",
+      "amount": "مبلغ الاسترداد",
+      "status": "الحالة",
+      "created_at": "وقت التقديم",
+      "actions": "إجراءات"
+    },
+    "empty": "لا توجد بيانات للمبالغ المستردة حالياً.",
+    "create_refund": "إنشاء طلب استرداد",
+    "create_modal": {
+      "title": "إنشاء طلب استرداد",
+      "trade_no": "رقم حركة التجارة (tradeNo)",
+      "merchant_refund_id": "رقم طلب الاسترداد للتاجر",
+      "reason": "سبب الاسترداد",
+      "currency": "العملة",
+      "amount": "مبلغ الاسترداد",
+      "default_reason": "تم بدء الاسترداد من قبل التاجر",
+      "submit": "تقديم فورًا",
+      "cancel": "إلغاء"
+    },
+    "details": {
+      "title": "تفاصيل الاسترداد",
+      "view": "تفاصيل",
+      "refund_no": "رقم حركة الاسترداد",
+      "merchant_refund_id": "رقم طلب الاسترداد للتاجر",
+      "amount": "مبلغ الاسترداد",
+      "merchant_amount": "المبلغ الفعلي للتاجر للاسترداد",
+      "status": "حالة الاسترداد",
+      "reason": "سبب الاسترداد",
+      "applicant": "مقدم الطلب",
+      "created_at": "وقت الإنشاء",
+      "updated_at": "آخر تحديث",
+      "service_fee": "رسوم الخدمة المستردة",
+      "order_info": "معلومات الطلب الأصلي",
+      "order_id": "رقم طلب التاجر",
+      "trade_no": "رقم حركة التجارة",
+      "order_amount": "إجمالي مبلغ الطلب",
+      "order_status": "حالة المعاملة",
+      "close": "إغلاق"
+    },
+    "settings": {
+      "title": "Refund settings",
+      "subtitle": "Configure when refunds execute automatically versus requiring merchant approval.",
+      "settlement_currency": "Settlement currency",
+      "threshold": "Auto-execute threshold",
+      "threshold_help": "Refunds at or below this amount (in settlement currency) execute automatically. Larger amounts stay pending until approved.",
+      "threshold_required": "Enter a threshold",
+      "threshold_min": "Threshold cannot be negative",
+      "unlimited": "Skip amount-based approval",
+      "unlimited_help": "When enabled, amount alone never triggers approval. FX conversion failures can still require approval.",
+      "fx_help": "Cross-currency refunds are converted to settlement currency via FX before comparison. If no quote is available, the refund still creates but awaits approval.",
+      "using_platform_default": "Using platform default threshold: {threshold}",
+      "save": "Save settings",
+      "save_success": "Refund settings saved",
+      "save_failed": "Failed to save refund settings",
+      "load_failed": "Failed to load refund settings"
+    },
+    "approvals": {
+      "title": "Refund approvals",
+      "subtitle": "Review refunds that exceeded the auto-execute threshold and are waiting for approval.",
+      "empty": "No refunds awaiting approval.",
+      "approve": "Approve",
+      "reject": "Reject",
+      "approve_confirm": "Approve this refund?",
+      "approve_confirm_desc": "Approval will execute the refund through the payment channel.",
+      "reject_confirm": "Reject this refund?",
+      "reject_confirm_desc": "Rejection cancels the refund request. It will not hit the channel.",
+      "approve_success": "Refund approved and execution started",
+      "reject_success": "Refund rejected and cancelled",
+      "approve_failed": "Failed to approve refund",
+      "reject_failed": "Failed to reject refund",
+      "detail_failed": "Failed to load refund details"
+    }
+  },
+  "Customers": {
+    "title": "إدارة العملاء",
+    "subtitle": "عرض وإدارة معلومات عملائك.",
+    "search": "بحث",
+    "headers": {
+      "name": "الاسم",
+      "code": "رمز العميل",
+      "email": "البريد الإلكتروني",
+      "mobile": "الهاتف المحمول",
+      "phone": "الهاتف",
+      "status": "حالة العميل",
+      "created_at": "وقت الإنشاء"
+    },
+    "loading": "جارٍ تحميل العملاء...",
+    "empty": "لا توجد بيانات للعملاء حالياً."
+  },
+  "Locations": {
+    "title": "المواقع",
+    "subtitle": "إدارة معلومات مواقع عملك.",
+    "create_location": "إضافة موقع",
+    "headers": {
+      "name": "الاسم",
+      "address": "العنوان",
+      "contact": "معلومات الاتصال",
+      "status": "الحالة",
+      "default": "افتراضي",
+      "created_at": "وقت الإنشاء"
+    },
+    "form": {
+      "name": "اسم الموقع",
+      "address": "العنوان التفصيلي",
+      "country": "الدولة / المنطقة",
+      "mobile_phone": "رقم الهاتف المحمول",
+      "email": "البريد الإلكتروني للاتصال",
+      "service_phone": "هاتف الخدمة",
+      "submit": "إرسال",
+      "cancel": "إلغاء",
+      "success": "تم إنشاء الموقع"
+    },
+    "empty": "لا توجد بيانات للمواقع حالياً."
+  },
+  "Developer": {
+    "title": "مركز المطورين",
+    "api_credentials": "بيانات اعتماد API",
+    "api_credentials_desc": "إدارة مفاتيح API الخاصة بك للوصول البرمجي.",
+    "view_swagger": "عرض وثائق Swagger API الخاصة بنا.",
+    "generate_button": "إنشاء / إعادة تعيين مفتاح API",
+    "webhook_endpoints": "نقاط نهاية Webhook",
+    "webhook_endpoints_desc": "تكوين نقاط نهاية Webhook لتلقي إشعارات الأحداث.",
+    "view_docs": "عرض تعليمات التحقق من التوقيع.",
+    "add_webhook": "إضافة Webhook",
+    "webhook_deliveries": "سجل تسليمات Webhook",
+    "webhook_deliveries_desc": "عرض تاريخ أحداث Webhook التي تم إرسالها إلى خادمك. إذا لم ترَ الأحداث المتوقعة أو فشل التسليم، يرجى التحقق من توفر نقطة النهاية الخاصة بك.",
+    "delivery_headers": {
+      "url": "عنوان Webhook",
+      "delivery_status": "الحالة",
+      "attempt": "المحاولة",
+      "created_at": "وقت الإرسال",
+      "payload": "الحمولة"
+    },
+    "payload_modal_title": "حمولة Webhook",
+    "copy_payload": "نسخ الحمولة",
+    "close": "إغلاق",
+    "explorer": {
+      "tab": "API Explorer",
+      "title": "Sandbox API Explorer",
+      "subtitle": "Select an Application and operation, then execute via the server-side Explorer proxy. Credentials and tokens stay on the server.",
+      "application": "Application",
+      "application_placeholder": "Select application",
+      "no_applications": "No applications available",
+      "operation": "Operation",
+      "operation_placeholder": "Select operation",
+      "no_operations": "No published operations",
+      "path_params": "Path parameters",
+      "query_json": "Query parameters (JSON object)",
+      "header_json": "Headers (JSON object)",
+      "header_hint": "Only Artifact-declared headers. Do not send Authorization, Cookie, or merchant/org headers.",
+      "body_json": "Request body (JSON)",
+      "execute": "Execute",
+      "execute_failed": "Explorer execute failed",
+      "select_required": "Select an application and operation",
+      "response": "Response",
+      "status": "Status",
+      "latency": "Latency",
+      "trace_id": "Trace ID",
+      "headers": "Headers",
+      "body": "Body",
+      "retry": "Retry",
+      "load_apps_failed": "Failed to load applications",
+      "load_ops_failed": "Failed to load operations"
+    }
+  },
+  "Common": {
+    "loading": "جارٍ التحميل...",
+    "error": "حدث خطأ",
+    "success": "نجاح",
+    "confirm_delete": "هل أنت متأكد أنك تريد حذف هذا العنصر؟",
+    "cancel": "إلغاء",
+    "submit": "إرسال",
+    "reset": "إعادة تعيين",
+    "previous": "السابق",
+    "next": "التالي",
+    "page_of": "الصفحة {current} من {total}",
+    "close": "إغلاق",
+    "add": "إضافة",
+    "delete": "حذف",
+    "actions": "إجراءات"
+  },
+  "BankAccounts": {
+    "title": "حسابات الاستلام",
+    "subtitle": "إدارة معلومات حساباتك المصرفية لاستلام المدفوعات.",
+    "create_account": "إنشاء حساب",
+    "headers": {
+      "bank_name": "اسم البنك",
+      "branch_name": "اسم الفرع",
+      "account_holder": "صاحب الحساب",
+      "account_number": "رقم الحساب",
+      "city": "المدينة",
+      "status": "الحالة",
+      "primary": "رئيسي",
+      "created_at": "تاريخ الإنشاء"
+    },
+    "form": {
+      "create_title": "إنشاء حساب استلام",
+      "bank_name": "اسم البنك",
+      "branch_name": "اسم الفرع",
+      "account_holder": "صاحب الحساب",
+      "account_number": "رقم الحساب",
+      "city": "المدينة",
+      "primary": "تعيين كرئيسي",
+      "cancel": "إلغاء",
+      "submit": "إرسال",
+      "success": "تم الإنشاء بنجاح"
+    },
+    "empty": "لا توجد حسابات استلام."
+  },
+  "Transfers": {
+    "title": "تدقيق التحويلات",
+    "subtitle": "إدارة وتدقيق طلبات التحويل والتسوية.",
+    "headers": {
+      "merchant_order_id": "رقم الطلب",
+      "subject": "الموضوع",
+      "transaction_id": "مرجع المعاملة المصرفية",
+      "payer": "الدافع",
+      "payee": "المستفيد",
+      "amount": "المبلغ",
+      "audit_operator": "المدقق",
+      "created_at": "تاريخ الإنشاء",
+      "actions": "إجراءات"
+    },
+    "tabs": {
+      "waiting": "بانتظار التدقيق",
+      "passed": "موافق عليه",
+      "rejected": "مرفوض"
+    },
+    "audit_btn": "تدقيق",
+    "view_btn": "تفاصيل",
+    "empty": "لا توجد سجلات تدقيق.",
+    "audit": {
+      "title": "تدقيق التحويل",
+      "title_view": "تفاصيل التحويل",
+      "zoom_in": "تكبير",
+      "transfer_info": "معلومات التحويل",
+      "audit_info": "معلومات التدقيق",
+      "amount": "المبلغ",
+      "payee": "المستفيد",
+      "payee_bank": "بنك المستفيد",
+      "payee_account": "حساب المستفيد",
+      "status": "الحالة",
+      "audit_status": "حالة التدقيق",
+      "audit_operator": "المدقق",
+      "proof_image": "إثبات التحويل",
+      "audit_form": "معلومات التدقيق",
+      "transaction_id": "معرف المعاملة المصرفية",
+      "transaction_id_placeholder": "أدخل معرف المعاملة من كشف الحساب",
+      "payer_name": "اسم حساب الدافع",
+      "payer_account": "رقم حساب الدافع",
+      "payer_bank": "بنك الدافع",
+      "audit_decision": "قرار التدقيق",
+      "pass": "موافقة",
+      "reject": "رفض",
+      "reject_reason": "سبب الرفض",
+      "reject_reason_placeholder": "يرجى إدخال سبب الرفض",
+      "reject_reason_required": "سبب الرفض مطلوب",
+      "not_found": "تفاصيل التحويل غير موجودة"
+    }
+  },
+  "Reviews": {
+    "title": "تأكيد التحويلات",
+    "subtitle": "تأكيد التحويلات التي اجتازت التدقيق.",
+    "headers": {
+      "merchant_order_id": "رقم الطلب",
+      "subject": "الموضوع",
+      "transaction_id": "مرجع المعاملة المصرفية",
+      "payer": "الدافع",
+      "payee": "المستفيد",
+      "amount": "المبلغ",
+      "audit_operator": "المدقق",
+      "review_operator": "المؤكد",
+      "created_at": "تاريخ الإنشاء",
+      "actions": "إجراءات"
+    },
+    "tabs": {
+      "pending": "قيد الانتظار",
+      "active": "مؤكد",
+      "rejected": "مرفوض"
+    },
+    "confirm_btn": "تأكيد",
+    "view_btn": "تفاصيل",
+    "empty": "لا توجد سجلات للتأكيد.",
+    "confirm_success": "تم التأكيد بنجاح",
+    "confirm_confirm": "هل أنت متأكد أنك تريد تأكيد هذا التحويل؟",
+    "confirm_deposit": "تأكيد الإيداع",
+    "audit_operator": "المدقق",
+    "review_operator": "المؤكد",
+    "review_status": "حالة التأكيد",
+    "review_decision": "قرار التأكيد",
+    "review_form": "إجراء التأكيد"
+  },
+  "SubMerchants": {
+    "title": "إدارة التجار الفرعيين",
+    "subtitle": "عرض وإدارة معلومات التجار الفرعيين.",
+    "create_sub_merchant": "إضافة تاجر فرعي",
+    "form": {
+      "name": "اسم التاجر",
+      "alias": "الاسم المستعار للتسوية",
+      "success": "تم إنشاء التاجر الفرعي بنجاح"
+    },
+    "headers": {
+      "name": "اسم التاجر",
+      "alias": "الاسم المستعار",
+      "code": "رمز التاجر",
+      "merchant_id": "معرف التاجر",
+      "status": "الحالة",
+      "created_at": "تاريخ الإنشاء"
+    },
+    "empty": "لا توجد بيانات للتجار الفرعيين."
+  },
+  "Organization": {
+    "title": "Organization",
+    "no_active_org": "Select an organization from the sidebar first.",
+    "tabs": {
+      "members": "Members",
+      "roles": "Roles",
+      "business_accounts": "Business Accounts"
+    },
+    "scope_denied": "You no longer have access to the selected business account. Switched to an available account.",
+    "actions": {
+      "refresh": "Refresh",
+      "cancel": "Cancel"
+    },
+    "roles": {
+      "create": "Create Role",
+      "edit": "Edit",
+      "view": "View",
+      "delete": "Delete",
+      "save": "Save",
+      "create_title": "Create Custom Role",
+      "edit_title": "Edit Role",
+      "delete_confirm": "Delete this custom role?",
+      "delete_success": "Role deleted",
+      "delete_failed": "Failed to delete role",
+      "create_success": "Role created",
+      "edit_success": "Role updated",
+      "save_failed": "Failed to save role",
+      "load_failed": "Failed to load roles",
+      "no_permission": "Your role cannot manage organization roles.",
+      "no_permissions": "No permissions",
+      "permissions_summary": "{count} permissions",
+      "role_in_use": "This role is assigned to members and cannot be deleted.",
+      "code_required": "Role code is required",
+      "display_name_required": "Display name is required",
+      "permissions_required": "Select at least one permission",
+      "description": "Description",
+      "columns": {
+        "code": "Code",
+        "display_name": "Display Name",
+        "kind": "Kind",
+        "permissions": "Permissions",
+        "actions": "Actions"
+      },
+      "kind": {
+        "SYSTEM": "System",
+        "CUSTOM": "Custom"
+      },
+      "permissions": {
+        "MERCHANT_VIEW": "View merchants",
+        "MERCHANT_EDIT": "Edit merchants",
+        "MERCHANT_CREATE": "Create merchants",
+        "USER_VIEW": "View members",
+        "USER_INVITE": "Invite members",
+        "USER_REMOVE": "Remove members",
+        "PAYMENT_VIEW": "View payments",
+        "APIKEY_VIEW": "View API keys",
+        "APIKEY_CREATE": "Create API keys",
+        "WEBHOOK_MANAGE": "Manage webhooks",
+        "ROLE_MANAGE": "Manage roles"
+      },
+      "scope": {
+        "label": "Merchant scope",
+        "empty_means_all": "Leave empty to allow access to all merchants in the organization.",
+        "placeholder": "Select merchants (optional)",
+        "system_readonly": "System roles have full organization access. Merchant scope cannot be changed.",
+        "orphan_warning": "{count} merchant(s) in this role's scope are no longer visible to you."
+      }
+    },
+    "members": {
+      "invite": "Invite Member",
+      "invite_title": "Invite to Organization",
+      "send_invite": "Send Invitation",
+      "invite_success": "Invitation sent",
+      "invite_failed": "Failed to send invitation",
+      "remove": "Remove",
+      "remove_confirm": "Remove this member?",
+      "remove_success": "Member removed",
+      "remove_failed": "Failed to remove member",
+      "load_failed": "Failed to load members",
+      "no_permission": "Your role cannot view the member list.",
+      "email": "Email",
+      "email_required": "Email is required",
+      "email_invalid": "Invalid email address",
+      "role": "Role",
+      "role_required": "Select a role",
+      "role_placeholder": "Choose a role",
+      "change_role": "Change Role",
+      "change_role_title": "Change Member Role",
+      "change_role_submit": "Update Role",
+      "change_role_success": "Member role updated",
+      "change_role_failed": "Failed to update member role",
+      "columns": {
+        "email": "Email",
+        "roles": "Roles",
+        "status": "Status",
+        "joined_at": "Joined",
+        "actions": "Actions"
+      }
+    },
+    "accounts": {
+      "hint": "Create multiple business accounts under one organization (e.g. 3-party / 4-party). Switch accounts from the sidebar after creation.",
+      "create": "New Business Account",
+      "create_title": "New Business Account",
+      "submit_create": "Create",
+      "create_success": "Business account created",
+      "create_failed": "Failed to create business account",
+      "name": "Account name",
+      "name_required": "Account name is required",
+      "settlement_mode": "Settlement mode",
+      "mode": {
+        "platform": "Platform settlement",
+        "direct": "Direct settlement"
+      },
+      "columns": {
+        "name": "Name",
+        "code": "Account code",
+        "mode": "Mode",
+        "status": "Status"
+      }
+    },
+    "invitation_accept": {
+      "title": "Accept Invitation",
+      "processing": "Processing invitation…",
+      "missing_token": "Invalid invitation link or missing token.",
+      "success": "You have joined the organization",
+      "success_title": "Welcome",
+      "success_description": "Invitation accepted. Refresh or sign in again to load your updated organization access.",
+      "failed": "Failed to accept invitation",
+      "retry": "Retry",
+      "go_dashboard": "Go to Dashboard",
+      "go_organization": "View Organization"
+    }
+  }
+}

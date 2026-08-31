@@ -1,0 +1,185 @@
+.tableWrap {
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 12px;
+  box-shadow: var(--dashboard-shadow-sm);
+  overflow: hidden;
+}
+
+.tableWrap :global(.ant-table) {
+  background: transparent;
+}
+
+.tableWrap :global(.ant-table-thead > tr > th) {
+  padding: 14px 16px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: #64748b !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: rgba(248, 250, 252, 0.7) !important;
+  border-bottom: 1px solid #f1f5f9 !important;
+}
+
+.tableWrap :global(.ant-table-thead > tr > th.ant-table-cell-align-right) {
+  text-align: right !important;
+}
+
+/* scroll.x inserts a measure row; padding on it creates a blank gap under the header */
+.tableWrap :global(.ant-table-measure-row),
+.tableWrap :global(.ant-table-measure-row > td) {
+  height: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  overflow: hidden !important;
+}
+
+.tableWrap :global(.ant-table-tbody > tr:not(.ant-table-measure-row) > td) {
+  padding: 14px 16px !important;
+  font-size: 12px;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9 !important;
+  vertical-align: middle;
+}
+
+.tableWrap :global(.ant-table-tbody > tr:not(.ant-table-measure-row):hover > td) {
+  background: rgba(248, 250, 252, 0.6) !important;
+}
+
+.tableWrap :global(.ant-table-tbody > tr:not(.ant-table-measure-row):last-child > td) {
+  border-bottom: none !important;
+}
+
+.tableWrap :global(.ant-pagination) {
+  padding: 12px 16px !important;
+  margin: 0 !important;
+}
+
+.tableWrap :global(.ant-table-tbody > tr:hover) :global(.order-id-cell) button {
+  opacity: 1;
+}
+
+.merchantPrimary {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1e293b;
+  line-height: 1.4;
+}
+
+.merchantSecondary {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  color: #94a3b8;
+  line-height: 1.4;
+}
+
+.channelBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: #f1f5f9;
+  font-size: 11px;
+  font-weight: 600;
+  color: #475569;
+  letter-spacing: 0.02em;
+}
+
+.typeBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: #eff6ff;
+  font-size: 11px;
+  font-weight: 600;
+  color: #1d4ed8;
+  letter-spacing: 0.02em;
+}
+
+.amountCell {
+  text-align: right;
+  font-weight: 600;
+  color: #0f172a;
+  white-space: nowrap;
+}
+
+.amountCurrency {
+  margin-left: 6px;
+  font-size: 10px;
+  font-weight: 400;
+  color: #94a3b8;
+}
+
+.timeCell {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+.actionsCell {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.actionsEmpty {
+  color: #94a3b8;
+}
+
+.actionLink {
+  padding: 0 4px;
+  border: none;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 500;
+  color: #475569;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.actionLink:hover {
+  color: #2563eb;
+}
+
+.actionLinkPrimary {
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.actionLinkPrimary:hover {
+  color: #1d4ed8;
+}
+
+.actionLinkDanger {
+  color: #dc2626;
+}
+
+.actionLinkDanger:hover {
+  color: #b91c1c;
+}
+
+.moreButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: #64748b;
+  cursor: pointer;
+}
+
+.moreButton:hover {
+  background: #f1f5f9;
+  color: #334155;
+}
