@@ -10,6 +10,12 @@ export type FieldMeta = {
 };
 
 const FIELD_REGISTRY: Record<string, FieldMeta> = {
+    registrationCountry: {
+        labelKey: "fields.registrationCountry",
+        inputType: "text",
+        required: false,
+        storage: "core",
+    },
     businessName: {
         labelKey: "fields.businessName",
         inputType: "text",

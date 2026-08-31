@@ -61,13 +61,20 @@ function filterSchemaFields(
     mode: "onboarding" | "maintenance",
     editable = true,
 ) {
+    const fields = schema.fields.filter((field) => {
+        // registrationCountry is chosen in step 1 / schema resolve — never re-enter on onboarding.
+        if (mode === "onboarding" && field.name === "registrationCountry") {
+            return false;
+        }
+        return true;
+    });
     if (mode !== "maintenance") {
-        return schema.fields;
+        return fields;
     }
     if (!editable) {
-        return schema.fields;
+        return fields;
     }
-    return schema.fields.filter(
+    return fields.filter(
         (field) => field.maintenance == null || field.maintenance.editable !== false,
     );
 }
@@ -131,7 +138,8 @@ export default function SchemaDynamicForm({
             onFinish={onSubmit}
         >
             {fields.map(({ field, meta }) => {
-                const label = field.label ?? (meta ? t(meta.labelKey) : field.name);
+                // Prefer localized field meta; backend schema labels are often English-only.
+                const label = meta ? t(meta.labelKey) : (field.label ?? field.name);
                 const required = editable
                     ? (field.required ?? meta?.required ?? false)
                     : false;

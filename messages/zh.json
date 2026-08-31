@@ -6495,6 +6495,7 @@
       "businessName": "企业名称",
       "phone": "联系电话",
       "email": "联系邮箱",
+      "registrationCountry": "注册国家/地区",
       "uscc": "统一社会信用代码",
       "legalPersonIdNumber": "法人身份证号",
       "ein": "EIN",

@@ -6447,6 +6447,7 @@
       "businessName": "Legal business name",
       "phone": "Contact phone",
       "email": "Contact email",
+      "registrationCountry": "Registration country",
       "uscc": "Unified Social Credit Code",
       "legalPersonIdNumber": "Legal representative ID number",
       "ein": "EIN",
