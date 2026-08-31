@@ -341,7 +341,7 @@ export default function OnboardingApplyPage() {
                                     }`}
                                     onClick={() => setMerchantType("LEGAL_ENTITY")}
                                 >
-                                    <div>
+                                    <div className={styles.merchantTypeCardContent}>
                                         <div className={styles.merchantTypeCardTitle}>
                                             {t("merchantTypes.LEGAL_ENTITY.title")}
                                         </div>
@@ -355,7 +355,7 @@ export default function OnboardingApplyPage() {
                                     className={`${styles.merchantTypeCard} ${styles.merchantTypeCardDisabled}`}
                                     onClick={() => message.info(t("merchantTypes.comingSoon"))}
                                 >
-                                    <div style={{ flex: 1 }}>
+                                    <div className={styles.merchantTypeCardContent}>
                                         <div className={styles.merchantTypeCardTitle}>
                                             {t("merchantTypes.INDIVIDUAL.title")}
                                             <Tag style={{ marginLeft: 8 }}>{t("merchantTypes.comingSoon")}</Tag>
