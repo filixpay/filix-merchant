@@ -2,7 +2,7 @@
 
 import { useEffect, type ReactNode } from "react";
 import { Form, Input, Button, Space } from "antd";
-import type { FormInstance } from "antd/es/form";
+import type { FormInstance, Rule } from "antd/es/form";
 import { useTranslations } from "next-intl";
 import type { ApplicationDocument, ApplicationSchemaDto } from "@/lib/api/domains/onboarding";
 import { getFieldMeta, schemaFieldsWithMeta } from "@/lib/api/domains/onboarding";
@@ -171,6 +171,33 @@ export default function SchemaDynamicForm({
                 }
 
                 const inputType = meta?.inputType === "password" ? "password" : "text";
+                const rules: Rule[] = [];
+                if (required) {
+                    rules.push({ required: true, message: t("validation.required") });
+                }
+                if (meta?.maxLength) {
+                    rules.push({
+                        max: meta.maxLength,
+                        message: t("validation.maxLength", { max: meta.maxLength }),
+                    });
+                }
+                const control =
+                    meta?.inputType === "textarea" ? (
+                        <Input.TextArea
+                            rows={4}
+                            maxLength={meta.maxLength}
+                            showCount={Boolean(meta.maxLength)}
+                            autoComplete="off"
+                            readOnly={!editable}
+                            placeholder={
+                                meta.labelKey === "fields.businessDescription"
+                                    ? t("fields.businessDescriptionPlaceholder")
+                                    : undefined
+                            }
+                        />
+                    ) : (
+                        <Input type={inputType} autoComplete="off" readOnly={!editable} />
+                    );
 
                 if (field.storage === "core") {
                     return (
@@ -178,11 +205,11 @@ export default function SchemaDynamicForm({
                             key={field.name}
                             name={field.name as "businessName" | "phone" | "email"}
                             label={label}
-                            rules={required ? [{ required: true, message: t("validation.required") }] : []}
+                            rules={rules}
                             validateStatus={highlight ? "error" : undefined}
                             help={highlight}
                         >
-                            <Input type={inputType} autoComplete="off" readOnly={!editable} />
+                            {control}
                         </Form.Item>
                     );
                 }
@@ -192,11 +219,11 @@ export default function SchemaDynamicForm({
                         key={field.name}
                         name={["extraAttributes", field.name]}
                         label={label}
-                        rules={required ? [{ required: true, message: t("validation.required") }] : []}
+                        rules={rules}
                         validateStatus={highlight ? "error" : undefined}
                         help={highlight}
                     >
-                        <Input type={inputType} autoComplete="off" readOnly={!editable} />
+                        {control}
                     </Form.Item>
                 );
             })}

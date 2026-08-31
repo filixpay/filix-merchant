@@ -6430,7 +6430,8 @@
     "reapplyDescription": "You may submit a new application.",
     "reapplySuccess": "New application created",
     "validation": {
-      "required": "This field is required"
+      "required": "This field is required",
+      "maxLength": "Please keep within {max} characters"
     },
     "documentsRequired": "Please upload all required documents before continuing.",
     "documentUploadHint": "Click or drag a file to upload (PDF, JPEG, or PNG, max 10 MB)",
@@ -6448,6 +6449,8 @@
       "phone": "Contact phone",
       "email": "Contact email",
       "registrationCountry": "Registration country",
+      "businessDescription": "Business description / onboarding reason",
+      "businessDescriptionPlaceholder": "Briefly describe your business, or why you are joining FilixPay (max 1000 characters)",
       "uscc": "Unified Social Credit Code",
       "legalPersonIdNumber": "Legal representative ID number",
       "ein": "EIN",
@@ -6662,6 +6665,7 @@
     },
     "validation": {
       "required": "This field is required",
+      "maxLength": "Please keep within {max} characters",
       "emailInvalid": "Enter a valid email address",
       "phoneInvalid": "Enter a valid phone number",
       "phonePrefixInvalid": "Enter a valid country code (e.g. +33)",
@@ -6680,6 +6684,8 @@
       "registrationCountry": "Registration country",
       "merchantType": "Merchant type",
       "schemaCode": "Schema code",
+      "businessDescription": "Business description / onboarding reason",
+      "businessDescriptionPlaceholder": "Briefly describe your business, or why you are joining FilixPay (max 1000 characters)",
       "uscc": "Unified Social Credit Code",
       "legalPersonIdNumber": "Legal representative ID number",
       "ein": "EIN",

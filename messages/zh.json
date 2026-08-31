@@ -6478,7 +6478,8 @@
     "reapplyDescription": "您可以重新提交一份新的申请。",
     "reapplySuccess": "已创建新申请",
     "validation": {
-      "required": "请填写此字段"
+      "required": "请填写此字段",
+      "maxLength": "请控制在 {max} 字以内"
     },
     "documentsRequired": "请先上传全部必填证件后再继续",
     "documentUploadHint": "点击或拖拽上传文件（PDF、JPEG 或 PNG，最大 10 MB）",
@@ -6496,6 +6497,8 @@
       "phone": "联系电话",
       "email": "联系邮箱",
       "registrationCountry": "注册国家/地区",
+      "businessDescription": "企业描述 / 入驻原因",
+      "businessDescriptionPlaceholder": "请简要说明企业经营范围，或本次入驻 FilixPay 的原因（1000 字以内）",
       "uscc": "统一社会信用代码",
       "legalPersonIdNumber": "法人身份证号",
       "ein": "EIN",
@@ -6710,6 +6713,7 @@
     },
     "validation": {
       "required": "请填写此字段",
+      "maxLength": "请控制在 {max} 字以内",
       "emailInvalid": "请输入有效的邮箱地址",
       "phoneInvalid": "请输入有效的手机号码",
       "phonePrefixInvalid": "请输入有效的国际区号（如 +33）",
@@ -6728,6 +6732,8 @@
       "registrationCountry": "注册国家/地区",
       "merchantType": "商户类型",
       "schemaCode": "资料模板",
+      "businessDescription": "企业描述 / 入驻原因",
+      "businessDescriptionPlaceholder": "请简要说明企业经营范围，或本次入驻 FilixPay 的原因（1000 字以内）",
       "uscc": "统一社会信用代码",
       "legalPersonIdNumber": "法人身份证号",
       "ein": "EIN",

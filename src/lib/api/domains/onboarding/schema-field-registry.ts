@@ -1,12 +1,13 @@
 import type { SchemaFieldDto } from "./types";
 
-export type FieldInputType = "text" | "password";
+export type FieldInputType = "text" | "password" | "textarea";
 
 export type FieldMeta = {
     labelKey: string;
     inputType: FieldInputType;
     required: boolean;
     storage: "core" | "extra";
+    maxLength?: number;
 };
 
 const FIELD_REGISTRY: Record<string, FieldMeta> = {
@@ -33,6 +34,13 @@ const FIELD_REGISTRY: Record<string, FieldMeta> = {
         inputType: "text",
         required: true,
         storage: "core",
+    },
+    businessDescription: {
+        labelKey: "fields.businessDescription",
+        inputType: "textarea",
+        required: true,
+        storage: "extra",
+        maxLength: 1000,
     },
     uscc: {
         labelKey: "fields.uscc",
