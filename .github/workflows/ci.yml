@@ -1,13 +1,7 @@
 name: CI
 
+# Quality gate for pull requests only. Main-branch releases use docker-publish.yml.
 on:
-  push:
-    branches: [main]
-    paths-ignore:
-      - "docs/**"
-      - "**/*.md"
-      - "**/*.txt"
-      - ".trellis/**"
   pull_request:
     branches: [main]
     paths-ignore:
