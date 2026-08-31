@@ -220,7 +220,7 @@ export default function OnboardingStatusPage() {
             });
             localStorage.setItem(APPLICATION_ID_STORAGE_KEY, created.id);
             message.success(t("reapplySuccess"));
-            router.push(`/${locale}/dashboard/onboarding/apply?id=${created.id}`);
+            router.push(`/${locale}/dashboard/onboarding/apply?id=${created.id}&step=0`);
         } catch (err) {
             if (err instanceof ApplicationConflictError) {
                 message.error(t("errors.conflict"));

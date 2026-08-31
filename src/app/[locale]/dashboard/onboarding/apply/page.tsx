@@ -27,6 +27,7 @@ import SchemaDynamicForm, {
     type SchemaFormValues,
 } from "@/components/onboarding/SchemaDynamicForm";
 import OnboardingConfirmSummary from "@/components/onboarding/OnboardingConfirmSummary";
+import { buildDraftProgress } from "@/lib/api/domains/onboarding/draft-progress";
 import { canUpgradeToFormal } from "@/lib/merchant/merchant-tier";
 import { SETTLEMENT_CURRENCY_OPTIONS, formatSettlementCurrencyLabel } from "@/lib/onboarding/settlement-currency";
 import { REGISTRATION_COUNTRY_GROUPS } from "@/lib/onboarding/registration-countries";
@@ -52,10 +53,15 @@ export default function OnboardingApplyPage() {
     const [application, setApplication] = useState<MerchantApplication | null>(null);
     const [applicationType, setApplicationType] = useState<ApplicationType>("NEW");
     const [documents, setDocuments] = useState<ApplicationDocument[]>([]);
+    const [initializing, setInitializing] = useState(true);
 
     const queryApplicationId = searchParams.get("id");
     const forceUpgrade = searchParams.get("type") === "UPGRADE";
-    const requestedStep = Number(searchParams.get("step"));
+    const stepParam = searchParams.get("step");
+    const requestedStep =
+        stepParam != null && stepParam !== "" && !Number.isNaN(Number(stepParam))
+            ? Number(stepParam)
+            : null;
 
     const highlightFields = useMemo(() => {
         const latestReview = application?.reviews?.[application.reviews.length - 1];
@@ -90,43 +96,60 @@ export default function OnboardingApplyPage() {
     const loadExisting = useCallback(
         async (id: string) => {
             if (!accessToken) return;
-            const loaded = await api.onboarding.get(accessToken, id);
-            setApplication(loaded);
-            if (loaded.profile?.registrationCountry) {
-                setCountry(loaded.profile.registrationCountry);
-            }
-            if (loaded.profile?.settlementCurrency) {
-                setSettlementCurrency(loaded.profile.settlementCurrency);
-            }
-            if (!EDITABLE_APPLICATION_STATUSES.includes(loaded.status)) {
-                router.replace(`/${locale}/dashboard/onboarding/status?id=${loaded.id}`);
-                return;
-            }
-            if (loaded.profile?.registrationCountry) {
-                const loadedSchema = await api.onboarding.getSchema(
-                    accessToken,
-                    loaded.profile.registrationCountry,
-                    "LEGAL_ENTITY",
-                );
-                setSchema(loadedSchema);
-                setStep(
-                    Number.isInteger(requestedStep) && requestedStep >= 0 && requestedStep <= 2
-                        ? requestedStep
-                        : 1,
-                );
-            } else {
-                setStep(
-                    Number.isInteger(requestedStep) && requestedStep >= 0 && requestedStep <= 2
-                        ? requestedStep
-                        : 0,
-                );
+            setInitializing(true);
+            try {
+                const loaded = await api.onboarding.get(accessToken, id);
+                setApplication(loaded);
+                if (loaded.profile?.registrationCountry) {
+                    setCountry(loaded.profile.registrationCountry);
+                }
+                if (loaded.profile?.settlementCurrency) {
+                    setSettlementCurrency(loaded.profile.settlementCurrency);
+                }
+                if (!EDITABLE_APPLICATION_STATUSES.includes(loaded.status)) {
+                    router.replace(`/${locale}/dashboard/onboarding/status?id=${loaded.id}`);
+                    return;
+                }
+
+                let loadedSchema: ApplicationSchemaDto | null = null;
+                if (loaded.profile?.registrationCountry) {
+                    loadedSchema = await api.onboarding.getSchema(
+                        accessToken,
+                        loaded.profile.registrationCountry,
+                        loaded.profile.merchantType ?? "LEGAL_ENTITY",
+                    );
+                    setSchema(loadedSchema);
+                }
+
+                let resolvedStep = 0;
+                if (requestedStep !== null && requestedStep >= 0 && requestedStep <= 2) {
+                    resolvedStep = requestedStep;
+                } else if (loaded.profile?.registrationCountry && loadedSchema) {
+                    const progress = buildDraftProgress({
+                        profile: loaded.profile,
+                        status: loaded.status,
+                        schema: loadedSchema,
+                        documents: [],
+                        countryLabel: loaded.profile.registrationCountry,
+                        locale,
+                        t,
+                        formatCurrency: (code) => formatSettlementCurrencyLabel(code, locale),
+                    });
+                    resolvedStep = progress?.nextStep ?? 0;
+                }
+                setStep(resolvedStep);
+            } finally {
+                setInitializing(false);
             }
         },
-        [accessToken, locale, requestedStep, router],
+        [accessToken, locale, requestedStep, router, t],
     );
 
     useEffect(() => {
-        if (!accessToken) return;
+        if (!accessToken) {
+            setInitializing(false);
+            return;
+        }
 
         (async () => {
             try {
@@ -152,6 +175,7 @@ export default function OnboardingApplyPage() {
                         }
                     }
                     if (!resolved) {
+                        setInitializing(false);
                         return;
                     }
                     if (
@@ -160,6 +184,7 @@ export default function OnboardingApplyPage() {
                         TERMINAL_APPLICATION_STATUSES.includes(resolved.status)
                     ) {
                         localStorage.removeItem(APPLICATION_ID_STORAGE_KEY);
+                        setInitializing(false);
                         return;
                     }
                     await loadExisting(resolved.id);
@@ -170,9 +195,12 @@ export default function OnboardingApplyPage() {
                 if (current) {
                     localStorage.setItem(APPLICATION_ID_STORAGE_KEY, current.id);
                     await loadExisting(current.id);
+                    return;
                 }
+                setInitializing(false);
             } catch (err) {
                 console.error(err);
+                setInitializing(false);
             }
         })();
     }, [accessToken, forceUpgrade, loadExisting, queryApplicationId, locale, router]);
@@ -308,6 +336,10 @@ export default function OnboardingApplyPage() {
                 <Alert type="warning" showIcon message={application.returnedReason} style={{ marginBottom: 16 }} />
             ) : null}
 
+            {initializing ? (
+                <Card className={styles.stepCard} loading />
+            ) : (
+                <>
             <Steps
                 className={styles.steps}
                 current={step}
@@ -459,6 +491,8 @@ export default function OnboardingApplyPage() {
                     </div>
                 </Card>
             ) : null}
+                </>
+            )}
         </DashboardPage>
     );
 }
