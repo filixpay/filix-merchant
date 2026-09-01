@@ -1,5 +1,6 @@
 "use client";
 
+import type { ReactNode } from "react";
 import Link from "next/link";
 import { Button, Card, Space, Steps, Typography } from "antd";
 import { CheckCircleOutlined, LockOutlined } from "@ant-design/icons";
@@ -40,10 +41,8 @@ export default function CommerceActivationCard({
     }
 
     const profileDone = status.profileComplete;
-    const productDone = false;
-    const ordersLocked = true;
 
-    let cta: React.ReactNode = null;
+    let cta: ReactNode = null;
     switch (status.phase) {
         case "NO_PRODUCTS":
             cta = (
@@ -121,16 +120,15 @@ export default function CommerceActivationCard({
                     },
                     {
                         title: t("steps.publish"),
-                        status: productDone ? "finish" : "process",
+                        status: "process",
                         description: status.activationProductName ? (
                             <Typography.Text type="secondary">{status.activationProductName}</Typography.Text>
                         ) : null,
                     },
                     {
                         title: t("steps.orders"),
-                        status: ordersLocked ? "wait" : "process",
-                        icon: ordersLocked ? <LockOutlined /> : undefined,
-                        disabled: ordersLocked,
+                        status: "wait",
+                        icon: <LockOutlined />,
                     },
                 ]}
                 style={{ marginBottom: 16 }}
