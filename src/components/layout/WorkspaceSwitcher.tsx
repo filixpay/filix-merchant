@@ -216,14 +216,11 @@ export default function WorkspaceSwitcher({
               })
             )}
 
-            {organizations.length > 1 ? (
+            {organizations.length > 1 || organization ? (
               <>
                 <div className={styles.divider} />
-                <div className={styles.sectionHeader}>
-                  <div className={styles.sectionLabel}>{t("switch_organization")}</div>
-                </div>
                 {canCreateBusinessAccount ? (
-                  <div className={styles.addOrgRow}>
+                  <div className={styles.addMerchantRow}>
                     <Link
                       href={`/${locale}/dashboard/organization?create=1`}
                       className={styles.sectionAddLink}
@@ -234,46 +231,38 @@ export default function WorkspaceSwitcher({
                     </Link>
                   </div>
                 ) : null}
-                {organizations.map((item) => {
-                  const code = organizationCodeToString(item.code);
-                  const isSelected = code === resolvedOrgCode;
-                  return (
-                    <button
-                      type="button"
-                      key={code}
-                      className={`${styles.option} ${isSelected ? styles.selected : ""}`}
-                      onClick={() => handleSelectOrganization(item)}
-                    >
-                      <div className={styles.optionIcon}>
-                        <BuildingOffice2Icon className={styles.icon} />
-                      </div>
-                      <div className={styles.optionContent}>
-                        <div className={styles.optionTitle}>{item.name}</div>
-                        <div className={styles.optionDesc}>
-                          {tOrg("org_code")}: {code} · {formatOrgRoles(item.roles)}
-                        </div>
-                      </div>
-                      {isSelected ? <CheckCircleIcon className={styles.checkIcon} /> : null}
-                    </button>
-                  );
-                })}
-              </>
-            ) : organization ? (
-              <>
-                <div className={styles.divider} />
-                <div className={styles.sectionHeader}>
-                  <div className={styles.sectionLabel}>{t("affiliated_organization")}</div>
-                </div>
-                <div className={styles.addOrgRow}>
-                  <a
-                    href={`https://www.filixpay.com/${locale}/dashboard/organization`}
-                    className={styles.sectionAddLink}
-                    aria-label={t("add_organization")}
-                    onClick={() => setIsOpen(false)}
-                  >
-                    +
-                  </a>
+                {organizations.length > 1 ? (
+                  <>
+                    <div className={styles.sectionHeader}>
+                      <div className={styles.sectionLabel}>{t("switch_organization")}</div>
+                    </div>
+                    {organizations.map((item) => {
+                      const code = organizationCodeToString(item.code);
+                      const isSelected = code === resolvedOrgCode;
+                      return (
+                        <button
+                          type="button"
+                          key={code}
+                          className={`${styles.option} ${isSelected ? styles.selected : ""}`}
+                          onClick={() => handleSelectOrganization(item)}
+                        >
+                          <div className={styles.optionIcon}>
+                            <BuildingOffice2Icon className={styles.icon} />
+                          </div>
+                          <div className={styles.optionContent}>
+                            <div className={styles.optionTitle}>{item.name}</div>
+                            <div className={styles.optionDesc}>
+                              {tOrg("org_code")}: {code} · {formatOrgRoles(item.roles)}
+                            </div>
+                          </div>
+                          {isSelected ? <CheckCircleIcon className={styles.checkIcon} /> : null}
+                        </button>
+                      );
+                    })}
+                  </>
+                ) : organization ? (
                   <div className={styles.detailBlock}>
+                    <div className={styles.detailTitle}>{t("affiliated_organization")}</div>
                     <div className={styles.detailBody}>{organization.name}</div>
                     <CopyableCodeMeta
                       label={tOrg("org_code")}
@@ -282,7 +271,7 @@ export default function WorkspaceSwitcher({
                       copiedLabel={t("copy_success")}
                     />
                   </div>
-                </div>
+                ) : null}
               </>
             ) : null}
 

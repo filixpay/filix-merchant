@@ -323,27 +323,20 @@
 }
 
 .detailBlock {
-    padding: 0.35rem 0 0;
-    margin-top: 0;
-    width: 100%;
-    text-align: center;
+    padding: 0.5rem 0.5rem 0.25rem;
+    margin-top: 0.25rem;
+}
+
+.addMerchantRow {
+    display: flex;
+    justify-content: center;
+    padding: 0.25rem 0.5rem 0.5rem;
 }
 
 .addOrgRow {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 0.15rem;
-    padding: 0.25rem 0.5rem 0.5rem;
-}
-
-.addOrgRow .detailBody {
-    text-align: center;
-}
-
-.addOrgRow .optionMetaRow {
-    justify-content: center;
+    margin-bottom: 0.25rem;
 }
 
 .addOrgLink {
