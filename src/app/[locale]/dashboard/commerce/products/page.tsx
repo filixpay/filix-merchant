@@ -127,7 +127,7 @@ export default function CommerceProductsPage() {
         action === "publish"
           ? await api.commerce.products.publish(accessToken, id)
           : await api.commerce.products.unpublish(accessToken, id);
-      message.success(action === "publish" ? t("messages.published") : t("messages.unpublished"));
+      message.success(action === "publish" ? t("messages.publishing") : t("messages.unpublished"));
       router.push(`/${locale}/dashboard/commerce/products/${updated.id}`);
     } catch (err) {
       message.error(err instanceof Error ? err.message : tCommon("error"));

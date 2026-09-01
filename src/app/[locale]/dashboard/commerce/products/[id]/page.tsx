@@ -2,13 +2,19 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import { App, Card, Descriptions, Skeleton, Typography } from "antd";
 import { ArrowLeftOutlined } from "@ant-design/icons";
 import { useLocale, useTranslations } from "next-intl";
 import { api, type CommerceCategoryView, type CommerceProductTypeView, type CommerceProductView } from "@/lib/api";
 import { canEdit, isInFlightIntegration } from "@/lib/api/domains/commerce";
+import { getActivationStatus } from "@/lib/api/domains/commerce/activation";
+import {
+    ACTIVATION_POLL_INTERVAL_MS,
+    ACTIVATION_POLL_TIMEOUT_MS,
+    decideActivationPoll,
+} from "@/lib/commerce/activation-polling";
 import DashboardPage from "@/components/layout/DashboardPage";
 import ProductEditorForm, { type ProductEditorValues } from "@/components/commerce/ProductEditorForm";
 import ProductFormFooter from "@/components/commerce/ProductFormFooter";
@@ -20,6 +26,7 @@ const POLL_MAX_MS = 120_000;
 
 export default function CommerceProductDetailPage() {
     const params = useParams<{ id: string }>();
+    const router = useRouter();
     const locale = useLocale();
     const t = useTranslations("CommerceProducts");
     const tCommon = useTranslations("Common");
@@ -34,6 +41,8 @@ export default function CommerceProductDetailPage() {
     const [saving, setSaving] = useState(false);
     const [actionLoading, setActionLoading] = useState(false);
     const pollStartedRef = useRef<number | null>(null);
+    const activationPollStartedRef = useRef<number | null>(null);
+    const activationPollTimerRef = useRef<number | null>(null);
 
     const loadProduct = useCallback(async () => {
         if (!accessToken || !params.id) {
@@ -109,6 +118,51 @@ export default function CommerceProductDetailPage() {
         }
     };
 
+    const stopActivationPoll = useCallback(() => {
+        if (activationPollTimerRef.current !== null) {
+            window.clearInterval(activationPollTimerRef.current);
+            activationPollTimerRef.current = null;
+        }
+        activationPollStartedRef.current = null;
+    }, []);
+
+    useEffect(() => () => stopActivationPoll(), [stopActivationPoll]);
+
+    const startActivationPollAfterPublish = useCallback(() => {
+        if (!accessToken) {
+            return;
+        }
+        stopActivationPoll();
+        activationPollStartedRef.current = Date.now();
+
+        const tick = async () => {
+            const startedAt = activationPollStartedRef.current ?? Date.now();
+            const elapsedMs = Date.now() - startedAt;
+            try {
+                const status = await getActivationStatus(accessToken);
+                if (status.phase === "ACTIVATED" && status.shouldShowFirstPublishCelebration) {
+                    stopActivationPoll();
+                    router.push(`/${locale}/dashboard`);
+                    return;
+                }
+                const decision = decideActivationPoll(status.phase, elapsedMs);
+                if (decision.action === "timeout" || decision.action === "stop") {
+                    stopActivationPoll();
+                    void loadProduct();
+                }
+            } catch {
+                if (elapsedMs >= ACTIVATION_POLL_TIMEOUT_MS) {
+                    stopActivationPoll();
+                }
+            }
+        };
+
+        void tick();
+        activationPollTimerRef.current = window.setInterval(() => {
+            void tick();
+        }, ACTIVATION_POLL_INTERVAL_MS);
+    }, [accessToken, locale, loadProduct, router, stopActivationPoll]);
+
     const handlePublish = async () => {
         if (!accessToken || !product) {
             return;
@@ -117,7 +171,9 @@ export default function CommerceProductDetailPage() {
         try {
             const updated = await api.commerce.products.publish(accessToken, product.id);
             setProduct(updated);
-            message.success(t("messages.published"));
+            // HTTP 200 = accepted, not celebration-ready. Stay on detail and poll activation-status.
+            message.success(t("messages.publishing"));
+            startActivationPollAfterPublish();
         } catch (err) {
             message.error(err instanceof Error ? err.message : tCommon("error"));
         } finally {
