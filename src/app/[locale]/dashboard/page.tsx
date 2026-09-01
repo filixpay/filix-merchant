@@ -111,9 +111,6 @@ export default function DashboardOverviewPage() {
     const balanceHref = `/${locale}/dashboard/money/balance`;
     const ordersHref = `/${locale}/dashboard/orders`;
     const activityHref = `/${locale}/dashboard/money/activity`;
-    const moneyInHref = `/${locale}/dashboard/money/money-in`;
-    const payoutsHref = `/${locale}/dashboard/money/payouts`;
-    const reportsHref = `/${locale}/dashboard/reporting/transactions`;
     const riskHref = `/${locale}/dashboard/fraud`;
 
     const overview = useMemo(
@@ -167,19 +164,6 @@ export default function DashboardOverviewPage() {
             title={t("title")}
             subtitle={t("subtitle")}
             contentMode="table"
-            extra={
-                <div className={styles.quickActions}>
-                    <Link href={moneyInHref}>
-                        <Button>{t("quick_actions.recharge")}</Button>
-                    </Link>
-                    <Link href={payoutsHref}>
-                        <Button>{t("quick_actions.payout")}</Button>
-                    </Link>
-                    <Link href={reportsHref}>
-                        <Button type="primary">{t("quick_actions.export")}</Button>
-                    </Link>
-                </div>
-            }
         >
             {loading ? (
                 <Skeleton active paragraph={{ rows: 4 }} />

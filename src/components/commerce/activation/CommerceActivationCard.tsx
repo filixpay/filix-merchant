@@ -106,8 +106,9 @@ export default function CommerceActivationCard({
             </Typography.Paragraph>
 
             <Steps
-                direction="vertical"
+                direction="horizontal"
                 size="small"
+                responsive
                 current={profileDone ? 1 : 0}
                 items={[
                     {
