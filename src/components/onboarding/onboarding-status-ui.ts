@@ -30,12 +30,14 @@ export type OnboardingTimelineSource = Pick<
     | "lastProvisionErrorCode"
 >;
 
-const HAPPY_PATH: OnboardingTimelineStepKey[] = [
+const HAPPY_PATH = [
     "submitted",
     "platformReview",
     "credentialCheck",
     "completed",
-];
+] as const satisfies readonly OnboardingTimelineStepKey[];
+
+type HappyPathStepKey = (typeof HAPPY_PATH)[number];
 
 export function formatOnboardingDateTime(value?: string, locale = "zh-CN"): string {
     if (!value) {
@@ -88,7 +90,7 @@ export function getOnboardingStatusTagColor(status: ApplicationStatus): string {
 }
 
 function happyPathSteps(
-    states: Record<OnboardingTimelineStepKey, OnboardingTimelineStep>,
+    states: Record<HappyPathStepKey, OnboardingTimelineStep>,
 ): OnboardingTimelineStep[] {
     return HAPPY_PATH.map((key) => states[key]);
 }
