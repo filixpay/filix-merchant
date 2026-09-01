@@ -434,6 +434,8 @@ import { maintenanceApi } from "./domains/maintenance";
 import { lifecycleApi } from "./domains/lifecycle";
 import { commerceApi } from "./domains/commerce";
 export type {
+    CommerceActivationPhase,
+    CommerceActivationStatus,
     CommerceCategoryView,
     CommerceProductTypeView,
     CommerceProductView,

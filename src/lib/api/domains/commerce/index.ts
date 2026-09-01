@@ -1,3 +1,4 @@
+import { getActivationStatus, markCelebrationSeen } from "./activation";
 import { listCategories } from "./categories";
 import { listProductTypes } from "./product-types";
 import { uploadCommerceMedia } from "./media";
@@ -20,6 +21,11 @@ export type {
     CreateCommerceProductBody,
     UpdateCommerceProductBody,
 } from "./types";
+
+export type {
+    CommerceActivationPhase,
+    CommerceActivationStatus,
+} from "./activation";
 
 export {
     canEdit,
@@ -51,5 +57,9 @@ export const commerceApi = {
     },
     media: {
         upload: uploadCommerceMedia,
+    },
+    activation: {
+        getStatus: getActivationStatus,
+        markCelebrationSeen,
     },
 };

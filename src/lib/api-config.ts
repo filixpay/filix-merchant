@@ -164,6 +164,8 @@ export const ENDPOINTS = {
         COMMERCE_CATEGORIES: '/portal/merchant/commerce/categories',
         COMMERCE_PRODUCT_TYPES: '/portal/merchant/commerce/product-types',
         COMMERCE_MEDIA: '/portal/merchant/commerce/media',
+        COMMERCE_ACTIVATION_STATUS: '/portal/merchant/commerce/activation-status',
+        COMMERCE_ACTIVATION_CELEBRATION_SEEN: '/portal/merchant/commerce/activation/celebration-seen',
         REPORTS_QUERY: '/portal/reports/v1/query',
         REPORTS_EXPORT: '/portal/reports/v1/export',
         REPORTS_WIDGETS: '/portal/reports/v1/widgets',
