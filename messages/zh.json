@@ -1434,8 +1434,54 @@
     },
     "detail_tabs": {
       "summary": "概览",
+      "fulfillment": "发货",
       "timeline": "时间线",
       "risk": "风控评估"
+    },
+    "fulfillment": {
+      "loading": "正在加载发货信息…",
+      "load_failed": "加载发货信息失败",
+      "retry": "重试",
+      "not_paid_title": "暂不可发货",
+      "not_paid_body": "该电商订单需支付成功后，方可提交发货信息。",
+      "summary_status": "发货状态",
+      "summary": {
+        "unfulfilled": "未发货",
+        "fulfilled": "已发货"
+      },
+      "in_progress": "发货请求已提交，正在等待平台确认。请勿重复提交。",
+      "history_title": "发货记录",
+      "history_empty": "暂无发货记录",
+      "form_title": "整单发货",
+      "form_hint": "提交后将向 Saleor 创建发货单；201 表示请求已受理，不代表物流已完成。",
+      "fields": {
+        "carrier": "承运商",
+        "tracking_number": "运单号",
+        "tracking_url": "物流追踪链接（可选）"
+      },
+      "placeholders": {
+        "carrier": "例如 DHL、顺丰",
+        "tracking_number": "请输入运单号",
+        "tracking_url": "https://..."
+      },
+      "validation": {
+        "carrier_required": "请填写承运商",
+        "tracking_required": "请填写运单号"
+      },
+      "submit": "提交发货",
+      "submit_success": "发货请求已提交",
+      "submit_failed": "提交发货失败",
+      "columns": {
+        "status": "状态",
+        "carrier": "承运商",
+        "tracking_number": "运单号",
+        "requested_at": "提交时间"
+      },
+      "row_status": {
+        "requested": "等待平台确认",
+        "fulfilled": "已发货",
+        "failed": "发货失败"
+      }
     },
     "copy_order": "复制订单",
     "trade_status": {

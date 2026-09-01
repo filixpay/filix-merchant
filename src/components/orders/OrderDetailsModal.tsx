@@ -38,6 +38,10 @@ import CoverageAssessmentPanel from "@/components/disputes/CoverageAssessmentPan
 
 import OrderStatusBadge from "./OrderStatusBadge";
 
+import CommerceFulfillmentPanel from "./CommerceFulfillmentPanel";
+
+import { isCommerceOrder } from "./commerce-fulfillment-model";
+
 import styles from "./OrderDetailsModal.module.css";
 
 
@@ -139,6 +143,16 @@ export default function OrderDetailsModal({
         summary: CoverageAssessmentSummaryView | null;
         timeline: readonly CoverageAssessmentLogView[];
     } | null>(null);
+
+    const [activeTab, setActiveTab] = useState("summary");
+
+    const showCommerceFulfillment = isCommerceOrder(order);
+
+    useEffect(() => {
+        if (!isOpen) {
+            setActiveTab("summary");
+        }
+    }, [isOpen]);
 
     const paymentAttemptId = useMemo(
         () => resolvePaymentAttemptId(order, lifecycleTimeline),
@@ -257,7 +271,9 @@ export default function OrderDetailsModal({
 
                     <Tabs
 
-                        defaultActiveKey="summary"
+                        activeKey={activeTab}
+
+                        onChange={setActiveTab}
 
                         items={[
 
@@ -530,6 +546,36 @@ export default function OrderDetailsModal({
                                 ),
 
                             },
+
+                            ...(showCommerceFulfillment
+
+                                ? [
+
+                                      {
+
+                                          key: "fulfillment",
+
+                                          label: t("detail_tabs.fulfillment"),
+
+                                          children: (
+
+                                              <CommerceFulfillmentPanel
+
+                                                  order={order}
+
+                                                  accessToken={accessToken}
+
+                                                  active={activeTab === "fulfillment" && isOpen}
+
+                                              />
+
+                                          ),
+
+                                      },
+
+                                  ]
+
+                                : []),
 
                             {
 

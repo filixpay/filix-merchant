@@ -1,4 +1,5 @@
 import { getActivationStatus, markCelebrationSeen } from "./activation";
+import { fulfillCommerceOrder, getFulfillmentDetail } from "./fulfillment";
 import { listCategories } from "./categories";
 import { listProductTypes } from "./product-types";
 import { uploadCommerceMedia } from "./media";
@@ -26,6 +27,15 @@ export type {
     CommerceActivationPhase,
     CommerceActivationStatus,
 } from "./activation";
+
+export type {
+    CommerceFulfillmentDetailItem,
+    CommerceFulfillmentResponse,
+    CommerceFulfillmentRowStatus,
+    CommerceOrderFulfillmentDetail,
+    CommerceOrderFulfillmentStatus,
+    FulfillCommerceOrderBody,
+} from "./fulfillment";
 
 export {
     canEdit,
@@ -61,5 +71,9 @@ export const commerceApi = {
     activation: {
         getStatus: getActivationStatus,
         markCelebrationSeen,
+    },
+    fulfillment: {
+        getDetail: getFulfillmentDetail,
+        fulfill: fulfillCommerceOrder,
     },
 };

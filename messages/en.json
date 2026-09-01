@@ -1257,8 +1257,54 @@
     },
     "detail_tabs": {
       "summary": "Summary",
+      "fulfillment": "Fulfillment",
       "timeline": "Timeline",
       "risk": "Risk Assessment"
+    },
+    "fulfillment": {
+      "loading": "Loading fulfillment details…",
+      "load_failed": "Failed to load fulfillment details",
+      "retry": "Retry",
+      "not_paid_title": "Fulfillment not available yet",
+      "not_paid_body": "This commerce order must be paid before you can submit shipment details.",
+      "summary_status": "Fulfillment status",
+      "summary": {
+        "unfulfilled": "Unfulfilled",
+        "fulfilled": "Fulfilled"
+      },
+      "in_progress": "A fulfillment request is in progress. Please wait for platform confirmation before submitting again.",
+      "history_title": "Fulfillment history",
+      "history_empty": "No fulfillment records yet",
+      "form_title": "Ship entire order",
+      "form_hint": "This creates a fulfillment in Saleor. HTTP 201 means the request was accepted, not that delivery is complete.",
+      "fields": {
+        "carrier": "Carrier",
+        "tracking_number": "Tracking number",
+        "tracking_url": "Tracking URL (optional)"
+      },
+      "placeholders": {
+        "carrier": "e.g. DHL, FedEx",
+        "tracking_number": "Enter tracking number",
+        "tracking_url": "https://..."
+      },
+      "validation": {
+        "carrier_required": "Carrier is required",
+        "tracking_required": "Tracking number is required"
+      },
+      "submit": "Submit fulfillment",
+      "submit_success": "Fulfillment request submitted",
+      "submit_failed": "Failed to submit fulfillment",
+      "columns": {
+        "status": "Status",
+        "carrier": "Carrier",
+        "tracking_number": "Tracking number",
+        "requested_at": "Submitted at"
+      },
+      "row_status": {
+        "requested": "Awaiting confirmation",
+        "fulfilled": "Fulfilled",
+        "failed": "Failed"
+      }
     },
     "copy_order": "Copy Order",
     "trade_status": {
