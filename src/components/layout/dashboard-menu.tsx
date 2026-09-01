@@ -39,7 +39,6 @@ import {
     AlertTriangle as WarningOutlined,
 } from "lucide-react";
 import type { MerchantDetailView, MoneyAssetCapability, MoneyGate } from "@/lib/api";
-import { shouldShowInNav } from "@/lib/money/capability-presenter";
 import { isTrialMerchant } from "@/lib/merchant/merchant-tier";
 import styles from "./layout.module.css";
 
@@ -179,7 +178,8 @@ export function resolveMenuVisibility(
     }
 
     const showAcquiring = !isPlatformSettlement || isPlatform;
-    const showFunds = isPlatformSettlement;
+    // Direct merchants may also hold funds — never gate the Funds nav on settlement mode.
+    const showFunds = true;
     const isPlatformManaged = isPlatformSettlement && !isPlatform;
     const showCoverageConfig = isDirectSettlement || isPlatform;
     const showCoverageInsurance = isPlatformManaged;
@@ -195,21 +195,19 @@ export function resolveMenuVisibility(
     };
 }
 
-/** Money module visibility from gate + productized matrix — never from settlementMode. */
+/**
+ * Money nav is always shown (DIRECT and PLATFORM).
+ * Gate/capability args are retained for call-site compatibility; they no longer hide nav items.
+ */
 export function resolveMoneyMenuVisibility(
-    gate: MoneyGate | null,
-    capability: MoneyAssetCapability | null,
+    _gate: MoneyGate | null,
+    _capability: MoneyAssetCapability | null,
 ): MoneyMenuVisibility {
-    const showMoney = Boolean(gate?.canView && gate?.moneyEnabled);
-    if (!showMoney) {
-        return { showMoney: false, showMoneyIn: false, showPayouts: false, showTransfers: false };
-    }
-
     return {
         showMoney: true,
-        showMoneyIn: capability ? shouldShowInNav(capability.moneyIn) : false,
-        showPayouts: capability ? shouldShowInNav(capability.payout) : false,
-        showTransfers: capability ? shouldShowInNav(capability.transfer) : false,
+        showMoneyIn: true,
+        showPayouts: true,
+        showTransfers: true,
     };
 }
 

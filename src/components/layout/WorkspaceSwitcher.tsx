@@ -273,15 +273,15 @@ export default function WorkspaceSwitcher({
                   >
                     +
                   </a>
-                </div>
-                <div className={styles.detailBlock}>
-                  <div className={styles.detailBody}>{organization.name}</div>
-                  <CopyableCodeMeta
-                    label={tOrg("org_code")}
-                    value={organizationCodeToString(organization.code)}
-                    copyLabel={t("copy_code")}
-                    copiedLabel={t("copy_success")}
-                  />
+                  <div className={styles.detailBlock}>
+                    <div className={styles.detailBody}>{organization.name}</div>
+                    <CopyableCodeMeta
+                      label={tOrg("org_code")}
+                      value={organizationCodeToString(organization.code)}
+                      copyLabel={t("copy_code")}
+                      copiedLabel={t("copy_success")}
+                    />
+                  </div>
                 </div>
               </>
             ) : null}
