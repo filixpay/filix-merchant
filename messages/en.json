@@ -62,6 +62,7 @@
       "switch_business_account": "Switch business account",
       "switch_organization": "Switch organization",
       "no_business_accounts": "No business accounts in this organization",
+      "loading_business_accounts": "Loading business accounts…",
       "affiliated_organization": "Organization",
       "add_organization": "Add organization",
       "add_business_account": "New business account",

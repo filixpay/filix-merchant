@@ -69,6 +69,8 @@ export type WorkspaceSwitcherProps = {
   organization: OrganizationSummaryView | null;
   organizations?: OrganizationSummaryView[];
   merchants: OrganizationMerchantView[];
+  /** Resolved selection from shell — used for header when list is still loading. */
+  activeMerchant?: OrganizationMerchantView | null;
   selectedMerchantCode: string | null;
   loading?: boolean;
   onSelectMerchant: (merchant: OrganizationMerchantView) => void;
@@ -85,6 +87,7 @@ export default function WorkspaceSwitcher({
   organization,
   organizations = [],
   merchants,
+  activeMerchant = null,
   selectedMerchantCode,
   loading = false,
   onSelectMerchant,
@@ -98,9 +101,15 @@ export default function WorkspaceSwitcher({
   const [isOpen, setIsOpen] = useState(false);
 
   const resolvedCode = selectedMerchantCode ?? getStoredSelectedMerchantCode();
-  const currentMerchant = merchants.find(
-    (merchant) => merchantCodeToString(merchant.merchantCode) === resolvedCode,
-  );
+  const currentMerchant =
+    merchants.find(
+      (merchant) => merchantCodeToString(merchant.merchantCode) === resolvedCode,
+    ) ??
+    (activeMerchant &&
+    resolvedCode &&
+    merchantCodeToString(activeMerchant.merchantCode) === resolvedCode
+      ? activeMerchant
+      : undefined);
 
   const modeLabel = (mode: OrganizationMerchantView["settlementMode"]) =>
     mode === "PLATFORM" ? tBusiness("mode.platform") : tBusiness("mode.direct");
@@ -143,7 +152,11 @@ export default function WorkspaceSwitcher({
     return null;
   }
 
-  const primaryName = currentMerchant?.name || organization?.name || t("workspace");
+  const merchantsLoading = loading && merchants.length === 0;
+
+  const primaryName = currentMerchant?.name
+    || (merchantsLoading ? t("loading_business_accounts") : organization?.name)
+    || t("workspace");
   const secondaryName = currentMerchant
     ? modeLabel(currentMerchant.settlementMode)
     : "";
@@ -181,7 +194,11 @@ export default function WorkspaceSwitcher({
             <div className={styles.sectionHeader}>
               <div className={styles.sectionLabel}>{t("switch_business_account")}</div>
             </div>
-            {merchants.length === 0 ? (
+            {merchantsLoading ? (
+              <div className={styles.listSkeleton}>
+                <Skeleton active paragraph={{ rows: 2 }} title={false} />
+              </div>
+            ) : merchants.length === 0 ? (
               <div className={styles.emptyHint}>{t("no_business_accounts")}</div>
             ) : (
               merchants.map((merchant) => {

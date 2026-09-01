@@ -62,6 +62,7 @@
       "switch_business_account": "切换业务账户",
       "switch_organization": "切换组织",
       "no_business_accounts": "当前组织下暂无业务账户",
+      "loading_business_accounts": "正在加载业务账户…",
       "affiliated_organization": "所属组织",
       "add_organization": "添加组织",
       "add_business_account": "新建业务账户",

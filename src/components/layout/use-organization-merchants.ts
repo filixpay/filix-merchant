@@ -144,7 +144,10 @@ export function useOrganizationMerchants(
 
     return {
         merchants,
-        merchantsLoading: Boolean(organizationCode) && query.isLoading && merchants.length === 0,
+        merchantsLoading:
+            Boolean(organizationCode) &&
+            merchants.length === 0 &&
+            (query.isPending || query.isFetching),
         activeMerchant,
         merchantScopeDenied,
         reloadMerchants,

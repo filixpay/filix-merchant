@@ -229,6 +229,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                             organization={activeOrganization}
                             organizations={organizations}
                             merchants={businessAccounts}
+                            activeMerchant={activeBusinessAccount}
                             selectedMerchantCode={businessAccountCode}
                             loading={organizationsLoading || businessAccountsLoading}
                             onSelectMerchant={handleBusinessAccountSelect}

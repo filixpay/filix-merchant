@@ -269,6 +269,10 @@
     padding: 0.5rem;
 }
 
+.listSkeleton {
+    padding: 0.5rem;
+}
+
 .optionMeta {
     font-size: 0.6875rem;
     color: #94a3b8;
