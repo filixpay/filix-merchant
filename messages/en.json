@@ -1529,9 +1529,40 @@
       "created": "Product created",
       "saved": "Product saved",
       "published": "Product published",
+      "publishing": "Publishing in progress…",
       "unpublished": "Product unpublished",
       "synced": "Sync completed",
       "deleted": "Product deleted"
+    }
+  },
+  "CommerceActivation": {
+    "title": "Start running your store",
+    "subtitle": "A few steps to get your products selling globally",
+    "trust": "As a FilixPay merchant, you can create and publish products in Merchant Center directly — no platform catalog review required.",
+    "steps": {
+      "profile": "Complete store profile",
+      "profile_link": "Update profile (optional)",
+      "publish": "Publish your first product",
+      "orders": "Start receiving orders"
+    },
+    "cta": {
+      "publish_first": "Publish first product",
+      "continue_publish": "Continue publishing",
+      "syncing": "Syncing to storefront…",
+      "retry_publish": "Retry publish"
+    },
+    "timeout": {
+      "message": "Your product is still being processed. Refresh later to check the result.",
+      "refresh": "Refresh status"
+    },
+    "failed": {
+      "fallback": "Publish did not complete. Please retry."
+    },
+    "celebration": {
+      "title": "Product published",
+      "visibility": "After publishing, the product enters storefront display processing and becomes visible to shoppers once sync completes.",
+      "view_storefront": "View on storefront",
+      "continue_publish": "Continue publishing"
     }
   },
   "Disputes": {

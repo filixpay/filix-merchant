@@ -298,9 +298,40 @@
       "created": "商品已创建",
       "saved": "商品已保存",
       "published": "商品已发布",
+      "publishing": "发布处理中…",
       "unpublished": "商品已下架",
       "synced": "同步完成",
       "deleted": "商品已删除"
+    }
+  },
+  "CommerceActivation": {
+    "title": "开始经营您的店铺",
+    "subtitle": "只需几步，让您的商品开始在全球市场销售",
+    "trust": "成为 FilixPay 商户后，即可直接在商户中心创建并发布商品，无需等待平台审核。",
+    "steps": {
+      "profile": "完善店铺信息",
+      "profile_link": "去完善（可跳过）",
+      "publish": "发布第一个商品",
+      "orders": "开始接收订单"
+    },
+    "cta": {
+      "publish_first": "发布第一个商品",
+      "continue_publish": "继续发布商品",
+      "syncing": "正在同步到商城…",
+      "retry_publish": "重试发布"
+    },
+    "timeout": {
+      "message": "商品仍在处理中，请稍后刷新查看结果。",
+      "refresh": "刷新状态"
+    },
+    "failed": {
+      "fallback": "发布未完成，请重试"
+    },
+    "celebration": {
+      "title": "商品已发布",
+      "visibility": "发布后，商品将进入商城展示流程，并在同步完成后向消费者展示。",
+      "view_storefront": "查看商城商品",
+      "continue_publish": "继续发布商品"
     }
   },
   "CoverageInsurance": {

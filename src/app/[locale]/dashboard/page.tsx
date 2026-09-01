@@ -16,6 +16,7 @@ import {
 } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
 import ActionCenterWidget from "@/components/notifications/ActionCenterWidget";
+import CommerceActivationHost from "@/components/commerce/activation/CommerceActivationHost";
 import { normalizePagedResponse } from "@/lib/dashboard/normalize-paged-response";
 import { isTrialMerchant } from "@/lib/merchant/merchant-tier";
 import { presentDashboardAvailableFunds } from "@/lib/money/dashboard-available-funds";
@@ -199,6 +200,8 @@ export default function DashboardOverviewPage() {
                             style={{ marginBottom: 16 }}
                         />
                     ) : null}
+
+                    <CommerceActivationHost />
 
                     <Row gutter={[16, 16]} className={styles.kpiRow}>
                         <Col xs={24} md={12} xl={6}>
