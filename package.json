@@ -11,7 +11,7 @@
     "lint:auth": "eslint src/lib/auth.ts src/lib/api.ts src/lib/api/core.ts src/middleware.ts src/components/layout/DashboardLayout.tsx",
     "lint:api": "eslint src/lib/api",
     "lint:marketing": "eslint \"src/app/[locale]/(marketing)\"",
-    "lint:dashboard": "eslint src/lib/dashboard src/components/layout/dashboard-content-mode.ts src/components/layout/dashboard-menu.tsx src/components/layout/dashboard-menu.test.ts src/components/layout/keycloak-logout.ts src/components/layout/use-merchant-capabilities.ts",
+    "lint:dashboard": "eslint src/lib/dashboard src/components/layout/dashboard-content-mode.ts src/components/layout/dashboard-menu.tsx src/components/layout/keycloak-logout.ts src/components/layout/use-merchant-capabilities.ts",
     "lint:components": "eslint src/components",
     "lint:report": "node scripts/lint-report.mjs",
     "test": "vitest run",
