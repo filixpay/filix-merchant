@@ -4719,1153 +4719,1153 @@
   },
   "Pages": {
     "products": {
-      "title": "Products",
-      "subtitle": "Comprehensive payment solutions for every business scenario",
-      "hero_title": "One Platform, Infinite Payment Possibilities",
-      "hero_desc": "From fiat to crypto, from domestic to cross-border, FilixPay provides a unified payment infrastructure that scales with your business."
+      "title": "プロダクト",
+      "subtitle": "あらゆるビジネスシナリオに対応する包括的な決済ソリューション",
+      "hero_title": "ひとつのプラットフォーム、無限の決済可能性",
+      "hero_desc": "法定通貨から暗号資産まで、国内決済から越境決済まで。FilixPayはビジネスの成長に合わせて拡張できる、統合決済インフラを提供します。"
     },
     "payment_platform": {
-      "badge": "CORE PRODUCT",
-      "hero_title": "Enterprise Payment Infrastructure Platform",
-      "hero_desc": "Build, manage and scale payment operations with unified APIs, transaction management and settlement infrastructure.",
-      "hero_desc_extra": "FilixPay enables global businesses to connect payments, manage transactions, settlements and merchant operations through one platform.",
-      "features_title": "Core Capabilities",
+      "badge": "コアプロダクト",
+      "hero_title": "エンタープライズ決済インフラプラットフォーム",
+      "hero_desc": "統一API、取引管理、精算インフラで決済業務を構築・運用・拡張できます。",
+      "hero_desc_extra": "FilixPayは、グローバル企業がひとつのプラットフォームで決済接続、取引管理、精算、マーチャント運用を実現できるよう支援します。",
+      "features_title": "コア機能",
       "features": {
         "connectivity": {
           "icon": "API",
-          "title": "Payment Connectivity",
-          "desc": "Connect global payment channels through unified APIs—Stripe, wallets, bank transfers, and digital assets from one integration layer.",
-          "detail_desc": "Reduce integration overhead with a single orchestration layer for checkout, hosted payment pages, and server-side API flows.",
+          "title": "決済接続",
+          "desc": "統一APIを通じてグローバルな決済チャネルを接続。Stripe、ウォレット、銀行振込、デジタル資産をひとつの連携レイヤーから利用できます。",
+          "detail_desc": "チェックアウト、ホスト型決済ページ、サーバーサイドAPIフローを単一のオーケストレーション層でまとめ、連携コストを削減します。",
           "points": {
-            "0": "Unified OpenAPI for order creation, refunds, and status queries",
-            "1": "Multi-channel routing across domestic and cross-border payment methods",
-            "2": "Optional digital asset payment support without changing core order flows"
+            "0": "注文作成・返金・ステータス照会のための統一OpenAPI",
+            "1": "国内・越境の決済手段を横断するマルチチャネルルーティング",
+            "2": "コアの注文フローを変えずに、任意でデジタル資産決済を追加可能"
           }
         },
         "transactions": {
           "icon": "TX",
-          "title": "Transaction Management",
-          "desc": "Manage orders, refunds, payment status, and audit trails with full lifecycle visibility across channels.",
-          "detail_desc": "Operations teams and developers share one source of truth from authorization through settlement-ready states.",
+          "title": "取引管理",
+          "desc": "注文、返金、決済ステータス、監査証跡をチャネル横断でライフサイクル全体を可視化しながら管理します。",
+          "detail_desc": "オペレーションと開発チームが、承認から精算準備完了まで単一の正本を共有できます。",
           "points": {
-            "0": "Order, refund, and dispute records linked to payment attempts",
-            "1": "Real-time status tracking with webhook-driven merchant notifications",
-            "2": "Audit-ready transaction history for finance and compliance review"
+            "0": "決済試行に紐づく注文・返金・紛争レコード",
+            "1": "Webhookによるマーチャント通知を含むリアルタイムステータス追跡",
+            "2": "財務・コンプライアンスレビュー向けの監査可能な取引履歴"
           }
         },
         "settlement": {
           "icon": "ST",
-          "title": "Settlement & Funds",
-          "desc": "Balance tracking, settlement bills, split payments, withdrawals, and fund flow reconciliation for finance teams.",
-          "detail_desc": "Support Platform settlement and Direct settlement models with automated billing and traceable fund movement.",
+          "title": "精算と資金",
+          "desc": "残高追跡、精算明細、分割決済、出金、資金フロー照合を財務チーム向けに提供します。",
+          "detail_desc": "プラットフォーム精算とダイレクト精算モデルに対応し、自動請求と追跡可能な資金移動をサポートします。",
           "points": {
-            "0": "Settlement bills and balance views for merchant finance teams",
-            "1": "Split payment allocation for platforms and multi-merchant businesses",
-            "2": "Withdrawal, deposit, and transfer records connected to settlement outcomes"
+            "0": "マーチャント財務チーム向けの精算明細と残高ビュー",
+            "1": "プラットフォーム・マルチマーチャント向けの分割配分",
+            "2": "精算結果に連動する出金・入金・振替レコード"
           }
         },
         "merchant_ops": {
           "icon": "MC",
-          "title": "Merchant Operations",
-          "desc": "Account management, permissions, API credentials, webhooks, and transaction monitoring in one operations platform.",
-          "detail_desc": "Give merchant administrators the controls they need without exposing organization-level enterprise governance.",
+          "title": "マーチャント運用",
+          "desc": "アカウント管理、権限、API資格情報、Webhook、取引モニタリングをひとつの運用プラットフォームに集約します。",
+          "detail_desc": "組織レベルのエンタープライズガバナンスを露出させずに、マーチャント管理者に必要な制御を提供します。",
           "points": {
-            "0": "Merchant profiles, credentials, and payment configuration in one console",
-            "1": "Role-based access for finance, operations, and developer teams",
-            "2": "Webhook endpoints and API keys managed with audit visibility"
+            "0": "マーチャントプロファイル、資格情報、決済設定をひとつのコンソールで管理",
+            "1": "財務・運用・開発チーム向けのロールベースアクセス",
+            "2": "監査可視性を備えたWebhookエンドポイントとAPIキー管理"
           }
         }
       },
       "business_models": {
-        "title": "Business Model Overview",
-        "desc": "FilixPay supports independent merchants, platform operators, and enterprise groups with flexible settlement modes.",
+        "title": "ビジネスモデル概要",
+        "desc": "FilixPayは独立マーチャント、プラットフォーム事業者、企業グループに柔軟な精算モードを提供します。",
         "items": {
           "direct": {
-            "title": "Direct settlement",
-            "desc": "Independent merchants connect channels directly with transparent clearing and settlement."
+            "title": "ダイレクト精算",
+            "desc": "独立マーチャントがチャネルに直接接続し、透明なクリアリングと精算を行います。"
           },
           "platform": {
-            "title": "Platform settlement Platform Model",
-            "desc": "Platforms collect on behalf of sub-merchants with configurable split and settlement rules."
+            "title": "プラットフォーム精算（プラットフォームモデル）",
+            "desc": "プラットフォームがサブマーチャントに代わって集金し、設定可能な分割・精算ルールで運用します。"
           },
           "enterprise": {
-            "title": "Enterprise & Group Operations",
-            "desc": "Organizations with multiple business units coordinate payment operations under governance policies."
+            "title": "エンタープライズ＆グループ運用",
+            "desc": "複数事業単位を持つ組織が、ガバナンスポリシーのもとで決済運用を調整します。"
           }
         }
       },
       "links": {
-        "title": "Explore the FilixPay Platform",
-        "desc": "Continue to related product surfaces across merchant operations, developers, settlement, and enterprise governance.",
+        "title": "FilixPayプラットフォームを探る",
+        "desc": "マーチャント運用、開発者、精算、エンタープライズガバナンスなど関連プロダクトへ進みます。",
         "merchant_center": {
-          "title": "Merchant Center",
-          "desc": "Payment operations platform for accounts, permissions, credentials, and transaction monitoring."
+          "title": "マーチャントセンター",
+          "desc": "アカウント、権限、資格情報、取引モニタリング向けの決済運用プラットフォーム。"
         },
         "developers": {
-          "title": "Developer Platform",
-          "desc": "Payment APIs, SDKs, webhooks, sandbox, and integration documentation."
+          "title": "開発者プラットフォーム",
+          "desc": "決済API、SDK、Webhook、サンドボックス、連携ドキュメント。"
         },
         "payment_splitting": {
-          "title": "Payment Splitting",
-          "desc": "Automated split payment and settlement for marketplaces and multi-merchant platforms."
+          "title": "決済分割",
+          "desc": "マーケットプレイスやマルチマーチャント向けの自動分割決済と精算。"
         },
         "for_enterprise": {
-          "title": "For Enterprise",
-          "desc": "Multi-merchant governance, RBAC, organization isolation, and deployment options."
+          "title": "エンタープライズ向け",
+          "desc": "マルチマーチャントガバナンス、RBAC、組織分離、デプロイオプション。"
         }
       },
       "cta": {
-        "title": "Start with FilixPay payment infrastructure",
-        "desc": "Explore merchant operations capabilities or sign in to your merchant portal to configure payment channels.",
-        "primary": "Explore Merchant Center",
-        "secondary": "Sign in to Merchant Portal"
+        "title": "FilixPay決済インフラから始める",
+        "desc": "マーチャント運用機能を確認するか、マーチャントポータルにサインインして決済チャネルを設定します。",
+        "primary": "マーチャントセンターを見る",
+        "secondary": "マーチャントポータルにサインイン"
       }
     },
     "merchant_center": {
-      "badge": "MERCHANT OPERATIONS",
-      "hero_title": "FilixPay Merchant Center",
-      "hero_desc": "Manage payment operations from one console—transactions, settlement, reporting, credentials, webhooks, and team access.",
-      "hero_desc_extra": "FilixPay Merchant Center is the operations platform for merchants, platforms, and enterprise business units to run day-to-day payment workflows.",
-      "features_title": "Platform Capabilities",
+      "badge": "マーチャント運用",
+      "hero_title": "FilixPayマーチャントセンター",
+      "hero_desc": "取引、精算、レポート、資格情報、Webhook、チームアクセスをひとつのコンソールで管理します。",
+      "hero_desc_extra": "FilixPayマーチャントセンターは、マーチャント、プラットフォーム、エンタープライズ事業単位が日々の決済ワークフローを運用するためのプラットフォームです。",
+      "features_title": "プラットフォーム機能",
       "features": {
         "transactions": {
           "icon": "TX",
-          "title": "Transaction Management",
-          "desc": "Search, filter, and monitor orders, refunds, and payment status across channels from a unified operations view.",
-          "detail_desc": "Operations teams get full lifecycle visibility from authorization through settlement-ready states without switching tools.",
+          "title": "取引管理",
+          "desc": "統合された運用ビューから、チャネル横断で注文・返金・決済ステータスを検索・フィルタ・監視します。",
+          "detail_desc": "オペレーションチームはツールを切り替えずに、承認から精算準備完了までライフサイクル全体を把握できます。",
           "points": {
-            "0": "Order and refund records linked to payment attempts and channel responses",
-            "1": "Real-time status tracking with export-ready transaction history",
-            "2": "Audit-friendly views for finance and support teams"
+            "0": "決済試行とチャネル応答に紐づく注文・返金レコード",
+            "1": "エクスポート可能な取引履歴を含むリアルタイムステータス追跡",
+            "2": "財務・サポートチーム向けの監査しやすいビュー"
           }
         },
         "settlement": {
           "icon": "ST",
-          "title": "Settlement & Funds",
-          "desc": "Track balances, settlement bills, withdrawals, and fund movements connected to your payment activity.",
-          "detail_desc": "Finance teams reconcile settlement outcomes with the same platform used for daily transaction monitoring.",
+          "title": "精算と資金",
+          "desc": "決済活動に連動する残高、精算明細、出金、資金移動を追跡します。",
+          "detail_desc": "財務チームは、日次の取引モニタリングと同じプラットフォームで精算結果を照合できます。",
           "points": {
-            "0": "Balance and settlement bill views for merchant finance workflows",
-            "1": "Withdrawal, deposit, and transfer records tied to settlement states",
-            "2": "Support for Platform settlement and Direct settlement models"
+            "0": "マーチャント財務ワークフロー向けの残高・精算明細ビュー",
+            "1": "精算ステータスに紐づく出金・入金・振替レコード",
+            "2": "プラットフォーム精算とダイレクト精算モデルに対応"
           }
         },
         "reporting": {
           "icon": "RP",
-          "title": "Reporting & Analytics",
-          "desc": "Operational and financial reporting to understand payment volume, success rates, and settlement trends.",
-          "detail_desc": "Turn transaction and settlement data into actionable reports for operations and finance stakeholders.",
+          "title": "レポートと分析",
+          "desc": "決済ボリューム、成功率、精算トレンドを把握するための運用・財務レポート。",
+          "detail_desc": "取引・精算データを、オペレーションと財務の意思決定につながるレポートに変換します。",
           "points": {
-            "0": "Payment volume and success rate summaries by channel and period",
-            "1": "Settlement and fund flow reports for reconciliation workflows",
-            "2": "Export-ready data views for finance and business review"
+            "0": "チャネル・期間別の決済ボリュームと成功率サマリー",
+            "1": "照合ワークフロー向けの精算・資金フローレポート",
+            "2": "財務・事業レビュー向けのエクスポート可能なデータビュー"
           }
         },
         "api_credentials": {
           "icon": "KEY",
-          "title": "API Credentials",
-          "desc": "Create and rotate API keys, manage sandbox and production credentials, and control developer access.",
-          "detail_desc": "Developers and administrators manage integration credentials with visibility into active keys and environments.",
+          "title": "API資格情報",
+          "desc": "APIキーの作成・ローテーション、サンドボックス／本番資格情報の管理、開発者アクセスの制御。",
+          "detail_desc": "開発者と管理者が、有効なキーと環境の可視性を保ちながら連携資格情報を管理します。",
           "points": {
-            "0": "Separate sandbox and production API key management",
-            "1": "Credential rotation without disrupting active integrations",
-            "2": "Access controls aligned with merchant team roles"
+            "0": "サンドボックスと本番のAPIキーを分離して管理",
+            "1": "稼働中の連携を止めずに資格情報をローテーション",
+            "2": "マーチャントチームの役割に合わせたアクセス制御"
           }
         },
         "webhooks": {
           "icon": "WH",
-          "title": "Webhooks",
-          "desc": "Configure webhook endpoints for payment events, delivery retries, and integration-driven automation.",
-          "detail_desc": "Keep downstream systems synchronized with payment lifecycle events through reliable webhook delivery.",
+          "title": "Webhook",
+          "desc": "決済イベント、配信リトライ、連携自動化のためのWebhookエンドポイントを設定します。",
+          "detail_desc": "信頼性の高いWebhook配信で、下流システムを決済ライフサイクルイベントと同期します。",
           "points": {
-            "0": "Endpoint configuration for order, payment, and refund notifications",
-            "1": "Delivery visibility for integration troubleshooting",
-            "2": "Event-driven workflows for order and fulfillment systems"
+            "0": "注文・決済・返金通知向けのエンドポイント設定",
+            "1": "連携トラブルシューティングのための配信可視性",
+            "2": "注文・フルフィルメントシステム向けのイベント駆動ワークフロー"
           }
         },
         "team_permissions": {
           "icon": "TM",
-          "title": "Team Permissions",
-          "desc": "Role-based access for finance, operations, and developer teams within a merchant account.",
-          "detail_desc": "Delegate day-to-day payment operations to the right people without sharing full account access.",
+          "title": "チーム権限",
+          "desc": "マーチャントアカウント内で財務・運用・開発チーム向けのロールベースアクセスを提供します。",
+          "detail_desc": "アカウント全体へのアクセスを共有せずに、適切な担当者へ日々の決済運用を委任できます。",
           "points": {
-            "0": "Role-based permissions for finance, operations, and developer roles",
-            "1": "Controlled access to credentials, transactions, and configuration",
-            "2": "Team workflows scoped to a single merchant account"
+            "0": "財務・運用・開発ロール向けのロールベース権限",
+            "1": "資格情報・取引・設定への制御されたアクセス",
+            "2": "単一マーチャントアカウントにスコープされたチームワークフロー"
           }
         },
         "self_hosted_checkout": {
           "icon": "CK",
-          "title": "Self-Hosted Checkout",
-          "desc": "Deploy the open-source checkout frontend on your own domain with Docker—no code changes required.",
-          "detail_desc": "Run the payment page at checkout.yourdomain.com instead of a third-party URL. FilixPay handles payment logic; you control branding, hosting, and access logs.",
+          "title": "セルフホスト型チェックアウト",
+          "desc": "オープンソースのチェックアウトフロントエンドをDockerで自社ドメインにデプロイ。コード変更は不要です。",
+          "detail_desc": "第三者URLではなく checkout.yourdomain.com で決済ページを提供。FilixPayが決済ロジックを担い、ブランディング・ホスティング・アクセスログはあなたが管理します。",
           "points": {
-            "0": "Pull the official GHCR image and configure via environment variables only",
-            "1": "Use Developer Center credentials (Client ID / Secret) to connect to FilixPay APIs",
-            "2": "Apache-2.0 open source—audit the frontend; core risk and channel logic stays on FilixPay"
+            "0": "公式GHCRイメージを取得し、環境変数のみで設定",
+            "1": "開発者センターの資格情報（Client ID / Secret）でFilixPay APIに接続",
+            "2": "Apache-2.0オープンソース—フロントエンドを監査可能。コアのリスク・チャネルロジックはFilixPay側"
           }
         }
       },
       "checkout_deployment": {
-        "title": "Self-Hosted Checkout Deployment",
-        "desc": "For merchants who want the payment page on their own domain and infrastructure—not FilixPay's hosted checkout. Deploy the open-source filix-checkout frontend with Docker; no frontend code changes needed.",
+        "title": "セルフホスト型チェックアウトのデプロイ",
+        "desc": "FilixPayのホスト型チェックアウトではなく、自社ドメインとインフラで決済ページを運用したいマーチャント向け。オープンソースのfilix-checkoutフロントエンドをDockerでデプロイ。フロントエンドのコード変更は不要です。",
         "benefits": {
           "brand": {
-            "title": "Your Domain, Your Brand",
-            "desc": "Serve checkout at checkout.yourdomain.com so customers see your brand in the address bar—helping reduce drop-off and build trust."
+            "title": "自社ドメイン、自社ブランド",
+            "desc": "checkout.yourdomain.com でチェックアウトを提供し、アドレスバーにブランドを表示。離脱低減と信頼構築に貢献します。"
           },
           "compliance": {
-            "title": "Clear Data Boundaries",
-            "desc": "Checkout frontend code, access logs, and deployment environment stay on your servers—easier for internal compliance and audit requirements."
+            "title": "明確なデータ境界",
+            "desc": "チェックアウトフロントエンドのコード、アクセスログ、デプロイ環境は自社サーバー上に留まり、内部コンプライアンスと監査要件に対応しやすくなります。"
           },
           "open_source": {
-            "title": "Open Source & Auditable",
-            "desc": "Apache-2.0 licensed Next.js checkout. Review the code yourself; payment core logic remains on FilixPay backend with the same security boundary."
+            "title": "オープンソースで監査可能",
+            "desc": "Apache-2.0ライセンスのNext.jsチェックアウト。コードを自ら確認でき、決済コアロジックは同じセキュリティ境界のFilixPayバックエンドに残ります。"
           },
           "low_cost": {
-            "title": "Low Integration Overhead",
-            "desc": "No business logic changes—configure API credentials and URLs via environment file, pull the Docker image, and go live."
+            "title": "低い連携オーバーヘッド",
+            "desc": "ビジネスロジックの変更は不要。環境ファイルでAPI資格情報とURLを設定し、Dockerイメージを取得して公開できます。"
           }
         },
         "steps": {
           "credentials": {
-            "title": "1. Get API Credentials",
-            "desc": "Create FILIXPAY_BACKEND_CLIENT_ID and FILIXPAY_BACKEND_CLIENT_SECRET in FilixPay Developer Center."
+            "title": "1. API資格情報を取得",
+            "desc": "FilixPay開発者センターで FILIXPAY_BACKEND_CLIENT_ID と FILIXPAY_BACKEND_CLIENT_SECRET を作成します。"
           },
           "docker": {
-            "title": "2. Deploy with Docker",
-            "desc": "Pull ghcr.io/filixpay/filix-checkout, mount your env file, and run on port 3001. Pin a version tag for production."
+            "title": "2. Dockerでデプロイ",
+            "desc": "ghcr.io/filixpay/filix-checkout を取得し、環境ファイルをマウントしてポート3001で実行。本番ではバージョンタグを固定してください。"
           },
           "domain": {
-            "title": "3. Bind Your Domain",
-            "desc": "Expose checkout.example.com via Nginx or Caddy with HTTPS. Set NEXTAUTH_URL to match the public URL."
+            "title": "3. ドメインをバインド",
+            "desc": "NginxまたはCaddyでHTTPS付きの checkout.example.com を公開。NEXTAUTH_URL を公開URLに合わせて設定します。"
           }
         },
-        "note": "This is a lightweight self-hosted checkout frontend—not the full FilixPay private deployment (PostgreSQL, Redis, Keycloak stack). See the comparison on the Private Deployment page.",
-        "cta_docs": "View Deployment Guide",
-        "cta_developers": "Go to Developer Center",
-        "cta_compare": "Compare with Private Deployment"
+        "note": "これは軽量なセルフホスト型チェックアウトフロントエンドであり、フルスタックのFilixPayプライベートデプロイ（PostgreSQL、Redis、Keycloak）ではありません。比較はプライベートデプロイページをご覧ください。",
+        "cta_docs": "デプロイガイドを見る",
+        "cta_developers": "開発者センターへ",
+        "cta_compare": "プライベートデプロイと比較"
       },
       "audience": {
-        "title": "Who Uses Merchant Center",
-        "desc": "FilixPay Merchant Center serves businesses that need a dedicated operations console for payment workflows—not organization-level enterprise governance.",
+        "title": "マーチャントセンターの利用者",
+        "desc": "FilixPayマーチャントセンターは、組織レベルのエンタープライズガバナンスではなく、決済ワークフロー専用の運用コンソールを必要とするビジネス向けです。",
         "items": {
           "merchants": {
-            "title": "Independent Merchants",
-            "desc": "Run payment operations, monitor transactions, and manage credentials for a single business account."
+            "title": "独立マーチャント",
+            "desc": "単一ビジネスアカウントの決済運用、取引監視、資格情報管理を行います。"
           },
           "platforms": {
-            "title": "Platforms & Marketplaces",
-            "desc": "Operate sub-merchant payment workflows, split settlements, and platform-level reporting from one console."
+            "title": "プラットフォーム＆マーケットプレイス",
+            "desc": "サブマーチャントの決済ワークフロー、分割精算、プラットフォームレベルのレポートをひとつのコンソールで運用します。"
           },
           "enterprises": {
-            "title": "Enterprise Business Units",
-            "desc": "Give business units a merchant operations workspace for transactions, settlement, and team access."
+            "title": "エンタープライズ事業単位",
+            "desc": "事業単位に、取引・精算・チームアクセス向けのマーチャント運用ワークスペースを提供します。"
           }
         }
       },
       "links": {
-        "title": "Explore Related Products",
-        "desc": "Merchant Center connects to the broader FilixPay payment infrastructure, developer platform, and settlement capabilities.",
+        "title": "関連プロダクトを探る",
+        "desc": "マーチャントセンターは、FilixPayの決済インフラ、開発者プラットフォーム、精算機能とつながります。",
         "payment_platform": {
-          "title": "Payment Platform",
-          "desc": "Enterprise payment infrastructure for APIs, transaction management, and settlement."
+          "title": "決済プラットフォーム",
+          "desc": "API、取引管理、精算向けのエンタープライズ決済インフラ。"
         },
         "developers": {
-          "title": "Developer Platform",
-          "desc": "Payment APIs, SDKs, webhooks, sandbox, and integration documentation."
+          "title": "開発者プラットフォーム",
+          "desc": "決済API、SDK、Webhook、サンドボックス、連携ドキュメント。"
         },
         "payment_splitting": {
-          "title": "Payment Splitting",
-          "desc": "Automated split payment and settlement for marketplaces and multi-merchant platforms."
+          "title": "決済分割",
+          "desc": "マーケットプレイスやマルチマーチャント向けの自動分割決済と精算。"
         }
       },
       "cta": {
-        "title": "Sign in to Merchant Center",
-        "desc": "Access your merchant portal to configure payment channels, manage transactions, and run day-to-day payment operations.",
-        "primary": "Sign in to Merchant Portal",
-        "secondary": "View Developer Docs"
+        "title": "マーチャントセンターにサインイン",
+        "desc": "マーチャントポータルにアクセスして決済チャネルを設定し、取引を管理し、日々の決済運用を実行します。",
+        "primary": "マーチャントポータルにサインイン",
+        "secondary": "開発者ドキュメントを見る"
       }
     },
     "developers": {
-      "badge": "DEVELOPER PLATFORM",
-      "hero_title": "Build payments with APIs",
-      "hero_desc": "Integrate FilixPay with REST APIs, SDKs, sandbox environments, and webhooks to connect checkout, orders, and settlement flows.",
-      "hero_desc_extra": "FilixPay Developer Platform gives engineering teams the tools to build, test, and operate enterprise payment integrations.",
-      "features_title": "Developer Capabilities",
+      "badge": "開発者プラットフォーム",
+      "hero_title": "APIで決済を構築する",
+      "hero_desc": "REST API、SDK、サンドボックス、WebhookでFilixPayを連携し、チェックアウト、注文、精算フローをつなぎます。",
+      "hero_desc_extra": "FilixPay開発者プラットフォームは、エンジニアリングチームがエンタープライズ決済連携を構築・テスト・運用するためのツールを提供します。",
+      "features_title": "開発者向け機能",
       "features": {
         "api": {
           "icon": "API",
-          "title": "Payment APIs",
-          "desc": "OpenAPI-first REST endpoints for order creation, refunds, payment status, and settlement queries.",
-          "detail_desc": "Integrate server-side payment flows with consistent request models across channels and environments.",
+          "title": "決済API",
+          "desc": "注文作成、返金、決済ステータス、精算照会向けのOpenAPIファーストなRESTエンドポイント。",
+          "detail_desc": "チャネルと環境を横断して一貫したリクエストモデルで、サーバーサイド決済フローを連携します。",
           "points": {
-            "0": "Create orders, capture payments, and issue refunds through unified endpoints",
-            "1": "Query transaction status and settlement outcomes programmatically",
-            "2": "Sandbox and production environments with separate credentials"
+            "0": "統一エンドポイントで注文作成、決済キャプチャ、返金を実行",
+            "1": "取引ステータスと精算結果をプログラムから照会",
+            "2": "資格情報を分離したサンドボックスと本番環境"
           }
         },
         "sdk": {
           "icon": "SDK",
-          "title": "SDKs & Client Libraries",
-          "desc": "Language-specific helpers to accelerate integration with typed request builders and error handling.",
-          "detail_desc": "Reduce boilerplate with SDK patterns aligned to FilixPay OpenAPI specifications.",
+          "title": "SDKとクライアントライブラリ",
+          "desc": "型付きリクエストビルダーとエラーハンドリングで連携を加速する言語別ヘルパー。",
+          "detail_desc": "FilixPay OpenAPI仕様に沿ったSDKパターンでボイラープレートを削減します。",
           "points": {
-            "0": "Client libraries for common server-side integration patterns",
-            "1": "Signature and authentication helpers for secure API calls",
-            "2": "Examples aligned with checkout and webhook workflows"
+            "0": "一般的なサーバーサイド連携パターン向けクライアントライブラリ",
+            "1": "安全なAPI呼び出しのための署名・認証ヘルパー",
+            "2": "チェックアウトとWebhookワークフローに沿ったサンプル"
           }
         },
         "sandbox": {
           "icon": "SB",
-          "title": "Sandbox",
-          "desc": "Test payment flows end-to-end with sandbox credentials before going live in production.",
-          "detail_desc": "Developers validate integrations in an isolated environment with the same API surface as production.",
+          "title": "サンドボックス",
+          "desc": "本番公開前に、サンドボックス資格情報で決済フローをエンドツーエンドでテストします。",
+          "detail_desc": "開発者は本番と同じAPIサーフェスを持つ分離環境で連携を検証できます。",
           "points": {
-            "0": "Sandbox API keys separate from production credentials",
-            "1": "Simulate order and payment lifecycle events for integration testing",
-            "2": "Integration sandbox tools in the developer console"
+            "0": "本番資格情報と分離されたサンドボックスAPIキー",
+            "1": "連携テスト向けに注文・決済ライフサイクルイベントをシミュレート",
+            "2": "開発者コンソール内の連携サンドボックスツール"
           }
         },
         "webhooks": {
           "icon": "WH",
-          "title": "Webhooks",
-          "desc": "Receive real-time payment event notifications for orders, payments, refunds, and settlement updates.",
-          "detail_desc": "Keep downstream systems synchronized with payment lifecycle events through reliable webhook delivery.",
+          "title": "Webhook",
+          "desc": "注文、決済、返金、精算更新のリアルタイム決済イベント通知を受信します。",
+          "detail_desc": "信頼性の高いWebhook配信で、下流システムを決済ライフサイクルイベントと同期します。",
           "points": {
-            "0": "Configure endpoints for order, payment, and refund notifications",
-            "1": "Delivery logs and retry visibility for integration troubleshooting",
-            "2": "Event-driven workflows for order fulfillment and reconciliation"
+            "0": "注文・決済・返金通知向けエンドポイントを設定",
+            "1": "連携トラブルシューティングのための配信ログとリトライ可視性",
+            "2": "注文フルフィルメントと照合向けのイベント駆動ワークフロー"
           }
         }
       },
       "quick_start": {
-        "title": "Quick Start",
-        "desc": "Get from credentials to your first sandbox payment in three steps.",
+        "title": "クイックスタート",
+        "desc": "資格情報の取得から最初のサンドボックス決済まで、3ステップで完了します。",
         "steps": {
-          "0": "Sign in to the merchant portal and open the developer console to create sandbox API credentials.",
-          "1": "Create a test order via the Payment API or SDK using your sandbox key.",
-          "2": "Configure a webhook endpoint and verify event delivery in the developer console."
+          "0": "マーチャントポータルにサインインし、開発者コンソールでサンドボックスAPI資格情報を作成します。",
+          "1": "サンドボックスキーを使い、決済APIまたはSDKでテスト注文を作成します。",
+          "2": "Webhookエンドポイントを設定し、開発者コンソールでイベント配信を確認します。"
         }
       },
       "checkout_deployment": {
-        "title": "Self-Hosted Checkout Deployment",
-        "desc": "Deploy the open-source filix-checkout frontend on your own domain with Docker. Use Developer Center credentials to connect—no frontend code changes required.",
+        "title": "セルフホスト型チェックアウトのデプロイ",
+        "desc": "オープンソースのfilix-checkoutフロントエンドをDockerで自社ドメインにデプロイ。開発者センターの資格情報で接続—フロントエンドのコード変更は不要です。",
         "points": {
-          "0": "Create FILIXPAY_BACKEND_CLIENT_ID / CLIENT_SECRET in the developer console before deployment.",
-          "1": "Pull ghcr.io/filixpay/filix-checkout and configure via environment file—pin a version tag in production.",
-          "2": "Payment core logic stays on FilixPay; you host the checkout UI and BFF proxy on your infrastructure."
+          "0": "デプロイ前に開発者コンソールで FILIXPAY_BACKEND_CLIENT_ID / CLIENT_SECRET を作成します。",
+          "1": "ghcr.io/filixpay/filix-checkout を取得し、環境ファイルで設定—本番ではバージョンタグを固定します。",
+          "2": "決済コアロジックはFilixPay側。チェックアウトUIとBFFプロキシは自社インフラでホストします。"
         },
-        "cta_docs": "View Deployment Guide",
-        "cta_merchant_center": "Overview on Merchant Center"
+        "cta_docs": "デプロイガイドを見る",
+        "cta_merchant_center": "マーチャントセンターの概要"
       },
       "links": {
-        "title": "Explore Related Products",
-        "desc": "Developer integrations connect to FilixPay payment infrastructure and merchant operations.",
+        "title": "関連プロダクトを探る",
+        "desc": "開発者連携はFilixPayの決済インフラとマーチャント運用につながります。",
         "payment_platform": {
-          "title": "Payment Platform",
-          "desc": "Enterprise payment infrastructure for APIs, transaction management, and settlement."
+          "title": "決済プラットフォーム",
+          "desc": "API、取引管理、精算向けのエンタープライズ決済インフラ。"
         },
         "merchant_center": {
-          "title": "Merchant Center",
-          "desc": "Payment operations platform for accounts, permissions, credentials, and transaction monitoring."
+          "title": "マーチャントセンター",
+          "desc": "アカウント、権限、資格情報、取引モニタリング向けの決済運用プラットフォーム。"
         }
       },
       "cta": {
-        "title": "Start integrating with FilixPay",
-        "desc": "Follow the quick start guide or open the developer console to manage credentials, sandbox, and webhooks.",
-        "primary": "View Quick Start",
-        "secondary": "Open Developer Console"
+        "title": "FilixPayとの連携を始める",
+        "desc": "クイックスタートガイドに従うか、開発者コンソールを開いて資格情報、サンドボックス、Webhookを管理します。",
+        "primary": "クイックスタートを見る",
+        "secondary": "開発者コンソールを開く"
       }
     },
     "for_enterprise": {
-      "badge": "ENTERPRISE GOVERNANCE",
-      "hero_title": "Enterprise payment governance for groups and regulated businesses",
-      "hero_desc": "FilixPay For Enterprise helps headquarters govern multi-organization payment operations with multi-merchant management, RBAC, member governance, and organization-level isolation.",
-      "hero_desc_extra": "FilixPay Merchant Center covers single-merchant operations; For Enterprise adds organization governance for groups, conglomerates, and regulated enterprises.",
-      "features_title": "Governance Capabilities",
+      "badge": "エンタープライズガバナンス",
+      "hero_title": "グループと規制対象企業向けのエンタープライズ決済ガバナンス",
+      "hero_desc": "FilixPay For Enterpriseは、マルチマーチャント管理、RBAC、メンバーガバナンス、組織レベルの分離により、本社が複数組織の決済運用を統治できるよう支援します。",
+      "hero_desc_extra": "FilixPayマーチャントセンターは単一マーチャント運用をカバーし、For Enterpriseはグループ・コングロマリット・規制対象企業向けの組織ガバナンスを追加します。",
+      "features_title": "ガバナンス機能",
       "features": {
         "multi_org": {
           "icon": "ORG",
-          "title": "Multi-Organization Governance",
-          "desc": "Centralize enterprise governance across legal entities while preserving independent operations at each organization.",
-          "detail_desc": "Headquarters creates and manages organizations without replacing day-to-day merchant operations.",
+          "title": "マルチ組織ガバナンス",
+          "desc": "各組織の独立した運用を維持しながら、法人横断でエンタープライズガバナンスを集中管理します。",
+          "detail_desc": "本社は日々のマーチャント運用を置き換えることなく、組織を作成・管理します。",
           "points": {
-            "0": "Enterprise-level visibility across organizations and merchants",
-            "1": "Governance boundaries that stop at the organization layer",
-            "2": "Centralized policy with decentralized business execution"
+            "0": "組織とマーチャント横断のエンタープライズレベルの可視性",
+            "1": "組織レイヤーで止まるガバナンス境界",
+            "2": "集中ポリシーと分散した事業実行"
           }
         },
         "multi_merchant": {
           "icon": "MM",
-          "title": "Multi-Merchant Management",
-          "desc": "Coordinate payment operations across subsidiaries, business units, and project teams under unified governance.",
-          "detail_desc": "Break fund silos with supervised accounts and transparent acquiring across group merchants.",
+          "title": "マルチマーチャント管理",
+          "desc": "統一ガバナンスのもとで、子会社・事業単位・プロジェクトチーム横断の決済運用を調整します。",
+          "detail_desc": "監督アカウントと透明なアクワイアリングで、グループマーチャント間の資金サイロを解消します。",
           "points": {
-            "0": "Unified acquiring strategy with entity-level signing",
-            "1": "Sub-merchant and project-level payment workflows",
-            "2": "Transparent fund flows for headquarters oversight"
+            "0": "エンティティ単位の契約を伴う統一アクワイアリング戦略",
+            "1": "サブマーチャントおよびプロジェクトレベルの決済ワークフロー",
+            "2": "本社監督向けの透明な資金フロー"
           }
         },
         "rbac": {
           "icon": "RBAC",
-          "title": "RBAC & Member Governance",
-          "desc": "Role-based access controls and member lifecycle governance for enterprise administrators and organization owners.",
-          "detail_desc": "Delegate governance responsibilities with auditable member permissions and approval workflows.",
+          "title": "RBACとメンバーガバナンス",
+          "desc": "エンタープライズ管理者と組織オーナー向けのロールベースアクセス制御とメンバーライフサイクルガバナンス。",
+          "detail_desc": "監査可能なメンバー権限と承認ワークフローで、ガバナンス責任を委任します。",
           "points": {
-            "0": "Enterprise ADMIN and Organization OWNER role separation",
-            "1": "Member invitations, role assignments, and access reviews",
-            "2": "Auditable governance actions across organizations"
+            "0": "エンタープライズADMINと組織OWNERの役割分離",
+            "1": "メンバー招待、ロール割当、アクセスレビュー",
+            "2": "組織横断で監査可能なガバナンスアクション"
           }
         },
         "isolation": {
           "icon": "ISO",
-          "title": "Organization Isolation",
-          "desc": "Strong isolation between organizations while maintaining enterprise-wide governance visibility.",
-          "detail_desc": "Each organization operates with scoped credentials, merchants, and authorization boundaries.",
+          "title": "組織分離",
+          "desc": "エンタープライズ全体のガバナンス可視性を維持しつつ、組織間を強く分離します。",
+          "detail_desc": "各組織はスコープされた資格情報、マーチャント、認可境界で運用します。",
           "points": {
-            "0": "Scoped merchant and credential management per organization",
-            "1": "Authorization stays within organization boundaries",
-            "2": "Enterprise oversight without centralizing operations"
+            "0": "組織ごとのスコープされたマーチャント・資格情報管理",
+            "1": "認可は組織境界内に留まる",
+            "2": "運用を集中させずにエンタープライズ監督を実現"
           }
         }
       },
       "private_deployment": {
-        "title": "Private Deployment Options",
-        "desc": "FilixPay can be deployed in your own environment for data sovereignty and regulated industries — contact sales to discuss deployment options."
+        "title": "プライベートデプロイオプション",
+        "desc": "FilixPayはデータ主権と規制業種向けに自社環境へデプロイできます — デプロイオプションについては営業にお問い合わせください。"
       },
       "links": {
-        "title": "Explore Payment Infrastructure",
-        "desc": "Enterprise governance builds on FilixPay payment infrastructure for APIs, transactions, and settlement.",
+        "title": "決済インフラを探る",
+        "desc": "エンタープライズガバナンスは、API・取引・精算向けのFilixPay決済インフラの上に構築されます。",
         "payment_platform": {
-          "title": "Payment Platform",
-          "desc": "Enterprise payment infrastructure for APIs, transaction management, and settlement."
+          "title": "決済プラットフォーム",
+          "desc": "API、取引管理、精算向けのエンタープライズ決済インフラ。"
         }
       },
       "cta": {
-        "title": "Talk to our enterprise team",
-        "desc": "Contact sales to discuss multi-organization governance, RBAC requirements, and deployment options for your group.",
-        "primary": "Contact Sales",
-        "secondary": "Explore Payment Platform"
+        "title": "エンタープライズチームに相談する",
+        "desc": "マルチ組織ガバナンス、RBAC要件、グループ向けデプロイオプションについて営業にお問い合わせください。",
+        "primary": "営業に問い合わせる",
+        "secondary": "決済プラットフォームを探る"
       }
     },
     "credit_payment": {
-      "title": "Credit Payment",
-      "subtitle": "Flexible credit-based payment solutions for B2B and subscription businesses",
-      "hero_title": "Buy Now, Pay Later — Built for Business",
-      "hero_desc": "Enable credit lines, installment plans, and deferred payments with enterprise-grade risk management and real-time account tracking.",
+      "title": "クレジット決済",
+      "subtitle": "B2Bおよびサブスクリプションビジネス向けの柔軟なクレジットベース決済ソリューション",
+      "hero_title": "今すぐ購入、後で支払い — ビジネス向けに設計",
+      "hero_desc": "エンタープライズグレードのリスク管理とリアルタイム口座追跡により、与信枠、分割払い、後払いを実現します。",
       "features": {
         "credit_line": {
-          "title": "Credit Line Management",
-          "desc": "Set and manage credit limits for your business customers with flexible payment terms."
+          "title": "与信枠管理",
+          "desc": "柔軟な支払条件で、法人顧客の与信限度額を設定・管理します。"
         },
         "installment": {
-          "title": "Installment Plans",
-          "desc": "Support multi-period payment plans with automated billing and collection."
+          "title": "分割払いプラン",
+          "desc": "自動請求・回収付きの複数期間支払プランに対応します。"
         },
         "risk": {
-          "title": "Risk Control",
-          "desc": "Real-time credit scoring and risk assessment with configurable rules."
+          "title": "リスク制御",
+          "desc": "設定可能なルールによるリアルタイム与信スコアリングとリスク評価。"
         },
         "reconciliation": {
-          "title": "Auto Reconciliation",
-          "desc": "Automated matching of payments to invoices with detailed reporting."
+          "title": "自動照合",
+          "desc": "詳細レポート付きで、支払いと請求書を自動マッチングします。"
         }
       }
     },
     "crypto_payment": {
-      "title": "Crypto Payment",
-      "subtitle": "Native TRON USDT on-chain collection through FilixPay blockchain gateway",
-      "hero_title": "TRON USDT Payments, Built In",
-      "hero_desc": "Collect TRC20 USDT with merchant-managed deposit addresses, unique-amount matching, and blockchain gateway confirmation—unified in the same FilixPay checkout and order flow.",
+      "title": "暗号資産決済",
+      "subtitle": "FilixPayブロックチェーンゲートウェイ経由のネイティブTRON USDTオンチェーン集金",
+      "hero_title": "組み込みのTRON USDT決済",
+      "hero_desc": "マーチャント管理の入金アドレス、ユニーク金額マッチング、ブロックチェーンゲートウェイ確認でTRC20 USDTを集金—同じFilixPayチェックアウトと注文フローに統合されます。",
       "pipeline": {
         "configure": {
-          "title": "Configure Wallets",
-          "desc": "Bind TRON USDT deposit addresses"
+          "title": "ウォレット設定",
+          "desc": "TRON USDT入金アドレスをバインド"
         },
         "checkout": {
-          "title": "Checkout Collection",
-          "desc": "Show address and pay amount"
+          "title": "チェックアウト集金",
+          "desc": "アドレスと支払金額を表示"
         },
         "confirm": {
-          "title": "On-Chain Confirm",
-          "desc": "Gateway verifies deposit"
+          "title": "オンチェーン確認",
+          "desc": "ゲートウェイが入金を検証"
         }
       },
       "what": {
-        "title": "What Is FilixPay Crypto Payment?",
-        "desc": "FilixPay is a payment orchestration layer—not a custodian or exchange. The native CRYPTO channel connects your checkout to TRON USDT deposits via the FilixPay blockchain gateway, with optional NowPayments extension for multi-coin invoices."
+        "title": "FilixPay暗号資産決済とは？",
+        "desc": "FilixPayは決済オーケストレーション層であり、カストディアンや取引所ではありません。ネイティブCRYPTOチャネルは、FilixPayブロックチェーンゲートウェイ経由でチェックアウトをTRON USDT入金につなぎ、任意でNowPayments拡張によりマルチコイン請求にも対応します。"
       },
       "native": {
-        "title": "Native TRON USDT Channel (Primary)",
-        "desc": "Production-ready on-chain collection for TRC20 USDT with merchant-controlled deposit wallets and automatic payment matching.",
+        "title": "ネイティブTRON USDTチャネル（プライマリ）",
+        "desc": "マーチャント管理の入金ウォレットと自動マッチングによる、TRC20 USDT向け本番対応のオンチェーン集金。",
         "points": {
-          "0": "Chain and asset: TRON mainnet USDT (TRC20)",
-          "1": "Deposit modes: STATIC unique-amount matching or HD address allocation",
-          "2": "Checkout displays deposit address and exact pay amount for the customer"
+          "0": "チェーンと資産：TRONメインネットUSDT（TRC20）",
+          "1": "入金モード：STATICのユニーク金額マッチング、またはHDアドレス割当",
+          "2": "チェックアウトで顧客に入金アドレスと正確な支払金額を表示"
         }
       },
       "wallets": {
-        "title": "Deposit Wallet Management",
-        "desc": "Merchants configure receiving addresses in the merchant center before going live.",
+        "title": "入金ウォレット管理",
+        "desc": "本番開始前に、マーチャントセンターで受取アドレスを設定します。",
         "points": {
-          "0": "Fourth-party merchants manage their own TRON USDT deposit wallets",
-          "1": "Third-party sub-merchants use platform-managed wallets (read-only view)",
-          "2": "One active deposit wallet per chain/asset per merchant"
+          "0": "四方マーチャントは自社のTRON USDT入金ウォレットを管理",
+          "1": "三方サブマーチャントはプラットフォーム管理ウォレットを使用（読み取り専用）",
+          "2": "マーチャントあたりチェーン／資産ごとにアクティブな入金ウォレットは1つ"
         }
       },
       "extension": {
-        "title": "NowPayments Extension (Optional)",
-        "desc": "Need more digital assets beyond TRON USDT? Connect your own NowPayments account as an additional upstream channel.",
+        "title": "NowPayments拡張（任意）",
+        "desc": "TRON USDT以外のデジタル資産が必要ですか？独自のNowPaymentsアカウントを追加の上流チャネルとして接続できます。",
         "points": {
-          "0": "Bring your NowPayments API Key and IPN Secret in payment configuration",
-          "1": "Redirect customers to NowPayments invoice checkout for supported coins",
-          "2": "FilixPay handles order linkage, IPN callbacks, and trade bill reconciliation"
+          "0": "決済設定でNowPayments API KeyとIPN Secretを登録",
+          "1": "対応コインのNowPayments請求チェックアウトへ顧客をリダイレクト",
+          "2": "FilixPayが注文紐付け、IPNコールバック、取引明細照合を処理"
         },
-        "footnote": "Multi-coin scope depends on your NowPayments merchant account—not a native FilixPay guarantee."
+        "footnote": "マルチコインの範囲はご自身のNowPaymentsマーチャントアカウントに依存し、FilixPayネイティブの保証ではありません。"
       },
       "merchant_center": {
-        "title": "Merchant Center Capabilities",
+        "title": "マーチャントセンター機能",
         "items": {
           "configs": {
-            "title": "Payment Configuration",
-            "desc": "Bind CRYPTO gateway credentials or NowPayments API keys per payment scenario."
+            "title": "決済設定",
+            "desc": "決済シナリオごとにCRYPTOゲートウェイ資格情報またはNowPayments APIキーをバインドします。"
           },
           "wallets": {
-            "title": "Crypto Deposit Addresses",
-            "desc": "Create and maintain TRON USDT receiving addresses for the native channel."
+            "title": "暗号資産入金アドレス",
+            "desc": "ネイティブチャネル向けにTRON USDT受取アドレスを作成・維持します。"
           },
           "orders": {
-            "title": "Orders & Webhooks",
-            "desc": "Track payment status and receive merchant webhooks when deposits confirm."
+            "title": "注文とWebhook",
+            "desc": "決済ステータスを追跡し、入金確認時にマーチャントWebhookを受信します。"
           }
         }
       },
       "workflow": {
-        "title": "Collection Workflow",
-        "desc": "From checkout creation to on-chain confirmation.",
+        "title": "集金ワークフロー",
+        "desc": "チェックアウト作成からオンチェーン確認まで。",
         "steps": {
           "order": {
-            "title": "Create Checkout",
-            "desc": "Merchant or API creates an order and selects the configured crypto payment channel."
+            "title": "チェックアウト作成",
+            "desc": "マーチャントまたはAPIが注文を作成し、設定済みの暗号資産決済チャネルを選択します。"
           },
           "present": {
-            "title": "Present Payment",
-            "desc": "Native CRYPTO shows TRON address and unique pay amount; NowPayments redirects to invoice URL."
+            "title": "支払い提示",
+            "desc": "ネイティブCRYPTOはTRONアドレスとユニーク支払金額を表示。NowPaymentsは請求URLへリダイレクトします。"
           },
           "pay": {
-            "title": "Customer Pays",
-            "desc": "Customer sends USDT on-chain or completes payment on the NowPayments invoice page."
+            "title": "顧客が支払い",
+            "desc": "顧客がオンチェーンでUSDTを送金するか、NowPayments請求ページで支払いを完了します。"
           },
           "settle": {
-            "title": "Confirm & Notify",
-            "desc": "Gateway or IPN confirms payment; order status updates and merchant webhooks fire."
+            "title": "確認と通知",
+            "desc": "ゲートウェイまたはIPNが支払いを確認。注文ステータスが更新され、マーチャントWebhookが発火します。"
           }
         }
       },
       "scenarios": {
         "cross_border": {
-          "title": "Cross-Border USDT Collection",
-          "desc": "Accept stablecoin payments from global customers without card rails."
+          "title": "越境USDT集金",
+          "desc": "カードレールなしで、グローバル顧客からステーブルコイン決済を受け付けます。"
         },
         "chargeback_free": {
-          "title": "Chargeback-Free Alternative",
-          "desc": "On-chain finality eliminates card chargeback exposure for eligible use cases."
+          "title": "チャージバック不要の代替手段",
+          "desc": "オンチェーンの最終性により、対象ユースケースでカードチャージバックリスクを排除します。"
         },
         "platform": {
-          "title": "Platform-Managed Crypto",
-          "desc": "Platform settlement merchants inherit platform crypto configuration without managing wallets."
+          "title": "プラットフォーム管理の暗号資産",
+          "desc": "プラットフォーム精算マーチャントは、ウォレット管理なしでプラットフォームの暗号資産設定を継承します。"
         }
       },
       "faq": {
-        "title": "Frequently Asked Questions",
+        "title": "よくある質問",
         "items": {
           "what_coins": {
-            "q": "Which cryptocurrencies does FilixPay support natively?",
-            "a": "The native CRYPTO channel currently supports TRON mainnet USDT (TRC20). For additional digital assets, connect your own NowPayments account as an optional upstream channel."
+            "q": "FilixPayがネイティブでサポートする暗号資産は？",
+            "a": "ネイティブCRYPTOチャネルは現在、TRONメインネットUSDT（TRC20）をサポートします。追加のデジタル資産は、任意の上流チャネルとしてご自身のNowPaymentsアカウントを接続してください。"
           },
           "wallet_required": {
-            "q": "Do I need to configure deposit wallets?",
-            "a": "Yes for the native TRON USDT channel. Fourth-party merchants add deposit addresses in Crypto Deposit Addresses. Third-party sub-merchants on platform-managed settlement use the platform merchant's configured wallets."
+            "q": "入金ウォレットの設定は必要ですか？",
+            "a": "ネイティブTRON USDTチャネルでは必要です。四方マーチャントは暗号資産入金アドレスで受取アドレスを追加します。プラットフォーム管理精算の三方サブマーチャントは、プラットフォームマーチャントが設定したウォレットを使用します。"
           },
           "deposit_modes": {
-            "q": "What are STATIC and HD deposit modes?",
-            "a": "STATIC mode reserves a unique pay amount against your deposit address for each order. HD mode allocates addresses through the blockchain gateway. The active mode is set in your CRYPTO channel configuration."
+            "q": "STATICとHD入金モードとは？",
+            "a": "STATICモードは注文ごとに入金アドレスに対してユニークな支払金額を予約します。HDモードはブロックチェーンゲートウェイ経由でアドレスを割り当てます。アクティブなモードはCRYPTOチャネル設定で指定します。"
           },
           "nowpayments": {
-            "q": "How does the NowPayments extension work?",
-            "a": "You provide your NowPayments API credentials in payment configuration. FilixPay creates invoices, redirects customers to NowPayments checkout, and processes IPN callbacks into unified order status."
+            "q": "NowPayments拡張はどのように動作しますか？",
+            "a": "決済設定でNowPayments API資格情報を提供します。FilixPayが請求を作成し、顧客をNowPaymentsチェックアウトへリダイレクトし、IPNコールバックを統一注文ステータスに反映します。"
           },
           "chargebacks": {
-            "q": "Are crypto payments reversible?",
-            "a": "On-chain USDT transfers are final once confirmed. Card-style chargebacks do not apply to native crypto collection, though operational refunds must be handled according to your business policy."
+            "q": "暗号資産決済は取り消せますか？",
+            "a": "オンチェーンUSDT送金は確認後に最終確定します。ネイティブ暗号資産集金にはカード型チャージバックは適用されませんが、運用上の返金はビジネスポリシーに従って対応する必要があります。"
           },
           "refunds": {
-            "q": "Does FilixPay support automatic crypto refunds?",
-            "a": "Automatic on-chain refunds through the native CRYPTO channel are not available in the current release. Plan manual refund workflows where needed."
+            "q": "FilixPayは自動の暗号資産返金に対応していますか？",
+            "a": "現行リリースでは、ネイティブCRYPTOチャネル経由の自動オンチェーン返金は利用できません。必要な場合は手動返金ワークフローを計画してください。"
           }
         }
       },
       "cta": {
-        "title": "Ready to collect TRON USDT through FilixPay?",
-        "desc": "Configure deposit wallets and payment channels in the merchant center, or contact us for platform-managed setup."
+        "title": "FilixPayでTRON USDTの集金を始める準備はできましたか？",
+        "desc": "マーチャントセンターで入金ウォレットと決済チャネルを設定するか、プラットフォーム管理セットアップについてお問い合わせください。"
       }
     },
     "payment_splitting": {
-      "title": "Payment Splitting",
-      "subtitle": "Automated split-payment and settlement capabilities for platform businesses",
-      "hero_title": "Payment Splitting for Platforms and Multi-Merchant Settlement",
-      "hero_desc": "Automate how one payment is allocated across platforms, merchants, sub-merchants, service fees, commissions, and settlement recipients.",
+      "title": "決済分割",
+      "subtitle": "プラットフォームビジネス向けの自動分割決済と精算機能",
+      "hero_title": "プラットフォームとマルチマーチャント精算のための決済分割",
+      "hero_desc": "1件の支払いを、プラットフォーム、マーチャント、サブマーチャント、サービス手数料、コミッション、精算受取先へ自動配分します。",
       "what": {
-        "title": "What Is Payment Splitting?",
-        "desc": "Payment splitting connects payment collection, receiver allocation, settlement bills, and reconciliation records so platform businesses can reduce manual finance operations."
+        "title": "決済分割とは？",
+        "desc": "決済分割は、集金・受取配分・精算明細・照合レコードをつなぎ、プラットフォームビジネスの手作業による財務オペレーションを削減します。"
       },
       "features": {
         "multi_receiver": {
           "icon": "M",
-          "title": "Multiple Receivers",
-          "desc": "Split one customer payment across merchants, sub-merchants, platform accounts, and partners."
+          "title": "複数受取先",
+          "desc": "顧客の1件の支払いを、マーチャント、サブマーチャント、プラットフォーム口座、パートナーへ分割します。"
         },
         "commission": {
           "icon": "%",
-          "title": "Platform Commission",
-          "desc": "Separate platform service fees and commissions before merchant settlement."
+          "title": "プラットフォーム手数料",
+          "desc": "マーチャント精算の前に、プラットフォームのサービス手数料とコミッションを分離します。"
         },
         "settlement": {
           "icon": "S",
-          "title": "Settlement Ready",
-          "desc": "Connect split records with settlement bills and finance reconciliation workflows."
+          "title": "精算対応",
+          "desc": "分割レコードを精算明細と財務照合ワークフローに接続します。"
         },
         "webhook": {
           "icon": "API",
-          "title": "API And Webhooks",
-          "desc": "Use API and webhook callbacks to track payment, split, and settlement status."
+          "title": "APIとWebhook",
+          "desc": "APIとWebhookコールバックで、支払い・分割・精算ステータスを追跡します。"
         }
       },
       "scenarios": {
         "marketplace": {
           "icon": "O",
-          "title": "Marketplace Orders",
-          "desc": "Allocate customer payments to platform merchants and settlement receivers."
+          "title": "マーケットプレイス注文",
+          "desc": "顧客支払いをプラットフォームマーチャントと精算受取先へ配分します。"
         },
         "commission": {
           "icon": "F",
-          "title": "Service Commission",
-          "desc": "Keep platform fees while sending the remaining receivable to merchants."
+          "title": "サービス手数料",
+          "desc": "プラットフォーム手数料を確保しつつ、残りの債権をマーチャントへ送金します。"
         },
         "saas": {
           "icon": "S",
-          "title": "SaaS Platforms",
-          "desc": "Support multi-tenant merchants that collect through a shared payment platform."
+          "title": "SaaSプラットフォーム",
+          "desc": "共有決済プラットフォーム経由で集金するマルチテナントマーチャントをサポートします。"
         },
         "chain": {
           "icon": "G",
-          "title": "Chains And Groups",
-          "desc": "Settle funds across stores, subsidiaries, or business units."
+          "title": "チェーンとグループ",
+          "desc": "店舗、子会社、事業単位横断で資金を精算します。"
         },
         "cross_border": {
           "icon": "X",
-          "title": "Cross-Border Settlement",
-          "desc": "Support multi-party settlement scenarios for global platform commerce."
+          "title": "越境精算",
+          "desc": "グローバルなプラットフォームコマース向けのマルチパーティ精算シナリオをサポートします。"
         },
         "partner": {
           "icon": "R",
-          "title": "Partner Revenue Sharing",
-          "desc": "Distribute revenue to partners, channels, or service providers."
+          "title": "パートナー収益分配",
+          "desc": "パートナー、チャネル、サービス提供者へ収益を分配します。"
         }
       },
       "workflow": {
-        "title": "How The Split-Payment Flow Works",
-        "desc": "From customer payment to receiver settlement, each step is connected to records that finance teams can trace.",
+        "title": "分割決済フローの仕組み",
+        "desc": "顧客支払いから受取先精算まで、各ステップは財務チームが追跡できるレコードに接続されます。",
         "steps": {
           "pay": {
-            "title": "Customer Pays",
-            "desc": "A customer completes payment through the platform checkout flow."
+            "title": "顧客が支払い",
+            "desc": "顧客がプラットフォームのチェックアウトフローで支払いを完了します。"
           },
           "receive": {
-            "title": "Platform Receives",
-            "desc": "The platform records the payment and prepares the split calculation."
+            "title": "プラットフォームが受領",
+            "desc": "プラットフォームが支払いを記録し、分割計算を準備します。"
           },
           "calculate": {
-            "title": "Rules Calculate Split",
-            "desc": "Business rules determine amounts, receivers, commissions, and fees."
+            "title": "ルールで分割を計算",
+            "desc": "ビジネスルールが金額、受取先、コミッション、手数料を決定します。"
           },
           "credit": {
-            "title": "Receivers Are Credited",
-            "desc": "Receivers get their allocated amounts according to the split result."
+            "title": "受取先へ計上",
+            "desc": "分割結果に従い、受取先に配分額が計上されます。"
           },
           "settle": {
-            "title": "Settlement Bill Is Generated",
-            "desc": "Settlement records summarize split outcomes for finance operations."
+            "title": "精算明細を生成",
+            "desc": "精算レコードが分割結果を財務オペレーション向けに要約します。"
           },
           "reconcile": {
-            "title": "Finance Reconciles",
-            "desc": "Finance teams compare orders, split records, and settlement bills."
+            "title": "財務が照合",
+            "desc": "財務チームが注文、分割レコード、精算明細を比較します。"
           }
         }
       },
       "rules": {
-        "title": "Rules And Receiver Model",
-        "desc": "Define how revenue is distributed across merchants, platform accounts, service fees, and settlement receivers.",
+        "title": "ルールと受取先モデル",
+        "desc": "マーチャント、プラットフォーム口座、サービス手数料、精算受取先への収益配分方法を定義します。",
         "items": {
           "fixed_amount": {
             "icon": "#",
-            "title": "Fixed Amount",
-            "desc": "Allocate a fixed value to a receiver or platform fee."
+            "title": "固定金額",
+            "desc": "受取先またはプラットフォーム手数料に固定値を配分します。"
           },
           "percentage": {
             "icon": "%",
-            "title": "Percentage",
-            "desc": "Split by percentage for merchant revenue or partner sharing."
+            "title": "パーセンテージ",
+            "desc": "マーチャント収益やパートナー分配を割合で分割します。"
           },
           "commission": {
             "icon": "C",
-            "title": "Commission",
-            "desc": "Keep platform commission before settlement."
+            "title": "コミッション",
+            "desc": "精算前にプラットフォームコミッションを確保します。"
           },
           "receiver": {
             "icon": "R",
-            "title": "Receiver",
-            "desc": "Route amounts to merchants, sub-merchants, stores, or partners."
+            "title": "受取先",
+            "desc": "マーチャント、サブマーチャント、店舗、パートナーへ金額をルーティングします。"
           },
           "currency": {
             "icon": "$",
-            "title": "Currency",
-            "desc": "Support settlement logic by transaction and settlement currency."
+            "title": "通貨",
+            "desc": "取引通貨と精算通貨に応じた精算ロジックをサポートします。"
           },
           "cycle": {
             "icon": "D",
-            "title": "Settlement Cycle",
-            "desc": "Connect split results with daily, weekly, or custom settlement cycles."
+            "title": "精算サイクル",
+            "desc": "分割結果を日次・週次・カスタム精算サイクルに接続します。"
           }
         }
       },
       "settlement": {
-        "title": "Settlement And Reconciliation",
-        "desc": "Payment splitting should not stop at allocation. Finance teams need settlement bills and reconciliation records that explain every amount.",
+        "title": "精算と照合",
+        "desc": "決済分割は配分で終わりません。財務チームには、すべての金額を説明する精算明細と照合レコードが必要です。",
         "records": {
-          "title": "Split Records",
-          "desc": "Track order amount, split amount, receiver count, success count, failure count, and split status."
+          "title": "分割レコード",
+          "desc": "注文金額、分割金額、受取先数、成功数、失敗数、分割ステータスを追跡します。"
         },
         "bills": {
-          "title": "Settlement Bills",
-          "desc": "Connect split results to settlement bill items for finance exports and period-end reconciliation."
+          "title": "精算明細",
+          "desc": "分割結果を精算明細項目に接続し、財務エクスポートと期末照合に活用します。"
         }
       },
       "exceptions": {
-        "title": "Exception Handling",
-        "desc": "Payment splitting needs clear states when business rules, receiver accounts, refunds, or settlement timing create exceptions.",
+        "title": "例外処理",
+        "desc": "ビジネスルール、受取口座、返金、精算タイミングで例外が発生したとき、決済分割には明確な状態が必要です。",
         "items": {
           "receiver_unavailable": {
-            "title": "Receiver Unavailable",
-            "desc": "Identify receiver account issues before settlement is completed."
+            "title": "受取先利用不可",
+            "desc": "精算完了前に受取口座の問題を特定します。"
           },
           "rule_mismatch": {
-            "title": "Rule Mismatch",
-            "desc": "Surface rule conflicts or missing receiver information for operations review."
+            "title": "ルール不一致",
+            "desc": "ルール競合や不足している受取先情報を運用レビュー向けに可視化します。"
           },
           "refund_after_split": {
-            "title": "Refund After Split",
-            "desc": "Trace how refunds affect split records and settlement results."
+            "title": "分割後の返金",
+            "desc": "返金が分割レコードと精算結果にどう影響するかを追跡します。"
           },
           "partial_failure": {
-            "title": "Partial Split Failure",
-            "desc": "Separate successful and failed receiver allocations for follow-up."
+            "title": "部分的な分割失敗",
+            "desc": "成功と失敗の受取配分を分離し、フォローアップに備えます。"
           },
           "settlement_pending": {
-            "title": "Settlement Pending",
-            "desc": "Make pending settlement states visible to finance teams."
+            "title": "精算保留",
+            "desc": "保留中の精算状態を財務チームに可視化します。"
           },
           "reconciliation_difference": {
-            "title": "Reconciliation Difference",
-            "desc": "Help finance teams investigate order, split, and settlement differences."
+            "title": "照合差分",
+            "desc": "財務チームが注文・分割・精算の差分を調査できるよう支援します。"
           }
         }
       },
       "developer": {
-        "title": "API And Webhook Integration",
-        "desc": "Developers can integrate split-payment records, settlement queries, and webhook callbacks into their platform operations.",
-        "cta": "Explore Developer Center"
+        "title": "APIとWebhook連携",
+        "desc": "開発者は分割決済レコード、精算照会、Webhookコールバックをプラットフォーム運用に組み込めます。",
+        "cta": "開発者センターを探る"
       },
       "faq": {
-        "title": "Payment Splitting FAQ",
+        "title": "決済分割FAQ",
         "items": {
           "what_is": {
-            "q": "What is payment splitting?",
-            "a": "Payment splitting allocates one payment across multiple receivers such as merchants, sub-merchants, platform accounts, and partners."
+            "q": "決済分割とは何ですか？",
+            "a": "決済分割は、1件の支払いをマーチャント、サブマーチャント、プラットフォーム口座、パートナーなど複数の受取先へ配分します。"
           },
           "difference_from_payout": {
-            "q": "How is payment splitting different from payout?",
-            "a": "Payment splitting defines how payment revenue is allocated, while payout is the later movement of settled funds to a bank or account."
+            "q": "決済分割と出金（ペイアウト）の違いは？",
+            "a": "決済分割は決済収益の配分方法を定義し、出金は精算済み資金を銀行や口座へ後から移動する処理です。"
           },
           "multiple_receivers": {
-            "q": "Can one order be split to multiple receivers?",
-            "a": "Yes. A platform can allocate one order to multiple receivers according to business rules."
+            "q": "1件の注文を複数の受取先に分割できますか？",
+            "a": "はい。プラットフォームはビジネスルールに従い、1件の注文を複数の受取先へ配分できます。"
           },
           "platform_commission": {
-            "q": "Can the platform keep a commission?",
-            "a": "Yes. Platform fees or commissions can be separated before merchant settlement."
+            "q": "プラットフォームはコミッションを取れますか？",
+            "a": "はい。マーチャント精算の前に、プラットフォーム手数料やコミッションを分離できます。"
           },
           "refunds": {
-            "q": "How are refunds handled after splitting?",
-            "a": "Refunds should be traceable against the original order, split records, and settlement result."
+            "q": "分割後の返金はどう扱われますか？",
+            "a": "返金は元の注文、分割レコード、精算結果に対して追跡可能であるべきです。"
           },
           "reconciliation": {
-            "q": "Can finance reconcile split records with settlement bills?",
-            "a": "Yes. Split records and settlement bill items should provide a traceable finance workflow."
+            "q": "財務は分割レコードと精算明細を照合できますか？",
+            "a": "はい。分割レコードと精算明細項目により、追跡可能な財務ワークフローを提供します。"
           },
           "api_webhook": {
-            "q": "Does FilixPay support API and webhook integration?",
-            "a": "FilixPay provides developer capabilities for payment status, settlement records, and webhook-driven integration workflows."
+            "q": "FilixPayはAPIとWebhook連携をサポートしますか？",
+            "a": "FilixPayは決済ステータス、精算レコード、Webhook駆動の連携ワークフロー向けの開発者機能を提供します。"
           }
         }
       },
       "channel_rules": {
-        "title": "Channel Rules for Payment Splitting",
+        "title": "決済分割のチャネルルール",
         "items": [
           {
             "id": "wechat",
-            "title": "1. WeChat Pay: Fund Freezing & Unfreezing Model",
-            "desc": "WeChat's splitting mechanism centers on 'Freeze First, Split Later,' ideal for scenarios requiring delayed splitting or with refund risks.",
+            "title": "1. WeChat Pay：資金凍結・解除モデル",
+            "desc": "WeChatの分割メカニズムは「先に凍結、後で分割」が中心で、遅延分割や返金リスクがあるシナリオに適しています。",
             "flow": {
-              "title": "Core Workflow:",
+              "title": "コアワークフロー：",
               "steps": [
-                "Transaction & Freezing: Upon successful payment, funds are frozen in the merchant's account (Pending Split state) instead of entering available balance.",
-                "Initiate Split: When split conditions are met (e.g., delivery confirmed), the split API is called. WeChat unfreezes and allocates funds to specified receivers.",
-                "Complete Split: If no further splitting is needed, the completion API unfreezes remaining funds to the merchant's available balance."
+                "取引と凍結：支払い成功時、資金は利用可能残高ではなくマーチャント口座で凍結されます（分割待ち状態）。",
+                "分割開始：分割条件が満たされたら（例：配送確認後）、分割APIを呼び出します。WeChatが凍結を解除し、指定受取先へ配分します。",
+                "分割完了：追加の分割が不要な場合、完了APIで残額をマーチャントの利用可能残高へ解除します。"
               ]
             },
             "compliance": {
-              "title": "Key Compliance Points:",
+              "title": "主なコンプライアンスポイント：",
               "items": [
-                "Split Ratio Limit: Default maximum is usually 30% of the order amount (adjustable with authorization).",
-                "Split Duration: Funds can be frozen for up to 180 days (some docs mention 30 days; auto-unfreeze occurs if no split is initiated).",
-                "Split Frequency: Supports multiple splits (up to 50 times) to multiple parties (up to 50 receivers per split)."
+                "分割比率上限：デフォルト最大は通常注文金額の30%（認可により調整可能）。",
+                "分割期間：資金は最大180日間凍結可能（一部ドキュメントでは30日。分割未実施の場合は自動解除）。",
+                "分割頻度：複数回分割（最大50回）と、1回あたり最大50受取先に対応。"
               ]
             }
           },
           {
             "id": "alipay",
-            "title": "2. Alipay: Settlement Confirmation & Asynchronous Splitting",
-            "desc": "Alipay emphasizes 'Settlement Confirmation' and offers strong synch/asynch capabilities for high-concurrency scenarios.",
+            "title": "2. Alipay：精算確認と非同期分割",
+            "desc": "Alipayは「精算確認」を重視し、高同時実行シナリオ向けの強力な同期／非同期機能を提供します。",
             "flow": {
-              "title": "Core Workflow:",
+              "title": "コアワークフロー：",
               "steps": [
-                "Transaction & Freezing: Funds enter a pending settlement state. The platform initiates 'Confirm Settlement' to freeze funds for splitting.",
-                "Initiate Split: Calling the settlement API (alipay.trade.order.settle) supports both synchronous (real-time) and asynchronous (high-frequency) modes.",
-                "Reverse Split: Supports original-path reversal of split funds in case of refunds."
+                "取引と凍結：資金は精算待ち状態に入ります。プラットフォームが「精算確認」を開始し、分割用に資金を凍結します。",
+                "分割開始：精算API（alipay.trade.order.settle）の呼び出しは、同期（リアルタイム）と非同期（高頻度）の両方に対応します。",
+                "逆分割：返金時に分割資金の原路返還をサポートします。"
               ]
             },
             "compliance": {
-              "title": "Key Compliance Points:",
+              "title": "主なコンプライアンスポイント：",
               "items": [
-                "Split Ratio Limit: Maximum amount cannot exceed 100% of the order total plus supplements (policy dependent).",
-                "Split Validity: Splitting is typically valid for up to 365 days after the transaction.",
-                "Receiver Binding: Receivers must be real-name verified and added to the platform's 'Split Relation Set' via API.",
-                "Performance: Sync mode is limited (30 QPS), while async mode supports up to 500 QPS for high-traffic platforms."
+                "分割比率上限：最大金額は注文合計＋補填を超えてはなりません（ポリシー依存）。",
+                "分割有効期間：通常、取引後最大365日間分割可能。",
+                "受取先バインド：受取先は実名確認済みで、API経由でプラットフォームの「分割関係セット」に追加する必要があります。",
+                "パフォーマンス：同期モードは制限あり（30 QPS）、非同期モードは高トラフィック向けに最大500 QPS。"
               ]
             }
           },
           {
             "id": "stripe",
-            "title": "3. Stripe: Separate Charges and Transfers (Connect)",
-            "desc": "Stripe Connect is highly flexible, using the 'Separate Charges and Transfers' model for complex global or multi-party marketplaces.",
+            "title": "3. Stripe：Separate Charges and Transfers（Connect）",
+            "desc": "Stripe Connectは柔軟性が高く、複雑なグローバル／マルチパーティマーケットプレイス向けに「Separate Charges and Transfers」モデルを使用します。",
             "flow": {
-              "title": "Core Workflow:",
+              "title": "コアワークフロー：",
               "steps": [
-                "Platform Collection: A PaymentIntent is created on the platform's Stripe account; funds initially belong to the platform.",
-                "Trigger Transfer: Upon success, the platform calls the Transfers API (often triggered by payment_intent.succeeded webhooks).",
-                "Fund Allocation: Transfers are linked to origin charges via source_transaction, allowing funds to flow automatically to Connected Accounts during settlement."
+                "プラットフォーム集金：プラットフォームのStripeアカウント上でPaymentIntentを作成。資金は当初プラットフォームに帰属します。",
+                "Transferトリガー：成功後、プラットフォームがTransfers APIを呼び出します（多くは payment_intent.succeeded Webhookで起動）。",
+                "資金配分：Transferは source_transaction で元の課金に紐づき、精算時にConnected Accountsへ自動的に資金が流れます。"
               ]
             },
             "compliance": {
-              "title": "Key Compliance Points:",
+              "title": "主なコンプライアンスポイント：",
               "items": [
-                "Insufficient Balance: source_transaction linking avoids transfer failures due to lack of platform balance by processing via internal fund flows.",
-                "Application Fees: Platforms can deduct service fees (application_fee_amount) at collection before distributing the remainder.",
-                "Flexibility: Supports splitting to multiple receivers (sellers, affiliates, logistics) without fixed ratio constraints (subject to platform agreement)."
+                "残高不足：source_transaction の紐付けにより、内部資金フローで処理し、プラットフォーム残高不足によるTransfer失敗を回避します。",
+                "Application Fees：集金時にサービス手数料（application_fee_amount）を差し引き、残りを分配できます。",
+                "柔軟性：固定比率の制約なく、複数受取先（セラー、アフィリエイト、物流）への分割に対応（プラットフォーム契約に従う）。"
               ]
             }
           }
         ],
         "comparison": {
-          "title": "📊 Multi-Platform Comparison Summary",
+          "title": "📊 マルチプラットフォーム比較サマリー",
           "headers": [
-            "Dimension",
+            "観点",
             "WeChat Pay",
             "Alipay",
             "Stripe (Connect)"
           ],
           "rows": [
             [
-              "Core Mechanism",
-              "Freeze -> Unfreeze Split",
-              "Confirm -> Freeze Split",
-              "Platform Collect -> Transfer"
+              "コアメカニズム",
+              "凍結 → 解除して分割",
+              "確認 → 凍結して分割",
+              "プラットフォーム集金 → Transfer"
             ],
             [
-              "Split Ratio",
-              "Default max 30%",
-              "Up to 100% (policy dependent)",
-              "Flexible (Platform Config)"
+              "分割比率",
+              "デフォルト最大30%",
+              "最大100%（ポリシー依存）",
+              "柔軟（プラットフォーム設定）"
             ],
             [
-              "Duration",
-              "Max 180 days frozen",
-              "Max 365 days valid",
-              "Standard Payout Cycle"
+              "期間",
+              "最大180日凍結",
+              "最大365日有効",
+              "標準ペイアウトサイクル"
             ],
             [
-              "Receiver Req.",
-              "Merchant ID or WalletID",
-              "Real-name verified & Bound",
-              "Connected Account Required"
+              "受取先要件",
+              "Merchant ID または WalletID",
+              "実名確認済み＆バインド",
+              "Connected Account必須"
             ],
             [
-              "Best Scenarios",
-              "Retail, Dining, Delayed Settlement",
-              "Commission, High-Volume Platforms",
-              "Global Marketplace, Complex Payouts"
+              "最適シナリオ",
+              "小売、飲食、遅延精算",
+              "コミッション、高ボリュームプラットフォーム",
+              "グローバルマーケットプレイス、複雑なペイアウト"
             ]
           ]
         }
       },
       "cta": {
-        "title": "Build split-payment workflows with FilixPay",
-        "desc": "Support platform revenue sharing, merchant settlement, and finance reconciliation from one payment infrastructure."
+        "title": "FilixPayで分割決済ワークフローを構築する",
+        "desc": "ひとつの決済インフラで、プラットフォーム収益分配、マーチャント精算、財務照合をサポートします。"
       }
     },
     "risk_control": {
-      "title": "Payment Risk Control",
-      "subtitle": "Secure every transaction from authorization to settlement",
-      "hero_title": "Payment Risk Control",
-      "hero_desc": "Secure every transaction with real-time rules, expert review, and integrated chargeback insurance—connect Signifyd, Riskified, or Forter with your own credentials, or subscribe to FilixPay platform-hosted coverage.",
+      "title": "決済リスク制御",
+      "subtitle": "承認から精算まで、すべての取引を保護",
+      "hero_title": "決済リスク制御",
+      "hero_desc": "リアルタイムルール、専門家レビュー、統合チャージバック保険で取引を保護—Signifyd、Riskified、Forterをご自身の資格情報で接続するか、FilixPayプラットフォームホスト型カバレッジを購読できます。",
       "pipeline": {
         "rules": {
-          "title": "Rules Engine",
-          "desc": "Real-time fraud prevention"
+          "title": "ルールエンジン",
+          "desc": "リアルタイム不正防止"
         },
         "monitor": {
-          "title": "Event Monitor",
-          "desc": "Fraud events and expert review"
+          "title": "イベント監視",
+          "desc": "不正イベントと専門家レビュー"
         },
         "coverage": {
-          "title": "Insurance Partners",
+          "title": "保険パートナー",
           "desc": "Signifyd · Riskified · Forter"
         }
       },
       "modules": {
         "rules": {
-          "title": "Real-Time Rule Engine & Fraud Prevention",
-          "desc": "Millisecond risk decisions during authorization with configurable merchant rules and pre/post-authorization checks.",
+          "title": "リアルタイムルールエンジンと不正防止",
+          "desc": "承認時にミリ秒単位でリスク判定。設定可能なマーチャントルールと承認前／承認後チェック。",
           "points": {
-            "0": "Concurrent compliance and fraud checks at authorization",
-            "1": "Configurable thresholds by geography, behavior, and velocity",
-            "2": "Transaction-level protection distinct from credit-line risk"
+            "0": "承認時のコンプライアンスと不正チェックの同時実行",
+            "1": "地域・行動・ベロシティによる設定可能なしきい値",
+            "2": "与信リスクとは区別された取引レベルの保護"
           }
         },
         "monitor": {
-          "title": "Fraud Event Monitoring & Expert Manual Review",
-          "desc": "Dual-Layer Verification combines intelligent screening with expert manual review to minimize false declines.",
+          "title": "不正イベント監視と専門家による手動レビュー",
+          "desc": "Dual-Layer Verificationがインテリジェント審査と専門家手動レビューを組み合わせ、誤拒否を最小化します。",
           "points": {
-            "0": "Automated fraud event detection and tracking",
-            "1": "Expert manual review queue for anomalous transactions",
-            "2": "Operator alerts for time-sensitive decisions"
+            "0": "自動の不正イベント検出と追跡",
+            "1": "異常取引向けの専門家手動レビューキュー",
+            "2": "時間制約のある判断向けオペレーターアラート"
           }
         },
         "coverage": {
-          "title": "Integrated Chargeback Insurance Partners",
-          "desc": "FilixPay natively integrates leading chargeback insurance and fraud-guarantee providers. Merchants choose how to consume coverage—bring your own provider contract or subscribe to platform-hosted service.",
-          "disclaimer": "* Subject to service terms, eligibility, and coverage limits.",
+          "title": "統合チャージバック保険パートナー",
+          "desc": "FilixPayは主要チャージバック保険・不正保証プロバイダーをネイティブ統合。マーチャントは自社契約を持ち込むか、プラットフォームホスト型サービスを購読してカバレッジを利用できます。",
+          "disclaimer": "※ サービス条件、適格性、補償限度に従います。",
           "points": {
-            "0": "One integration layer for Signifyd, Riskified, and Forter",
-            "1": "Self-configure provider credentials in the merchant center",
-            "2": "Or subscribe to platform-hosted coverage without managing API keys"
+            "0": "Signifyd、Riskified、Forter向けの単一連携レイヤー",
+            "1": "マーチャントセンターでプロバイダー資格情報を自己設定",
+            "2": "またはAPIキー管理なしでプラットフォームホスト型カバレッジを購読"
           }
         }
       },
       "delivery_modes": {
-        "title": "Two Ways to Activate Coverage",
-        "desc": "FilixPay supports both merchant-managed provider configuration and platform-hosted subscription—matching independent merchants and marketplace sub-merchants.",
+        "title": "カバレッジを有効にする2つの方法",
+        "desc": "FilixPayはマーチャント管理のプロバイダー設定とプラットフォームホスト型購読の両方をサポート—独立マーチャントとマーケットプレイスサブマーチャントに対応します。",
         "items": {
           "self_config": {
             "icon": "🔑",
-            "title": "Bring Your Own Provider (BYOK)",
-            "desc": "Connect your existing Signifyd, Riskified, or Forter account. Configure API keys, webhook secrets, and environment in the merchant center—FilixPay routes assessments and claims to your chosen partner.",
+            "title": "自社プロバイダー接続（BYOK）",
+            "desc": "既存のSignifyd、Riskified、またはForterアカウントを接続。マーチャントセンターでAPIキー、Webhookシークレット、環境を設定—FilixPayが評価とクレームを選択パートナーへルーティングします。",
             "points": {
-              "0": "Full control of provider contract and credentials",
-              "1": "Ideal for independent merchants with direct insurer relationships",
-              "2": "Switch providers with a guided configuration workflow"
+              "0": "プロバイダー契約と資格情報を完全にコントロール",
+              "1": "保険会社と直接契約する独立マーチャントに最適",
+              "2": "ガイド付き設定ワークフローでプロバイダーを切り替え"
             }
           },
           "platform_subscription": {
             "icon": "🛡️",
-            "title": "Platform-Hosted Coverage Subscription",
-            "desc": "Third-party merchants on the Filix platform can subscribe to coverage insurance powered by the platform merchant's provider configuration—no separate insurer signup required.",
+            "title": "プラットフォームホスト型カバレッジ購読",
+            "desc": "Filixプラットフォーム上の三方マーチャントは、プラットフォームマーチャントのプロバイダー設定に基づく補償保険を購読できます—別途保険会社への登録は不要です。",
             "points": {
-              "0": "One-click subscription in the merchant center",
-              "1": "Eligibility tied to pre-auth security rule compliance",
-              "2": "Platform operates provider relationship on your behalf"
+              "0": "マーチャントセンターでワンクリック購読",
+              "1": "適格性は承認前セキュリティルールの遵守に連動",
+              "2": "プラットフォームがプロバイダー関係を代理運用"
             }
           }
         }
       },
       "providers": {
-        "title": "Supported Insurance & Fraud-Guarantee Partners",
-        "desc": "FilixPay's core differentiator is deep, production-ready integration with industry-leading chargeback protection providers—not a generic fraud score, but real insurer-backed coverage workflows.",
+        "title": "対応する保険・不正保証パートナー",
+        "desc": "FilixPayの差別化は、業界をリードするチャージバック保護プロバイダーとの深い本番対応連携—汎用不正スコアではなく、保険会社裏付けのカバレッジワークフローです。",
         "items": {
           "signifyd": {
             "name": "Signifyd",
-            "tagline": "Commerce protection with chargeback guarantee",
-            "desc": "Signifyd combines real-time fraud decisioning with guaranteed chargeback coverage for approved e-commerce orders. FilixPay forwards transaction context, receives coverage decisions, and automates claim workflows via webhooks."
+            "tagline": "チャージバック保証付きコマース保護",
+            "desc": "Signifydはリアルタイム不正判定と、承認済みeコマース注文向けの保証付きチャージバック補償を組み合わせます。FilixPayは取引コンテキストを転送し、カバレッジ判定を受信し、Webhook経由でクレームワークフローを自動化します。"
           },
           "riskified": {
             "name": "Riskified",
-            "tagline": "Enterprise fraud intelligence & chargeback guarantee",
-            "desc": "Riskified delivers AI-driven fraud prevention trusted by global retailers. Merchants on FilixPay can route orders for policy decisions and leverage chargeback guarantee programs where eligible."
+            "tagline": "エンタープライズ不正インテリジェンスとチャージバック保証",
+            "desc": "Riskifiedはグローバル小売に信頼されるAI駆動の不正防止を提供します。FilixPay上のマーチャントは注文をポリシー判定へルーティングし、適格な場合はチャージバック保証プログラムを活用できます。"
           },
           "forter": {
             "name": "Forter",
-            "tagline": "Real-time fraud prevention for digital commerce",
-            "desc": "Forter provides identity-centric fraud decisioning and chargeback abuse protection at scale. FilixPay integrates assessment, webhook updates, and claim submission for Forter-backed merchants."
+            "tagline": "デジタルコマース向けリアルタイム不正防止",
+            "desc": "Forterはアイデンティティ中心の不正判定とチャージバック濫用保護を大規模に提供します。FilixPayはForter裏付けのマーチャント向けに評価、Webhook更新、クレーム提出を統合します。"
           }
         },
-        "footnote": "Provider availability and feature scope depend on your merchant type, configuration mode, and partner contract terms."
+        "footnote": "プロバイダーの可用性と機能範囲は、マーチャントタイプ、設定モード、パートナー契約条件に依存します。"
       },
       "audience": {
-        "title": "Built for High-Stakes Commerce",
-        "desc": "FilixPay risk control supports cross-border merchants, marketplace operators, and businesses that need audit-ready fraud workflows.",
+        "title": "ハイステークスコマースのために設計",
+        "desc": "FilixPayリスク制御は、越境マーチャント、マーケットプレイス事業者、監査可能な不正ワークフローを必要とするビジネスをサポートします。",
         "items": {
           "cross_border": {
-            "title": "Cross-Border E-Commerce",
-            "desc": "Protect international card-not-present revenue."
+            "title": "越境eコマース",
+            "desc": "国際的なカード非提示売上を保護します。"
           },
           "marketplace": {
-            "title": "Platform & Marketplace",
-            "desc": "Third-party merchant ecosystems with shared risk oversight."
+            "title": "プラットフォーム＆マーケットプレイス",
+            "desc": "共有リスク監督を持つ三方マーチャントエコシステム。"
           },
           "high_risk": {
-            "title": "Elevated Dispute Exposure",
-            "desc": "Verticals where chargeback anxiety slows growth."
+            "title": "高い紛争エクスポージャー",
+            "desc": "チャージバック不安が成長を妨げる業種向け。"
           }
         }
       },
       "workflow": {
-        "title": "Full-Chain Workflow",
-        "desc": "A single linear path from checkout to eligible protection.",
+        "title": "フルチェーンワークフロー",
+        "desc": "チェックアウトから適格な保護までの単一の直線パス。",
         "steps": {
           "checkout": {
-            "title": "Customer Checkout",
-            "desc": "The merchant initiates payment and FilixPay captures transaction context such as metadata and device signals."
+            "title": "顧客チェックアウト",
+            "desc": "マーチャントが支払いを開始し、FilixPayがメタデータやデバイスシグナルなどの取引コンテキストを取得します。"
           },
           "rules": {
-            "title": "Rule Evaluation",
-            "desc": "The risk engine matches merchant rules and global policies within milliseconds to approve, block, or route to review."
+            "title": "ルール評価",
+            "desc": "リスクエンジンがミリ秒以内にマーチャントルールとグローバルポリシーを照合し、承認・ブロック・レビュー振分を行います。"
           },
           "review": {
-            "title": "Fraud Monitoring & Review",
-            "desc": "High-risk events trigger automated tracking. Dual-Layer Verification routes cases to expert manual review to recover legitimate sales."
+            "title": "不正監視とレビュー",
+            "desc": "高リスクイベントは自動追跡を起動。Dual-Layer Verificationがケースを専門家手動レビューへ回し、正当な売上を回収します。"
           },
           "coverage": {
-            "title": "Provider-Backed Chargeback Protection",
-            "desc": "FilixPay submits eligible fraud-related chargebacks to your configured Signifyd, Riskified, or Forter partner—or to platform-hosted coverage for subscribed merchants."
+            "title": "プロバイダー裏付けのチャージバック保護",
+            "desc": "FilixPayは適格な不正関連チャージバックを、設定済みのSignifyd、Riskified、Forterパートナー—または購読マーチャント向けのプラットフォームホスト型カバレッジ—へ提出します。"
           }
         }
       },
       "faq": {
-        "title": "Frequently Asked Questions",
+        "title": "よくある質問",
         "items": {
           "what_is": {
-            "q": "What is payment risk control?",
-            "a": "Payment risk control is a multi-layered security framework designed to detect, evaluate, and mitigate fraudulent activities throughout the transaction life cycle—protecting your legitimate revenue without degrading user experience."
+            "q": "決済リスク制御とは何ですか？",
+            "a": "決済リスク制御は、取引ライフサイクル全体で不正行為を検出・評価・軽減するための多層セキュリティフレームワークであり、ユーザー体験を損なわずに正当な売上を保護します。"
           },
           "vs_chargeback": {
-            "q": "How is risk control different from chargeback protection?",
-            "a": "Risk control acts as the proactive defense mechanism (pre-authorization and post-authorization rules to prevent fraud from happening), while chargeback protection provides reactive security (financial coverage for qualified transactions if an unforeseen dispute occurs)."
+            "q": "リスク制御とチャージバック保護の違いは？",
+            "a": "リスク制御は予防的な防御（不正発生を防ぐ承認前／承認後ルール）であり、チャージバック保護は予期せぬ紛争発生時の適格取引への金銭的補償という事後的なセキュリティです。"
           },
           "rule_engine": {
-            "q": "How does the rule engine work?",
-            "a": "Our engine runs concurrent compliance and fraud checks within milliseconds during authorization. Merchants can configure granular thresholds based on geographical location, behavioral heuristics, and velocity limits via the merchant dashboard."
+            "q": "ルールエンジンはどのように動作しますか？",
+            "a": "エンジンは承認中にミリ秒以内でコンプライアンスと不正チェックを同時実行します。マーチャントはダッシュボードから地理、行動ヒューリスティック、ベロシティ制限に基づくしきい値を細かく設定できます。"
           },
           "flagged_review": {
-            "q": "What happens when a transaction is flagged for review?",
-            "a": "When a transaction exhibits anomalous patterns, it triggers an internal fraud event. To prevent false declines, our platform employs a Dual-Layer Verification model, routes it to an expert manual review queue, and alerts operators immediately."
+            "q": "取引がレビュー対象にフラグ付けされたらどうなりますか？",
+            "a": "異常パターンを示す取引は内部不正イベントを起動します。誤拒否を防ぐため、プラットフォームはDual-Layer Verificationモデルを用い、専門家手動レビューキューへ回し、オペレーターに即座にアラートします。"
           },
           "coverage_eligibility": {
-            "q": "Who is eligible for chargeback coverage?",
-            "a": "Independent merchants can activate coverage by configuring Signifyd, Riskified, or Forter in the merchant center. Third-party platform merchants may subscribe to platform-hosted coverage plans. Individual transaction eligibility depends on provider rules and compliance with localized pre-auth security requirements."
+            "q": "チャージバックカバレッジの適格者は？",
+            "a": "独立マーチャントはマーチャントセンターでSignifyd、Riskified、またはForterを設定してカバレッジを有効化できます。三方プラットフォームマーチャントはプラットフォームホスト型カバレッジプランを購読できます。個別取引の適格性はプロバイダールールとローカライズされた承認前セキュリティ要件の遵守に依存します。"
           },
           "coverage_providers": {
-            "q": "Which chargeback insurance providers does FilixPay support?",
-            "a": "FilixPay integrates Signifyd, Riskified, and Forter with unified assessment, webhook handling, and claim submission. Merchants either connect their own provider credentials (BYOK) or subscribe to platform-hosted coverage powered by the platform merchant configuration."
+            "q": "FilixPayがサポートするチャージバック保険プロバイダーは？",
+            "a": "FilixPayはSignifyd、Riskified、Forterを統一評価、Webhook処理、クレーム提出で統合します。マーチャントは自社プロバイダー資格情報（BYOK）を接続するか、プラットフォームマーチャント設定に基づくプラットフォームホスト型カバレッジを購読します。"
           },
           "crypto_relation": {
-            "q": "How does this relate to crypto payments (zero chargebacks)?",
-            "a": "While digital assets natively feature transactional finality (meaning zero chargebacks can be technically initiated), our risk engine still enforces pre-authorization rules for crypto payments to detect wallet anomaly patterns and address blocking list compliance."
+            "q": "暗号資産決済（ゼロチャージバック）との関係は？",
+            "a": "デジタル資産は取引の最終性をネイティブに持ち（技術的にチャージバックを開始できない）ますが、リスクエンジンは暗号資産決済でもウォレット異常パターンの検出とアドレスブロックリスト遵守のため、承認前ルールを適用します。"
           }
         }
       },
       "cta": {
-        "title": "Ready to connect your chargeback insurance partner?",
-        "desc": "Configure Signifyd, Riskified, or Forter—or subscribe to platform-hosted coverage from the merchant center."
+        "title": "チャージバック保険パートナーの接続準備はできましたか？",
+        "desc": "Signifyd、Riskified、Forterを設定するか、マーチャントセンターからプラットフォームホスト型カバレッジを購読してください。"
       }
     },
     "cross_border": {
-      "title": "Cross-Border E-Commerce",
-      "subtitle": "End-to-end payment solutions for global online sellers",
-      "hero_title": "Sell Globally, Collect Locally",
-      "hero_desc": "Integrate with Shopify, WooCommerce and custom stores. Accept local payment methods in 50+ countries with automatic currency conversion."
+      "title": "越境eコマース",
+      "subtitle": "グローバルなオンラインセラー向けのエンドツーエンド決済ソリューション",
+      "hero_title": "グローバルに販売し、ローカルに集金",
+      "hero_desc": "Shopify、WooCommerce、カスタムストアと連携。50か国以上のローカル決済手段を受け付け、自動通貨換算に対応します。"
     },
     "web3_ecommerce": {
-      "title": "Web3 E-Commerce",
-      "subtitle": "Payment infrastructure for the decentralized economy",
-      "hero_title": "The Payment Layer for Web3 Commerce",
-      "hero_desc": "From NFT marketplaces to GameFi ecosystems, power your Web3 commerce with seamless crypto payment rails."
+      "title": "Web3 eコマース",
+      "subtitle": "分散型経済向けの決済インフラ",
+      "hero_title": "Web3コマースのための決済レイヤー",
+      "hero_desc": "NFTマーケットプレイスからGameFiエコシステムまで、シームレスな暗号資産決済レールでWeb3コマースを支えます。"
     },
     "saas_provider": {
-      "title": "SaaS Provider Solutions",
-      "subtitle": "Multi-tenant payment infrastructure for platform businesses",
-      "hero_title": "Build Your Payment Platform",
-      "hero_desc": "White-label payment capabilities with split payments, sub-merchant management, and automated settlement for your SaaS platform."
+      "title": "SaaSプロバイダーソリューション",
+      "subtitle": "プラットフォームビジネス向けのマルチテナント決済インフラ",
+      "hero_title": "決済プラットフォームを構築する",
+      "hero_desc": "SaaSプラットフォーム向けに、分割決済、サブマーチャント管理、自動精算を備えたホワイトラベル決済機能を提供します。"
     },
     "group_enterprise": {
-      "title": "Group Enterprise",
-      "subtitle": "Unified payment and fund governance platform for large groups",
-      "hero_title": "Build a Unified Payment and Fund Governance Platform for Large Groups",
-      "hero_desc": "From enterprise governance and unified collection to smart settlement and full-chain audit — help large groups achieve centralized headquarters governance, independent legal-entity operations, and transparent, controllable funds.",
-      "hero_ending": "Centralized governance. Independent operations. Transparent funds.",
+      "title": "グループエンタープライズ",
+      "subtitle": "大規模グループ向けの統合決済・資金ガバナンスプラットフォーム",
+      "hero_title": "大規模グループ向けの統合決済・資金ガバナンスプラットフォームを構築",
+      "hero_desc": "エンタープライズガバナンス、統一集金、スマート精算、フルチェーン監査まで — 大規模グループの本社集中ガバナンス、法人独立運用、透明で制御可能な資金を実現します。",
+      "hero_ending": "集中ガバナンス。独立運用。透明な資金。",
       "pain_points": {
-        "title": "Fund Control Gaps in Group Operations",
+        "title": "グループ運用における資金管理のギャップ",
         "items": [
           {
-            "title": "Personal QR Code Collection",
-            "desc": "Stores and project teams accept payments via personal WeChat or Alipay accounts, bypassing group accounts so headquarters cannot track inflows in real time.",
-            "consequences": "Off-book fund loops, reconciliation pain, distorted operating data."
+            "title": "個人QRコード集金",
+            "desc": "店舗やプロジェクトチームが個人のWeChatまたはAlipay口座で支払いを受け、グループ口座を迂回するため、本社が流入をリアルタイムで追跡できません。",
+            "consequences": "帳簿外資金ループ、照合の負担、歪んだ運営データ。"
           },
           {
-            "title": "Third-Party Account Diversion",
-            "desc": "Business receipts flow into third-party platforms or personal accounts outside group control, creating off-book pools and weakening centralized fund scheduling.",
-            "consequences": "Fragmented funds, compliance exposure, decisions without reliable data."
+            "title": "第三者口座への資金迂回",
+            "desc": "事業収入がグループ管理外の第三者プラットフォームや個人口座へ流れ、帳簿外プールを生み、集中的な資金スケジューリングを弱めます。",
+            "consequences": "資金の分断、コンプライアンスリスク、信頼できるデータなしの意思決定。"
           },
           {
-            "title": "Fragmented Payment Channels",
-            "desc": "Each legal entity connects to payment providers independently with different rates and settlement cycles, making reconciliation error-prone and costly.",
-            "consequences": "Unreliable reporting, high maintenance, complex integrations."
+            "title": "分断された決済チャネル",
+            "desc": "各法人が異なるレートと精算サイクルで独立して決済プロバイダーに接続し、照合がエラーを起こしやすくコストも高くなります。",
+            "consequences": "信頼性の低いレポート、高い保守コスト、複雑な連携。"
           },
           {
-            "title": "Off-Book Fund Pools",
-            "desc": "Some revenue never reaches governed accounts or moves through informal channels, so the group cannot see true operating and fund positions.",
-            "consequences": "Weak internal controls, costly audits, low fund transparency."
+            "title": "帳簿外資金プール",
+            "desc": "一部の収益が管理口座に到達せず、非公式チャネルを通るため、グループは真の運営・資金ポジションを把握できません。",
+            "consequences": "弱い内部統制、高コストな監査、低い資金透明性。"
           }
         ]
       },
       "architecture": {
-        "title": "Enterprise Governance Architecture",
-        "lead": "Centralized governance at headquarters. Independent operations at each legal entity.",
-        "lead_en": "Governance stops at the Organization level, preserving each legal entity's operational independence.",
-        "reinforcing": "Governance centralizes management without centralizing operations.",
-        "not_org_chart": "This diagram illustrates governance relationships only — not actual org counts or hierarchy depth.",
-        "example_footnote": "Example: a diversified group may map Enterprise to group headquarters, Organization to a business-unit legal entity, and Merchant to a store or project operator (Example only — not any specific company or partnership).",
+        "title": "エンタープライズガバナンスアーキテクチャ",
+        "lead": "本社で集中ガバナンス。各法人で独立運用。",
+        "lead_en": "ガバナンスはOrganizationレベルで止まり、各法人の運用独立性を保ちます。",
+        "reinforcing": "ガバナンスは運用を集中させずに、管理を集中します。",
+        "not_org_chart": "この図はガバナンス関係のみを示します — 実際の組織数や階層の深さではありません。",
+        "example_footnote": "例：多角化グループでは、Enterpriseをグループ本社、Organizationを事業単位の法人、Merchantを店舗またはプロジェクト運営者に対応させられます（例示のみ — 特定の企業やパートナーシップではありません）。",
         "layers": {
           "identity": "Identity",
           "enterprise": "Enterprise",
@@ -5876,427 +5876,427 @@
         }
       },
       "capabilities": {
-        "title": "Platform Capabilities",
+        "title": "プラットフォーム機能",
         "items": [
           {
             "icon": "🏛️",
-            "title": "Enterprise Governance",
-            "desc": "Headquarters creates and manages legal entities centrally. Governance stops at the Organization level — it does not replace day-to-day operations or authorization."
+            "title": "エンタープライズガバナンス",
+            "desc": "本社が法人を集中的に作成・管理。ガバナンスはOrganizationレベルで止まり — 日々の運用や認可を置き換えません。"
           },
           {
             "icon": "💳",
-            "title": "Unified Collection",
-            "desc": "Group-wide acquiring strategy and channel coordination, with each legal entity signing and operating under its own entity while funds stay transparent and controllable."
+            "title": "統一集金",
+            "desc": "グループ全体のアクワイアリング戦略とチャネル調整。各法人は自エンティティで契約・運用しつつ、資金は透明で制御可能です。"
           },
           {
             "icon": "⚡",
-            "title": "Smart Settlement",
-            "desc": "Licensed split-payment APIs automate clearing, reducing manual transit and supporting multi-entity, multi-scenario settlement."
+            "title": "スマート精算",
+            "desc": "ライセンス取得済み分割決済APIがクリアリングを自動化し、手動中継を減らし、複数エンティティ・複数シナリオの精算をサポートします。"
           },
           {
             "icon": "🔍",
-            "title": "Full-chain Audit",
-            "desc": "Governance actions, authorization changes, and fund flows are fully traceable for headquarters oversight and compliance audit."
+            "title": "フルチェーン監査",
+            "desc": "ガバナンスアクション、認可変更、資金フローが完全に追跡可能で、本社監督とコンプライアンス監査に対応します。"
           }
         ]
       },
       "governance_model": {
-        "title": "Governance Model",
-        "intro": "FilixPay separates governance responsibilities from day-to-day business operations, allowing headquarters to maintain visibility and control without replacing each legal entity's operational authority.",
+        "title": "ガバナンスモデル",
+        "intro": "FilixPayはガバナンス責任と日々の事業運用を分離し、本社が各法人の運用権限を置き換えることなく可視性と統制を維持できるようにします。",
         "headers": [
-          "Management Layer",
-          "Primary Responsibility"
+          "管理レイヤー",
+          "主な責任"
         ],
         "items": [
           [
             "Enterprise",
-            "Governance"
+            "ガバナンス"
           ],
           [
             "Organization",
-            "Authorization & Operations"
+            "認可と運用"
           ],
           [
             "Merchant",
-            "Business Execution"
+            "事業実行"
           ]
         ],
-        "admin_not_owner": "Enterprise ADMIN ≠ Organization OWNER"
+        "admin_not_owner": "エンタープライズADMIN ≠ 組織OWNER"
       },
       "rules": {
-        "title": "Core Business Rules",
+        "title": "コアビジネスルール",
         "headers": [
-          "Dimension",
-          "Rule"
+          "観点",
+          "ルール"
         ],
         "items": [
           [
-            "Governance Boundary",
-            "Enterprise governs at the group level (creating and managing Organizations). It does not directly own, control, or suspend Merchants — authorization stays within each Organization."
+            "ガバナンス境界",
+            "Enterpriseはグループレベルでガバナンスします（Organizationの作成・管理）。Merchantを直接所有・制御・停止しません — 認可は各Organization内に留まります。"
           ],
           [
-            "Unified Collection",
-            "The group may set unified acquiring policies; each Organization signs and operates under its legal entity."
+            "統一集金",
+            "グループは統一アクワイアリングポリシーを設定でき、各Organizationは自法人のもとで契約・運用します。"
           ],
           [
-            "Fund Collection",
-            "Customer payments flow into supervised accounts — external collection channels and personal QR codes are prohibited."
+            "資金集金",
+            "顧客支払いは監督口座へ流入 — 外部集金チャネルと個人QRコードは禁止です。"
           ],
           [
-            "Split Settlement",
-            "Licensed split APIs automate clearing and reduce manual fund transit risk."
+            "分割精算",
+            "ライセンス取得済み分割APIがクリアリングを自動化し、手動資金中継リスクを低減します。"
           ],
           [
-            "Approval Workflow",
-            "Cross-organization fund movements require group approval before execution."
+            "承認ワークフロー",
+            "組織横断の資金移動は、実行前にグループ承認が必要です。"
           ]
         ]
       },
       "scenarios": {
-        "title": "Business Scenarios",
+        "title": "ビジネスシナリオ",
         "scenario_0": {
-          "title": "Enterprise Setup",
-          "process": "Create Example Enterprise → Create Example Organization → Invite Organization Owner → Create Example Merchant 01 → Start Operations",
-          "value": "Stand up group governance quickly — independent entity operations with headquarters-wide visibility."
+          "title": "エンタープライズセットアップ",
+          "process": "Example Enterprise作成 → Example Organization作成 → Organization Owner招待 → Example Merchant 01作成 → 運用開始",
+          "value": "グループガバナンスを迅速に立ち上げ — 法人独立運用と本社横断の可視性。"
         },
         "scenario_1": {
-          "title": "Scenario 1: Subsidiary Sells Group Products",
-          "process": "Customer pays → Group account (unified collection) → Group recognizes revenue → System allocates subsidiary commission",
-          "value": "Protects group fund sovereignty with automated settlement."
+          "title": "シナリオ1：子会社がグループ商品を販売",
+          "process": "顧客支払い → グループ口座（統一集金） → グループが売上認識 → システムが子会社コミッションを配分",
+          "value": "自動精算によりグループの資金主権を保護します。"
         },
         "scenario_2": {
-          "title": "Scenario 2: Joint Sale Split",
-          "process": "Single order includes group products and subsidiary services → Split API at payment → Funds route directly to multiple accounts by ratio",
-          "value": "No second transfer — compliant and timely."
+          "title": "シナリオ2：共同販売の分割",
+          "process": "1件の注文にグループ商品と子会社サービスを含む → 支払時に分割API → 比率に従い複数口座へ直接ルーティング",
+          "value": "二次振替なし — コンプライアントかつタイムリー。"
         },
         "scenario_3": {
-          "title": "Scenario 3: Inter-Entity Internal Transfer",
-          "process": "Organization initiates request → Group approves → Funds move within supervised group account → Target Organization",
-          "value": "Fully traceable internal collaboration without funds leaving the governed perimeter."
+          "title": "シナリオ3：エンティティ間内部振替",
+          "process": "Organizationが申請 → グループが承認 → 監督グループ口座内で資金移動 → 対象Organization",
+          "value": "資金が管理境界を出ることなく、完全に追跡可能な内部連携。"
         }
       },
       "compliance": {
-        "title": "Compliance & Risk Control",
+        "title": "コンプライアンスとリスク制御",
         "headers": [
-          "Risk",
-          "FilixPay Solution"
+          "リスク",
+          "FilixPayのソリューション"
         ],
         "items": [
           [
-            "Fund control gaps",
-            "Unified collection and supervised account pooling — no personal QR codes or off-book pools"
+            "資金管理のギャップ",
+            "統一集金と監督口座への集約 — 個人QRコードや帳簿外プールなし"
           ],
           [
-            "Illegal fund pooling",
-            "Licensed institution split APIs — the group does not hold customer balances in transit"
+            "違法な資金プーリング",
+            "ライセンス機関の分割API — グループは顧客残高を中継保有しない"
           ],
           [
-            "Tax non-compliance",
-            "Acquiring, contract, and invoicing entities stay aligned with automated checks"
+            "税務コンプライアンス違反",
+            "アクワイアリング、契約、請求エンティティを自動チェックで整合"
           ],
           [
-            "Weak internal controls",
-            "Full operation trails, multi-level approval for rule changes, auditable governance actions"
+            "弱い内部統制",
+            "完全な操作証跡、ルール変更の多段階承認、監査可能なガバナンスアクション"
           ],
           [
-            "FX risk",
-            "Cross-border splits connect to trade-service FX filing with transaction evidence retained"
+            "為替リスク",
+            "越境分割を貿易サービスFX申告に接続し、取引証跡を保持"
           ]
         ]
       },
       "portal": {
-        "title": "Enterprise Management Portal",
+        "title": "エンタープライズ管理ポータル",
         "shots": {
           "directory": {
-            "title": "Enterprise Directory",
-            "alt": "Example Enterprise management view listing Example Organization entries",
-            "caption": "Centrally manage all organizations under one enterprise"
+            "title": "エンタープライズディレクトリ",
+            "alt": "Example Organizationエントリを一覧するExample Enterprise管理ビュー",
+            "caption": "ひとつのエンタープライズ配下の全組織を集中管理"
           },
           "switch": {
-            "title": "Organization Switch",
-            "alt": "Switching from Example Enterprise portal into Example Organization operational workspace",
-            "caption": "Seamlessly switch into an organization's operational workspace"
+            "title": "組織切り替え",
+            "alt": "Example EnterpriseポータルからExample Organization運用ワークスペースへの切り替え",
+            "caption": "組織の運用ワークスペースへシームレスに切り替え"
           },
           "audit": {
-            "title": "Governance Audit",
-            "alt": "Example Enterprise governance audit log showing Organization creation and related actions",
-            "caption": "Track governance actions with complete audit history"
+            "title": "ガバナンス監査",
+            "alt": "Organization作成と関連アクションを示すExample Enterpriseガバナンス監査ログ",
+            "caption": "完全な監査履歴でガバナンスアクションを追跡"
           }
         }
       }
     },
     "enterprise": {
-      "title": "Enterprise Global Expansion",
-      "subtitle": "Low-cost entry into global digital payments",
-      "hero_title": "Go Global with Confidence",
-      "hero_desc": "Traditional enterprises can now accept crypto payments and expand globally — without the complexity of building payment infrastructure from scratch."
+      "title": "エンタープライズのグローバル展開",
+      "subtitle": "グローバルデジタル決済への低コスト参入",
+      "hero_title": "自信を持ってグローバルへ",
+      "hero_desc": "従来型企業も、決済インフラをゼロから構築する複雑さなしに、暗号資産決済を受け付け、グローバルに展開できます。"
     },
     "architecture": {
-      "title": "Architecture Overview",
-      "subtitle": "Enterprise-grade distributed payment system architecture",
-      "hero_title": "Built for Scale, Designed for Reliability",
-      "hero_desc": "Microservices architecture on Kubernetes with event-driven processing, ensuring 99.99% uptime and horizontal scalability."
+      "title": "アーキテクチャ概要",
+      "subtitle": "エンタープライズグレードの分散決済システムアーキテクチャ",
+      "hero_title": "スケールのために構築、信頼性のために設計",
+      "hero_desc": "Kubernetes上のマイクロサービスとイベント駆動処理により、99.99%の稼働率と水平スケーラビリティを確保します。"
     },
     "performance": {
-      "badge": "Performance Benchmark",
-      "hero_title": "Create Order API Load Test",
-      "hero_desc": "A stepped k6 load test on the production OpenAPI create-order endpoint, validating stability and latency under concurrent write workloads.",
-      "metrics_title": "Key Metrics",
-      "metrics_subtitle": "Stepped load from 1 to 50 concurrent users with 0% error rate throughout.",
+      "badge": "パフォーマンスベンチマーク",
+      "hero_title": "注文作成APIロードテスト",
+      "hero_desc": "本番OpenAPIの注文作成エンドポイントに対する段階的k6ロードテストで、同時書き込み負荷下の安定性とレイテンシを検証します。",
+      "metrics_title": "主要指標",
+      "metrics_subtitle": "同時ユーザー1〜50の段階負荷で、エラー率0%を維持。",
       "metrics": {
-        "tps": "Order Throughput (TPS)",
-        "success_rate": "Success Rate",
-        "p95": "P95 Latency",
-        "p99": "P99 Latency"
+        "tps": "注文スループット（TPS）",
+        "success_rate": "成功率",
+        "p95": "P95レイテンシ",
+        "p99": "P99レイテンシ"
       },
-      "recommended_limit": "Recommended production rate limit: ~100 TPS (stable capacity × 70%).",
+      "recommended_limit": "推奨本番レート制限：約100 TPS（安定容量×70%）。",
       "capacity": {
-        "title": "Daily Order Capacity Estimate",
-        "subtitle": "Based on an 8-hour business day with a 4-hour peak window.",
-        "intro": "Using the stable throughput from this load test, we estimate how many orders the create-order API can handle in a typical business day.",
-        "assumption_hours": "Business assumption: 8 active hours per day for order creation.",
-        "assumption_peak": "Peak assumption: 4 peak hours at the recommended limit of 100 TPS.",
-        "assumption_off_peak": "Off-peak assumption: the other 4 hours are estimated at 30% of peak, i.e. 30 TPS; a flat 100 TPS for all 8 hours is also provided as a full-rate reference.",
-        "formula": "Formula: orders = TPS × 3,600 seconds × hours.",
-        "highlight_daily": "Recommended Daily Capacity (Peak/Off-Peak Model)",
-        "highlight_daily_desc": "4 peak hours at 100 TPS + 4 off-peak hours at {offPeak} TPS",
-        "highlight_daily_flat": "Full-Rate Daily Reference",
-        "highlight_daily_flat_desc": "All 8 hours at 100 TPS (off-peak also at 100 TPS)",
-        "highlight_peak": "4-Hour Peak Capacity",
-        "highlight_peak_desc": "At the recommended limit of 100 TPS",
-        "tps_mixed": "Peak {peak} / Off-peak {offPeak} TPS",
+        "title": "日間注文容量の見積もり",
+        "subtitle": "ピーク4時間を含む8時間営業日を前提。",
+        "intro": "本ロードテストの安定スループットを用い、典型的な営業日に注文作成APIが処理できる注文数を見積もります。",
+        "assumption_hours": "営業前提：1日あたり注文作成の稼働8時間。",
+        "assumption_peak": "ピーク前提：推奨制限100 TPSでピーク4時間。",
+        "assumption_off_peak": "オフピーク前提：残り4時間はピークの30%、すなわち30 TPSと見積もり。8時間すべて100 TPSのフルレート参照も提示します。",
+        "formula": "計算式：注文数 = TPS × 3,600秒 × 時間。",
+        "highlight_daily": "推奨日間容量（ピーク／オフピークモデル）",
+        "highlight_daily_desc": "ピーク4時間を100 TPS + オフピーク4時間を {offPeak} TPS",
+        "highlight_daily_flat": "フルレート日間参照",
+        "highlight_daily_flat_desc": "8時間すべてを100 TPS（オフピークも100 TPS）",
+        "highlight_peak": "4時間ピーク容量",
+        "highlight_peak_desc": "推奨制限100 TPS時",
+        "tps_mixed": "ピーク {peak} / オフピーク {offPeak} TPS",
         "table": {
-          "scenario": "Scenario",
-          "tps": "Reference TPS",
-          "orders": "Orders Created"
+          "scenario": "シナリオ",
+          "tps": "参照TPS",
+          "orders": "作成注文数"
         },
         "rows": {
-          "peak_limit": "4 peak hours (recommended limit)",
-          "daily_mixed": "8 business hours (peak/off-peak model, recommended)",
-          "daily_flat": "8 business hours (off-peak also at 100 TPS)",
-          "peak_stable": "4 peak hours (stable load-test value)",
-          "daily_full": "8 business hours (full load-test throughput, theoretical max)"
+          "peak_limit": "ピーク4時間（推奨制限）",
+          "daily_mixed": "営業8時間（ピーク／オフピークモデル、推奨）",
+          "daily_flat": "営業8時間（オフピークも100 TPS）",
+          "peak_stable": "ピーク4時間（安定ロードテスト値）",
+          "daily_full": "営業8時間（フルロードテストスループット、理論最大）"
         },
-        "disclaimer": "These figures reflect create-order API capacity on a single tested deployment. Payment, refund, query, and other APIs are excluded. Production planning should also consider peak factors, redundancy, and monitoring."
+        "disclaimer": "これらの数値は、単一のテスト対象デプロイにおける注文作成API容量を反映します。決済、返金、照会、その他APIは含まれません。本番計画ではピーク係数、冗長性、監視も考慮してください。"
       },
-      "methodology_title": "Test Methodology",
+      "methodology_title": "テスト手法",
       "methodology": {
-        "item1": "Endpoint: POST /openapi/v1/orders with Client Credentials authentication",
-        "item2": "Scenario: minimal order payload with required fields only; no payment channel calls",
-        "item3": "Tool: Grafana k6 stepped load up to 50 VUs for 19 minutes 30 seconds",
-        "item4": "Data: test orders prefixed with LOADTEST- for identification and cleanup"
+        "item1": "エンドポイント：Client Credentials認証による POST /openapi/v1/orders",
+        "item2": "シナリオ：必須フィールドのみの最小注文ペイロード。決済チャネル呼び出しなし",
+        "item3": "ツール：Grafana k6 段階負荷、最大50 VU、19分30秒",
+        "item4": "データ：識別とクリーンアップのため LOADTEST- 接頭辞のテスト注文"
       },
       "meta": {
-        "interface": "Endpoint",
-        "tool": "Load Test Tool",
-        "duration": "Duration",
-        "orders": "Orders Created"
+        "interface": "エンドポイント",
+        "tool": "ロードテストツール",
+        "duration": "所要時間",
+        "orders": "作成注文数"
       },
-      "evidence_title": "Test Evidence",
-      "evidence_subtitle": "k6 summary output and system resource monitoring captured during the load test.",
-      "screenshot_summary_alt": "Final k6 load test summary",
-      "screenshot_summary_caption": "Figure 1: k6 summary — 165,229 orders created at 141 TPS, P95 353 ms, P99 404 ms, 0% errors.",
-      "screenshot_50vu_alt": "System monitoring at 50 concurrent users",
-      "screenshot_50vu_caption": "Figure 2: 50 VU peak — Java and MySQL are the main CPU consumers; overall CPU ~61%, service remained available.",
-      "screenshot_20vu_alt": "System monitoring at 20 concurrent users",
-      "screenshot_20vu_caption": "Figure 3: 20 VU stage — load increases progressively with application and database under shared pressure.",
-      "conclusion_title": "Conclusion",
-      "conclusion_body": "The FilixPay OpenAPI create-order endpoint remained stable at 50 concurrent users with 100% success rate and 404 ms P99 latency, providing a credible baseline for capacity planning and integration expectations.",
-      "cta_title": "Need higher concurrency or private benchmarking?",
-      "cta_desc": "Contact us for tailored performance assessment and deployment options."
+      "evidence_title": "テスト証跡",
+      "evidence_subtitle": "ロードテスト中に取得したk6サマリー出力とシステムリソース監視。",
+      "screenshot_summary_alt": "最終k6ロードテストサマリー",
+      "screenshot_summary_caption": "図1：k6サマリー — 165,229件の注文を141 TPSで作成、P95 353 ms、P99 404 ms、エラー0%。",
+      "screenshot_50vu_alt": "同時ユーザー50時のシステム監視",
+      "screenshot_50vu_caption": "図2：50 VUピーク — JavaとMySQLが主なCPU消費。全体CPU約61%、サービスは利用可能を維持。",
+      "screenshot_20vu_alt": "同時ユーザー20時のシステム監視",
+      "screenshot_20vu_caption": "図3：20 VU段階 — 負荷が段階的に増加し、アプリケーションとデータベースが共有圧力下。",
+      "conclusion_title": "結論",
+      "conclusion_body": "FilixPay OpenAPIの注文作成エンドポイントは、同時ユーザー50で安定し、成功率100%、P99レイテンシ404 msを維持。容量計画と連携期待値の信頼できるベースラインを提供します。",
+      "cta_title": "より高い同時実行やプライベートベンチマークが必要ですか？",
+      "cta_desc": "カスタムパフォーマンス評価とデプロイオプションについてお問い合わせください。"
     },
     "identity": {
-      "title": "Identity & Auth",
-      "hero_title": "Enterprise Identity: Building a Financial-Grade Security Foundation with Keycloak",
-      "hero_desc": "In payment systems, identity authentication is not only the first door of user experience but also the core defense line for fund security and compliant operations. We adopt Keycloak - an open-source Identity and Access Management (IAM) platform led by Red Hat - as a unified identity authentication engine, providing financial-grade security, global compliance support, and capacity for tens of millions of users for your payment business.",
-      "why_keycloak_title": "✅ Why Keycloak? — Verified by Top Global Institutions",
-      "why_keycloak_desc": "Keycloak has been deeply adopted by numerous industries with high security requirements, including finance, government, telecommunications, and cloud computing:",
+      "title": "Identityと認証",
+      "hero_title": "エンタープライズIdentity：Keycloakで金融グレードのセキュリティ基盤を構築",
+      "hero_desc": "決済システムにおいて、本人認証はユーザー体験の最初の扉であると同時に、資金セキュリティとコンプライアントな運用の核心防衛線です。当社はRed Hat主導のオープンソースIdentity and Access Management（IAM）プラットフォームであるKeycloakを統一認証エンジンとして採用し、金融グレードのセキュリティ、グローバルコンプライアンス対応、数千万人規模のユーザー容量を決済ビジネスに提供します。",
+      "why_keycloak_title": "✅ なぜKeycloakか？ — 世界トップ機関に検証された実績",
+      "why_keycloak_desc": "Keycloakは金融、政府、通信、クラウドコンピューティングなど、高いセキュリティ要件を持つ多くの業界で深く採用されています：",
       "cases": [
         {
           "name": "Hitachi",
-          "desc": "Built an authorization server for Japanese banks that meets Financial-grade API (FAPI) standards, passing 700+ consistency tests to meet the most stringent open banking compliance requirements."
+          "desc": "日本の銀行向けにFinancial-grade API（FAPI）基準を満たす認可サーバーを構築。700以上の整合性テストに合格し、最も厳格なオープンバンキングコンプライアンス要件に対応。"
         },
         {
           "name": "Austrian Federal Computing Centre (BRZ)",
-          "desc": "As a technology partner of the Austrian government, it supports unified authentication for 2 million+ users and 130+ public services, operating stably for many years."
+          "desc": "オーストリア政府の技術パートナーとして、200万以上のユーザーと130以上の公共サービス向け統一認証を支え、長年安定運用。"
         },
         {
           "name": "Infosys",
-          "desc": "Built an identity platform for a large Japanese pharmaceutical group, managing over 2 million users and supporting 4000+ pharmacists logging in safely daily in 750+ pharmacies."
+          "desc": "大規模な日本の製薬グループ向けにIdentityプラットフォームを構築。200万以上のユーザーを管理し、750以上の薬局で毎日4000人以上の薬剤師の安全なログインをサポート。"
         },
         {
           "name": "VMware (Broadcom)",
-          "desc": "Deeply integrated Keycloak into its Telco Cloud Operations platform to achieve automated management of users, roles, and permissions."
+          "desc": "Telco Cloud OperationsプラットフォームにKeycloakを深く統合し、ユーザー・ロール・権限の自動管理を実現。"
         }
       ],
-      "cases_conclusion": "These cases prove: Keycloak can not only handle high concurrency and large-scale user pressure but also meet the compliance thresholds of highly regulated industries such as finance and government.",
-      "features_title": "🔐 Security Capabilities Tailored for Payment Scenarios",
-      "feature_1_title": "1. Financial-Grade Protocol Support",
-      "feature_1_desc": "Full implementation of OpenID Connect, OAuth 2.0, SAML 2.0; native support for FAPI (Financial-grade API) security specifications to meet PSD2 and open banking compliance; support for PKCE, MTLS, JWT signature verification, and other advanced security mechanisms.",
-      "feature_2_title": "2. Strong Authentication & Access Control",
-      "feature_2_desc": "Multi-Factor Authentication (MFA): SMS, TOTP, WebAuthn (FIDO2); Role-Based Access Control (RBAC) and fine-grained permission policies; session management: automatic timeout, forced logout, and device binding.",
-      "feature_3_title": "3. Compliance-Ready Architecture",
-      "feature_3_desc": "GDPR Ready: Data minimization, consent management, data export/deletion; PCI DSS Friendly: No contact with cardholder data (PAN), serves only as an authentication layer, reducing compliance scope; compatible with multi-level protection scheme (MLPS) requirements.",
-      "feature_4_title": "4. High Availability & Scalability",
-      "feature_4_desc": "Supports cluster deployment, database sharding, and cache optimization; proven in multiple national platforms to handle millions of daily active users; private deployment ensures data sovereignty and network isolation.",
-      "integration_title": "🛠️ Seamlessly Integrate with Your Payment System",
-      "integration_desc": "Keycloak provides standardized interfaces for easy integration with:",
+      "cases_conclusion": "これらの事例は、Keycloakが高同時実行と大規模ユーザー負荷を処理できるだけでなく、金融・政府など高度に規制された業界のコンプライアンス閾値も満たせることを示しています。",
+      "features_title": "🔐 決済シナリオ向けに調整されたセキュリティ機能",
+      "feature_1_title": "1. 金融グレードプロトコルサポート",
+      "feature_1_desc": "OpenID Connect、OAuth 2.0、SAML 2.0を完全実装。FAPI（Financial-grade API）セキュリティ仕様をネイティブサポートし、PSD2およびオープンバンキングコンプライアンスに対応。PKCE、MTLS、JWT署名検証などの高度なセキュリティ機構をサポート。",
+      "feature_2_title": "2. 強力な認証とアクセス制御",
+      "feature_2_desc": "多要素認証（MFA）：SMS、TOTP、WebAuthn（FIDO2）。ロールベースアクセス制御（RBAC）と細粒度権限ポリシー。セッション管理：自動タイムアウト、強制ログアウト、デバイスバインド。",
+      "feature_3_title": "3. コンプライアンス対応アーキテクチャ",
+      "feature_3_desc": "GDPR Ready：データ最小化、同意管理、データエクスポート／削除。PCI DSS Friendly：カード会員データ（PAN）に接触せず、認証レイヤーのみとして機能しコンプライアンス範囲を縮小。多層防御スキーム（MLPS）要件にも対応可能。",
+      "feature_4_title": "4. 高可用性とスケーラビリティ",
+      "feature_4_desc": "クラスターデプロイ、データベースシャーディング、キャッシュ最適化をサポート。複数の国家プラットフォームで数百万の日次アクティブユーザー処理実績。プライベートデプロイによりデータ主権とネットワーク分離を確保。",
+      "integration_title": "🛠️ 決済システムとシームレスに連携",
+      "integration_desc": "Keycloakは標準化されたインターフェースを提供し、以下との連携が容易です：",
       "integration_items": [
-        "Merchant Backend Management System (SSO)",
-        "Payment Gateway Operator Authentication",
-        "Partner API Access Authorization",
-        "Internal Staff Permission Management Platform"
+        "マーチャントバックエンド管理システム（SSO）",
+        "決済ゲートウェイオペレーター認証",
+        "パートナーAPIアクセス認可",
+        "社内スタッフ権限管理プラットフォーム"
       ],
-      "integration_footer": "Also supports federation with existing identity sources like LDAP, Active Directory, and social accounts for a smooth migration without burden.",
-      "choice_title": "💡 Our Choice: Open Source + Enterprise-Grade Protection",
-      "choice_desc": "Keycloak is a Red Hat-supported open-source project, giving you:",
-      "choice_item_1": "Cost advantage with zero licensing fees",
-      "choice_item_2": "Technical ecosystem with active community and comprehensive documentation",
-      "choice_item_3": "Enterprise SLA support options with Red Hat Single Sign-On (Commercial version)",
-      "cta_quote": "\"We chose Keycloak not just because it's free, but because it's been verified by global financial and government institutions—it's an identity engine truly capable of carrying the security of payment systems.\"",
-      "cta_desc": "Experience now: Our payment platform has a built-in Keycloak authentication system, supporting rapid connection to your existing IAM system, helping you achieve a perfect balance between security and efficiency."
+      "integration_footer": "LDAP、Active Directory、ソーシャルアカウントなど既存Identityソースとのフェデレーションもサポートし、負担のないスムーズな移行が可能です。",
+      "choice_title": "💡 私たちの選択：オープンソース＋エンタープライズグレード保護",
+      "choice_desc": "KeycloakはRed Hatがサポートするオープンソースプロジェクトであり、次を提供します：",
+      "choice_item_1": "ライセンス費用ゼロのコスト優位性",
+      "choice_item_2": "活発なコミュニティと充実したドキュメントを持つ技術エコシステム",
+      "choice_item_3": "Red Hat Single Sign-On（商用版）によるエンタープライズSLAサポートオプション",
+      "cta_quote": "「Keycloakを選んだのは無料だからだけでなく、グローバルな金融・政府機関に検証され、決済システムのセキュリティを本当に担えるIdentityエンジンだからです。」",
+      "cta_desc": "今すぐ体験：当社の決済プラットフォームにはKeycloak認証システムが組み込まれており、既存IAMシステムへの迅速な接続をサポート。セキュリティと効率の最適なバランスを実現します。"
     },
     "blockchain": {
-      "title": "Blockchain Integration",
-      "subtitle": "Multi-chain adaption and cross-chain interoperability",
-      "hero_title": "Connect Every Chain, Trust Every Transaction",
-      "hero_desc": "Native support for major consortium blockchains with cross-chain verification and compliance-ready audit trails.",
+      "title": "ブロックチェーン連携",
+      "subtitle": "マルチチェーン適応とクロスチェーン相互運用",
+      "hero_title": "あらゆるチェーンをつなぎ、あらゆる取引を信頼",
+      "hero_desc": "主要コンソーシアムブロックチェーンのネイティブサポート、クロスチェーン検証、コンプライアンス対応の監査証跡。",
       "deprecated": {
-        "badge": "Deprecated",
-        "title": "This technology direction is no longer FilixPay's product positioning",
-        "desc": "FilixPay focuses on enterprise payment infrastructure — payment connectivity, transaction management, settlement, and merchant operations.",
-        "extra": "This page is retained for historical reference and is no longer indexed as a core FilixPay capability.",
-        "notice_title": "Recommended next step",
-        "notice_body": "Learn how FilixPay helps enterprises build and operate payment infrastructure.",
-        "cta": "Explore Payment Platform",
-        "cta_title": "Continue with payment infrastructure",
-        "cta_desc": "See FilixPay's enterprise payment platform capabilities."
+        "badge": "非推奨",
+        "title": "この技術方向はFilixPayのプロダクトポジショニングではなくなりました",
+        "desc": "FilixPayはエンタープライズ決済インフラ—決済接続、取引管理、精算、マーチャント運用—に注力しています。",
+        "extra": "このページは歴史的参照として残されており、FilixPayのコア機能としてはインデックスされません。",
+        "notice_title": "推奨される次のステップ",
+        "notice_body": "FilixPayが企業の決済インフラ構築・運用をどう支援するかをご覧ください。",
+        "cta": "決済プラットフォームを探る",
+        "cta_title": "決済インフラを続ける",
+        "cta_desc": "FilixPayのエンタープライズ決済プラットフォーム機能をご覧ください。"
       }
     },
     "case_studies": {
-      "title": "Case Studies",
-      "subtitle": "See how businesses around the world are succeeding with FilixPay",
+      "title": "導入事例",
+      "subtitle": "世界中のビジネスがFilixPayで成功する様子をご覧ください",
       "items": [
         {
-          "title": "MicSelect - Global Cross-Border E-Commerce Payment Integration",
-          "desc": "A next-generation global e-commerce payment system built on Saleor + FilixPay",
+          "title": "MicSelect - グローバル越境eコマース決済連携",
+          "desc": "Saleor + FilixPayで構築された次世代グローバルeコマース決済システム",
           "link": "/resources/case-studies/micselect"
         }
       ],
       "micselect": {
-        "badge": "Case Study",
-        "title": "MicSelect - Global Cross-Border E-Commerce Payment Integration",
-        "subtitle": "A next-generation global e-commerce payment system built on Saleor + FilixPay",
-        "background_eyebrow": "Client Background",
-        "background_text": "MicSelect is a curated cross-border e-commerce platform featuring quality China-made products, focused on premium supply chains and an international shopping experience. Built on the Saleor open-source e-commerce framework and Next.js, MicSelect is dedicated to delivering quality Chinese-manufactured goods with a seamless online shopping experience for global consumers.",
-        "background_link_text": "Visit MicSelect →",
-        "background_solutions_link_text": "View MicSelect Solutions →",
-        "challenges_eyebrow": "Challenges",
+        "badge": "導入事例",
+        "title": "MicSelect - グローバル越境eコマース決済連携",
+        "subtitle": "Saleor + FilixPayで構築された次世代グローバルeコマース決済システム",
+        "background_eyebrow": "クライアント背景",
+        "background_text": "MicSelectは、中国製の高品質商品を扱うキュレーション型越境eコマースプラットフォームで、プレミアムサプライチェーンと国際的なショッピング体験に注力しています。SaleorオープンソースeコマースフレームワークとNext.js上に構築され、グローバル消費者にシームレスなオンライン体験で高品質な中国製商品を届けます。",
+        "background_link_text": "MicSelectを訪問 →",
+        "background_solutions_link_text": "MicSelectソリューションを見る →",
+        "challenges_eyebrow": "課題",
         "challenges_items": [
-          "Unified integration of multiple payment channels",
-          "Optimizing payment success rates for global users",
-          "Complex cross-border order reconciliation",
-          "Insufficient payment extensibility of the e-commerce platform",
-          "Webhook and asynchronous payment status synchronization"
+          "複数決済チャネルの統一連携",
+          "グローバルユーザー向けの決済成功率最適化",
+          "複雑な越境注文照合",
+          "eコマースプラットフォームの決済拡張性不足",
+          "Webhookと非同期決済ステータス同期"
         ],
-        "solution_eyebrow": "Solution",
-        "solution_intro": "FilixPay provided MicSelect with a complete payment infrastructure:",
+        "solution_eyebrow": "ソリューション",
+        "solution_intro": "FilixPayはMicSelectに完全な決済インフラを提供しました：",
         "solution_items": [
-          "Aggregated international payment channels including Stripe and PayPal",
-          "Unified checkout and payment routing",
-          "Asynchronous payment notifications via Webhooks",
-          "Automated payment reconciliation and settlement",
-          "OpenAPI merchant platform",
-          "Multi-environment payment sandbox capabilities",
-          "Deep integration with Saleor"
+          "StripeやPayPalを含む国際決済チャネルの集約",
+          "統一チェックアウトと決済ルーティング",
+          "Webhookによる非同期決済通知",
+          "自動決済照合と精算",
+          "OpenAPIマーチャントプラットフォーム",
+          "マルチ環境決済サンドボックス機能",
+          "Saleorとの深い連携"
         ],
-        "architecture_eyebrow": "Architecture",
+        "architecture_eyebrow": "アーキテクチャ",
         "arch_saleor": "Saleor",
-        "arch_saleor_label": "E-Commerce Platform",
+        "arch_saleor_label": "eコマースプラットフォーム",
         "arch_payment_app": "FilixPay Payment App",
-        "arch_payment_app_label": "Payment Application",
+        "arch_payment_app_label": "決済アプリケーション",
         "arch_gateway": "FilixPay Gateway",
-        "arch_gateway_label": "Payment Gateway",
-        "arch_channels_label": "Payment Channels",
-        "results_eyebrow": "Results",
+        "arch_gateway_label": "決済ゲートウェイ",
+        "arch_channels_label": "決済チャネル",
+        "results_eyebrow": "成果",
         "results_items": [
-          "Successfully achieved a global payment closed loop",
-          "Enhanced payment system scalability",
-          "Reduced payment channel integration complexity",
-          "Enabled automated order status synchronization",
-          "Delivered unified payment operations capability"
+          "グローバル決済のクローズドループを実現",
+          "決済システムの拡張性を向上",
+          "決済チャネル連携の複雑さを低減",
+          "注文ステータスの自動同期を実現",
+          "統一された決済運用能力を提供"
         ],
-        "cta_title": "Start Integrating FilixPay",
-        "cta_desc": "Build global payment capabilities like MicSelect. Start integrating with FilixPay today."
+        "cta_title": "FilixPay連携を始める",
+        "cta_desc": "MicSelectのようにグローバル決済能力を構築。今日からFilixPayとの連携を始めましょう。"
       }
     },
     "compliance": {
-      "title": "Compliance Guide",
-      "subtitle": "Navigate global payment regulations with confidence",
-      "hero_title": "Compliance Made Simple",
-      "hero_desc": "Comprehensive guides covering GDPR, PCI-DSS, FATF Travel Rule, and regional payment regulations to keep your business compliant."
+      "title": "コンプライアンスガイド",
+      "subtitle": "自信を持ってグローバル決済規制に対応",
+      "hero_title": "コンプライアンスをシンプルに",
+      "hero_desc": "GDPR、PCI-DSS、FATF Travel Rule、地域の決済規制をカバーする包括的ガイドで、ビジネスのコンプライアンスを維持します。"
     },
     "blog": {
-      "title": "Blog & Articles",
-      "subtitle": "Technical insights, industry analysis, and product updates",
+      "title": "ブログ＆記事",
+      "subtitle": "技術インサイト、業界分析、プロダクトアップデート",
       "posts": [
         {
-          "title": "FilixPay Checkout - Independent Domain Deployment (Demo)",
-          "desc": "React-based independent checkout interface supporting multi-chain adaption and private domain deployment.",
+          "title": "FilixPay Checkout - 独立ドメインデプロイ（デモ）",
+          "desc": "マルチチェーン適応とプライベートドメインデプロイに対応する、Reactベースの独立チェックアウトインターフェース。",
           "link": "https://github.com/filixpay/filix-checkout"
         },
         {
-          "title": "FilixPay Merchant Center - Modern Merchant Dashboard",
-          "desc": "A merchant management system built with Next.js and Shadcn UI, featuring multi-merchant management, fund accounts, withdrawals, and access control.",
+          "title": "FilixPayマーチャントセンター - モダンなマーチャントダッシュボード",
+          "desc": "Next.jsとShadcn UIで構築されたマーチャント管理システム。マルチマーチャント管理、資金口座、出金、アクセス制御を備えます。",
           "link": "https://github.com/filixpay/filix-merchant"
         }
       ]
     },
     "downloads": {
-      "title": "Download Center",
-      "subtitle": "Deployment documentation, agreement samples, and technical resources",
+      "title": "ダウンロードセンター",
+      "subtitle": "デプロイドキュメント、契約サンプル、技術リソース",
       "items": {
         "deploy_doc": {
-          "title": "Deployment Guide",
-          "desc": "Complete guide for private deployment setup"
+          "title": "デプロイガイド",
+          "desc": "プライベートデプロイセットアップの完全ガイド"
         },
         "license_sample": {
-          "title": "License Agreement Sample",
-          "desc": "Source code license agreement template"
+          "title": "ライセンス契約サンプル",
+          "desc": "ソースコードライセンス契約テンプレート"
         },
         "api_spec": {
-          "title": "API Specification",
-          "desc": "OpenAPI/Swagger specification file"
+          "title": "API仕様",
+          "desc": "OpenAPI/Swagger仕様ファイル"
         }
       }
     },
     "common": {
-      "learn_more": "Learn More",
-      "get_started": "Get Started",
-      "contact_sales": "Contact Sales",
-      "coming_soon": "Coming Soon",
-      "back_home": "Back to Home",
-      "key_features": "Key Features",
-      "why_choose": "Why Choose This Solution",
-      "use_cases": "Use Cases",
-      "consequences": "Consequences"
+      "learn_more": "詳しく見る",
+      "get_started": "始める",
+      "contact_sales": "営業に問い合わせる",
+      "coming_soon": "近日公開",
+      "back_home": "ホームに戻る",
+      "key_features": "主な機能",
+      "why_choose": "このソリューションを選ぶ理由",
+      "use_cases": "ユースケース",
+      "consequences": "影響"
     },
     "private_deployment": {
-      "badge": "ENTERPRISE DEPLOYMENT",
-      "hero_title": "Full Stack Control · Enterprise Grade · Data Sovereignty",
-      "specs_title": "Deployment Specifications",
-      "specs_server_title": "Server Requirements",
-      "specs_stack_title": "Technology Stack",
-      "specs_col_item": "Item",
-      "specs_col_requirement": "Requirement",
+      "badge": "エンタープライズデプロイ",
+      "hero_title": "フルスタック制御 · エンタープライズグレード · データ主権",
+      "specs_title": "デプロイ仕様",
+      "specs_server_title": "サーバー要件",
+      "specs_stack_title": "テクノロジースタック",
+      "specs_col_item": "項目",
+      "specs_col_requirement": "要件",
       "specs_items": {
         "os": "OS",
         "os_value": "Linux (Ubuntu 22.04+)",
         "cpu": "CPU",
-        "cpu_value": "4 Cores",
-        "memory": "Memory",
+        "cpu_value": "4コア",
+        "memory": "メモリ",
         "memory_value": "≥ 8 GB",
-        "disk": "Disk",
+        "disk": "ディスク",
         "disk_value": "≥ 20 GB",
         "docker": "Docker",
         "docker_value": "20.10+",
@@ -6306,85 +6306,85 @@
       "stack": {
         "postgres": {
           "name": "PostgreSQL 15–18",
-          "desc": "Core Database"
+          "desc": "コアデータベース"
         },
         "redis": {
           "name": "Redis 7.2",
-          "desc": "Cache Service"
+          "desc": "キャッシュサービス"
         },
         "keycloak": {
           "name": "Keycloak 26.0",
-          "desc": "Identity & Auth"
+          "desc": "Identityと認証"
         },
         "compose": {
           "name": "Docker Compose",
-          "desc": "Orchestration"
+          "desc": "オーケストレーション"
         }
       },
-      "architecture_label": "System Topology",
-      "pricing_section_title": "Investment & Pricing",
-      "pricing_intro": "Transparent one-time licensing with complete system asset delivery — build owned payment infrastructure with confidence.",
-      "pricing_badge": "Enterprise License",
-      "pricing_onetime": "One-time Fee",
-      "pricing_included_title": "What's Included",
+      "architecture_label": "システムトポロジ",
+      "pricing_section_title": "投資と価格",
+      "pricing_intro": "透明な一括ライセンスと完全なシステム資産の納品 — 自信を持って自社所有の決済インフラを構築できます。",
+      "pricing_badge": "エンタープライズライセンス",
+      "pricing_onetime": "一括料金",
+      "pricing_included_title": "含まれるもの",
       "pricing_included": [
-        "Complete source code (merchant center, payment gateway, settlement engine)",
-        "Deployment documentation, database scripts, API specifications",
-        "One-time deployment support and technical handover",
-        "One year free professional maintenance"
+        "完全なソースコード（マーチャントセンター、決済ゲートウェイ、精算エンジン）",
+        "デプロイドキュメント、データベーススクリプト、API仕様",
+        "一回のデプロイサポートと技術引き渡し",
+        "1年間無料のプロフェッショナル保守"
       ],
-      "pricing_maintenance_label": "Annual Maintenance (from Year 2)",
-      "pricing_maintenance_value": "10% of license fee (2,800 USD/year)",
-      "pricing_cta": "Contact Sales for Details",
-      "licensing_title": "Source Code Licensing",
-      "final_cta_title": "Ready to deploy your own payment infrastructure?",
-      "final_cta_desc": "Contact our enterprise team for custom deployment planning and licensing details.",
-      "final_cta_primary": "Contact Sales",
-      "final_cta_docs": "View Deployment Docs",
-      "final_cta_download": "Download License Agreement",
-      "view_deployment_docs": "View Deployment Docs",
+      "pricing_maintenance_label": "年間保守（2年目以降）",
+      "pricing_maintenance_value": "ライセンス料の10%（2,800 USD/年）",
+      "pricing_cta": "詳細は営業にお問い合わせ",
+      "licensing_title": "ソースコードライセンス",
+      "final_cta_title": "自社の決済インフラをデプロイする準備はできましたか？",
+      "final_cta_desc": "カスタムデプロイ計画とライセンス詳細について、エンタープライズチームにお問い合わせください。",
+      "final_cta_primary": "営業に問い合わせる",
+      "final_cta_docs": "デプロイドキュメントを見る",
+      "final_cta_download": "ライセンス契約をダウンロード",
+      "view_deployment_docs": "デプロイドキュメントを見る",
       "deployment_comparison": {
-        "title": "Self-Hosted Checkout vs. Full Private Deployment",
-        "desc": "FilixPay offers two deployment paths with different scope and investment. Choose based on whether you need only a branded checkout page or a complete on-premise payment platform.",
+        "title": "セルフホスト型チェックアウト vs. フルプライベートデプロイ",
+        "desc": "FilixPayは範囲と投資が異なる2つのデプロイパスを提供します。ブランド管理されたチェックアウトページのみか、完全なオンプレミス決済プラットフォームかが選択の基準です。",
         "columns": {
-          "dimension": "Dimension",
-          "checkout": "Self-Hosted Checkout",
-          "full_stack": "Full Private Deployment"
+          "dimension": "観点",
+          "checkout": "セルフホスト型チェックアウト",
+          "full_stack": "フルプライベートデプロイ"
         },
         "rows": {
           "scope": {
-            "label": "What you deploy",
-            "checkout": "Open-source checkout frontend + BFF proxy (filix-checkout)",
-            "full_stack": "Complete FilixPay stack: merchant center, payment gateway, settlement engine"
+            "label": "デプロイするもの",
+            "checkout": "オープンソースのチェックアウトフロントエンド + BFFプロキシ（filix-checkout）",
+            "full_stack": "完全なFilixPayスタック：マーチャントセンター、決済ゲートウェイ、精算エンジン"
           },
           "audience": {
-            "label": "Best for",
-            "checkout": "Merchants who want checkout on their own domain with minimal ops",
-            "full_stack": "Banks, payment providers, and enterprises requiring full data sovereignty"
+            "label": "最適な対象",
+            "checkout": "最小限の運用で自社ドメインにチェックアウトを置きたいマーチャント",
+            "full_stack": "完全なデータ主権を求める銀行、決済プロバイダー、エンタープライズ"
           },
           "infrastructure": {
-            "label": "Infrastructure",
-            "checkout": "Single Docker container; optional Nginx/Caddy reverse proxy",
-            "full_stack": "PostgreSQL, Redis, Keycloak, Docker Compose cluster"
+            "label": "インフラ",
+            "checkout": "単一Dockerコンテナ。任意でNginx/Caddyリバースプロキシ",
+            "full_stack": "PostgreSQL、Redis、Keycloak、Docker Composeクラスター"
           },
           "licensing": {
-            "label": "Licensing",
-            "checkout": "Apache-2.0 open source; free to self-host",
-            "full_stack": "Enterprise source license with one-time fee and maintenance"
+            "label": "ライセンス",
+            "checkout": "Apache-2.0オープンソース。セルフホスト無料",
+            "full_stack": "一括料金と保守付きのエンタープライズソースライセンス"
           },
           "complexity": {
-            "label": "Setup effort",
-            "checkout": "Hours—env file + docker pull + HTTPS domain",
-            "full_stack": "Days to weeks—full stack deployment and handover"
+            "label": "セットアップ工数",
+            "checkout": "数時間—環境ファイル + docker pull + HTTPSドメイン",
+            "full_stack": "数日〜数週間—フルスタックデプロイと引き渡し"
           },
           "when_to_choose": {
-            "label": "When to choose",
-            "checkout": "Brand-controlled checkout URL; FilixPay SaaS for everything else",
-            "full_stack": "All payment data and systems must run inside your network"
+            "label": "選ぶタイミング",
+            "checkout": "ブランド管理されたチェックアウトURL。その他はFilixPay SaaS",
+            "full_stack": "すべての決済データとシステムを自社ネットワーク内で運用する必要がある場合"
           }
         },
-        "checkout_cta": "View Checkout Deployment Guide",
-        "merchant_center_cta": "Merchant Center Overview"
+        "checkout_cta": "チェックアウトデプロイガイドを見る",
+        "merchant_center_cta": "マーチャントセンター概要"
       }
     }
   },
