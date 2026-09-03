@@ -13,6 +13,7 @@ import {
     isTrialMerchant,
     resolveMerchantTier,
 } from "@/lib/merchant/merchant-tier";
+import { moneyExternalAccountsPath } from "@/lib/money/external-accounts-redirect";
 import styles from "./profile-page.module.css";
 
 function alreadyMasked(value: string): boolean {
@@ -224,7 +225,7 @@ export default function MerchantProfilePage() {
 
     const emailLabel = maskEmail(detail?.email);
     const phoneLabel = maskPhone(displayMobile);
-    const bankAccountsHref = `/${locale}/dashboard/bank-accounts`;
+    const bankAccountsHref = moneyExternalAccountsPath(locale);
 
     const accountOpeningLabel = localizedEnum(
         t,

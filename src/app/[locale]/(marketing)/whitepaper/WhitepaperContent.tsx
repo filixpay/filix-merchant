@@ -274,20 +274,20 @@ export default function WhitepaperContent() {
                         <h2 id="s4">四、资金管理（Funds Management）</h2>
                         <blockquote>仅在平台结算模式下展示</blockquote>
 
-                        <h3>4.1 <LocalizedLink href="/dashboard/balance">账户余额</LocalizedLink></h3>
+                        <h3>4.1 <LocalizedLink href="/dashboard/money/balance">账户余额</LocalizedLink></h3>
                         <p>可用余额 / 冻结金额 / 总余额三维视图。收支明细表含交易时间、业务类型、变动金额、变动前后余额、关联业务单号（<code>businessId</code>）。</p>
 
-                        <h3>4.2 <LocalizedLink href="/dashboard/deposits">充值记录</LocalizedLink></h3>
+                        <h3>4.2 <LocalizedLink href="/dashboard/money/money-in">资金入账</LocalizedLink></h3>
                         <p>查看充值历史，支持一键发起充值指令。</p>
 
-                        <h3>4.3 <LocalizedLink href="/dashboard/payouts">提现记录</LocalizedLink></h3>
+                        <h3>4.3 <LocalizedLink href="/dashboard/money/payouts">出金记录</LocalizedLink></h3>
                         <ul>
                             <li><strong>收款账户联动</strong>：自动加载已配置的<LocalizedLink href="/dashboard/money/external-accounts">外部银行账户</LocalizedLink>（须显式选择，无主账户兜底）</li>
                             <li><strong>余额上限校验</strong>：提现金额不得超过可用余额</li>
                             <li><strong>交易密码保护</strong>：须输入 6 位数字<LocalizedLink href="/dashboard/security-settings/transaction-password">交易密码</LocalizedLink></li>
                         </ul>
 
-                        <h3>4.4 <LocalizedLink href="/dashboard/transfer-records">转账记录</LocalizedLink> / <LocalizedLink href="/dashboard/payout-records">代付记录</LocalizedLink></h3>
+                        <h3>4.4 <LocalizedLink href="/dashboard/money/transfers">转账记录</LocalizedLink> / <LocalizedLink href="/dashboard/money/payouts">出金记录</LocalizedLink></h3>
                         <p>内部转账支持批量添加收款方，代付记录追踪每笔代付明细。</p>
 
                         <h3>4.5 实时订单结算（Instant Order-level Settlement）</h3>
@@ -316,10 +316,10 @@ export default function WhitepaperContent() {
                             </tbody>
                         </table>
 
-                        <h3>5.2 <LocalizedLink href="/dashboard/credit/adjustment-records">额度调整记录</LocalizedLink></h3>
+                        <h3>5.2 <LocalizedLink href="/dashboard/credit/limit">额度调整记录</LocalizedLink></h3>
                         <p>完整记录操作人、调整前/后额度、调整金额及时间戳。</p>
 
-                        <h3>5.3 <LocalizedLink href="/dashboard/credit/transactions">信用交易流水</LocalizedLink></h3>
+                        <h3>5.3 <LocalizedLink href="/dashboard/credit/limit">信用交易流水</LocalizedLink></h3>
                         <table>
                             <thead><tr><th>交易类型</th><th>说明</th></tr></thead>
                             <tbody>
@@ -336,8 +336,8 @@ export default function WhitepaperContent() {
                         <h2 id="s6">六、我的信用（My Credit）</h2>
                         <ul>
                             <li><LocalizedLink href="/dashboard/member-credit/available-credit"><strong>可用额度</strong></LocalizedLink>：查看各授信方分配的总额度、已用额度、剩余可用</li>
-                            <li><LocalizedLink href="/dashboard/member-credit/adjustment-history"><strong>额度变动记录</strong></LocalizedLink>：历次调整的变动前后对比</li>
-                            <li><LocalizedLink href="/dashboard/member-credit/payment-history"><strong>信用支付记录</strong></LocalizedLink>：信用额度完成的支付/退款/还款明细</li>
+                            <li><LocalizedLink href="/dashboard/member-credit/available-credit"><strong>额度变动记录</strong></LocalizedLink>：历次调整的变动前后对比（额度详情抽屉）</li>
+                            <li><LocalizedLink href="/dashboard/member-credit/available-credit"><strong>信用支付记录</strong></LocalizedLink>：信用额度完成的支付/退款/还款明细（额度详情抽屉）</li>
                         </ul>
 
                         <hr />
@@ -388,8 +388,7 @@ export default function WhitepaperContent() {
                         <h2 id="s11">十一、代发管理（Payout Management）</h2>
                         <blockquote>仅向平台商户开放</blockquote>
                         <ul>
-                            <li><LocalizedLink href="/dashboard/payouts/audit"><strong>代付审核</strong></LocalizedLink>：第一级审核，决策 APPROVED / REJECTED</li>
-                            <li><LocalizedLink href="/dashboard/payouts/review"><strong>代付复核</strong></LocalizedLink>：第二级复核，独立于审核环节，双重校验后方可执行</li>
+                            <li><LocalizedLink href="/dashboard/money/payouts"><strong>出金管理</strong></LocalizedLink>：查看与处理出金申请、状态与收款账户</li>
                         </ul>
 
                         <hr />

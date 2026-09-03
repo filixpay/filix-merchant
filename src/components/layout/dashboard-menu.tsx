@@ -67,10 +67,6 @@ const DASHBOARD_ROUTE_PREFIXES = [
     "/dashboard/money/transaction-reconciliation",
     "/dashboard/payment-splits",
     "/dashboard/member-credit/available-credit",
-    "/dashboard/member-credit/adjustment-history",
-    "/dashboard/member-credit/payment-history",
-    "/dashboard/credit/adjustment-records",
-    "/dashboard/credit/transactions",
     "/dashboard/credit/limit",
     "/dashboard/security-settings/transaction-password",
     "/dashboard/audit-logs",
@@ -78,14 +74,8 @@ const DASHBOARD_ROUTE_PREFIXES = [
     "/dashboard/locations",
     "/dashboard/configs",
     "/dashboard/checkouts",
-    "/dashboard/bank-accounts",
     "/dashboard/transfers",
     "/dashboard/reviews",
-    "/dashboard/transfer-records",
-    "/dashboard/payout-records",
-    "/dashboard/payouts/audit",
-    "/dashboard/payouts/review",
-    "/dashboard/payouts",
     "/dashboard/money/balance",
     "/dashboard/money/activity",
     "/dashboard/money/money-in",
@@ -93,8 +83,6 @@ const DASHBOARD_ROUTE_PREFIXES = [
     "/dashboard/money/external-accounts",
     "/dashboard/money/transfers",
     "/dashboard/money/crypto",
-    "/dashboard/balance",
-    "/dashboard/deposits",
     "/dashboard/reporting/transactions",
     "/dashboard/orders",
     "/dashboard/refunds",
@@ -276,16 +264,6 @@ export function buildDashboardMenuModel(
                         item("checkouts", "/dashboard/checkouts", QrcodeOutlined, t("nav.checkout_counters"), false),
                     ],
                     showAcquiring,
-                ),
-                group(
-                    "payout-management",
-                    MoneyCollectOutlined,
-                    t("nav.payout_ops"),
-                    [
-                        item("payout-audit", "/dashboard/payouts/audit", AuditOutlined, t("nav.payout_audit")),
-                        item("payout-review", "/dashboard/payouts/review", SolutionOutlined, t("nav.payout_review")),
-                    ],
-                    false,
                 ),
                 group(
                     "offline-collection",
@@ -634,10 +612,6 @@ export function getDefaultOpenKeys(pathname: string): string[] {
         return ["transactions", "acquiring"];
     }
 
-    if (pathname.includes("/dashboard/payouts/audit") || pathname.includes("/dashboard/payouts/review")) {
-        return ["transactions", "payout-management"];
-    }
-
     if (
         pathname.includes("/dashboard/orders") ||
         pathname.includes("/dashboard/refunds") ||
@@ -676,18 +650,7 @@ export function getDefaultOpenKeys(pathname: string): string[] {
         return ["money", "settlement"];
     }
 
-    if (pathname.includes("/dashboard/money/") || pathname.includes("/dashboard/balance")) {
-        return ["money"];
-    }
-
-    if (
-        pathname.includes("/dashboard/deposits") ||
-        (pathname.includes("/dashboard/payouts") &&
-            !pathname.includes("/dashboard/payouts/audit") &&
-            !pathname.includes("/dashboard/payouts/review")) ||
-        pathname.includes("/dashboard/transfer-records") ||
-        pathname.includes("/dashboard/payout-records")
-    ) {
+    if (pathname.includes("/dashboard/money/")) {
         return ["money"];
     }
 
@@ -708,7 +671,6 @@ export function getDefaultOpenKeys(pathname: string): string[] {
     }
 
     if (
-        pathname.includes("/dashboard/bank-accounts") ||
         pathname.includes("/dashboard/transfers") ||
         pathname.includes("/dashboard/reviews")
     ) {
