@@ -54,10 +54,10 @@ The last line is only for when that locale has `missing = 0` and leftover Englis
 
 | Order | Locale | File | Status | Last known gap (2026-09-03) |
 | --- | --- | --- | --- | --- |
-| 0 | zh | `messages/zh.json` | [ ] | missing 3 keys (`Payouts.headers.payee_name`, `payee_account`, `updated_at`) |
-| 1 | ja | `messages/ja.json` | [ ] | missing 4276, identical-to-en 201 |
-| 2 | ko | `messages/ko.json` | [ ] | missing 4280, identical-to-en 201 |
-| 3 | es | `messages/es.json` | [ ] | missing 4293, identical-to-en 201 |
+| 0 | zh | `messages/zh.json` | committed | missing 0 |
+| 1 | ja | `messages/ja.json` | committed | missing 0, identical-to-en ~130 (brands/API tokens) |
+| 2 | ko | `messages/ko.json` | committed | missing 0, identical-to-en ~143 (brands/API tokens) |
+| 3 | es | `messages/es.json` | in progress | missing 4293 — start batch A |
 | 4 | fr | `messages/fr.json` | [ ] | missing 4293, identical-to-en 209 |
 | 5 | de | `messages/de.json` | [ ] | missing 4293, identical-to-en 221 |
 | 6 | pt | `messages/pt.json` | [ ] | missing 4268, identical-to-en 211 |
