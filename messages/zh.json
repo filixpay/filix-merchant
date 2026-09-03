@@ -3413,8 +3413,11 @@
       "status": "状态",
       "approval_status": "审批状态",
       "payee": "收款信息",
+      "payee_name": "收款户名",
+      "payee_account": "收款账号",
       "applicant": "申请人",
-      "created_at": "申请时间"
+      "created_at": "申请时间",
+      "updated_at": "更新时间"
     },
     "empty": "暂无提现记录数据。",
     "details": {
