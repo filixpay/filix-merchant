@@ -10,6 +10,7 @@ import DashboardPage from "@/components/layout/DashboardPage";
 import CustomerTable from "@/components/customers/CustomerTable";
 import { buildPagedListParams } from "@/lib/dashboard/build-paged-list-params";
 import { usePagedResource } from "@/lib/dashboard/use-paged-resource";
+import toolbarStyles from "@/components/layout/ListToolbar.module.css";
 
 interface CustomerFilterValues {
     code?: string;
@@ -66,27 +67,29 @@ export default function CustomersPage() {
             form={form}
             layout="inline"
             onFinish={handleSearch}
-            style={{ display: "flex", gap: 8, flexWrap: "wrap", width: "100%" }}
+            className={toolbarStyles.filterShell}
         >
-            <Form.Item name="code" style={{ minWidth: 200, flex: "1 1 220px", marginInlineEnd: 0 }}>
-                <Input allowClear prefix={<SearchOutlined />} placeholder={t("headers.code")} />
-            </Form.Item>
-            <Form.Item name="email" style={{ minWidth: 200, flex: "1 1 220px", marginInlineEnd: 0 }}>
-                <Input allowClear prefix={<SearchOutlined />} placeholder={t("headers.email")} />
-            </Form.Item>
-            <Form.Item name="phone" style={{ minWidth: 200, flex: "1 1 220px", marginInlineEnd: 0 }}>
-                <Input allowClear prefix={<SearchOutlined />} placeholder={t("headers.phone")} />
-            </Form.Item>
-            <Form.Item style={{ marginInlineEnd: 0, marginLeft: "auto" }}>
-                <Flex gap={8}>
-                    <Button type="primary" htmlType="submit" icon={<SearchOutlined />} loading={loading}>
-                        {t("search")}
-                    </Button>
-                    <Button icon={<ReloadOutlined />} onClick={handleReset}>
-                        {tCommon("reset")}
-                    </Button>
-                </Flex>
-            </Form.Item>
+            <div className={toolbarStyles.filterRow}>
+                <Form.Item name="code" className={toolbarStyles.filterField}>
+                    <Input allowClear prefix={<SearchOutlined />} placeholder={t("headers.code")} />
+                </Form.Item>
+                <Form.Item name="email" className={toolbarStyles.filterField}>
+                    <Input allowClear prefix={<SearchOutlined />} placeholder={t("headers.email")} />
+                </Form.Item>
+                <Form.Item name="phone" className={toolbarStyles.filterField}>
+                    <Input allowClear prefix={<SearchOutlined />} placeholder={t("headers.phone")} />
+                </Form.Item>
+                <Form.Item className={toolbarStyles.filterActions}>
+                    <Flex gap={8}>
+                        <Button type="default" htmlType="submit" icon={<SearchOutlined />} loading={loading}>
+                            {t("search")}
+                        </Button>
+                        <Button onClick={handleReset} disabled={loading}>
+                            {tCommon("reset")}
+                        </Button>
+                    </Flex>
+                </Form.Item>
+            </div>
         </Form>
     );
 

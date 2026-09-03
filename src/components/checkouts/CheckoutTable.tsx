@@ -2,14 +2,15 @@
 
 import { Alert, Button, Popconfirm, Space, Table, Tag, Typography } from "antd";
 import type { ColumnsType } from "antd/es/table";
-import { CheckCircleOutlined, CloseCircleOutlined, DeleteOutlined, EditOutlined } from "@ant-design/icons";
+import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 import { useTranslations } from "next-intl";
 import type { CheckoutView } from "@/lib/api";
-import { getCheckoutStatusColor, resolveCheckoutTitle } from "./checkout-model";
+import { resolveCheckoutTitle } from "./checkout-model";
 import TradeNoText from "../TradeNoText";
 import { resolveDashboardTableState } from "@/lib/dashboard/table-state";
 import DashboardTableError from "../layout/DashboardTableError";
 import DashboardTableEmpty from "../layout/DashboardTableEmpty";
+import StatusBadge, { type StatusBadgeTone } from "@/components/layout/StatusBadge";
 
 interface CheckoutTableProps {
     checkouts: CheckoutView[];
@@ -46,6 +47,13 @@ export default function CheckoutTable({
 }: CheckoutTableProps) {
     const t = useTranslations("Checkouts");
     const tCommon = useTranslations("Common");
+
+    const mapStatusToTone = (status: string): StatusBadgeTone => {
+        const s = (status || "").toUpperCase();
+        if (s === "ACTIVE") return "success";
+        if (s === "INACTIVE") return "neutral";
+        return "neutral";
+    };
 
     const columns: ColumnsType<CheckoutView> = [
         {
@@ -87,20 +95,12 @@ export default function CheckoutTable({
             title: t("headers.status"),
             key: "status",
             render: (_, record) => (
-                <Tag
-                    color={getCheckoutStatusColor(record.checkoutStatus)}
-                    style={{ cursor: "pointer" }}
-                    onClick={() => onToggleStatus?.(record)}
-                    icon={
-                        record.checkoutStatus === "ACTIVE" ? (
-                            <CheckCircleOutlined />
-                        ) : (
-                            <CloseCircleOutlined />
-                        )
-                    }
-                >
-                    {record.checkoutStatus}
-                </Tag>
+                <div onClick={() => onToggleStatus?.(record)} style={{ cursor: "pointer", display: "inline-block" }}>
+                    <StatusBadge 
+                        label={record.checkoutStatus} 
+                        tone={mapStatusToTone(record.checkoutStatus)} 
+                    />
+                </div>
             ),
         },
         {
@@ -155,6 +155,7 @@ export default function CheckoutTable({
                               pageSize,
                               total,
                               showSizeChanger: true,
+                              showTotal: (count) => tCommon("total", { count }),
                               onChange: (nextPage, nextPageSize) =>
                                   onPageChange(nextPage - 1, nextPageSize),
                           }

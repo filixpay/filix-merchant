@@ -1,0 +1,60 @@
+.filterShell {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #eef2f6;
+  border-radius: 8px;
+  padding: 12px 16px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02);
+}
+
+.filterRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.filterField {
+  min-width: 200px;
+  flex: 1 1 200px;
+  max-width: 320px;
+  margin-inline-end: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.filterFieldCompact {
+  min-width: 140px;
+  flex: 0 1 160px;
+  max-width: 200px;
+  margin-inline-end: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.filterActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* For advanced toggle scenarios */
+.advancedPanel {
+  overflow: hidden;
+  transition: max-height 0.25s ease, opacity 0.2s ease;
+}
+
+.advancedPanelOpen {
+  max-height: 240px;
+  opacity: 1;
+  margin-top: 12px;
+}
+
+.advancedPanelClosed {
+  max-height: 0;
+  opacity: 0;
+  margin-top: 0;
+}

@@ -20,6 +20,8 @@ import {
   resolveActivityAmountSemantic,
 } from "@/lib/money/money-movement-amount";
 import { presentMoneyProductError } from "@/lib/money/product-error-presenter";
+import DateTimeCell from "@/components/layout/DateTimeCell";
+import StatusBadge, { type StatusBadgeTone } from "@/components/layout/StatusBadge";
 
 export interface MoneyActivityTableProps {
   items: MoneyActivityItem[];
@@ -43,17 +45,7 @@ function resolveErrorMessage(error: unknown): string {
     });
   }
   return presentMoneyProductError({});
-}
-
-function formatOccurredAt(value: string): string {
-  const date = new Date(value);
-  if (Number.isNaN(date.getTime())) {
-    return value;
-  }
-  return date.toLocaleString();
-}
-
-export default function MoneyActivityTable({
+}export default function MoneyActivityTable({
   items,
   loading,
   isRefreshing = false,
@@ -104,7 +96,7 @@ export default function MoneyActivityTable({
       dataIndex: "occurredAt",
       key: "occurredAt",
       width: 180,
-      render: (value: string) => formatOccurredAt(value),
+      render: (value: string) => <DateTimeCell value={value} />,
     },
     {
       title: t("columns.amount"),
@@ -144,11 +136,18 @@ export default function MoneyActivityTable({
       dataIndex: "statusCode",
       key: "status",
       width: 120,
-      render: (_: string, row) => (
-        <Tag color={moneyStatusToneToTagColor(row.statusTone)}>
-          {presentMoneyI18nLabel(tCommon, tCommon.has, "statuses", row.statusCode)}
-        </Tag>
-      ),
+      render: (_: string, row) => {
+        let tone: StatusBadgeTone = "neutral";
+        if (row.statusTone === "success") tone = "success";
+        if (row.statusTone === "warning") tone = "warning";
+        if (row.statusTone === "danger") tone = "danger";
+        return (
+          <StatusBadge 
+            label={presentMoneyI18nLabel(tCommon, tCommon.has, "statuses", row.statusCode)} 
+            tone={tone} 
+          />
+        );
+      },
     },
   ];
 
@@ -156,7 +155,8 @@ export default function MoneyActivityTable({
     current: page + 1,
     pageSize,
     total,
-    showSizeChanger: false,
+    showSizeChanger: true,
+    showTotal: (count) => tCommon("total", { count }),
     onChange: (nextPage, nextSize) => onPageChange(nextPage - 1, nextSize),
   };
 

@@ -2,7 +2,7 @@
 
 import type { Key } from "react";
 import Link from "next/link";
-import { Button, Space, Table, Tag, Typography } from "antd";
+import { Button, Space, Table, Tag } from "antd";
 import type { ColumnsType, TablePaginationConfig } from "antd/es/table";
 import type { FilterValue, SorterResult } from "antd/es/table/interface";
 import { EyeOutlined } from "@ant-design/icons";

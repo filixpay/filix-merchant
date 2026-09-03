@@ -1,11 +1,12 @@
-﻿"use client";
+"use client";
 
-import { Space, Table, Tag, Typography } from "antd";
+import { Space, Table, Typography } from "antd";
 import type { ColumnsType } from "antd/es/table";
 import { useTranslations } from "next-intl";
 import type { ClientView } from "@/lib/api";
 import { useDashboardTableFeedback } from "@/lib/dashboard/use-dashboard-table-feedback";
-import { formatCustomerCreatedAt, getCustomerStatusColor } from "./customer-model";
+import DateTimeCell from "@/components/layout/DateTimeCell";
+import StatusBadge, { type StatusBadgeTone } from "@/components/layout/StatusBadge";
 
 interface CustomerTableProps {
     customers: ClientView[];
@@ -33,6 +34,15 @@ export default function CustomerTable({
     onPageChange,
 }: CustomerTableProps) {
     const t = useTranslations("Customers");
+    const tCommon = useTranslations("Common");
+
+    const mapStatusToTone = (status: string): StatusBadgeTone => {
+        const s = (status || "").toUpperCase();
+        if (s === "ACTIVE" || s === "VERIFIED") return "success";
+        if (s === "INACTIVE" || s === "SUSPENDED") return "danger";
+        if (s === "PENDING") return "warning";
+        return "neutral";
+    };
 
     const columns: ColumnsType<ClientView> = [
         {
@@ -65,16 +75,17 @@ export default function CustomerTable({
             title: t("headers.status"),
             key: "status",
             render: (_, customer) => (
-                <Tag color={getCustomerStatusColor(customer.customerStatus)}>
-                    {customer.customerStatus}
-                </Tag>
+                <StatusBadge 
+                    label={customer.customerStatus} 
+                    tone={mapStatusToTone(customer.customerStatus)} 
+                />
             ),
         },
         {
             title: t("headers.created_at"),
             key: "createdAt",
-            width: 180,
-            render: (_, customer) => formatCustomerCreatedAt(customer),
+            width: 160,
+            render: (_, customer) => <DateTimeCell value={customer.createdAt} />,
         },
     ];
 
@@ -104,7 +115,8 @@ export default function CustomerTable({
                           current: (page ?? 0) + 1,
                           pageSize: pageSize ?? 20,
                           total: total ?? 0,
-                          showSizeChanger: false,
+                          showSizeChanger: true,
+                          showTotal: (count) => tCommon("total", { count }),
                           onChange: (p, ps) => onPageChange(p - 1, ps),
                       }
                     : false

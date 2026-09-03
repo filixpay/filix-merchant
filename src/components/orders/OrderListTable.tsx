@@ -21,13 +21,17 @@ import PaymentModal from './PaymentModal';
 import OrderDetailsModal from './OrderDetailsModal';
 import CreateRefundModal from '../refunds/CreateRefundModal';
 import MissingOrderModal from './MissingOrderModal';
+import AmountCell from '@/components/layout/AmountCell';
+import DateTimeCell from '@/components/layout/DateTimeCell';
+import StatusBadge from '@/components/layout/StatusBadge';
+import { type StatusBadgeTone } from '@/components/layout/StatusBadge';
 import OrderIdCell from './OrderIdCell';
-import OrderStatusBadge from './OrderStatusBadge';
 import {
     formatDateTime,
     getOrderStatus,
     getRefundableAmount,
     normalizeOrderType,
+    ORDER_TRADE_STATUS_OPTIONS,
 } from './order-list-model';
 import type { MissingOrderData } from './order-action-model';
 import { useDashboardTableFeedback } from '@/lib/dashboard/use-dashboard-table-feedback';
@@ -174,11 +178,29 @@ export default function OrderListTable({
 
     const orderTypeLabel = (orderType: string | null | undefined) => {
         const key = normalizeOrderType(orderType);
-        if (!key) {
-            return '-';
-        }
+        if (!key) return '-';
         const messageKey = `orderTypes.${key}` as Parameters<typeof t>[0];
         return t.has(messageKey) ? t(messageKey) : key;
+    };
+
+    const mapStatusToTone = (status: string): StatusBadgeTone => {
+        switch (status) {
+            case "SUCCESS":
+            case "PARTIAL_SUCCESS":
+                return "success";
+            case "PENDING":
+                return "warning";
+            case "PROCESSING":
+                return "processing";
+            case "FAILED":
+                return "danger";
+            case "DISPUTED":
+                return "warning";
+            case "REQUIRES_CAPTURE":
+                return "info";
+            default:
+                return "neutral";
+        }
     };
 
     const locationNameById = useMemo(
@@ -246,41 +268,27 @@ export default function OrderListTable({
             title: t('headers.amount'),
             width: 140,
             align: 'right',
-            render: (_, order) => {
-                const currency = order.totalAmount?.currency ?? '';
-                const rawAmount = order.totalAmount?.amount ?? 0;
-                const amountText =
-                    typeof rawAmount === 'number'
-                        ? rawAmount.toFixed(2)
-                        : String(rawAmount);
-                const { symbol, amount } = formatWalletAmountDisplay(
-                    amountText,
-                    currency,
-                    locale,
-                );
-
-                return (
-                    <div className={`${styles.amountCell} financial-amount`}>
-                        {symbol}
-                        {amount}
-                        {currency ? (
-                            <span className={styles.amountCurrency}>{currency}</span>
-                        ) : null}
-                    </div>
-                );
-            },
+            render: (_, order) => (
+                <AmountCell 
+                    amount={order.totalAmount?.amount ?? 0}
+                    currency={order.totalAmount?.currency ?? ''}
+                    alignRight
+                />
+            ),
         },
         {
             title: t('headers.status'),
             width: 130,
-            render: (_, order) => <OrderStatusBadge status={getOrderStatus(order)} />,
+            render: (_, order) => {
+                const status = getOrderStatus(order);
+                const label = ORDER_TRADE_STATUS_OPTIONS.includes(status as any) ? t(`trade_status.${status}` as any) : status;
+                return <StatusBadge label={label} tone={mapStatusToTone(status)} />;
+            },
         },
         {
             title: t('headers.created_at'),
             width: 160,
-            render: (_, order) => (
-                <span className={styles.timeCell}>{formatDateTime(order.createdAt)}</span>
-            ),
+            render: (_, order) => <DateTimeCell value={order.createdAt} />
         },
         {
             title: tCommon('actions'),
@@ -396,25 +404,23 @@ export default function OrderListTable({
         <>
             <Space direction="vertical" size={12} style={{ width: '100%' }}>
                 {refreshBanner}
-                <div className={styles.tableWrap}>
-                    <Table<OrderView>
-                        rowKey="merchantOrderId"
-                        size="middle"
-                        columns={columns}
-                        dataSource={orders}
-                        loading={tableLoading}
-                        scroll={{ x: 1340 }}
-                        locale={tableLocale}
-                        pagination={{
-                            current: page + 1,
-                            pageSize,
-                            total,
-                            showSizeChanger: true,
-                            showTotal: (count) => `Total ${count}`,
-                            onChange: onPageChange,
-                        }}
-                    />
-                </div>
+                <Table<OrderView>
+                    rowKey="merchantOrderId"
+                    size="middle"
+                    columns={columns}
+                    dataSource={orders}
+                    loading={tableLoading}
+                    scroll={{ x: 1340 }}
+                    locale={tableLocale}
+                    pagination={{
+                        current: page + 1,
+                        pageSize,
+                        total,
+                        showSizeChanger: true,
+                        showTotal: (count) => tCommon('total', { count }),
+                        onChange: onPageChange,
+                    }}
+                />
             </Space>
 
             <PaymentModal

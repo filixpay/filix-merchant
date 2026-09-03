@@ -27,7 +27,7 @@ import {
     buildCopyOrderFormValues,
     type CreateOrderFormValues,
 } from '@/components/orders/create-order-form-model';
-import styles from './orders-page.module.css';
+import styles from '@/components/layout/ListToolbar.module.css';
 
 export default function OrdersPage() {
     const [form] = Form.useForm<OrderSearchFormValues>();
@@ -267,7 +267,7 @@ export default function OrdersPage() {
                         {showAdvancedFilters ? t('toolbar.collapse_filters') : t('toolbar.advanced_filters')}
                     </Button>
                 </Form.Item>
-                <Form.Item className={styles.filterActions} style={{ marginLeft: 'auto' }}>
+                <Form.Item className={styles.filterActions}>
                     <Flex gap={8}>
                         <Button
                             type="default"
@@ -351,7 +351,7 @@ export default function OrdersPage() {
             <OrderStatsCards orders={orders} total={total} />
 
             {activeFilterTags.length > 0 ? (
-                <Flex gap={4} wrap="wrap" align="center" className={styles.toolbarMeta}>
+                <Flex gap={4} wrap="wrap" align="center" style={{ padding: "4px 0" }}>
                     {activeFilterTags.map((tag) => (
                         <Tag key={tag.key} closable onClose={() => handleRemoveFilterTag(tag.fieldName)}>
                             {tag.label}

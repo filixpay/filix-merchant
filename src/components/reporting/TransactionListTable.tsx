@@ -5,7 +5,9 @@ import { Table } from "antd";
 import type { ColumnsType, TablePaginationConfig } from "antd/es/table";
 import { useLocale, useTranslations } from "next-intl";
 import MoneyMovementIdCell from "@/components/money/MoneyMovementIdCell";
-import listStyles from "@/components/money/MoneyListTable.module.css";
+import AmountCell from "@/components/layout/AmountCell";
+import DateTimeCell from "@/components/layout/DateTimeCell";
+import StatusBadge, { type StatusBadgeTone } from "@/components/layout/StatusBadge";
 import type { TransactionReportRow } from "@/lib/api/domains/reporting/types";
 import { useDashboardTableFeedback } from "@/lib/dashboard/use-dashboard-table-feedback";
 import {
@@ -15,11 +17,10 @@ import {
 import {
     formatTransactionAmount,
     formatTransactionDateTime,
-    presentTransactionStatusTone,
     type TransactionListQuery,
-    type TransactionStatusTone,
 } from "./transaction-list-model";
 import styles from "./TransactionListTable.module.css";
+import listStyles from "@/components/money/MoneyListTable.module.css";
 
 interface TransactionListTableProps {
     items: TransactionReportRow[];
@@ -32,11 +33,12 @@ interface TransactionListTableProps {
     onQueryChange: (next: TransactionListQuery) => void;
 }
 
-const STATUS_CLASS: Record<TransactionStatusTone, string> = {
-    success: styles.statusSuccess,
-    warning: styles.statusWarning,
-    danger: styles.statusDanger,
-    neutral: styles.statusNeutral,
+const mapStatusToTone = (status: string): StatusBadgeTone => {
+    const s = (status || "").toUpperCase();
+    if (s === "SUCCEEDED" || s === "SUCCESS" || s === "COMPLETED") return "success";
+    if (s === "FAILED" || s === "REJECTED" || s === "CANCELLED") return "danger";
+    if (s === "PENDING" || s === "PROCESSING") return "warning";
+    return "neutral";
 };
 
 export default function TransactionListTable({
@@ -115,15 +117,9 @@ export default function TransactionListTable({
             dataIndex: "status",
             key: "status",
             width: 140,
-            render: (status: string) => {
-                const tone = presentTransactionStatusTone(status);
-                return (
-                    <span className={`${styles.statusBadge} ${STATUS_CLASS[tone]}`}>
-                        <span className={styles.statusDot} />
-                        {statusLabel(status)}
-                    </span>
-                );
-            },
+            render: (status: string) => (
+                <StatusBadge label={statusLabel(status)} tone={mapStatusToTone(status)} />
+            ),
         },
         {
             title: t("columns.amount"),
@@ -131,9 +127,7 @@ export default function TransactionListTable({
             width: 140,
             align: "right",
             render: (_, row) => (
-                <span className={`${styles.amount} financial-amount`}>
-                    {formatTransactionAmount(row.amount, row.currency)}
-                </span>
+                <AmountCell amount={row.amount} currency={row.currency} alignRight />
             ),
         },
         {
@@ -150,9 +144,7 @@ export default function TransactionListTable({
             key: "createdAt",
             width: 180,
             align: "right",
-            render: (value: string) => (
-                <span className={styles.time}>{formatTransactionDateTime(value)}</span>
-            ),
+            render: (value: string) => <DateTimeCell value={value} />,
         },
     ];
 

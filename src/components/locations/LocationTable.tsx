@@ -7,13 +7,14 @@ import { useTranslations } from "next-intl";
 import type { LocationView, SubMerchantView } from "@/lib/api";
 import {
     getLocationDefaultLabel,
-    getLocationStatusColor,
     getLocationStatusLabel,
     maskLocationEmail,
     maskLocationPhone,
     resolveSubMerchantName,
 } from "./location-model";
 import { useDashboardTableFeedback } from "@/lib/dashboard/use-dashboard-table-feedback";
+import DateTimeCell from "@/components/layout/DateTimeCell";
+import StatusBadge, { type StatusBadgeTone } from "@/components/layout/StatusBadge";
 
 interface LocationTableProps {
     locations: LocationView[];
@@ -50,6 +51,14 @@ export default function LocationTable({
 }: LocationTableProps) {
     const t = useTranslations("Locations");
     const tCommon = useTranslations("Common");
+
+    const mapStatusToTone = (status: string): StatusBadgeTone => {
+        const s = (status || "").toUpperCase();
+        if (s === "ACTIVE") return "success";
+        if (s === "INACTIVE" || s === "DRAFT") return "neutral";
+        if (s === "DELETED") return "danger";
+        return "neutral";
+    };
 
     const columns: ColumnsType<LocationView> = [
         {
@@ -91,25 +100,28 @@ export default function LocationTable({
             title: t("headers.status"),
             key: "status",
             render: (_, record) => (
-                <Tag color={getLocationStatusColor(record.status)}>
-                    {getLocationStatusLabel(record.status, (key) => t(key))}
-                </Tag>
+                <StatusBadge 
+                    label={getLocationStatusLabel(record.status, (key: any) => t(key as any))} 
+                    tone={mapStatusToTone(record.status)} 
+                />
             ),
         },
         {
             title: t("headers.default"),
             key: "default",
             render: (_, record) => (
-                <Tag color={record.default ? "blue" : undefined}>
-                    {getLocationDefaultLabel(record.default, (key) => tCommon(key))}
-                </Tag>
+                <StatusBadge 
+                    label={getLocationDefaultLabel(record.default, (key) => tCommon(key as any))}
+                    tone={record.default ? "info" : "neutral"}
+                    hideDot
+                />
             ),
         },
         {
             title: t("headers.created_at"),
             key: "createdAt",
-            width: 180,
-            render: (_, record) => new Date(record.createdAt).toLocaleString(),
+            width: 160,
+            render: (_, record) => <DateTimeCell value={record.createdAt} />,
         },
         {
             title: tCommon("actions"),
@@ -164,7 +176,8 @@ export default function LocationTable({
                               current: (page ?? 0) + 1,
                               pageSize: pageSize ?? 20,
                               total: total ?? 0,
-                              showSizeChanger: false,
+                              showSizeChanger: true,
+                              showTotal: (count) => tCommon("total", { count }),
                               onChange: (p) => onPageChange(p - 1),
                           }
                         : false

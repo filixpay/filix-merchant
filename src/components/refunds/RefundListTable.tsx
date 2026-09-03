@@ -6,7 +6,10 @@ import { EyeOutlined } from "@ant-design/icons";
 import { useTranslations } from "next-intl";
 import type { RefundView } from "@/lib/api";
 import { useDashboardTableFeedback } from "@/lib/dashboard/use-dashboard-table-feedback";
-import { formatRefundAmount, getRefundStatusColor, refundStatusI18nKey } from "./refund-model";
+import AmountCell from "@/components/layout/AmountCell";
+import DateTimeCell from "@/components/layout/DateTimeCell";
+import StatusBadge, { type StatusBadgeTone } from "@/components/layout/StatusBadge";
+import { refundStatusI18nKey } from "./refund-model";
 
 interface RefundListTableProps {
     refunds: RefundView[];
@@ -59,26 +62,39 @@ export default function RefundListTable({
         {
             title: t("headers.amount"),
             key: "amount",
-            render: (_, refund) => formatRefundAmount(refund),
+            align: "right",
+            width: 140,
+            render: (_, refund) => (
+                <AmountCell 
+                    amount={refund.amount ?? 0}
+                    currency={""}
+                    alignRight
+                />
+            ),
         },
         {
             title: t("headers.status"),
             key: "status",
+            width: 130,
             render: (_, refund) => {
                 const key = refundStatusI18nKey(refund.status);
-                return (
-                    <Tag color={getRefundStatusColor(refund.status)}>
-                        {key ? t(`status.${key}`) : refund.status}
-                    </Tag>
-                );
+                const label = key ? t(`status.${key}` as any) : refund.status;
+                let tone: StatusBadgeTone = "neutral";
+                switch (refund.status) {
+                    case "COMPLETED": tone = "success"; break;
+                    case "PENDING": tone = "processing"; break;
+                    case "FAILED":
+                    case "REJECTED": tone = "danger"; break;
+                    case "CANCELED": tone = "neutral"; break;
+                }
+                return <StatusBadge label={label} tone={tone} />;
             },
         },
         {
             title: t("headers.created_at"),
             key: "createdAt",
-            width: 180,
-            render: (_, refund) =>
-                refund.createdAt ? new Date(refund.createdAt).toLocaleString() : "-",
+            width: 160,
+            render: (_, refund) => <DateTimeCell value={refund.createdAt} />,
         },
         {
             title: tCommon("actions"),
@@ -122,7 +138,8 @@ export default function RefundListTable({
                               current: (page ?? 0) + 1,
                               pageSize: pageSize ?? 20,
                               total: total ?? 0,
-                              showSizeChanger: false,
+                              showSizeChanger: true,
+                              showTotal: (count) => tCommon("total", { count }),
                               onChange: (p, ps) => onPageChange(p - 1, ps),
                           }
                         : false

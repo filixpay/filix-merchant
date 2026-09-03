@@ -14,6 +14,7 @@ import RefundDetailsModal from "@/components/refunds/RefundDetailsModal";
 import { buildPagedListParams } from "@/lib/dashboard/build-paged-list-params";
 import { runAuthenticatedRequest } from "@/lib/dashboard/run-authenticated-request";
 import { usePagedResource } from "@/lib/dashboard/use-paged-resource";
+import toolbarStyles from "@/components/layout/ListToolbar.module.css";
 
 interface RefundFilterValues {
     merchantOrderId?: string;
@@ -119,24 +120,26 @@ function RefundsPageContent() {
             form={form}
             layout="inline"
             onFinish={handleSearch}
-            style={{ display: "flex", gap: 8, flexWrap: "wrap", width: "100%" }}
+            className={toolbarStyles.filterShell}
         >
-            <Form.Item name="merchantOrderId" style={{ minWidth: 200, flex: "1 1 220px", marginInlineEnd: 0 }}>
-                <Input allowClear prefix={<SearchOutlined />} placeholder={t("headers.order_id")} />
-            </Form.Item>
-            <Form.Item name="merchantRefundId" style={{ minWidth: 200, flex: "1 1 220px", marginInlineEnd: 0 }}>
-                <Input allowClear prefix={<SearchOutlined />} placeholder={t("headers.refund_id")} />
-            </Form.Item>
-            <Form.Item style={{ marginInlineEnd: 0, marginLeft: "auto" }}>
-                <Flex gap={8}>
-                    <Button type="primary" htmlType="submit" icon={<SearchOutlined />} loading={loading}>
-                        {tCustomers("search")}
-                    </Button>
-                    <Button icon={<ReloadOutlined />} onClick={handleReset}>
-                        {tCommon("reset")}
-                    </Button>
-                </Flex>
-            </Form.Item>
+            <div className={toolbarStyles.filterRow}>
+                <Form.Item name="merchantOrderId" className={toolbarStyles.filterField}>
+                    <Input allowClear prefix={<SearchOutlined />} placeholder={t("headers.order_id")} />
+                </Form.Item>
+                <Form.Item name="merchantRefundId" className={toolbarStyles.filterField}>
+                    <Input allowClear prefix={<SearchOutlined />} placeholder={t("headers.refund_id")} />
+                </Form.Item>
+                <Form.Item className={toolbarStyles.filterActions}>
+                    <Flex gap={8}>
+                        <Button type="default" htmlType="submit" icon={<SearchOutlined />} loading={loading}>
+                            {tCustomers("search")}
+                        </Button>
+                        <Button onClick={handleReset} disabled={loading}>
+                            {tCommon("reset")}
+                        </Button>
+                    </Flex>
+                </Form.Item>
+            </div>
         </Form>
     );
 

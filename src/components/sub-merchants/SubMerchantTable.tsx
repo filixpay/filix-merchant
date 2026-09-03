@@ -5,8 +5,9 @@ import type { ColumnsType } from "antd/es/table";
 import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 import { useTranslations } from "next-intl";
 import type { SubMerchantView } from "@/lib/api";
-import { getSubMerchantStatusColor } from "./sub-merchant-model";
 import { useDashboardTableFeedback } from "@/lib/dashboard/use-dashboard-table-feedback";
+import DateTimeCell from "@/components/layout/DateTimeCell";
+import StatusBadge, { type StatusBadgeTone } from "@/components/layout/StatusBadge";
 
 interface SubMerchantTableProps {
     subMerchants: SubMerchantView[];
@@ -40,6 +41,14 @@ export default function SubMerchantTable({
     const t = useTranslations("SubMerchants");
     const tCommon = useTranslations("Common");
 
+    const mapStatusToTone = (status: string): StatusBadgeTone => {
+        const s = (status || "").toUpperCase();
+        if (s === "ACTIVE") return "success";
+        if (s === "INACTIVE" || s === "FROZEN") return "danger";
+        if (s === "PENDING") return "warning";
+        return "neutral";
+    };
+
     const columns: ColumnsType<SubMerchantView> = [
         {
             title: t("headers.name"),
@@ -56,14 +65,14 @@ export default function SubMerchantTable({
             title: t("headers.status"),
             key: "status",
             render: (_, record) => (
-                <Tag color={getSubMerchantStatusColor(record.status)}>{record.status}</Tag>
+                <StatusBadge label={record.status} tone={mapStatusToTone(record.status)} />
             ),
         },
         {
             title: t("headers.created_at"),
             key: "createdAt",
-            width: 180,
-            render: (_, record) => new Date(record.createdAt).toLocaleString(),
+            width: 160,
+            render: (_, record) => <DateTimeCell value={record.createdAt} />,
         },
         {
             title: tCommon("actions"),
@@ -112,8 +121,9 @@ export default function SubMerchantTable({
                               current: (page ?? 0) + 1,
                               pageSize: pageSize ?? 20,
                               total: total ?? 0,
-                              showSizeChanger: false,
-                              onChange: (p) => onPageChange(p - 1),
+                              showSizeChanger: true,
+                              showTotal: (count) => tCommon("total", { count }),
+                              onChange: (p, ps) => onPageChange?.(p - 1),
                           }
                         : false
                 }
