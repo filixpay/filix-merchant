@@ -160,72 +160,72 @@
     }
   },
   "CoverageInsurance": {
-    "title": "Coverage Insurance",
-    "subtitle": "Subscribe to platform-hosted chargeback coverage for new orders.",
-    "product_title": "Platform Chargeback Coverage",
-    "product_description": "Filix Pay provides integrated dispute coverage through our platform insurance partners.",
-    "unavailable_title": "Service not available yet",
-    "unavailable_body": "Platform coverage is being prepared. Please check back later or contact support.",
-    "agreement_body": "By subscribing, you authorize Filix Pay to apply platform-hosted chargeback coverage to eligible new orders under the current service agreement.",
-    "agreement_checkbox": "I have read and agree to the coverage service agreement (v1).",
-    "unsubscribed_banner": "Coverage is turned off for new orders. Existing claims will continue to be processed.",
+    "title": "보장 보험",
+    "subtitle": "신규 주문에 대한 플랫폼 호스트형 차지백 보장에 가입합니다.",
+    "product_title": "플랫폼 차지백 보장",
+    "product_description": "Filix Pay는 플랫폼 보험 파트너를 통해 통합 분쟁 보장을 제공합니다.",
+    "unavailable_title": "아직 서비스를 이용할 수 없습니다",
+    "unavailable_body": "플랫폼 보장을 준비 중입니다. 나중에 다시 확인하거나 고객지원에 문의해 주세요.",
+    "agreement_body": "가입하면 현재 서비스 약관에 따라 Filix Pay가 대상 신규 주문에 플랫폼 호스트형 차지백 보장을 적용하는 것에 동의합니다.",
+    "agreement_checkbox": "보장 서비스 약관(v1)을 읽고 동의합니다.",
+    "unsubscribed_banner": "신규 주문에 대한 보장이 꺼져 있습니다. 기존 클레임은 계속 처리됩니다.",
     "status": {
-      "subscribed": "Active",
-      "not_subscribed": "Not subscribed",
-      "unsubscribed": "Unsubscribed"
+      "subscribed": "활성",
+      "not_subscribed": "미가입",
+      "unsubscribed": "해지됨"
     },
     "fields": {
-      "provider": "Provider",
-      "subscribed_at": "Subscribed at",
-      "agreement_version": "Agreement version"
+      "provider": "제공업체",
+      "subscribed_at": "가입 시각",
+      "agreement_version": "약관 버전"
     },
     "actions": {
-      "subscribe": "Activate coverage",
-      "unsubscribe": "Turn off coverage"
+      "subscribe": "보장 활성화",
+      "unsubscribe": "보장 끄기"
     },
     "unsubscribe_modal": {
-      "title": "Turn off coverage?",
-      "warning": "After you turn off coverage, new orders will no longer be covered by platform chargeback insurance. Existing claims will continue to be processed without interruption.",
-      "confirm": "Turn off",
-      "cancel": "Cancel"
+      "title": "보장을 끄시겠습니까?",
+      "warning": "보장을 끄면 신규 주문은 플랫폼 차지백 보험의 대상이 되지 않습니다. 기존 클레임은 중단 없이 계속 처리됩니다.",
+      "confirm": "끄기",
+      "cancel": "취소"
     },
     "messages": {
-      "load_failed": "Failed to load coverage subscription",
-      "subscribed": "Coverage activated",
-      "subscribe_failed": "Failed to activate coverage",
-      "unsubscribed": "Coverage turned off",
-      "unsubscribe_failed": "Failed to turn off coverage"
+      "load_failed": "보장 구독 정보를 불러오지 못했습니다",
+      "subscribed": "보장이 활성화되었습니다",
+      "subscribe_failed": "보장 활성화에 실패했습니다",
+      "unsubscribed": "보장이 꺼졌습니다",
+      "unsubscribe_failed": "보장 끄기에 실패했습니다"
     }
   },
   "CoverageConfig": {
-    "title": "Chargeback Coverage",
-    "subtitle": "Configure dispute coverage providers for new chargeback cases.",
-    "empty": "No coverage configurations yet.",
-    "provider_switch_warning": "Switching provider only affects new chargeback cases.",
-    "active_banner": "Active provider: {provider} ({id})",
-    "no_active_banner": "No active coverage provider. New disputes will skip coverage claims.",
-    "platform_hosted_banner": "This configuration powers platform-hosted coverage for subscribed Platform settlement merchants.",
-    "maintenance_banner": "Maintenance mode: new assessments are paused; in-flight claim webhooks continue.",
+    "title": "차지백 보장",
+    "subtitle": "신규 차지백 건에 대한 분쟁 보장 제공업체를 구성합니다.",
+    "empty": "아직 보장 구성이 없습니다.",
+    "provider_switch_warning": "제공업체 변경은 신규 차지백 건에만 영향을 줍니다.",
+    "active_banner": "활성 제공업체: {provider} ({id})",
+    "no_active_banner": "활성 보장 제공업체가 없습니다. 신규 분쟁은 보장 클레임을 건너뜁니다.",
+    "platform_hosted_banner": "이 구성은 가입한 플랫폼 정산 판매자를 위한 플랫폼 호스트형 보장을 구동합니다.",
+    "maintenance_banner": "유지보수 모드: 신규 평가는 일시 중지되며, 진행 중 클레임 Webhook은 계속됩니다.",
     "columns": {
-      "provider": "Provider",
-      "status": "Status",
-      "version": "Version",
-      "updated_at": "Updated"
+      "provider": "제공업체",
+      "status": "상태",
+      "version": "버전",
+      "updated_at": "업데이트"
     },
     "status": {
-      "active": "Active",
-      "disabled": "Disabled",
-      "maintenance": "Maintenance"
+      "active": "활성",
+      "disabled": "비활성",
+      "maintenance": "유지보수"
     },
     "fields": {
-      "provider": "Provider",
-      "provider_placeholder": "Select a provider"
+      "provider": "제공업체",
+      "provider_placeholder": "제공업체를 선택하세요"
     },
     "config_fields": {
       "teamId": "Team ID",
       "shopDomain": "Shop Domain",
       "environment": "Environment",
-      "coverageLimit": "Coverage Limit",
+      "coverageLimit": "보장 한도",
       "currency": "Currency",
       "mode": "Mode"
     },
@@ -233,34 +233,34 @@
       "apiKey": "API Key",
       "webhookSecret": "Webhook Secret"
     },
-    "secret_keep_hint": "Current value: {masked}. Leave blank to keep unchanged.",
-    "secret_placeholder_edit": "Leave blank to keep current value",
+    "secret_keep_hint": "현재 값: {masked}. 변경하지 않으려면 비워 두세요.",
+    "secret_placeholder_edit": "현재 값을 유지하려면 비워 두세요",
     "validation": {
-      "provider_required": "Please select a provider",
-      "field_required": "{field} is required"
+      "provider_required": "제공업체를 선택해 주세요",
+      "field_required": "{field}은(는) 필수입니다"
     },
     "actions": {
-      "create": "Add Configuration",
-      "edit": "Edit",
-      "activate": "Activate",
-      "deactivate": "Deactivate",
-      "enter_maintenance": "Enter maintenance",
-      "resume": "Resume service",
-      "test_connection": "Test Connection"
+      "create": "구성 추가",
+      "edit": "편집",
+      "activate": "활성화",
+      "deactivate": "비활성화",
+      "enter_maintenance": "유지보수 모드 진입",
+      "resume": "서비스 재개",
+      "test_connection": "연결 테스트"
     },
     "modal": {
-      "create_title": "Add Coverage Configuration",
-      "edit_title": "Edit Coverage Configuration"
+      "create_title": "보장 구성 추가",
+      "edit_title": "보장 구성 편집"
     },
     "messages": {
-      "created": "Coverage configuration created",
-      "updated": "Coverage configuration updated",
-      "activated": "Coverage configuration activated",
-      "deactivated": "Coverage configuration deactivated",
-      "maintenance_entered": "Coverage entered maintenance mode",
-      "resumed": "Coverage resumed",
-      "test_ok": "Connection OK ({latencyMs} ms, {providerVersion})",
-      "test_failed": "Connection test failed: {status}"
+      "created": "보장 구성이 생성되었습니다",
+      "updated": "보장 구성이 업데이트되었습니다",
+      "activated": "보장 구성이 활성화되었습니다",
+      "deactivated": "보장 구성이 비활성화되었습니다",
+      "maintenance_entered": "보장이 유지보수 모드로 전환되었습니다",
+      "resumed": "보장이 재개되었습니다",
+      "test_ok": "연결 OK ({latencyMs} ms, {providerVersion})",
+      "test_failed": "연결 테스트 실패: {status}"
     }
   },
   "ServicePlan": {
@@ -1613,656 +1613,656 @@
     }
   },
   "Disputes": {
-    "title": "Disputes & Chargebacks",
-    "subtitle": "Monitor chargeback cases, response deadlines, and required merchant actions.",
-    "empty": "No dispute cases found.",
-    "back_to_list": "Back to disputes",
+    "title": "분쟁 & 차지백",
+    "subtitle": "차지백 건, 응답 기한, 필요한 판매자 조치를 모니터링합니다.",
+    "empty": "분쟁 건을 찾을 수 없습니다.",
+    "back_to_list": "분쟁 목록으로",
     "kpis": {
-      "action_required": "Cases Require Action",
-      "due_soon": "Due Soon (<3 days)",
-      "overdue": "Overdue"
+      "action_required": "조치 필요 건",
+      "due_soon": "곧 만료(<3일)",
+      "overdue": "기한 초과"
     },
     "headers": {
-      "case_number": "Case No.",
-      "order_id": "Order ID",
-      "channel": "Channel",
-      "created_at": "Created At",
-      "amount": "Amount",
-      "reason": "Reason",
-      "priority": "Priority",
-      "status": "Status",
-      "response_due": "Response Due"
+      "case_number": "건 번호",
+      "order_id": "주문 ID",
+      "channel": "채널",
+      "created_at": "생성 시각",
+      "amount": "금액",
+      "reason": "사유",
+      "priority": "우선순위",
+      "status": "상태",
+      "response_due": "응답 기한"
     },
     "filters": {
-      "keyword": "Case No. / Order ID",
-      "status": "Status",
-      "channel": "Channel",
-      "all_status": "All statuses"
+      "keyword": "건 번호 / 주문 ID",
+      "status": "상태",
+      "channel": "채널",
+      "all_status": "모든 상태"
     },
-    "table_total": "Total {count}",
+    "table_total": "총 {count}",
     "priority": {
-      "CRITICAL": "Critical",
-      "HIGH": "High",
-      "MEDIUM": "Medium",
-      "LOW": "Low"
+      "CRITICAL": "긴급",
+      "HIGH": "높음",
+      "MEDIUM": "보통",
+      "LOW": "낮음"
     },
     "status": {
-      "DRAFT": "Draft",
-      "SUBMITTED": "Submitted",
-      "UNDER_REVIEW": "Under Review",
-      "WON": "Won",
-      "LOST": "Lost",
-      "ACCEPTED": "Accepted"
+      "DRAFT": "임시저장",
+      "SUBMITTED": "제출됨",
+      "UNDER_REVIEW": "심사 중",
+      "WON": "승소",
+      "LOST": "패소",
+      "ACCEPTED": "책임 인정"
     },
     "evidence_category": {
-      "RECEIPT": "Receipt",
-      "SHIPPING": "Shipping",
-      "COMMUNICATION": "Communication",
-      "OTHER": "Other"
+      "RECEIPT": "영수증",
+      "SHIPPING": "배송",
+      "COMMUNICATION": "커뮤니케이션",
+      "OTHER": "기타"
     },
     "action_center": {
-      "title": "Merchant Action Center",
-      "locked": "This case is locked. Evidence can no longer be edited.",
-      "upload_hint": "Click or drag files to upload evidence",
-      "file": "File",
-      "category": "Category",
-      "upload_types": "Supports PDF, JPG, PNG, WEBP. Max {size}MB per file.",
-      "file_size": "Size",
-      "file_too_large": "File too large. Max {size}MB per file."
+      "title": "판매자 조치 센터",
+      "locked": "이 건은 잠겼습니다. 증거를 더 이상 편집할 수 없습니다.",
+      "upload_hint": "클릭하거나 파일을 끌어다 놓아 증거를 업로드하세요",
+      "file": "파일",
+      "category": "카테고리",
+      "upload_types": "PDF, JPG, PNG, WEBP 지원. 파일당 최대 {size}MB.",
+      "file_size": "크기",
+      "file_too_large": "파일이 너무 큽니다. 파일당 최대 {size}MB입니다."
     },
     "actions": {
-      "save_draft": "Save Draft",
-      "submit": "Submit Evidence",
-      "accept_liability": "Accept Liability",
-      "accept_liability_confirm_title": "Accept chargeback liability?",
-      "accept_liability_confirm_body": "You will not be able to submit evidence after accepting liability.",
-      "submit_confirm_title": "Submit evidence?",
-      "submit_confirm_body": "Submission cannot be undone. Evidence will be sent to the payment channel for review."
+      "save_draft": "임시저장",
+      "submit": "증거 제출",
+      "accept_liability": "책임 인정",
+      "accept_liability_confirm_title": "차지백 책임을 인정하시겠습니까?",
+      "accept_liability_confirm_body": "책임을 인정하면 이후 증거를 제출할 수 없습니다.",
+      "submit_confirm_title": "증거를 제출하시겠습니까?",
+      "submit_confirm_body": "제출 후에는 취소할 수 없습니다. 증거는 심사를 위해 결제 채널로 전송됩니다."
     },
     "messages": {
-      "draft_saved": "Evidence draft saved",
-      "submitted": "Evidence submitted for review",
-      "liability_accepted": "Liability accepted",
-      "evidence_uploaded": "Evidence file uploaded",
-      "evidence_required": "Please upload at least one evidence file"
+      "draft_saved": "증거 임시저장이 완료되었습니다",
+      "submitted": "증거가 제출되어 심사로 전달되었습니다",
+      "liability_accepted": "책임을 인정했습니다",
+      "evidence_uploaded": "증거 파일이 업로드되었습니다",
+      "evidence_required": "증거 파일을 하나 이상 업로드해 주세요"
     },
     "reason_codes": {
-      "fraudulent": "Fraudulent",
-      "duplicate": "Duplicate charge",
-      "product_not_received": "Product not received",
-      "unrecognized": "Unrecognized charge",
-      "credit_not_processed": "Credit not processed",
-      "general": "General dispute",
-      "incorrect_account_details": "Incorrect account details",
-      "insufficient_funds": "Insufficient funds",
-      "bank_cannot_process": "Bank cannot process",
-      "debit_not_authorized": "Debit not authorized",
-      "customer_initiated": "Customer initiated",
-      "merchandise_or_service_not_received": "Merchandise or service not received",
-      "unauthorized": "Unauthorized",
-      "merchandise_or_service_not_as_described": "Merchandise or service not as described",
-      "cancelled_recurring_billing": "Cancelled recurring billing",
-      "non_receipt": "Non-receipt",
-      "not_as_described": "Not as described",
-      "duplicate_transaction": "Duplicate transaction",
-      "credit_not_received": "Credit not received"
+      "fraudulent": "사기 거래",
+      "duplicate": "중복 청구",
+      "product_not_received": "상품 미수령",
+      "unrecognized": "확인되지 않은 청구",
+      "credit_not_processed": "환불 미처리",
+      "general": "일반 분쟁",
+      "incorrect_account_details": "잘못된 계좌 정보",
+      "insufficient_funds": "잔액 부족",
+      "bank_cannot_process": "은행 처리 불가",
+      "debit_not_authorized": "승인되지 않은 출금",
+      "customer_initiated": "고객 개시",
+      "merchandise_or_service_not_received": "상품 또는 서비스 미수령",
+      "unauthorized": "무단",
+      "merchandise_or_service_not_as_described": "상품 또는 서비스가 설명과 다름",
+      "cancelled_recurring_billing": "해지된 정기 결제",
+      "non_receipt": "미수령",
+      "not_as_described": "설명과 다름",
+      "duplicate_transaction": "중복 거래",
+      "credit_not_received": "환불 미수령"
     },
     "timeline": {
-      "title": "Case Timeline",
-      "actor": "By {actor}",
+      "title": "건 타임라인",
+      "actor": "실행자: {actor}",
       "actors": {
-        "system": "System auto-trigger",
-        "merchant": "Merchant action"
+        "system": "시스템 자동 트리거",
+        "merchant": "판매자 조치"
       },
       "events": {
-        "CASE_OPENED": "Dispute opened",
-        "EVIDENCE_DRAFT_SAVED": "Evidence draft saved",
-        "EVIDENCE_SUBMITTED": "Evidence submitted",
-        "REVIEW_STARTED": "Under bank review",
-        "CHANNEL_STATUS_CHANGED": "Channel status updated",
-        "CASE_RESOLVED": "Dispute resolved",
-        "LIABILITY_ACCEPTED": "Liability accepted",
-        "EVIDENCE_FORWARDED_TO_CHANNEL": "Evidence forwarded to channel",
-        "CHANNEL_EVIDENCE_SUBMIT_FAILED": "Channel evidence submit failed"
+        "CASE_OPENED": "분쟁 개시",
+        "EVIDENCE_DRAFT_SAVED": "증거 임시저장",
+        "EVIDENCE_SUBMITTED": "증거 제출",
+        "REVIEW_STARTED": "은행 심사 중",
+        "CHANNEL_STATUS_CHANGED": "채널 상태 업데이트",
+        "CASE_RESOLVED": "분쟁 해결",
+        "LIABILITY_ACCEPTED": "책임 인정",
+        "EVIDENCE_FORWARDED_TO_CHANNEL": "채널로 증거 전달",
+        "CHANNEL_EVIDENCE_SUBMIT_FAILED": "채널 증거 제출 실패"
       },
       "titles": {
-        "dispute_opened": "Dispute opened",
-        "dispute_resolved": "Dispute resolved",
-        "evidence_draft_saved": "Evidence draft saved",
-        "evidence_submitted": "Evidence submitted",
-        "under_bank_review": "Under bank review",
-        "liability_accepted": "Liability accepted",
-        "channel_status_updated": "Channel status updated",
-        "evidence_forwarded_to_channel": "Evidence forwarded to channel",
-        "channel_evidence_submit_failed": "Channel evidence submit failed"
+        "dispute_opened": "분쟁 개시",
+        "dispute_resolved": "분쟁 해결",
+        "evidence_draft_saved": "증거 임시저장",
+        "evidence_submitted": "증거 제출",
+        "under_bank_review": "은행 심사 중",
+        "liability_accepted": "책임 인정",
+        "channel_status_updated": "채널 상태 업데이트",
+        "evidence_forwarded_to_channel": "채널로 증거 전달",
+        "channel_evidence_submit_failed": "채널 증거 제출 실패"
       },
       "descriptions": {
-        "charge_dispute_created": "Stripe: dispute created",
-        "charge_dispute_updated": "Stripe: dispute updated",
-        "charge_dispute_closed": "Stripe: dispute closed",
-        "charge_dispute_funds_withdrawn": "Stripe: dispute funds withdrawn",
-        "charge_dispute_funds_reinstated": "Stripe: dispute funds reinstated",
-        "customer_dispute_created": "PayPal: dispute created",
-        "customer_dispute_updated": "PayPal: dispute updated",
-        "customer_dispute_resolved": "PayPal: dispute resolved",
-        "submitted_files_to_channel": "Submitted {count} file(s) to {channel}",
-        "files_attached": "{count} file(s) attached",
+        "charge_dispute_created": "Stripe: 분쟁 생성",
+        "charge_dispute_updated": "Stripe: 분쟁 업데이트",
+        "charge_dispute_closed": "Stripe: 분쟁 종료",
+        "charge_dispute_funds_withdrawn": "Stripe: 분쟁 자금 인출",
+        "charge_dispute_funds_reinstated": "Stripe: 분쟁 자금 복원",
+        "customer_dispute_created": "PayPal: 분쟁 생성",
+        "customer_dispute_updated": "PayPal: 분쟁 업데이트",
+        "customer_dispute_resolved": "PayPal: 분쟁 해결",
+        "submitted_files_to_channel": "{channel}에 파일 {count}개 제출",
+        "files_attached": "파일 {count}개 첨부",
         "channel_status_transition": "{oldStatus} → {newStatus}",
-        "case_locked_for_review": "Case locked for review",
-        "merchant_accepted_chargeback_liability": "Merchant accepted chargeback liability"
+        "case_locked_for_review": "심사를 위해 건이 잠김",
+        "merchant_accepted_chargeback_liability": "판매자가 차지백 책임을 인정함"
       },
       "channel_statuses": {
-        "needs_response": "Needs response",
-        "under_review": "Under review",
-        "won": "Won",
-        "lost": "Lost",
-        "charge_refunded": "Charge refunded",
-        "warning_needs_response": "Warning needs response",
-        "warning_under_review": "Warning under review",
-        "warning_closed": "Warning closed"
+        "needs_response": "응답 필요",
+        "under_review": "심사 중",
+        "won": "승소",
+        "lost": "패소",
+        "charge_refunded": "청구 환불됨",
+        "warning_needs_response": "경고 · 응답 필요",
+        "warning_under_review": "경고 · 심사 중",
+        "warning_closed": "경고 · 종료"
       },
       "resolutions": {
-        "MERCHANT_WON": "Merchant won",
-        "BUYER_WON": "Buyer won",
-        "MERCHANT_ACCEPTED": "Merchant accepted",
-        "PARTIAL": "Partial win"
+        "MERCHANT_WON": "판매자 승소",
+        "BUYER_WON": "구매자 승소",
+        "MERCHANT_ACCEPTED": "판매자 책임 인정",
+        "PARTIAL": "부분 승소"
       }
     },
     "detail": {
-      "title": "Dispute Case",
-      "reason_code": "Reason Code",
-      "not_found": "Dispute case not found."
+      "title": "분쟁 건",
+      "reason_code": "사유 코드",
+      "not_found": "분쟁 건을 찾을 수 없습니다."
     },
     "coverage_assessment": {
-      "title": "Coverage Assessment",
+      "title": "보장 평가",
       "headers": {
-        "status": "Coverage Status",
-        "provider": "Provider",
-        "stage": "Evaluation Stage",
-        "limit": "Coverage Limit",
-        "reference": "Reference",
-        "assessment_id": "Assessment ID"
+        "status": "보장 상태",
+        "provider": "제공업체",
+        "stage": "평가 단계",
+        "limit": "보장 한도",
+        "reference": "참조",
+        "assessment_id": "평가 ID"
       },
       "status": {
-        "COVERED": "Covered",
-        "NOT_COVERED": "Not Covered",
-        "PARTIAL": "Partially Covered"
+        "COVERED": "보장",
+        "NOT_COVERED": "미보장",
+        "PARTIAL": "부분 보장"
       },
       "stage": {
-        "PRE_AUTH": "Pre-auth",
-        "POST_AUTH": "Post-auth",
-        "MANUAL": "Manual",
-        "ASYNC_UPDATE": "Async update"
+        "PRE_AUTH": "승인 전",
+        "POST_AUTH": "승인 후",
+        "MANUAL": "수동",
+        "ASYNC_UPDATE": "비동기 업데이트"
       },
       "timeline": {
-        "title": "Assessment Timeline"
+        "title": "평가 타임라인"
       }
     },
     "coverage": {
-      "title": "Chargeback Protection",
+      "title": "차지백 보호",
       "headers": {
-        "status": "Claim Status",
-        "provider": "Provider",
-        "amount": "Claim Amount",
-        "provider_claim_id": "Provider Claim ID"
+        "status": "클레임 상태",
+        "provider": "제공업체",
+        "amount": "클레임 금액",
+        "provider_claim_id": "제공업체 클레임 ID"
       },
       "status": {
-        "CREATED": "Created",
-        "UNDER_REVIEW": "Under Review",
-        "APPROVED": "Approved",
-        "REJECTED": "Declined",
-        "PAID": "Paid",
-        "CLOSED": "Closed"
+        "CREATED": "생성됨",
+        "UNDER_REVIEW": "심사 중",
+        "APPROVED": "승인됨",
+        "REJECTED": "거절됨",
+        "PAID": "지급됨",
+        "CLOSED": "종료"
       },
       "event_type": {
-        "CREATED": "Claim created",
-        "SUBMITTED": "Submitted to provider",
-        "UNDER_REVIEW": "Under review",
-        "APPROVED": "Approved",
-        "REJECTED": "Declined",
-        "PAID": "Paid",
-        "CLOSED": "Closed"
+        "CREATED": "클레임 생성",
+        "SUBMITTED": "제공업체에 제출",
+        "UNDER_REVIEW": "심사 중",
+        "APPROVED": "승인됨",
+        "REJECTED": "거절됨",
+        "PAID": "지급됨",
+        "CLOSED": "종료"
       },
       "timeline": {
-        "title": "Coverage Timeline"
+        "title": "보장 타임라인"
       }
     },
     "response_due": {
-      "overdue": "⚠️ Overdue",
-      "hours_left": "⚠️ {hours}h left",
-      "days_left": "{days} days left"
+      "overdue": "⚠️ 기한 초과",
+      "hours_left": "⚠️ {hours}시간 남음",
+      "days_left": "{days}일 남음"
     }
   },
   "Support": {
-    "entry_label": "Support Center",
-    "entry_label_with_unread": "Support Center, {count} new replies",
-    "entry_collapse": "Minimize support entry",
-    "entry_expand": "Expand support entry",
-    "title": "Support",
-    "create_title": "Ask a question",
-    "new_question": "New question",
-    "back_to_list": "Back to list",
-    "refresh": "Refresh",
-    "question_label": "Question",
-    "question_placeholder": "Describe your issue…",
-    "submit_question": "Submit",
-    "create_success": "Question submitted",
-    "ticket_title": "Ticket {number}",
-    "subject_label": "Subject: ",
-    "view_detail": "View details",
-    "answered_hint": "This ticket has been answered. To ask a follow-up, ",
-    "create_new_ticket": "create a new ticket",
+    "entry_label": "고객지원 센터",
+    "entry_label_with_unread": "고객지원 센터, 새 답변 {count}건",
+    "entry_collapse": "지원 진입점 최소화",
+    "entry_expand": "지원 진입점 펼치기",
+    "title": "고객지원",
+    "create_title": "질문하기",
+    "new_question": "새 질문",
+    "back_to_list": "목록으로",
+    "refresh": "새로고침",
+    "question_label": "질문",
+    "question_placeholder": "문의 내용을 입력하세요…",
+    "submit_question": "제출",
+    "create_success": "질문이 제출되었습니다",
+    "ticket_title": "티켓 {number}",
+    "subject_label": "제목: ",
+    "view_detail": "상세 보기",
+    "answered_hint": "이 티켓은 답변이 완료되었습니다. 추가 문의가 있으면 ",
+    "create_new_ticket": "새 티켓 만들기",
     "status": {
-      "open": "Open",
-      "answered": "Answered"
+      "open": "미답변",
+      "answered": "답변됨"
     },
     "sender": {
-      "merchant": "Me",
-      "operator": "Support"
+      "merchant": "나",
+      "operator": "고객지원"
     },
     "empty": {
-      "list": "No support conversations yet",
-      "messages": "No messages yet"
+      "list": "아직 지원 대화가 없습니다",
+      "messages": "아직 메시지가 없습니다"
     },
     "errors": {
-      "load_list": "Failed to load conversations",
-      "load_detail": "Failed to load conversation",
-      "create": "Failed to submit question",
-      "blank_content": "Please enter your question"
+      "load_list": "대화 목록을 불러오지 못했습니다",
+      "load_detail": "대화를 불러오지 못했습니다",
+      "create": "질문 제출에 실패했습니다",
+      "blank_content": "질문을 입력해 주세요"
     }
   },
   "Notifications": {
-    "title": "Notifications & Tasks",
-    "subtitle": "Stay on top of platform messages and items that need your action.",
-    "view_all": "View all",
-    "loading": "Loading…",
-    "mark_all_read": "Mark all as read",
+    "title": "알림 & 작업",
+    "subtitle": "플랫폼 메시지와 조치가 필요한 항목을 확인하세요.",
+    "view_all": "모두 보기",
+    "loading": "로딩 중…",
+    "mark_all_read": "모두 읽음으로 표시",
     "tab": {
-      "notifications": "Notifications",
-      "tasks": "Tasks"
+      "notifications": "알림",
+      "tasks": "작업"
     },
     "filter": {
-      "all": "All",
-      "unread": "Unread"
+      "all": "전체",
+      "unread": "읽지 않음"
     },
     "columns": {
-      "reference": "Reference",
-      "details": "Details",
-      "status_time": "Status / Time"
+      "reference": "참조",
+      "details": "상세",
+      "status_time": "상태 / 시간"
     },
     "empty": {
-      "notifications": "No notifications yet.",
-      "unread": "No unread notifications.",
-      "tasks": "No open tasks.",
-      "completed_tasks": "No completed tasks."
+      "notifications": "아직 알림이 없습니다.",
+      "unread": "읽지 않은 알림이 없습니다.",
+      "tasks": "미처리 작업이 없습니다.",
+      "completed_tasks": "완료된 작업이 없습니다."
     },
     "severity": {
-      "INFO": "Info",
-      "SUCCESS": "Success",
-      "WARNING": "Warning",
-      "ERROR": "Error"
+      "INFO": "정보",
+      "SUCCESS": "성공",
+      "WARNING": "경고",
+      "ERROR": "오류"
     },
     "priority": {
-      "CRITICAL": "Critical",
-      "HIGH": "High",
-      "MEDIUM": "Medium",
-      "LOW": "Low"
+      "CRITICAL": "긴급",
+      "HIGH": "높음",
+      "MEDIUM": "보통",
+      "LOW": "낮음"
     },
     "banner": {
-      "dismiss": "Dismiss",
-      "action": "Take action"
+      "dismiss": "닫기",
+      "action": "조치하기"
     },
-    "resume_link": "Resume payment",
+    "resume_link": "결제 재개",
     "widget": {
-      "action_center": "Action Center",
-      "recent": "Recent Notifications",
-      "summary": "{openTasks} open task(s) · {overdue} overdue"
+      "action_center": "조치 센터",
+      "recent": "최근 알림",
+      "summary": "미처리 작업 {openTasks}건 · 기한 초과 {overdue}건"
     },
     "counts": {
-      "unread": "Unread notifications",
-      "open_tasks": "Open tasks"
+      "unread": "읽지 않은 알림",
+      "open_tasks": "미처리 작업"
     },
     "task": {
-      "action": "Process",
-      "review_action": "Review",
-      "due": "Due {time}",
-      "overdue": "Overdue · {time}"
+      "action": "처리",
+      "review_action": "심사",
+      "due": "기한 {time}",
+      "overdue": "기한 초과 · {time}"
     },
     "tasks": {
-      "open": "Open tasks",
-      "completed": "Completed"
+      "open": "미처리 작업",
+      "completed": "완료"
     },
     "status": {
-      "read": "Read",
-      "unread": "Unread"
+      "read": "읽음",
+      "unread": "읽지 않음"
     },
     "actions": {
-      "view_details": "View details"
+      "view_details": "상세 보기"
     },
-    "showing_count": "Showing {shown} of {total}"
+    "showing_count": "{total}건 중 {shown}건 표시"
   },
   "AuditLogs": {
-    "title": "Audit Logs",
-    "subtitle": "Read-only audit trail for security-sensitive actions in your merchant account.",
-    "empty": "No audit records found.",
-    "table_total": "Total {count} records",
-    "view_link": "View",
-    "timeline_hint": "View Timeline in the related order detail",
-    "metadata_truncated": "Metadata was truncated",
+    "title": "감사 로그",
+    "subtitle": "판매자 계정의 보안 관련 작업에 대한 읽기 전용 감사 기록입니다.",
+    "empty": "감사 기록을 찾을 수 없습니다.",
+    "table_total": "총 {count}건",
+    "view_link": "보기",
+    "timeline_hint": "관련 주문 상세의 타임라인에서 확인하세요",
+    "metadata_truncated": "메타데이터가 잘렸습니다",
     "columns": {
-      "time": "Time",
-      "actor": "Actor",
-      "action": "Action",
-      "resource": "Resource",
-      "result": "Result",
-      "link": "Link"
+      "time": "시간",
+      "actor": "실행자",
+      "action": "작업",
+      "resource": "리소스",
+      "result": "결과",
+      "link": "링크"
     },
     "filter": {
-      "date_range": "Date range",
-      "date_range_start": "Start time",
-      "date_range_end": "End time",
-      "action": "Action type",
-      "result": "Result"
+      "date_range": "기간",
+      "date_range_start": "시작 시각",
+      "date_range_end": "종료 시각",
+      "action": "작업 유형",
+      "result": "결과"
     },
     "result": {
-      "SUCCESS": "Success",
-      "FAILURE": "Failure",
-      "DENIED": "Denied"
+      "SUCCESS": "성공",
+      "FAILURE": "실패",
+      "DENIED": "거부"
     },
     "actor_type": {
-      "MERCHANT_USER": "Merchant user",
-      "OPERATOR": "Operator",
-      "SYSTEM": "System",
+      "MERCHANT_USER": "판매자 사용자",
+      "OPERATOR": "운영자",
+      "SYSTEM": "시스템",
       "API": "API",
       "WEBHOOK": "Webhook"
     },
     "detail": {
-      "reason": "Reason",
-      "event_id": "Event ID",
-      "request_id": "Request ID",
+      "reason": "사유",
+      "event_id": "이벤트 ID",
+      "request_id": "요청 ID",
       "trace_id": "Trace ID",
-      "metadata": "Metadata"
+      "metadata": "메타데이터"
     }
   },
   "audit": {
     "action": {
-      "auth.login": "Login",
-      "auth.logout": "Logout",
-      "auth.password.change": "Change payment password",
-      "auth.mfa.enable": "Enable MFA",
-      "auth.mfa.disable": "Disable MFA",
-      "auth.access.denied": "Access denied",
-      "apikey.create": "Create API key",
-      "apikey.rotate": "Rotate API key",
-      "apikey.delete": "Delete API key",
-      "webhook.create": "Create webhook",
-      "webhook.update": "Update webhook",
-      "webhook.delete": "Delete webhook",
-      "webhook.replay": "Replay webhook",
-      "merchant.config.update": "Update merchant config",
-      "coverage.enable": "Enable coverage",
-      "coverage.disable": "Disable coverage",
-      "coverage.update": "Update coverage config",
-      "risk.review.approve": "Review approved",
-      "risk.review.reject": "Review rejected",
-      "risk.review.assign": "Review assigned",
-      "role.grant": "Grant role",
-      "role.revoke": "Revoke role",
-      "permission.update": "Update permission",
-      "operator.create": "Create operator",
-      "operator.update": "Update operator",
-      "operator.disable": "Disable operator"
+      "auth.login": "로그인",
+      "auth.logout": "로그아웃",
+      "auth.password.change": "결제 비밀번호 변경",
+      "auth.mfa.enable": "MFA 활성화",
+      "auth.mfa.disable": "MFA 비활성화",
+      "auth.access.denied": "접근 거부",
+      "apikey.create": "API 키 생성",
+      "apikey.rotate": "API 키 교체",
+      "apikey.delete": "API 키 삭제",
+      "webhook.create": "Webhook 생성",
+      "webhook.update": "Webhook 업데이트",
+      "webhook.delete": "Webhook 삭제",
+      "webhook.replay": "Webhook 재전송",
+      "merchant.config.update": "판매자 설정 업데이트",
+      "coverage.enable": "보장 활성화",
+      "coverage.disable": "보장 비활성화",
+      "coverage.update": "보장 설정 업데이트",
+      "risk.review.approve": "심사 승인",
+      "risk.review.reject": "심사 거절",
+      "risk.review.assign": "심사 배정",
+      "role.grant": "역할 부여",
+      "role.revoke": "역할 회수",
+      "permission.update": "권한 업데이트",
+      "operator.create": "운영자 생성",
+      "operator.update": "운영자 업데이트",
+      "operator.disable": "운영자 비활성화"
     }
   },
   "RiskReviews": {
-    "title": "Risk Review Queue",
-    "subtitle": "Read-only queue of suspicious orders and payouts flagged for manual review.",
-    "empty": "No risk review items found.",
-    "table_total": "Total {count} reviews",
+    "title": "리스크 심사 대기열",
+    "subtitle": "수동 심사가 필요한 것으로 표시된 의심 주문·지급의 읽기 전용 대기열입니다.",
+    "empty": "리스크 심사 항목을 찾을 수 없습니다.",
+    "table_total": "총 {count}건의 심사",
     "filters": {
-      "keyword": "Search reviews",
-      "status": "Status",
-      "priority": "Priority",
-      "review_type": "Review type"
+      "keyword": "심사 검색",
+      "status": "상태",
+      "priority": "우선순위",
+      "review_type": "심사 유형"
     },
     "detail": {
-      "title": "Review Detail",
-      "back_to_list": "Back to reviews",
-      "not_found": "Review not found.",
-      "review_type": "Review Type",
-      "reason_code": "Reason Code",
-      "queued_at": "Queued At",
-      "decided_at": "Decided At",
-      "decision_note": "Decision Note",
-      "linked_fraud": "Linked Fraud Event",
-      "resume_link": "Resume Link"
+      "title": "심사 상세",
+      "back_to_list": "심사 목록으로",
+      "not_found": "심사를 찾을 수 없습니다.",
+      "review_type": "심사 유형",
+      "reason_code": "사유 코드",
+      "queued_at": "대기열 등록 시각",
+      "decided_at": "결정 시각",
+      "decision_note": "결정 메모",
+      "linked_fraud": "연결된 사기 이벤트",
+      "resume_link": "재개 링크"
     },
-    "resume_link": "Resume payment",
+    "resume_link": "결제 재개",
     "headers": {
-      "resource": "Resource",
-      "reason": "Reason",
-      "priority": "Priority",
-      "status": "Status",
-      "created_at": "Flagged At"
+      "resource": "리소스",
+      "reason": "사유",
+      "priority": "우선순위",
+      "status": "상태",
+      "created_at": "표시 시각"
     },
     "resource_type": {
-      "ORDER": "Order",
-      "PAYOUT": "Payout"
+      "ORDER": "주문",
+      "PAYOUT": "지급"
     },
     "status": {
-      "PENDING": "Pending",
-      "APPROVED": "Approved",
-      "REJECTED": "Rejected"
+      "PENDING": "대기 중",
+      "APPROVED": "승인됨",
+      "REJECTED": "거절됨"
     }
   },
   "Reporting": {
     "widgets": {
-      "availableBalance": "Available Balance",
-      "todayVolume": "Today's Volume",
-      "successRate": "Success Rate",
-      "pendingSettlement": "Pending Settlement"
+      "availableBalance": "사용 가능 잔액",
+      "todayVolume": "오늘 거래량",
+      "successRate": "성공률",
+      "pendingSettlement": "정산 대기"
     },
-    "no_data": "No data available",
-    "forbidden": "You do not have permission to view this",
-    "failed": "Failed to load",
-    "retry": "Retry",
+    "no_data": "데이터가 없습니다",
+    "forbidden": "이를 볼 권한이 없습니다",
+    "failed": "불러오기 실패",
+    "retry": "다시 시도",
     "transactions": {
-      "title": "Transaction Report",
-      "subtitle": "Discover and export transactions under your authorized scope.",
-      "empty": "No transactions found.",
-      "table_total": "Total {count} transactions",
-      "export": "Export CSV",
-      "export_failed": "Export failed",
+      "title": "거래 보고서",
+      "subtitle": "권한이 있는 범위의 거래를 조회하고 내보낼 수 있습니다.",
+      "empty": "거래를 찾을 수 없습니다.",
+      "table_total": "총 {count}건의 거래",
+      "export": "CSV 내보내기",
+      "export_failed": "내보내기 실패",
       "filters": {
-        "merchant_order_id": "Merchant order ID",
-        "status": "Status",
-        "channel": "Channel",
-        "amount_min": "Min amount",
-        "amount_max": "Max amount",
-        "created_from": "Created from",
-        "created_to": "Created to"
+        "merchant_order_id": "판매자 주문 ID",
+        "status": "상태",
+        "channel": "채널",
+        "amount_min": "최소 금액",
+        "amount_max": "최대 금액",
+        "created_from": "생성 시작",
+        "created_to": "생성 종료"
       },
       "columns": {
-        "merchant_order_id": "Merchant order ID",
-        "trade_no": "Trade no.",
-        "order_type": "Order type",
-        "status": "Status",
-        "amount": "Amount",
-        "channel": "Channel",
-        "created_at": "Created at"
+        "merchant_order_id": "판매자 주문 ID",
+        "trade_no": "거래 번호",
+        "order_type": "주문 유형",
+        "status": "상태",
+        "amount": "금액",
+        "channel": "채널",
+        "created_at": "생성 시각"
       },
       "statuses": {
-        "PENDING": "Pending",
-        "PROCESSING": "Processing",
-        "PARTIAL_SUCCESS": "Partial success",
-        "SUCCESS": "Success",
-        "CLOSED": "Closed",
-        "FAILED": "Failed",
-        "REQUIRES_CAPTURE": "Requires capture",
-        "DISPUTED": "Disputed"
+        "PENDING": "대기 중",
+        "PROCESSING": "처리 중",
+        "PARTIAL_SUCCESS": "부분 성공",
+        "SUCCESS": "성공",
+        "CLOSED": "종료",
+        "FAILED": "실패",
+        "REQUIRES_CAPTURE": "캡처 필요",
+        "DISPUTED": "분쟁 중"
       },
       "orderTypes": {
-        "TRADE": "Trade order",
-        "DEPOSIT": "Deposit",
-        "TRANSFER": "Transfer",
-        "PAYOUT": "Payout",
-        "WITHDRAWAL": "Withdrawal",
-        "REFUND": "Refund",
-        "DIRECT_DEBIT": "Direct debit",
-        "PLATFORM_SERVICE_FEE": "Platform service fee"
+        "TRADE": "거래 주문",
+        "DEPOSIT": "입금",
+        "TRANSFER": "이체",
+        "PAYOUT": "지급",
+        "WITHDRAWAL": "출금",
+        "REFUND": "환불",
+        "DIRECT_DEBIT": "자동이체",
+        "PLATFORM_SERVICE_FEE": "플랫폼 서비스 수수료"
       },
       "detail": {
-        "title": "Transaction detail",
-        "back_to_list": "Back to transactions",
-        "resource_unavailable": "Resource unavailable",
-        "view_business_detail": "View business detail",
+        "title": "거래 상세",
+        "back_to_list": "거래 목록으로",
+        "resource_unavailable": "리소스를 사용할 수 없습니다",
+        "view_business_detail": "업무 상세 보기",
         "fields": {
-          "merchant_order_id": "Merchant order ID",
-          "trade_no": "Trade no.",
-          "status": "Status",
-          "order_type": "Order type",
-          "amount": "Amount",
-          "paid_amount": "Paid amount",
-          "refunded_amount": "Refunded amount",
-          "currency": "Currency",
-          "channel": "Channel",
-          "subject": "Subject",
-          "created_at": "Created at",
-          "paid_at": "Paid at",
-          "updated_at": "Updated at"
+          "merchant_order_id": "판매자 주문 ID",
+          "trade_no": "거래 번호",
+          "status": "상태",
+          "order_type": "주문 유형",
+          "amount": "금액",
+          "paid_amount": "결제 금액",
+          "refunded_amount": "환불 금액",
+          "currency": "통화",
+          "channel": "채널",
+          "subject": "제목",
+          "created_at": "생성 시각",
+          "paid_at": "결제 시각",
+          "updated_at": "업데이트 시각"
         },
         "timeline": {
-          "title": "Timeline",
-          "empty": "No timeline events."
+          "title": "타임라인",
+          "empty": "타임라인 이벤트가 없습니다."
         }
       }
     }
   },
   "Risk": {
     "related_risk": {
-      "title": "Related Risk",
-      "fraud_events": "Fraud Events",
-      "reviews": "Reviews"
+      "title": "관련 리스크",
+      "fraud_events": "사기 이벤트",
+      "reviews": "심사"
     },
     "payment_timeline": {
-      "title": "Payment Risk Timeline",
+      "title": "결제 리스크 타임라인",
       "entity": {
-        "FRAUD": "Fraud",
-        "REVIEW": "Review",
-        "DISPUTE": "Dispute",
-        "PAYMENT": "Payment"
+        "FRAUD": "사기",
+        "REVIEW": "심사",
+        "DISPUTE": "분쟁",
+        "PAYMENT": "결제"
       }
     },
     "dashboard": {
-      "title": "Risk Overview",
-      "view_fraud": "View fraud events",
-      "pending_reviews": "Pending Reviews",
-      "open_disputes": "Open Disputes",
-      "high_fraud_today": "High Fraud Today",
-      "blocked_amount": "Blocked Amount",
-      "blocked_unsupported": "Not supported yet",
-      "review_sla_hours": "Review SLA (hrs)",
-      "chargeback_ratio": "Chargeback Ratio",
-      "rejected_today": "Rejected Today",
-      "pending_review_attempts": "Pending Review Payments",
-      "pending_events": "Pending risk actions",
-      "monitoring_metrics": "Ongoing monitoring"
+      "title": "리스크 개요",
+      "view_fraud": "사기 이벤트 보기",
+      "pending_reviews": "대기 중 심사",
+      "open_disputes": "진행 중 분쟁",
+      "high_fraud_today": "오늘 고위험 사기",
+      "blocked_amount": "차단 금액",
+      "blocked_unsupported": "아직 지원되지 않음",
+      "review_sla_hours": "심사 SLA(시간)",
+      "chargeback_ratio": "차지백 비율",
+      "rejected_today": "오늘 거절",
+      "pending_review_attempts": "심사 대기 결제",
+      "pending_events": "미처리 리스크 조치",
+      "monitoring_metrics": "지속 모니터링"
     }
   },
   "RiskRules": {
-    "title": "Risk Rules",
-    "subtitle": "View platform and merchant PRE_AUTH rules (read-only).",
-    "empty": "No risk rules found.",
+    "title": "리스크 규칙",
+    "subtitle": "플랫폼 및 판매자 PRE_AUTH 규칙을 조회합니다(읽기 전용).",
+    "empty": "리스크 규칙을 찾을 수 없습니다.",
     "headers": {
-      "name": "Name",
-      "rule_type": "Type",
-      "severity": "Severity",
-      "enforcement": "Enforcement",
-      "scope": "Scope",
-      "enabled": "Enabled",
-      "priority": "Priority",
-      "config": "Configuration"
+      "name": "이름",
+      "rule_type": "유형",
+      "severity": "심각도",
+      "enforcement": "적용",
+      "scope": "범위",
+      "enabled": "사용",
+      "priority": "우선순위",
+      "config": "구성"
     },
     "rule_type": {
-      "VELOCITY": "Velocity",
-      "AMOUNT": "Amount"
+      "VELOCITY": "빈도",
+      "AMOUNT": "금액"
     },
     "enforcement": {
-      "BLOCK": "Block",
-      "REVIEW_BEFORE_AUTH": "Review before payment"
+      "BLOCK": "차단",
+      "REVIEW_BEFORE_AUTH": "결제 전 심사"
     },
     "scope": {
-      "platform": "Platform",
-      "merchant": "Merchant"
+      "platform": "플랫폼",
+      "merchant": "판매자"
     },
     "config": {
       "schema": "Schema",
-      "velocity": "Max {maxCount} attempts within {windowMinutes} minutes",
-      "amount": "Threshold: {threshold}"
+      "velocity": "{windowMinutes}분 이내 최대 {maxCount}회",
+      "amount": "임계값: {threshold}"
     }
   },
   "Fraud": {
-    "title": "Fraud Events",
-    "subtitle": "Monitor detected fraud signals and investigation status.",
-    "empty": "No fraud events found.",
-    "table_total": "Total {count} events",
+    "title": "사기 이벤트",
+    "subtitle": "감지된 사기 신호와 조사 상태를 모니터링합니다.",
+    "empty": "사기 이벤트를 찾을 수 없습니다.",
+    "table_total": "총 {count}건의 이벤트",
     "filters": {
-      "keyword": "Search events",
-      "status": "Status",
-      "severity": "Severity"
+      "keyword": "이벤트 검색",
+      "status": "상태",
+      "severity": "심각도"
     },
     "detail": {
-      "title": "Fraud Event Detail",
-      "back_to_list": "Back to fraud events",
-      "not_found": "Fraud event not found.",
-      "payment_id": "Payment ID",
-      "provider": "Provider",
-      "score": "Risk Score",
+      "title": "사기 이벤트 상세",
+      "back_to_list": "사기 이벤트 목록으로",
+      "not_found": "사기 이벤트를 찾을 수 없습니다.",
+      "payment_id": "결제 ID",
+      "provider": "제공업체",
+      "score": "리스크 점수",
       "metadata": {
-        "title": "Metadata",
+        "title": "메타데이터",
         "v1": {
-          "deviceId": "Device ID",
-          "ipAddress": "IP Address",
-          "velocityCount": "Velocity Count",
-          "amountThreshold": "Amount Threshold",
-          "countryCode": "Country",
-          "cardFingerprint": "Card Fingerprint"
+          "deviceId": "디바이스 ID",
+          "ipAddress": "IP 주소",
+          "velocityCount": "빈도 횟수",
+          "amountThreshold": "금액 임계값",
+          "countryCode": "국가",
+          "cardFingerprint": "카드 지문"
         }
       }
     },
     "headers": {
-      "event_type": "Event Type",
-      "risk_type": "Risk Type",
-      "description": "Description",
-      "severity": "Severity",
-      "order_id": "Related Order",
-      "status": "Status",
-      "detected_at": "Detected At"
+      "event_type": "이벤트 유형",
+      "risk_type": "리스크 유형",
+      "description": "설명",
+      "severity": "심각도",
+      "order_id": "관련 주문",
+      "status": "상태",
+      "detected_at": "감지 시각"
     },
     "status": {
-      "OPEN": "Open",
-      "INVESTIGATING": "Investigating",
-      "CLOSED": "Closed"
+      "OPEN": "미처리",
+      "INVESTIGATING": "조사 중",
+      "CLOSED": "종료"
     },
     "risk_type": {
-      "DEVICE": "Device anomaly",
-      "VELOCITY": "Velocity anomaly",
-      "GEO": "Geographic anomaly",
-      "BIN": "BIN anomaly",
-      "AMOUNT": "Amount anomaly",
-      "IP_MISMATCH": "IP mismatch",
-      "COMBINED": "Combined risk",
-      "FRAUD": "Fraud risk"
+      "DEVICE": "디바이스 이상",
+      "VELOCITY": "빈도 이상",
+      "GEO": "지역 이상",
+      "BIN": "BIN 이상",
+      "AMOUNT": "금액 이상",
+      "IP_MISMATCH": "IP 불일치",
+      "COMBINED": "복합 리스크",
+      "FRAUD": "사기 리스크"
     },
     "summary": {
-      "DEVICE": "Device fingerprint does not match billing profile",
-      "VELOCITY": "Transaction velocity exceeded the threshold",
-      "GEO": "Transaction geography differs from expected behavior",
-      "BIN": "Card BIN shows elevated risk characteristics",
-      "AMOUNT": "Transaction amount is outside the normal range",
-      "IP_MISMATCH": "IP address does not match billing information",
-      "COMBINED": "Multiple risk signals triggered together",
-      "FRAUD": "Suspicious fraud activity detected"
+      "DEVICE": "디바이스 지문이 청구 프로필과 일치하지 않습니다",
+      "VELOCITY": "거래 빈도가 임계값을 초과했습니다",
+      "GEO": "거래 지역이 예상 행동과 다릅니다",
+      "BIN": "카드 BIN에 높은 리스크 특성이 있습니다",
+      "AMOUNT": "거래 금액이 정상 범위를 벗어났습니다",
+      "IP_MISMATCH": "IP 주소가 청구 정보와 일치하지 않습니다",
+      "COMBINED": "여러 리스크 신호가 함께 발생했습니다",
+      "FRAUD": "의심스러운 사기 활동이 감지되었습니다"
     }
   },
   "Customers": {
