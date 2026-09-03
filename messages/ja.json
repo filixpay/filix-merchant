@@ -160,107 +160,107 @@
     }
   },
   "CoverageInsurance": {
-    "title": "Coverage Insurance",
-    "subtitle": "Subscribe to platform-hosted chargeback coverage for new orders.",
-    "product_title": "Platform Chargeback Coverage",
-    "product_description": "Filix Pay provides integrated dispute coverage through our platform insurance partners.",
-    "unavailable_title": "Service not available yet",
-    "unavailable_body": "Platform coverage is being prepared. Please check back later or contact support.",
-    "agreement_body": "By subscribing, you authorize Filix Pay to apply platform-hosted chargeback coverage to eligible new orders under the current service agreement.",
-    "agreement_checkbox": "I have read and agree to the coverage service agreement (v1).",
-    "unsubscribed_banner": "Coverage is turned off for new orders. Existing claims will continue to be processed.",
+    "title": "保障保険",
+    "subtitle": "新規注文向けのプラットフォームホスト型チャージバック保障に申し込みます。",
+    "product_title": "プラットフォームチャージバック保障",
+    "product_description": "Filix Pay は、プラットフォームの保険パートナーを通じて統合的な紛争保障を提供します。",
+    "unavailable_title": "サービスはまだご利用いただけません",
+    "unavailable_body": "プラットフォーム保障を準備中です。しばらくしてから再度ご確認いただくか、サポートまでお問い合わせください。",
+    "agreement_body": "申し込みにより、現行のサービス契約に基づき、対象となる新規注文に Filix Pay がプラットフォームホスト型チャージバック保障を適用することを承認します。",
+    "agreement_checkbox": "保障サービス契約（v1）を読み、同意します。",
+    "unsubscribed_banner": "新規注文の保障はオフです。既存の請求は引き続き処理されます。",
     "status": {
-      "subscribed": "Active",
-      "not_subscribed": "Not subscribed",
-      "unsubscribed": "Unsubscribed"
+      "subscribed": "有効",
+      "not_subscribed": "未加入",
+      "unsubscribed": "解約済み"
     },
     "fields": {
-      "provider": "Provider",
-      "subscribed_at": "Subscribed at",
-      "agreement_version": "Agreement version"
+      "provider": "プロバイダー",
+      "subscribed_at": "加入日時",
+      "agreement_version": "契約バージョン"
     },
     "actions": {
-      "subscribe": "Activate coverage",
-      "unsubscribe": "Turn off coverage"
+      "subscribe": "保障を有効化",
+      "unsubscribe": "保障をオフにする"
     },
     "unsubscribe_modal": {
-      "title": "Turn off coverage?",
-      "warning": "After you turn off coverage, new orders will no longer be covered by platform chargeback insurance. Existing claims will continue to be processed without interruption.",
-      "confirm": "Turn off",
-      "cancel": "Cancel"
+      "title": "保障をオフにしますか？",
+      "warning": "保障をオフにすると、新規注文はプラットフォームのチャージバック保険の対象外になります。既存の請求は中断なく引き続き処理されます。",
+      "confirm": "オフにする",
+      "cancel": "キャンセル"
     },
     "messages": {
-      "load_failed": "Failed to load coverage subscription",
-      "subscribed": "Coverage activated",
-      "subscribe_failed": "Failed to activate coverage",
-      "unsubscribed": "Coverage turned off",
-      "unsubscribe_failed": "Failed to turn off coverage"
+      "load_failed": "保障の加入状況の読み込みに失敗しました",
+      "subscribed": "保障を有効化しました",
+      "subscribe_failed": "保障の有効化に失敗しました",
+      "unsubscribed": "保障をオフにしました",
+      "unsubscribe_failed": "保障のオフに失敗しました"
     }
   },
   "CoverageConfig": {
-    "title": "Chargeback Coverage",
-    "subtitle": "Configure dispute coverage providers for new chargeback cases.",
-    "empty": "No coverage configurations yet.",
-    "provider_switch_warning": "Switching provider only affects new chargeback cases.",
-    "active_banner": "Active provider: {provider} ({id})",
-    "no_active_banner": "No active coverage provider. New disputes will skip coverage claims.",
-    "platform_hosted_banner": "This configuration powers platform-hosted coverage for subscribed Platform settlement merchants.",
-    "maintenance_banner": "Maintenance mode: new assessments are paused; in-flight claim webhooks continue.",
+    "title": "チャージバック保障",
+    "subtitle": "新しいチャージバック案件向けの紛争保障プロバイダーを設定します。",
+    "empty": "保障設定はまだありません。",
+    "provider_switch_warning": "プロバイダーの切り替えは新しいチャージバック案件にのみ影響します。",
+    "active_banner": "有効なプロバイダー：{provider}（{id}）",
+    "no_active_banner": "有効な保障プロバイダーがありません。新規紛争では保障請求をスキップします。",
+    "platform_hosted_banner": "この設定は、加入済みのプラットフォーム精算マーチャント向けプラットフォームホスト型保障を支えます。",
+    "maintenance_banner": "メンテナンスモード：新規評価は一時停止中です。進行中の請求Webhookは継続します。",
     "columns": {
-      "provider": "Provider",
-      "status": "Status",
-      "version": "Version",
-      "updated_at": "Updated"
+      "provider": "プロバイダー",
+      "status": "ステータス",
+      "version": "バージョン",
+      "updated_at": "更新日時"
     },
     "status": {
-      "active": "Active",
-      "disabled": "Disabled",
-      "maintenance": "Maintenance"
+      "active": "有効",
+      "disabled": "無効",
+      "maintenance": "メンテナンス"
     },
     "fields": {
-      "provider": "Provider",
-      "provider_placeholder": "Select a provider"
+      "provider": "プロバイダー",
+      "provider_placeholder": "プロバイダーを選択"
     },
     "config_fields": {
       "teamId": "Team ID",
-      "shopDomain": "Shop Domain",
-      "environment": "Environment",
-      "coverageLimit": "Coverage Limit",
-      "currency": "Currency",
-      "mode": "Mode"
+      "shopDomain": "ショップドメイン",
+      "environment": "環境",
+      "coverageLimit": "保障上限",
+      "currency": "通貨",
+      "mode": "モード"
     },
     "secret_fields": {
       "apiKey": "API Key",
       "webhookSecret": "Webhook Secret"
     },
-    "secret_keep_hint": "Current value: {masked}. Leave blank to keep unchanged.",
-    "secret_placeholder_edit": "Leave blank to keep current value",
+    "secret_keep_hint": "現在の値：{masked}。変更しない場合は空のままにしてください。",
+    "secret_placeholder_edit": "変更しない場合は空のまま",
     "validation": {
-      "provider_required": "Please select a provider",
-      "field_required": "{field} is required"
+      "provider_required": "プロバイダーを選択してください",
+      "field_required": "{field} は必須です"
     },
     "actions": {
-      "create": "Add Configuration",
-      "edit": "Edit",
-      "activate": "Activate",
-      "deactivate": "Deactivate",
-      "enter_maintenance": "Enter maintenance",
-      "resume": "Resume service",
-      "test_connection": "Test Connection"
+      "create": "設定を追加",
+      "edit": "編集",
+      "activate": "有効化",
+      "deactivate": "無効化",
+      "enter_maintenance": "メンテナンスに入る",
+      "resume": "サービスを再開",
+      "test_connection": "接続をテスト"
     },
     "modal": {
-      "create_title": "Add Coverage Configuration",
-      "edit_title": "Edit Coverage Configuration"
+      "create_title": "保障設定を追加",
+      "edit_title": "保障設定を編集"
     },
     "messages": {
-      "created": "Coverage configuration created",
-      "updated": "Coverage configuration updated",
-      "activated": "Coverage configuration activated",
-      "deactivated": "Coverage configuration deactivated",
-      "maintenance_entered": "Coverage entered maintenance mode",
-      "resumed": "Coverage resumed",
-      "test_ok": "Connection OK ({latencyMs} ms, {providerVersion})",
-      "test_failed": "Connection test failed: {status}"
+      "created": "保障設定を作成しました",
+      "updated": "保障設定を更新しました",
+      "activated": "保障設定を有効化しました",
+      "deactivated": "保障設定を無効化しました",
+      "maintenance_entered": "保障がメンテナンスモードに入りました",
+      "resumed": "保障を再開しました",
+      "test_ok": "接続OK（{latencyMs} ms、{providerVersion}）",
+      "test_failed": "接続テストに失敗しました：{status}"
     }
   },
   "ServicePlan": {
@@ -1613,656 +1613,656 @@
     }
   },
   "Disputes": {
-    "title": "Disputes & Chargebacks",
-    "subtitle": "Monitor chargeback cases, response deadlines, and required merchant actions.",
-    "empty": "No dispute cases found.",
-    "back_to_list": "Back to disputes",
+    "title": "紛争・チャージバック",
+    "subtitle": "チャージバック案件、対応期限、および必要なマーチャント対応を監視します。",
+    "empty": "紛争案件が見つかりません。",
+    "back_to_list": "紛争一覧に戻る",
     "kpis": {
-      "action_required": "Cases Require Action",
-      "due_soon": "Due Soon (<3 days)",
-      "overdue": "Overdue"
+      "action_required": "対応が必要な案件",
+      "due_soon": "まもなく期限（<3日）",
+      "overdue": "期限超過"
     },
     "headers": {
-      "case_number": "Case No.",
-      "order_id": "Order ID",
-      "channel": "Channel",
-      "created_at": "Created At",
-      "amount": "Amount",
-      "reason": "Reason",
-      "priority": "Priority",
-      "status": "Status",
-      "response_due": "Response Due"
+      "case_number": "案件番号",
+      "order_id": "注文ID",
+      "channel": "チャネル",
+      "created_at": "作成日時",
+      "amount": "金額",
+      "reason": "理由",
+      "priority": "優先度",
+      "status": "ステータス",
+      "response_due": "対応期限"
     },
     "filters": {
-      "keyword": "Case No. / Order ID",
-      "status": "Status",
-      "channel": "Channel",
-      "all_status": "All statuses"
+      "keyword": "案件番号 / 注文ID",
+      "status": "ステータス",
+      "channel": "チャネル",
+      "all_status": "すべてのステータス"
     },
-    "table_total": "Total {count}",
+    "table_total": "合計 {count}",
     "priority": {
-      "CRITICAL": "Critical",
-      "HIGH": "High",
-      "MEDIUM": "Medium",
-      "LOW": "Low"
+      "CRITICAL": "緊急",
+      "HIGH": "高",
+      "MEDIUM": "中",
+      "LOW": "低"
     },
     "status": {
-      "DRAFT": "Draft",
-      "SUBMITTED": "Submitted",
-      "UNDER_REVIEW": "Under Review",
-      "WON": "Won",
-      "LOST": "Lost",
-      "ACCEPTED": "Accepted"
+      "DRAFT": "下書き",
+      "SUBMITTED": "提出済み",
+      "UNDER_REVIEW": "審査中",
+      "WON": "勝訴",
+      "LOST": "敗訴",
+      "ACCEPTED": "認責済み"
     },
     "evidence_category": {
-      "RECEIPT": "Receipt",
-      "SHIPPING": "Shipping",
-      "COMMUNICATION": "Communication",
-      "OTHER": "Other"
+      "RECEIPT": "領収書",
+      "SHIPPING": "配送",
+      "COMMUNICATION": "やり取り記録",
+      "OTHER": "その他"
     },
     "action_center": {
-      "title": "Merchant Action Center",
-      "locked": "This case is locked. Evidence can no longer be edited.",
-      "upload_hint": "Click or drag files to upload evidence",
-      "file": "File",
-      "category": "Category",
-      "upload_types": "Supports PDF, JPG, PNG, WEBP. Max {size}MB per file.",
-      "file_size": "Size",
-      "file_too_large": "File too large. Max {size}MB per file."
+      "title": "マーチャント対応センター",
+      "locked": "この案件はロックされています。証拠は編集できません。",
+      "upload_hint": "クリックまたはドラッグして証拠ファイルをアップロード",
+      "file": "ファイル",
+      "category": "カテゴリ",
+      "upload_types": "PDF、JPG、PNG、WEBPに対応。1ファイル最大 {size}MB。",
+      "file_size": "サイズ",
+      "file_too_large": "ファイルが大きすぎます。1ファイル最大 {size}MB です。"
     },
     "actions": {
-      "save_draft": "Save Draft",
-      "submit": "Submit Evidence",
-      "accept_liability": "Accept Liability",
-      "accept_liability_confirm_title": "Accept chargeback liability?",
-      "accept_liability_confirm_body": "You will not be able to submit evidence after accepting liability.",
-      "submit_confirm_title": "Submit evidence?",
-      "submit_confirm_body": "Submission cannot be undone. Evidence will be sent to the payment channel for review."
+      "save_draft": "下書きを保存",
+      "submit": "証拠を提出",
+      "accept_liability": "責任を受け入れる",
+      "accept_liability_confirm_title": "チャージバックの責任を受け入れますか？",
+      "accept_liability_confirm_body": "責任を受け入れた後は証拠を提出できなくなります。",
+      "submit_confirm_title": "証拠を提出しますか？",
+      "submit_confirm_body": "提出後は取り消しできません。証拠は審査のため決済チャネルへ送信されます。"
     },
     "messages": {
-      "draft_saved": "Evidence draft saved",
-      "submitted": "Evidence submitted for review",
-      "liability_accepted": "Liability accepted",
-      "evidence_uploaded": "Evidence file uploaded",
-      "evidence_required": "Please upload at least one evidence file"
+      "draft_saved": "証拠の下書きを保存しました",
+      "submitted": "証拠を提出し、審査に回しました",
+      "liability_accepted": "責任を受け入れました",
+      "evidence_uploaded": "証拠ファイルをアップロードしました",
+      "evidence_required": "少なくとも1件の証拠ファイルをアップロードしてください"
     },
     "reason_codes": {
-      "fraudulent": "Fraudulent",
-      "duplicate": "Duplicate charge",
-      "product_not_received": "Product not received",
-      "unrecognized": "Unrecognized charge",
-      "credit_not_processed": "Credit not processed",
-      "general": "General dispute",
-      "incorrect_account_details": "Incorrect account details",
-      "insufficient_funds": "Insufficient funds",
-      "bank_cannot_process": "Bank cannot process",
-      "debit_not_authorized": "Debit not authorized",
-      "customer_initiated": "Customer initiated",
-      "merchandise_or_service_not_received": "Merchandise or service not received",
-      "unauthorized": "Unauthorized",
-      "merchandise_or_service_not_as_described": "Merchandise or service not as described",
-      "cancelled_recurring_billing": "Cancelled recurring billing",
-      "non_receipt": "Non-receipt",
-      "not_as_described": "Not as described",
-      "duplicate_transaction": "Duplicate transaction",
-      "credit_not_received": "Credit not received"
+      "fraudulent": "不正取引",
+      "duplicate": "二重請求",
+      "product_not_received": "商品未受領",
+      "unrecognized": "身に覚えのない請求",
+      "credit_not_processed": "返金未処理",
+      "general": "一般紛争",
+      "incorrect_account_details": "口座情報の誤り",
+      "insufficient_funds": "残高不足",
+      "bank_cannot_process": "銀行で処理不可",
+      "debit_not_authorized": "未承認の引き落とし",
+      "customer_initiated": "顧客が開始",
+      "merchandise_or_service_not_received": "商品またはサービス未受領",
+      "unauthorized": "未承認",
+      "merchandise_or_service_not_as_described": "商品またはサービスが説明と異なる",
+      "cancelled_recurring_billing": "解約済みの定期課金",
+      "non_receipt": "未受領",
+      "not_as_described": "説明と異なる",
+      "duplicate_transaction": "重複取引",
+      "credit_not_received": "返金未受領"
     },
     "timeline": {
-      "title": "Case Timeline",
-      "actor": "By {actor}",
+      "title": "案件タイムライン",
+      "actor": "操作者：{actor}",
       "actors": {
-        "system": "System auto-trigger",
-        "merchant": "Merchant action"
+        "system": "システム自動トリガー",
+        "merchant": "マーチャント操作"
       },
       "events": {
-        "CASE_OPENED": "Dispute opened",
-        "EVIDENCE_DRAFT_SAVED": "Evidence draft saved",
-        "EVIDENCE_SUBMITTED": "Evidence submitted",
-        "REVIEW_STARTED": "Under bank review",
-        "CHANNEL_STATUS_CHANGED": "Channel status updated",
-        "CASE_RESOLVED": "Dispute resolved",
-        "LIABILITY_ACCEPTED": "Liability accepted",
-        "EVIDENCE_FORWARDED_TO_CHANNEL": "Evidence forwarded to channel",
-        "CHANNEL_EVIDENCE_SUBMIT_FAILED": "Channel evidence submit failed"
+        "CASE_OPENED": "紛争を開始",
+        "EVIDENCE_DRAFT_SAVED": "証拠の下書きを保存",
+        "EVIDENCE_SUBMITTED": "証拠を提出",
+        "REVIEW_STARTED": "銀行審査中",
+        "CHANNEL_STATUS_CHANGED": "チャネルステータスを更新",
+        "CASE_RESOLVED": "紛争を解決",
+        "LIABILITY_ACCEPTED": "責任を受け入れ",
+        "EVIDENCE_FORWARDED_TO_CHANNEL": "証拠をチャネルへ転送",
+        "CHANNEL_EVIDENCE_SUBMIT_FAILED": "チャネルへの証拠提出に失敗"
       },
       "titles": {
-        "dispute_opened": "Dispute opened",
-        "dispute_resolved": "Dispute resolved",
-        "evidence_draft_saved": "Evidence draft saved",
-        "evidence_submitted": "Evidence submitted",
-        "under_bank_review": "Under bank review",
-        "liability_accepted": "Liability accepted",
-        "channel_status_updated": "Channel status updated",
-        "evidence_forwarded_to_channel": "Evidence forwarded to channel",
-        "channel_evidence_submit_failed": "Channel evidence submit failed"
+        "dispute_opened": "紛争を開始",
+        "dispute_resolved": "紛争を解決",
+        "evidence_draft_saved": "証拠の下書きを保存",
+        "evidence_submitted": "証拠を提出",
+        "under_bank_review": "銀行審査中",
+        "liability_accepted": "責任を受け入れ",
+        "channel_status_updated": "チャネルステータスを更新",
+        "evidence_forwarded_to_channel": "証拠をチャネルへ転送",
+        "channel_evidence_submit_failed": "チャネルへの証拠提出に失敗"
       },
       "descriptions": {
-        "charge_dispute_created": "Stripe: dispute created",
-        "charge_dispute_updated": "Stripe: dispute updated",
-        "charge_dispute_closed": "Stripe: dispute closed",
-        "charge_dispute_funds_withdrawn": "Stripe: dispute funds withdrawn",
-        "charge_dispute_funds_reinstated": "Stripe: dispute funds reinstated",
-        "customer_dispute_created": "PayPal: dispute created",
-        "customer_dispute_updated": "PayPal: dispute updated",
-        "customer_dispute_resolved": "PayPal: dispute resolved",
-        "submitted_files_to_channel": "Submitted {count} file(s) to {channel}",
-        "files_attached": "{count} file(s) attached",
+        "charge_dispute_created": "Stripe：紛争を作成",
+        "charge_dispute_updated": "Stripe：紛争を更新",
+        "charge_dispute_closed": "Stripe：紛争をクローズ",
+        "charge_dispute_funds_withdrawn": "Stripe：紛争資金を引き落とし",
+        "charge_dispute_funds_reinstated": "Stripe：紛争資金を復元",
+        "customer_dispute_created": "PayPal：紛争を作成",
+        "customer_dispute_updated": "PayPal：紛争を更新",
+        "customer_dispute_resolved": "PayPal：紛争を解決",
+        "submitted_files_to_channel": "{channel} に {count} 件のファイルを提出",
+        "files_attached": "{count} 件のファイルを添付",
         "channel_status_transition": "{oldStatus} → {newStatus}",
-        "case_locked_for_review": "Case locked for review",
-        "merchant_accepted_chargeback_liability": "Merchant accepted chargeback liability"
+        "case_locked_for_review": "審査のため案件をロック",
+        "merchant_accepted_chargeback_liability": "マーチャントがチャージバックの責任を受け入れました"
       },
       "channel_statuses": {
-        "needs_response": "Needs response",
-        "under_review": "Under review",
-        "won": "Won",
-        "lost": "Lost",
-        "charge_refunded": "Charge refunded",
-        "warning_needs_response": "Warning needs response",
-        "warning_under_review": "Warning under review",
-        "warning_closed": "Warning closed"
+        "needs_response": "対応が必要",
+        "under_review": "審査中",
+        "won": "勝訴",
+        "lost": "敗訴",
+        "charge_refunded": "請求を返金済み",
+        "warning_needs_response": "警告・対応が必要",
+        "warning_under_review": "警告・審査中",
+        "warning_closed": "警告・クローズ"
       },
       "resolutions": {
-        "MERCHANT_WON": "Merchant won",
-        "BUYER_WON": "Buyer won",
-        "MERCHANT_ACCEPTED": "Merchant accepted",
-        "PARTIAL": "Partial win"
+        "MERCHANT_WON": "マーチャント勝訴",
+        "BUYER_WON": "購入者勝訴",
+        "MERCHANT_ACCEPTED": "マーチャントが認責",
+        "PARTIAL": "一部勝訴"
       }
     },
     "detail": {
-      "title": "Dispute Case",
-      "reason_code": "Reason Code",
-      "not_found": "Dispute case not found."
+      "title": "紛争案件",
+      "reason_code": "理由コード",
+      "not_found": "紛争案件が見つかりません。"
     },
     "coverage_assessment": {
-      "title": "Coverage Assessment",
+      "title": "保障評価",
       "headers": {
-        "status": "Coverage Status",
-        "provider": "Provider",
-        "stage": "Evaluation Stage",
-        "limit": "Coverage Limit",
-        "reference": "Reference",
-        "assessment_id": "Assessment ID"
+        "status": "保障ステータス",
+        "provider": "プロバイダー",
+        "stage": "評価段階",
+        "limit": "保障上限",
+        "reference": "参照番号",
+        "assessment_id": "評価ID"
       },
       "status": {
-        "COVERED": "Covered",
-        "NOT_COVERED": "Not Covered",
-        "PARTIAL": "Partially Covered"
+        "COVERED": "保障対象",
+        "NOT_COVERED": "保障対象外",
+        "PARTIAL": "一部保障"
       },
       "stage": {
-        "PRE_AUTH": "Pre-auth",
-        "POST_AUTH": "Post-auth",
-        "MANUAL": "Manual",
-        "ASYNC_UPDATE": "Async update"
+        "PRE_AUTH": "与信前",
+        "POST_AUTH": "与信後",
+        "MANUAL": "手動",
+        "ASYNC_UPDATE": "非同期更新"
       },
       "timeline": {
-        "title": "Assessment Timeline"
+        "title": "評価タイムライン"
       }
     },
     "coverage": {
-      "title": "Chargeback Protection",
+      "title": "チャージバック保障",
       "headers": {
-        "status": "Claim Status",
-        "provider": "Provider",
-        "amount": "Claim Amount",
-        "provider_claim_id": "Provider Claim ID"
+        "status": "請求ステータス",
+        "provider": "プロバイダー",
+        "amount": "請求金額",
+        "provider_claim_id": "プロバイダー請求ID"
       },
       "status": {
-        "CREATED": "Created",
-        "UNDER_REVIEW": "Under Review",
-        "APPROVED": "Approved",
-        "REJECTED": "Declined",
-        "PAID": "Paid",
-        "CLOSED": "Closed"
+        "CREATED": "作成済み",
+        "UNDER_REVIEW": "審査中",
+        "APPROVED": "承認済み",
+        "REJECTED": "却下",
+        "PAID": "支払済み",
+        "CLOSED": "クローズ"
       },
       "event_type": {
-        "CREATED": "Claim created",
-        "SUBMITTED": "Submitted to provider",
-        "UNDER_REVIEW": "Under review",
-        "APPROVED": "Approved",
-        "REJECTED": "Declined",
-        "PAID": "Paid",
-        "CLOSED": "Closed"
+        "CREATED": "請求を作成",
+        "SUBMITTED": "プロバイダーへ提出",
+        "UNDER_REVIEW": "審査中",
+        "APPROVED": "承認済み",
+        "REJECTED": "却下",
+        "PAID": "支払済み",
+        "CLOSED": "クローズ"
       },
       "timeline": {
-        "title": "Coverage Timeline"
+        "title": "保障タイムライン"
       }
     },
     "response_due": {
-      "overdue": "⚠️ Overdue",
-      "hours_left": "⚠️ {hours}h left",
-      "days_left": "{days} days left"
+      "overdue": "⚠️ 期限超過",
+      "hours_left": "⚠️ 残り {hours} 時間",
+      "days_left": "残り {days} 日"
     }
   },
   "Support": {
-    "entry_label": "Support Center",
-    "entry_label_with_unread": "Support Center, {count} new replies",
-    "entry_collapse": "Minimize support entry",
-    "entry_expand": "Expand support entry",
-    "title": "Support",
-    "create_title": "Ask a question",
-    "new_question": "New question",
-    "back_to_list": "Back to list",
-    "refresh": "Refresh",
-    "question_label": "Question",
-    "question_placeholder": "Describe your issue…",
-    "submit_question": "Submit",
-    "create_success": "Question submitted",
-    "ticket_title": "Ticket {number}",
-    "subject_label": "Subject: ",
-    "view_detail": "View details",
-    "answered_hint": "This ticket has been answered. To ask a follow-up, ",
-    "create_new_ticket": "create a new ticket",
+    "entry_label": "サポートセンター",
+    "entry_label_with_unread": "サポートセンター、新着返信 {count} 件",
+    "entry_collapse": "サポート入口を最小化",
+    "entry_expand": "サポート入口を展開",
+    "title": "サポート",
+    "create_title": "質問する",
+    "new_question": "新しい質問",
+    "back_to_list": "一覧に戻る",
+    "refresh": "更新",
+    "question_label": "質問",
+    "question_placeholder": "問題の内容を記入してください…",
+    "submit_question": "送信",
+    "create_success": "質問を送信しました",
+    "ticket_title": "チケット {number}",
+    "subject_label": "件名：",
+    "view_detail": "詳細を見る",
+    "answered_hint": "このチケットには回答済みです。追加の質問がある場合は、",
+    "create_new_ticket": "新しいチケットを作成",
     "status": {
-      "open": "Open",
-      "answered": "Answered"
+      "open": "未回答",
+      "answered": "回答済み"
     },
     "sender": {
-      "merchant": "Me",
-      "operator": "Support"
+      "merchant": "自分",
+      "operator": "サポート"
     },
     "empty": {
-      "list": "No support conversations yet",
-      "messages": "No messages yet"
+      "list": "サポートの会話はまだありません",
+      "messages": "メッセージはまだありません"
     },
     "errors": {
-      "load_list": "Failed to load conversations",
-      "load_detail": "Failed to load conversation",
-      "create": "Failed to submit question",
-      "blank_content": "Please enter your question"
+      "load_list": "会話の読み込みに失敗しました",
+      "load_detail": "会話の読み込みに失敗しました",
+      "create": "質問の送信に失敗しました",
+      "blank_content": "質問内容を入力してください"
     }
   },
   "Notifications": {
-    "title": "Notifications & Tasks",
-    "subtitle": "Stay on top of platform messages and items that need your action.",
-    "view_all": "View all",
-    "loading": "Loading…",
-    "mark_all_read": "Mark all as read",
+    "title": "通知とタスク",
+    "subtitle": "プラットフォームからのメッセージと対応が必要な項目を確認できます。",
+    "view_all": "すべて表示",
+    "loading": "読み込み中…",
+    "mark_all_read": "すべて既読にする",
     "tab": {
-      "notifications": "Notifications",
-      "tasks": "Tasks"
+      "notifications": "通知",
+      "tasks": "タスク"
     },
     "filter": {
-      "all": "All",
-      "unread": "Unread"
+      "all": "すべて",
+      "unread": "未読"
     },
     "columns": {
-      "reference": "Reference",
-      "details": "Details",
-      "status_time": "Status / Time"
+      "reference": "参照番号",
+      "details": "詳細",
+      "status_time": "ステータス / 時刻"
     },
     "empty": {
-      "notifications": "No notifications yet.",
-      "unread": "No unread notifications.",
-      "tasks": "No open tasks.",
-      "completed_tasks": "No completed tasks."
+      "notifications": "通知はまだありません。",
+      "unread": "未読の通知はありません。",
+      "tasks": "未処理のタスクはありません。",
+      "completed_tasks": "完了したタスクはありません。"
     },
     "severity": {
-      "INFO": "Info",
-      "SUCCESS": "Success",
-      "WARNING": "Warning",
-      "ERROR": "Error"
+      "INFO": "情報",
+      "SUCCESS": "成功",
+      "WARNING": "警告",
+      "ERROR": "エラー"
     },
     "priority": {
-      "CRITICAL": "Critical",
-      "HIGH": "High",
-      "MEDIUM": "Medium",
-      "LOW": "Low"
+      "CRITICAL": "緊急",
+      "HIGH": "高",
+      "MEDIUM": "中",
+      "LOW": "低"
     },
     "banner": {
-      "dismiss": "Dismiss",
-      "action": "Take action"
+      "dismiss": "閉じる",
+      "action": "対応する"
     },
-    "resume_link": "Resume payment",
+    "resume_link": "支払いを再開",
     "widget": {
-      "action_center": "Action Center",
-      "recent": "Recent Notifications",
-      "summary": "{openTasks} open task(s) · {overdue} overdue"
+      "action_center": "アクションセンター",
+      "recent": "最近の通知",
+      "summary": "未処理タスク {openTasks} 件 · 期限超過 {overdue} 件"
     },
     "counts": {
-      "unread": "Unread notifications",
-      "open_tasks": "Open tasks"
+      "unread": "未読通知",
+      "open_tasks": "未処理タスク"
     },
     "task": {
-      "action": "Process",
-      "review_action": "Review",
-      "due": "Due {time}",
-      "overdue": "Overdue · {time}"
+      "action": "処理する",
+      "review_action": "審査する",
+      "due": "期限 {time}",
+      "overdue": "期限超過 · {time}"
     },
     "tasks": {
-      "open": "Open tasks",
-      "completed": "Completed"
+      "open": "未処理タスク",
+      "completed": "完了"
     },
     "status": {
-      "read": "Read",
-      "unread": "Unread"
+      "read": "既読",
+      "unread": "未読"
     },
     "actions": {
-      "view_details": "View details"
+      "view_details": "詳細を見る"
     },
-    "showing_count": "Showing {shown} of {total}"
+    "showing_count": "{total} 件中 {shown} 件を表示"
   },
   "AuditLogs": {
-    "title": "Audit Logs",
-    "subtitle": "Read-only audit trail for security-sensitive actions in your merchant account.",
-    "empty": "No audit records found.",
-    "table_total": "Total {count} records",
-    "view_link": "View",
-    "timeline_hint": "View Timeline in the related order detail",
-    "metadata_truncated": "Metadata was truncated",
+    "title": "監査ログ",
+    "subtitle": "マーチャントアカウントのセキュリティ関連操作の読み取り専用監査記録です。",
+    "empty": "監査記録が見つかりません。",
+    "table_total": "合計 {count} 件",
+    "view_link": "表示",
+    "timeline_hint": "関連する注文詳細のタイムラインで確認してください",
+    "metadata_truncated": "メタデータは切り詰められました",
     "columns": {
-      "time": "Time",
-      "actor": "Actor",
-      "action": "Action",
-      "resource": "Resource",
-      "result": "Result",
-      "link": "Link"
+      "time": "時刻",
+      "actor": "操作者",
+      "action": "操作",
+      "resource": "リソース",
+      "result": "結果",
+      "link": "リンク"
     },
     "filter": {
-      "date_range": "Date range",
-      "date_range_start": "Start time",
-      "date_range_end": "End time",
-      "action": "Action type",
-      "result": "Result"
+      "date_range": "期間",
+      "date_range_start": "開始時刻",
+      "date_range_end": "終了時刻",
+      "action": "操作タイプ",
+      "result": "結果"
     },
     "result": {
-      "SUCCESS": "Success",
-      "FAILURE": "Failure",
-      "DENIED": "Denied"
+      "SUCCESS": "成功",
+      "FAILURE": "失敗",
+      "DENIED": "拒否"
     },
     "actor_type": {
-      "MERCHANT_USER": "Merchant user",
-      "OPERATOR": "Operator",
-      "SYSTEM": "System",
+      "MERCHANT_USER": "マーチャントユーザー",
+      "OPERATOR": "オペレーター",
+      "SYSTEM": "システム",
       "API": "API",
       "WEBHOOK": "Webhook"
     },
     "detail": {
-      "reason": "Reason",
-      "event_id": "Event ID",
-      "request_id": "Request ID",
+      "reason": "理由",
+      "event_id": "イベントID",
+      "request_id": "リクエストID",
       "trace_id": "Trace ID",
-      "metadata": "Metadata"
+      "metadata": "メタデータ"
     }
   },
   "audit": {
     "action": {
-      "auth.login": "Login",
-      "auth.logout": "Logout",
-      "auth.password.change": "Change payment password",
-      "auth.mfa.enable": "Enable MFA",
-      "auth.mfa.disable": "Disable MFA",
-      "auth.access.denied": "Access denied",
-      "apikey.create": "Create API key",
-      "apikey.rotate": "Rotate API key",
-      "apikey.delete": "Delete API key",
-      "webhook.create": "Create webhook",
-      "webhook.update": "Update webhook",
-      "webhook.delete": "Delete webhook",
-      "webhook.replay": "Replay webhook",
-      "merchant.config.update": "Update merchant config",
-      "coverage.enable": "Enable coverage",
-      "coverage.disable": "Disable coverage",
-      "coverage.update": "Update coverage config",
-      "risk.review.approve": "Review approved",
-      "risk.review.reject": "Review rejected",
-      "risk.review.assign": "Review assigned",
-      "role.grant": "Grant role",
-      "role.revoke": "Revoke role",
-      "permission.update": "Update permission",
-      "operator.create": "Create operator",
-      "operator.update": "Update operator",
-      "operator.disable": "Disable operator"
+      "auth.login": "ログイン",
+      "auth.logout": "ログアウト",
+      "auth.password.change": "支払いパスワードの変更",
+      "auth.mfa.enable": "MFAを有効化",
+      "auth.mfa.disable": "MFAを無効化",
+      "auth.access.denied": "アクセス拒否",
+      "apikey.create": "APIキーを作成",
+      "apikey.rotate": "APIキーをローテーション",
+      "apikey.delete": "APIキーを削除",
+      "webhook.create": "Webhookを作成",
+      "webhook.update": "Webhookを更新",
+      "webhook.delete": "Webhookを削除",
+      "webhook.replay": "Webhookを再送",
+      "merchant.config.update": "マーチャント設定を更新",
+      "coverage.enable": "保障を有効化",
+      "coverage.disable": "保障を無効化",
+      "coverage.update": "保障設定を更新",
+      "risk.review.approve": "審査を承認",
+      "risk.review.reject": "審査を却下",
+      "risk.review.assign": "審査を割り当て",
+      "role.grant": "ロールを付与",
+      "role.revoke": "ロールを取り消し",
+      "permission.update": "権限を更新",
+      "operator.create": "オペレーターを作成",
+      "operator.update": "オペレーターを更新",
+      "operator.disable": "オペレーターを無効化"
     }
   },
   "RiskReviews": {
-    "title": "Risk Review Queue",
-    "subtitle": "Read-only queue of suspicious orders and payouts flagged for manual review.",
-    "empty": "No risk review items found.",
-    "table_total": "Total {count} reviews",
+    "title": "リスク審査キュー",
+    "subtitle": "手動審査対象としてフラグされた疑わしい注文・支払いの読み取り専用キューです。",
+    "empty": "リスク審査項目が見つかりません。",
+    "table_total": "合計 {count} 件の審査",
     "filters": {
-      "keyword": "Search reviews",
-      "status": "Status",
-      "priority": "Priority",
-      "review_type": "Review type"
+      "keyword": "審査を検索",
+      "status": "ステータス",
+      "priority": "優先度",
+      "review_type": "審査タイプ"
     },
     "detail": {
-      "title": "Review Detail",
-      "back_to_list": "Back to reviews",
-      "not_found": "Review not found.",
-      "review_type": "Review Type",
-      "reason_code": "Reason Code",
-      "queued_at": "Queued At",
-      "decided_at": "Decided At",
-      "decision_note": "Decision Note",
-      "linked_fraud": "Linked Fraud Event",
-      "resume_link": "Resume Link"
+      "title": "審査詳細",
+      "back_to_list": "審査一覧に戻る",
+      "not_found": "審査が見つかりません。",
+      "review_type": "審査タイプ",
+      "reason_code": "理由コード",
+      "queued_at": "キュー投入日時",
+      "decided_at": "判定日時",
+      "decision_note": "判定メモ",
+      "linked_fraud": "関連不正イベント",
+      "resume_link": "再開リンク"
     },
-    "resume_link": "Resume payment",
+    "resume_link": "支払いを再開",
     "headers": {
-      "resource": "Resource",
-      "reason": "Reason",
-      "priority": "Priority",
-      "status": "Status",
-      "created_at": "Flagged At"
+      "resource": "リソース",
+      "reason": "理由",
+      "priority": "優先度",
+      "status": "ステータス",
+      "created_at": "フラグ日時"
     },
     "resource_type": {
-      "ORDER": "Order",
-      "PAYOUT": "Payout"
+      "ORDER": "注文",
+      "PAYOUT": "支払い"
     },
     "status": {
-      "PENDING": "Pending",
-      "APPROVED": "Approved",
-      "REJECTED": "Rejected"
+      "PENDING": "保留中",
+      "APPROVED": "承認済み",
+      "REJECTED": "却下"
     }
   },
   "Reporting": {
     "widgets": {
-      "availableBalance": "Available Balance",
-      "todayVolume": "Today's Volume",
-      "successRate": "Success Rate",
-      "pendingSettlement": "Pending Settlement"
+      "availableBalance": "利用可能残高",
+      "todayVolume": "本日の取引量",
+      "successRate": "成功率",
+      "pendingSettlement": "精算待ち"
     },
-    "no_data": "No data available",
-    "forbidden": "You do not have permission to view this",
-    "failed": "Failed to load",
-    "retry": "Retry",
+    "no_data": "データがありません",
+    "forbidden": "これを表示する権限がありません",
+    "failed": "読み込みに失敗しました",
+    "retry": "再試行",
     "transactions": {
-      "title": "Transaction Report",
-      "subtitle": "Discover and export transactions under your authorized scope.",
-      "empty": "No transactions found.",
-      "table_total": "Total {count} transactions",
-      "export": "Export CSV",
-      "export_failed": "Export failed",
+      "title": "取引レポート",
+      "subtitle": "権限のある範囲の取引を検索・エクスポートできます。",
+      "empty": "取引が見つかりません。",
+      "table_total": "合計 {count} 件の取引",
+      "export": "CSVをエクスポート",
+      "export_failed": "エクスポートに失敗しました",
       "filters": {
-        "merchant_order_id": "Merchant order ID",
-        "status": "Status",
-        "channel": "Channel",
-        "amount_min": "Min amount",
-        "amount_max": "Max amount",
-        "created_from": "Created from",
-        "created_to": "Created to"
+        "merchant_order_id": "マーチャント注文ID",
+        "status": "ステータス",
+        "channel": "チャネル",
+        "amount_min": "最小金額",
+        "amount_max": "最大金額",
+        "created_from": "作成日時（開始）",
+        "created_to": "作成日時（終了）"
       },
       "columns": {
-        "merchant_order_id": "Merchant order ID",
-        "trade_no": "Trade no.",
-        "order_type": "Order type",
-        "status": "Status",
-        "amount": "Amount",
-        "channel": "Channel",
-        "created_at": "Created at"
+        "merchant_order_id": "マーチャント注文ID",
+        "trade_no": "取引番号",
+        "order_type": "注文タイプ",
+        "status": "ステータス",
+        "amount": "金額",
+        "channel": "チャネル",
+        "created_at": "作成日時"
       },
       "statuses": {
-        "PENDING": "Pending",
-        "PROCESSING": "Processing",
-        "PARTIAL_SUCCESS": "Partial success",
-        "SUCCESS": "Success",
-        "CLOSED": "Closed",
-        "FAILED": "Failed",
-        "REQUIRES_CAPTURE": "Requires capture",
-        "DISPUTED": "Disputed"
+        "PENDING": "保留中",
+        "PROCESSING": "処理中",
+        "PARTIAL_SUCCESS": "一部成功",
+        "SUCCESS": "成功",
+        "CLOSED": "クローズ",
+        "FAILED": "失敗",
+        "REQUIRES_CAPTURE": "キャプチャが必要",
+        "DISPUTED": "紛争中"
       },
       "orderTypes": {
-        "TRADE": "Trade order",
-        "DEPOSIT": "Deposit",
-        "TRANSFER": "Transfer",
-        "PAYOUT": "Payout",
-        "WITHDRAWAL": "Withdrawal",
-        "REFUND": "Refund",
-        "DIRECT_DEBIT": "Direct debit",
-        "PLATFORM_SERVICE_FEE": "Platform service fee"
+        "TRADE": "取引注文",
+        "DEPOSIT": "入金",
+        "TRANSFER": "振替",
+        "PAYOUT": "支払い",
+        "WITHDRAWAL": "出金",
+        "REFUND": "返金",
+        "DIRECT_DEBIT": "口座振替",
+        "PLATFORM_SERVICE_FEE": "プラットフォームサービス手数料"
       },
       "detail": {
-        "title": "Transaction detail",
-        "back_to_list": "Back to transactions",
-        "resource_unavailable": "Resource unavailable",
-        "view_business_detail": "View business detail",
+        "title": "取引詳細",
+        "back_to_list": "取引一覧に戻る",
+        "resource_unavailable": "リソースを利用できません",
+        "view_business_detail": "業務詳細を表示",
         "fields": {
-          "merchant_order_id": "Merchant order ID",
-          "trade_no": "Trade no.",
-          "status": "Status",
-          "order_type": "Order type",
-          "amount": "Amount",
-          "paid_amount": "Paid amount",
-          "refunded_amount": "Refunded amount",
-          "currency": "Currency",
-          "channel": "Channel",
-          "subject": "Subject",
-          "created_at": "Created at",
-          "paid_at": "Paid at",
-          "updated_at": "Updated at"
+          "merchant_order_id": "マーチャント注文ID",
+          "trade_no": "取引番号",
+          "status": "ステータス",
+          "order_type": "注文タイプ",
+          "amount": "金額",
+          "paid_amount": "支払済み金額",
+          "refunded_amount": "返金額",
+          "currency": "通貨",
+          "channel": "チャネル",
+          "subject": "件名",
+          "created_at": "作成日時",
+          "paid_at": "支払日時",
+          "updated_at": "更新日時"
         },
         "timeline": {
-          "title": "Timeline",
-          "empty": "No timeline events."
+          "title": "タイムライン",
+          "empty": "タイムラインイベントはありません。"
         }
       }
     }
   },
   "Risk": {
     "related_risk": {
-      "title": "Related Risk",
-      "fraud_events": "Fraud Events",
-      "reviews": "Reviews"
+      "title": "関連リスク",
+      "fraud_events": "不正イベント",
+      "reviews": "審査"
     },
     "payment_timeline": {
-      "title": "Payment Risk Timeline",
+      "title": "支払いリスクタイムライン",
       "entity": {
-        "FRAUD": "Fraud",
-        "REVIEW": "Review",
-        "DISPUTE": "Dispute",
-        "PAYMENT": "Payment"
+        "FRAUD": "不正",
+        "REVIEW": "審査",
+        "DISPUTE": "紛争",
+        "PAYMENT": "支払い"
       }
     },
     "dashboard": {
-      "title": "Risk Overview",
-      "view_fraud": "View fraud events",
-      "pending_reviews": "Pending Reviews",
-      "open_disputes": "Open Disputes",
-      "high_fraud_today": "High Fraud Today",
-      "blocked_amount": "Blocked Amount",
-      "blocked_unsupported": "Not supported yet",
-      "review_sla_hours": "Review SLA (hrs)",
-      "chargeback_ratio": "Chargeback Ratio",
-      "rejected_today": "Rejected Today",
-      "pending_review_attempts": "Pending Review Payments",
-      "pending_events": "Pending risk actions",
-      "monitoring_metrics": "Ongoing monitoring"
+      "title": "リスク概要",
+      "view_fraud": "不正イベントを表示",
+      "pending_reviews": "保留中の審査",
+      "open_disputes": "進行中の紛争",
+      "high_fraud_today": "本日の高リスク不正",
+      "blocked_amount": "ブロック金額",
+      "blocked_unsupported": "まだ未対応",
+      "review_sla_hours": "審査SLA（時間）",
+      "chargeback_ratio": "チャージバック率",
+      "rejected_today": "本日の却下",
+      "pending_review_attempts": "審査待ちの支払い",
+      "pending_events": "未処理のリスク対応",
+      "monitoring_metrics": "継続モニタリング"
     }
   },
   "RiskRules": {
-    "title": "Risk Rules",
-    "subtitle": "View platform and merchant PRE_AUTH rules (read-only).",
-    "empty": "No risk rules found.",
+    "title": "リスクルール",
+    "subtitle": "プラットフォームおよびマーチャントの PRE_AUTH ルールを表示します（読み取り専用）。",
+    "empty": "リスクルールが見つかりません。",
     "headers": {
-      "name": "Name",
-      "rule_type": "Type",
-      "severity": "Severity",
-      "enforcement": "Enforcement",
-      "scope": "Scope",
-      "enabled": "Enabled",
-      "priority": "Priority",
-      "config": "Configuration"
+      "name": "名称",
+      "rule_type": "タイプ",
+      "severity": "重大度",
+      "enforcement": "執行",
+      "scope": "スコープ",
+      "enabled": "有効",
+      "priority": "優先度",
+      "config": "設定"
     },
     "rule_type": {
-      "VELOCITY": "Velocity",
-      "AMOUNT": "Amount"
+      "VELOCITY": "頻度",
+      "AMOUNT": "金額"
     },
     "enforcement": {
-      "BLOCK": "Block",
-      "REVIEW_BEFORE_AUTH": "Review before payment"
+      "BLOCK": "ブロック",
+      "REVIEW_BEFORE_AUTH": "支払い前に審査"
     },
     "scope": {
-      "platform": "Platform",
-      "merchant": "Merchant"
+      "platform": "プラットフォーム",
+      "merchant": "マーチャント"
     },
     "config": {
       "schema": "Schema",
-      "velocity": "Max {maxCount} attempts within {windowMinutes} minutes",
-      "amount": "Threshold: {threshold}"
+      "velocity": "{windowMinutes} 分以内に最大 {maxCount} 回",
+      "amount": "しきい値：{threshold}"
     }
   },
   "Fraud": {
-    "title": "Fraud Events",
-    "subtitle": "Monitor detected fraud signals and investigation status.",
-    "empty": "No fraud events found.",
-    "table_total": "Total {count} events",
+    "title": "不正イベント",
+    "subtitle": "検出された不正シグナルと調査ステータスを監視します。",
+    "empty": "不正イベントが見つかりません。",
+    "table_total": "合計 {count} 件のイベント",
     "filters": {
-      "keyword": "Search events",
-      "status": "Status",
-      "severity": "Severity"
+      "keyword": "イベントを検索",
+      "status": "ステータス",
+      "severity": "重大度"
     },
     "detail": {
-      "title": "Fraud Event Detail",
-      "back_to_list": "Back to fraud events",
-      "not_found": "Fraud event not found.",
-      "payment_id": "Payment ID",
-      "provider": "Provider",
-      "score": "Risk Score",
+      "title": "不正イベント詳細",
+      "back_to_list": "不正イベント一覧に戻る",
+      "not_found": "不正イベントが見つかりません。",
+      "payment_id": "支払いID",
+      "provider": "プロバイダー",
+      "score": "リスクスコア",
       "metadata": {
-        "title": "Metadata",
+        "title": "メタデータ",
         "v1": {
-          "deviceId": "Device ID",
-          "ipAddress": "IP Address",
-          "velocityCount": "Velocity Count",
-          "amountThreshold": "Amount Threshold",
-          "countryCode": "Country",
-          "cardFingerprint": "Card Fingerprint"
+          "deviceId": "デバイスID",
+          "ipAddress": "IPアドレス",
+          "velocityCount": "頻度カウント",
+          "amountThreshold": "金額しきい値",
+          "countryCode": "国",
+          "cardFingerprint": "カードフィンガープリント"
         }
       }
     },
     "headers": {
-      "event_type": "Event Type",
-      "risk_type": "Risk Type",
-      "description": "Description",
-      "severity": "Severity",
-      "order_id": "Related Order",
-      "status": "Status",
-      "detected_at": "Detected At"
+      "event_type": "イベントタイプ",
+      "risk_type": "リスクタイプ",
+      "description": "説明",
+      "severity": "重大度",
+      "order_id": "関連注文",
+      "status": "ステータス",
+      "detected_at": "検出日時"
     },
     "status": {
-      "OPEN": "Open",
-      "INVESTIGATING": "Investigating",
-      "CLOSED": "Closed"
+      "OPEN": "未処理",
+      "INVESTIGATING": "調査中",
+      "CLOSED": "クローズ"
     },
     "risk_type": {
-      "DEVICE": "Device anomaly",
-      "VELOCITY": "Velocity anomaly",
-      "GEO": "Geographic anomaly",
-      "BIN": "BIN anomaly",
-      "AMOUNT": "Amount anomaly",
-      "IP_MISMATCH": "IP mismatch",
-      "COMBINED": "Combined risk",
-      "FRAUD": "Fraud risk"
+      "DEVICE": "デバイス異常",
+      "VELOCITY": "頻度異常",
+      "GEO": "地理的異常",
+      "BIN": "BIN異常",
+      "AMOUNT": "金額異常",
+      "IP_MISMATCH": "IP不一致",
+      "COMBINED": "複合リスク",
+      "FRAUD": "不正リスク"
     },
     "summary": {
-      "DEVICE": "Device fingerprint does not match billing profile",
-      "VELOCITY": "Transaction velocity exceeded the threshold",
-      "GEO": "Transaction geography differs from expected behavior",
-      "BIN": "Card BIN shows elevated risk characteristics",
-      "AMOUNT": "Transaction amount is outside the normal range",
-      "IP_MISMATCH": "IP address does not match billing information",
-      "COMBINED": "Multiple risk signals triggered together",
-      "FRAUD": "Suspicious fraud activity detected"
+      "DEVICE": "デバイスフィンガープリントが請求プロフィールと一致しません",
+      "VELOCITY": "取引頻度がしきい値を超えました",
+      "GEO": "取引の地理情報が想定される行動と異なります",
+      "BIN": "カードBINに高リスクの特徴が見られます",
+      "AMOUNT": "取引金額が通常の範囲外です",
+      "IP_MISMATCH": "IPアドレスが請求情報と一致しません",
+      "COMBINED": "複数のリスクシグナルが同時に発動しました",
+      "FRAUD": "不審な不正活動を検出しました"
     }
   },
   "Customers": {
