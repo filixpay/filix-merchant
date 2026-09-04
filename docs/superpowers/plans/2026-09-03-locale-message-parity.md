@@ -61,7 +61,7 @@ The last line is only for when that locale has `missing = 0` and leftover Englis
 | 4 | fr | `messages/fr.json` | committed | missing 0, identical-to-en ~247 (brands/API tokens) |
 | 5 | de | `messages/de.json` | committed | missing 0, identical-to-en ~299 (brands/API tokens) |
 | 6 | pt | `messages/pt.json` | committed | missing 0, identical-to-en ~227 (brands/API tokens) |
-| 7 | ar | `messages/ar.json` | in progress | A/B/D/E/F committed; C/G/H translating |
+| 7 | ar | `messages/ar.json` | committed | missing 0, identical-to-en ~93 (brands/API tokens) |
 
 Status values: `not started` / `in progress` / `committed`.
 
