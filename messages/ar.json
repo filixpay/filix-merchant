@@ -160,107 +160,107 @@
     }
   },
   "CoverageInsurance": {
-    "title": "Coverage Insurance",
-    "subtitle": "Subscribe to platform-hosted chargeback coverage for new orders.",
-    "product_title": "Platform Chargeback Coverage",
-    "product_description": "Filix Pay provides integrated dispute coverage through our platform insurance partners.",
-    "unavailable_title": "Service not available yet",
-    "unavailable_body": "Platform coverage is being prepared. Please check back later or contact support.",
-    "agreement_body": "By subscribing, you authorize Filix Pay to apply platform-hosted chargeback coverage to eligible new orders under the current service agreement.",
-    "agreement_checkbox": "I have read and agree to the coverage service agreement (v1).",
-    "unsubscribed_banner": "Coverage is turned off for new orders. Existing claims will continue to be processed.",
+    "title": "تأمين التغطية",
+    "subtitle": "اشترك في تغطية الاسترداد العكسي المستضافة على المنصة للطلبات الجديدة.",
+    "product_title": "تغطية الاسترداد العكسي للمنصة",
+    "product_description": "توفر Filix Pay تغطية نزاعات متكاملة عبر شركاء التأمين على المنصة.",
+    "unavailable_title": "الخدمة غير متاحة بعد",
+    "unavailable_body": "تُجهَّز تغطية المنصة حاليًا. يُرجى التحقق لاحقًا أو التواصل مع الدعم.",
+    "agreement_body": "بالاشتراك، تفوّض Filix Pay بتطبيق تغطية الاسترداد العكسي المستضافة على المنصة على الطلبات الجديدة المؤهلة بموجب اتفاقية الخدمة الحالية.",
+    "agreement_checkbox": "لقد قرأت ووافقت على اتفاقية خدمة التغطية (الإصدار 1).",
+    "unsubscribed_banner": "التغطية معطّلة للطلبات الجديدة. ستستمر معالجة المطالبات القائمة.",
     "status": {
-      "subscribed": "Active",
-      "not_subscribed": "Not subscribed",
-      "unsubscribed": "Unsubscribed"
+      "subscribed": "نشط",
+      "not_subscribed": "غير مشترك",
+      "unsubscribed": "أُلغي الاشتراك"
     },
     "fields": {
-      "provider": "Provider",
-      "subscribed_at": "Subscribed at",
-      "agreement_version": "Agreement version"
+      "provider": "المزوّد",
+      "subscribed_at": "تاريخ الاشتراك",
+      "agreement_version": "إصدار الاتفاقية"
     },
     "actions": {
-      "subscribe": "Activate coverage",
-      "unsubscribe": "Turn off coverage"
+      "subscribe": "تفعيل التغطية",
+      "unsubscribe": "إيقاف التغطية"
     },
     "unsubscribe_modal": {
-      "title": "Turn off coverage?",
-      "warning": "After you turn off coverage, new orders will no longer be covered by platform chargeback insurance. Existing claims will continue to be processed without interruption.",
-      "confirm": "Turn off",
-      "cancel": "Cancel"
+      "title": "إيقاف التغطية؟",
+      "warning": "بعد إيقاف التغطية، لن تكون الطلبات الجديدة مشمولة بتأمين الاسترداد العكسي للمنصة. ستستمر معالجة المطالبات القائمة دون انقطاع.",
+      "confirm": "إيقاف",
+      "cancel": "إلغاء"
     },
     "messages": {
-      "load_failed": "Failed to load coverage subscription",
-      "subscribed": "Coverage activated",
-      "subscribe_failed": "Failed to activate coverage",
-      "unsubscribed": "Coverage turned off",
-      "unsubscribe_failed": "Failed to turn off coverage"
+      "load_failed": "فشل تحميل اشتراك التغطية",
+      "subscribed": "تم تفعيل التغطية",
+      "subscribe_failed": "فشل تفعيل التغطية",
+      "unsubscribed": "تم إيقاف التغطية",
+      "unsubscribe_failed": "فشل إيقاف التغطية"
     }
   },
   "CoverageConfig": {
-    "title": "Chargeback Coverage",
-    "subtitle": "Configure dispute coverage providers for new chargeback cases.",
-    "empty": "No coverage configurations yet.",
-    "provider_switch_warning": "Switching provider only affects new chargeback cases.",
-    "active_banner": "Active provider: {provider} ({id})",
-    "no_active_banner": "No active coverage provider. New disputes will skip coverage claims.",
-    "platform_hosted_banner": "This configuration powers platform-hosted coverage for subscribed Platform settlement merchants.",
-    "maintenance_banner": "Maintenance mode: new assessments are paused; in-flight claim webhooks continue.",
+    "title": "تغطية الاسترداد العكسي",
+    "subtitle": "تكوين مزوّدي تغطية النزاعات لحالات الاسترداد العكسي الجديدة.",
+    "empty": "لا توجد تكوينات تغطية بعد.",
+    "provider_switch_warning": "تبديل المزوّد يؤثر فقط على حالات الاسترداد العكسي الجديدة.",
+    "active_banner": "المزوّد النشط: {provider} ({id})",
+    "no_active_banner": "لا يوجد مزوّد تغطية نشط. ستتخطى النزاعات الجديدة مطالبات التغطية.",
+    "platform_hosted_banner": "يشغّل هذا التكوين التغطية المستضافة على المنصة لتجار التسوية المشتركين في المنصة.",
+    "maintenance_banner": "وضع الصيانة: توقفت التقييمات الجديدة؛ وتستمر webhooks المطالبات الجارية.",
     "columns": {
-      "provider": "Provider",
-      "status": "Status",
-      "version": "Version",
-      "updated_at": "Updated"
+      "provider": "المزوّد",
+      "status": "الحالة",
+      "version": "الإصدار",
+      "updated_at": "آخر تحديث"
     },
     "status": {
-      "active": "Active",
-      "disabled": "Disabled",
-      "maintenance": "Maintenance"
+      "active": "نشط",
+      "disabled": "معطّل",
+      "maintenance": "صيانة"
     },
     "fields": {
-      "provider": "Provider",
-      "provider_placeholder": "Select a provider"
+      "provider": "المزوّد",
+      "provider_placeholder": "اختر مزوّدًا"
     },
     "config_fields": {
-      "teamId": "Team ID",
-      "shopDomain": "Shop Domain",
-      "environment": "Environment",
-      "coverageLimit": "Coverage Limit",
-      "currency": "Currency",
-      "mode": "Mode"
+      "teamId": "معرّف الفريق",
+      "shopDomain": "نطاق المتجر",
+      "environment": "البيئة",
+      "coverageLimit": "حد التغطية",
+      "currency": "العملة",
+      "mode": "الوضع"
     },
     "secret_fields": {
-      "apiKey": "API Key",
-      "webhookSecret": "Webhook Secret"
+      "apiKey": "مفتاح API",
+      "webhookSecret": "سر Webhook"
     },
-    "secret_keep_hint": "Current value: {masked}. Leave blank to keep unchanged.",
-    "secret_placeholder_edit": "Leave blank to keep current value",
+    "secret_keep_hint": "القيمة الحالية: {masked}. اترك الحقل فارغًا للإبقاء عليها دون تغيير.",
+    "secret_placeholder_edit": "اتركه فارغًا للإبقاء على القيمة الحالية",
     "validation": {
-      "provider_required": "Please select a provider",
-      "field_required": "{field} is required"
+      "provider_required": "يُرجى اختيار مزوّد",
+      "field_required": "{field} مطلوب"
     },
     "actions": {
-      "create": "Add Configuration",
-      "edit": "Edit",
-      "activate": "Activate",
-      "deactivate": "Deactivate",
-      "enter_maintenance": "Enter maintenance",
-      "resume": "Resume service",
-      "test_connection": "Test Connection"
+      "create": "إضافة تكوين",
+      "edit": "تعديل",
+      "activate": "تفعيل",
+      "deactivate": "إلغاء التفعيل",
+      "enter_maintenance": "الدخول في وضع الصيانة",
+      "resume": "استئناف الخدمة",
+      "test_connection": "اختبار الاتصال"
     },
     "modal": {
-      "create_title": "Add Coverage Configuration",
-      "edit_title": "Edit Coverage Configuration"
+      "create_title": "إضافة تكوين تغطية",
+      "edit_title": "تعديل تكوين التغطية"
     },
     "messages": {
-      "created": "Coverage configuration created",
-      "updated": "Coverage configuration updated",
-      "activated": "Coverage configuration activated",
-      "deactivated": "Coverage configuration deactivated",
-      "maintenance_entered": "Coverage entered maintenance mode",
-      "resumed": "Coverage resumed",
-      "test_ok": "Connection OK ({latencyMs} ms, {providerVersion})",
-      "test_failed": "Connection test failed: {status}"
+      "created": "تم إنشاء تكوين التغطية",
+      "updated": "تم تحديث تكوين التغطية",
+      "activated": "تم تفعيل تكوين التغطية",
+      "deactivated": "تم إلغاء تفعيل تكوين التغطية",
+      "maintenance_entered": "دخلت التغطية وضع الصيانة",
+      "resumed": "تم استئناف التغطية",
+      "test_ok": "الاتصال سليم ({latencyMs} مللي ثانية، {providerVersion})",
+      "test_failed": "فشل اختبار الاتصال: {status}"
     }
   },
   "ServicePlan": {
@@ -1618,656 +1618,656 @@
     }
   },
   "Disputes": {
-    "title": "Disputes & Chargebacks",
-    "subtitle": "Monitor chargeback cases, response deadlines, and required merchant actions.",
-    "empty": "No dispute cases found.",
-    "back_to_list": "Back to disputes",
+    "title": "النزاعات والاسترجاعات",
+    "subtitle": "راقب حالات الاسترجاع ومواعيد الرد والإجراءات المطلوبة من التاجر.",
+    "empty": "لا توجد حالات نزاع.",
+    "back_to_list": "العودة إلى النزاعات",
     "kpis": {
-      "action_required": "Cases Require Action",
-      "due_soon": "Due Soon (<3 days)",
-      "overdue": "Overdue"
+      "action_required": "حالات تتطلب إجراءً",
+      "due_soon": "مستحقة قريبًا (<3 أيام)",
+      "overdue": "متأخرة"
     },
     "headers": {
-      "case_number": "Case No.",
-      "order_id": "Order ID",
-      "channel": "Channel",
-      "created_at": "Created At",
-      "amount": "Amount",
-      "reason": "Reason",
-      "priority": "Priority",
-      "status": "Status",
-      "response_due": "Response Due"
+      "case_number": "رقم الحالة",
+      "order_id": "معرّف الطلب",
+      "channel": "القناة",
+      "created_at": "تاريخ الإنشاء",
+      "amount": "المبلغ",
+      "reason": "السبب",
+      "priority": "الأولوية",
+      "status": "الحالة",
+      "response_due": "موعد الرد"
     },
     "filters": {
-      "keyword": "Case No. / Order ID",
-      "status": "Status",
-      "channel": "Channel",
-      "all_status": "All statuses"
+      "keyword": "رقم الحالة / معرّف الطلب",
+      "status": "الحالة",
+      "channel": "القناة",
+      "all_status": "جميع الحالات"
     },
-    "table_total": "Total {count}",
+    "table_total": "الإجمالي {count}",
     "priority": {
-      "CRITICAL": "Critical",
-      "HIGH": "High",
-      "MEDIUM": "Medium",
-      "LOW": "Low"
+      "CRITICAL": "حرجة",
+      "HIGH": "عالية",
+      "MEDIUM": "متوسطة",
+      "LOW": "منخفضة"
     },
     "status": {
-      "DRAFT": "Draft",
-      "SUBMITTED": "Submitted",
-      "UNDER_REVIEW": "Under Review",
-      "WON": "Won",
-      "LOST": "Lost",
-      "ACCEPTED": "Accepted"
+      "DRAFT": "مسودة",
+      "SUBMITTED": "مُرسَلة",
+      "UNDER_REVIEW": "قيد المراجعة",
+      "WON": "رابحة",
+      "LOST": "خاسرة",
+      "ACCEPTED": "مقبولة"
     },
     "evidence_category": {
-      "RECEIPT": "Receipt",
-      "SHIPPING": "Shipping",
-      "COMMUNICATION": "Communication",
-      "OTHER": "Other"
+      "RECEIPT": "إيصال",
+      "SHIPPING": "شحن",
+      "COMMUNICATION": "مراسلات",
+      "OTHER": "أخرى"
     },
     "action_center": {
-      "title": "Merchant Action Center",
-      "locked": "This case is locked. Evidence can no longer be edited.",
-      "upload_hint": "Click or drag files to upload evidence",
-      "file": "File",
-      "category": "Category",
-      "upload_types": "Supports PDF, JPG, PNG, WEBP. Max {size}MB per file.",
-      "file_size": "Size",
-      "file_too_large": "File too large. Max {size}MB per file."
+      "title": "مركز إجراءات التاجر",
+      "locked": "هذه الحالة مقفلة. لم يعد بالإمكان تعديل الأدلة.",
+      "upload_hint": "انقر أو اسحب الملفات لرفع الأدلة",
+      "file": "الملف",
+      "category": "الفئة",
+      "upload_types": "يدعم PDF وJPG وPNG وWEBP. الحد الأقصى {size} ميجابايت لكل ملف.",
+      "file_size": "الحجم",
+      "file_too_large": "الملف كبير جدًا. الحد الأقصى {size} ميجابايت لكل ملف."
     },
     "actions": {
-      "save_draft": "Save Draft",
-      "submit": "Submit Evidence",
-      "accept_liability": "Accept Liability",
-      "accept_liability_confirm_title": "Accept chargeback liability?",
-      "accept_liability_confirm_body": "You will not be able to submit evidence after accepting liability.",
-      "submit_confirm_title": "Submit evidence?",
-      "submit_confirm_body": "Submission cannot be undone. Evidence will be sent to the payment channel for review."
+      "save_draft": "حفظ المسودة",
+      "submit": "إرسال الأدلة",
+      "accept_liability": "قبول المسؤولية",
+      "accept_liability_confirm_title": "قبول مسؤولية الاسترجاع؟",
+      "accept_liability_confirm_body": "لن تتمكن من إرسال الأدلة بعد قبول المسؤولية.",
+      "submit_confirm_title": "إرسال الأدلة؟",
+      "submit_confirm_body": "لا يمكن التراجع عن الإرسال. ستُرسل الأدلة إلى قناة الدفع للمراجعة."
     },
     "messages": {
-      "draft_saved": "Evidence draft saved",
-      "submitted": "Evidence submitted for review",
-      "liability_accepted": "Liability accepted",
-      "evidence_uploaded": "Evidence file uploaded",
-      "evidence_required": "Please upload at least one evidence file"
+      "draft_saved": "تم حفظ مسودة الأدلة",
+      "submitted": "تم إرسال الأدلة للمراجعة",
+      "liability_accepted": "تم قبول المسؤولية",
+      "evidence_uploaded": "تم رفع ملف الأدلة",
+      "evidence_required": "يرجى رفع ملف أدلة واحد على الأقل"
     },
     "reason_codes": {
-      "fraudulent": "Fraudulent",
-      "duplicate": "Duplicate charge",
-      "product_not_received": "Product not received",
-      "unrecognized": "Unrecognized charge",
-      "credit_not_processed": "Credit not processed",
-      "general": "General dispute",
-      "incorrect_account_details": "Incorrect account details",
-      "insufficient_funds": "Insufficient funds",
-      "bank_cannot_process": "Bank cannot process",
-      "debit_not_authorized": "Debit not authorized",
-      "customer_initiated": "Customer initiated",
-      "merchandise_or_service_not_received": "Merchandise or service not received",
-      "unauthorized": "Unauthorized",
-      "merchandise_or_service_not_as_described": "Merchandise or service not as described",
-      "cancelled_recurring_billing": "Cancelled recurring billing",
-      "non_receipt": "Non-receipt",
-      "not_as_described": "Not as described",
-      "duplicate_transaction": "Duplicate transaction",
-      "credit_not_received": "Credit not received"
+      "fraudulent": "احتيالي",
+      "duplicate": "رسوم مكررة",
+      "product_not_received": "لم يُستلم المنتج",
+      "unrecognized": "رسوم غير معروفة",
+      "credit_not_processed": "لم تُعالَج عملية الاسترداد",
+      "general": "نزاع عام",
+      "incorrect_account_details": "بيانات حساب غير صحيحة",
+      "insufficient_funds": "رصيد غير كافٍ",
+      "bank_cannot_process": "البنك غير قادر على المعالجة",
+      "debit_not_authorized": "خصم غير مصرّح به",
+      "customer_initiated": "بمبادرة من العميل",
+      "merchandise_or_service_not_received": "لم تُستلم البضاعة أو الخدمة",
+      "unauthorized": "غير مصرّح",
+      "merchandise_or_service_not_as_described": "البضاعة أو الخدمة بخلاف الوصف",
+      "cancelled_recurring_billing": "تم إلغاء الفوترة المتكررة",
+      "non_receipt": "عدم الاستلام",
+      "not_as_described": "بخلاف الوصف",
+      "duplicate_transaction": "معاملة مكررة",
+      "credit_not_received": "لم يُستلم الاسترداد"
     },
     "timeline": {
-      "title": "Case Timeline",
-      "actor": "By {actor}",
+      "title": "الجدول الزمني للحالة",
+      "actor": "بواسطة {actor}",
       "actors": {
-        "system": "System auto-trigger",
-        "merchant": "Merchant action"
+        "system": "تشغيل تلقائي من النظام",
+        "merchant": "إجراء من التاجر"
       },
       "events": {
-        "CASE_OPENED": "Dispute opened",
-        "EVIDENCE_DRAFT_SAVED": "Evidence draft saved",
-        "EVIDENCE_SUBMITTED": "Evidence submitted",
-        "REVIEW_STARTED": "Under bank review",
-        "CHANNEL_STATUS_CHANGED": "Channel status updated",
-        "CASE_RESOLVED": "Dispute resolved",
-        "LIABILITY_ACCEPTED": "Liability accepted",
-        "EVIDENCE_FORWARDED_TO_CHANNEL": "Evidence forwarded to channel",
-        "CHANNEL_EVIDENCE_SUBMIT_FAILED": "Channel evidence submit failed"
+        "CASE_OPENED": "فُتح النزاع",
+        "EVIDENCE_DRAFT_SAVED": "تم حفظ مسودة الأدلة",
+        "EVIDENCE_SUBMITTED": "تم إرسال الأدلة",
+        "REVIEW_STARTED": "قيد مراجعة البنك",
+        "CHANNEL_STATUS_CHANGED": "تم تحديث حالة القناة",
+        "CASE_RESOLVED": "تم حل النزاع",
+        "LIABILITY_ACCEPTED": "تم قبول المسؤولية",
+        "EVIDENCE_FORWARDED_TO_CHANNEL": "تم تمرير الأدلة إلى القناة",
+        "CHANNEL_EVIDENCE_SUBMIT_FAILED": "فشل إرسال الأدلة إلى القناة"
       },
       "titles": {
-        "dispute_opened": "Dispute opened",
-        "dispute_resolved": "Dispute resolved",
-        "evidence_draft_saved": "Evidence draft saved",
-        "evidence_submitted": "Evidence submitted",
-        "under_bank_review": "Under bank review",
-        "liability_accepted": "Liability accepted",
-        "channel_status_updated": "Channel status updated",
-        "evidence_forwarded_to_channel": "Evidence forwarded to channel",
-        "channel_evidence_submit_failed": "Channel evidence submit failed"
+        "dispute_opened": "فُتح النزاع",
+        "dispute_resolved": "تم حل النزاع",
+        "evidence_draft_saved": "تم حفظ مسودة الأدلة",
+        "evidence_submitted": "تم إرسال الأدلة",
+        "under_bank_review": "قيد مراجعة البنك",
+        "liability_accepted": "تم قبول المسؤولية",
+        "channel_status_updated": "تم تحديث حالة القناة",
+        "evidence_forwarded_to_channel": "تم تمرير الأدلة إلى القناة",
+        "channel_evidence_submit_failed": "فشل إرسال الأدلة إلى القناة"
       },
       "descriptions": {
-        "charge_dispute_created": "Stripe: dispute created",
-        "charge_dispute_updated": "Stripe: dispute updated",
-        "charge_dispute_closed": "Stripe: dispute closed",
-        "charge_dispute_funds_withdrawn": "Stripe: dispute funds withdrawn",
-        "charge_dispute_funds_reinstated": "Stripe: dispute funds reinstated",
-        "customer_dispute_created": "PayPal: dispute created",
-        "customer_dispute_updated": "PayPal: dispute updated",
-        "customer_dispute_resolved": "PayPal: dispute resolved",
-        "submitted_files_to_channel": "Submitted {count} file(s) to {channel}",
-        "files_attached": "{count} file(s) attached",
-        "channel_status_transition": "{oldStatus} → {newStatus}",
-        "case_locked_for_review": "Case locked for review",
-        "merchant_accepted_chargeback_liability": "Merchant accepted chargeback liability"
+        "charge_dispute_created": "Stripe: تم إنشاء نزاع",
+        "charge_dispute_updated": "Stripe: تم تحديث النزاع",
+        "charge_dispute_closed": "Stripe: تم إغلاق النزاع",
+        "charge_dispute_funds_withdrawn": "Stripe: سُحبت أموال النزاع",
+        "charge_dispute_funds_reinstated": "Stripe: أُعيدت أموال النزاع",
+        "customer_dispute_created": "PayPal: تم إنشاء نزاع",
+        "customer_dispute_updated": "PayPal: تم تحديث النزاع",
+        "customer_dispute_resolved": "PayPal: تم حل النزاع",
+        "submitted_files_to_channel": "تم إرسال {count} ملف/ملفات إلى {channel}",
+        "files_attached": "أُرفق {count} ملف/ملفات",
+        "channel_status_transition": "{oldStatus} ← {newStatus}",
+        "case_locked_for_review": "الحالة مقفلة للمراجعة",
+        "merchant_accepted_chargeback_liability": "قبل التاجر مسؤولية الاسترجاع"
       },
       "channel_statuses": {
-        "needs_response": "Needs response",
-        "under_review": "Under review",
-        "won": "Won",
-        "lost": "Lost",
-        "charge_refunded": "Charge refunded",
-        "warning_needs_response": "Warning needs response",
-        "warning_under_review": "Warning under review",
-        "warning_closed": "Warning closed"
+        "needs_response": "يتطلب ردًا",
+        "under_review": "قيد المراجعة",
+        "won": "رابحة",
+        "lost": "خاسرة",
+        "charge_refunded": "تم استرداد الرسوم",
+        "warning_needs_response": "تحذير يتطلب ردًا",
+        "warning_under_review": "تحذير قيد المراجعة",
+        "warning_closed": "تم إغلاق التحذير"
       },
       "resolutions": {
-        "MERCHANT_WON": "Merchant won",
-        "BUYER_WON": "Buyer won",
-        "MERCHANT_ACCEPTED": "Merchant accepted",
-        "PARTIAL": "Partial win"
+        "MERCHANT_WON": "فاز التاجر",
+        "BUYER_WON": "فاز المشتري",
+        "MERCHANT_ACCEPTED": "قبل التاجر",
+        "PARTIAL": "فوز جزئي"
       }
     },
     "detail": {
-      "title": "Dispute Case",
-      "reason_code": "Reason Code",
-      "not_found": "Dispute case not found."
+      "title": "حالة النزاع",
+      "reason_code": "رمز السبب",
+      "not_found": "لم يتم العثور على حالة النزاع."
     },
     "coverage_assessment": {
-      "title": "Coverage Assessment",
+      "title": "تقييم التغطية",
       "headers": {
-        "status": "Coverage Status",
-        "provider": "Provider",
-        "stage": "Evaluation Stage",
-        "limit": "Coverage Limit",
-        "reference": "Reference",
-        "assessment_id": "Assessment ID"
+        "status": "حالة التغطية",
+        "provider": "المزوّد",
+        "stage": "مرحلة التقييم",
+        "limit": "حد التغطية",
+        "reference": "المرجع",
+        "assessment_id": "معرّف التقييم"
       },
       "status": {
-        "COVERED": "Covered",
-        "NOT_COVERED": "Not Covered",
-        "PARTIAL": "Partially Covered"
+        "COVERED": "مغطى",
+        "NOT_COVERED": "غير مغطى",
+        "PARTIAL": "مغطى جزئيًا"
       },
       "stage": {
-        "PRE_AUTH": "Pre-auth",
-        "POST_AUTH": "Post-auth",
-        "MANUAL": "Manual",
-        "ASYNC_UPDATE": "Async update"
+        "PRE_AUTH": "قبل التفويض",
+        "POST_AUTH": "بعد التفويض",
+        "MANUAL": "يدوي",
+        "ASYNC_UPDATE": "تحديث غير متزامن"
       },
       "timeline": {
-        "title": "Assessment Timeline"
+        "title": "الجدول الزمني للتقييم"
       }
     },
     "coverage": {
-      "title": "Chargeback Protection",
+      "title": "حماية الاسترجاع",
       "headers": {
-        "status": "Claim Status",
-        "provider": "Provider",
-        "amount": "Claim Amount",
-        "provider_claim_id": "Provider Claim ID"
+        "status": "حالة المطالبة",
+        "provider": "المزوّد",
+        "amount": "مبلغ المطالبة",
+        "provider_claim_id": "معرّف مطالبة المزوّد"
       },
       "status": {
-        "CREATED": "Created",
-        "UNDER_REVIEW": "Under Review",
-        "APPROVED": "Approved",
-        "REJECTED": "Declined",
-        "PAID": "Paid",
-        "CLOSED": "Closed"
+        "CREATED": "تم الإنشاء",
+        "UNDER_REVIEW": "قيد المراجعة",
+        "APPROVED": "موافق عليها",
+        "REJECTED": "مرفوضة",
+        "PAID": "مدفوعة",
+        "CLOSED": "مغلقة"
       },
       "event_type": {
-        "CREATED": "Claim created",
-        "SUBMITTED": "Submitted to provider",
-        "UNDER_REVIEW": "Under review",
-        "APPROVED": "Approved",
-        "REJECTED": "Declined",
-        "PAID": "Paid",
-        "CLOSED": "Closed"
+        "CREATED": "تم إنشاء المطالبة",
+        "SUBMITTED": "أُرسلت إلى المزوّد",
+        "UNDER_REVIEW": "قيد المراجعة",
+        "APPROVED": "موافق عليها",
+        "REJECTED": "مرفوضة",
+        "PAID": "مدفوعة",
+        "CLOSED": "مغلقة"
       },
       "timeline": {
-        "title": "Coverage Timeline"
+        "title": "الجدول الزمني للتغطية"
       }
     },
     "response_due": {
-      "overdue": "⚠️ Overdue",
-      "hours_left": "⚠️ {hours}h left",
-      "days_left": "{days} days left"
+      "overdue": "⚠️ متأخرة",
+      "hours_left": "⚠️ متبقي {hours} ساعة",
+      "days_left": "متبقي {days} يومًا"
     }
   },
   "Support": {
-    "entry_label": "Support Center",
-    "entry_label_with_unread": "Support Center, {count} new replies",
-    "entry_collapse": "Minimize support entry",
-    "entry_expand": "Expand support entry",
-    "title": "Support",
-    "create_title": "Ask a question",
-    "new_question": "New question",
-    "back_to_list": "Back to list",
-    "refresh": "Refresh",
-    "question_label": "Question",
-    "question_placeholder": "Describe your issue…",
-    "submit_question": "Submit",
-    "create_success": "Question submitted",
-    "ticket_title": "Ticket {number}",
-    "subject_label": "Subject: ",
-    "view_detail": "View details",
-    "answered_hint": "This ticket has been answered. To ask a follow-up, ",
-    "create_new_ticket": "create a new ticket",
+    "entry_label": "مركز الدعم",
+    "entry_label_with_unread": "مركز الدعم، {count} ردود جديدة",
+    "entry_collapse": "تصغير مدخل الدعم",
+    "entry_expand": "توسيع مدخل الدعم",
+    "title": "الدعم",
+    "create_title": "اطرح سؤالًا",
+    "new_question": "سؤال جديد",
+    "back_to_list": "العودة إلى القائمة",
+    "refresh": "تحديث",
+    "question_label": "السؤال",
+    "question_placeholder": "صِف مشكلتك…",
+    "submit_question": "إرسال",
+    "create_success": "تم إرسال السؤال",
+    "ticket_title": "التذكرة {number}",
+    "subject_label": "الموضوع: ",
+    "view_detail": "عرض التفاصيل",
+    "answered_hint": "تمت الإجابة على هذه التذكرة. لطرح متابعة، ",
+    "create_new_ticket": "أنشئ تذكرة جديدة",
     "status": {
-      "open": "Open",
-      "answered": "Answered"
+      "open": "مفتوحة",
+      "answered": "تم الرد"
     },
     "sender": {
-      "merchant": "Me",
-      "operator": "Support"
+      "merchant": "أنا",
+      "operator": "الدعم"
     },
     "empty": {
-      "list": "No support conversations yet",
-      "messages": "No messages yet"
+      "list": "لا محادثات دعم بعد",
+      "messages": "لا رسائل بعد"
     },
     "errors": {
-      "load_list": "Failed to load conversations",
-      "load_detail": "Failed to load conversation",
-      "create": "Failed to submit question",
-      "blank_content": "Please enter your question"
+      "load_list": "فشل تحميل المحادثات",
+      "load_detail": "فشل تحميل المحادثة",
+      "create": "فشل إرسال السؤال",
+      "blank_content": "يرجى إدخال سؤالك"
     }
   },
   "Notifications": {
-    "title": "Notifications & Tasks",
-    "subtitle": "Stay on top of platform messages and items that need your action.",
-    "view_all": "View all",
-    "loading": "Loading…",
-    "mark_all_read": "Mark all as read",
+    "title": "الإشعارات والمهام",
+    "subtitle": "تابع رسائل المنصة والعناصر التي تتطلب إجراءً منك.",
+    "view_all": "عرض الكل",
+    "loading": "جاري التحميل…",
+    "mark_all_read": "تعليم الكل كمقروء",
     "tab": {
-      "notifications": "Notifications",
-      "tasks": "Tasks"
+      "notifications": "الإشعارات",
+      "tasks": "المهام"
     },
     "filter": {
-      "all": "All",
-      "unread": "Unread"
+      "all": "الكل",
+      "unread": "غير مقروء"
     },
     "columns": {
-      "reference": "Reference",
-      "details": "Details",
-      "status_time": "Status / Time"
+      "reference": "المرجع",
+      "details": "التفاصيل",
+      "status_time": "الحالة / الوقت"
     },
     "empty": {
-      "notifications": "No notifications yet.",
-      "unread": "No unread notifications.",
-      "tasks": "No open tasks.",
-      "completed_tasks": "No completed tasks."
+      "notifications": "لا إشعارات بعد.",
+      "unread": "لا إشعارات غير مقروءة.",
+      "tasks": "لا مهام مفتوحة.",
+      "completed_tasks": "لا مهام مكتملة."
     },
     "severity": {
-      "INFO": "Info",
-      "SUCCESS": "Success",
-      "WARNING": "Warning",
-      "ERROR": "Error"
+      "INFO": "معلومات",
+      "SUCCESS": "نجاح",
+      "WARNING": "تحذير",
+      "ERROR": "خطأ"
     },
     "priority": {
-      "CRITICAL": "Critical",
-      "HIGH": "High",
-      "MEDIUM": "Medium",
-      "LOW": "Low"
+      "CRITICAL": "حرجة",
+      "HIGH": "عالية",
+      "MEDIUM": "متوسطة",
+      "LOW": "منخفضة"
     },
     "banner": {
-      "dismiss": "Dismiss",
-      "action": "Take action"
+      "dismiss": "تجاهل",
+      "action": "اتخذ إجراءً"
     },
-    "resume_link": "Resume payment",
+    "resume_link": "استئناف الدفع",
     "widget": {
-      "action_center": "Action Center",
-      "recent": "Recent Notifications",
-      "summary": "{openTasks} open task(s) · {overdue} overdue"
+      "action_center": "مركز الإجراءات",
+      "recent": "الإشعارات الأخيرة",
+      "summary": "{openTasks} مهمة/مهام مفتوحة · {overdue} متأخرة"
     },
     "counts": {
-      "unread": "Unread notifications",
-      "open_tasks": "Open tasks"
+      "unread": "إشعارات غير مقروءة",
+      "open_tasks": "مهام مفتوحة"
     },
     "task": {
-      "action": "Process",
-      "review_action": "Review",
-      "due": "Due {time}",
-      "overdue": "Overdue · {time}"
+      "action": "معالجة",
+      "review_action": "مراجعة",
+      "due": "مستحق {time}",
+      "overdue": "متأخر · {time}"
     },
     "tasks": {
-      "open": "Open tasks",
-      "completed": "Completed"
+      "open": "مهام مفتوحة",
+      "completed": "مكتملة"
     },
     "status": {
-      "read": "Read",
-      "unread": "Unread"
+      "read": "مقروء",
+      "unread": "غير مقروء"
     },
     "actions": {
-      "view_details": "View details"
+      "view_details": "عرض التفاصيل"
     },
-    "showing_count": "Showing {shown} of {total}"
+    "showing_count": "عرض {shown} من {total}"
   },
   "AuditLogs": {
-    "title": "Audit Logs",
-    "subtitle": "Read-only audit trail for security-sensitive actions in your merchant account.",
-    "empty": "No audit records found.",
-    "table_total": "Total {count} records",
-    "view_link": "View",
-    "timeline_hint": "View Timeline in the related order detail",
-    "metadata_truncated": "Metadata was truncated",
+    "title": "سجلات التدقيق",
+    "subtitle": "سجل تدقيق للقراءة فقط للإجراءات الحساسة أمنيًا في حساب التاجر.",
+    "empty": "لا سجلات تدقيق.",
+    "table_total": "الإجمالي {count} سجلًا",
+    "view_link": "عرض",
+    "timeline_hint": "عرض الجدول الزمني في تفاصيل الطلب ذي الصلة",
+    "metadata_truncated": "تم اقتطاع البيانات الوصفية",
     "columns": {
-      "time": "Time",
-      "actor": "Actor",
-      "action": "Action",
-      "resource": "Resource",
-      "result": "Result",
-      "link": "Link"
+      "time": "الوقت",
+      "actor": "الفاعل",
+      "action": "الإجراء",
+      "resource": "المورد",
+      "result": "النتيجة",
+      "link": "الرابط"
     },
     "filter": {
-      "date_range": "Date range",
-      "date_range_start": "Start time",
-      "date_range_end": "End time",
-      "action": "Action type",
-      "result": "Result"
+      "date_range": "نطاق التاريخ",
+      "date_range_start": "وقت البدء",
+      "date_range_end": "وقت الانتهاء",
+      "action": "نوع الإجراء",
+      "result": "النتيجة"
     },
     "result": {
-      "SUCCESS": "Success",
-      "FAILURE": "Failure",
-      "DENIED": "Denied"
+      "SUCCESS": "نجاح",
+      "FAILURE": "فشل",
+      "DENIED": "مرفوض"
     },
     "actor_type": {
-      "MERCHANT_USER": "Merchant user",
-      "OPERATOR": "Operator",
-      "SYSTEM": "System",
+      "MERCHANT_USER": "مستخدم تاجر",
+      "OPERATOR": "مشغّل",
+      "SYSTEM": "النظام",
       "API": "API",
       "WEBHOOK": "Webhook"
     },
     "detail": {
-      "reason": "Reason",
-      "event_id": "Event ID",
-      "request_id": "Request ID",
-      "trace_id": "Trace ID",
-      "metadata": "Metadata"
+      "reason": "السبب",
+      "event_id": "معرّف الحدث",
+      "request_id": "معرّف الطلب",
+      "trace_id": "معرّف التتبع",
+      "metadata": "البيانات الوصفية"
     }
   },
   "audit": {
     "action": {
-      "auth.login": "Login",
-      "auth.logout": "Logout",
-      "auth.password.change": "Change payment password",
-      "auth.mfa.enable": "Enable MFA",
-      "auth.mfa.disable": "Disable MFA",
-      "auth.access.denied": "Access denied",
-      "apikey.create": "Create API key",
-      "apikey.rotate": "Rotate API key",
-      "apikey.delete": "Delete API key",
-      "webhook.create": "Create webhook",
-      "webhook.update": "Update webhook",
-      "webhook.delete": "Delete webhook",
-      "webhook.replay": "Replay webhook",
-      "merchant.config.update": "Update merchant config",
-      "coverage.enable": "Enable coverage",
-      "coverage.disable": "Disable coverage",
-      "coverage.update": "Update coverage config",
-      "risk.review.approve": "Review approved",
-      "risk.review.reject": "Review rejected",
-      "risk.review.assign": "Review assigned",
-      "role.grant": "Grant role",
-      "role.revoke": "Revoke role",
-      "permission.update": "Update permission",
-      "operator.create": "Create operator",
-      "operator.update": "Update operator",
-      "operator.disable": "Disable operator"
+      "auth.login": "تسجيل الدخول",
+      "auth.logout": "تسجيل الخروج",
+      "auth.password.change": "تغيير كلمة مرور الدفع",
+      "auth.mfa.enable": "تفعيل MFA",
+      "auth.mfa.disable": "تعطيل MFA",
+      "auth.access.denied": "تم رفض الوصول",
+      "apikey.create": "إنشاء مفتاح API",
+      "apikey.rotate": "تدوير مفتاح API",
+      "apikey.delete": "حذف مفتاح API",
+      "webhook.create": "إنشاء webhook",
+      "webhook.update": "تحديث webhook",
+      "webhook.delete": "حذف webhook",
+      "webhook.replay": "إعادة تشغيل webhook",
+      "merchant.config.update": "تحديث إعدادات التاجر",
+      "coverage.enable": "تفعيل التغطية",
+      "coverage.disable": "تعطيل التغطية",
+      "coverage.update": "تحديث إعدادات التغطية",
+      "risk.review.approve": "تمت الموافقة على المراجعة",
+      "risk.review.reject": "رُفضت المراجعة",
+      "risk.review.assign": "أُسندت المراجعة",
+      "role.grant": "منح دور",
+      "role.revoke": "سحب دور",
+      "permission.update": "تحديث صلاحية",
+      "operator.create": "إنشاء مشغّل",
+      "operator.update": "تحديث مشغّل",
+      "operator.disable": "تعطيل مشغّل"
     }
   },
   "RiskReviews": {
-    "title": "Risk Review Queue",
-    "subtitle": "Read-only queue of suspicious orders and payouts flagged for manual review.",
-    "empty": "No risk review items found.",
-    "table_total": "Total {count} reviews",
+    "title": "قائمة مراجعة المخاطر",
+    "subtitle": "قائمة للقراءة فقط للطلبات والمدفوعات المشبوهة المعلّمة للمراجعة اليدوية.",
+    "empty": "لا عناصر مراجعة مخاطر.",
+    "table_total": "الإجمالي {count} مراجعة",
     "filters": {
-      "keyword": "Search reviews",
-      "status": "Status",
-      "priority": "Priority",
-      "review_type": "Review type"
+      "keyword": "البحث في المراجعات",
+      "status": "الحالة",
+      "priority": "الأولوية",
+      "review_type": "نوع المراجعة"
     },
     "detail": {
-      "title": "Review Detail",
-      "back_to_list": "Back to reviews",
-      "not_found": "Review not found.",
-      "review_type": "Review Type",
-      "reason_code": "Reason Code",
-      "queued_at": "Queued At",
-      "decided_at": "Decided At",
-      "decision_note": "Decision Note",
-      "linked_fraud": "Linked Fraud Event",
-      "resume_link": "Resume Link"
+      "title": "تفاصيل المراجعة",
+      "back_to_list": "العودة إلى المراجعات",
+      "not_found": "لم يتم العثور على المراجعة.",
+      "review_type": "نوع المراجعة",
+      "reason_code": "رمز السبب",
+      "queued_at": "وقت الإدراج في القائمة",
+      "decided_at": "وقت القرار",
+      "decision_note": "ملاحظة القرار",
+      "linked_fraud": "حدث احتيال مرتبط",
+      "resume_link": "رابط الاستئناف"
     },
-    "resume_link": "Resume payment",
+    "resume_link": "استئناف الدفع",
     "headers": {
-      "resource": "Resource",
-      "reason": "Reason",
-      "priority": "Priority",
-      "status": "Status",
-      "created_at": "Flagged At"
+      "resource": "المورد",
+      "reason": "السبب",
+      "priority": "الأولوية",
+      "status": "الحالة",
+      "created_at": "وقت التعليم"
     },
     "resource_type": {
-      "ORDER": "Order",
-      "PAYOUT": "Payout"
+      "ORDER": "طلب",
+      "PAYOUT": "دفعة صادرة"
     },
     "status": {
-      "PENDING": "Pending",
-      "APPROVED": "Approved",
-      "REJECTED": "Rejected"
+      "PENDING": "قيد الانتظار",
+      "APPROVED": "موافق عليها",
+      "REJECTED": "مرفوضة"
     }
   },
   "Reporting": {
     "widgets": {
-      "availableBalance": "Available Balance",
-      "todayVolume": "Today's Volume",
-      "successRate": "Success Rate",
-      "pendingSettlement": "Pending Settlement"
+      "availableBalance": "الرصيد المتاح",
+      "todayVolume": "حجم اليوم",
+      "successRate": "معدل النجاح",
+      "pendingSettlement": "تسوية معلقة"
     },
-    "no_data": "No data available",
-    "forbidden": "You do not have permission to view this",
-    "failed": "Failed to load",
-    "retry": "Retry",
+    "no_data": "لا توجد بيانات متاحة",
+    "forbidden": "ليس لديك صلاحية لعرض هذا",
+    "failed": "فشل التحميل",
+    "retry": "إعادة المحاولة",
     "transactions": {
-      "title": "Transaction Report",
-      "subtitle": "Discover and export transactions under your authorized scope.",
-      "empty": "No transactions found.",
-      "table_total": "Total {count} transactions",
-      "export": "Export CSV",
-      "export_failed": "Export failed",
+      "title": "تقرير المعاملات",
+      "subtitle": "استكشف المعاملات ضمن نطاق صلاحياتك وصدّرها.",
+      "empty": "لم يتم العثور على معاملات.",
+      "table_total": "إجمالي {count} معاملة",
+      "export": "تصدير CSV",
+      "export_failed": "فشل التصدير",
       "filters": {
-        "merchant_order_id": "Merchant order ID",
-        "status": "Status",
-        "channel": "Channel",
-        "amount_min": "Min amount",
-        "amount_max": "Max amount",
-        "created_from": "Created from",
-        "created_to": "Created to"
+        "merchant_order_id": "معرّف طلب التاجر",
+        "status": "الحالة",
+        "channel": "القناة",
+        "amount_min": "الحد الأدنى للمبلغ",
+        "amount_max": "الحد الأقصى للمبلغ",
+        "created_from": "تاريخ الإنشاء من",
+        "created_to": "تاريخ الإنشاء إلى"
       },
       "columns": {
-        "merchant_order_id": "Merchant order ID",
-        "trade_no": "Trade no.",
-        "order_type": "Order type",
-        "status": "Status",
-        "amount": "Amount",
-        "channel": "Channel",
-        "created_at": "Created at"
+        "merchant_order_id": "معرّف طلب التاجر",
+        "trade_no": "رقم المعاملة",
+        "order_type": "نوع الطلب",
+        "status": "الحالة",
+        "amount": "المبلغ",
+        "channel": "القناة",
+        "created_at": "تاريخ الإنشاء"
       },
       "statuses": {
-        "PENDING": "Pending",
-        "PROCESSING": "Processing",
-        "PARTIAL_SUCCESS": "Partial success",
-        "SUCCESS": "Success",
-        "CLOSED": "Closed",
-        "FAILED": "Failed",
-        "REQUIRES_CAPTURE": "Requires capture",
-        "DISPUTED": "Disputed"
+        "PENDING": "معلق",
+        "PROCESSING": "قيد المعالجة",
+        "PARTIAL_SUCCESS": "نجاح جزئي",
+        "SUCCESS": "ناجح",
+        "CLOSED": "مغلق",
+        "FAILED": "فشل",
+        "REQUIRES_CAPTURE": "يتطلب التحصيل",
+        "DISPUTED": "متنازع عليه"
       },
       "orderTypes": {
-        "TRADE": "Trade order",
-        "DEPOSIT": "Deposit",
-        "TRANSFER": "Transfer",
-        "PAYOUT": "Payout",
-        "WITHDRAWAL": "Withdrawal",
-        "REFUND": "Refund",
-        "DIRECT_DEBIT": "Direct debit",
-        "PLATFORM_SERVICE_FEE": "Platform service fee"
+        "TRADE": "طلب تجارة",
+        "DEPOSIT": "إيداع",
+        "TRANSFER": "تحويل",
+        "PAYOUT": "صرف",
+        "WITHDRAWAL": "سحب",
+        "REFUND": "استرداد",
+        "DIRECT_DEBIT": "خصم مباشر",
+        "PLATFORM_SERVICE_FEE": "رسوم خدمة المنصة"
       },
       "detail": {
-        "title": "Transaction detail",
-        "back_to_list": "Back to transactions",
-        "resource_unavailable": "Resource unavailable",
-        "view_business_detail": "View business detail",
+        "title": "تفاصيل المعاملة",
+        "back_to_list": "العودة إلى المعاملات",
+        "resource_unavailable": "المورد غير متاح",
+        "view_business_detail": "عرض التفاصيل التجارية",
         "fields": {
-          "merchant_order_id": "Merchant order ID",
-          "trade_no": "Trade no.",
-          "status": "Status",
-          "order_type": "Order type",
-          "amount": "Amount",
-          "paid_amount": "Paid amount",
-          "refunded_amount": "Refunded amount",
-          "currency": "Currency",
-          "channel": "Channel",
-          "subject": "Subject",
-          "created_at": "Created at",
-          "paid_at": "Paid at",
-          "updated_at": "Updated at"
+          "merchant_order_id": "معرّف طلب التاجر",
+          "trade_no": "رقم المعاملة",
+          "status": "الحالة",
+          "order_type": "نوع الطلب",
+          "amount": "المبلغ",
+          "paid_amount": "المبلغ المدفوع",
+          "refunded_amount": "المبلغ المسترد",
+          "currency": "العملة",
+          "channel": "القناة",
+          "subject": "الموضوع",
+          "created_at": "تاريخ الإنشاء",
+          "paid_at": "تاريخ الدفع",
+          "updated_at": "تاريخ التحديث"
         },
         "timeline": {
-          "title": "Timeline",
-          "empty": "No timeline events."
+          "title": "الخط الزمني",
+          "empty": "لا توجد أحداث في الخط الزمني."
         }
       }
     }
   },
   "Risk": {
     "related_risk": {
-      "title": "Related Risk",
-      "fraud_events": "Fraud Events",
-      "reviews": "Reviews"
+      "title": "المخاطر ذات الصلة",
+      "fraud_events": "أحداث الاحتيال",
+      "reviews": "المراجعات"
     },
     "payment_timeline": {
-      "title": "Payment Risk Timeline",
+      "title": "الخط الزمني لمخاطر الدفع",
       "entity": {
-        "FRAUD": "Fraud",
-        "REVIEW": "Review",
-        "DISPUTE": "Dispute",
-        "PAYMENT": "Payment"
+        "FRAUD": "احتيال",
+        "REVIEW": "مراجعة",
+        "DISPUTE": "نزاع",
+        "PAYMENT": "دفع"
       }
     },
     "dashboard": {
-      "title": "Risk Overview",
-      "view_fraud": "View fraud events",
-      "pending_reviews": "Pending Reviews",
-      "open_disputes": "Open Disputes",
-      "high_fraud_today": "High Fraud Today",
-      "blocked_amount": "Blocked Amount",
-      "blocked_unsupported": "Not supported yet",
-      "review_sla_hours": "Review SLA (hrs)",
-      "chargeback_ratio": "Chargeback Ratio",
-      "rejected_today": "Rejected Today",
-      "pending_review_attempts": "Pending Review Payments",
-      "pending_events": "Pending risk actions",
-      "monitoring_metrics": "Ongoing monitoring"
+      "title": "نظرة عامة على المخاطر",
+      "view_fraud": "عرض أحداث الاحتيال",
+      "pending_reviews": "مراجعات معلقة",
+      "open_disputes": "نزاعات مفتوحة",
+      "high_fraud_today": "احتيال مرتفع اليوم",
+      "blocked_amount": "المبلغ المحظور",
+      "blocked_unsupported": "غير مدعوم بعد",
+      "review_sla_hours": "اتفاقية مستوى خدمة المراجعة (ساعات)",
+      "chargeback_ratio": "نسبة الاسترداد العكسي",
+      "rejected_today": "مرفوض اليوم",
+      "pending_review_attempts": "مدفوعات بانتظار المراجعة",
+      "pending_events": "إجراءات مخاطر معلقة",
+      "monitoring_metrics": "مراقبة مستمرة"
     }
   },
   "RiskRules": {
-    "title": "Risk Rules",
-    "subtitle": "View platform and merchant PRE_AUTH rules (read-only).",
-    "empty": "No risk rules found.",
+    "title": "قواعد المخاطر",
+    "subtitle": "عرض قواعد PRE_AUTH للمنصة والتجار (للقراءة فقط).",
+    "empty": "لم يتم العثور على قواعد مخاطر.",
     "headers": {
-      "name": "Name",
-      "rule_type": "Type",
-      "severity": "Severity",
-      "enforcement": "Enforcement",
-      "scope": "Scope",
-      "enabled": "Enabled",
-      "priority": "Priority",
-      "config": "Configuration"
+      "name": "الاسم",
+      "rule_type": "النوع",
+      "severity": "الخطورة",
+      "enforcement": "التنفيذ",
+      "scope": "النطاق",
+      "enabled": "مفعّل",
+      "priority": "الأولوية",
+      "config": "التكوين"
     },
     "rule_type": {
-      "VELOCITY": "Velocity",
-      "AMOUNT": "Amount"
+      "VELOCITY": "السرعة",
+      "AMOUNT": "المبلغ"
     },
     "enforcement": {
-      "BLOCK": "Block",
-      "REVIEW_BEFORE_AUTH": "Review before payment"
+      "BLOCK": "حظر",
+      "REVIEW_BEFORE_AUTH": "مراجعة قبل الدفع"
     },
     "scope": {
-      "platform": "Platform",
-      "merchant": "Merchant"
+      "platform": "المنصة",
+      "merchant": "التاجر"
     },
     "config": {
-      "schema": "Schema",
-      "velocity": "Max {maxCount} attempts within {windowMinutes} minutes",
-      "amount": "Threshold: {threshold}"
+      "schema": "المخطط",
+      "velocity": "بحد أقصى {maxCount} محاولة خلال {windowMinutes} دقيقة",
+      "amount": "العتبة: {threshold}"
     }
   },
   "Fraud": {
-    "title": "Fraud Events",
-    "subtitle": "Monitor detected fraud signals and investigation status.",
-    "empty": "No fraud events found.",
-    "table_total": "Total {count} events",
+    "title": "أحداث الاحتيال",
+    "subtitle": "مراقبة إشارات الاحتيال المكتشفة وحالة التحقيق.",
+    "empty": "لم يتم العثور على أحداث احتيال.",
+    "table_total": "إجمالي {count} حدث",
     "filters": {
-      "keyword": "Search events",
-      "status": "Status",
-      "severity": "Severity"
+      "keyword": "البحث في الأحداث",
+      "status": "الحالة",
+      "severity": "الخطورة"
     },
     "detail": {
-      "title": "Fraud Event Detail",
-      "back_to_list": "Back to fraud events",
-      "not_found": "Fraud event not found.",
-      "payment_id": "Payment ID",
-      "provider": "Provider",
-      "score": "Risk Score",
+      "title": "تفاصيل حدث الاحتيال",
+      "back_to_list": "العودة إلى أحداث الاحتيال",
+      "not_found": "لم يتم العثور على حدث الاحتيال.",
+      "payment_id": "معرّف الدفع",
+      "provider": "المزوّد",
+      "score": "درجة المخاطر",
       "metadata": {
-        "title": "Metadata",
+        "title": "البيانات الوصفية",
         "v1": {
-          "deviceId": "Device ID",
-          "ipAddress": "IP Address",
-          "velocityCount": "Velocity Count",
-          "amountThreshold": "Amount Threshold",
-          "countryCode": "Country",
-          "cardFingerprint": "Card Fingerprint"
+          "deviceId": "معرّف الجهاز",
+          "ipAddress": "عنوان IP",
+          "velocityCount": "عدد السرعة",
+          "amountThreshold": "عتبة المبلغ",
+          "countryCode": "البلد",
+          "cardFingerprint": "بصمة البطاقة"
         }
       }
     },
     "headers": {
-      "event_type": "Event Type",
-      "risk_type": "Risk Type",
-      "description": "Description",
-      "severity": "Severity",
-      "order_id": "Related Order",
-      "status": "Status",
-      "detected_at": "Detected At"
+      "event_type": "نوع الحدث",
+      "risk_type": "نوع المخاطر",
+      "description": "الوصف",
+      "severity": "الخطورة",
+      "order_id": "الطلب ذو الصلة",
+      "status": "الحالة",
+      "detected_at": "تاريخ الاكتشاف"
     },
     "status": {
-      "OPEN": "Open",
-      "INVESTIGATING": "Investigating",
-      "CLOSED": "Closed"
+      "OPEN": "مفتوح",
+      "INVESTIGATING": "قيد التحقيق",
+      "CLOSED": "مغلق"
     },
     "risk_type": {
-      "DEVICE": "Device anomaly",
-      "VELOCITY": "Velocity anomaly",
-      "GEO": "Geographic anomaly",
-      "BIN": "BIN anomaly",
-      "AMOUNT": "Amount anomaly",
-      "IP_MISMATCH": "IP mismatch",
-      "COMBINED": "Combined risk",
-      "FRAUD": "Fraud risk"
+      "DEVICE": "شذوذ في الجهاز",
+      "VELOCITY": "شذوذ في السرعة",
+      "GEO": "شذوذ جغرافي",
+      "BIN": "شذوذ في BIN",
+      "AMOUNT": "شذوذ في المبلغ",
+      "IP_MISMATCH": "عدم تطابق عنوان IP",
+      "COMBINED": "مخاطر مجمّعة",
+      "FRAUD": "مخاطر احتيال"
     },
     "summary": {
-      "DEVICE": "Device fingerprint does not match billing profile",
-      "VELOCITY": "Transaction velocity exceeded the threshold",
-      "GEO": "Transaction geography differs from expected behavior",
-      "BIN": "Card BIN shows elevated risk characteristics",
-      "AMOUNT": "Transaction amount is outside the normal range",
-      "IP_MISMATCH": "IP address does not match billing information",
-      "COMBINED": "Multiple risk signals triggered together",
-      "FRAUD": "Suspicious fraud activity detected"
+      "DEVICE": "بصمة الجهاز لا تتطابق مع ملف الفوترة",
+      "VELOCITY": "تجاوزت سرعة المعاملات العتبة المحددة",
+      "GEO": "الموقع الجغرافي للمعاملة يختلف عن السلوك المتوقع",
+      "BIN": "يُظهر BIN البطاقة خصائص مخاطر مرتفعة",
+      "AMOUNT": "مبلغ المعاملة خارج النطاق الطبيعي",
+      "IP_MISMATCH": "عنوان IP لا يتطابق مع معلومات الفوترة",
+      "COMBINED": "تم تفعيل عدة إشارات مخاطر معًا",
+      "FRAUD": "تم اكتشاف نشاط احتيال مشبوه"
     }
   },
   "Customers": {
