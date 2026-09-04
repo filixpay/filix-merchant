@@ -4724,1153 +4724,1153 @@
   },
   "Pages": {
     "products": {
-      "title": "Products",
-      "subtitle": "Comprehensive payment solutions for every business scenario",
-      "hero_title": "One Platform, Infinite Payment Possibilities",
-      "hero_desc": "From fiat to crypto, from domestic to cross-border, FilixPay provides a unified payment infrastructure that scales with your business."
+      "title": "Produtos",
+      "subtitle": "Soluções de pagamento completas para cada cenário de negócio",
+      "hero_title": "Uma plataforma, infinitas possibilidades de pagamento",
+      "hero_desc": "Do fiat ao cripto, do doméstico ao cross-border, a FilixPay oferece uma infraestrutura de pagamento unificada que escala com o seu negócio."
     },
     "payment_platform": {
-      "badge": "CORE PRODUCT",
-      "hero_title": "Enterprise Payment Infrastructure Platform",
-      "hero_desc": "Build, manage and scale payment operations with unified APIs, transaction management and settlement infrastructure.",
-      "hero_desc_extra": "FilixPay enables global businesses to connect payments, manage transactions, settlements and merchant operations through one platform.",
-      "features_title": "Core Capabilities",
+      "badge": "PRODUTO PRINCIPAL",
+      "hero_title": "Plataforma de infraestrutura de pagamento empresarial",
+      "hero_desc": "Construa, gerencie e escale operações de pagamento com APIs unificadas, gestão de transações e infraestrutura de settlement.",
+      "hero_desc_extra": "A FilixPay permite que empresas globais conectem pagamentos, gerenciem transações, settlements e operações de merchants em uma única plataforma.",
+      "features_title": "Capacidades principais",
       "features": {
         "connectivity": {
           "icon": "API",
-          "title": "Payment Connectivity",
-          "desc": "Connect global payment channels through unified APIs—Stripe, wallets, bank transfers, and digital assets from one integration layer.",
-          "detail_desc": "Reduce integration overhead with a single orchestration layer for checkout, hosted payment pages, and server-side API flows.",
+          "title": "Conectividade de pagamento",
+          "desc": "Conecte canais de pagamento globais por meio de APIs unificadas—Stripe, carteiras, transferências bancárias e ativos digitais a partir de uma única camada de integração.",
+          "detail_desc": "Reduza o overhead de integração com uma única camada de orquestração para checkout, páginas de pagamento hospedadas e fluxos de API server-side.",
           "points": {
-            "0": "Unified OpenAPI for order creation, refunds, and status queries",
-            "1": "Multi-channel routing across domestic and cross-border payment methods",
-            "2": "Optional digital asset payment support without changing core order flows"
+            "0": "OpenAPI unificada para criação de pedidos, reembolsos e consultas de status",
+            "1": "Roteamento multicanal entre métodos de pagamento domésticos e cross-border",
+            "2": "Suporte opcional a pagamento com ativos digitais sem alterar os fluxos principais de pedido"
           }
         },
         "transactions": {
           "icon": "TX",
-          "title": "Transaction Management",
-          "desc": "Manage orders, refunds, payment status, and audit trails with full lifecycle visibility across channels.",
-          "detail_desc": "Operations teams and developers share one source of truth from authorization through settlement-ready states.",
+          "title": "Gestão de transações",
+          "desc": "Gerencie pedidos, reembolsos, status de pagamento e trilhas de auditoria com visibilidade completa do ciclo de vida em todos os canais.",
+          "detail_desc": "Equipes de operações e desenvolvedores compartilham uma única fonte da verdade da autorização até os estados prontos para settlement.",
           "points": {
-            "0": "Order, refund, and dispute records linked to payment attempts",
-            "1": "Real-time status tracking with webhook-driven merchant notifications",
-            "2": "Audit-ready transaction history for finance and compliance review"
+            "0": "Registros de pedido, reembolso e disputa vinculados às tentativas de pagamento",
+            "1": "Acompanhamento de status em tempo real com notificações ao merchant via webhook",
+            "2": "Histórico de transações pronto para auditoria para revisão financeira e de compliance"
           }
         },
         "settlement": {
           "icon": "ST",
-          "title": "Settlement & Funds",
-          "desc": "Balance tracking, settlement bills, split payments, withdrawals, and fund flow reconciliation for finance teams.",
-          "detail_desc": "Support Platform settlement and Direct settlement models with automated billing and traceable fund movement.",
+          "title": "Settlement e fundos",
+          "desc": "Acompanhamento de saldo, faturas de settlement, pagamentos divididos, saques e reconciliação de fluxo de fundos para equipes financeiras.",
+          "detail_desc": "Suporte aos modelos Platform settlement e Direct settlement com faturamento automatizado e movimentação de fundos rastreável.",
           "points": {
-            "0": "Settlement bills and balance views for merchant finance teams",
-            "1": "Split payment allocation for platforms and multi-merchant businesses",
-            "2": "Withdrawal, deposit, and transfer records connected to settlement outcomes"
+            "0": "Faturas de settlement e visões de saldo para equipes financeiras do merchant",
+            "1": "Alocação de pagamento dividido para plataformas e negócios multi-merchant",
+            "2": "Registros de saque, depósito e transferência conectados aos resultados do settlement"
           }
         },
         "merchant_ops": {
           "icon": "MC",
-          "title": "Merchant Operations",
-          "desc": "Account management, permissions, API credentials, webhooks, and transaction monitoring in one operations platform.",
-          "detail_desc": "Give merchant administrators the controls they need without exposing organization-level enterprise governance.",
+          "title": "Operações de merchant",
+          "desc": "Gestão de contas, permissões, credenciais de API, webhooks e monitoramento de transações em uma única plataforma de operações.",
+          "detail_desc": "Dê aos administradores do merchant os controles de que precisam sem expor a governança empresarial no nível da organização.",
           "points": {
-            "0": "Merchant profiles, credentials, and payment configuration in one console",
-            "1": "Role-based access for finance, operations, and developer teams",
-            "2": "Webhook endpoints and API keys managed with audit visibility"
+            "0": "Perfis de merchant, credenciais e configuração de pagamento em um único console",
+            "1": "Acesso baseado em papéis para equipes financeiras, de operações e de desenvolvimento",
+            "2": "Endpoints de webhook e chaves de API gerenciados com visibilidade de auditoria"
           }
         }
       },
       "business_models": {
-        "title": "Business Model Overview",
-        "desc": "FilixPay supports independent merchants, platform operators, and enterprise groups with flexible settlement modes.",
+        "title": "Visão geral dos modelos de negócio",
+        "desc": "A FilixPay atende merchants independentes, operadores de plataforma e grupos empresariais com modos de settlement flexíveis.",
         "items": {
           "direct": {
             "title": "Direct settlement",
-            "desc": "Independent merchants connect channels directly with transparent clearing and settlement."
+            "desc": "Merchants independentes conectam canais diretamente com clearing e settlement transparentes."
           },
           "platform": {
-            "title": "Platform settlement Platform Model",
-            "desc": "Platforms collect on behalf of sub-merchants with configurable split and settlement rules."
+            "title": "Platform settlement — modelo de plataforma",
+            "desc": "Plataformas cobram em nome de sub-merchants com regras configuráveis de divisão e settlement."
           },
           "enterprise": {
-            "title": "Enterprise & Group Operations",
-            "desc": "Organizations with multiple business units coordinate payment operations under governance policies."
+            "title": "Operações empresariais e de grupo",
+            "desc": "Organizações com múltiplas unidades de negócio coordenam operações de pagamento sob políticas de governança."
           }
         }
       },
       "links": {
-        "title": "Explore the FilixPay Platform",
-        "desc": "Continue to related product surfaces across merchant operations, developers, settlement, and enterprise governance.",
+        "title": "Explore a plataforma FilixPay",
+        "desc": "Continue para superfícies de produto relacionadas em operações de merchant, desenvolvedores, settlement e governança empresarial.",
         "merchant_center": {
           "title": "Merchant Center",
-          "desc": "Payment operations platform for accounts, permissions, credentials, and transaction monitoring."
+          "desc": "Plataforma de operações de pagamento para contas, permissões, credenciais e monitoramento de transações."
         },
         "developers": {
-          "title": "Developer Platform",
-          "desc": "Payment APIs, SDKs, webhooks, sandbox, and integration documentation."
+          "title": "Plataforma para desenvolvedores",
+          "desc": "APIs de pagamento, SDKs, webhooks, sandbox e documentação de integração."
         },
         "payment_splitting": {
-          "title": "Payment Splitting",
-          "desc": "Automated split payment and settlement for marketplaces and multi-merchant platforms."
+          "title": "Divisão de pagamentos",
+          "desc": "Pagamento dividido e settlement automatizados para marketplaces e plataformas multi-merchant."
         },
         "for_enterprise": {
-          "title": "For Enterprise",
-          "desc": "Multi-merchant governance, RBAC, organization isolation, and deployment options."
+          "title": "Para Enterprise",
+          "desc": "Governança multi-merchant, RBAC, isolamento de organização e opções de implantação."
         }
       },
       "cta": {
-        "title": "Start with FilixPay payment infrastructure",
-        "desc": "Explore merchant operations capabilities or sign in to your merchant portal to configure payment channels.",
-        "primary": "Explore Merchant Center",
-        "secondary": "Sign in to Merchant Portal"
+        "title": "Comece com a infraestrutura de pagamento FilixPay",
+        "desc": "Explore as capacidades de operações de merchant ou entre no portal do merchant para configurar canais de pagamento.",
+        "primary": "Explorar Merchant Center",
+        "secondary": "Entrar no portal do merchant"
       }
     },
     "merchant_center": {
-      "badge": "MERCHANT OPERATIONS",
+      "badge": "OPERAÇÕES DE MERCHANT",
       "hero_title": "FilixPay Merchant Center",
-      "hero_desc": "Manage payment operations from one console—transactions, settlement, reporting, credentials, webhooks, and team access.",
-      "hero_desc_extra": "FilixPay Merchant Center is the operations platform for merchants, platforms, and enterprise business units to run day-to-day payment workflows.",
-      "features_title": "Platform Capabilities",
+      "hero_desc": "Gerencie operações de pagamento em um único console—transações, settlement, relatórios, credenciais, webhooks e acesso da equipe.",
+      "hero_desc_extra": "O FilixPay Merchant Center é a plataforma de operações para merchants, plataformas e unidades de negócio empresariais conduzirem fluxos de pagamento do dia a dia.",
+      "features_title": "Capacidades da plataforma",
       "features": {
         "transactions": {
           "icon": "TX",
-          "title": "Transaction Management",
-          "desc": "Search, filter, and monitor orders, refunds, and payment status across channels from a unified operations view.",
-          "detail_desc": "Operations teams get full lifecycle visibility from authorization through settlement-ready states without switching tools.",
+          "title": "Gestão de transações",
+          "desc": "Pesquise, filtre e monitore pedidos, reembolsos e status de pagamento em todos os canais a partir de uma visão unificada de operações.",
+          "detail_desc": "Equipes de operações obtêm visibilidade completa do ciclo de vida da autorização até os estados prontos para settlement, sem trocar de ferramenta.",
           "points": {
-            "0": "Order and refund records linked to payment attempts and channel responses",
-            "1": "Real-time status tracking with export-ready transaction history",
-            "2": "Audit-friendly views for finance and support teams"
+            "0": "Registros de pedido e reembolso vinculados às tentativas de pagamento e às respostas do canal",
+            "1": "Acompanhamento de status em tempo real com histórico de transações pronto para exportação",
+            "2": "Visões amigáveis à auditoria para equipes financeiras e de suporte"
           }
         },
         "settlement": {
           "icon": "ST",
-          "title": "Settlement & Funds",
-          "desc": "Track balances, settlement bills, withdrawals, and fund movements connected to your payment activity.",
-          "detail_desc": "Finance teams reconcile settlement outcomes with the same platform used for daily transaction monitoring.",
+          "title": "Settlement e fundos",
+          "desc": "Acompanhe saldos, faturas de settlement, saques e movimentações de fundos conectados à sua atividade de pagamento.",
+          "detail_desc": "Equipes financeiras reconciliam os resultados do settlement na mesma plataforma usada para o monitoramento diário de transações.",
           "points": {
-            "0": "Balance and settlement bill views for merchant finance workflows",
-            "1": "Withdrawal, deposit, and transfer records tied to settlement states",
-            "2": "Support for Platform settlement and Direct settlement models"
+            "0": "Visões de saldo e fatura de settlement para fluxos financeiros do merchant",
+            "1": "Registros de saque, depósito e transferência vinculados aos estados de settlement",
+            "2": "Suporte aos modelos Platform settlement e Direct settlement"
           }
         },
         "reporting": {
           "icon": "RP",
-          "title": "Reporting & Analytics",
-          "desc": "Operational and financial reporting to understand payment volume, success rates, and settlement trends.",
-          "detail_desc": "Turn transaction and settlement data into actionable reports for operations and finance stakeholders.",
+          "title": "Relatórios e analytics",
+          "desc": "Relatórios operacionais e financeiros para entender volume de pagamentos, taxas de sucesso e tendências de settlement.",
+          "detail_desc": "Transforme dados de transação e settlement em relatórios acionáveis para stakeholders de operações e finanças.",
           "points": {
-            "0": "Payment volume and success rate summaries by channel and period",
-            "1": "Settlement and fund flow reports for reconciliation workflows",
-            "2": "Export-ready data views for finance and business review"
+            "0": "Resumos de volume de pagamento e taxa de sucesso por canal e período",
+            "1": "Relatórios de settlement e fluxo de fundos para fluxos de reconciliação",
+            "2": "Visões de dados prontas para exportação para revisão financeira e de negócio"
           }
         },
         "api_credentials": {
           "icon": "KEY",
-          "title": "API Credentials",
-          "desc": "Create and rotate API keys, manage sandbox and production credentials, and control developer access.",
-          "detail_desc": "Developers and administrators manage integration credentials with visibility into active keys and environments.",
+          "title": "Credenciais de API",
+          "desc": "Crie e rotacione chaves de API, gerencie credenciais de sandbox e produção e controle o acesso de desenvolvedores.",
+          "detail_desc": "Desenvolvedores e administradores gerenciam credenciais de integração com visibilidade das chaves ativas e dos ambientes.",
           "points": {
-            "0": "Separate sandbox and production API key management",
-            "1": "Credential rotation without disrupting active integrations",
-            "2": "Access controls aligned with merchant team roles"
+            "0": "Gestão separada de chaves de API de sandbox e produção",
+            "1": "Rotação de credenciais sem interromper integrações ativas",
+            "2": "Controles de acesso alinhados aos papéis da equipe do merchant"
           }
         },
         "webhooks": {
           "icon": "WH",
           "title": "Webhooks",
-          "desc": "Configure webhook endpoints for payment events, delivery retries, and integration-driven automation.",
-          "detail_desc": "Keep downstream systems synchronized with payment lifecycle events through reliable webhook delivery.",
+          "desc": "Configure endpoints de webhook para eventos de pagamento, retentativas de entrega e automação orientada por integração.",
+          "detail_desc": "Mantenha sistemas downstream sincronizados com eventos do ciclo de vida do pagamento por meio de entrega confiável de webhooks.",
           "points": {
-            "0": "Endpoint configuration for order, payment, and refund notifications",
-            "1": "Delivery visibility for integration troubleshooting",
-            "2": "Event-driven workflows for order and fulfillment systems"
+            "0": "Configuração de endpoints para notificações de pedido, pagamento e reembolso",
+            "1": "Visibilidade de entrega para troubleshooting de integração",
+            "2": "Fluxos orientados a eventos para sistemas de pedido e fulfillment"
           }
         },
         "team_permissions": {
           "icon": "TM",
-          "title": "Team Permissions",
-          "desc": "Role-based access for finance, operations, and developer teams within a merchant account.",
-          "detail_desc": "Delegate day-to-day payment operations to the right people without sharing full account access.",
+          "title": "Permissões da equipe",
+          "desc": "Acesso baseado em papéis para equipes financeiras, de operações e de desenvolvimento dentro de uma conta de merchant.",
+          "detail_desc": "Delegue operações de pagamento do dia a dia às pessoas certas sem compartilhar o acesso total à conta.",
           "points": {
-            "0": "Role-based permissions for finance, operations, and developer roles",
-            "1": "Controlled access to credentials, transactions, and configuration",
-            "2": "Team workflows scoped to a single merchant account"
+            "0": "Permissões baseadas em papéis para finanças, operações e desenvolvimento",
+            "1": "Acesso controlado a credenciais, transações e configuração",
+            "2": "Fluxos de equipe limitados a uma única conta de merchant"
           }
         },
         "self_hosted_checkout": {
           "icon": "CK",
-          "title": "Self-Hosted Checkout",
-          "desc": "Deploy the open-source checkout frontend on your own domain with Docker—no code changes required.",
-          "detail_desc": "Run the payment page at checkout.yourdomain.com instead of a third-party URL. FilixPay handles payment logic; you control branding, hosting, and access logs.",
+          "title": "Checkout self-hosted",
+          "desc": "Implante o frontend open-source de checkout no seu próprio domínio com Docker—sem alterações de código.",
+          "detail_desc": "Execute a página de pagamento em checkout.yourdomain.com em vez de uma URL de terceiros. A FilixPay cuida da lógica de pagamento; você controla branding, hospedagem e logs de acesso.",
           "points": {
-            "0": "Pull the official GHCR image and configure via environment variables only",
-            "1": "Use Developer Center credentials (Client ID / Secret) to connect to FilixPay APIs",
-            "2": "Apache-2.0 open source—audit the frontend; core risk and channel logic stays on FilixPay"
+            "0": "Baixe a imagem oficial do GHCR e configure apenas via variáveis de ambiente",
+            "1": "Use as credenciais do Developer Center (Client ID / Secret) para conectar às APIs FilixPay",
+            "2": "Open source Apache-2.0—audite o frontend; a lógica principal de risco e canal permanece na FilixPay"
           }
         }
       },
       "checkout_deployment": {
-        "title": "Self-Hosted Checkout Deployment",
-        "desc": "For merchants who want the payment page on their own domain and infrastructure—not FilixPay's hosted checkout. Deploy the open-source filix-checkout frontend with Docker; no frontend code changes needed.",
+        "title": "Implantação de checkout self-hosted",
+        "desc": "Para merchants que querem a página de pagamento no próprio domínio e infraestrutura—não no checkout hospedado da FilixPay. Implante o frontend open-source filix-checkout com Docker; sem alterações no código do frontend.",
         "benefits": {
           "brand": {
-            "title": "Your Domain, Your Brand",
-            "desc": "Serve checkout at checkout.yourdomain.com so customers see your brand in the address bar—helping reduce drop-off and build trust."
+            "title": "Seu domínio, sua marca",
+            "desc": "Sirva o checkout em checkout.yourdomain.com para que os clientes vejam sua marca na barra de endereço—ajudando a reduzir abandono e construir confiança."
           },
           "compliance": {
-            "title": "Clear Data Boundaries",
-            "desc": "Checkout frontend code, access logs, and deployment environment stay on your servers—easier for internal compliance and audit requirements."
+            "title": "Limites claros de dados",
+            "desc": "Código do frontend de checkout, logs de acesso e ambiente de implantação permanecem nos seus servidores—mais fácil para requisitos internos de compliance e auditoria."
           },
           "open_source": {
-            "title": "Open Source & Auditable",
-            "desc": "Apache-2.0 licensed Next.js checkout. Review the code yourself; payment core logic remains on FilixPay backend with the same security boundary."
+            "title": "Open source e auditável",
+            "desc": "Checkout Next.js com licença Apache-2.0. Revise o código você mesmo; a lógica principal de pagamento permanece no backend FilixPay com o mesmo limite de segurança."
           },
           "low_cost": {
-            "title": "Low Integration Overhead",
-            "desc": "No business logic changes—configure API credentials and URLs via environment file, pull the Docker image, and go live."
+            "title": "Baixo overhead de integração",
+            "desc": "Sem mudanças na lógica de negócio—configure credenciais de API e URLs via arquivo de ambiente, baixe a imagem Docker e entre em produção."
           }
         },
         "steps": {
           "credentials": {
-            "title": "1. Get API Credentials",
-            "desc": "Create FILIXPAY_BACKEND_CLIENT_ID and FILIXPAY_BACKEND_CLIENT_SECRET in FilixPay Developer Center."
+            "title": "1. Obtenha as credenciais de API",
+            "desc": "Crie FILIXPAY_BACKEND_CLIENT_ID e FILIXPAY_BACKEND_CLIENT_SECRET no FilixPay Developer Center."
           },
           "docker": {
-            "title": "2. Deploy with Docker",
-            "desc": "Pull ghcr.io/filixpay/filix-checkout, mount your env file, and run on port 3001. Pin a version tag for production."
+            "title": "2. Implante com Docker",
+            "desc": "Baixe ghcr.io/filixpay/filix-checkout, monte seu arquivo de ambiente e execute na porta 3001. Fixe uma tag de versão para produção."
           },
           "domain": {
-            "title": "3. Bind Your Domain",
-            "desc": "Expose checkout.example.com via Nginx or Caddy with HTTPS. Set NEXTAUTH_URL to match the public URL."
+            "title": "3. Vincule seu domínio",
+            "desc": "Exponha checkout.example.com via Nginx ou Caddy com HTTPS. Defina NEXTAUTH_URL para corresponder à URL pública."
           }
         },
-        "note": "This is a lightweight self-hosted checkout frontend—not the full FilixPay private deployment (PostgreSQL, Redis, Keycloak stack). See the comparison on the Private Deployment page.",
-        "cta_docs": "View Deployment Guide",
-        "cta_developers": "Go to Developer Center",
-        "cta_compare": "Compare with Private Deployment"
+        "note": "Este é um frontend de checkout self-hosted leve—não a implantação privada completa da FilixPay (stack PostgreSQL, Redis, Keycloak). Veja a comparação na página Private Deployment.",
+        "cta_docs": "Ver guia de implantação",
+        "cta_developers": "Ir ao Developer Center",
+        "cta_compare": "Comparar com Private Deployment"
       },
       "audience": {
-        "title": "Who Uses Merchant Center",
-        "desc": "FilixPay Merchant Center serves businesses that need a dedicated operations console for payment workflows—not organization-level enterprise governance.",
+        "title": "Quem usa o Merchant Center",
+        "desc": "O FilixPay Merchant Center atende negócios que precisam de um console de operações dedicado para fluxos de pagamento—não governança empresarial no nível da organização.",
         "items": {
           "merchants": {
-            "title": "Independent Merchants",
-            "desc": "Run payment operations, monitor transactions, and manage credentials for a single business account."
+            "title": "Merchants independentes",
+            "desc": "Execute operações de pagamento, monitore transações e gerencie credenciais para uma única conta de negócio."
           },
           "platforms": {
-            "title": "Platforms & Marketplaces",
-            "desc": "Operate sub-merchant payment workflows, split settlements, and platform-level reporting from one console."
+            "title": "Plataformas e marketplaces",
+            "desc": "Opere fluxos de pagamento de sub-merchants, settlements divididos e relatórios no nível da plataforma em um único console."
           },
           "enterprises": {
-            "title": "Enterprise Business Units",
-            "desc": "Give business units a merchant operations workspace for transactions, settlement, and team access."
+            "title": "Unidades de negócio empresariais",
+            "desc": "Dê às unidades de negócio um workspace de operações de merchant para transações, settlement e acesso da equipe."
           }
         }
       },
       "links": {
-        "title": "Explore Related Products",
-        "desc": "Merchant Center connects to the broader FilixPay payment infrastructure, developer platform, and settlement capabilities.",
+        "title": "Explore produtos relacionados",
+        "desc": "O Merchant Center se conecta à infraestrutura de pagamento mais ampla da FilixPay, à plataforma para desenvolvedores e às capacidades de settlement.",
         "payment_platform": {
           "title": "Payment Platform",
-          "desc": "Enterprise payment infrastructure for APIs, transaction management, and settlement."
+          "desc": "Infraestrutura de pagamento empresarial para APIs, gestão de transações e settlement."
         },
         "developers": {
-          "title": "Developer Platform",
-          "desc": "Payment APIs, SDKs, webhooks, sandbox, and integration documentation."
+          "title": "Plataforma para desenvolvedores",
+          "desc": "APIs de pagamento, SDKs, webhooks, sandbox e documentação de integração."
         },
         "payment_splitting": {
-          "title": "Payment Splitting",
-          "desc": "Automated split payment and settlement for marketplaces and multi-merchant platforms."
+          "title": "Divisão de pagamentos",
+          "desc": "Pagamento dividido e settlement automatizados para marketplaces e plataformas multi-merchant."
         }
       },
       "cta": {
-        "title": "Sign in to Merchant Center",
-        "desc": "Access your merchant portal to configure payment channels, manage transactions, and run day-to-day payment operations.",
-        "primary": "Sign in to Merchant Portal",
-        "secondary": "View Developer Docs"
+        "title": "Entre no Merchant Center",
+        "desc": "Acesse o portal do merchant para configurar canais de pagamento, gerenciar transações e conduzir operações de pagamento do dia a dia.",
+        "primary": "Entrar no portal do merchant",
+        "secondary": "Ver documentação para desenvolvedores"
       }
     },
     "developers": {
-      "badge": "DEVELOPER PLATFORM",
-      "hero_title": "Build payments with APIs",
-      "hero_desc": "Integrate FilixPay with REST APIs, SDKs, sandbox environments, and webhooks to connect checkout, orders, and settlement flows.",
-      "hero_desc_extra": "FilixPay Developer Platform gives engineering teams the tools to build, test, and operate enterprise payment integrations.",
-      "features_title": "Developer Capabilities",
+      "badge": "PLATAFORMA PARA DESENVOLVEDORES",
+      "hero_title": "Construa pagamentos com APIs",
+      "hero_desc": "Integre a FilixPay com APIs REST, SDKs, ambientes sandbox e webhooks para conectar checkout, pedidos e fluxos de settlement.",
+      "hero_desc_extra": "A FilixPay Developer Platform oferece às equipes de engenharia as ferramentas para construir, testar e operar integrações de pagamento empresariais.",
+      "features_title": "Capacidades para desenvolvedores",
       "features": {
         "api": {
           "icon": "API",
-          "title": "Payment APIs",
-          "desc": "OpenAPI-first REST endpoints for order creation, refunds, payment status, and settlement queries.",
-          "detail_desc": "Integrate server-side payment flows with consistent request models across channels and environments.",
+          "title": "APIs de pagamento",
+          "desc": "Endpoints REST OpenAPI-first para criação de pedidos, reembolsos, status de pagamento e consultas de settlement.",
+          "detail_desc": "Integre fluxos de pagamento server-side com modelos de request consistentes entre canais e ambientes.",
           "points": {
-            "0": "Create orders, capture payments, and issue refunds through unified endpoints",
-            "1": "Query transaction status and settlement outcomes programmatically",
-            "2": "Sandbox and production environments with separate credentials"
+            "0": "Crie pedidos, capture pagamentos e emita reembolsos por endpoints unificados",
+            "1": "Consulte status de transação e resultados de settlement de forma programática",
+            "2": "Ambientes sandbox e produção com credenciais separadas"
           }
         },
         "sdk": {
           "icon": "SDK",
-          "title": "SDKs & Client Libraries",
-          "desc": "Language-specific helpers to accelerate integration with typed request builders and error handling.",
-          "detail_desc": "Reduce boilerplate with SDK patterns aligned to FilixPay OpenAPI specifications.",
+          "title": "SDKs e bibliotecas cliente",
+          "desc": "Helpers específicos por linguagem para acelerar a integração com builders de request tipados e tratamento de erros.",
+          "detail_desc": "Reduza boilerplate com padrões de SDK alinhados às especificações OpenAPI da FilixPay.",
           "points": {
-            "0": "Client libraries for common server-side integration patterns",
-            "1": "Signature and authentication helpers for secure API calls",
-            "2": "Examples aligned with checkout and webhook workflows"
+            "0": "Bibliotecas cliente para padrões comuns de integração server-side",
+            "1": "Helpers de assinatura e autenticação para chamadas de API seguras",
+            "2": "Exemplos alinhados aos fluxos de checkout e webhook"
           }
         },
         "sandbox": {
           "icon": "SB",
           "title": "Sandbox",
-          "desc": "Test payment flows end-to-end with sandbox credentials before going live in production.",
-          "detail_desc": "Developers validate integrations in an isolated environment with the same API surface as production.",
+          "desc": "Teste fluxos de pagamento de ponta a ponta com credenciais sandbox antes de ir ao ar em produção.",
+          "detail_desc": "Desenvolvedores validam integrações em um ambiente isolado com a mesma superfície de API da produção.",
           "points": {
-            "0": "Sandbox API keys separate from production credentials",
-            "1": "Simulate order and payment lifecycle events for integration testing",
-            "2": "Integration sandbox tools in the developer console"
+            "0": "Chaves de API sandbox separadas das credenciais de produção",
+            "1": "Simule eventos do ciclo de vida de pedido e pagamento para testes de integração",
+            "2": "Ferramentas de sandbox de integração no console do desenvolvedor"
           }
         },
         "webhooks": {
           "icon": "WH",
           "title": "Webhooks",
-          "desc": "Receive real-time payment event notifications for orders, payments, refunds, and settlement updates.",
-          "detail_desc": "Keep downstream systems synchronized with payment lifecycle events through reliable webhook delivery.",
+          "desc": "Receba notificações de eventos de pagamento em tempo real para pedidos, pagamentos, reembolsos e atualizações de settlement.",
+          "detail_desc": "Mantenha sistemas downstream sincronizados com eventos do ciclo de vida do pagamento por meio de entrega confiável de webhooks.",
           "points": {
-            "0": "Configure endpoints for order, payment, and refund notifications",
-            "1": "Delivery logs and retry visibility for integration troubleshooting",
-            "2": "Event-driven workflows for order fulfillment and reconciliation"
+            "0": "Configure endpoints para notificações de pedido, pagamento e reembolso",
+            "1": "Logs de entrega e visibilidade de retentativas para troubleshooting de integração",
+            "2": "Fluxos orientados a eventos para fulfillment de pedidos e reconciliação"
           }
         }
       },
       "quick_start": {
-        "title": "Quick Start",
-        "desc": "Get from credentials to your first sandbox payment in three steps.",
+        "title": "Início rápido",
+        "desc": "Vá das credenciais ao seu primeiro pagamento sandbox em três passos.",
         "steps": {
-          "0": "Sign in to the merchant portal and open the developer console to create sandbox API credentials.",
-          "1": "Create a test order via the Payment API or SDK using your sandbox key.",
-          "2": "Configure a webhook endpoint and verify event delivery in the developer console."
+          "0": "Entre no portal do merchant e abra o console do desenvolvedor para criar credenciais de API sandbox.",
+          "1": "Crie um pedido de teste via Payment API ou SDK usando sua chave sandbox.",
+          "2": "Configure um endpoint de webhook e verifique a entrega de eventos no console do desenvolvedor."
         }
       },
       "checkout_deployment": {
-        "title": "Self-Hosted Checkout Deployment",
-        "desc": "Deploy the open-source filix-checkout frontend on your own domain with Docker. Use Developer Center credentials to connect—no frontend code changes required.",
+        "title": "Implantação de checkout self-hosted",
+        "desc": "Implante o frontend open-source filix-checkout no seu próprio domínio com Docker. Use as credenciais do Developer Center para conectar—sem alterações no código do frontend.",
         "points": {
-          "0": "Create FILIXPAY_BACKEND_CLIENT_ID / CLIENT_SECRET in the developer console before deployment.",
-          "1": "Pull ghcr.io/filixpay/filix-checkout and configure via environment file—pin a version tag in production.",
-          "2": "Payment core logic stays on FilixPay; you host the checkout UI and BFF proxy on your infrastructure."
+          "0": "Crie FILIXPAY_BACKEND_CLIENT_ID / CLIENT_SECRET no console do desenvolvedor antes da implantação.",
+          "1": "Baixe ghcr.io/filixpay/filix-checkout e configure via arquivo de ambiente—fixe uma tag de versão em produção.",
+          "2": "A lógica principal de pagamento permanece na FilixPay; você hospeda a UI de checkout e o proxy BFF na sua infraestrutura."
         },
-        "cta_docs": "View Deployment Guide",
-        "cta_merchant_center": "Overview on Merchant Center"
+        "cta_docs": "Ver guia de implantação",
+        "cta_merchant_center": "Visão geral no Merchant Center"
       },
       "links": {
-        "title": "Explore Related Products",
-        "desc": "Developer integrations connect to FilixPay payment infrastructure and merchant operations.",
+        "title": "Explore produtos relacionados",
+        "desc": "Integrações de desenvolvedor se conectam à infraestrutura de pagamento FilixPay e às operações de merchant.",
         "payment_platform": {
           "title": "Payment Platform",
-          "desc": "Enterprise payment infrastructure for APIs, transaction management, and settlement."
+          "desc": "Infraestrutura de pagamento empresarial para APIs, gestão de transações e settlement."
         },
         "merchant_center": {
           "title": "Merchant Center",
-          "desc": "Payment operations platform for accounts, permissions, credentials, and transaction monitoring."
+          "desc": "Plataforma de operações de pagamento para contas, permissões, credenciais e monitoramento de transações."
         }
       },
       "cta": {
-        "title": "Start integrating with FilixPay",
-        "desc": "Follow the quick start guide or open the developer console to manage credentials, sandbox, and webhooks.",
-        "primary": "View Quick Start",
-        "secondary": "Open Developer Console"
+        "title": "Comece a integrar com a FilixPay",
+        "desc": "Siga o guia de início rápido ou abra o console do desenvolvedor para gerenciar credenciais, sandbox e webhooks.",
+        "primary": "Ver início rápido",
+        "secondary": "Abrir console do desenvolvedor"
       }
     },
     "for_enterprise": {
-      "badge": "ENTERPRISE GOVERNANCE",
-      "hero_title": "Enterprise payment governance for groups and regulated businesses",
-      "hero_desc": "FilixPay For Enterprise helps headquarters govern multi-organization payment operations with multi-merchant management, RBAC, member governance, and organization-level isolation.",
-      "hero_desc_extra": "FilixPay Merchant Center covers single-merchant operations; For Enterprise adds organization governance for groups, conglomerates, and regulated enterprises.",
-      "features_title": "Governance Capabilities",
+      "badge": "GOVERNANÇA ENTERPRISE",
+      "hero_title": "Governança de pagamento empresarial para grupos e negócios regulados",
+      "hero_desc": "A FilixPay For Enterprise ajuda a matriz a governar operações de pagamento multi-organização com gestão multi-merchant, RBAC, governança de membros e isolamento no nível da organização.",
+      "hero_desc_extra": "O FilixPay Merchant Center cobre operações de merchant único; For Enterprise adiciona governança organizacional para grupos, conglomerados e empresas reguladas.",
+      "features_title": "Capacidades de governança",
       "features": {
         "multi_org": {
           "icon": "ORG",
-          "title": "Multi-Organization Governance",
-          "desc": "Centralize enterprise governance across legal entities while preserving independent operations at each organization.",
-          "detail_desc": "Headquarters creates and manages organizations without replacing day-to-day merchant operations.",
+          "title": "Governança multi-organização",
+          "desc": "Centralize a governança empresarial entre entidades jurídicas preservando operações independentes em cada organização.",
+          "detail_desc": "A matriz cria e gerencia organizações sem substituir as operações diárias do merchant.",
           "points": {
-            "0": "Enterprise-level visibility across organizations and merchants",
-            "1": "Governance boundaries that stop at the organization layer",
-            "2": "Centralized policy with decentralized business execution"
+            "0": "Visibilidade no nível empresarial entre organizações e merchants",
+            "1": "Limites de governança que param na camada da organização",
+            "2": "Política centralizada com execução de negócio descentralizada"
           }
         },
         "multi_merchant": {
           "icon": "MM",
-          "title": "Multi-Merchant Management",
-          "desc": "Coordinate payment operations across subsidiaries, business units, and project teams under unified governance.",
-          "detail_desc": "Break fund silos with supervised accounts and transparent acquiring across group merchants.",
+          "title": "Gestão multi-merchant",
+          "desc": "Coordene operações de pagamento entre subsidiárias, unidades de negócio e equipes de projeto sob governança unificada.",
+          "detail_desc": "Quebre silos de fundos com contas supervisionadas e acquiring transparente entre merchants do grupo.",
           "points": {
-            "0": "Unified acquiring strategy with entity-level signing",
-            "1": "Sub-merchant and project-level payment workflows",
-            "2": "Transparent fund flows for headquarters oversight"
+            "0": "Estratégia de acquiring unificada com assinatura no nível da entidade",
+            "1": "Fluxos de pagamento de sub-merchant e no nível de projeto",
+            "2": "Fluxos de fundos transparentes para supervisão da matriz"
           }
         },
         "rbac": {
           "icon": "RBAC",
-          "title": "RBAC & Member Governance",
-          "desc": "Role-based access controls and member lifecycle governance for enterprise administrators and organization owners.",
-          "detail_desc": "Delegate governance responsibilities with auditable member permissions and approval workflows.",
+          "title": "RBAC e governança de membros",
+          "desc": "Controles de acesso baseados em papéis e governança do ciclo de vida de membros para administradores empresariais e owners da organização.",
+          "detail_desc": "Delegue responsabilidades de governança com permissões de membros auditáveis e fluxos de aprovação.",
           "points": {
-            "0": "Enterprise ADMIN and Organization OWNER role separation",
-            "1": "Member invitations, role assignments, and access reviews",
-            "2": "Auditable governance actions across organizations"
+            "0": "Separação dos papéis ADMIN empresarial e OWNER da organização",
+            "1": "Convites de membros, atribuições de papéis e revisões de acesso",
+            "2": "Ações de governança auditáveis entre organizações"
           }
         },
         "isolation": {
           "icon": "ISO",
-          "title": "Organization Isolation",
-          "desc": "Strong isolation between organizations while maintaining enterprise-wide governance visibility.",
-          "detail_desc": "Each organization operates with scoped credentials, merchants, and authorization boundaries.",
+          "title": "Isolamento de organização",
+          "desc": "Isolamento forte entre organizações mantendo visibilidade de governança em toda a empresa.",
+          "detail_desc": "Cada organização opera com credenciais, merchants e limites de autorização com escopo próprio.",
           "points": {
-            "0": "Scoped merchant and credential management per organization",
-            "1": "Authorization stays within organization boundaries",
-            "2": "Enterprise oversight without centralizing operations"
+            "0": "Gestão de merchant e credenciais com escopo por organização",
+            "1": "A autorização permanece dentro dos limites da organização",
+            "2": "Supervisão empresarial sem centralizar as operações"
           }
         }
       },
       "private_deployment": {
-        "title": "Private Deployment Options",
-        "desc": "FilixPay can be deployed in your own environment for data sovereignty and regulated industries — contact sales to discuss deployment options."
+        "title": "Opções de implantação privada",
+        "desc": "A FilixPay pode ser implantada no seu próprio ambiente para soberania de dados e indústrias reguladas — fale com o time comercial para discutir opções de implantação."
       },
       "links": {
-        "title": "Explore Payment Infrastructure",
-        "desc": "Enterprise governance builds on FilixPay payment infrastructure for APIs, transactions, and settlement.",
+        "title": "Explore a infraestrutura de pagamento",
+        "desc": "A governança empresarial se apoia na infraestrutura de pagamento FilixPay para APIs, transações e settlement.",
         "payment_platform": {
           "title": "Payment Platform",
-          "desc": "Enterprise payment infrastructure for APIs, transaction management, and settlement."
+          "desc": "Infraestrutura de pagamento empresarial para APIs, gestão de transações e settlement."
         }
       },
       "cta": {
-        "title": "Talk to our enterprise team",
-        "desc": "Contact sales to discuss multi-organization governance, RBAC requirements, and deployment options for your group.",
-        "primary": "Contact Sales",
-        "secondary": "Explore Payment Platform"
+        "title": "Fale com nosso time enterprise",
+        "desc": "Fale com o time comercial para discutir governança multi-organização, requisitos de RBAC e opções de implantação para o seu grupo.",
+        "primary": "Falar com vendas",
+        "secondary": "Explorar Payment Platform"
       }
     },
     "credit_payment": {
-      "title": "Credit Payment",
-      "subtitle": "Flexible credit-based payment solutions for B2B and subscription businesses",
-      "hero_title": "Buy Now, Pay Later — Built for Business",
-      "hero_desc": "Enable credit lines, installment plans, and deferred payments with enterprise-grade risk management and real-time account tracking.",
+      "title": "Pagamento a crédito",
+      "subtitle": "Soluções flexíveis de pagamento baseadas em crédito para negócios B2B e de assinatura",
+      "hero_title": "Compre agora, pague depois — feito para negócios",
+      "hero_desc": "Habilite linhas de crédito, planos de parcelamento e pagamentos diferidos com gestão de risco de nível empresarial e acompanhamento de conta em tempo real.",
       "features": {
         "credit_line": {
-          "title": "Credit Line Management",
-          "desc": "Set and manage credit limits for your business customers with flexible payment terms."
+          "title": "Gestão de linha de crédito",
+          "desc": "Defina e gerencie limites de crédito para seus clientes empresariais com condições de pagamento flexíveis."
         },
         "installment": {
-          "title": "Installment Plans",
-          "desc": "Support multi-period payment plans with automated billing and collection."
+          "title": "Planos de parcelamento",
+          "desc": "Suporte a planos de pagamento em múltiplos períodos com faturamento e cobrança automatizados."
         },
         "risk": {
-          "title": "Risk Control",
-          "desc": "Real-time credit scoring and risk assessment with configurable rules."
+          "title": "Controle de risco",
+          "desc": "Scoring de crédito e avaliação de risco em tempo real com regras configuráveis."
         },
         "reconciliation": {
-          "title": "Auto Reconciliation",
-          "desc": "Automated matching of payments to invoices with detailed reporting."
+          "title": "Reconciliação automática",
+          "desc": "Matching automatizado de pagamentos a faturas com relatórios detalhados."
         }
       }
     },
     "crypto_payment": {
-      "title": "Crypto Payment",
-      "subtitle": "Native TRON USDT on-chain collection through FilixPay blockchain gateway",
-      "hero_title": "TRON USDT Payments, Built In",
-      "hero_desc": "Collect TRC20 USDT with merchant-managed deposit addresses, unique-amount matching, and blockchain gateway confirmation—unified in the same FilixPay checkout and order flow.",
+      "title": "Pagamento cripto",
+      "subtitle": "Cobrança nativa on-chain de USDT na TRON pelo gateway blockchain da FilixPay",
+      "hero_title": "Pagamentos USDT na TRON, integrados",
+      "hero_desc": "Receba USDT TRC20 com endereços de depósito gerenciados pelo merchant, matching por valor único e confirmação pelo gateway blockchain—tudo unificado no mesmo checkout e fluxo de pedidos da FilixPay.",
       "pipeline": {
         "configure": {
-          "title": "Configure Wallets",
-          "desc": "Bind TRON USDT deposit addresses"
+          "title": "Configurar carteiras",
+          "desc": "Vincule endereços de depósito de USDT na TRON"
         },
         "checkout": {
-          "title": "Checkout Collection",
-          "desc": "Show address and pay amount"
+          "title": "Cobrança no checkout",
+          "desc": "Exiba endereço e valor a pagar"
         },
         "confirm": {
-          "title": "On-Chain Confirm",
-          "desc": "Gateway verifies deposit"
+          "title": "Confirmação on-chain",
+          "desc": "O gateway verifica o depósito"
         }
       },
       "what": {
-        "title": "What Is FilixPay Crypto Payment?",
-        "desc": "FilixPay is a payment orchestration layer—not a custodian or exchange. The native CRYPTO channel connects your checkout to TRON USDT deposits via the FilixPay blockchain gateway, with optional NowPayments extension for multi-coin invoices."
+        "title": "O que é o pagamento cripto da FilixPay?",
+        "desc": "A FilixPay é uma camada de orquestração de pagamentos—não uma custodiante nem uma exchange. O canal nativo CRYPTO conecta seu checkout a depósitos de USDT na TRON via o gateway blockchain da FilixPay, com extensão opcional NowPayments para faturas multi-moeda."
       },
       "native": {
-        "title": "Native TRON USDT Channel (Primary)",
-        "desc": "Production-ready on-chain collection for TRC20 USDT with merchant-controlled deposit wallets and automatic payment matching.",
+        "title": "Canal nativo de USDT na TRON (principal)",
+        "desc": "Cobrança on-chain pronta para produção de USDT TRC20 com carteiras de depósito controladas pelo merchant e matching automático de pagamentos.",
         "points": {
-          "0": "Chain and asset: TRON mainnet USDT (TRC20)",
-          "1": "Deposit modes: STATIC unique-amount matching or HD address allocation",
-          "2": "Checkout displays deposit address and exact pay amount for the customer"
+          "0": "Rede e ativo: USDT na mainnet TRON (TRC20)",
+          "1": "Modos de depósito: matching STATIC por valor único ou alocação de endereço HD",
+          "2": "O checkout exibe o endereço de depósito e o valor exato a pagar para o cliente"
         }
       },
       "wallets": {
-        "title": "Deposit Wallet Management",
-        "desc": "Merchants configure receiving addresses in the merchant center before going live.",
+        "title": "Gestão de carteiras de depósito",
+        "desc": "Os merchants configuram os endereços de recebimento no centro do merchant antes de entrar em produção.",
         "points": {
-          "0": "Fourth-party merchants manage their own TRON USDT deposit wallets",
-          "1": "Third-party sub-merchants use platform-managed wallets (read-only view)",
-          "2": "One active deposit wallet per chain/asset per merchant"
+          "0": "Merchants fourth-party gerenciam suas próprias carteiras de depósito de USDT na TRON",
+          "1": "Sub-merchants third-party usam carteiras gerenciadas pela plataforma (visualização somente leitura)",
+          "2": "Uma carteira de depósito ativa por rede/ativo por merchant"
         }
       },
       "extension": {
-        "title": "NowPayments Extension (Optional)",
-        "desc": "Need more digital assets beyond TRON USDT? Connect your own NowPayments account as an additional upstream channel.",
+        "title": "Extensão NowPayments (opcional)",
+        "desc": "Precisa de mais ativos digitais além de USDT na TRON? Conecte sua própria conta NowPayments como canal upstream adicional.",
         "points": {
-          "0": "Bring your NowPayments API Key and IPN Secret in payment configuration",
-          "1": "Redirect customers to NowPayments invoice checkout for supported coins",
-          "2": "FilixPay handles order linkage, IPN callbacks, and trade bill reconciliation"
+          "0": "Informe sua API Key e IPN Secret da NowPayments na configuração de pagamento",
+          "1": "Redirecione clientes ao checkout de fatura da NowPayments para moedas suportadas",
+          "2": "A FilixPay cuida da vinculação de pedidos, callbacks IPN e reconciliação de faturas de trade"
         },
-        "footnote": "Multi-coin scope depends on your NowPayments merchant account—not a native FilixPay guarantee."
+        "footnote": "O escopo multi-moeda depende da sua conta merchant NowPayments—não é uma garantia nativa da FilixPay."
       },
       "merchant_center": {
-        "title": "Merchant Center Capabilities",
+        "title": "Capacidades do centro do merchant",
         "items": {
           "configs": {
-            "title": "Payment Configuration",
-            "desc": "Bind CRYPTO gateway credentials or NowPayments API keys per payment scenario."
+            "title": "Configuração de pagamento",
+            "desc": "Vincule credenciais do gateway CRYPTO ou chaves de API da NowPayments por cenário de pagamento."
           },
           "wallets": {
-            "title": "Crypto Deposit Addresses",
-            "desc": "Create and maintain TRON USDT receiving addresses for the native channel."
+            "title": "Endereços de depósito cripto",
+            "desc": "Crie e mantenha endereços de recebimento de USDT na TRON para o canal nativo."
           },
           "orders": {
-            "title": "Orders & Webhooks",
-            "desc": "Track payment status and receive merchant webhooks when deposits confirm."
+            "title": "Pedidos e webhooks",
+            "desc": "Acompanhe o status do pagamento e receba webhooks do merchant quando os depósitos forem confirmados."
           }
         }
       },
       "workflow": {
-        "title": "Collection Workflow",
-        "desc": "From checkout creation to on-chain confirmation.",
+        "title": "Fluxo de cobrança",
+        "desc": "Da criação do checkout à confirmação on-chain.",
         "steps": {
           "order": {
-            "title": "Create Checkout",
-            "desc": "Merchant or API creates an order and selects the configured crypto payment channel."
+            "title": "Criar checkout",
+            "desc": "O merchant ou a API cria um pedido e seleciona o canal de pagamento cripto configurado."
           },
           "present": {
-            "title": "Present Payment",
-            "desc": "Native CRYPTO shows TRON address and unique pay amount; NowPayments redirects to invoice URL."
+            "title": "Apresentar pagamento",
+            "desc": "O CRYPTO nativo mostra o endereço TRON e o valor único a pagar; a NowPayments redireciona para a URL da fatura."
           },
           "pay": {
-            "title": "Customer Pays",
-            "desc": "Customer sends USDT on-chain or completes payment on the NowPayments invoice page."
+            "title": "Cliente paga",
+            "desc": "O cliente envia USDT on-chain ou conclui o pagamento na página de fatura da NowPayments."
           },
           "settle": {
-            "title": "Confirm & Notify",
-            "desc": "Gateway or IPN confirms payment; order status updates and merchant webhooks fire."
+            "title": "Confirmar e notificar",
+            "desc": "O gateway ou o IPN confirma o pagamento; o status do pedido é atualizado e os webhooks do merchant são disparados."
           }
         }
       },
       "scenarios": {
         "cross_border": {
-          "title": "Cross-Border USDT Collection",
-          "desc": "Accept stablecoin payments from global customers without card rails."
+          "title": "Cobrança cross-border de USDT",
+          "desc": "Aceite pagamentos em stablecoin de clientes globais sem trilhos de cartão."
         },
         "chargeback_free": {
-          "title": "Chargeback-Free Alternative",
-          "desc": "On-chain finality eliminates card chargeback exposure for eligible use cases."
+          "title": "Alternativa sem chargeback",
+          "desc": "A finalidade on-chain elimina a exposição a chargebacks de cartão em casos de uso elegíveis."
         },
         "platform": {
-          "title": "Platform-Managed Crypto",
-          "desc": "Platform settlement merchants inherit platform crypto configuration without managing wallets."
+          "title": "Cripto gerenciado pela plataforma",
+          "desc": "Merchants de platform settlement herdam a configuração cripto da plataforma sem gerenciar carteiras."
         }
       },
       "faq": {
-        "title": "Frequently Asked Questions",
+        "title": "Perguntas frequentes",
         "items": {
           "what_coins": {
-            "q": "Which cryptocurrencies does FilixPay support natively?",
-            "a": "The native CRYPTO channel currently supports TRON mainnet USDT (TRC20). For additional digital assets, connect your own NowPayments account as an optional upstream channel."
+            "q": "Quais criptomoedas a FilixPay oferece suporte nativo?",
+            "a": "O canal nativo CRYPTO atualmente oferece suporte a USDT na mainnet TRON (TRC20). Para ativos digitais adicionais, conecte sua própria conta NowPayments como canal upstream opcional."
           },
           "wallet_required": {
-            "q": "Do I need to configure deposit wallets?",
-            "a": "Yes for the native TRON USDT channel. Fourth-party merchants add deposit addresses in Crypto Deposit Addresses. Third-party sub-merchants on platform-managed settlement use the platform merchant's configured wallets."
+            "q": "Preciso configurar carteiras de depósito?",
+            "a": "Sim para o canal nativo de USDT na TRON. Merchants fourth-party adicionam endereços de depósito em Endereços de depósito cripto. Sub-merchants third-party em settlement gerenciado pela plataforma usam as carteiras configuradas do merchant da plataforma."
           },
           "deposit_modes": {
-            "q": "What are STATIC and HD deposit modes?",
-            "a": "STATIC mode reserves a unique pay amount against your deposit address for each order. HD mode allocates addresses through the blockchain gateway. The active mode is set in your CRYPTO channel configuration."
+            "q": "O que são os modos de depósito STATIC e HD?",
+            "a": "O modo STATIC reserva um valor único a pagar no seu endereço de depósito para cada pedido. O modo HD aloca endereços pelo gateway blockchain. O modo ativo é definido na configuração do canal CRYPTO."
           },
           "nowpayments": {
-            "q": "How does the NowPayments extension work?",
-            "a": "You provide your NowPayments API credentials in payment configuration. FilixPay creates invoices, redirects customers to NowPayments checkout, and processes IPN callbacks into unified order status."
+            "q": "Como funciona a extensão NowPayments?",
+            "a": "Você informa suas credenciais de API da NowPayments na configuração de pagamento. A FilixPay cria faturas, redireciona clientes ao checkout da NowPayments e processa callbacks IPN no status unificado do pedido."
           },
           "chargebacks": {
-            "q": "Are crypto payments reversible?",
-            "a": "On-chain USDT transfers are final once confirmed. Card-style chargebacks do not apply to native crypto collection, though operational refunds must be handled according to your business policy."
+            "q": "Pagamentos cripto são reversíveis?",
+            "a": "Transferências on-chain de USDT são finais após a confirmação. Chargebacks no estilo de cartão não se aplicam à cobrança cripto nativa, embora reembolsos operacionais devam ser tratados conforme a política do seu negócio."
           },
           "refunds": {
-            "q": "Does FilixPay support automatic crypto refunds?",
-            "a": "Automatic on-chain refunds through the native CRYPTO channel are not available in the current release. Plan manual refund workflows where needed."
+            "q": "A FilixPay oferece suporte a reembolsos cripto automáticos?",
+            "a": "Reembolsos on-chain automáticos pelo canal nativo CRYPTO não estão disponíveis na versão atual. Planeje fluxos de reembolso manuais quando necessário."
           }
         }
       },
       "cta": {
-        "title": "Ready to collect TRON USDT through FilixPay?",
-        "desc": "Configure deposit wallets and payment channels in the merchant center, or contact us for platform-managed setup."
+        "title": "Pronto para receber USDT na TRON pela FilixPay?",
+        "desc": "Configure carteiras de depósito e canais de pagamento no centro do merchant, ou fale conosco para setup gerenciado pela plataforma."
       }
     },
     "payment_splitting": {
-      "title": "Payment Splitting",
-      "subtitle": "Automated split-payment and settlement capabilities for platform businesses",
-      "hero_title": "Payment Splitting for Platforms and Multi-Merchant Settlement",
-      "hero_desc": "Automate how one payment is allocated across platforms, merchants, sub-merchants, service fees, commissions, and settlement recipients.",
+      "title": "Divisão de pagamentos",
+      "subtitle": "Capacidades automatizadas de split-payment e settlement para negócios de plataforma",
+      "hero_title": "Divisão de pagamentos para plataformas e settlement multi-merchant",
+      "hero_desc": "Automatize como um pagamento é alocado entre plataformas, merchants, sub-merchants, taxas de serviço, comissões e destinatários de settlement.",
       "what": {
-        "title": "What Is Payment Splitting?",
-        "desc": "Payment splitting connects payment collection, receiver allocation, settlement bills, and reconciliation records so platform businesses can reduce manual finance operations."
+        "title": "O que é divisão de pagamentos?",
+        "desc": "A divisão de pagamentos conecta cobrança, alocação de destinatários, faturas de settlement e registros de reconciliação para que negócios de plataforma reduzam operações financeiras manuais."
       },
       "features": {
         "multi_receiver": {
           "icon": "M",
-          "title": "Multiple Receivers",
-          "desc": "Split one customer payment across merchants, sub-merchants, platform accounts, and partners."
+          "title": "Múltiplos destinatários",
+          "desc": "Divida um pagamento do cliente entre merchants, sub-merchants, contas da plataforma e parceiros."
         },
         "commission": {
           "icon": "%",
-          "title": "Platform Commission",
-          "desc": "Separate platform service fees and commissions before merchant settlement."
+          "title": "Comissão da plataforma",
+          "desc": "Separe taxas de serviço e comissões da plataforma antes do settlement do merchant."
         },
         "settlement": {
           "icon": "S",
-          "title": "Settlement Ready",
-          "desc": "Connect split records with settlement bills and finance reconciliation workflows."
+          "title": "Pronto para settlement",
+          "desc": "Conecte registros de divisão a faturas de settlement e fluxos de reconciliação financeira."
         },
         "webhook": {
           "icon": "API",
-          "title": "API And Webhooks",
-          "desc": "Use API and webhook callbacks to track payment, split, and settlement status."
+          "title": "API e webhooks",
+          "desc": "Use API e callbacks de webhook para acompanhar status de pagamento, divisão e settlement."
         }
       },
       "scenarios": {
         "marketplace": {
           "icon": "O",
-          "title": "Marketplace Orders",
-          "desc": "Allocate customer payments to platform merchants and settlement receivers."
+          "title": "Pedidos de marketplace",
+          "desc": "Aloque pagamentos de clientes a merchants da plataforma e destinatários de settlement."
         },
         "commission": {
           "icon": "F",
-          "title": "Service Commission",
-          "desc": "Keep platform fees while sending the remaining receivable to merchants."
+          "title": "Comissão de serviço",
+          "desc": "Mantenha as taxas da plataforma enquanto envia o restante a receber aos merchants."
         },
         "saas": {
           "icon": "S",
-          "title": "SaaS Platforms",
-          "desc": "Support multi-tenant merchants that collect through a shared payment platform."
+          "title": "Plataformas SaaS",
+          "desc": "Suporte a merchants multi-tenant que cobram por meio de uma plataforma de pagamento compartilhada."
         },
         "chain": {
           "icon": "G",
-          "title": "Chains And Groups",
-          "desc": "Settle funds across stores, subsidiaries, or business units."
+          "title": "Redes e grupos",
+          "desc": "Faça settlement de fundos entre lojas, subsidiárias ou unidades de negócio."
         },
         "cross_border": {
           "icon": "X",
-          "title": "Cross-Border Settlement",
-          "desc": "Support multi-party settlement scenarios for global platform commerce."
+          "title": "Settlement cross-border",
+          "desc": "Suporte a cenários de settlement multipartes para comércio de plataformas globais."
         },
         "partner": {
           "icon": "R",
-          "title": "Partner Revenue Sharing",
-          "desc": "Distribute revenue to partners, channels, or service providers."
+          "title": "Repasse de receita a parceiros",
+          "desc": "Distribua receita a parceiros, canais ou prestadores de serviço."
         }
       },
       "workflow": {
-        "title": "How The Split-Payment Flow Works",
-        "desc": "From customer payment to receiver settlement, each step is connected to records that finance teams can trace.",
+        "title": "Como funciona o fluxo de split-payment",
+        "desc": "Do pagamento do cliente ao settlement do destinatário, cada etapa se conecta a registros que as equipes financeiras podem rastrear.",
         "steps": {
           "pay": {
-            "title": "Customer Pays",
-            "desc": "A customer completes payment through the platform checkout flow."
+            "title": "Cliente paga",
+            "desc": "O cliente conclui o pagamento pelo fluxo de checkout da plataforma."
           },
           "receive": {
-            "title": "Platform Receives",
-            "desc": "The platform records the payment and prepares the split calculation."
+            "title": "Plataforma recebe",
+            "desc": "A plataforma registra o pagamento e prepara o cálculo da divisão."
           },
           "calculate": {
-            "title": "Rules Calculate Split",
-            "desc": "Business rules determine amounts, receivers, commissions, and fees."
+            "title": "Regras calculam a divisão",
+            "desc": "Regras de negócio determinam valores, destinatários, comissões e taxas."
           },
           "credit": {
-            "title": "Receivers Are Credited",
-            "desc": "Receivers get their allocated amounts according to the split result."
+            "title": "Destinatários são creditados",
+            "desc": "Os destinatários recebem os valores alocados conforme o resultado da divisão."
           },
           "settle": {
-            "title": "Settlement Bill Is Generated",
-            "desc": "Settlement records summarize split outcomes for finance operations."
+            "title": "Fatura de settlement é gerada",
+            "desc": "Registros de settlement resumem os resultados da divisão para operações financeiras."
           },
           "reconcile": {
-            "title": "Finance Reconciles",
-            "desc": "Finance teams compare orders, split records, and settlement bills."
+            "title": "Financeiro reconcilia",
+            "desc": "Equipes financeiras comparam pedidos, registros de divisão e faturas de settlement."
           }
         }
       },
       "rules": {
-        "title": "Rules And Receiver Model",
-        "desc": "Define how revenue is distributed across merchants, platform accounts, service fees, and settlement receivers.",
+        "title": "Regras e modelo de destinatário",
+        "desc": "Defina como a receita é distribuída entre merchants, contas da plataforma, taxas de serviço e destinatários de settlement.",
         "items": {
           "fixed_amount": {
             "icon": "#",
-            "title": "Fixed Amount",
-            "desc": "Allocate a fixed value to a receiver or platform fee."
+            "title": "Valor fixo",
+            "desc": "Aloque um valor fixo a um destinatário ou taxa da plataforma."
           },
           "percentage": {
             "icon": "%",
-            "title": "Percentage",
-            "desc": "Split by percentage for merchant revenue or partner sharing."
+            "title": "Percentual",
+            "desc": "Divida por percentual para receita do merchant ou repasse a parceiros."
           },
           "commission": {
             "icon": "C",
-            "title": "Commission",
-            "desc": "Keep platform commission before settlement."
+            "title": "Comissão",
+            "desc": "Mantenha a comissão da plataforma antes do settlement."
           },
           "receiver": {
             "icon": "R",
-            "title": "Receiver",
-            "desc": "Route amounts to merchants, sub-merchants, stores, or partners."
+            "title": "Destinatário",
+            "desc": "Encaminhe valores a merchants, sub-merchants, lojas ou parceiros."
           },
           "currency": {
             "icon": "$",
-            "title": "Currency",
-            "desc": "Support settlement logic by transaction and settlement currency."
+            "title": "Moeda",
+            "desc": "Suporte à lógica de settlement por moeda da transação e do settlement."
           },
           "cycle": {
             "icon": "D",
-            "title": "Settlement Cycle",
-            "desc": "Connect split results with daily, weekly, or custom settlement cycles."
+            "title": "Ciclo de settlement",
+            "desc": "Conecte resultados de divisão a ciclos de settlement diários, semanais ou personalizados."
           }
         }
       },
       "settlement": {
-        "title": "Settlement And Reconciliation",
-        "desc": "Payment splitting should not stop at allocation. Finance teams need settlement bills and reconciliation records that explain every amount.",
+        "title": "Settlement e reconciliação",
+        "desc": "A divisão de pagamentos não deve parar na alocação. Equipes financeiras precisam de faturas de settlement e registros de reconciliação que expliquem cada valor.",
         "records": {
-          "title": "Split Records",
-          "desc": "Track order amount, split amount, receiver count, success count, failure count, and split status."
+          "title": "Registros de divisão",
+          "desc": "Acompanhe valor do pedido, valor dividido, quantidade de destinatários, sucessos, falhas e status da divisão."
         },
         "bills": {
-          "title": "Settlement Bills",
-          "desc": "Connect split results to settlement bill items for finance exports and period-end reconciliation."
+          "title": "Faturas de settlement",
+          "desc": "Conecte resultados de divisão a itens da fatura de settlement para exportações financeiras e reconciliação de fim de período."
         }
       },
       "exceptions": {
-        "title": "Exception Handling",
-        "desc": "Payment splitting needs clear states when business rules, receiver accounts, refunds, or settlement timing create exceptions.",
+        "title": "Tratamento de exceções",
+        "desc": "A divisão de pagamentos precisa de estados claros quando regras de negócio, contas de destinatários, reembolsos ou o timing do settlement geram exceções.",
         "items": {
           "receiver_unavailable": {
-            "title": "Receiver Unavailable",
-            "desc": "Identify receiver account issues before settlement is completed."
+            "title": "Destinatário indisponível",
+            "desc": "Identifique problemas na conta do destinatário antes de concluir o settlement."
           },
           "rule_mismatch": {
-            "title": "Rule Mismatch",
-            "desc": "Surface rule conflicts or missing receiver information for operations review."
+            "title": "Inconsistência de regra",
+            "desc": "Exponha conflitos de regra ou informações de destinatário ausentes para revisão operacional."
           },
           "refund_after_split": {
-            "title": "Refund After Split",
-            "desc": "Trace how refunds affect split records and settlement results."
+            "title": "Reembolso após a divisão",
+            "desc": "Rastreie como reembolsos afetam registros de divisão e resultados de settlement."
           },
           "partial_failure": {
-            "title": "Partial Split Failure",
-            "desc": "Separate successful and failed receiver allocations for follow-up."
+            "title": "Falha parcial da divisão",
+            "desc": "Separe alocações bem-sucedidas e com falha para acompanhamento."
           },
           "settlement_pending": {
-            "title": "Settlement Pending",
-            "desc": "Make pending settlement states visible to finance teams."
+            "title": "Settlement pendente",
+            "desc": "Torne estados de settlement pendente visíveis para equipes financeiras."
           },
           "reconciliation_difference": {
-            "title": "Reconciliation Difference",
-            "desc": "Help finance teams investigate order, split, and settlement differences."
+            "title": "Diferença de reconciliação",
+            "desc": "Ajude equipes financeiras a investigar diferenças entre pedido, divisão e settlement."
           }
         }
       },
       "developer": {
-        "title": "API And Webhook Integration",
-        "desc": "Developers can integrate split-payment records, settlement queries, and webhook callbacks into their platform operations.",
-        "cta": "Explore Developer Center"
+        "title": "Integração via API e webhook",
+        "desc": "Desenvolvedores podem integrar registros de split-payment, consultas de settlement e callbacks de webhook às operações da plataforma.",
+        "cta": "Explorar o Developer Center"
       },
       "faq": {
-        "title": "Payment Splitting FAQ",
+        "title": "FAQ de divisão de pagamentos",
         "items": {
           "what_is": {
-            "q": "What is payment splitting?",
-            "a": "Payment splitting allocates one payment across multiple receivers such as merchants, sub-merchants, platform accounts, and partners."
+            "q": "O que é divisão de pagamentos?",
+            "a": "A divisão de pagamentos aloca um pagamento entre vários destinatários, como merchants, sub-merchants, contas da plataforma e parceiros."
           },
           "difference_from_payout": {
-            "q": "How is payment splitting different from payout?",
-            "a": "Payment splitting defines how payment revenue is allocated, while payout is the later movement of settled funds to a bank or account."
+            "q": "Como a divisão de pagamentos difere do payout?",
+            "a": "A divisão de pagamentos define como a receita do pagamento é alocada, enquanto o payout é a movimentação posterior dos fundos liquidados para um banco ou conta."
           },
           "multiple_receivers": {
-            "q": "Can one order be split to multiple receivers?",
-            "a": "Yes. A platform can allocate one order to multiple receivers according to business rules."
+            "q": "Um pedido pode ser dividido entre vários destinatários?",
+            "a": "Sim. Uma plataforma pode alocar um pedido a vários destinatários conforme regras de negócio."
           },
           "platform_commission": {
-            "q": "Can the platform keep a commission?",
-            "a": "Yes. Platform fees or commissions can be separated before merchant settlement."
+            "q": "A plataforma pode reter uma comissão?",
+            "a": "Sim. Taxas ou comissões da plataforma podem ser separadas antes do settlement do merchant."
           },
           "refunds": {
-            "q": "How are refunds handled after splitting?",
-            "a": "Refunds should be traceable against the original order, split records, and settlement result."
+            "q": "Como reembolsos são tratados após a divisão?",
+            "a": "Reembolsos devem ser rastreáveis em relação ao pedido original, aos registros de divisão e ao resultado do settlement."
           },
           "reconciliation": {
-            "q": "Can finance reconcile split records with settlement bills?",
-            "a": "Yes. Split records and settlement bill items should provide a traceable finance workflow."
+            "q": "O financeiro pode reconciliar registros de divisão com faturas de settlement?",
+            "a": "Sim. Registros de divisão e itens da fatura de settlement devem oferecer um fluxo financeiro rastreável."
           },
           "api_webhook": {
-            "q": "Does FilixPay support API and webhook integration?",
-            "a": "FilixPay provides developer capabilities for payment status, settlement records, and webhook-driven integration workflows."
+            "q": "A FilixPay oferece suporte a integração via API e webhook?",
+            "a": "A FilixPay oferece recursos para desenvolvedores de status de pagamento, registros de settlement e fluxos de integração orientados por webhook."
           }
         }
       },
       "channel_rules": {
-        "title": "Channel Rules for Payment Splitting",
+        "title": "Regras de canal para divisão de pagamentos",
         "items": [
           {
             "id": "wechat",
-            "title": "1. WeChat Pay: Fund Freezing & Unfreezing Model",
-            "desc": "WeChat's splitting mechanism centers on 'Freeze First, Split Later,' ideal for scenarios requiring delayed splitting or with refund risks.",
+            "title": "1. WeChat Pay: modelo de congelamento e descongelamento de fundos",
+            "desc": "O mecanismo de divisão do WeChat se concentra em 'Congelar primeiro, dividir depois', ideal para cenários que exigem divisão adiada ou com riscos de reembolso.",
             "flow": {
-              "title": "Core Workflow:",
+              "title": "Fluxo principal:",
               "steps": [
-                "Transaction & Freezing: Upon successful payment, funds are frozen in the merchant's account (Pending Split state) instead of entering available balance.",
-                "Initiate Split: When split conditions are met (e.g., delivery confirmed), the split API is called. WeChat unfreezes and allocates funds to specified receivers.",
-                "Complete Split: If no further splitting is needed, the completion API unfreezes remaining funds to the merchant's available balance."
+                "Transação e congelamento: Após o pagamento bem-sucedido, os fundos são congelados na conta do merchant (estado Pending Split) em vez de entrar no saldo disponível.",
+                "Iniciar divisão: Quando as condições de divisão são atendidas (por exemplo, entrega confirmada), a API de divisão é chamada. O WeChat descongela e aloca os fundos aos destinatários especificados.",
+                "Concluir divisão: Se não for necessária nova divisão, a API de conclusão descongela os fundos restantes para o saldo disponível do merchant."
               ]
             },
             "compliance": {
-              "title": "Key Compliance Points:",
+              "title": "Pontos-chave de compliance:",
               "items": [
-                "Split Ratio Limit: Default maximum is usually 30% of the order amount (adjustable with authorization).",
-                "Split Duration: Funds can be frozen for up to 180 days (some docs mention 30 days; auto-unfreeze occurs if no split is initiated).",
-                "Split Frequency: Supports multiple splits (up to 50 times) to multiple parties (up to 50 receivers per split)."
+                "Limite de proporção de divisão: O máximo padrão costuma ser 30% do valor do pedido (ajustável com autorização).",
+                "Duração da divisão: Os fundos podem ficar congelados por até 180 dias (alguns documentos mencionam 30 dias; o descongelamento automático ocorre se nenhuma divisão for iniciada).",
+                "Frequência de divisão: Oferece suporte a várias divisões (até 50 vezes) para várias partes (até 50 destinatários por divisão)."
               ]
             }
           },
           {
             "id": "alipay",
-            "title": "2. Alipay: Settlement Confirmation & Asynchronous Splitting",
-            "desc": "Alipay emphasizes 'Settlement Confirmation' and offers strong synch/asynch capabilities for high-concurrency scenarios.",
+            "title": "2. Alipay: confirmação de settlement e divisão assíncrona",
+            "desc": "O Alipay enfatiza a 'Confirmação de settlement' e oferece fortes capacidades síncronas/assíncronas para cenários de alta concorrência.",
             "flow": {
-              "title": "Core Workflow:",
+              "title": "Fluxo principal:",
               "steps": [
-                "Transaction & Freezing: Funds enter a pending settlement state. The platform initiates 'Confirm Settlement' to freeze funds for splitting.",
-                "Initiate Split: Calling the settlement API (alipay.trade.order.settle) supports both synchronous (real-time) and asynchronous (high-frequency) modes.",
-                "Reverse Split: Supports original-path reversal of split funds in case of refunds."
+                "Transação e congelamento: Os fundos entram em estado de settlement pendente. A plataforma inicia 'Confirm Settlement' para congelar fundos para divisão.",
+                "Iniciar divisão: Chamar a API de settlement (alipay.trade.order.settle) oferece suporte aos modos síncrono (tempo real) e assíncrono (alta frequência).",
+                "Divisão reversa: Oferece suporte à reversão pelo caminho original dos fundos divididos em caso de reembolsos."
               ]
             },
             "compliance": {
-              "title": "Key Compliance Points:",
+              "title": "Pontos-chave de compliance:",
               "items": [
-                "Split Ratio Limit: Maximum amount cannot exceed 100% of the order total plus supplements (policy dependent).",
-                "Split Validity: Splitting is typically valid for up to 365 days after the transaction.",
-                "Receiver Binding: Receivers must be real-name verified and added to the platform's 'Split Relation Set' via API.",
-                "Performance: Sync mode is limited (30 QPS), while async mode supports up to 500 QPS for high-traffic platforms."
+                "Limite de proporção de divisão: O valor máximo não pode exceder 100% do total do pedido mais suplementos (dependente da política).",
+                "Validade da divisão: A divisão normalmente é válida por até 365 dias após a transação.",
+                "Vinculação de destinatários: Destinatários devem ter verificação de nome real e ser adicionados ao 'Split Relation Set' da plataforma via API.",
+                "Desempenho: O modo sync é limitado (30 QPS), enquanto o modo async oferece suporte a até 500 QPS para plataformas de alto tráfego."
               ]
             }
           },
           {
             "id": "stripe",
             "title": "3. Stripe: Separate Charges and Transfers (Connect)",
-            "desc": "Stripe Connect is highly flexible, using the 'Separate Charges and Transfers' model for complex global or multi-party marketplaces.",
+            "desc": "O Stripe Connect é altamente flexível, usando o modelo 'Separate Charges and Transfers' para marketplaces globais ou multipartes complexos.",
             "flow": {
-              "title": "Core Workflow:",
+              "title": "Fluxo principal:",
               "steps": [
-                "Platform Collection: A PaymentIntent is created on the platform's Stripe account; funds initially belong to the platform.",
-                "Trigger Transfer: Upon success, the platform calls the Transfers API (often triggered by payment_intent.succeeded webhooks).",
-                "Fund Allocation: Transfers are linked to origin charges via source_transaction, allowing funds to flow automatically to Connected Accounts during settlement."
+                "Cobrança da plataforma: Um PaymentIntent é criado na conta Stripe da plataforma; os fundos pertencem inicialmente à plataforma.",
+                "Disparar Transfer: Após o sucesso, a plataforma chama a Transfers API (frequentemente acionada por webhooks payment_intent.succeeded).",
+                "Alocação de fundos: Transfers são vinculadas às cobranças de origem via source_transaction, permitindo que os fundos fluam automaticamente para Connected Accounts durante o settlement."
               ]
             },
             "compliance": {
-              "title": "Key Compliance Points:",
+              "title": "Pontos-chave de compliance:",
               "items": [
-                "Insufficient Balance: source_transaction linking avoids transfer failures due to lack of platform balance by processing via internal fund flows.",
-                "Application Fees: Platforms can deduct service fees (application_fee_amount) at collection before distributing the remainder.",
-                "Flexibility: Supports splitting to multiple receivers (sellers, affiliates, logistics) without fixed ratio constraints (subject to platform agreement)."
+                "Saldo insuficiente: A vinculação source_transaction evita falhas de transfer por falta de saldo da plataforma ao processar via fluxos internos de fundos.",
+                "Application fees: Plataformas podem deduzir taxas de serviço (application_fee_amount) na cobrança antes de distribuir o restante.",
+                "Flexibilidade: Oferece suporte à divisão para vários destinatários (vendedores, afiliados, logística) sem restrições fixas de proporção (sujeito ao acordo da plataforma)."
               ]
             }
           }
         ],
         "comparison": {
-          "title": "📊 Multi-Platform Comparison Summary",
+          "title": "📊 Resumo comparativo multiplataforma",
           "headers": [
-            "Dimension",
+            "Dimensão",
             "WeChat Pay",
             "Alipay",
             "Stripe (Connect)"
           ],
           "rows": [
             [
-              "Core Mechanism",
+              "Mecanismo principal",
               "Freeze -> Unfreeze Split",
               "Confirm -> Freeze Split",
               "Platform Collect -> Transfer"
             ],
             [
-              "Split Ratio",
-              "Default max 30%",
-              "Up to 100% (policy dependent)",
-              "Flexible (Platform Config)"
+              "Proporção de divisão",
+              "Máx. padrão 30%",
+              "Até 100% (dependente da política)",
+              "Flexível (config da plataforma)"
             ],
             [
-              "Duration",
-              "Max 180 days frozen",
-              "Max 365 days valid",
-              "Standard Payout Cycle"
+              "Duração",
+              "Máx. 180 dias congelados",
+              "Máx. 365 dias de validade",
+              "Ciclo padrão de payout"
             ],
             [
-              "Receiver Req.",
-              "Merchant ID or WalletID",
-              "Real-name verified & Bound",
-              "Connected Account Required"
+              "Req. do destinatário",
+              "Merchant ID ou WalletID",
+              "Nome real verificado e vinculado",
+              "Connected Account obrigatória"
             ],
             [
-              "Best Scenarios",
-              "Retail, Dining, Delayed Settlement",
-              "Commission, High-Volume Platforms",
-              "Global Marketplace, Complex Payouts"
+              "Melhores cenários",
+              "Varejo, alimentação, settlement adiado",
+              "Comissão, plataformas de alto volume",
+              "Marketplace global, payouts complexos"
             ]
           ]
         }
       },
       "cta": {
-        "title": "Build split-payment workflows with FilixPay",
-        "desc": "Support platform revenue sharing, merchant settlement, and finance reconciliation from one payment infrastructure."
+        "title": "Construa fluxos de split-payment com a FilixPay",
+        "desc": "Suporte a repasse de receita da plataforma, settlement de merchants e reconciliação financeira a partir de uma única infraestrutura de pagamento."
       }
     },
     "risk_control": {
-      "title": "Payment Risk Control",
-      "subtitle": "Secure every transaction from authorization to settlement",
-      "hero_title": "Payment Risk Control",
-      "hero_desc": "Secure every transaction with real-time rules, expert review, and integrated chargeback insurance—connect Signifyd, Riskified, or Forter with your own credentials, or subscribe to FilixPay platform-hosted coverage.",
+      "title": "Controle de risco de pagamento",
+      "subtitle": "Proteja cada transação da autorização ao settlement",
+      "hero_title": "Controle de risco de pagamento",
+      "hero_desc": "Proteja cada transação com regras em tempo real, revisão especializada e seguro de chargeback integrado—conecte Signifyd, Riskified ou Forter com suas próprias credenciais, ou assine a cobertura hospedada pela plataforma FilixPay.",
       "pipeline": {
         "rules": {
-          "title": "Rules Engine",
-          "desc": "Real-time fraud prevention"
+          "title": "Motor de regras",
+          "desc": "Prevenção de fraude em tempo real"
         },
         "monitor": {
-          "title": "Event Monitor",
-          "desc": "Fraud events and expert review"
+          "title": "Monitor de eventos",
+          "desc": "Eventos de fraude e revisão especializada"
         },
         "coverage": {
-          "title": "Insurance Partners",
+          "title": "Parceiros de seguro",
           "desc": "Signifyd · Riskified · Forter"
         }
       },
       "modules": {
         "rules": {
-          "title": "Real-Time Rule Engine & Fraud Prevention",
-          "desc": "Millisecond risk decisions during authorization with configurable merchant rules and pre/post-authorization checks.",
+          "title": "Motor de regras em tempo real e prevenção de fraude",
+          "desc": "Decisões de risco em milissegundos durante a autorização com regras configuráveis do merchant e checagens pré/pós-autorização.",
           "points": {
-            "0": "Concurrent compliance and fraud checks at authorization",
-            "1": "Configurable thresholds by geography, behavior, and velocity",
-            "2": "Transaction-level protection distinct from credit-line risk"
+            "0": "Checagens concorrentes de compliance e fraude na autorização",
+            "1": "Limites configuráveis por geografia, comportamento e velocity",
+            "2": "Proteção em nível de transação distinta do risco de linha de crédito"
           }
         },
         "monitor": {
-          "title": "Fraud Event Monitoring & Expert Manual Review",
-          "desc": "Dual-Layer Verification combines intelligent screening with expert manual review to minimize false declines.",
+          "title": "Monitoramento de eventos de fraude e revisão manual especializada",
+          "desc": "A Dual-Layer Verification combina triagem inteligente com revisão manual especializada para minimizar recusas indevidas.",
           "points": {
-            "0": "Automated fraud event detection and tracking",
-            "1": "Expert manual review queue for anomalous transactions",
-            "2": "Operator alerts for time-sensitive decisions"
+            "0": "Detecção e acompanhamento automatizados de eventos de fraude",
+            "1": "Fila de revisão manual especializada para transações anômalas",
+            "2": "Alertas a operadores para decisões urgentes"
           }
         },
         "coverage": {
-          "title": "Integrated Chargeback Insurance Partners",
-          "desc": "FilixPay natively integrates leading chargeback insurance and fraud-guarantee providers. Merchants choose how to consume coverage—bring your own provider contract or subscribe to platform-hosted service.",
-          "disclaimer": "* Subject to service terms, eligibility, and coverage limits.",
+          "title": "Parceiros integrados de seguro de chargeback",
+          "desc": "A FilixPay integra nativamente provedores líderes de seguro de chargeback e garantia antifraude. Os merchants escolhem como consumir a cobertura—use seu próprio contrato com o provedor ou assine o serviço hospedado pela plataforma.",
+          "disclaimer": "* Sujeito a termos de serviço, elegibilidade e limites de cobertura.",
           "points": {
-            "0": "One integration layer for Signifyd, Riskified, and Forter",
-            "1": "Self-configure provider credentials in the merchant center",
-            "2": "Or subscribe to platform-hosted coverage without managing API keys"
+            "0": "Uma camada de integração para Signifyd, Riskified e Forter",
+            "1": "Configure você mesmo as credenciais do provedor no centro do merchant",
+            "2": "Ou assine a cobertura hospedada pela plataforma sem gerenciar chaves de API"
           }
         }
       },
       "delivery_modes": {
-        "title": "Two Ways to Activate Coverage",
-        "desc": "FilixPay supports both merchant-managed provider configuration and platform-hosted subscription—matching independent merchants and marketplace sub-merchants.",
+        "title": "Duas formas de ativar a cobertura",
+        "desc": "A FilixPay oferece suporte tanto à configuração de provedor gerenciada pelo merchant quanto à assinatura hospedada pela plataforma—atendendo merchants independentes e sub-merchants de marketplace.",
         "items": {
           "self_config": {
             "icon": "🔑",
-            "title": "Bring Your Own Provider (BYOK)",
-            "desc": "Connect your existing Signifyd, Riskified, or Forter account. Configure API keys, webhook secrets, and environment in the merchant center—FilixPay routes assessments and claims to your chosen partner.",
+            "title": "Traga seu próprio provedor (BYOK)",
+            "desc": "Conecte sua conta existente da Signifyd, Riskified ou Forter. Configure chaves de API, segredos de webhook e ambiente no centro do merchant—a FilixPay roteia avaliações e sinistros para o parceiro escolhido.",
             "points": {
-              "0": "Full control of provider contract and credentials",
-              "1": "Ideal for independent merchants with direct insurer relationships",
-              "2": "Switch providers with a guided configuration workflow"
+              "0": "Controle total do contrato e das credenciais do provedor",
+              "1": "Ideal para merchants independentes com relacionamento direto com a seguradora",
+              "2": "Troque de provedor com um fluxo de configuração guiado"
             }
           },
           "platform_subscription": {
             "icon": "🛡️",
-            "title": "Platform-Hosted Coverage Subscription",
-            "desc": "Third-party merchants on the Filix platform can subscribe to coverage insurance powered by the platform merchant's provider configuration—no separate insurer signup required.",
+            "title": "Assinatura de cobertura hospedada pela plataforma",
+            "desc": "Merchants third-party na plataforma Filix podem assinar o seguro de cobertura alimentado pela configuração de provedor do merchant da plataforma—sem necessidade de cadastro separado na seguradora.",
             "points": {
-              "0": "One-click subscription in the merchant center",
-              "1": "Eligibility tied to pre-auth security rule compliance",
-              "2": "Platform operates provider relationship on your behalf"
+              "0": "Assinatura com um clique no centro do merchant",
+              "1": "Elegibilidade vinculada à conformidade com regras de segurança pré-autorização",
+              "2": "A plataforma opera o relacionamento com o provedor em seu nome"
             }
           }
         }
       },
       "providers": {
-        "title": "Supported Insurance & Fraud-Guarantee Partners",
-        "desc": "FilixPay's core differentiator is deep, production-ready integration with industry-leading chargeback protection providers—not a generic fraud score, but real insurer-backed coverage workflows.",
+        "title": "Parceiros de seguro e garantia antifraude suportados",
+        "desc": "O diferencial central da FilixPay é a integração profunda e pronta para produção com provedores líderes de proteção contra chargeback—não um score genérico de fraude, mas fluxos reais de cobertura respaldados por seguradora.",
         "items": {
           "signifyd": {
             "name": "Signifyd",
-            "tagline": "Commerce protection with chargeback guarantee",
-            "desc": "Signifyd combines real-time fraud decisioning with guaranteed chargeback coverage for approved e-commerce orders. FilixPay forwards transaction context, receives coverage decisions, and automates claim workflows via webhooks."
+            "tagline": "Proteção de comércio com garantia de chargeback",
+            "desc": "A Signifyd combina decisão de fraude em tempo real com cobertura garantida de chargeback para pedidos de e-commerce aprovados. A FilixPay encaminha o contexto da transação, recebe decisões de cobertura e automatiza fluxos de sinistro via webhooks."
           },
           "riskified": {
             "name": "Riskified",
-            "tagline": "Enterprise fraud intelligence & chargeback guarantee",
-            "desc": "Riskified delivers AI-driven fraud prevention trusted by global retailers. Merchants on FilixPay can route orders for policy decisions and leverage chargeback guarantee programs where eligible."
+            "tagline": "Inteligência antifraude empresarial e garantia de chargeback",
+            "desc": "A Riskified oferece prevenção de fraude baseada em IA, confiada por varejistas globais. Merchants na FilixPay podem rotear pedidos para decisões de política e aproveitar programas de garantia de chargeback quando elegíveis."
           },
           "forter": {
             "name": "Forter",
-            "tagline": "Real-time fraud prevention for digital commerce",
-            "desc": "Forter provides identity-centric fraud decisioning and chargeback abuse protection at scale. FilixPay integrates assessment, webhook updates, and claim submission for Forter-backed merchants."
+            "tagline": "Prevenção de fraude em tempo real para comércio digital",
+            "desc": "A Forter oferece decisão de fraude centrada em identidade e proteção contra abuso de chargeback em escala. A FilixPay integra avaliação, atualizações por webhook e envio de sinistros para merchants respaldados pela Forter."
           }
         },
-        "footnote": "Provider availability and feature scope depend on your merchant type, configuration mode, and partner contract terms."
+        "footnote": "A disponibilidade do provedor e o escopo de recursos dependem do tipo de merchant, do modo de configuração e dos termos do contrato com o parceiro."
       },
       "audience": {
-        "title": "Built for High-Stakes Commerce",
-        "desc": "FilixPay risk control supports cross-border merchants, marketplace operators, and businesses that need audit-ready fraud workflows.",
+        "title": "Feito para comércio de alto risco",
+        "desc": "O controle de risco da FilixPay atende merchants cross-border, operadores de marketplace e negócios que precisam de fluxos antifraude prontos para auditoria.",
         "items": {
           "cross_border": {
-            "title": "Cross-Border E-Commerce",
-            "desc": "Protect international card-not-present revenue."
+            "title": "E-commerce cross-border",
+            "desc": "Proteja a receita internacional de cartão não presente."
           },
           "marketplace": {
-            "title": "Platform & Marketplace",
-            "desc": "Third-party merchant ecosystems with shared risk oversight."
+            "title": "Plataforma e marketplace",
+            "desc": "Ecossistemas de merchants third-party com supervisão de risco compartilhada."
           },
           "high_risk": {
-            "title": "Elevated Dispute Exposure",
-            "desc": "Verticals where chargeback anxiety slows growth."
+            "title": "Exposição elevada a disputas",
+            "desc": "Verticais em que a ansiedade com chargebacks freia o crescimento."
           }
         }
       },
       "workflow": {
-        "title": "Full-Chain Workflow",
-        "desc": "A single linear path from checkout to eligible protection.",
+        "title": "Fluxo de ponta a ponta",
+        "desc": "Um caminho linear único do checkout à proteção elegível.",
         "steps": {
           "checkout": {
-            "title": "Customer Checkout",
-            "desc": "The merchant initiates payment and FilixPay captures transaction context such as metadata and device signals."
+            "title": "Checkout do cliente",
+            "desc": "O merchant inicia o pagamento e a FilixPay captura o contexto da transação, como metadados e sinais do dispositivo."
           },
           "rules": {
-            "title": "Rule Evaluation",
-            "desc": "The risk engine matches merchant rules and global policies within milliseconds to approve, block, or route to review."
+            "title": "Avaliação de regras",
+            "desc": "O motor de risco compara regras do merchant e políticas globais em milissegundos para aprovar, bloquear ou encaminhar para revisão."
           },
           "review": {
-            "title": "Fraud Monitoring & Review",
-            "desc": "High-risk events trigger automated tracking. Dual-Layer Verification routes cases to expert manual review to recover legitimate sales."
+            "title": "Monitoramento de fraude e revisão",
+            "desc": "Eventos de alto risco disparam acompanhamento automatizado. A Dual-Layer Verification encaminha casos à revisão manual especializada para recuperar vendas legítimas."
           },
           "coverage": {
-            "title": "Provider-Backed Chargeback Protection",
-            "desc": "FilixPay submits eligible fraud-related chargebacks to your configured Signifyd, Riskified, or Forter partner—or to platform-hosted coverage for subscribed merchants."
+            "title": "Proteção contra chargeback respaldada pelo provedor",
+            "desc": "A FilixPay envia chargebacks elegíveis relacionados a fraude ao parceiro Signifyd, Riskified ou Forter configurado—ou à cobertura hospedada pela plataforma para merchants assinantes."
           }
         }
       },
       "faq": {
-        "title": "Frequently Asked Questions",
+        "title": "Perguntas frequentes",
         "items": {
           "what_is": {
-            "q": "What is payment risk control?",
-            "a": "Payment risk control is a multi-layered security framework designed to detect, evaluate, and mitigate fraudulent activities throughout the transaction life cycle—protecting your legitimate revenue without degrading user experience."
+            "q": "O que é controle de risco de pagamento?",
+            "a": "O controle de risco de pagamento é um framework de segurança em várias camadas projetado para detectar, avaliar e mitigar atividades fraudulentas ao longo do ciclo de vida da transação—protegendo sua receita legítima sem degradar a experiência do usuário."
           },
           "vs_chargeback": {
-            "q": "How is risk control different from chargeback protection?",
-            "a": "Risk control acts as the proactive defense mechanism (pre-authorization and post-authorization rules to prevent fraud from happening), while chargeback protection provides reactive security (financial coverage for qualified transactions if an unforeseen dispute occurs)."
+            "q": "Como o controle de risco difere da proteção contra chargeback?",
+            "a": "O controle de risco atua como mecanismo de defesa proativo (regras pré-autorização e pós-autorização para impedir a fraude), enquanto a proteção contra chargeback oferece segurança reativa (cobertura financeira para transações qualificadas se ocorrer uma disputa imprevista)."
           },
           "rule_engine": {
-            "q": "How does the rule engine work?",
-            "a": "Our engine runs concurrent compliance and fraud checks within milliseconds during authorization. Merchants can configure granular thresholds based on geographical location, behavioral heuristics, and velocity limits via the merchant dashboard."
+            "q": "Como funciona o motor de regras?",
+            "a": "Nosso motor executa checagens concorrentes de compliance e fraude em milissegundos durante a autorização. Merchants podem configurar limites granulares com base em localização geográfica, heurísticas comportamentais e limites de velocity pelo painel do merchant."
           },
           "flagged_review": {
-            "q": "What happens when a transaction is flagged for review?",
-            "a": "When a transaction exhibits anomalous patterns, it triggers an internal fraud event. To prevent false declines, our platform employs a Dual-Layer Verification model, routes it to an expert manual review queue, and alerts operators immediately."
+            "q": "O que acontece quando uma transação é sinalizada para revisão?",
+            "a": "Quando uma transação apresenta padrões anômalos, ela dispara um evento interno de fraude. Para evitar recusas indevidas, nossa plataforma emprega o modelo Dual-Layer Verification, encaminha o caso a uma fila de revisão manual especializada e alerta os operadores imediatamente."
           },
           "coverage_eligibility": {
-            "q": "Who is eligible for chargeback coverage?",
-            "a": "Independent merchants can activate coverage by configuring Signifyd, Riskified, or Forter in the merchant center. Third-party platform merchants may subscribe to platform-hosted coverage plans. Individual transaction eligibility depends on provider rules and compliance with localized pre-auth security requirements."
+            "q": "Quem é elegível à cobertura de chargeback?",
+            "a": "Merchants independentes podem ativar a cobertura configurando Signifyd, Riskified ou Forter no centro do merchant. Merchants de plataforma third-party podem assinar planos de cobertura hospedados pela plataforma. A elegibilidade de cada transação depende das regras do provedor e da conformidade com requisitos localizados de segurança pré-autorização."
           },
           "coverage_providers": {
-            "q": "Which chargeback insurance providers does FilixPay support?",
-            "a": "FilixPay integrates Signifyd, Riskified, and Forter with unified assessment, webhook handling, and claim submission. Merchants either connect their own provider credentials (BYOK) or subscribe to platform-hosted coverage powered by the platform merchant configuration."
+            "q": "Quais provedores de seguro de chargeback a FilixPay oferece suporte?",
+            "a": "A FilixPay integra Signifyd, Riskified e Forter com avaliação unificada, tratamento de webhook e envio de sinistros. Merchants conectam suas próprias credenciais de provedor (BYOK) ou assinam a cobertura hospedada pela plataforma alimentada pela configuração do merchant da plataforma."
           },
           "crypto_relation": {
-            "q": "How does this relate to crypto payments (zero chargebacks)?",
-            "a": "While digital assets natively feature transactional finality (meaning zero chargebacks can be technically initiated), our risk engine still enforces pre-authorization rules for crypto payments to detect wallet anomaly patterns and address blocking list compliance."
+            "q": "Como isso se relaciona a pagamentos cripto (zero chargebacks)?",
+            "a": "Embora ativos digitais tenham nativamente finalidade transacional (o que significa que chargebacks não podem ser iniciados tecnicamente), nosso motor de risco ainda aplica regras pré-autorização a pagamentos cripto para detectar padrões anômalos de carteira e conformidade com listas de bloqueio de endereços."
           }
         }
       },
       "cta": {
-        "title": "Ready to connect your chargeback insurance partner?",
-        "desc": "Configure Signifyd, Riskified, or Forter—or subscribe to platform-hosted coverage from the merchant center."
+        "title": "Pronto para conectar seu parceiro de seguro de chargeback?",
+        "desc": "Configure Signifyd, Riskified ou Forter—ou assine a cobertura hospedada pela plataforma no centro do merchant."
       }
     },
     "cross_border": {
-      "title": "Cross-Border E-Commerce",
-      "subtitle": "End-to-end payment solutions for global online sellers",
-      "hero_title": "Sell Globally, Collect Locally",
-      "hero_desc": "Integrate with Shopify, WooCommerce and custom stores. Accept local payment methods in 50+ countries with automatic currency conversion."
+      "title": "E-commerce cross-border",
+      "subtitle": "Soluções de pagamento de ponta a ponta para vendedores online globais",
+      "hero_title": "Venda globalmente, cobre localmente",
+      "hero_desc": "Integre com Shopify, WooCommerce e lojas personalizadas. Aceite métodos de pagamento locais em mais de 50 países com conversão automática de moeda."
     },
     "web3_ecommerce": {
-      "title": "Web3 E-Commerce",
-      "subtitle": "Payment infrastructure for the decentralized economy",
-      "hero_title": "The Payment Layer for Web3 Commerce",
-      "hero_desc": "From NFT marketplaces to GameFi ecosystems, power your Web3 commerce with seamless crypto payment rails."
+      "title": "E-commerce Web3",
+      "subtitle": "Infraestrutura de pagamento para a economia descentralizada",
+      "hero_title": "A camada de pagamento para o comércio Web3",
+      "hero_desc": "De marketplaces de NFT a ecossistemas GameFi, impulsione seu comércio Web3 com trilhos de pagamento cripto fluidos."
     },
     "saas_provider": {
-      "title": "SaaS Provider Solutions",
-      "subtitle": "Multi-tenant payment infrastructure for platform businesses",
-      "hero_title": "Build Your Payment Platform",
-      "hero_desc": "White-label payment capabilities with split payments, sub-merchant management, and automated settlement for your SaaS platform."
+      "title": "Soluções para provedores SaaS",
+      "subtitle": "Infraestrutura de pagamento multi-tenant para negócios de plataforma",
+      "hero_title": "Construa sua plataforma de pagamento",
+      "hero_desc": "Capacidades de pagamento white-label com pagamentos divididos, gestão de sub-merchants e settlement automatizado para sua plataforma SaaS."
     },
     "group_enterprise": {
       "title": "Group Enterprise",
-      "subtitle": "Unified payment and fund governance platform for large groups",
-      "hero_title": "Build a Unified Payment and Fund Governance Platform for Large Groups",
-      "hero_desc": "From enterprise governance and unified collection to smart settlement and full-chain audit — help large groups achieve centralized headquarters governance, independent legal-entity operations, and transparent, controllable funds.",
-      "hero_ending": "Centralized governance. Independent operations. Transparent funds.",
+      "subtitle": "Plataforma unificada de pagamento e governança de fundos para grandes grupos",
+      "hero_title": "Construa uma plataforma unificada de pagamento e governança de fundos para grandes grupos",
+      "hero_desc": "Da governança empresarial e cobrança unificada ao settlement inteligente e auditoria de ponta a ponta — ajude grandes grupos a alcançar governança centralizada na matriz, operações independentes por pessoa jurídica e fundos transparentes e controláveis.",
+      "hero_ending": "Governança centralizada. Operações independentes. Fundos transparentes.",
       "pain_points": {
-        "title": "Fund Control Gaps in Group Operations",
+        "title": "Lacunas de controle de fundos nas operações do grupo",
         "items": [
           {
-            "title": "Personal QR Code Collection",
-            "desc": "Stores and project teams accept payments via personal WeChat or Alipay accounts, bypassing group accounts so headquarters cannot track inflows in real time.",
-            "consequences": "Off-book fund loops, reconciliation pain, distorted operating data."
+            "title": "Cobrança por QR Code pessoal",
+            "desc": "Lojas e equipes de projeto aceitam pagamentos via contas pessoais WeChat ou Alipay, contornando as contas do grupo para que a matriz não consiga acompanhar as entradas em tempo real.",
+            "consequences": "Circuitos de fundos fora dos livros, dor na reconciliação, dados operacionais distorcidos."
           },
           {
-            "title": "Third-Party Account Diversion",
-            "desc": "Business receipts flow into third-party platforms or personal accounts outside group control, creating off-book pools and weakening centralized fund scheduling.",
-            "consequences": "Fragmented funds, compliance exposure, decisions without reliable data."
+            "title": "Desvio para contas de terceiros",
+            "desc": "Recebimentos do negócio fluem para plataformas de terceiros ou contas pessoais fora do controle do grupo, criando pools off-book e enfraquecendo o agendamento centralizado de fundos.",
+            "consequences": "Fundos fragmentados, exposição de compliance, decisões sem dados confiáveis."
           },
           {
-            "title": "Fragmented Payment Channels",
-            "desc": "Each legal entity connects to payment providers independently with different rates and settlement cycles, making reconciliation error-prone and costly.",
-            "consequences": "Unreliable reporting, high maintenance, complex integrations."
+            "title": "Canais de pagamento fragmentados",
+            "desc": "Cada pessoa jurídica se conecta a provedores de pagamento de forma independente, com taxas e ciclos de settlement diferentes, tornando a reconciliação propensa a erros e cara.",
+            "consequences": "Relatórios não confiáveis, alta manutenção, integrações complexas."
           },
           {
-            "title": "Off-Book Fund Pools",
-            "desc": "Some revenue never reaches governed accounts or moves through informal channels, so the group cannot see true operating and fund positions.",
-            "consequences": "Weak internal controls, costly audits, low fund transparency."
+            "title": "Pools de fundos off-book",
+            "desc": "Parte da receita nunca chega a contas governadas ou se move por canais informais, então o grupo não consegue ver a posição real de operação e de fundos.",
+            "consequences": "Controles internos fracos, auditorias caras, baixa transparência de fundos."
           }
         ]
       },
       "architecture": {
-        "title": "Enterprise Governance Architecture",
-        "lead": "Centralized governance at headquarters. Independent operations at each legal entity.",
-        "lead_en": "Governance stops at the Organization level, preserving each legal entity's operational independence.",
-        "reinforcing": "Governance centralizes management without centralizing operations.",
-        "not_org_chart": "This diagram illustrates governance relationships only — not actual org counts or hierarchy depth.",
-        "example_footnote": "Example: a diversified group may map Enterprise to group headquarters, Organization to a business-unit legal entity, and Merchant to a store or project operator (Example only — not any specific company or partnership).",
+        "title": "Arquitetura de governança empresarial",
+        "lead": "Governança centralizada na matriz. Operações independentes em cada pessoa jurídica.",
+        "lead_en": "A governança para no nível Organization, preservando a independência operacional de cada pessoa jurídica.",
+        "reinforcing": "A governança centraliza a gestão sem centralizar as operações.",
+        "not_org_chart": "Este diagrama ilustra apenas relações de governança — não contagens reais de organizações nem profundidade hierárquica.",
+        "example_footnote": "Exemplo: um grupo diversificado pode mapear Enterprise para a matriz do grupo, Organization para a pessoa jurídica de uma unidade de negócio e Merchant para uma loja ou operador de projeto (somente exemplo — não se refere a nenhuma empresa ou parceria específica).",
         "layers": {
           "identity": "Identity",
           "enterprise": "Enterprise",
@@ -5881,427 +5881,427 @@
         }
       },
       "capabilities": {
-        "title": "Platform Capabilities",
+        "title": "Capacidades da plataforma",
         "items": [
           {
             "icon": "🏛️",
-            "title": "Enterprise Governance",
-            "desc": "Headquarters creates and manages legal entities centrally. Governance stops at the Organization level — it does not replace day-to-day operations or authorization."
+            "title": "Governança empresarial",
+            "desc": "A matriz cria e gerencia pessoas jurídicas de forma centralizada. A governança para no nível Organization — não substitui as operações do dia a dia nem a autorização."
           },
           {
             "icon": "💳",
-            "title": "Unified Collection",
-            "desc": "Group-wide acquiring strategy and channel coordination, with each legal entity signing and operating under its own entity while funds stay transparent and controllable."
+            "title": "Cobrança unificada",
+            "desc": "Estratégia de acquiring e coordenação de canais em todo o grupo, com cada pessoa jurídica contratando e operando sob a própria entidade, enquanto os fundos permanecem transparentes e controláveis."
           },
           {
             "icon": "⚡",
-            "title": "Smart Settlement",
-            "desc": "Licensed split-payment APIs automate clearing, reducing manual transit and supporting multi-entity, multi-scenario settlement."
+            "title": "Settlement inteligente",
+            "desc": "APIs licenciadas de split payment automatizam o clearing, reduzem trânsito manual e suportam settlement multi-entidade e multi-cenário."
           },
           {
             "icon": "🔍",
-            "title": "Full-chain Audit",
-            "desc": "Governance actions, authorization changes, and fund flows are fully traceable for headquarters oversight and compliance audit."
+            "title": "Auditoria de ponta a ponta",
+            "desc": "Ações de governança, mudanças de autorização e fluxos de fundos são totalmente rastreáveis para supervisão da matriz e auditoria de compliance."
           }
         ]
       },
       "governance_model": {
-        "title": "Governance Model",
-        "intro": "FilixPay separates governance responsibilities from day-to-day business operations, allowing headquarters to maintain visibility and control without replacing each legal entity's operational authority.",
+        "title": "Modelo de governança",
+        "intro": "A FilixPay separa as responsabilidades de governança das operações de negócio do dia a dia, permitindo que a matriz mantenha visibilidade e controle sem substituir a autoridade operacional de cada pessoa jurídica.",
         "headers": [
-          "Management Layer",
-          "Primary Responsibility"
+          "Camada de gestão",
+          "Responsabilidade principal"
         ],
         "items": [
           [
             "Enterprise",
-            "Governance"
+            "Governança"
           ],
           [
             "Organization",
-            "Authorization & Operations"
+            "Autorização e operações"
           ],
           [
             "Merchant",
-            "Business Execution"
+            "Execução do negócio"
           ]
         ],
         "admin_not_owner": "Enterprise ADMIN ≠ Organization OWNER"
       },
       "rules": {
-        "title": "Core Business Rules",
+        "title": "Regras de negócio principais",
         "headers": [
-          "Dimension",
-          "Rule"
+          "Dimensão",
+          "Regra"
         ],
         "items": [
           [
-            "Governance Boundary",
-            "Enterprise governs at the group level (creating and managing Organizations). It does not directly own, control, or suspend Merchants — authorization stays within each Organization."
+            "Limite de governança",
+            "A Enterprise governa no nível do grupo (criando e gerenciando Organizations). Ela não possui, controla ou suspende Merchants diretamente — a autorização permanece em cada Organization."
           ],
           [
-            "Unified Collection",
-            "The group may set unified acquiring policies; each Organization signs and operates under its legal entity."
+            "Cobrança unificada",
+            "O grupo pode definir políticas unificadas de acquiring; cada Organization contrata e opera sob a sua pessoa jurídica."
           ],
           [
-            "Fund Collection",
-            "Customer payments flow into supervised accounts — external collection channels and personal QR codes are prohibited."
+            "Coleta de fundos",
+            "Pagamentos de clientes fluem para contas supervisionadas — canais externos de cobrança e QR Codes pessoais são proibidos."
           ],
           [
-            "Split Settlement",
-            "Licensed split APIs automate clearing and reduce manual fund transit risk."
+            "Settlement com split",
+            "APIs licenciadas de split automatizam o clearing e reduzem o risco de trânsito manual de fundos."
           ],
           [
-            "Approval Workflow",
-            "Cross-organization fund movements require group approval before execution."
+            "Fluxo de aprovação",
+            "Movimentações de fundos entre Organizations exigem aprovação do grupo antes da execução."
           ]
         ]
       },
       "scenarios": {
-        "title": "Business Scenarios",
+        "title": "Cenários de negócio",
         "scenario_0": {
-          "title": "Enterprise Setup",
-          "process": "Create Example Enterprise → Create Example Organization → Invite Organization Owner → Create Example Merchant 01 → Start Operations",
-          "value": "Stand up group governance quickly — independent entity operations with headquarters-wide visibility."
+          "title": "Configuração da Enterprise",
+          "process": "Criar Example Enterprise → Criar Example Organization → Convidar Organization Owner → Criar Example Merchant 01 → Iniciar operações",
+          "value": "Estabeleça a governança do grupo rapidamente — operações independentes por entidade com visibilidade em toda a matriz."
         },
         "scenario_1": {
-          "title": "Scenario 1: Subsidiary Sells Group Products",
-          "process": "Customer pays → Group account (unified collection) → Group recognizes revenue → System allocates subsidiary commission",
-          "value": "Protects group fund sovereignty with automated settlement."
+          "title": "Cenário 1: Subsidiária vende produtos do grupo",
+          "process": "Cliente paga → Conta do grupo (cobrança unificada) → Grupo reconhece a receita → Sistema aloca a comissão da subsidiária",
+          "value": "Protege a soberania de fundos do grupo com settlement automatizado."
         },
         "scenario_2": {
-          "title": "Scenario 2: Joint Sale Split",
-          "process": "Single order includes group products and subsidiary services → Split API at payment → Funds route directly to multiple accounts by ratio",
-          "value": "No second transfer — compliant and timely."
+          "title": "Cenário 2: Split em venda conjunta",
+          "process": "Pedido único inclui produtos do grupo e serviços da subsidiária → API de split no pagamento → Fundos seguem diretamente para múltiplas contas por proporção",
+          "value": "Sem segunda transferência — em conformidade e no prazo."
         },
         "scenario_3": {
-          "title": "Scenario 3: Inter-Entity Internal Transfer",
-          "process": "Organization initiates request → Group approves → Funds move within supervised group account → Target Organization",
-          "value": "Fully traceable internal collaboration without funds leaving the governed perimeter."
+          "title": "Cenário 3: Transferência interna entre entidades",
+          "process": "Organization inicia a solicitação → Grupo aprova → Fundos se movem dentro da conta supervisionada do grupo → Organization de destino",
+          "value": "Colaboração interna totalmente rastreável sem que os fundos saiam do perímetro governado."
         }
       },
       "compliance": {
-        "title": "Compliance & Risk Control",
+        "title": "Compliance e controle de risco",
         "headers": [
-          "Risk",
-          "FilixPay Solution"
+          "Risco",
+          "Solução FilixPay"
         ],
         "items": [
           [
-            "Fund control gaps",
-            "Unified collection and supervised account pooling — no personal QR codes or off-book pools"
+            "Lacunas de controle de fundos",
+            "Cobrança unificada e pooling em contas supervisionadas — sem QR Codes pessoais ou pools off-book"
           ],
           [
-            "Illegal fund pooling",
-            "Licensed institution split APIs — the group does not hold customer balances in transit"
+            "Pooling ilegal de fundos",
+            "APIs de split de instituição licenciada — o grupo não retém saldos de clientes em trânsito"
           ],
           [
-            "Tax non-compliance",
-            "Acquiring, contract, and invoicing entities stay aligned with automated checks"
+            "Não conformidade tributária",
+            "Entidades de acquiring, contrato e faturamento permanecem alinhadas com checagens automatizadas"
           ],
           [
-            "Weak internal controls",
-            "Full operation trails, multi-level approval for rule changes, auditable governance actions"
+            "Controles internos fracos",
+            "Trilhas completas de operação, aprovação multinível para mudanças de regras, ações de governança auditáveis"
           ],
           [
-            "FX risk",
-            "Cross-border splits connect to trade-service FX filing with transaction evidence retained"
+            "Risco cambial (FX)",
+            "Splits cross-border conectam-se ao registro cambial de serviços de comércio com evidências de transação retidas"
           ]
         ]
       },
       "portal": {
-        "title": "Enterprise Management Portal",
+        "title": "Portal de gestão Enterprise",
         "shots": {
           "directory": {
-            "title": "Enterprise Directory",
-            "alt": "Example Enterprise management view listing Example Organization entries",
-            "caption": "Centrally manage all organizations under one enterprise"
+            "title": "Diretório Enterprise",
+            "alt": "Visão de gestão da Example Enterprise listando entradas da Example Organization",
+            "caption": "Gerencie de forma centralizada todas as organizations sob uma enterprise"
           },
           "switch": {
-            "title": "Organization Switch",
-            "alt": "Switching from Example Enterprise portal into Example Organization operational workspace",
-            "caption": "Seamlessly switch into an organization's operational workspace"
+            "title": "Troca de Organization",
+            "alt": "Alternando do portal da Example Enterprise para o workspace operacional da Example Organization",
+            "caption": "Alterne sem atrito para o workspace operacional de uma organization"
           },
           "audit": {
-            "title": "Governance Audit",
-            "alt": "Example Enterprise governance audit log showing Organization creation and related actions",
-            "caption": "Track governance actions with complete audit history"
+            "title": "Auditoria de governança",
+            "alt": "Log de auditoria de governança da Example Enterprise mostrando criação de Organization e ações relacionadas",
+            "caption": "Acompanhe ações de governança com histórico completo de auditoria"
           }
         }
       }
     },
     "enterprise": {
-      "title": "Enterprise Global Expansion",
-      "subtitle": "Low-cost entry into global digital payments",
-      "hero_title": "Go Global with Confidence",
-      "hero_desc": "Traditional enterprises can now accept crypto payments and expand globally — without the complexity of building payment infrastructure from scratch."
+      "title": "Expansão global empresarial",
+      "subtitle": "Entrada de baixo custo em pagamentos digitais globais",
+      "hero_title": "Expanda globalmente com confiança",
+      "hero_desc": "Empresas tradicionais agora podem aceitar pagamentos em cripto e expandir globalmente — sem a complexidade de construir a infraestrutura de pagamento do zero."
     },
     "architecture": {
-      "title": "Architecture Overview",
-      "subtitle": "Enterprise-grade distributed payment system architecture",
-      "hero_title": "Built for Scale, Designed for Reliability",
-      "hero_desc": "Microservices architecture on Kubernetes with event-driven processing, ensuring 99.99% uptime and horizontal scalability."
+      "title": "Visão geral da arquitetura",
+      "subtitle": "Arquitetura de sistema de pagamento distribuído de nível empresarial",
+      "hero_title": "Feito para escala, projetado para confiabilidade",
+      "hero_desc": "Arquitetura de microsserviços no Kubernetes com processamento orientado a eventos, garantindo 99,99% de uptime e escalabilidade horizontal."
     },
     "performance": {
-      "badge": "Performance Benchmark",
-      "hero_title": "Create Order API Load Test",
-      "hero_desc": "A stepped k6 load test on the production OpenAPI create-order endpoint, validating stability and latency under concurrent write workloads.",
-      "metrics_title": "Key Metrics",
-      "metrics_subtitle": "Stepped load from 1 to 50 concurrent users with 0% error rate throughout.",
+      "badge": "Benchmark de performance",
+      "hero_title": "Teste de carga da API Create Order",
+      "hero_desc": "Um teste de carga escalonado com k6 no endpoint OpenAPI de create-order em produção, validando estabilidade e latência sob cargas concorrentes de escrita.",
+      "metrics_title": "Métricas principais",
+      "metrics_subtitle": "Carga escalonada de 1 a 50 usuários concorrentes com 0% de taxa de erro do início ao fim.",
       "metrics": {
-        "tps": "Order Throughput (TPS)",
-        "success_rate": "Success Rate",
-        "p95": "P95 Latency",
-        "p99": "P99 Latency"
+        "tps": "Throughput de pedidos (TPS)",
+        "success_rate": "Taxa de sucesso",
+        "p95": "Latência P95",
+        "p99": "Latência P99"
       },
-      "recommended_limit": "Recommended production rate limit: ~100 TPS (stable capacity × 70%).",
+      "recommended_limit": "Limite de taxa recomendado em produção: ~100 TPS (capacidade estável × 70%).",
       "capacity": {
-        "title": "Daily Order Capacity Estimate",
-        "subtitle": "Based on an 8-hour business day with a 4-hour peak window.",
-        "intro": "Using the stable throughput from this load test, we estimate how many orders the create-order API can handle in a typical business day.",
-        "assumption_hours": "Business assumption: 8 active hours per day for order creation.",
-        "assumption_peak": "Peak assumption: 4 peak hours at the recommended limit of 100 TPS.",
-        "assumption_off_peak": "Off-peak assumption: the other 4 hours are estimated at 30% of peak, i.e. 30 TPS; a flat 100 TPS for all 8 hours is also provided as a full-rate reference.",
-        "formula": "Formula: orders = TPS × 3,600 seconds × hours.",
-        "highlight_daily": "Recommended Daily Capacity (Peak/Off-Peak Model)",
-        "highlight_daily_desc": "4 peak hours at 100 TPS + 4 off-peak hours at {offPeak} TPS",
-        "highlight_daily_flat": "Full-Rate Daily Reference",
-        "highlight_daily_flat_desc": "All 8 hours at 100 TPS (off-peak also at 100 TPS)",
-        "highlight_peak": "4-Hour Peak Capacity",
-        "highlight_peak_desc": "At the recommended limit of 100 TPS",
-        "tps_mixed": "Peak {peak} / Off-peak {offPeak} TPS",
+        "title": "Estimativa de capacidade diária de pedidos",
+        "subtitle": "Com base em um dia útil de 8 horas, com janela de pico de 4 horas.",
+        "intro": "Usando o throughput estável deste teste de carga, estimamos quantos pedidos a API create-order consegue processar em um dia útil típico.",
+        "assumption_hours": "Premissa de negócio: 8 horas ativas por dia para criação de pedidos.",
+        "assumption_peak": "Premissa de pico: 4 horas de pico no limite recomendado de 100 TPS.",
+        "assumption_off_peak": "Premissa fora de pico: as outras 4 horas são estimadas em 30% do pico, ou seja, 30 TPS; também fornecemos 100 TPS constantes nas 8 horas como referência de taxa plena.",
+        "formula": "Fórmula: pedidos = TPS × 3.600 segundos × horas.",
+        "highlight_daily": "Capacidade diária recomendada (modelo pico/fora de pico)",
+        "highlight_daily_desc": "4 horas de pico a 100 TPS + 4 horas fora de pico a {offPeak} TPS",
+        "highlight_daily_flat": "Referência diária à taxa plena",
+        "highlight_daily_flat_desc": "Todas as 8 horas a 100 TPS (fora de pico também a 100 TPS)",
+        "highlight_peak": "Capacidade de pico de 4 horas",
+        "highlight_peak_desc": "No limite recomendado de 100 TPS",
+        "tps_mixed": "Pico {peak} / Fora de pico {offPeak} TPS",
         "table": {
-          "scenario": "Scenario",
-          "tps": "Reference TPS",
-          "orders": "Orders Created"
+          "scenario": "Cenário",
+          "tps": "TPS de referência",
+          "orders": "Pedidos criados"
         },
         "rows": {
-          "peak_limit": "4 peak hours (recommended limit)",
-          "daily_mixed": "8 business hours (peak/off-peak model, recommended)",
-          "daily_flat": "8 business hours (off-peak also at 100 TPS)",
-          "peak_stable": "4 peak hours (stable load-test value)",
-          "daily_full": "8 business hours (full load-test throughput, theoretical max)"
+          "peak_limit": "4 horas de pico (limite recomendado)",
+          "daily_mixed": "8 horas úteis (modelo pico/fora de pico, recomendado)",
+          "daily_flat": "8 horas úteis (fora de pico também a 100 TPS)",
+          "peak_stable": "4 horas de pico (valor estável do teste de carga)",
+          "daily_full": "8 horas úteis (throughput completo do teste de carga, máximo teórico)"
         },
-        "disclaimer": "These figures reflect create-order API capacity on a single tested deployment. Payment, refund, query, and other APIs are excluded. Production planning should also consider peak factors, redundancy, and monitoring."
+        "disclaimer": "Esses números refletem a capacidade da API create-order em um único deployment testado. APIs de pagamento, reembolso, consulta e outras estão excluídas. O planejamento de produção também deve considerar fatores de pico, redundância e monitoramento."
       },
-      "methodology_title": "Test Methodology",
+      "methodology_title": "Metodologia do teste",
       "methodology": {
-        "item1": "Endpoint: POST /openapi/v1/orders with Client Credentials authentication",
-        "item2": "Scenario: minimal order payload with required fields only; no payment channel calls",
-        "item3": "Tool: Grafana k6 stepped load up to 50 VUs for 19 minutes 30 seconds",
-        "item4": "Data: test orders prefixed with LOADTEST- for identification and cleanup"
+        "item1": "Endpoint: POST /openapi/v1/orders com autenticação Client Credentials",
+        "item2": "Cenário: payload mínimo de pedido apenas com campos obrigatórios; sem chamadas a canais de pagamento",
+        "item3": "Ferramenta: Grafana k6 com carga escalonada até 50 VUs por 19 minutos e 30 segundos",
+        "item4": "Dados: pedidos de teste com prefixo LOADTEST- para identificação e limpeza"
       },
       "meta": {
         "interface": "Endpoint",
-        "tool": "Load Test Tool",
-        "duration": "Duration",
-        "orders": "Orders Created"
+        "tool": "Ferramenta de teste de carga",
+        "duration": "Duração",
+        "orders": "Pedidos criados"
       },
-      "evidence_title": "Test Evidence",
-      "evidence_subtitle": "k6 summary output and system resource monitoring captured during the load test.",
-      "screenshot_summary_alt": "Final k6 load test summary",
-      "screenshot_summary_caption": "Figure 1: k6 summary — 165,229 orders created at 141 TPS, P95 353 ms, P99 404 ms, 0% errors.",
-      "screenshot_50vu_alt": "System monitoring at 50 concurrent users",
-      "screenshot_50vu_caption": "Figure 2: 50 VU peak — Java and MySQL are the main CPU consumers; overall CPU ~61%, service remained available.",
-      "screenshot_20vu_alt": "System monitoring at 20 concurrent users",
-      "screenshot_20vu_caption": "Figure 3: 20 VU stage — load increases progressively with application and database under shared pressure.",
-      "conclusion_title": "Conclusion",
-      "conclusion_body": "The FilixPay OpenAPI create-order endpoint remained stable at 50 concurrent users with 100% success rate and 404 ms P99 latency, providing a credible baseline for capacity planning and integration expectations.",
-      "cta_title": "Need higher concurrency or private benchmarking?",
-      "cta_desc": "Contact us for tailored performance assessment and deployment options."
+      "evidence_title": "Evidências do teste",
+      "evidence_subtitle": "Saída de resumo do k6 e monitoramento de recursos do sistema capturados durante o teste de carga.",
+      "screenshot_summary_alt": "Resumo final do teste de carga k6",
+      "screenshot_summary_caption": "Figura 1: resumo k6 — 165.229 pedidos criados a 141 TPS, P95 353 ms, P99 404 ms, 0% de erros.",
+      "screenshot_50vu_alt": "Monitoramento do sistema com 50 usuários concorrentes",
+      "screenshot_50vu_caption": "Figura 2: pico de 50 VU — Java e MySQL são os principais consumidores de CPU; CPU geral ~61%, serviço permaneceu disponível.",
+      "screenshot_20vu_alt": "Monitoramento do sistema com 20 usuários concorrentes",
+      "screenshot_20vu_caption": "Figura 3: estágio de 20 VU — a carga aumenta progressivamente com aplicação e banco de dados sob pressão compartilhada.",
+      "conclusion_title": "Conclusão",
+      "conclusion_body": "O endpoint OpenAPI create-order da FilixPay permaneceu estável com 50 usuários concorrentes, 100% de taxa de sucesso e latência P99 de 404 ms, fornecendo uma linha de base crível para planejamento de capacidade e expectativas de integração.",
+      "cta_title": "Precisa de maior concorrência ou benchmarking privado?",
+      "cta_desc": "Fale conosco para avaliação de performance sob medida e opções de deployment."
     },
     "identity": {
-      "title": "Identity & Auth",
-      "hero_title": "Enterprise Identity: Building a Financial-Grade Security Foundation with Keycloak",
-      "hero_desc": "In payment systems, identity authentication is not only the first door of user experience but also the core defense line for fund security and compliant operations. We adopt Keycloak - an open-source Identity and Access Management (IAM) platform led by Red Hat - as a unified identity authentication engine, providing financial-grade security, global compliance support, and capacity for tens of millions of users for your payment business.",
-      "why_keycloak_title": "✅ Why Keycloak? — Verified by Top Global Institutions",
-      "why_keycloak_desc": "Keycloak has been deeply adopted by numerous industries with high security requirements, including finance, government, telecommunications, and cloud computing:",
+      "title": "Identity e autenticação",
+      "hero_title": "Identity empresarial: construindo uma base de segurança de nível financeiro com Keycloak",
+      "hero_desc": "Em sistemas de pagamento, a autenticação de identidade não é apenas a primeira porta da experiência do usuário, mas também a linha de defesa central para a segurança dos fundos e operações em conformidade. Adotamos o Keycloak — uma plataforma open-source de Identity and Access Management (IAM) liderada pela Red Hat — como motor unificado de autenticação de identidade, oferecendo segurança de nível financeiro, suporte a compliance global e capacidade para dezenas de milhões de usuários no seu negócio de pagamento.",
+      "why_keycloak_title": "✅ Por que Keycloak? — Validado por instituições globais de referência",
+      "why_keycloak_desc": "O Keycloak foi adotado em profundidade por inúmeros setores com altos requisitos de segurança, incluindo finanças, governo, telecomunicações e cloud computing:",
       "cases": [
         {
           "name": "Hitachi",
-          "desc": "Built an authorization server for Japanese banks that meets Financial-grade API (FAPI) standards, passing 700+ consistency tests to meet the most stringent open banking compliance requirements."
+          "desc": "Construiu um servidor de autorização para bancos japoneses que atende aos padrões Financial-grade API (FAPI), passando em mais de 700 testes de consistência para cumprir os requisitos mais rigorosos de compliance de open banking."
         },
         {
           "name": "Austrian Federal Computing Centre (BRZ)",
-          "desc": "As a technology partner of the Austrian government, it supports unified authentication for 2 million+ users and 130+ public services, operating stably for many years."
+          "desc": "Como parceiro tecnológico do governo austríaco, oferece autenticação unificada para mais de 2 milhões de usuários e mais de 130 serviços públicos, operando de forma estável há muitos anos."
         },
         {
           "name": "Infosys",
-          "desc": "Built an identity platform for a large Japanese pharmaceutical group, managing over 2 million users and supporting 4000+ pharmacists logging in safely daily in 750+ pharmacies."
+          "desc": "Construiu uma plataforma de identidade para um grande grupo farmacêutico japonês, gerenciando mais de 2 milhões de usuários e suportando o login seguro diário de mais de 4.000 farmacêuticos em mais de 750 farmácias."
         },
         {
           "name": "VMware (Broadcom)",
-          "desc": "Deeply integrated Keycloak into its Telco Cloud Operations platform to achieve automated management of users, roles, and permissions."
+          "desc": "Integraram profundamente o Keycloak à plataforma Telco Cloud Operations para alcançar a gestão automatizada de usuários, papéis e permissões."
         }
       ],
-      "cases_conclusion": "These cases prove: Keycloak can not only handle high concurrency and large-scale user pressure but also meet the compliance thresholds of highly regulated industries such as finance and government.",
-      "features_title": "🔐 Security Capabilities Tailored for Payment Scenarios",
-      "feature_1_title": "1. Financial-Grade Protocol Support",
-      "feature_1_desc": "Full implementation of OpenID Connect, OAuth 2.0, SAML 2.0; native support for FAPI (Financial-grade API) security specifications to meet PSD2 and open banking compliance; support for PKCE, MTLS, JWT signature verification, and other advanced security mechanisms.",
-      "feature_2_title": "2. Strong Authentication & Access Control",
-      "feature_2_desc": "Multi-Factor Authentication (MFA): SMS, TOTP, WebAuthn (FIDO2); Role-Based Access Control (RBAC) and fine-grained permission policies; session management: automatic timeout, forced logout, and device binding.",
-      "feature_3_title": "3. Compliance-Ready Architecture",
-      "feature_3_desc": "GDPR Ready: Data minimization, consent management, data export/deletion; PCI DSS Friendly: No contact with cardholder data (PAN), serves only as an authentication layer, reducing compliance scope; compatible with multi-level protection scheme (MLPS) requirements.",
-      "feature_4_title": "4. High Availability & Scalability",
-      "feature_4_desc": "Supports cluster deployment, database sharding, and cache optimization; proven in multiple national platforms to handle millions of daily active users; private deployment ensures data sovereignty and network isolation.",
-      "integration_title": "🛠️ Seamlessly Integrate with Your Payment System",
-      "integration_desc": "Keycloak provides standardized interfaces for easy integration with:",
+      "cases_conclusion": "Esses casos comprovam: o Keycloak não apenas lida com alta concorrência e pressão de usuários em larga escala, como também atende aos limiares de compliance de setores altamente regulados, como finanças e governo.",
+      "features_title": "🔐 Capacidades de segurança sob medida para cenários de pagamento",
+      "feature_1_title": "1. Suporte a protocolos de nível financeiro",
+      "feature_1_desc": "Implementação completa de OpenID Connect, OAuth 2.0 e SAML 2.0; suporte nativo às especificações de segurança FAPI (Financial-grade API) para atender ao compliance de PSD2 e open banking; suporte a PKCE, MTLS, verificação de assinatura JWT e outros mecanismos avançados de segurança.",
+      "feature_2_title": "2. Autenticação forte e controle de acesso",
+      "feature_2_desc": "Multi-Factor Authentication (MFA): SMS, TOTP, WebAuthn (FIDO2); Role-Based Access Control (RBAC) e políticas de permissão granulares; gestão de sessão: timeout automático, logout forçado e vinculação de dispositivo.",
+      "feature_3_title": "3. Arquitetura pronta para compliance",
+      "feature_3_desc": "GDPR Ready: minimização de dados, gestão de consentimento, exportação/exclusão de dados; PCI DSS Friendly: sem contato com dados do portador do cartão (PAN), atua apenas como camada de autenticação, reduzindo o escopo de compliance; compatível com requisitos de esquema de proteção multinível (MLPS).",
+      "feature_4_title": "4. Alta disponibilidade e escalabilidade",
+      "feature_4_desc": "Suporta deployment em cluster, sharding de banco de dados e otimização de cache; comprovado em múltiplas plataformas nacionais para lidar com milhões de usuários ativos diários; deployment privado garante soberania de dados e isolamento de rede.",
+      "integration_title": "🛠️ Integre-se sem atrito ao seu sistema de pagamento",
+      "integration_desc": "O Keycloak oferece interfaces padronizadas para fácil integração com:",
       "integration_items": [
-        "Merchant Backend Management System (SSO)",
-        "Payment Gateway Operator Authentication",
-        "Partner API Access Authorization",
-        "Internal Staff Permission Management Platform"
+        "Sistema de gestão do backend do merchant (SSO)",
+        "Autenticação de operadores do gateway de pagamento",
+        "Autorização de acesso a APIs de parceiros",
+        "Plataforma de gestão de permissões de colaboradores internos"
       ],
-      "integration_footer": "Also supports federation with existing identity sources like LDAP, Active Directory, and social accounts for a smooth migration without burden.",
-      "choice_title": "💡 Our Choice: Open Source + Enterprise-Grade Protection",
-      "choice_desc": "Keycloak is a Red Hat-supported open-source project, giving you:",
-      "choice_item_1": "Cost advantage with zero licensing fees",
-      "choice_item_2": "Technical ecosystem with active community and comprehensive documentation",
-      "choice_item_3": "Enterprise SLA support options with Red Hat Single Sign-On (Commercial version)",
-      "cta_quote": "\"We chose Keycloak not just because it's free, but because it's been verified by global financial and government institutions—it's an identity engine truly capable of carrying the security of payment systems.\"",
-      "cta_desc": "Experience now: Our payment platform has a built-in Keycloak authentication system, supporting rapid connection to your existing IAM system, helping you achieve a perfect balance between security and efficiency."
+      "integration_footer": "Também oferece suporte a federação com fontes de identidade existentes como LDAP, Active Directory e contas sociais, para uma migração suave e sem sobrecarga.",
+      "choice_title": "💡 Nossa escolha: open source + proteção de nível empresarial",
+      "choice_desc": "O Keycloak é um projeto open-source apoiado pela Red Hat, oferecendo a você:",
+      "choice_item_1": "Vantagem de custo com zero taxas de licenciamento",
+      "choice_item_2": "Ecossistema técnico com comunidade ativa e documentação abrangente",
+      "choice_item_3": "Opções de suporte SLA empresarial com Red Hat Single Sign-On (versão comercial)",
+      "cta_quote": "\"Escolhemos o Keycloak não apenas porque é gratuito, mas porque foi validado por instituições financeiras e governamentais globais — é um motor de identidade verdadeiramente capaz de carregar a segurança de sistemas de pagamento.\"",
+      "cta_desc": "Experimente agora: nossa plataforma de pagamento tem um sistema de autenticação Keycloak integrado, com suporte a conexão rápida ao seu IAM existente, ajudando você a alcançar o equilíbrio ideal entre segurança e eficiência."
     },
     "blockchain": {
-      "title": "Blockchain Integration",
-      "subtitle": "Multi-chain adaption and cross-chain interoperability",
-      "hero_title": "Connect Every Chain, Trust Every Transaction",
-      "hero_desc": "Native support for major consortium blockchains with cross-chain verification and compliance-ready audit trails.",
+      "title": "Integração blockchain",
+      "subtitle": "Adaptação multi-chain e interoperabilidade cross-chain",
+      "hero_title": "Conecte cada chain, confie em cada transação",
+      "hero_desc": "Suporte nativo às principais blockchains consortium, com verificação cross-chain e trilhas de auditoria prontas para compliance.",
       "deprecated": {
-        "badge": "Deprecated",
-        "title": "This technology direction is no longer FilixPay's product positioning",
-        "desc": "FilixPay focuses on enterprise payment infrastructure — payment connectivity, transaction management, settlement, and merchant operations.",
-        "extra": "This page is retained for historical reference and is no longer indexed as a core FilixPay capability.",
-        "notice_title": "Recommended next step",
-        "notice_body": "Learn how FilixPay helps enterprises build and operate payment infrastructure.",
-        "cta": "Explore Payment Platform",
-        "cta_title": "Continue with payment infrastructure",
-        "cta_desc": "See FilixPay's enterprise payment platform capabilities."
+        "badge": "Descontinuado",
+        "title": "Esta direção tecnológica não é mais o posicionamento de produto da FilixPay",
+        "desc": "A FilixPay foca em infraestrutura de pagamento empresarial — conectividade de pagamento, gestão de transações, settlement e operações de merchants.",
+        "extra": "Esta página é mantida apenas como referência histórica e não é mais indexada como capacidade central da FilixPay.",
+        "notice_title": "Próximo passo recomendado",
+        "notice_body": "Saiba como a FilixPay ajuda empresas a construir e operar infraestrutura de pagamento.",
+        "cta": "Explorar plataforma de pagamento",
+        "cta_title": "Continue com infraestrutura de pagamento",
+        "cta_desc": "Veja as capacidades da plataforma de pagamento empresarial da FilixPay."
       }
     },
     "case_studies": {
-      "title": "Case Studies",
-      "subtitle": "See how businesses around the world are succeeding with FilixPay",
+      "title": "Estudos de Caso",
+      "subtitle": "Veja como empresas ao redor do mundo estão tendo sucesso com a FilixPay",
       "items": [
         {
-          "title": "MicSelect - Global Cross-Border E-Commerce Payment Integration",
-          "desc": "A next-generation global e-commerce payment system built on Saleor + FilixPay",
+          "title": "MicSelect - Integração de Pagamentos Globais de E-Commerce Transfronteiriço",
+          "desc": "Um sistema de pagamentos de e-commerce global de nova geração construído com Saleor + FilixPay",
           "link": "/resources/case-studies/micselect"
         }
       ],
       "micselect": {
-        "badge": "Case Study",
-        "title": "MicSelect - Global Cross-Border E-Commerce Payment Integration",
-        "subtitle": "A next-generation global e-commerce payment system built on Saleor + FilixPay",
-        "background_eyebrow": "Client Background",
-        "background_text": "MicSelect is a curated cross-border e-commerce platform featuring quality China-made products, focused on premium supply chains and an international shopping experience. Built on the Saleor open-source e-commerce framework and Next.js, MicSelect is dedicated to delivering quality Chinese-manufactured goods with a seamless online shopping experience for global consumers.",
-        "background_link_text": "Visit MicSelect →",
-        "background_solutions_link_text": "View MicSelect Solutions →",
-        "challenges_eyebrow": "Challenges",
+        "badge": "Estudo de Caso",
+        "title": "MicSelect - Integração de Pagamentos Globais de E-Commerce Transfronteiriço",
+        "subtitle": "Um sistema de pagamentos de e-commerce global de nova geração construído com Saleor + FilixPay",
+        "background_eyebrow": "Contexto do Cliente",
+        "background_text": "A MicSelect é uma plataforma de e-commerce transfronteiriço com curadoria de produtos de qualidade fabricados na China, focada em cadeias de suprimento premium e em uma experiência de compra internacional. Construída sobre o framework de e-commerce open-source Saleor e Next.js, a MicSelect dedica-se a entregar produtos chineses de qualidade com uma experiência de compra online fluida para consumidores globais.",
+        "background_link_text": "Visitar MicSelect →",
+        "background_solutions_link_text": "Ver Soluções MicSelect →",
+        "challenges_eyebrow": "Desafios",
         "challenges_items": [
-          "Unified integration of multiple payment channels",
-          "Optimizing payment success rates for global users",
-          "Complex cross-border order reconciliation",
-          "Insufficient payment extensibility of the e-commerce platform",
-          "Webhook and asynchronous payment status synchronization"
+          "Integração unificada de múltiplos canais de pagamento",
+          "Otimização das taxas de sucesso de pagamento para usuários globais",
+          "Reconciliação complexa de pedidos transfronteiriços",
+          "Extensibilidade insuficiente de pagamentos da plataforma de e-commerce",
+          "Sincronização de Webhooks e status de pagamento assíncrono"
         ],
-        "solution_eyebrow": "Solution",
-        "solution_intro": "FilixPay provided MicSelect with a complete payment infrastructure:",
+        "solution_eyebrow": "Solução",
+        "solution_intro": "A FilixPay forneceu à MicSelect uma infraestrutura completa de pagamentos:",
         "solution_items": [
-          "Aggregated international payment channels including Stripe and PayPal",
-          "Unified checkout and payment routing",
-          "Asynchronous payment notifications via Webhooks",
-          "Automated payment reconciliation and settlement",
-          "OpenAPI merchant platform",
-          "Multi-environment payment sandbox capabilities",
-          "Deep integration with Saleor"
+          "Canais de pagamento internacionais agregados, incluindo Stripe e PayPal",
+          "Checkout unificado e roteamento de pagamentos",
+          "Notificações assíncronas de pagamento via Webhooks",
+          "Reconciliação e liquidação automatizadas de pagamentos",
+          "Plataforma merchant OpenAPI",
+          "Capacidades de sandbox de pagamento em múltiplos ambientes",
+          "Integração profunda com Saleor"
         ],
-        "architecture_eyebrow": "Architecture",
+        "architecture_eyebrow": "Arquitetura",
         "arch_saleor": "Saleor",
-        "arch_saleor_label": "E-Commerce Platform",
+        "arch_saleor_label": "Plataforma de E-Commerce",
         "arch_payment_app": "FilixPay Payment App",
-        "arch_payment_app_label": "Payment Application",
+        "arch_payment_app_label": "Aplicação de Pagamento",
         "arch_gateway": "FilixPay Gateway",
-        "arch_gateway_label": "Payment Gateway",
-        "arch_channels_label": "Payment Channels",
-        "results_eyebrow": "Results",
+        "arch_gateway_label": "Gateway de Pagamento",
+        "arch_channels_label": "Canais de Pagamento",
+        "results_eyebrow": "Resultados",
         "results_items": [
-          "Successfully achieved a global payment closed loop",
-          "Enhanced payment system scalability",
-          "Reduced payment channel integration complexity",
-          "Enabled automated order status synchronization",
-          "Delivered unified payment operations capability"
+          "Ciclo fechado de pagamentos globais alcançado com sucesso",
+          "Escalabilidade do sistema de pagamentos aprimorada",
+          "Complexidade de integração de canais de pagamento reduzida",
+          "Sincronização automatizada de status de pedidos habilitada",
+          "Capacidade unificada de operações de pagamento entregue"
         ],
-        "cta_title": "Start Integrating FilixPay",
-        "cta_desc": "Build global payment capabilities like MicSelect. Start integrating with FilixPay today."
+        "cta_title": "Comece a Integrar a FilixPay",
+        "cta_desc": "Construa capacidades de pagamento global como a MicSelect. Comece a integrar com a FilixPay hoje."
       }
     },
     "compliance": {
-      "title": "Compliance Guide",
-      "subtitle": "Navigate global payment regulations with confidence",
-      "hero_title": "Compliance Made Simple",
-      "hero_desc": "Comprehensive guides covering GDPR, PCI-DSS, FATF Travel Rule, and regional payment regulations to keep your business compliant."
+      "title": "Guia de Conformidade",
+      "subtitle": "Navegue pelas regulamentações globais de pagamento com confiança",
+      "hero_title": "Conformidade Simplificada",
+      "hero_desc": "Guias abrangentes cobrindo GDPR, PCI-DSS, FATF Travel Rule e regulamentações regionais de pagamento para manter seu negócio em conformidade."
     },
     "blog": {
-      "title": "Blog & Articles",
-      "subtitle": "Technical insights, industry analysis, and product updates",
+      "title": "Blog e Artigos",
+      "subtitle": "Insights técnicos, análises do setor e atualizações de produto",
       "posts": [
         {
-          "title": "FilixPay Checkout - Independent Domain Deployment (Demo)",
-          "desc": "React-based independent checkout interface supporting multi-chain adaption and private domain deployment.",
+          "title": "FilixPay Checkout - Implantação em Domínio Independente (Demo)",
+          "desc": "Interface de checkout independente baseada em React, com suporte a adaptação multi-chain e implantação em domínio próprio.",
           "link": "https://github.com/filixpay/filix-checkout"
         },
         {
-          "title": "FilixPay Merchant Center - Modern Merchant Dashboard",
-          "desc": "A merchant management system built with Next.js and Shadcn UI, featuring multi-merchant management, fund accounts, withdrawals, and access control.",
+          "title": "FilixPay Merchant Center - Painel Moderno para Merchants",
+          "desc": "Sistema de gestão de merchants construído com Next.js e Shadcn UI, com gestão multi-merchant, contas de fundos, saques e controle de acesso.",
           "link": "https://github.com/filixpay/filix-merchant"
         }
       ]
     },
     "downloads": {
-      "title": "Download Center",
-      "subtitle": "Deployment documentation, agreement samples, and technical resources",
+      "title": "Central de Downloads",
+      "subtitle": "Documentação de implantação, modelos de contrato e recursos técnicos",
       "items": {
         "deploy_doc": {
-          "title": "Deployment Guide",
-          "desc": "Complete guide for private deployment setup"
+          "title": "Guia de Implantação",
+          "desc": "Guia completo para configuração de implantação privada"
         },
         "license_sample": {
-          "title": "License Agreement Sample",
-          "desc": "Source code license agreement template"
+          "title": "Modelo de Contrato de Licença",
+          "desc": "Modelo de contrato de licença de código-fonte"
         },
         "api_spec": {
-          "title": "API Specification",
-          "desc": "OpenAPI/Swagger specification file"
+          "title": "Especificação da API",
+          "desc": "Arquivo de especificação OpenAPI/Swagger"
         }
       }
     },
     "common": {
-      "learn_more": "Learn More",
-      "get_started": "Get Started",
-      "contact_sales": "Contact Sales",
-      "coming_soon": "Coming Soon",
-      "back_home": "Back to Home",
-      "key_features": "Key Features",
-      "why_choose": "Why Choose This Solution",
-      "use_cases": "Use Cases",
-      "consequences": "Consequences"
+      "learn_more": "Saiba Mais",
+      "get_started": "Começar",
+      "contact_sales": "Falar com Vendas",
+      "coming_soon": "Em Breve",
+      "back_home": "Voltar ao Início",
+      "key_features": "Principais Recursos",
+      "why_choose": "Por Que Escolher Esta Solução",
+      "use_cases": "Casos de Uso",
+      "consequences": "Consequências"
     },
     "private_deployment": {
-      "badge": "ENTERPRISE DEPLOYMENT",
-      "hero_title": "Full Stack Control · Enterprise Grade · Data Sovereignty",
-      "specs_title": "Deployment Specifications",
-      "specs_server_title": "Server Requirements",
-      "specs_stack_title": "Technology Stack",
+      "badge": "IMPLANTAÇÃO ENTERPRISE",
+      "hero_title": "Controle Full Stack · Nível Enterprise · Soberania de Dados",
+      "specs_title": "Especificações de Implantação",
+      "specs_server_title": "Requisitos do Servidor",
+      "specs_stack_title": "Stack Tecnológica",
       "specs_col_item": "Item",
-      "specs_col_requirement": "Requirement",
+      "specs_col_requirement": "Requisito",
       "specs_items": {
-        "os": "OS",
+        "os": "SO",
         "os_value": "Linux (Ubuntu 22.04+)",
         "cpu": "CPU",
-        "cpu_value": "4 Cores",
-        "memory": "Memory",
+        "cpu_value": "4 Núcleos",
+        "memory": "Memória",
         "memory_value": "≥ 8 GB",
-        "disk": "Disk",
+        "disk": "Disco",
         "disk_value": "≥ 20 GB",
         "docker": "Docker",
         "docker_value": "20.10+",
@@ -6311,85 +6311,85 @@
       "stack": {
         "postgres": {
           "name": "PostgreSQL 15–18",
-          "desc": "Core Database"
+          "desc": "Banco de Dados Principal"
         },
         "redis": {
           "name": "Redis 7.2",
-          "desc": "Cache Service"
+          "desc": "Serviço de Cache"
         },
         "keycloak": {
           "name": "Keycloak 26.0",
-          "desc": "Identity & Auth"
+          "desc": "Identidade e Autenticação"
         },
         "compose": {
           "name": "Docker Compose",
-          "desc": "Orchestration"
+          "desc": "Orquestração"
         }
       },
-      "architecture_label": "System Topology",
-      "pricing_section_title": "Investment & Pricing",
-      "pricing_intro": "Transparent one-time licensing with complete system asset delivery — build owned payment infrastructure with confidence.",
-      "pricing_badge": "Enterprise License",
-      "pricing_onetime": "One-time Fee",
-      "pricing_included_title": "What's Included",
+      "architecture_label": "Topologia do Sistema",
+      "pricing_section_title": "Investimento e Preços",
+      "pricing_intro": "Licenciamento transparente com taxa única e entrega completa dos ativos do sistema — construa infraestrutura de pagamento própria com confiança.",
+      "pricing_badge": "Licença Enterprise",
+      "pricing_onetime": "Taxa Única",
+      "pricing_included_title": "O Que Está Incluído",
       "pricing_included": [
-        "Complete source code (merchant center, payment gateway, settlement engine)",
-        "Deployment documentation, database scripts, API specifications",
-        "One-time deployment support and technical handover",
-        "One year free professional maintenance"
+        "Código-fonte completo (merchant center, payment gateway, settlement engine)",
+        "Documentação de implantação, scripts de banco de dados, especificações de API",
+        "Suporte único de implantação e transferência técnica",
+        "Um ano de manutenção profissional gratuita"
       ],
-      "pricing_maintenance_label": "Annual Maintenance (from Year 2)",
-      "pricing_maintenance_value": "10% of license fee (2,800 USD/year)",
-      "pricing_cta": "Contact Sales for Details",
-      "licensing_title": "Source Code Licensing",
-      "final_cta_title": "Ready to deploy your own payment infrastructure?",
-      "final_cta_desc": "Contact our enterprise team for custom deployment planning and licensing details.",
-      "final_cta_primary": "Contact Sales",
-      "final_cta_docs": "View Deployment Docs",
-      "final_cta_download": "Download License Agreement",
-      "view_deployment_docs": "View Deployment Docs",
+      "pricing_maintenance_label": "Manutenção Anual (a partir do 2º ano)",
+      "pricing_maintenance_value": "10% da taxa de licença (2.800 USD/ano)",
+      "pricing_cta": "Fale com Vendas para Detalhes",
+      "licensing_title": "Licenciamento de Código-Fonte",
+      "final_cta_title": "Pronto para implantar sua própria infraestrutura de pagamento?",
+      "final_cta_desc": "Entre em contato com nossa equipe enterprise para planejamento de implantação personalizado e detalhes de licenciamento.",
+      "final_cta_primary": "Falar com Vendas",
+      "final_cta_docs": "Ver Docs de Implantação",
+      "final_cta_download": "Baixar Contrato de Licença",
+      "view_deployment_docs": "Ver Docs de Implantação",
       "deployment_comparison": {
-        "title": "Self-Hosted Checkout vs. Full Private Deployment",
-        "desc": "FilixPay offers two deployment paths with different scope and investment. Choose based on whether you need only a branded checkout page or a complete on-premise payment platform.",
+        "title": "Checkout Self-Hosted vs. Implantação Privada Completa",
+        "desc": "A FilixPay oferece dois caminhos de implantação com escopos e investimentos diferentes. Escolha com base em precisar apenas de uma página de checkout com a sua marca ou de uma plataforma de pagamento on-premise completa.",
         "columns": {
-          "dimension": "Dimension",
-          "checkout": "Self-Hosted Checkout",
-          "full_stack": "Full Private Deployment"
+          "dimension": "Dimensão",
+          "checkout": "Checkout Self-Hosted",
+          "full_stack": "Implantação Privada Completa"
         },
         "rows": {
           "scope": {
-            "label": "What you deploy",
-            "checkout": "Open-source checkout frontend + BFF proxy (filix-checkout)",
-            "full_stack": "Complete FilixPay stack: merchant center, payment gateway, settlement engine"
+            "label": "O que você implanta",
+            "checkout": "Frontend de checkout open-source + proxy BFF (filix-checkout)",
+            "full_stack": "Stack completa FilixPay: merchant center, payment gateway, settlement engine"
           },
           "audience": {
-            "label": "Best for",
-            "checkout": "Merchants who want checkout on their own domain with minimal ops",
-            "full_stack": "Banks, payment providers, and enterprises requiring full data sovereignty"
+            "label": "Ideal para",
+            "checkout": "Merchants que querem checkout no próprio domínio com operação mínima",
+            "full_stack": "Bancos, provedores de pagamento e empresas que exigem soberania total de dados"
           },
           "infrastructure": {
-            "label": "Infrastructure",
-            "checkout": "Single Docker container; optional Nginx/Caddy reverse proxy",
-            "full_stack": "PostgreSQL, Redis, Keycloak, Docker Compose cluster"
+            "label": "Infraestrutura",
+            "checkout": "Container Docker único; proxy reverso Nginx/Caddy opcional",
+            "full_stack": "Cluster PostgreSQL, Redis, Keycloak e Docker Compose"
           },
           "licensing": {
-            "label": "Licensing",
-            "checkout": "Apache-2.0 open source; free to self-host",
-            "full_stack": "Enterprise source license with one-time fee and maintenance"
+            "label": "Licenciamento",
+            "checkout": "Open source Apache-2.0; self-host gratuito",
+            "full_stack": "Licença enterprise de código-fonte com taxa única e manutenção"
           },
           "complexity": {
-            "label": "Setup effort",
-            "checkout": "Hours—env file + docker pull + HTTPS domain",
-            "full_stack": "Days to weeks—full stack deployment and handover"
+            "label": "Esforço de configuração",
+            "checkout": "Horas—arquivo env + docker pull + domínio HTTPS",
+            "full_stack": "Dias a semanas—implantação full stack e transferência"
           },
           "when_to_choose": {
-            "label": "When to choose",
-            "checkout": "Brand-controlled checkout URL; FilixPay SaaS for everything else",
-            "full_stack": "All payment data and systems must run inside your network"
+            "label": "Quando escolher",
+            "checkout": "URL de checkout controlada pela marca; FilixPay SaaS para todo o restante",
+            "full_stack": "Todos os dados e sistemas de pagamento devem rodar na sua rede"
           }
         },
-        "checkout_cta": "View Checkout Deployment Guide",
-        "merchant_center_cta": "Merchant Center Overview"
+        "checkout_cta": "Ver Guia de Implantação do Checkout",
+        "merchant_center_cta": "Visão Geral do Merchant Center"
       }
     }
   },
