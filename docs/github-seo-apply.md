@@ -1,4 +1,4 @@
-# FilixPay open-source GitHub SEO (V1) — apply after `gh auth login`
+# FilixPay open-source GitHub SEO (V1) - apply after `gh auth login`
 
 ## Descriptions
 
