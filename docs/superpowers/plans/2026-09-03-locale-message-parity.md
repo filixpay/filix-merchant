@@ -59,7 +59,7 @@ The last line is only for when that locale has `missing = 0` and leftover Englis
 | 2 | ko | `messages/ko.json` | committed | missing 0, identical-to-en ~143 (brands/API tokens) |
 | 3 | es | `messages/es.json` | committed | missing 0, identical-to-en ~153 (brands/API tokens) |
 | 4 | fr | `messages/fr.json` | committed | missing 0, identical-to-en ~247 (brands/API tokens) |
-| 5 | de | `messages/de.json` | in progress | A/B/D/F committed; E/G/H + C (Pages) translating |
+| 5 | de | `messages/de.json` | in progress | A–D/F committed; E/G/H translating |
 | 6 | pt | `messages/pt.json` | [ ] | missing 4268, identical-to-en 211 |
 | 7 | ar | `messages/ar.json` | [ ] | missing 4268, identical-to-en 199 |
 
