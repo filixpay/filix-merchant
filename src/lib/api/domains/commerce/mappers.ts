@@ -1,3 +1,4 @@
+import { normalizeStorefrontUrl } from "@/lib/commerce/storefront-url";
 import type {
     CommerceCategoryDto,
     CommerceCategoryView,
@@ -29,6 +30,7 @@ export function mapCommerceProductDto(dto: CommerceProductDto): CommerceProductV
         businessStatus: dto.businessStatus ?? "DRAFT",
         integrationStatus: dto.integrationStatus ?? "CREATING",
         externalProductId: dto.externalProductId,
+        storefrontUrl: normalizeStorefrontUrl(dto.storefrontUrl),
         lastError: dto.lastError,
         lastErrorCode: dto.lastErrorCode,
         version: dto.version,

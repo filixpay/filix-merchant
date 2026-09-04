@@ -19,6 +19,7 @@ export interface CommerceProductDto {
     clientRequestId?: string;
     version?: number;
     externalProductId?: string;
+    storefrontUrl?: string | null;
     lastError?: string;
     lastErrorCode?: string;
     createdAt?: string;
@@ -40,6 +41,7 @@ export interface CommerceProductView {
     businessStatus: string;
     integrationStatus: string;
     externalProductId?: string;
+    storefrontUrl?: string | null;
     lastError?: string;
     lastErrorCode?: string;
     version?: number;
