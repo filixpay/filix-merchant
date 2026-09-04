@@ -475,24 +475,24 @@
   },
   "Home": {
     "hero": {
-      "badge": "🔴 LIVE · Enterprise Transaction Gateway",
-      "title": "FilixPay: Soluções de Pagamento Globais Integradas,\nAjudando Comerciantes a Receber Pagamentos pelo Mundo com Facilidade",
-      "subtitle": "FilixPay – uma plataforma de serviços de tecnologia de pagamento de quatro partes projetada especificamente para empresas que se expandem globalmente. Nós nos dedicamos a fornecer uma infraestrutura de pagamento agregada segura, flexível e eficiente para comerciantes globais, permitindo que você acesse múltiplos métodos de pagamento principais e gerencie recebimentos globalmente de forma unificada, sem necessidade de integrações complexas.",
-      "brand_line": "Support multi-currency transaction processing and flexible settlements configuration. Integrate in 30 minutes.",
-      "start": "Começar Agora",
-      "docs": "Get API Docs",
-      "contact": "Falar com Vendas",
-      "showcase_zoom": "View full size"
+      "badge": "🔴 LIVE · Gateway de Transações Empresarial",
+      "title": "Uma API, Conectando o Comércio Global",
+      "subtitle": "Integre de forma transparente Stripe, PayPal, WeChat Pay, Alipay e os principais criptoativos. Construa operações de pagamento confiáveis com isolamento multi-comerciante, liquidações automáticas e simulação em Sandbox.",
+      "brand_line": "Suporte a processamento de transações multicurrency e configuração flexível de liquidações. Integre em 30 minutos.",
+      "start": "Cadastre-se Gratuitamente",
+      "docs": "Obter Documentação da API",
+      "contact": "Falar com Assessoria Técnica",
+      "showcase_zoom": "Ver em tamanho completo"
     },
     "definition": {
-      "heading": "What is FilixPay?",
-      "body": "FilixPay is an enterprise payment infrastructure platform that helps businesses integrate global payment channels, manage merchants, and automate payment workflows through unified APIs."
+      "heading": "O que é o FilixPay?",
+      "body": "O FilixPay é uma plataforma de infraestrutura de pagamento empresarial que ajuda empresas a integrar canais de pagamento globais, gerenciar comerciantes e automatizar fluxos de pagamento por meio de APIs unificadas."
     },
     "trial_experience": {
-      "title": "🌍 Pagamentos Globais, Experimente Agora",
-      "subtitle": "Experimente todos os recursos do FilixPay gratuitamente agora",
+      "title": "🌍 Pagamentos Globais, Acesso Instantâneo",
+      "subtitle": "Experimente todos os recursos do FilixPay gratuitamente",
       "features": [
-        "Sem necessidade de documentação da empresa",
+        "Sem necessidade de documentos da empresa",
         "Sem necessidade de integração técnica",
         "Cadastro por e-mail, em 30 segundos você está no painel real do comerciante"
       ],
@@ -500,501 +500,501 @@
     },
     "business_modes": {
       "title": "Centro do Comerciante FilixPay: Um Sistema, Dois Modos, Totalmente Adaptado à Sua Estrutura de Negócios",
-      "subtitle": "No FilixPay, oferecemos suporte a uma estrutura de liquidação de fundos flexível. Seja você preferindo a liquidação direta dos fundos na sua conta, ou precisando agregá-los em uma conta unificada antes do repasse, nosso Centro do Comerciante pode corresponder inteligentemente à sua identidade comercial, fornecendo uma visão precisa das funcionalidades.",
+      "subtitle": "No FilixPay, oferecemos suporte a uma arquitetura flexível de liquidação de fundos. Seja você preferindo liquidação direta ou cobrança centralizada com divisão de lucros, nosso centro do comerciante corresponde de forma inteligente à sua identidade comercial e oferece uma perspectiva funcional sob medida.",
       "modes": {
         "independent": {
-          "title": "Comerciante Independente (Modo de Quatro Partes)",
-          "slogan": "Os fundos são liquidados diretamente na sua conta pela instituição de aquisição licenciada",
-          "desc": "Quando você escolhe o modo de liquidação direta de quatro partes, o FilixPay atua como canal de pagamento, roteando as transações para as instituições de aquisição parceiras licenciadas para conclusão da liquidação. Você não precisa passar por contas intermediárias; os fundos vão diretamente para sua conta bancária."
+          "title": "Comerciante Independente (Modo de 4ª Parte)",
+          "slogan": "Fundos liquidados diretamente na sua conta por adquirentes licenciados",
+          "desc": "No modo de liquidação direta de 4ª parte, o FilixPay atua como gateway de pagamento, roteando as transações para adquirentes licenciados parceiros para liquidação. Os fundos vão diretamente para sua conta bancária, sem passar por contas intermediárias."
         },
         "sub_merchant": {
-          "title": "Subcomerciante (Modo de Três Partes)",
-          "slogan": "O FilixPay (ou instância de implantação do grupo) coleta em seu nome e depois liquida para você",
-          "desc": "Quando você se integra como subcomerciante ao sistema de três partes do FilixPay (por exemplo, através de uma plataforma de pagamentos unificada implantada pelo grupo), todos os fundos das transações são primeiro coletados pelo FilixPay ou pela entidade autorizada, e então liquidados para a sua conta designada de acordo com os ciclos acordados."
+          "title": "Subcomerciante (Modo de 3ª Parte)",
+          "slogan": "Coletado pelo FilixPay (ou instância do grupo) e depois liquidado para você",
+          "desc": "Ao integrar-se ao ecossistema de 3ª parte do FilixPay como subcomerciante (por exemplo, por meio de um hub de pagamentos implantado pelo grupo), todos os fundos das transações são primeiro coletados pelo FilixPay ou por sua entidade autorizada e, em seguida, liquidados para sua conta designada conforme os ciclos acordados."
         }
       }
     },
     "features": {
       "title": "Pagamento Agregado Tudo-em-Um, Integração Perfeita com os Principais Canais Globais",
-      "subtitle": "Através do Centro do Comerciante FilixPay, você pode configurar facilmente vários canais de pagamento upstream, incluindo Alipay, WeChat Pay, PayPal, Stripe, NowPayments e outros. Esteja você atendendo clientes locais ou internacionais, uma única integração permite o gerenciamento unificado de múltiplas formas de pagamento.",
+      "subtitle": "Por meio do Centro do Comerciante FilixPay, você pode configurar com facilidade vários canais de pagamento upstream, incluindo Alipay, WeChat Pay, PayPal, Stripe, NowPayments e outros. Seja atendendo clientes locais ou internacionais, uma única integração permite o gerenciamento unificado de múltiplos métodos de pagamento.",
       "items": {
         "unified": {
-          "title": "Checkout Padronizado",
-          "desc": "Oferece uma interface de checkout padronizada, com experiência do consumidor fluída e consistente, sem necessidade de percepção de redirecionamentos."
+          "title": "Checkout Implantável de Forma Independente",
+          "desc": "Permita que os comerciantes implantem o sistema de checkout em seus próprios domínios, com controle total da marca e soberania dos dados."
         },
         "sdk": {
           "title": "SDK Embutido",
-          "desc": "Implante facilmente em seu próprio site, ajudando a aumentar a confiança na marca e a taxa de conversão de pagamentos."
+          "desc": "Implante de forma transparente em seu próprio site para aumentar a confiança na marca e as taxas de conversão de pagamento."
         },
         "extension": {
-          "title": "Extensibilidade Aberta",
-          "desc": "Se o seu negócio já utiliza outros canais de pagamento ainda não suportados pelo FilixPay, entre em contato conosco. Comprometemo-nos a concluir a integração técnica em uma semana."
+          "title": "Extensão Aberta",
+          "desc": "Se o seu negócio utiliza outros canais de pagamento ainda não suportados pelo FilixPay, entre em contato conosco. Comprometemo-nos a concluir a integração técnica em até uma semana."
         },
         "mobile": {
-          "title": "Experiência Mobile First",
-          "desc": "Design responsivo completo para dispositivos móveis, permitindo que você, mesmo em trânsito, inicie pagamentos, visualize faturas e gerencie seu negócio através do celular a qualquer momento."
+          "title": "Experiência Mobile Sem Fricção",
+          "desc": "Design totalmente responsivo permite iniciar pagamentos, acompanhar transações e gerenciar o negócio em qualquer lugar, diretamente pelo dispositivo móvel."
         }
       }
     },
     "pricing": {
-      "title": "Planos de Serviço Flexíveis para Atender às Necessidades em Diferentes Fases",
-      "subtitle": "Oferecemos várias opções de pagamento para que você possa escolher de acordo com o ritmo do seu negócio",
-      "choose": "Comprar Agora",
+      "title": "Planos de Serviço Flexíveis para Cada Etapa",
+      "subtitle": "Oferecemos vários planos de pagamento para você escolher livremente de acordo com o ritmo do seu negócio",
+      "choose": "Escolher Plano",
       "plans": {
         "weekly": {
           "name": "Plano Semanal",
-          "price": "50 USD/semana",
-          "desc": "Experimente as funcionalidades principais com facilidade"
+          "price": "50 USD/Week",
+          "desc": "Experimente as funções principais com facilidade"
         },
         "monthly": {
           "name": "Plano Mensal",
-          "price": "200 USD/mês",
+          "price": "200 USD/Month",
           "desc": "Suporte estável para operações diárias"
         },
         "half_year": {
           "name": "Plano Semestral",
-          "price": "1100 USD/semestre",
+          "price": "1100 USD/6 Months",
           "desc": "A escolha de melhor custo-benefício"
         },
         "yearly": {
           "name": "Plano Anual",
-          "price": "2000 USD/ano",
+          "price": "2000 USD/Year",
           "desc": "Mais tranquilidade e economia"
         }
       }
     },
     "deployment": {
-      "title": "🖥️ Versão de Implantação Independente: Controle Total da Stack · Confiabilidade de Nível Financeiro · Autonomia de Dados",
-      "subtitle": "Adequado para bancos, provedores de serviços de pagamento, grandes grupos e empresas com expansão global que possuem requisitos rigorosos de segurança de dados",
-      "intro": "Se você precisa de controle total sobre o sistema, garantir que os dados de transações não saiam da sua rede interna, e atender a requisitos de conformidade e auditoria, o FilixPay oferece uma solução de implantação independente em nível empresarial – sem dependência da nuvem pública, uma única implantação, operação permanente.",
+      "title": "🖥️ Implantação Independente: Controle Total da Stack · Nível Empresarial · Soberania de Dados",
+      "subtitle": "Ideal para bancos, provedores de pagamento, grandes corporações e empresas com requisitos rigorosos de segurança.",
+      "intro": "Se você precisa de controle total, isolamento de dados dentro da sua rede e prontidão para auditoria de conformidade, o FilixPay oferece uma solução de implantação independente empresarial — sem dependência de nuvem pública, implante uma vez e opere para sempre.",
       "benefits_title": "✅ Por que escolher a Implantação Independente do FilixPay?",
       "features": [
         {
           "title": "Verdadeira soberania de dados",
-          "desc": "100% dos dados do comerciante, registros de transações e chaves de API são armazenados em seus próprios servidores, sem qualquer dependência externa, atendendo aos requisitos de conformidade GDPR, PCI-DSS e de nível de proteção 3."
+          "desc": "Todos os dados do comerciante, logs de transações e chaves de API são 100% armazenados em seus servidores privados, sem dependências externas, atendendo a GDPR, PCI-DSS e padrões de segurança de alto nível."
         },
         {
-          "title": "Arquitetura de nível empresarial pronta para uso",
-          "desc": "Baseada em contêineres Docker, pré-integrados com: motor multi-inquilino (suporta divisão de contas), autenticação unificada (OIDC/SAML), central do desenvolvedor tudo-em-um, adaptadores de pagamento criptografados e mecanismos de alta concorrência."
+          "title": "Arquitetura pronta para uso",
+          "desc": "Containerizada via Docker, pré-integrada com: motor multi-inquilino (divisão de lucros), autenticação unificada (OIDC/SAML), Central do Desenvolvedor tudo-em-um, adaptadores de cripto e protocolos de alta concorrência."
         },
         {
-          "title": "Implantação extremamente simples, baixo consumo de recursos",
-          "desc": "Requer apenas 1 servidor com 4 núcleos e 8 GB de RAM (Linux), execute `docker-compose up` para iniciar um ambiente de produção completo, implantação concluída em 30 minutos."
+          "title": "Uso mínimo de recursos",
+          "desc": "Requer apenas um único servidor Linux com 4 núcleos e 8 GB. Execute docker-compose up para iniciar um ambiente de produção completo em até 30 minutos."
         },
         {
-          "title": "Pronto para cluster, escalabilidade elástica",
-          "desc": "A arquitetura suporta nativamente expansão horizontal, pode migrar perfeitamente para Kubernetes no futuro, lidando facilmente com o crescimento do tráfego."
+          "title": "Pronto para Cloud-Native",
+          "desc": "A arquitetura oferece suporte nativo a expansão horizontal e migração transparente para Kubernetes, lidando com facilidade com o crescimento futuro de tráfego."
         }
       ],
-      "price": "Taxa única de 28.000 USD",
-      "maintenance": "Inclui um ano de manutenção técnica profissional gratuita; a partir do segundo ano, cobra-se apenas uma taxa de manutenção contínua anual de 10% para garantir a estabilidade e atualizações do sistema a longo prazo."
+      "price": "Taxa única 28,000 USD",
+      "maintenance": "Inclui um ano de manutenção técnica profissional gratuita; depois, taxa anual de 10% para atualizações e suporte."
     },
     "source_licensing": {
-      "title": "Explicação do Licenciamento do Código-Fonte do FilixPay",
-      "subtitle": "Para atender aos altos requisitos de controlabilidade do sistema e conformidade de segurança de instituições financeiras, grandes grupos e parceiros ISV, o FilixPay oferece o licenciamento para uso do código-fonte completo e executável.",
+      "title": "Licenciamento do Código-Fonte do FilixPay",
+      "subtitle": "Para atender aos altos requisitos de controlabilidade, segurança e conformidade de instituições financeiras, grandes grupos e parceiros ISV, o FilixPay oferece licenciamento do código-fonte completo e executável.",
       "sections": {
         "included": {
           "title": "✅ Você receberá:",
           "items": [
-            "O código-fonte completo do sistema central do FilixPay (incluindo módulos do Centro do Comerciante, gateway de pagamento, mecanismo de liquidação, etc.);",
-            "Documentação de implantação, scripts de banco de dados e especificações das interfaces de API;",
-            "Serviço de suporte à implantação único e transferência de conhecimento técnico."
+            "Código-fonte completo do sistema central do FilixPay (incluindo centro do comerciante, gateway de pagamento, motor de liquidação, etc.);",
+            "Documentação de implantação, scripts de banco de dados e especificações de API;",
+            "Suporte único de implantação e serviço de transferência técnica."
           ]
         },
         "scope": {
-          "title": "⚖️ Escopo da Licença (Licença Comercial Limitada):",
+          "title": "⚖️ Escopo da Autorização (Licença Comercial Limitada):",
           "items": [
-            "Você pode usar, modificar e implantar este código-fonte dentro do seu próprio sistema de negócios para apoiar suas próprias operações de pagamento ou gestão de fundos."
+            "Você pode usar, modificar e implantar o código-fonte dentro dos seus próprios sistemas de negócios para apoiar suas próprias operações de pagamento ou gestão de fundos."
           ]
         },
         "prohibited": {
-          "title": "🚫 Comportamentos Expressamente Proibidos:",
-          "subtitle": "Em nenhuma circunstância você pode:",
+          "title": "🚫 Ações Expressamente Proibidas:",
+          "subtitle": "Em nenhuma circunstância você deverá:",
           "items": [
-            "Registrar direitos autorais, patentes, marcas registradas ou outros direitos de propriedade intelectual sobre o código-fonte do FilixPay ou obras derivadas dele;",
-            "Revender, alugar, emprestar, sublicenciar ou fornecer o código-fonte de qualquer forma a terceiros;",
-            "Desenvolver e fornecer publicamente produtos de gateway de pagamento, pagamento agregado ou serviços de aquisição semelhantes com base neste código-fonte;",
-            "Remover ou modificar os identificadores de direitos autorais (© FilixPay) no código-fonte."
+            "Solicitar direitos autorais, patentes, marcas ou outros direitos de propriedade intelectual sobre o código-fonte do FilixPay ou suas obras derivadas;",
+            "Revender, alugar, emprestar, sublicenciar ou fornecer o código-fonte a terceiros de qualquer forma;",
+            "Usar este código-fonte para desenvolver e oferecer ao público produtos concorrentes de gateway de pagamento, pagamento agregado ou serviços de aquisição;",
+            "Remover ou modificar as marcações de direitos autorais (© FilixPay) no código-fonte."
           ]
         },
         "ip_ownership": {
           "title": "📜 Propriedade da Propriedade Intelectual:",
           "items": [
-            "Todos os direitos de propriedade intelectual do código-fonte e documentação relacionada permanecem exclusivamente de propriedade do FilixPay e de seus licenciadores;",
-            "Esta licença não constitui código aberto, nem concede quaisquer direitos além do escopo acima mencionado;",
-            "A licença baseia-se no \"Acordo de Licença de Uso do Código-Fonte do FilixPay\" (versão de licença comercial limitada), sendo os termos específicos regidos pelo acordo escrito assinado por ambas as partes."
+            "Todos os direitos de propriedade intelectual do código-fonte e documentos relacionados pertencem exclusivamente ao FilixPay e aos seus licenciadores;",
+            "Esta autorização não constitui código aberto, nem concede quaisquer direitos além do escopo acima;",
+            "A autorização baseia-se no 'Acordo de Licenciamento do Código-Fonte do FilixPay' (Versão de Autorização Comercial Limitada), e os termos específicos estão sujeitos ao acordo escrito assinado por ambas as partes."
           ]
         }
       },
       "footer": {
-        "trust": "Acreditamos: A verdadeira confiança na tecnologia nasce da transparência e é realizada através de limites.",
-        "slogan": "O FilixPay disponibiliza o código-fonte para que você use com mais tranquilidade; define restrições claras para proteger a sustentabilidade da inovação.",
-        "cta": "Para obter detalhes sobre o plano de implantação privada ou licenciamento do código-fonte, entre em contato conosco (E-mail: invest@filixpay.com)",
-        "download_sample": "Baixar \"Modelo do Acordo de Licença do Código-Fonte\""
+        "trust": "Acreditamos que a verdadeira confiança tecnológica nasce da transparência e se consolida por meio de limites claros.",
+        "slogan": "O FilixPay abre seu código-fonte para que você tenha tranquilidade; restrições explícitas são definidas para proteger a sustentabilidade da inovação.",
+        "cta": "Para soluções de implantação privada ou detalhes do licenciamento de código-fonte, entre em contato conosco (E-mail: invest@filixpay.com)",
+        "download_sample": "Baixar Modelo do Acordo de Licença"
       }
     },
     "trusted_ledger": {
       "badge": "NEXT PHASE",
-      "title": "Next Core Capability: Global Trusted Ledger Engine",
-      "subtitle": "We are launching an enterprise-grade Global Trusted Ledger Engine, designed to become the trust hub for cross-ecosystem and cross-chain collaboration. Beyond trusted bookkeeping, this capability seamlessly integrates with mainstream blockchain ecosystems, enabling interoperability across heterogeneous value networks and unlocking the fusion value of data and assets.",
+      "title": "Próxima Capacidade Central: Motor de Ledger Confiável Global",
+      "subtitle": "Estamos lançando um Motor de Ledger Confiável Global de nível empresarial, projetado para se tornar o hub de confiança para colaboração entre ecossistemas e entre cadeias. Além da contabilidade confiável, essa capacidade se integra de forma transparente aos principais ecossistemas de blockchain, permitindo interoperabilidade entre redes de valor heterogêneas e liberando o valor da fusão entre dados e ativos.",
       "key_value": {
-        "title": "Key Value: Breaking Chain Silos, Building a Unified Trust Layer",
+        "title": "Valor-chave: Quebrar Silos de Cadeia, Construir uma Camada de Confiança Unificada",
         "items": [
           {
-            "title": "Multi-Chain Adaptation, One-Click Connection to Mainstream Ecosystems",
-            "desc": "Native deep integration with leading consortium blockchain platforms such as ChainMaker, FISCO BCOS, and AntChain, providing standardized access kits. Through a unified abstraction layer, we reduce the complexity and technical barriers for enterprises to connect and manage multiple blockchain networks, achieving 'develop once, deploy across chains'."
+            "title": "Adaptação Multi-Chain, Conexão com Um Clique aos Ecossistemas Principais",
+            "desc": "Integração nativa profunda com plataformas líderes de blockchain consortium como ChainMaker, FISCO BCOS e AntChain, com kits de acesso padronizados. Por meio de uma camada de abstração unificada, reduzimos a complexidade e as barreiras técnicas para empresas conectarem e gerenciarem múltiplas redes blockchain, alcançando 'desenvolver uma vez, implantar em várias cadeias'."
           },
           {
-            "title": "Cross-Chain Trust, Activating Ecosystem Synergy Value",
-            "desc": "Given the reality that enterprises have established businesses on different blockchains, our engine enables secure and trusted circulation and verification of critical business data and asset credentials across heterogeneous chains within a compliance framework. Government approvals on administrative chains, credentials on financial chains, and orders on supply chains can anchor and reference each other, building a cross-domain, cross-institutional trusted collaboration network."
+            "title": "Confiança Cross-Chain, Ativando o Valor de Sinergia do Ecossistema",
+            "desc": "Diante da realidade de que empresas já estabeleceram negócios em diferentes blockchains, nosso motor permite a circulação e verificação segura e confiável de dados de negócios críticos e credenciais de ativos entre cadeias heterogêneas, dentro de um framework de conformidade. Aprovações governamentais em cadeias administrativas, credenciais em cadeias financeiras e pedidos em cadeias de supply chain podem se ancorar e referenciar mutuamente, construindo uma rede de colaboração confiável entre domínios e instituições."
           },
           {
-            "title": "Compliant Interoperability, Meeting Regulatory and Autonomy Requirements",
-            "desc": "All cross-chain interaction designs strictly follow domestic data security and industry regulatory standards, ensuring the entire circulation process is auditable and traceable. Support integration with national and industry-level blockchain infrastructures (such as 'Spark Chain Network'), joining the broader trusted ecosystem of the digital economy."
+            "title": "Interoperabilidade em Conformidade, Atendendo a Requisitos Regulatórios e de Autonomia",
+            "desc": "Todos os designs de interação cross-chain seguem rigorosamente padrões domésticos de segurança de dados e regulação setorial, garantindo que todo o processo de circulação seja auditável e rastreável. Suporte à integração com infraestruturas de blockchain nacionais e setoriais (como a 'Spark Chain Network'), conectando-se ao ecossistema confiável mais amplo da economia digital."
           }
         ]
       },
       "scenarios": {
-        "title": "Empowering Scenarios: Connecting Scattered Trust Islands",
+        "title": "Cenários de Empoderamento: Conectando Ilhas de Confiança Dispersas",
         "items": [
           {
-            "title": "Cross-Domain Supply Chain Finance",
-            "desc": "Connect the supply chain where core enterprises reside, the financial chain where banks operate, and the logistics chain at ports, enabling multi-chain synchronization and automatic clearing of property rights, claims, and cash flows."
+            "title": "Finanças de Supply Chain Cross-Domain",
+            "desc": "Conecte a supply chain onde estão as empresas âncora, a cadeia financeira onde operam os bancos e a cadeia logística nos portos, permitindo sincronização multi-chain e liquidação automática de direitos de propriedade, créditos e fluxos de caixa."
           },
           {
-            "title": "Regional Government Services Integration",
-            "desc": "Bridge government systems built on different blockchains across provinces and departments, allowing businesses and citizens to enjoy the convenience of 'cross-provincial services on chain'."
+            "title": "Integração Regional de Serviços Governamentais",
+            "desc": "Interligue sistemas governamentais construídos em diferentes blockchains entre províncias e departamentos, permitindo que empresas e cidadãos desfrutem da comodidade de 'serviços interprovinciais on-chain'."
           },
           {
-            "title": "Industry Alliance Ecosystem Collaboration",
-            "desc": "Help member enterprises within industry alliances using different technical routes to achieve trusted mutual recognition of key production data, carbon footprints, and quality traceability information without modifying their existing systems."
+            "title": "Colaboração no Ecossistema de Alianças Setoriais",
+            "desc": "Ajude empresas membro de alianças setoriais que usam rotas técnicas diferentes a alcançar reconhecimento mútuo confiável de dados-chave de produção, pegadas de carbono e informações de rastreabilidade de qualidade, sem modificar seus sistemas existentes."
           }
         ]
       },
       "footer": {
-        "tagline": "What we're building is a 'connector' and 'translator' that respects existing ecosystems and provides unified dialogue capabilities for scattered trust networks.",
-        "slogan": "In today's deep digital economy development, the value of connection often exceeds disruption. The Global Trusted Ledger Engine is born for this purpose."
+        "tagline": "O que estamos construindo é um 'conector' e um 'tradutor' que respeita os ecossistemas existentes e oferece capacidades de diálogo unificado para redes de confiança dispersas.",
+        "slogan": "No desenvolvimento profundo da economia digital de hoje, o valor da conexão frequentemente supera o da disrupção. O Motor de Ledger Confiável Global nasce para esse propósito."
       }
     },
     "investment": {
-      "title": "Convidamos para Cooperação de Investimento, Juntos para Expandir o Novo Mapa Global de Pagamentos",
-      "subtitle": "Como uma startup de fintech em rápido crescimento, o FilixPay demonstra um forte potencial de desenvolvimento no campo de pagamentos transfronteiriços com sua arquitetura inovadora de quatro partes e planos de implantação flexíveis. Agora abrimos formalmente oportunidades para investimento estratégico e cooperação acionária.",
+      "title": "Cooperação de Investimento, Construindo Juntos o Mapa Global de Pagamentos",
+      "subtitle": "Como uma startup de fintech em rápido crescimento, o FilixPay demonstra forte potencial de desenvolvimento no campo de pagamentos transfronteiriços com sua arquitetura inovadora de pagamento de quarta parte e soluções flexíveis de implantação. Estamos agora oficialmente abertos a investimento estratégico e cooperação acionária.",
       "contact_btn": "Entre em Contato (E-mail: {email})"
     },
     "footer": {
-      "slogan": "Tornar o pagamento mais fácil, tornar os negócios mais globais",
-      "rights": "© 2026 Filix.com. Todos os direitos reservados."
+      "slogan": "Tornar o Pagamento Simples, Tornar o Negócio Global",
+      "rights": "© 2026 Filix.com All rights reserved."
     },
     "onboarding": {
-      "title": "Integração do Comerciante",
-      "subtitle": "Solicite uma conta de comerciante para começar a receber pagamentos. O nome do comerciante deve corresponder exatamente ao nome nos documentos oficiais.",
+      "title": "Onboarding do Comerciante",
+      "subtitle": "Solicite uma conta de comerciante para começar a receber pagamentos. O nome do comerciante deve corresponder exatamente ao nome no documento de identidade.",
       "form": {
         "mobile": "Número de celular",
         "email": "Endereço de e-mail",
         "name": "Nome oficial do comerciante",
         "officialId": "Número do documento oficial",
-        "submit": "Enviar solicitação agora",
+        "submit": "Solicitar agora",
         "success": "Solicitação enviada com sucesso!",
-        "error": "Falha ao enviar a solicitação. Por favor, tente novamente.",
-        "login_required": "Por favor, faça login para enviar a solicitação."
+        "error": "Falha na solicitação, tente novamente.",
+        "login_required": "Faça login para solicitar."
       }
     },
     "core_capabilities": {
-      "title": "Destaques das Capacidades Principais",
+      "title": "Destaques das Capacidades Centrais",
       "items": {
         "multi_tenant": {
-          "title": "Arquitetura Multi-inquilino de Nível Empresarial",
-          "desc": "Suporta instituições, ISVs e clientes de grandes grupos, alcançando isolamento completo de dados entre o comerciante principal e subcomerciantes, com suporte a divisão de contas, liquidação independente e operação independente."
+          "title": "Arquitetura Multi-inquilino Empresarial",
+          "desc": "Suporta instituições, ISVs e grandes clientes corporativos com isolamento total de dados entre comerciantes pai e filho, com suporte a divisão de lucros, liquidação independente e operações."
         },
         "flexible_mode": {
-          "title": "Modo Flexível Compatível com Três e Quatro Partes",
-          "desc": "Pode atuar como um gateway de pagamento agregado (quatro partes), conectando-se aos principais canais globais; ou como uma interface de aquisição unificada (três partes), ajudando empresas de grupo a alcançar cobrança centralizada, gestão de divisão de contas e consolidação de fundos de forma integrada."
+          "title": "Compatibilidade Flexível de 3ª e 4ª Parte",
+          "desc": "Atua tanto como gateway de pagamento agregado (4ª parte) conectando canais globais quanto como interface de aquisição unificada (3ª parte) para cobrança centralizada e gestão de fundos."
         },
         "iam": {
-          "title": "Autenticação de Identidade Unificada de Nível Empresarial",
-          "desc": "Suporta nativamente os protocolos OIDC/SAML, integra-se perfeitamente aos sistemas IAM existentes do cliente, oferece Single Sign-On (SSO) e controle de permissões RBAC granular, atendendo aos requisitos de segurança e conformidade de nível financeiro."
+          "title": "Autenticação de Identidade Unificada Empresarial",
+          "desc": "Suporte nativo a OIDC/SAML, integração transparente com sistemas IAM existentes, oferecendo SSO e RBAC granular para conformidade de segurança de nível financeiro."
         },
         "developer": {
           "title": "Central do Desenvolvedor Tudo-em-Um",
-          "desc": "Oferece documentação de API interativa, ambiente sandbox, gerenciamento de chaves, ferramentas de depuração de Webhooks e repetição de falhas. Integração rápida em 30 minutos, reduzindo significativamente os custos de integração técnica."
+          "desc": "Documentação interativa de API, ambientes sandbox, gestão de chaves e ferramentas de depuração de webhook para integração rápida em 30 minutos."
         },
         "concurrency": {
-          "title": "Garantia de Cadeia Principal de Alta Concorrência",
-          "desc": "Para cenários críticos como contabilização em contas de alto tráfego, utiliza filas assíncronas para suavização de picos e mecanismos de gravação sequencial, garantindo consistência de dados e estabilidade do sistema mesmo sob alta concorrência."
+          "title": "Proteção do Elo Central de Alta Concorrência",
+          "desc": "Usa suavização de picos por fila assíncrona e gravação sequencial para contabilização de contas hotspot, garantindo consistência de dados e estabilidade do sistema sob carga elevada."
         },
         "cloud_native": {
-          "title": "Escalabilidade Elástica Cloud Native",
-          "desc": "Arquitetura de microsserviços baseada em Kubernetes, suporta expansão horizontal em segundos. Lida facilmente com picos de tráfego de grandes promoções (como 11.11, Black Friday), atendendo aos requisitos de SLA de alta disponibilidade para clientes médios e grandes."
+          "title": "Escalabilidade Elástica Cloud-Native",
+          "desc": "Arquitetura de microsserviços baseada em Kubernetes com suporte a expansão horizontal em segundos para lidar com picos de tráfego em grandes eventos de vendas como Double 11 ou Black Friday."
         }
       }
     },
     "risk_control_section": {
-      "title": "Intelligent Risk & Fraud Control",
-      "subtitle": "Integrated Signifyd, Riskified, and Forter—self-configure or subscribe to platform-hosted chargeback coverage.",
-      "cta": "Explore Risk Control",
+      "title": "Controle Inteligente de Risco e Fraude",
+      "subtitle": "Integração com Signifyd, Riskified e Forter — configure você mesmo ou assine a cobertura de chargeback hospedada na plataforma.",
+      "cta": "Explorar Controle de Risco",
       "pipeline": {
         "rules": {
-          "title": "Rules Engine",
-          "desc": "Millisecond fraud prevention"
+          "title": "Motor de Regras",
+          "desc": "Prevenção de fraude em milissegundos"
         },
         "monitor": {
-          "title": "Event Monitor",
-          "desc": "Fraud events + expert review"
+          "title": "Monitor de Eventos",
+          "desc": "Eventos de fraude + revisão especializada"
         },
         "coverage": {
-          "title": "Insurance Partners",
+          "title": "Parceiros de Seguro",
           "desc": "Signifyd · Riskified · Forter"
         }
       }
     },
     "ecommerce_solution": {
-      "title": "Solução Exclusiva para Comércio Eletrônico Transfronteiriço: Ative e Receba, Sem Preocupações Globais",
-      "subtitle": "Suporta canais de moeda fiduciária e criptomoedas em paralelo – Configure hoje, receba pagamentos amanhã!",
+      "title": "Solução de E-commerce Transfronteiriço: Ative e Receba",
+      "subtitle": "Suporte dual-channel para Fiat + Crypto —— Configure hoje, receba amanhã!",
       "fiat": {
-        "title": "Recebimento em Moeda Fiduciária",
-        "desc": "Após abrir contas em canais principais como Stripe, PayPal, Alipay+, o comerciante vincula as credenciais da API no painel do FilixPay, ativando imediatamente métodos de pagamento como cartão de crédito, carteiras locais, etc."
+        "title": "Pagamentos Fiat",
+        "desc": "Após abrir contas em canais principais como Stripe, PayPal e Alipay+, os comerciantes vinculam as credenciais da API no backend do FilixPay para habilitar imediatamente cartões de crédito e carteiras locais."
       },
       "crypto": {
-        "title": "Recebimento em Criptomoedas",
-        "desc": "O comerciante se registra e completa o KYC em provedores de serviços de pagamento com criptomoedas parceiros como NowPayments, Coinbase Commerce, OKX Pay; obtém um endereço de recebimento exclusivo ou chave de API; configura com um clique no FilixPay para aceitar pagamentos em mais de 100 ativos digitais principais como BTC, ETH, USDT, USDC."
+        "title": "Pagamentos em Criptomoedas",
+        "desc": "Configure endereços de depósito TRON USDT no centro do comerciante e receba on-chain pelo gateway blockchain do FilixPay. Opcionalmente, conecte sua conta NowPayments para ativos digitais adicionais."
       },
-      "tagline": "Sem necessidade de desenvolvimento, sem posse de criptomoedas, sem construir sua própria carteira – Todos os fundos vão diretamente para sua conta na instituição de pagamento correspondente. O FilixPay é responsável apenas pela exibição unificada, roteamento e notificações.",
+      "tagline": "O FilixPay orquestra checkout, roteamento e notificações — você configura os canais upstream e, para USDT nativo, seus próprios endereços de depósito.",
       "processing": {
         "title": "O sistema processa automaticamente para você:",
         "items": [
-          "Liquidação de múltiplas moedas fiduciárias (USD/EUR/GBP/CNY, etc.)",
-          "Callbacks em tempo real para pagamentos com criptomoedas e sincronização de status",
-          "Painel de controle de transações unificado, notificações Webhook, reconciliação automática",
-          "Suporte para conversão automática de recebimentos em criptomoedas para stablecoins ou moeda fiduciária (executada pela instituição de pagamento)"
+          "Liquidação fiat multicurrency (USD/EUR/GBP/CNY, etc.)",
+          "Correspondência de depósitos TRON USDT e sincronização de status de pagamento",
+          "Painel unificado de transações, notificações Webhook e rastreamento de pedidos",
+          "Fluxo opcional de faturas NowPayments para ativos digitais adicionais"
         ]
       },
       "advantages": {
-        "title": "Por que escolher a solução de recebimento em criptomoedas do FilixPay?",
+        "title": "Por que escolher a solução de pagamento cripto do FilixPay?",
         "headers": {
           "advantage": "Vantagem",
           "description": "Descrição"
         },
         "items": [
           {
-            "label": "Conformidade e Segurança",
-            "value": "Os fundos são custodiados por provedores licenciados como NowPayments, em conformidade com a Regra de Viagem (Travel Rule) do FATF"
+            "label": "Trilho Nativo de USDT",
+            "value": "Coleta integrada de TRON USDT via gateway blockchain — não é apenas um redirecionamento de terceiros"
           },
           {
-            "label": "Ativação extremamente rápida",
-            "value": "Sem necessidade de integração técnica com nós de blockchain, configuração concluída em 10 minutos"
+            "label": "Carteiras Controladas pelo Comerciante",
+            "value": "Comerciantes de quarta parte vinculam seus próprios endereços de depósito; comerciantes da plataforma gerenciam cripto de subcomerciantes de forma centralizada"
           },
           {
-            "label": "Elimina o risco de chargeback",
-            "value": "Transações com criptomoedas são irreversíveis, eliminando completamente o risco de chargeback"
+            "label": "Sem Chargebacks de Cartão",
+            "value": "Transferências on-chain de USDT são finais após a confirmação"
           },
           {
-            "label": "Cobertura ampla",
-            "value": "Suporta os principais gateways de pagamento com criptomoedas globais, alcançando mais de 600 milhões de usuários Web3"
+            "label": "Checkout Unificado",
+            "value": "Canais cripto e fiat compartilham o mesmo modelo de pedido, webhook e painel do FilixPay"
           },
           {
-            "label": "Risco de posse zero",
-            "value": "Você pode optar por converter instantaneamente para moeda fiduciária, evitando a volatilidade de preços"
+            "label": "NowPayments Opcional",
+            "value": "Vá além do TRON USDT conectando suas próprias credenciais NowPayments quando necessário"
           }
         ]
       },
       "customers": {
-        "title": "Clientes Adequados",
+        "title": "Clientes-alvo",
         "items": [
-          "Vendedores de lojas independentes Shopify / WooCommerce",
-          "Comércio eletrônico Web3 (NFT, bens digitais, GameFi)",
-          "Marcas DTC (Direct-to-Consumer) transfronteiriças, SaaS, serviços de assinatura",
-          "Comerciantes eletrônicos tradicionais que desejam experimentar pagamentos com criptomoedas com baixo custo"
+          "Donos de lojas independentes Shopify / WooCommerce",
+          "E-commerce Web3 (NFTs, bens digitais, GameFi)",
+          "Marcas DTC transfronteiriças, SaaS e serviços de assinatura",
+          "Empresas tradicionais que desejam entrar em pagamentos cripto com baixo custo"
         ]
       },
-      "footer_tagline": "FilixPay – Não reinventamos a roda, apenas conectamos.",
-      "footer_sub": "Permitindo que você receba cada tipo de dinheiro ao redor do mundo da maneira mais conforme e simples."
+      "footer_tagline": "FilixPay —— Não reinvente a roda, apenas construa a conexão.",
+      "footer_sub": "Capacitando você a receber todo tipo de pagamento global da forma mais conforme e simples."
     },
     "core_capabilities_v2": {
-      "title": "Core Capabilities",
-      "subtitle": "Mature capability engine powering transaction cores, ledgers, and developer workspaces",
+      "title": "Capacidades Centrais",
+      "subtitle": "Motor de capacidades maduro alimentando núcleos de transação, ledgers e workspaces de desenvolvedores",
       "items": {
         "payment_infrastructure": {
-          "title": "Global Acquiring API",
-          "desc": "Unified interface for credit cards, local payment channels, and digital currencies with currency rules."
+          "title": "API Global de Aquisição",
+          "desc": "Interface unificada para cartões de crédito, canais de pagamento locais e moedas digitais com regras de moeda."
         },
         "merchant_platform": {
-          "title": "Unified Merchant Control",
-          "desc": "Consolidated dashboard with isolated credentials, Webhook policies, and detailed reporting structures."
+          "title": "Controle Unificado do Comerciante",
+          "desc": "Painel consolidado com credenciais isoladas, políticas de Webhook e estruturas detalhadas de relatórios."
         },
         "transaction_management": {
-          "title": "Transaction Core Engine",
-          "desc": "Enterprise-scale secure transaction processing protecting payment states and logs consistency."
+          "title": "Motor Central de Transações",
+          "desc": "Processamento seguro de transações em escala empresarial, protegendo a consistência de estados de pagamento e logs."
         },
         "settlement": {
-          "title": "Enterprise Ledgers & Settlements",
-          "desc": "Flexible settlements with custom rules, automated reconciliation, and platform ledger routing."
+          "title": "Ledgers e Liquidações Empresariais",
+          "desc": "Liquidações flexíveis com regras personalizadas, reconciliação automatizada e roteamento de ledger da plataforma."
         },
         "developer": {
-          "title": "Sandbox Test Environment",
-          "desc": "Staging sandbox simulation to test transaction events, callback operations, and webhook retries safely."
+          "title": "Ambiente de Teste Sandbox",
+          "desc": "Simulação em sandbox de staging para testar com segurança eventos de transação, operações de callback e retentativas de webhook."
         },
         "risk_control": {
-          "title": "Integrated Chargeback Insurance Partners",
-          "desc": "FilixPay natively integrates leading chargeback insurance and fraud-guarantee providers. Merchants choose how to consume coverage—bring your own provider contract or subscribe to platform-hosted service."
+          "title": "Parceiros Integrados de Seguro de Chargeback",
+          "desc": "O FilixPay integra nativamente provedores líderes de seguro de chargeback e garantia contra fraude. Os comerciantes escolhem como consumir a cobertura — traga seu próprio contrato de provedor ou assine o serviço hospedado na plataforma."
         },
         "multilingual": {
-          "title": "Global Multilingual Experience",
-          "desc": "Merchant portal, hosted checkout, and developer docs in multiple languages so cross-border teams operate in their preferred locale."
+          "title": "Experiência Multilíngue Global",
+          "desc": "Portal do comerciante, Hosted Checkout e documentação para desenvolvedores em vários idiomas, para que equipes transfronteiriças operem no idioma de sua preferência."
         }
       }
     },
     "merchant_center_section": {
-      "title": "Merchant Operations Center",
-      "subtitle": "Manage your payment business in one portal",
-      "cta_primary": "Explore Merchant Center",
-      "cta_secondary": "Enter Merchant Center",
+      "title": "Centro de Operações do Comerciante",
+      "subtitle": "Gerencie seu negócio de pagamentos em um único portal",
+      "cta_primary": "Explorar Centro do Comerciante",
+      "cta_secondary": "Entrar no Centro do Comerciante",
       "items": {
         "transactions": {
-          "title": "Transactions",
-          "desc": "Query and operate orders, refunds, and payment status."
+          "title": "Transações",
+          "desc": "Consulte e opere pedidos, reembolsos e status de pagamento."
         },
         "money": {
-          "title": "Money",
-          "desc": "Track balances, settlement bills, withdrawals, and fund movements connected to your payment activity."
+          "title": "Dinheiro",
+          "desc": "Acompanhe saldos, faturas de liquidação, saques e movimentações de fundos ligados à sua atividade de pagamento."
         },
         "reporting": {
-          "title": "Reporting",
-          "desc": "Operational reporting and reconciliation support."
+          "title": "Relatórios",
+          "desc": "Relatórios operacionais e suporte à reconciliação."
         },
         "customers": {
-          "title": "Customers",
-          "desc": "View and manage your customer information."
+          "title": "Clientes",
+          "desc": "Visualize e gerencie as informações dos seus clientes."
         },
         "risk": {
-          "title": "Risk Management",
-          "desc": "Full-chain fraud prevention, manual review, and eligible chargeback protection."
+          "title": "Gestão de Risco",
+          "desc": "Prevenção de fraude de ponta a ponta, revisão manual e proteção elegível contra chargeback."
         },
         "credit": {
-          "title": "Credit Center",
-          "desc": "Manage your credit limit information, including availability, usage, and payment terms."
+          "title": "Centro de Crédito",
+          "desc": "Gerencie as informações do seu limite de crédito, incluindo disponibilidade, uso e condições de pagamento."
         },
         "account": {
-          "title": "Account & Settings",
-          "desc": "Merchant profile, organization, security settings, and service plan."
+          "title": "Conta e Configurações",
+          "desc": "Perfil do comerciante, organização, configurações de segurança e plano de serviço."
         },
         "api": {
           "title": "API",
-          "desc": "Credentials, webhooks, and integration settings."
+          "desc": "Credenciais, webhooks e configurações de integração."
         },
         "settlement": {
-          "title": "Settlement",
-          "desc": "Balances, settlement cycles, and fund movements."
+          "title": "Liquidação",
+          "desc": "Saldos, ciclos de liquidação e movimentações de fundos."
         },
         "permissions": {
-          "title": "Team permissions",
-          "desc": "Members and access control."
+          "title": "Permissões da equipe",
+          "desc": "Membros e controle de acesso."
         }
       }
     },
     "solutions_section": {
-      "title": "Solutions by Business Type",
-      "subtitle": "Optimize conversion, settlement speed, and compliance rules according to your platform architecture",
+      "title": "Soluções por Tipo de Negócio",
+      "subtitle": "Otimize conversão, velocidade de liquidação e regras de conformidade de acordo com a arquitetura da sua plataforma",
       "items": {
         "cross_border": {
-          "title": "Cross-Border DTC",
-          "slogan": "Local payments globally, zero settlement delays",
-          "tag": "Retail & SaaS",
-          "desc": "Optimize checkout conversions with international card schemes and local wallet methods."
+          "title": "DTC Transfronteiriço",
+          "slogan": "Pagamentos locais globalmente, zero atrasos de liquidação",
+          "tag": "Varejo e SaaS",
+          "desc": "Otimize conversões no checkout com bandeiras internacionais de cartão e métodos de carteira local."
         },
         "platform": {
-          "title": "Platform Profits Split",
-          "slogan": "Automate marketplace disbursements, bypass escrow compliance",
-          "tag": "SaaS Platform",
-          "desc": "Distribute funds automatically to platforms and merchants. Sub-tenant ledger tracking with absolute isolation."
+          "title": "Divisão de Lucros da Plataforma",
+          "slogan": "Automatize desembolsos de marketplace, evite conformidade de escrow",
+          "tag": "Plataforma SaaS",
+          "desc": "Distribua fundos automaticamente para plataformas e comerciantes. Rastreamento de ledger de subinquilinos com isolamento absoluto."
         },
         "enterprise": {
-          "title": "Enterprise payment governance",
-          "slogan": "Central administration, localized financial clearing",
-          "tag": "Corporate Use",
-          "desc": "Multi-tenant deployment structure. Robust RBAC authentication backed by Keycloak to satisfy regulatory audits."
+          "title": "Governança de pagamentos empresariais",
+          "slogan": "Administração central, liquidação financeira localizada",
+          "tag": "Uso Corporativo",
+          "desc": "Estrutura de implantação multi-inquilino. Autenticação RBAC robusta com suporte do Keycloak para atender a auditorias regulatórias."
         },
         "infrastructure_partner": {
-          "title": "Infrastructure Partner",
-          "slogan": "Embedded transaction routing for SaaS platforms",
-          "tag": "SaaS & ERP",
-          "desc": "White-label gateways, multi-merchant ledger wallets, and flexible split mapping for enterprise SaaS."
+          "title": "Parceiro de Infraestrutura",
+          "slogan": "Roteamento de transações embarcado para plataformas SaaS",
+          "tag": "SaaS e ERP",
+          "desc": "Gateways white-label, carteiras de ledger multi-comerciante e mapeamento flexível de splits para SaaS empresarial."
         }
       }
     },
     "enterprise_section": {
-      "title": "Enterprise capability",
-      "subtitle": "Organization-layer governance, separate from merchant operations",
-      "cta": "Explore For Enterprise",
+      "title": "Capacidade empresarial",
+      "subtitle": "Governança na camada da organização, separada das operações do comerciante",
+      "cta": "Explorar Para Empresas",
       "items": {
         "multi_org": {
-          "title": "Multi-organization",
-          "desc": "Group multi-org and multi-merchant management."
+          "title": "Multi-organização",
+          "desc": "Gestão multi-org e multi-comerciante de grupo."
         },
         "multi_merchant": {
-          "title": "Multi-Merchant Management",
-          "desc": "Coordinate payment operations across subsidiaries, business units, and project teams under unified governance."
+          "title": "Gestão Multi-Comerciante",
+          "desc": "Coordene operações de pagamento entre subsidiárias, unidades de negócio e equipes de projeto sob governança unificada."
         },
         "rbac": {
           "title": "RBAC",
-          "desc": "Member governance and role-based access."
+          "desc": "Governança de membros e acesso baseado em funções."
         },
         "isolation": {
-          "title": "Enterprise isolation",
-          "desc": "Scoped credentials and authorization boundaries."
+          "title": "Isolamento empresarial",
+          "desc": "Credenciais com escopo e limites de autorização."
         },
         "private": {
-          "title": "Private deployment",
-          "desc": "Supports private deployment and dedicated environments."
+          "title": "Implantação privada",
+          "desc": "Suporta implantação privada e ambientes dedicados."
         }
       }
     },
     "developer_section": {
-      "title": "Developer platform",
-      "subtitle": "Build payments with APIs",
-      "cta": "Go to Developers",
+      "title": "Plataforma para desenvolvedores",
+      "subtitle": "Construa pagamentos com APIs",
+      "cta": "Ir para Desenvolvedores",
       "items": {
         "api": {
           "title": "API",
-          "desc": "Unified payment and transaction interfaces."
+          "desc": "Interfaces unificadas de pagamento e transação."
         },
         "sdk": {
           "title": "SDK",
-          "desc": "Faster integration kits."
+          "desc": "Kits de integração mais rápidos."
         },
         "sandbox": {
           "title": "Sandbox",
-          "desc": "Safe testing and validation."
+          "desc": "Testes e validação seguros."
         },
         "webhooks": {
           "title": "Webhooks",
-          "desc": "Event delivery and status sync."
+          "desc": "Entrega de eventos e sincronização de status."
         }
       }
     },
     "security_section": {
-      "title": "Security & compliance",
-      "subtitle": "Trust foundations for enterprise buyers",
+      "title": "Segurança e conformidade",
+      "subtitle": "Fundamentos de confiança para compradores empresariais",
       "items": {
         "compliance": {
-          "title": "Compliance-minded",
-          "desc": "Security and compliance practices for enterprise payments."
+          "title": "Orientado à conformidade",
+          "desc": "Práticas de segurança e conformidade para pagamentos empresariais."
         },
         "controls": {
-          "title": "Access controls",
-          "desc": "Permissions, credentials, and operational boundaries."
+          "title": "Controles de acesso",
+          "desc": "Permissões, credenciais e limites operacionais."
         },
         "audit": {
-          "title": "Auditable",
-          "desc": "Traceable actions and payment trails."
+          "title": "Auditável",
+          "desc": "Ações rastreáveis e trilhas de pagamento."
         }
       }
     },
     "final_cta": {
-      "title": "Start building payment operations",
-      "subtitle": "Get started, contact sales, or explore developer docs",
-      "start": "Get started",
-      "docs": "Developer docs",
-      "contact": "Contact sales"
+      "title": "Comece a construir operações de pagamento",
+      "subtitle": "Comece agora, fale com vendas ou explore a documentação para desenvolvedores",
+      "start": "Começar",
+      "docs": "Documentação para desenvolvedores",
+      "contact": "Falar com vendas"
     }
   },
   "Orders": {
