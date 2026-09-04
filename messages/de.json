@@ -160,107 +160,107 @@
     }
   },
   "CoverageInsurance": {
-    "title": "Coverage Insurance",
-    "subtitle": "Subscribe to platform-hosted chargeback coverage for new orders.",
-    "product_title": "Platform Chargeback Coverage",
-    "product_description": "Filix Pay provides integrated dispute coverage through our platform insurance partners.",
-    "unavailable_title": "Service not available yet",
-    "unavailable_body": "Platform coverage is being prepared. Please check back later or contact support.",
-    "agreement_body": "By subscribing, you authorize Filix Pay to apply platform-hosted chargeback coverage to eligible new orders under the current service agreement.",
-    "agreement_checkbox": "I have read and agree to the coverage service agreement (v1).",
-    "unsubscribed_banner": "Coverage is turned off for new orders. Existing claims will continue to be processed.",
+    "title": "Absicherungsversicherung",
+    "subtitle": "Abonnieren Sie die plattformgehostete Chargeback-Absicherung für neue Bestellungen.",
+    "product_title": "Plattform-Chargeback-Absicherung",
+    "product_description": "Filix Pay bietet integrierte Streitfallabsicherung über unsere Plattform-Versicherungspartner.",
+    "unavailable_title": "Dienst noch nicht verfügbar",
+    "unavailable_body": "Die Plattformabsicherung wird vorbereitet. Bitte schauen Sie später erneut vorbei oder kontaktieren Sie den Support.",
+    "agreement_body": "Mit dem Abonnement autorisieren Sie Filix Pay, plattformgehostete Chargeback-Absicherung auf berechtigte neue Bestellungen gemäß der aktuellen Servicevereinbarung anzuwenden.",
+    "agreement_checkbox": "Ich habe die Absicherungs-Servicevereinbarung (v1) gelesen und stimme zu.",
+    "unsubscribed_banner": "Die Absicherung ist für neue Bestellungen deaktiviert. Bestehende Ansprüche werden weiterhin bearbeitet.",
     "status": {
-      "subscribed": "Active",
-      "not_subscribed": "Not subscribed",
-      "unsubscribed": "Unsubscribed"
+      "subscribed": "Aktiv",
+      "not_subscribed": "Nicht abonniert",
+      "unsubscribed": "Abonnement beendet"
     },
     "fields": {
-      "provider": "Provider",
-      "subscribed_at": "Subscribed at",
-      "agreement_version": "Agreement version"
+      "provider": "Anbieter",
+      "subscribed_at": "Abonniert am",
+      "agreement_version": "Vereinbarungsversion"
     },
     "actions": {
-      "subscribe": "Activate coverage",
-      "unsubscribe": "Turn off coverage"
+      "subscribe": "Absicherung aktivieren",
+      "unsubscribe": "Absicherung deaktivieren"
     },
     "unsubscribe_modal": {
-      "title": "Turn off coverage?",
-      "warning": "After you turn off coverage, new orders will no longer be covered by platform chargeback insurance. Existing claims will continue to be processed without interruption.",
-      "confirm": "Turn off",
-      "cancel": "Cancel"
+      "title": "Absicherung deaktivieren?",
+      "warning": "Nach der Deaktivierung sind neue Bestellungen nicht mehr durch die Plattform-Chargeback-Versicherung abgesichert. Bestehende Ansprüche werden ohne Unterbrechung weiterbearbeitet.",
+      "confirm": "Deaktivieren",
+      "cancel": "Abbrechen"
     },
     "messages": {
-      "load_failed": "Failed to load coverage subscription",
-      "subscribed": "Coverage activated",
-      "subscribe_failed": "Failed to activate coverage",
-      "unsubscribed": "Coverage turned off",
-      "unsubscribe_failed": "Failed to turn off coverage"
+      "load_failed": "Absicherungsabonnement konnte nicht geladen werden",
+      "subscribed": "Absicherung aktiviert",
+      "subscribe_failed": "Absicherung konnte nicht aktiviert werden",
+      "unsubscribed": "Absicherung deaktiviert",
+      "unsubscribe_failed": "Absicherung konnte nicht deaktiviert werden"
     }
   },
   "CoverageConfig": {
-    "title": "Chargeback Coverage",
-    "subtitle": "Configure dispute coverage providers for new chargeback cases.",
-    "empty": "No coverage configurations yet.",
-    "provider_switch_warning": "Switching provider only affects new chargeback cases.",
-    "active_banner": "Active provider: {provider} ({id})",
-    "no_active_banner": "No active coverage provider. New disputes will skip coverage claims.",
-    "platform_hosted_banner": "This configuration powers platform-hosted coverage for subscribed Platform settlement merchants.",
-    "maintenance_banner": "Maintenance mode: new assessments are paused; in-flight claim webhooks continue.",
+    "title": "Chargeback-Absicherung",
+    "subtitle": "Konfigurieren Sie Streitfall-Absicherungsanbieter für neue Chargeback-Fälle.",
+    "empty": "Noch keine Absicherungskonfigurationen.",
+    "provider_switch_warning": "Ein Anbieterwechsel betrifft nur neue Chargeback-Fälle.",
+    "active_banner": "Aktiver Anbieter: {provider} ({id})",
+    "no_active_banner": "Kein aktiver Absicherungsanbieter. Neue Streitfälle überspringen Absicherungsansprüche.",
+    "platform_hosted_banner": "Diese Konfiguration betreibt die plattformgehostete Absicherung für abonnierte Plattform-Abrechnungshändler.",
+    "maintenance_banner": "Wartungsmodus: Neue Bewertungen sind pausiert; laufende Anspruchs-Webhooks werden fortgesetzt.",
     "columns": {
-      "provider": "Provider",
+      "provider": "Anbieter",
       "status": "Status",
       "version": "Version",
-      "updated_at": "Updated"
+      "updated_at": "Aktualisiert"
     },
     "status": {
-      "active": "Active",
-      "disabled": "Disabled",
-      "maintenance": "Maintenance"
+      "active": "Aktiv",
+      "disabled": "Deaktiviert",
+      "maintenance": "Wartung"
     },
     "fields": {
-      "provider": "Provider",
-      "provider_placeholder": "Select a provider"
+      "provider": "Anbieter",
+      "provider_placeholder": "Anbieter auswählen"
     },
     "config_fields": {
-      "teamId": "Team ID",
-      "shopDomain": "Shop Domain",
-      "environment": "Environment",
-      "coverageLimit": "Coverage Limit",
-      "currency": "Currency",
-      "mode": "Mode"
+      "teamId": "Team-ID",
+      "shopDomain": "Shop-Domain",
+      "environment": "Umgebung",
+      "coverageLimit": "Absicherungsgrenze",
+      "currency": "Währung",
+      "mode": "Modus"
     },
     "secret_fields": {
-      "apiKey": "API Key",
-      "webhookSecret": "Webhook Secret"
+      "apiKey": "API-Schlüssel",
+      "webhookSecret": "Webhook-Geheimnis"
     },
-    "secret_keep_hint": "Current value: {masked}. Leave blank to keep unchanged.",
-    "secret_placeholder_edit": "Leave blank to keep current value",
+    "secret_keep_hint": "Aktueller Wert: {masked}. Leer lassen, um unverändert zu belassen.",
+    "secret_placeholder_edit": "Leer lassen, um aktuellen Wert zu behalten",
     "validation": {
-      "provider_required": "Please select a provider",
-      "field_required": "{field} is required"
+      "provider_required": "Bitte wählen Sie einen Anbieter",
+      "field_required": "{field} ist erforderlich"
     },
     "actions": {
-      "create": "Add Configuration",
-      "edit": "Edit",
-      "activate": "Activate",
-      "deactivate": "Deactivate",
-      "enter_maintenance": "Enter maintenance",
-      "resume": "Resume service",
-      "test_connection": "Test Connection"
+      "create": "Konfiguration hinzufügen",
+      "edit": "Bearbeiten",
+      "activate": "Aktivieren",
+      "deactivate": "Deaktivieren",
+      "enter_maintenance": "Wartung starten",
+      "resume": "Dienst fortsetzen",
+      "test_connection": "Verbindung testen"
     },
     "modal": {
-      "create_title": "Add Coverage Configuration",
-      "edit_title": "Edit Coverage Configuration"
+      "create_title": "Absicherungskonfiguration hinzufügen",
+      "edit_title": "Absicherungskonfiguration bearbeiten"
     },
     "messages": {
-      "created": "Coverage configuration created",
-      "updated": "Coverage configuration updated",
-      "activated": "Coverage configuration activated",
-      "deactivated": "Coverage configuration deactivated",
-      "maintenance_entered": "Coverage entered maintenance mode",
-      "resumed": "Coverage resumed",
-      "test_ok": "Connection OK ({latencyMs} ms, {providerVersion})",
-      "test_failed": "Connection test failed: {status}"
+      "created": "Absicherungskonfiguration erstellt",
+      "updated": "Absicherungskonfiguration aktualisiert",
+      "activated": "Absicherungskonfiguration aktiviert",
+      "deactivated": "Absicherungskonfiguration deaktiviert",
+      "maintenance_entered": "Absicherung im Wartungsmodus",
+      "resumed": "Absicherung fortgesetzt",
+      "test_ok": "Verbindung OK ({latencyMs} ms, {providerVersion})",
+      "test_failed": "Verbindungstest fehlgeschlagen: {status}"
     }
   },
   "ServicePlan": {
@@ -1618,656 +1618,656 @@
     }
   },
   "Disputes": {
-    "title": "Disputes & Chargebacks",
-    "subtitle": "Monitor chargeback cases, response deadlines, and required merchant actions.",
-    "empty": "No dispute cases found.",
-    "back_to_list": "Back to disputes",
+    "title": "Streitfälle & Chargebacks",
+    "subtitle": "Überwachen Sie Chargeback-Fälle, Antwortfristen und erforderliche Händlermaßnahmen.",
+    "empty": "Keine Streitfälle gefunden.",
+    "back_to_list": "Zurück zu den Streitfällen",
     "kpis": {
-      "action_required": "Cases Require Action",
-      "due_soon": "Due Soon (<3 days)",
-      "overdue": "Overdue"
+      "action_required": "Fälle mit Handlungsbedarf",
+      "due_soon": "Bald fällig (<3 Tage)",
+      "overdue": "Überfällig"
     },
     "headers": {
-      "case_number": "Case No.",
-      "order_id": "Order ID",
-      "channel": "Channel",
-      "created_at": "Created At",
-      "amount": "Amount",
-      "reason": "Reason",
-      "priority": "Priority",
+      "case_number": "Fallnr.",
+      "order_id": "Bestell-ID",
+      "channel": "Kanal",
+      "created_at": "Erstellt am",
+      "amount": "Betrag",
+      "reason": "Grund",
+      "priority": "Priorität",
       "status": "Status",
-      "response_due": "Response Due"
+      "response_due": "Antwort fällig"
     },
     "filters": {
-      "keyword": "Case No. / Order ID",
+      "keyword": "Fallnr. / Bestell-ID",
       "status": "Status",
-      "channel": "Channel",
-      "all_status": "All statuses"
+      "channel": "Kanal",
+      "all_status": "Alle Status"
     },
-    "table_total": "Total {count}",
+    "table_total": "Gesamt {count}",
     "priority": {
-      "CRITICAL": "Critical",
-      "HIGH": "High",
-      "MEDIUM": "Medium",
-      "LOW": "Low"
+      "CRITICAL": "Kritisch",
+      "HIGH": "Hoch",
+      "MEDIUM": "Mittel",
+      "LOW": "Niedrig"
     },
     "status": {
-      "DRAFT": "Draft",
-      "SUBMITTED": "Submitted",
-      "UNDER_REVIEW": "Under Review",
-      "WON": "Won",
-      "LOST": "Lost",
-      "ACCEPTED": "Accepted"
+      "DRAFT": "Entwurf",
+      "SUBMITTED": "Eingereicht",
+      "UNDER_REVIEW": "In Prüfung",
+      "WON": "Gewonnen",
+      "LOST": "Verloren",
+      "ACCEPTED": "Akzeptiert"
     },
     "evidence_category": {
-      "RECEIPT": "Receipt",
-      "SHIPPING": "Shipping",
-      "COMMUNICATION": "Communication",
-      "OTHER": "Other"
+      "RECEIPT": "Beleg",
+      "SHIPPING": "Versand",
+      "COMMUNICATION": "Kommunikation",
+      "OTHER": "Sonstiges"
     },
     "action_center": {
-      "title": "Merchant Action Center",
-      "locked": "This case is locked. Evidence can no longer be edited.",
-      "upload_hint": "Click or drag files to upload evidence",
-      "file": "File",
-      "category": "Category",
-      "upload_types": "Supports PDF, JPG, PNG, WEBP. Max {size}MB per file.",
-      "file_size": "Size",
-      "file_too_large": "File too large. Max {size}MB per file."
+      "title": "Händler-Aktionscenter",
+      "locked": "Dieser Fall ist gesperrt. Nachweise können nicht mehr bearbeitet werden.",
+      "upload_hint": "Klicken oder Dateien ziehen, um Nachweise hochzuladen",
+      "file": "Datei",
+      "category": "Kategorie",
+      "upload_types": "Unterstützt PDF, JPG, PNG, WEBP. Max. {size} MB pro Datei.",
+      "file_size": "Größe",
+      "file_too_large": "Datei zu groß. Max. {size} MB pro Datei."
     },
     "actions": {
-      "save_draft": "Save Draft",
-      "submit": "Submit Evidence",
-      "accept_liability": "Accept Liability",
-      "accept_liability_confirm_title": "Accept chargeback liability?",
-      "accept_liability_confirm_body": "You will not be able to submit evidence after accepting liability.",
-      "submit_confirm_title": "Submit evidence?",
-      "submit_confirm_body": "Submission cannot be undone. Evidence will be sent to the payment channel for review."
+      "save_draft": "Entwurf speichern",
+      "submit": "Nachweise einreichen",
+      "accept_liability": "Haftung akzeptieren",
+      "accept_liability_confirm_title": "Chargeback-Haftung akzeptieren?",
+      "accept_liability_confirm_body": "Nach Annahme der Haftung können Sie keine Nachweise mehr einreichen.",
+      "submit_confirm_title": "Nachweise einreichen?",
+      "submit_confirm_body": "Die Einreichung kann nicht rückgängig gemacht werden. Die Nachweise werden zur Prüfung an den Zahlungskanal gesendet."
     },
     "messages": {
-      "draft_saved": "Evidence draft saved",
-      "submitted": "Evidence submitted for review",
-      "liability_accepted": "Liability accepted",
-      "evidence_uploaded": "Evidence file uploaded",
-      "evidence_required": "Please upload at least one evidence file"
+      "draft_saved": "Nachweisentwurf gespeichert",
+      "submitted": "Nachweise zur Prüfung eingereicht",
+      "liability_accepted": "Haftung akzeptiert",
+      "evidence_uploaded": "Nachweisdatei hochgeladen",
+      "evidence_required": "Bitte laden Sie mindestens eine Nachweisdatei hoch"
     },
     "reason_codes": {
-      "fraudulent": "Fraudulent",
-      "duplicate": "Duplicate charge",
-      "product_not_received": "Product not received",
-      "unrecognized": "Unrecognized charge",
-      "credit_not_processed": "Credit not processed",
-      "general": "General dispute",
-      "incorrect_account_details": "Incorrect account details",
-      "insufficient_funds": "Insufficient funds",
-      "bank_cannot_process": "Bank cannot process",
-      "debit_not_authorized": "Debit not authorized",
-      "customer_initiated": "Customer initiated",
-      "merchandise_or_service_not_received": "Merchandise or service not received",
-      "unauthorized": "Unauthorized",
-      "merchandise_or_service_not_as_described": "Merchandise or service not as described",
-      "cancelled_recurring_billing": "Cancelled recurring billing",
-      "non_receipt": "Non-receipt",
-      "not_as_described": "Not as described",
-      "duplicate_transaction": "Duplicate transaction",
-      "credit_not_received": "Credit not received"
+      "fraudulent": "Betrügerisch",
+      "duplicate": "Doppelte Belastung",
+      "product_not_received": "Produkt nicht erhalten",
+      "unrecognized": "Unbekannte Belastung",
+      "credit_not_processed": "Gutschrift nicht verarbeitet",
+      "general": "Allgemeiner Streitfall",
+      "incorrect_account_details": "Falsche Kontodaten",
+      "insufficient_funds": "Unzureichende Deckung",
+      "bank_cannot_process": "Bank kann nicht verarbeiten",
+      "debit_not_authorized": "Abbuchung nicht autorisiert",
+      "customer_initiated": "Vom Kunden initiiert",
+      "merchandise_or_service_not_received": "Ware oder Dienstleistung nicht erhalten",
+      "unauthorized": "Nicht autorisiert",
+      "merchandise_or_service_not_as_described": "Ware oder Dienstleistung nicht wie beschrieben",
+      "cancelled_recurring_billing": "Wiederkehrende Abrechnung gekündigt",
+      "non_receipt": "Nicht erhalten",
+      "not_as_described": "Nicht wie beschrieben",
+      "duplicate_transaction": "Doppelte Transaktion",
+      "credit_not_received": "Gutschrift nicht erhalten"
     },
     "timeline": {
-      "title": "Case Timeline",
-      "actor": "By {actor}",
+      "title": "Fallverlauf",
+      "actor": "Von {actor}",
       "actors": {
-        "system": "System auto-trigger",
-        "merchant": "Merchant action"
+        "system": "Systemautomatik",
+        "merchant": "Händleraktion"
       },
       "events": {
-        "CASE_OPENED": "Dispute opened",
-        "EVIDENCE_DRAFT_SAVED": "Evidence draft saved",
-        "EVIDENCE_SUBMITTED": "Evidence submitted",
-        "REVIEW_STARTED": "Under bank review",
-        "CHANNEL_STATUS_CHANGED": "Channel status updated",
-        "CASE_RESOLVED": "Dispute resolved",
-        "LIABILITY_ACCEPTED": "Liability accepted",
-        "EVIDENCE_FORWARDED_TO_CHANNEL": "Evidence forwarded to channel",
-        "CHANNEL_EVIDENCE_SUBMIT_FAILED": "Channel evidence submit failed"
+        "CASE_OPENED": "Streitfall eröffnet",
+        "EVIDENCE_DRAFT_SAVED": "Nachweisentwurf gespeichert",
+        "EVIDENCE_SUBMITTED": "Nachweise eingereicht",
+        "REVIEW_STARTED": "In Bankprüfung",
+        "CHANNEL_STATUS_CHANGED": "Kanalstatus aktualisiert",
+        "CASE_RESOLVED": "Streitfall gelöst",
+        "LIABILITY_ACCEPTED": "Haftung akzeptiert",
+        "EVIDENCE_FORWARDED_TO_CHANNEL": "Nachweise an Kanal weitergeleitet",
+        "CHANNEL_EVIDENCE_SUBMIT_FAILED": "Einreichung der Nachweise beim Kanal fehlgeschlagen"
       },
       "titles": {
-        "dispute_opened": "Dispute opened",
-        "dispute_resolved": "Dispute resolved",
-        "evidence_draft_saved": "Evidence draft saved",
-        "evidence_submitted": "Evidence submitted",
-        "under_bank_review": "Under bank review",
-        "liability_accepted": "Liability accepted",
-        "channel_status_updated": "Channel status updated",
-        "evidence_forwarded_to_channel": "Evidence forwarded to channel",
-        "channel_evidence_submit_failed": "Channel evidence submit failed"
+        "dispute_opened": "Streitfall eröffnet",
+        "dispute_resolved": "Streitfall gelöst",
+        "evidence_draft_saved": "Nachweisentwurf gespeichert",
+        "evidence_submitted": "Nachweise eingereicht",
+        "under_bank_review": "In Bankprüfung",
+        "liability_accepted": "Haftung akzeptiert",
+        "channel_status_updated": "Kanalstatus aktualisiert",
+        "evidence_forwarded_to_channel": "Nachweise an Kanal weitergeleitet",
+        "channel_evidence_submit_failed": "Einreichung der Nachweise beim Kanal fehlgeschlagen"
       },
       "descriptions": {
-        "charge_dispute_created": "Stripe: dispute created",
-        "charge_dispute_updated": "Stripe: dispute updated",
-        "charge_dispute_closed": "Stripe: dispute closed",
-        "charge_dispute_funds_withdrawn": "Stripe: dispute funds withdrawn",
-        "charge_dispute_funds_reinstated": "Stripe: dispute funds reinstated",
-        "customer_dispute_created": "PayPal: dispute created",
-        "customer_dispute_updated": "PayPal: dispute updated",
-        "customer_dispute_resolved": "PayPal: dispute resolved",
-        "submitted_files_to_channel": "Submitted {count} file(s) to {channel}",
-        "files_attached": "{count} file(s) attached",
+        "charge_dispute_created": "Stripe: Streitfall erstellt",
+        "charge_dispute_updated": "Stripe: Streitfall aktualisiert",
+        "charge_dispute_closed": "Stripe: Streitfall geschlossen",
+        "charge_dispute_funds_withdrawn": "Stripe: Streitfallmittel abgezogen",
+        "charge_dispute_funds_reinstated": "Stripe: Streitfallmittel zurückerstattet",
+        "customer_dispute_created": "PayPal: Streitfall erstellt",
+        "customer_dispute_updated": "PayPal: Streitfall aktualisiert",
+        "customer_dispute_resolved": "PayPal: Streitfall gelöst",
+        "submitted_files_to_channel": "{count} Datei(en) an {channel} übermittelt",
+        "files_attached": "{count} Datei(en) angehängt",
         "channel_status_transition": "{oldStatus} → {newStatus}",
-        "case_locked_for_review": "Case locked for review",
-        "merchant_accepted_chargeback_liability": "Merchant accepted chargeback liability"
+        "case_locked_for_review": "Fall zur Prüfung gesperrt",
+        "merchant_accepted_chargeback_liability": "Händler hat Chargeback-Haftung akzeptiert"
       },
       "channel_statuses": {
-        "needs_response": "Needs response",
-        "under_review": "Under review",
-        "won": "Won",
-        "lost": "Lost",
-        "charge_refunded": "Charge refunded",
-        "warning_needs_response": "Warning needs response",
-        "warning_under_review": "Warning under review",
-        "warning_closed": "Warning closed"
+        "needs_response": "Antwort erforderlich",
+        "under_review": "In Prüfung",
+        "won": "Gewonnen",
+        "lost": "Verloren",
+        "charge_refunded": "Belastung erstattet",
+        "warning_needs_response": "Warnung – Antwort erforderlich",
+        "warning_under_review": "Warnung – in Prüfung",
+        "warning_closed": "Warnung geschlossen"
       },
       "resolutions": {
-        "MERCHANT_WON": "Merchant won",
-        "BUYER_WON": "Buyer won",
-        "MERCHANT_ACCEPTED": "Merchant accepted",
-        "PARTIAL": "Partial win"
+        "MERCHANT_WON": "Händler gewonnen",
+        "BUYER_WON": "Käufer gewonnen",
+        "MERCHANT_ACCEPTED": "Händler akzeptiert",
+        "PARTIAL": "Teilweise gewonnen"
       }
     },
     "detail": {
-      "title": "Dispute Case",
-      "reason_code": "Reason Code",
-      "not_found": "Dispute case not found."
+      "title": "Streitfall",
+      "reason_code": "Grundcode",
+      "not_found": "Streitfall nicht gefunden."
     },
     "coverage_assessment": {
-      "title": "Coverage Assessment",
+      "title": "Absicherungsbewertung",
       "headers": {
-        "status": "Coverage Status",
-        "provider": "Provider",
-        "stage": "Evaluation Stage",
-        "limit": "Coverage Limit",
-        "reference": "Reference",
-        "assessment_id": "Assessment ID"
+        "status": "Absicherungsstatus",
+        "provider": "Anbieter",
+        "stage": "Bewertungsstufe",
+        "limit": "Absicherungsgrenze",
+        "reference": "Referenz",
+        "assessment_id": "Bewertungs-ID"
       },
       "status": {
-        "COVERED": "Covered",
-        "NOT_COVERED": "Not Covered",
-        "PARTIAL": "Partially Covered"
+        "COVERED": "Abgesichert",
+        "NOT_COVERED": "Nicht abgesichert",
+        "PARTIAL": "Teilweise abgesichert"
       },
       "stage": {
-        "PRE_AUTH": "Pre-auth",
-        "POST_AUTH": "Post-auth",
-        "MANUAL": "Manual",
-        "ASYNC_UPDATE": "Async update"
+        "PRE_AUTH": "Vor Autorisierung",
+        "POST_AUTH": "Nach Autorisierung",
+        "MANUAL": "Manuell",
+        "ASYNC_UPDATE": "Asynchrone Aktualisierung"
       },
       "timeline": {
-        "title": "Assessment Timeline"
+        "title": "Bewertungsverlauf"
       }
     },
     "coverage": {
-      "title": "Chargeback Protection",
+      "title": "Chargeback-Schutz",
       "headers": {
-        "status": "Claim Status",
-        "provider": "Provider",
-        "amount": "Claim Amount",
-        "provider_claim_id": "Provider Claim ID"
+        "status": "Anspruchsstatus",
+        "provider": "Anbieter",
+        "amount": "Anspruchsbetrag",
+        "provider_claim_id": "Anbieter-Anspruchs-ID"
       },
       "status": {
-        "CREATED": "Created",
-        "UNDER_REVIEW": "Under Review",
-        "APPROVED": "Approved",
-        "REJECTED": "Declined",
-        "PAID": "Paid",
-        "CLOSED": "Closed"
+        "CREATED": "Erstellt",
+        "UNDER_REVIEW": "In Prüfung",
+        "APPROVED": "Genehmigt",
+        "REJECTED": "Abgelehnt",
+        "PAID": "Ausgezahlt",
+        "CLOSED": "Geschlossen"
       },
       "event_type": {
-        "CREATED": "Claim created",
-        "SUBMITTED": "Submitted to provider",
-        "UNDER_REVIEW": "Under review",
-        "APPROVED": "Approved",
-        "REJECTED": "Declined",
-        "PAID": "Paid",
-        "CLOSED": "Closed"
+        "CREATED": "Anspruch erstellt",
+        "SUBMITTED": "An Anbieter übermittelt",
+        "UNDER_REVIEW": "In Prüfung",
+        "APPROVED": "Genehmigt",
+        "REJECTED": "Abgelehnt",
+        "PAID": "Ausgezahlt",
+        "CLOSED": "Geschlossen"
       },
       "timeline": {
-        "title": "Coverage Timeline"
+        "title": "Absicherungsverlauf"
       }
     },
     "response_due": {
-      "overdue": "⚠️ Overdue",
-      "hours_left": "⚠️ {hours}h left",
-      "days_left": "{days} days left"
+      "overdue": "⚠️ Überfällig",
+      "hours_left": "⚠️ {hours} Std. verbleibend",
+      "days_left": "{days} Tage verbleibend"
     }
   },
   "Support": {
-    "entry_label": "Support Center",
-    "entry_label_with_unread": "Support Center, {count} new replies",
-    "entry_collapse": "Minimize support entry",
-    "entry_expand": "Expand support entry",
+    "entry_label": "Support-Center",
+    "entry_label_with_unread": "Support-Center, {count} neue Antworten",
+    "entry_collapse": "Support-Einstieg minimieren",
+    "entry_expand": "Support-Einstieg erweitern",
     "title": "Support",
-    "create_title": "Ask a question",
-    "new_question": "New question",
-    "back_to_list": "Back to list",
-    "refresh": "Refresh",
-    "question_label": "Question",
-    "question_placeholder": "Describe your issue…",
-    "submit_question": "Submit",
-    "create_success": "Question submitted",
+    "create_title": "Frage stellen",
+    "new_question": "Neue Frage",
+    "back_to_list": "Zurück zur Liste",
+    "refresh": "Aktualisieren",
+    "question_label": "Frage",
+    "question_placeholder": "Beschreiben Sie Ihr Anliegen…",
+    "submit_question": "Absenden",
+    "create_success": "Frage eingereicht",
     "ticket_title": "Ticket {number}",
-    "subject_label": "Subject: ",
-    "view_detail": "View details",
-    "answered_hint": "This ticket has been answered. To ask a follow-up, ",
-    "create_new_ticket": "create a new ticket",
+    "subject_label": "Betreff: ",
+    "view_detail": "Details anzeigen",
+    "answered_hint": "Dieses Ticket wurde beantwortet. Für eine Rückfrage ",
+    "create_new_ticket": "ein neues Ticket erstellen",
     "status": {
-      "open": "Open",
-      "answered": "Answered"
+      "open": "Offen",
+      "answered": "Beantwortet"
     },
     "sender": {
-      "merchant": "Me",
+      "merchant": "Ich",
       "operator": "Support"
     },
     "empty": {
-      "list": "No support conversations yet",
-      "messages": "No messages yet"
+      "list": "Noch keine Support-Gespräche",
+      "messages": "Noch keine Nachrichten"
     },
     "errors": {
-      "load_list": "Failed to load conversations",
-      "load_detail": "Failed to load conversation",
-      "create": "Failed to submit question",
-      "blank_content": "Please enter your question"
+      "load_list": "Gespräche konnten nicht geladen werden",
+      "load_detail": "Gespräch konnte nicht geladen werden",
+      "create": "Frage konnte nicht eingereicht werden",
+      "blank_content": "Bitte geben Sie Ihre Frage ein"
     }
   },
   "Notifications": {
-    "title": "Notifications & Tasks",
-    "subtitle": "Stay on top of platform messages and items that need your action.",
-    "view_all": "View all",
-    "loading": "Loading…",
-    "mark_all_read": "Mark all as read",
+    "title": "Benachrichtigungen & Aufgaben",
+    "subtitle": "Bleiben Sie über Plattformmeldungen und handlungsbedürftige Punkte informiert.",
+    "view_all": "Alle anzeigen",
+    "loading": "Wird geladen…",
+    "mark_all_read": "Alle als gelesen markieren",
     "tab": {
-      "notifications": "Notifications",
-      "tasks": "Tasks"
+      "notifications": "Benachrichtigungen",
+      "tasks": "Aufgaben"
     },
     "filter": {
-      "all": "All",
-      "unread": "Unread"
+      "all": "Alle",
+      "unread": "Ungelesen"
     },
     "columns": {
-      "reference": "Reference",
+      "reference": "Referenz",
       "details": "Details",
-      "status_time": "Status / Time"
+      "status_time": "Status / Zeit"
     },
     "empty": {
-      "notifications": "No notifications yet.",
-      "unread": "No unread notifications.",
-      "tasks": "No open tasks.",
-      "completed_tasks": "No completed tasks."
+      "notifications": "Noch keine Benachrichtigungen.",
+      "unread": "Keine ungelesenen Benachrichtigungen.",
+      "tasks": "Keine offenen Aufgaben.",
+      "completed_tasks": "Keine abgeschlossenen Aufgaben."
     },
     "severity": {
       "INFO": "Info",
-      "SUCCESS": "Success",
-      "WARNING": "Warning",
-      "ERROR": "Error"
+      "SUCCESS": "Erfolg",
+      "WARNING": "Warnung",
+      "ERROR": "Fehler"
     },
     "priority": {
-      "CRITICAL": "Critical",
-      "HIGH": "High",
-      "MEDIUM": "Medium",
-      "LOW": "Low"
+      "CRITICAL": "Kritisch",
+      "HIGH": "Hoch",
+      "MEDIUM": "Mittel",
+      "LOW": "Niedrig"
     },
     "banner": {
-      "dismiss": "Dismiss",
-      "action": "Take action"
+      "dismiss": "Schließen",
+      "action": "Maßnahme ergreifen"
     },
-    "resume_link": "Resume payment",
+    "resume_link": "Zahlung fortsetzen",
     "widget": {
-      "action_center": "Action Center",
-      "recent": "Recent Notifications",
-      "summary": "{openTasks} open task(s) · {overdue} overdue"
+      "action_center": "Aktionscenter",
+      "recent": "Aktuelle Benachrichtigungen",
+      "summary": "{openTasks} offene Aufgabe(n) · {overdue} überfällig"
     },
     "counts": {
-      "unread": "Unread notifications",
-      "open_tasks": "Open tasks"
+      "unread": "Ungelesene Benachrichtigungen",
+      "open_tasks": "Offene Aufgaben"
     },
     "task": {
-      "action": "Process",
-      "review_action": "Review",
-      "due": "Due {time}",
-      "overdue": "Overdue · {time}"
+      "action": "Bearbeiten",
+      "review_action": "Prüfen",
+      "due": "Fällig {time}",
+      "overdue": "Überfällig · {time}"
     },
     "tasks": {
-      "open": "Open tasks",
-      "completed": "Completed"
+      "open": "Offene Aufgaben",
+      "completed": "Abgeschlossen"
     },
     "status": {
-      "read": "Read",
-      "unread": "Unread"
+      "read": "Gelesen",
+      "unread": "Ungelesen"
     },
     "actions": {
-      "view_details": "View details"
+      "view_details": "Details anzeigen"
     },
-    "showing_count": "Showing {shown} of {total}"
+    "showing_count": "Anzeige {shown} von {total}"
   },
   "AuditLogs": {
-    "title": "Audit Logs",
-    "subtitle": "Read-only audit trail for security-sensitive actions in your merchant account.",
-    "empty": "No audit records found.",
-    "table_total": "Total {count} records",
-    "view_link": "View",
-    "timeline_hint": "View Timeline in the related order detail",
-    "metadata_truncated": "Metadata was truncated",
+    "title": "Audit-Protokolle",
+    "subtitle": "Schreibgeschützter Audit-Trail für sicherheitsrelevante Aktionen in Ihrem Händlerkonto.",
+    "empty": "Keine Audit-Einträge gefunden.",
+    "table_total": "Gesamt {count} Einträge",
+    "view_link": "Anzeigen",
+    "timeline_hint": "Verlauf in den zugehörigen Bestelldetails anzeigen",
+    "metadata_truncated": "Metadaten wurden gekürzt",
     "columns": {
-      "time": "Time",
-      "actor": "Actor",
-      "action": "Action",
-      "resource": "Resource",
-      "result": "Result",
+      "time": "Zeit",
+      "actor": "Akteur",
+      "action": "Aktion",
+      "resource": "Ressource",
+      "result": "Ergebnis",
       "link": "Link"
     },
     "filter": {
-      "date_range": "Date range",
-      "date_range_start": "Start time",
-      "date_range_end": "End time",
-      "action": "Action type",
-      "result": "Result"
+      "date_range": "Datumsbereich",
+      "date_range_start": "Startzeit",
+      "date_range_end": "Endzeit",
+      "action": "Aktionstyp",
+      "result": "Ergebnis"
     },
     "result": {
-      "SUCCESS": "Success",
-      "FAILURE": "Failure",
-      "DENIED": "Denied"
+      "SUCCESS": "Erfolg",
+      "FAILURE": "Fehler",
+      "DENIED": "Verweigert"
     },
     "actor_type": {
-      "MERCHANT_USER": "Merchant user",
+      "MERCHANT_USER": "Händlerbenutzer",
       "OPERATOR": "Operator",
       "SYSTEM": "System",
       "API": "API",
       "WEBHOOK": "Webhook"
     },
     "detail": {
-      "reason": "Reason",
-      "event_id": "Event ID",
-      "request_id": "Request ID",
-      "trace_id": "Trace ID",
-      "metadata": "Metadata"
+      "reason": "Grund",
+      "event_id": "Ereignis-ID",
+      "request_id": "Anfrage-ID",
+      "trace_id": "Trace-ID",
+      "metadata": "Metadaten"
     }
   },
   "audit": {
     "action": {
-      "auth.login": "Login",
-      "auth.logout": "Logout",
-      "auth.password.change": "Change payment password",
-      "auth.mfa.enable": "Enable MFA",
-      "auth.mfa.disable": "Disable MFA",
-      "auth.access.denied": "Access denied",
-      "apikey.create": "Create API key",
-      "apikey.rotate": "Rotate API key",
-      "apikey.delete": "Delete API key",
-      "webhook.create": "Create webhook",
-      "webhook.update": "Update webhook",
-      "webhook.delete": "Delete webhook",
-      "webhook.replay": "Replay webhook",
-      "merchant.config.update": "Update merchant config",
-      "coverage.enable": "Enable coverage",
-      "coverage.disable": "Disable coverage",
-      "coverage.update": "Update coverage config",
-      "risk.review.approve": "Review approved",
-      "risk.review.reject": "Review rejected",
-      "risk.review.assign": "Review assigned",
-      "role.grant": "Grant role",
-      "role.revoke": "Revoke role",
-      "permission.update": "Update permission",
-      "operator.create": "Create operator",
-      "operator.update": "Update operator",
-      "operator.disable": "Disable operator"
+      "auth.login": "Anmeldung",
+      "auth.logout": "Abmeldung",
+      "auth.password.change": "Zahlungspasswort ändern",
+      "auth.mfa.enable": "MFA aktivieren",
+      "auth.mfa.disable": "MFA deaktivieren",
+      "auth.access.denied": "Zugriff verweigert",
+      "apikey.create": "API-Schlüssel erstellen",
+      "apikey.rotate": "API-Schlüssel rotieren",
+      "apikey.delete": "API-Schlüssel löschen",
+      "webhook.create": "Webhook erstellen",
+      "webhook.update": "Webhook aktualisieren",
+      "webhook.delete": "Webhook löschen",
+      "webhook.replay": "Webhook erneut ausführen",
+      "merchant.config.update": "Händlerkonfiguration aktualisieren",
+      "coverage.enable": "Absicherung aktivieren",
+      "coverage.disable": "Absicherung deaktivieren",
+      "coverage.update": "Absicherungskonfiguration aktualisieren",
+      "risk.review.approve": "Prüfung genehmigt",
+      "risk.review.reject": "Prüfung abgelehnt",
+      "risk.review.assign": "Prüfung zugewiesen",
+      "role.grant": "Rolle vergeben",
+      "role.revoke": "Rolle entziehen",
+      "permission.update": "Berechtigung aktualisieren",
+      "operator.create": "Operator erstellen",
+      "operator.update": "Operator aktualisieren",
+      "operator.disable": "Operator deaktivieren"
     }
   },
   "RiskReviews": {
-    "title": "Risk Review Queue",
-    "subtitle": "Read-only queue of suspicious orders and payouts flagged for manual review.",
-    "empty": "No risk review items found.",
-    "table_total": "Total {count} reviews",
+    "title": "Risikoprüfungs-Warteschlange",
+    "subtitle": "Schreibgeschützte Warteschlange verdächtiger Bestellungen und Auszahlungen zur manuellen Prüfung.",
+    "empty": "Keine Risikoprüfungseinträge gefunden.",
+    "table_total": "Gesamt {count} Prüfungen",
     "filters": {
-      "keyword": "Search reviews",
+      "keyword": "Prüfungen suchen",
       "status": "Status",
-      "priority": "Priority",
-      "review_type": "Review type"
+      "priority": "Priorität",
+      "review_type": "Prüfungstyp"
     },
     "detail": {
-      "title": "Review Detail",
-      "back_to_list": "Back to reviews",
-      "not_found": "Review not found.",
-      "review_type": "Review Type",
-      "reason_code": "Reason Code",
-      "queued_at": "Queued At",
-      "decided_at": "Decided At",
-      "decision_note": "Decision Note",
-      "linked_fraud": "Linked Fraud Event",
-      "resume_link": "Resume Link"
+      "title": "Prüfungsdetails",
+      "back_to_list": "Zurück zu den Prüfungen",
+      "not_found": "Prüfung nicht gefunden.",
+      "review_type": "Prüfungstyp",
+      "reason_code": "Grundcode",
+      "queued_at": "Eingereiht am",
+      "decided_at": "Entschieden am",
+      "decision_note": "Entscheidungsnotiz",
+      "linked_fraud": "Verknüpftes Betrugsereignis",
+      "resume_link": "Fortsetzungs-Link"
     },
-    "resume_link": "Resume payment",
+    "resume_link": "Zahlung fortsetzen",
     "headers": {
-      "resource": "Resource",
-      "reason": "Reason",
-      "priority": "Priority",
+      "resource": "Ressource",
+      "reason": "Grund",
+      "priority": "Priorität",
       "status": "Status",
-      "created_at": "Flagged At"
+      "created_at": "Markiert am"
     },
     "resource_type": {
-      "ORDER": "Order",
-      "PAYOUT": "Payout"
+      "ORDER": "Bestellung",
+      "PAYOUT": "Auszahlung"
     },
     "status": {
-      "PENDING": "Pending",
-      "APPROVED": "Approved",
-      "REJECTED": "Rejected"
+      "PENDING": "Ausstehend",
+      "APPROVED": "Genehmigt",
+      "REJECTED": "Abgelehnt"
     }
   },
   "Reporting": {
     "widgets": {
-      "availableBalance": "Available Balance",
-      "todayVolume": "Today's Volume",
-      "successRate": "Success Rate",
-      "pendingSettlement": "Pending Settlement"
+      "availableBalance": "Verfügbarer Saldo",
+      "todayVolume": "Tagesvolumen",
+      "successRate": "Erfolgsquote",
+      "pendingSettlement": "Ausstehende Abrechnung"
     },
-    "no_data": "No data available",
-    "forbidden": "You do not have permission to view this",
-    "failed": "Failed to load",
-    "retry": "Retry",
+    "no_data": "Keine Daten verfügbar",
+    "forbidden": "Sie haben keine Berechtigung, dies anzuzeigen",
+    "failed": "Laden fehlgeschlagen",
+    "retry": "Erneut versuchen",
     "transactions": {
-      "title": "Transaction Report",
-      "subtitle": "Discover and export transactions under your authorized scope.",
-      "empty": "No transactions found.",
-      "table_total": "Total {count} transactions",
-      "export": "Export CSV",
-      "export_failed": "Export failed",
+      "title": "Transaktionsbericht",
+      "subtitle": "Transaktionen in Ihrem autorisierten Bereich finden und exportieren.",
+      "empty": "Keine Transaktionen gefunden.",
+      "table_total": "Gesamt {count} Transaktionen",
+      "export": "CSV exportieren",
+      "export_failed": "Export fehlgeschlagen",
       "filters": {
-        "merchant_order_id": "Merchant order ID",
+        "merchant_order_id": "Händler-Bestellnummer",
         "status": "Status",
-        "channel": "Channel",
-        "amount_min": "Min amount",
-        "amount_max": "Max amount",
-        "created_from": "Created from",
-        "created_to": "Created to"
+        "channel": "Kanal",
+        "amount_min": "Mindestbetrag",
+        "amount_max": "Höchstbetrag",
+        "created_from": "Erstellt von",
+        "created_to": "Erstellt bis"
       },
       "columns": {
-        "merchant_order_id": "Merchant order ID",
-        "trade_no": "Trade no.",
-        "order_type": "Order type",
+        "merchant_order_id": "Händler-Bestellnummer",
+        "trade_no": "Transaktionsnr.",
+        "order_type": "Bestelltyp",
         "status": "Status",
-        "amount": "Amount",
-        "channel": "Channel",
-        "created_at": "Created at"
+        "amount": "Betrag",
+        "channel": "Kanal",
+        "created_at": "Erstellt am"
       },
       "statuses": {
-        "PENDING": "Pending",
-        "PROCESSING": "Processing",
-        "PARTIAL_SUCCESS": "Partial success",
-        "SUCCESS": "Success",
-        "CLOSED": "Closed",
-        "FAILED": "Failed",
-        "REQUIRES_CAPTURE": "Requires capture",
-        "DISPUTED": "Disputed"
+        "PENDING": "Ausstehend",
+        "PROCESSING": "In Verarbeitung",
+        "PARTIAL_SUCCESS": "Teilerfolg",
+        "SUCCESS": "Erfolg",
+        "CLOSED": "Geschlossen",
+        "FAILED": "Fehlgeschlagen",
+        "REQUIRES_CAPTURE": "Erfordert Capture",
+        "DISPUTED": "Streitfall"
       },
       "orderTypes": {
-        "TRADE": "Trade order",
-        "DEPOSIT": "Deposit",
-        "TRANSFER": "Transfer",
-        "PAYOUT": "Payout",
-        "WITHDRAWAL": "Withdrawal",
-        "REFUND": "Refund",
-        "DIRECT_DEBIT": "Direct debit",
-        "PLATFORM_SERVICE_FEE": "Platform service fee"
+        "TRADE": "Handelsbestellung",
+        "DEPOSIT": "Einzahlung",
+        "TRANSFER": "Überweisung",
+        "PAYOUT": "Auszahlung",
+        "WITHDRAWAL": "Abhebung",
+        "REFUND": "Erstattung",
+        "DIRECT_DEBIT": "Lastschrift",
+        "PLATFORM_SERVICE_FEE": "Plattform-Servicegebühr"
       },
       "detail": {
-        "title": "Transaction detail",
-        "back_to_list": "Back to transactions",
-        "resource_unavailable": "Resource unavailable",
-        "view_business_detail": "View business detail",
+        "title": "Transaktionsdetails",
+        "back_to_list": "Zurück zu den Transaktionen",
+        "resource_unavailable": "Ressource nicht verfügbar",
+        "view_business_detail": "Geschäftsdetails anzeigen",
         "fields": {
-          "merchant_order_id": "Merchant order ID",
-          "trade_no": "Trade no.",
+          "merchant_order_id": "Händler-Bestellnummer",
+          "trade_no": "Transaktionsnr.",
           "status": "Status",
-          "order_type": "Order type",
-          "amount": "Amount",
-          "paid_amount": "Paid amount",
-          "refunded_amount": "Refunded amount",
-          "currency": "Currency",
-          "channel": "Channel",
-          "subject": "Subject",
-          "created_at": "Created at",
-          "paid_at": "Paid at",
-          "updated_at": "Updated at"
+          "order_type": "Bestelltyp",
+          "amount": "Betrag",
+          "paid_amount": "Bezahlter Betrag",
+          "refunded_amount": "Erstatteter Betrag",
+          "currency": "Währung",
+          "channel": "Kanal",
+          "subject": "Betreff",
+          "created_at": "Erstellt am",
+          "paid_at": "Bezahlt am",
+          "updated_at": "Aktualisiert am"
         },
         "timeline": {
-          "title": "Timeline",
-          "empty": "No timeline events."
+          "title": "Verlauf",
+          "empty": "Keine Verlaufsereignisse."
         }
       }
     }
   },
   "Risk": {
     "related_risk": {
-      "title": "Related Risk",
-      "fraud_events": "Fraud Events",
-      "reviews": "Reviews"
+      "title": "Zugehöriges Risiko",
+      "fraud_events": "Betrugsereignisse",
+      "reviews": "Prüfungen"
     },
     "payment_timeline": {
-      "title": "Payment Risk Timeline",
+      "title": "Zahlungsrisiko-Verlauf",
       "entity": {
-        "FRAUD": "Fraud",
-        "REVIEW": "Review",
-        "DISPUTE": "Dispute",
-        "PAYMENT": "Payment"
+        "FRAUD": "Betrug",
+        "REVIEW": "Prüfung",
+        "DISPUTE": "Streitfall",
+        "PAYMENT": "Zahlung"
       }
     },
     "dashboard": {
-      "title": "Risk Overview",
-      "view_fraud": "View fraud events",
-      "pending_reviews": "Pending Reviews",
-      "open_disputes": "Open Disputes",
-      "high_fraud_today": "High Fraud Today",
-      "blocked_amount": "Blocked Amount",
-      "blocked_unsupported": "Not supported yet",
-      "review_sla_hours": "Review SLA (hrs)",
-      "chargeback_ratio": "Chargeback Ratio",
-      "rejected_today": "Rejected Today",
-      "pending_review_attempts": "Pending Review Payments",
-      "pending_events": "Pending risk actions",
-      "monitoring_metrics": "Ongoing monitoring"
+      "title": "Risikoübersicht",
+      "view_fraud": "Betrugsereignisse anzeigen",
+      "pending_reviews": "Ausstehende Prüfungen",
+      "open_disputes": "Offene Streitfälle",
+      "high_fraud_today": "Hoher Betrug heute",
+      "blocked_amount": "Gesperrter Betrag",
+      "blocked_unsupported": "Noch nicht unterstützt",
+      "review_sla_hours": "Prüfungs-SLA (Std.)",
+      "chargeback_ratio": "Chargeback-Quote",
+      "rejected_today": "Heute abgelehnt",
+      "pending_review_attempts": "Zahlungen in Prüfung",
+      "pending_events": "Ausstehende Risikoaktionen",
+      "monitoring_metrics": "Laufende Überwachung"
     }
   },
   "RiskRules": {
-    "title": "Risk Rules",
-    "subtitle": "View platform and merchant PRE_AUTH rules (read-only).",
-    "empty": "No risk rules found.",
+    "title": "Risikoregeln",
+    "subtitle": "Plattform- und Händler-PRE_AUTH-Regeln anzeigen (schreibgeschützt).",
+    "empty": "Keine Risikoregeln gefunden.",
     "headers": {
       "name": "Name",
-      "rule_type": "Type",
-      "severity": "Severity",
-      "enforcement": "Enforcement",
-      "scope": "Scope",
-      "enabled": "Enabled",
-      "priority": "Priority",
-      "config": "Configuration"
+      "rule_type": "Typ",
+      "severity": "Schweregrad",
+      "enforcement": "Durchsetzung",
+      "scope": "Geltungsbereich",
+      "enabled": "Aktiviert",
+      "priority": "Priorität",
+      "config": "Konfiguration"
     },
     "rule_type": {
-      "VELOCITY": "Velocity",
-      "AMOUNT": "Amount"
+      "VELOCITY": "Geschwindigkeit",
+      "AMOUNT": "Betrag"
     },
     "enforcement": {
-      "BLOCK": "Block",
-      "REVIEW_BEFORE_AUTH": "Review before payment"
+      "BLOCK": "Blockieren",
+      "REVIEW_BEFORE_AUTH": "Prüfung vor Zahlung"
     },
     "scope": {
-      "platform": "Platform",
-      "merchant": "Merchant"
+      "platform": "Plattform",
+      "merchant": "Händler"
     },
     "config": {
       "schema": "Schema",
-      "velocity": "Max {maxCount} attempts within {windowMinutes} minutes",
-      "amount": "Threshold: {threshold}"
+      "velocity": "Max. {maxCount} Versuche innerhalb von {windowMinutes} Minuten",
+      "amount": "Schwellenwert: {threshold}"
     }
   },
   "Fraud": {
-    "title": "Fraud Events",
-    "subtitle": "Monitor detected fraud signals and investigation status.",
-    "empty": "No fraud events found.",
-    "table_total": "Total {count} events",
+    "title": "Betrugsereignisse",
+    "subtitle": "Erkannte Betrugssignale und Untersuchungsstatus überwachen.",
+    "empty": "Keine Betrugsereignisse gefunden.",
+    "table_total": "Gesamt {count} Ereignisse",
     "filters": {
-      "keyword": "Search events",
+      "keyword": "Ereignisse suchen",
       "status": "Status",
-      "severity": "Severity"
+      "severity": "Schweregrad"
     },
     "detail": {
-      "title": "Fraud Event Detail",
-      "back_to_list": "Back to fraud events",
-      "not_found": "Fraud event not found.",
-      "payment_id": "Payment ID",
-      "provider": "Provider",
-      "score": "Risk Score",
+      "title": "Betrugsereignis-Details",
+      "back_to_list": "Zurück zu den Betrugsereignissen",
+      "not_found": "Betrugsereignis nicht gefunden.",
+      "payment_id": "Zahlungs-ID",
+      "provider": "Anbieter",
+      "score": "Risikobewertung",
       "metadata": {
-        "title": "Metadata",
+        "title": "Metadaten",
         "v1": {
-          "deviceId": "Device ID",
-          "ipAddress": "IP Address",
-          "velocityCount": "Velocity Count",
-          "amountThreshold": "Amount Threshold",
-          "countryCode": "Country",
-          "cardFingerprint": "Card Fingerprint"
+          "deviceId": "Geräte-ID",
+          "ipAddress": "IP-Adresse",
+          "velocityCount": "Geschwindigkeitsanzahl",
+          "amountThreshold": "Betragsschwelle",
+          "countryCode": "Land",
+          "cardFingerprint": "Karten-Fingerabdruck"
         }
       }
     },
     "headers": {
-      "event_type": "Event Type",
-      "risk_type": "Risk Type",
-      "description": "Description",
-      "severity": "Severity",
-      "order_id": "Related Order",
+      "event_type": "Ereignistyp",
+      "risk_type": "Risikotyp",
+      "description": "Beschreibung",
+      "severity": "Schweregrad",
+      "order_id": "Zugehörige Bestellung",
       "status": "Status",
-      "detected_at": "Detected At"
+      "detected_at": "Erkannt am"
     },
     "status": {
-      "OPEN": "Open",
-      "INVESTIGATING": "Investigating",
-      "CLOSED": "Closed"
+      "OPEN": "Offen",
+      "INVESTIGATING": "In Untersuchung",
+      "CLOSED": "Geschlossen"
     },
     "risk_type": {
-      "DEVICE": "Device anomaly",
-      "VELOCITY": "Velocity anomaly",
-      "GEO": "Geographic anomaly",
-      "BIN": "BIN anomaly",
-      "AMOUNT": "Amount anomaly",
-      "IP_MISMATCH": "IP mismatch",
-      "COMBINED": "Combined risk",
-      "FRAUD": "Fraud risk"
+      "DEVICE": "Geräteanomalie",
+      "VELOCITY": "Geschwindigkeitsanomalie",
+      "GEO": "Geografische Anomalie",
+      "BIN": "BIN-Anomalie",
+      "AMOUNT": "Betragsanomalie",
+      "IP_MISMATCH": "IP-Abweichung",
+      "COMBINED": "Kombiniertes Risiko",
+      "FRAUD": "Betrugsrisiko"
     },
     "summary": {
-      "DEVICE": "Device fingerprint does not match billing profile",
-      "VELOCITY": "Transaction velocity exceeded the threshold",
-      "GEO": "Transaction geography differs from expected behavior",
-      "BIN": "Card BIN shows elevated risk characteristics",
-      "AMOUNT": "Transaction amount is outside the normal range",
-      "IP_MISMATCH": "IP address does not match billing information",
-      "COMBINED": "Multiple risk signals triggered together",
-      "FRAUD": "Suspicious fraud activity detected"
+      "DEVICE": "Geräte-Fingerabdruck stimmt nicht mit dem Rechnungsprofil überein",
+      "VELOCITY": "Transaktionsgeschwindigkeit hat den Schwellenwert überschritten",
+      "GEO": "Transaktionsgeografie weicht vom erwarteten Verhalten ab",
+      "BIN": "Karten-BIN weist erhöhte Risikomerkmale auf",
+      "AMOUNT": "Transaktionsbetrag liegt außerhalb des normalen Bereichs",
+      "IP_MISMATCH": "IP-Adresse stimmt nicht mit den Rechnungsinformationen überein",
+      "COMBINED": "Mehrere Risikosignale wurden gleichzeitig ausgelöst",
+      "FRAUD": "Verdächtige Betrugsaktivität erkannt"
     }
   },
   "Customers": {
