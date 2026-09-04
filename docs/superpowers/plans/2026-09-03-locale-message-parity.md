@@ -60,7 +60,7 @@ The last line is only for when that locale has `missing = 0` and leftover Englis
 | 3 | es | `messages/es.json` | committed | missing 0, identical-to-en ~153 (brands/API tokens) |
 | 4 | fr | `messages/fr.json` | committed | missing 0, identical-to-en ~247 (brands/API tokens) |
 | 5 | de | `messages/de.json` | committed | missing 0, identical-to-en ~299 (brands/API tokens) |
-| 6 | pt | `messages/pt.json` | in progress | scaffold; A–H translating |
+| 6 | pt | `messages/pt.json` | in progress | A/B/D committed; C/E/F/G/H translating |
 | 7 | ar | `messages/ar.json` | [ ] | missing 4268, identical-to-en 199 |
 
 Status values: `not started` / `in progress` / `committed`.
