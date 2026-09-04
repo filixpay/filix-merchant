@@ -57,8 +57,8 @@ The last line is only for when that locale has `missing = 0` and leftover Englis
 | 0 | zh | `messages/zh.json` | committed | missing 0 |
 | 1 | ja | `messages/ja.json` | committed | missing 0, identical-to-en ~130 (brands/API tokens) |
 | 2 | ko | `messages/ko.json` | committed | missing 0, identical-to-en ~143 (brands/API tokens) |
-| 3 | es | `messages/es.json` | in progress | A–D committed; E–H translating |
-| 4 | fr | `messages/fr.json` | [ ] | missing 4293, identical-to-en 209 |
+| 3 | es | `messages/es.json` | committed | missing 0, identical-to-en ~153 (brands/API tokens) |
+| 4 | fr | `messages/fr.json` | in progress | scaffold committed; A–H translating |
 | 5 | de | `messages/de.json` | [ ] | missing 4293, identical-to-en 221 |
 | 6 | pt | `messages/pt.json` | [ ] | missing 4268, identical-to-en 211 |
 | 7 | ar | `messages/ar.json` | [ ] | missing 4268, identical-to-en 199 |
