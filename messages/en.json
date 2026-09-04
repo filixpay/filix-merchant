@@ -1454,6 +1454,9 @@
       "back": "Back to products",
       "status": "Status",
       "external_id": "Saleor product ID",
+      "store": "Store",
+      "purchase_link": "Purchase link",
+      "view_purchase_page": "View purchase page",
       "last_error": "Last sync error",
       "not_found": "Product not found.",
       "read_only_hint": "Published or suspended products can only be published or unpublished — edit is available in draft with ready or failed integration."
@@ -1465,6 +1468,7 @@
       "price": "Price",
       "stock": "Stock",
       "status": "Status",
+      "store": "Store",
       "updated": "Updated",
       "actions": "Actions"
     },
@@ -1507,6 +1511,7 @@
     "actions": {
       "edit": "Edit",
       "more": "More actions",
+      "view_storefront": "View product",
       "publish": "Publish",
       "unpublish": "Unpublish",
       "retry_sync": "Sync",

@@ -177,6 +177,9 @@
       "back": "返回商品列表",
       "status": "状态",
       "external_id": "Saleor 商品 ID",
+      "store": "店铺",
+      "purchase_link": "购买链接",
+      "view_purchase_page": "查看购买页面",
       "last_error": "最近同步错误",
       "not_found": "未找到商品。",
       "read_only_hint": "已发布或已下架的商品仅可发布/下架；草稿且集成就绪或失败时可编辑。"
@@ -188,6 +191,7 @@
       "price": "价格",
       "stock": "库存",
       "status": "状态",
+      "store": "店铺",
       "updated": "更新时间",
       "actions": "操作"
     },
@@ -230,6 +234,7 @@
     "actions": {
       "edit": "编辑",
       "more": "更多操作",
+      "view_storefront": "查看商品",
       "publish": "发布",
       "unpublish": "下架",
       "retry_sync": "同步",

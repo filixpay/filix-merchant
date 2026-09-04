@@ -1454,6 +1454,9 @@
       "back": "상품 목록으로",
       "status": "상태",
       "external_id": "Saleor 상품 ID",
+      "store": "스토어",
+      "purchase_link": "구매 링크",
+      "view_purchase_page": "구매 페이지 보기",
       "last_error": "최근 동기화 오류",
       "not_found": "상품을 찾을 수 없습니다.",
       "read_only_hint": "게시됨 또는 중지된 상품은 게시/게시 취소만 가능합니다. 편집은 임시저장 상태에서 연동이 준비 완료 또는 실패일 때 가능합니다."
@@ -1465,6 +1468,7 @@
       "price": "가격",
       "stock": "재고",
       "status": "상태",
+      "store": "스토어",
       "updated": "업데이트",
       "actions": "작업"
     },
@@ -1507,6 +1511,7 @@
     "actions": {
       "edit": "편집",
       "more": "추가 작업",
+      "view_storefront": "상품 보기",
       "publish": "게시",
       "unpublish": "게시 취소",
       "retry_sync": "동기화",

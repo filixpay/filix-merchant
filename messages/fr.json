@@ -1454,6 +1454,9 @@
       "back": "Retour aux produits",
       "status": "Statut",
       "external_id": "ID produit Saleor",
+      "store": "Boutique",
+      "purchase_link": "Lien d'achat",
+      "view_purchase_page": "Voir la page d'achat",
       "last_error": "Dernière erreur de synchronisation",
       "not_found": "Produit introuvable.",
       "read_only_hint": "Les produits publiés ou suspendus ne peuvent qu'être publiés ou dépubliés — la modification est disponible en brouillon avec une intégration prête ou en échec."
@@ -1465,6 +1468,7 @@
       "price": "Prix",
       "stock": "Stock",
       "status": "Statut",
+      "store": "Boutique",
       "updated": "Mis à jour",
       "actions": "Actions"
     },
@@ -1507,6 +1511,7 @@
     "actions": {
       "edit": "Modifier",
       "more": "Plus d'actions",
+      "view_storefront": "Voir le produit",
       "publish": "Publier",
       "unpublish": "Dépublier",
       "retry_sync": "Synchroniser",

@@ -1454,6 +1454,9 @@
       "back": "Zurück zu Produkten",
       "status": "Status",
       "external_id": "Saleor-Produkt-ID",
+      "store": "Shop",
+      "purchase_link": "Kauflink",
+      "view_purchase_page": "Kaufseite öffnen",
       "last_error": "Letzter Sync-Fehler",
       "not_found": "Produkt nicht gefunden.",
       "read_only_hint": "Veröffentlichte oder ausgesetzte Produkte können nur veröffentlicht oder zurückgezogen werden — Bearbeiten ist im Entwurf bei bereiter oder fehlgeschlagener Integration möglich."
@@ -1465,6 +1468,7 @@
       "price": "Preis",
       "stock": "Bestand",
       "status": "Status",
+      "store": "Shop",
       "updated": "Aktualisiert",
       "actions": "Aktionen"
     },
@@ -1507,6 +1511,7 @@
     "actions": {
       "edit": "Bearbeiten",
       "more": "Weitere Aktionen",
+      "view_storefront": "Produkt anzeigen",
       "publish": "Veröffentlichen",
       "unpublish": "Zurückziehen",
       "retry_sync": "Synchronisieren",

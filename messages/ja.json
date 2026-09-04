@@ -1454,6 +1454,9 @@
       "back": "商品一覧に戻る",
       "status": "ステータス",
       "external_id": "Saleor 商品ID",
+      "store": "ストア",
+      "purchase_link": "購入リンク",
+      "view_purchase_page": "購入ページを見る",
       "last_error": "最新の同期エラー",
       "not_found": "商品が見つかりません。",
       "read_only_hint": "公開済みまたは停止中の商品は公開／非公開のみ可能です。編集は下書きで、連携が準備完了または失敗のときに行えます。"
@@ -1465,6 +1468,7 @@
       "price": "価格",
       "stock": "在庫",
       "status": "ステータス",
+      "store": "ストア",
       "updated": "更新日時",
       "actions": "操作"
     },
@@ -1507,6 +1511,7 @@
     "actions": {
       "edit": "編集",
       "more": "その他の操作",
+      "view_storefront": "商品を見る",
       "publish": "公開",
       "unpublish": "非公開",
       "retry_sync": "同期",
