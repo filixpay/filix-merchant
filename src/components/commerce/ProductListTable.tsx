@@ -6,7 +6,7 @@ import type { ColumnsType, TableRowSelection } from "antd/es/table/interface";
 import { ChevronRight, MoreHorizontal } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import type { CommerceProductView } from "@/lib/api/domains/commerce";
-import { canPublish, canRetrySync, canUnpublish } from "@/lib/api/domains/commerce";
+import { canPublish, canUnpublish, isInFlightIntegration } from "@/lib/api/domains/commerce";
 import {
   hostnameFromStorefrontUrl,
   isValidStorefrontUrl,
@@ -140,27 +140,21 @@ export default function ProductListTable({
     {
       title: t("columns.actions"),
       key: "actions",
-      width: 220,
+      width: 260,
       fixed: "right",
       render: (_: unknown, record) => {
         const busy = actionLoadingId === record.id;
-        const menuItems = [
-          canRetrySync(record) && onRetrySync
-            ? {
-                key: "retry",
-                label: t("actions.retry_sync"),
-                onClick: () => onRetrySync(record),
-              }
-            : null,
-          onDelete
-            ? {
+        const syncing = isInFlightIntegration(record.integrationStatus);
+        const menuItems = onDelete
+          ? [
+              {
                 key: "delete",
                 label: t("actions.delete"),
                 danger: true,
                 onClick: () => onDelete(record),
-              }
-            : null,
-        ].filter(Boolean) as { key: string; label: string; danger?: boolean; onClick: () => void }[];
+              },
+            ]
+          : [];
 
         return (
           <Space size={4}>
@@ -189,6 +183,17 @@ export default function ProductListTable({
                 {t("actions.unpublish")}
               </Button>
             ) : null}
+            {onRetrySync ? (
+              <Button
+                size="small"
+                type="link"
+                loading={busy || syncing}
+                disabled={busy || syncing}
+                onClick={() => onRetrySync(record)}
+              >
+                {t("actions.retry_sync")}
+              </Button>
+            ) : null}
             {menuItems.length > 0 ? (
               <Dropdown menu={{ items: menuItems }} trigger={["click"]}>
                 <Button
@@ -215,7 +220,7 @@ export default function ProductListTable({
         dataSource={products}
         pagination={false}
         rowSelection={rowSelection}
-        scroll={{ x: 1240 }}
+        scroll={{ x: 1280 }}
         locale={{ emptyText: <Typography.Text type="secondary">{t("empty")}</Typography.Text> }}
       />
     </div>
