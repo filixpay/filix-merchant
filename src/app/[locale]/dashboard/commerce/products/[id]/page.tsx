@@ -15,6 +15,10 @@ import {
     ACTIVATION_POLL_TIMEOUT_MS,
     decideActivationPoll,
 } from "@/lib/commerce/activation-polling";
+import {
+    hostnameFromStorefrontUrl,
+    isValidStorefrontUrl,
+} from "@/lib/commerce/storefront-url";
 import DashboardPage from "@/components/layout/DashboardPage";
 import ProductEditorForm, { type ProductEditorValues } from "@/components/commerce/ProductEditorForm";
 import ProductFormFooter from "@/components/commerce/ProductFormFooter";
@@ -253,6 +257,23 @@ export default function CommerceProductDetailPage() {
                     </Descriptions.Item>
                     {product.externalProductId ? (
                         <Descriptions.Item label={t("detail.external_id")}>{product.externalProductId}</Descriptions.Item>
+                    ) : null}
+                    {isValidStorefrontUrl(product.storefrontUrl) ? (
+                        <>
+                            <Descriptions.Item label={t("detail.store")}>
+                                {hostnameFromStorefrontUrl(product.storefrontUrl)}
+                            </Descriptions.Item>
+                            <Descriptions.Item label={t("detail.purchase_link")}>
+                                <Typography.Link
+                                    href={product.storefrontUrl!}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    title={product.storefrontUrl!}
+                                >
+                                    {t("detail.view_purchase_page")}
+                                </Typography.Link>
+                            </Descriptions.Item>
+                        </>
                     ) : null}
                     {product.lastError ? (
                         <Descriptions.Item label={t("detail.last_error")}>{product.lastError}</Descriptions.Item>
