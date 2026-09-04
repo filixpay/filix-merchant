@@ -1,21 +1,58 @@
-# Filix Merchant
+# FilixPay Merchant Portal
 
-Open-source merchant portal for [FilixPay](https://www.filixpay.com). Built with Next.js, it provides localized marketing pages and a Keycloak-backed dashboard that talks to FilixPay Portal APIs.
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/filixpay/filix-merchant?style=social)](https://github.com/filixpay/filix-merchant/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/filixpay/filix-merchant)](https://github.com/filixpay/filix-merchant/issues)
 
-本仓库是开源**商户门户前端**（Next.js）。商户自行托管后，门户与登录回调运行在**您自己的域名**上；FilixPay 账务、风控与渠道能力仍通过官方 Portal / OIDC 对接。**通过环境变量配置即可部署**，生产构建不包含默认的 filixpay.com 地址。
+Open-source merchant portal for payment and commerce operations, built with Next.js and FilixPay APIs.
 
-## Documentation | 文档
+Manage products, orders, payments, and commerce operations from a modern merchant dashboard.
 
-| Document | Description |
-|----------|-------------|
-| [`.env.example`](.env.example) | Required environment variables (no secrets) |
-| [DEPLOY.md](DEPLOY.md) | Container / reverse-proxy notes (if present) |
+FilixPay is an open-source payment infrastructure platform designed for modern commerce and global money movement.
 
-Full product docs remain with FilixPay for now; this repository ships source plus a deploy-oriented README.
+[Website](https://www.filixpay.com) · [Issues](https://github.com/filixpay/filix-merchant/issues) · [License](LICENSE)
+
+## Features
+
+- Merchant and commerce management
+- Product and order management
+- Payment and transaction visibility
+- Built for global commerce
+- Next.js and TypeScript
+- Designed to integrate with FilixPay payment infrastructure
+- Open source (Apache-2.0)
+
+## Getting Started
+
+```bash
+cp .env.example .env.local
+# Edit .env.local — set NEXTAUTH_*, KEYCLOAK_*, NEXT_PUBLIC_SITE_URL, NEXT_PUBLIC_CHECKOUT_URL
+
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+See [`.env.example`](.env.example) and [DEPLOY.md](DEPLOY.md) for configuration and deployment.
+
+## Part of FilixPay
+
+FilixPay Merchant Portal is part of the FilixPay open-source payment infrastructure ecosystem.
+
+| Project | Role |
+|---------|------|
+| **[Merchant Portal](https://github.com/filixpay/filix-merchant)** | Merchant and commerce operations |
+| **[Checkout](https://github.com/filixpay/filix-checkout)** | Payment checkout experience |
+| **[Saleor Integration](https://github.com/filixpay/filixpay-saleor)** | Payment integration for Saleor Commerce |
 
 ---
 
 ## Why self-host?
+
+This repository is an open-source **merchant portal frontend** (Next.js). After you self-host it, the portal and login callbacks run on **your own domain**. FilixPay ledger, risk, and channel capabilities still connect through the official Portal / OIDC. **Configure via environment variables** — production builds do not embed default filixpay.com URLs.
+
+本仓库是开源**商户门户前端**（Next.js）。商户自行托管后，门户与登录回调运行在**您自己的域名**上；FilixPay 账务、风控与渠道能力仍通过官方 Portal / OIDC 对接。**通过环境变量配置即可部署**，生产构建不包含默认的 filixpay.com 地址。
 
 - **Brand & domain** — run the portal on `portal.yourdomain.com`
 - **Auditability** — Apache-2.0 source, no black-box admin UI
@@ -29,26 +66,6 @@ Full product docs remain with FilixPay for now; this repository ships source plu
 | OIDC client | Keycloak client with callbacks to your `NEXTAUTH_URL` |
 | Reverse proxy | Terminate TLS; proxy `/merchant/service` to FilixPay Portal API |
 | Node 20+ (dev) or Docker | See Dockerfile |
-
-## Quick start (development)
-
-```bash
-cp .env.example .env.local
-# Edit .env.local — set NEXTAUTH_*, KEYCLOAK_*, NEXT_PUBLIC_SITE_URL, NEXT_PUBLIC_CHECKOUT_URL
-
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000).
-
-Dashboard routes require a valid session. Marketing pages can be disabled:
-
-```env
-NEXT_PUBLIC_ENABLE_MARKETING=false
-```
-
-When marketing is off, marketing routes redirect into `/{locale}/dashboard`.
 
 ## Docker
 
@@ -82,6 +99,14 @@ See [`.env.example`](.env.example). Required for a working portal:
 | `NEXT_PUBLIC_ENABLE_MARKETING` | Optional; `false` for portal-only |
 
 Portal HTTP calls use same-origin `API_BASE_URL=/merchant/service`. Your ingress must forward that path to FilixPay.
+
+Dashboard routes require a valid session. Marketing pages can be disabled:
+
+```env
+NEXT_PUBLIC_ENABLE_MARKETING=false
+```
+
+When marketing is off, marketing routes redirect into `/{locale}/dashboard`.
 
 ## Auth contract
 
