@@ -7,6 +7,10 @@ import { ChevronRight, MoreHorizontal } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import type { CommerceProductView } from "@/lib/api/domains/commerce";
 import { canPublish, canRetrySync, canUnpublish } from "@/lib/api/domains/commerce";
+import {
+  hostnameFromStorefrontUrl,
+  isValidStorefrontUrl,
+} from "@/lib/commerce/storefront-url";
 import { formatCommercePrice } from "./format-commerce-price";
 import ProductListStatusBadge from "./ProductListStatusBadge";
 import styles from "./ProductListTable.module.css";
@@ -120,6 +124,13 @@ export default function ProductListTable({
       render: (_: unknown, record) => <ProductListStatusBadge product={record} />,
     },
     {
+      title: t("columns.store"),
+      key: "store",
+      width: 140,
+      render: (_: unknown, record) =>
+        hostnameFromStorefrontUrl(record.storefrontUrl) ?? "—",
+    },
+    {
       title: t("columns.updated"),
       dataIndex: "updatedAt",
       key: "updatedAt",
@@ -129,7 +140,7 @@ export default function ProductListTable({
     {
       title: t("columns.actions"),
       key: "actions",
-      width: 160,
+      width: 220,
       fixed: "right",
       render: (_: unknown, record) => {
         const busy = actionLoadingId === record.id;
@@ -157,6 +168,17 @@ export default function ProductListTable({
               {t("actions.edit")}
               <ChevronRight size={13} strokeWidth={2} />
             </Link>
+            {isValidStorefrontUrl(record.storefrontUrl) ? (
+              <Button
+                size="small"
+                type="link"
+                href={record.storefrontUrl!}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t("actions.view_storefront")}
+              </Button>
+            ) : null}
             {canPublish(record) && onPublish ? (
               <Button size="small" type="link" loading={busy} onClick={() => onPublish(record)}>
                 {t("actions.publish")}
@@ -193,7 +215,7 @@ export default function ProductListTable({
         dataSource={products}
         pagination={false}
         rowSelection={rowSelection}
-        scroll={{ x: 1100 }}
+        scroll={{ x: 1240 }}
         locale={{ emptyText: <Typography.Text type="secondary">{t("empty")}</Typography.Text> }}
       />
     </div>
