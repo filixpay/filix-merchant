@@ -16,6 +16,7 @@ import {
     findSelectedOrganizationMerchant,
     getInitialActiveOrganizationMerchant,
     getStoredSelectedMerchantCode,
+    merchantCodeToString,
     persistOrganizationMerchantSelection,
     readOrganizationMerchantsCache,
     writeOrganizationMerchantsCache,
@@ -65,9 +66,13 @@ export function useOrganizationMerchants(
                 return;
             }
             writeOrganizationMerchantsCache(organizationCode, data);
+            const storedBefore = getStoredSelectedMerchantCode();
             const selected = afterScopeDenied
                 ? data[0] ?? null
-                : findSelectedOrganizationMerchant(data, getStoredSelectedMerchantCode());
+                : findSelectedOrganizationMerchant(data, storedBefore);
+            // #region agent log
+            fetch('http://127.0.0.1:7897/ingest/133c483d-e320-4bae-9560-8d2829a55a07',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'22a5f0'},body:JSON.stringify({sessionId:'22a5f0',runId:'pre-fix',hypothesisId:'H1_H3_H5',location:'use-organization-merchants.ts:applyMerchantList',message:'applyMerchantList result',data:{organizationCode,afterScopeDenied,storedBefore,selectedCode:selected?merchantCodeToString(selected.merchantCode):null,selectedName:selected?.name??null,listLen:data.length},timestamp:Date.now()})}).catch(()=>{});
+            // #endregion
             if (selected) {
                 persistOrganizationMerchantSelection(selected);
                 setActiveMerchant(selected);

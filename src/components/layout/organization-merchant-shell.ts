@@ -50,7 +50,14 @@ export function findSelectedOrganizationMerchant(
         const found = merchants.find(
             (merchant) => merchantCodeToString(merchant.merchantCode) === selectedCode,
         );
+        // #region agent log
+        fetch('http://127.0.0.1:7897/ingest/133c483d-e320-4bae-9560-8d2829a55a07',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'22a5f0'},body:JSON.stringify({sessionId:'22a5f0',runId:'pre-fix',hypothesisId:'H1_H4',location:'organization-merchant-shell.ts:findSelectedOrganizationMerchant',message:'resolve org merchant selection',data:{selectedCode,listCodes:merchants.map((m)=>({code:merchantCodeToString(m.merchantCode),codeType:typeof m.merchantCode,name:m.name})),matched:Boolean(found),fallbackToFirst:!found},timestamp:Date.now()})}).catch(()=>{});
+        // #endregion
         if (found) return found;
+    } else {
+        // #region agent log
+        fetch('http://127.0.0.1:7897/ingest/133c483d-e320-4bae-9560-8d2829a55a07',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'22a5f0'},body:JSON.stringify({sessionId:'22a5f0',runId:'pre-fix',hypothesisId:'H3',location:'organization-merchant-shell.ts:findSelectedOrganizationMerchant',message:'no selectedCode — fallback to first',data:{listCodes:merchants.map((m)=>merchantCodeToString(m.merchantCode))},timestamp:Date.now()})}).catch(()=>{});
+        // #endregion
     }
     return merchants[0];
 }
