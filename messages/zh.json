@@ -7106,7 +7106,14 @@
       "open_settlements": "打开结算",
       "open_reconciliation": "打开对账",
       "open_refunds": "打开退款",
-      "open_disputes": "打开争议"
+      "open_disputes": "打开争议",
+      "open_developer_center": "打开开发者中心",
+      "open_webhook_verification": "打开 Webhook 验签说明"
+    },
+    "outbound": {
+      "section_title": "相关资源",
+      "marketing": "FilixPay 开发者介绍",
+      "developer_docs": "API 与开发者文档"
     }
   }
 }

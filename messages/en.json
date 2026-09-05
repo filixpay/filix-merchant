@@ -7057,7 +7057,14 @@
       "open_settlements": "Open Settlements",
       "open_reconciliation": "Open Reconciliation",
       "open_refunds": "Open Refunds",
-      "open_disputes": "Open Disputes"
+      "open_disputes": "Open Disputes",
+      "open_developer_center": "Open Developer Center",
+      "open_webhook_verification": "Open Webhook Verification"
+    },
+    "outbound": {
+      "section_title": "Related resources",
+      "marketing": "FilixPay for developers",
+      "developer_docs": "API & developer docs"
     }
   }
 }

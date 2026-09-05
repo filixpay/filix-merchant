@@ -48,3 +48,22 @@ getting-started, merchant, payments, funds, risk, commerce, credit, developers, 
 - getting-started first-payment / first-payout (Related only)
 - commerce/products/edit
 - customers, payment-splits, crypto, fraud splits, reporting, full account/credit/developers sets
+
+## P1 amendment (2026-09-06) — Developers batch
+
+Intentional override (not a P0 regression):
+
+| Dashboard path | Page-level `?` after P1 | Notes |
+|----------------|-------------------------|-------|
+| `/dashboard/configs` | `developers/payment-channels` via explicit `helpSlug` | `getting-started/payment-channel` keeps `dashboardLinks` for Open-in-MC CTAs but must **not** win reverse-map primary |
+| `/dashboard/developer` | `developers/developer-center` | Always; ignore active Tab. **No second tab-level `?` required in this batch.** |
+| `/dashboard/developer/webhook-verification` | `developers/webhooks` | Page-level |
+
+### Payment Configs nav labels (HEAD audit)
+
+| Locale | Sidebar path | Page title |
+|--------|--------------|------------|
+| EN | Transactions → Acquiring Settings → Payment Configs | Payment Configurations |
+| ZH | 交易 → 收单设置 → 支付配置 | 支付配置 |
+
+Spec: `docs/superpowers/specs/2026-09-06-merchant-help-p1-developers-design.md`
