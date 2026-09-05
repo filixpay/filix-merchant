@@ -7,6 +7,7 @@ import { ReloadOutlined, SearchOutlined } from "@ant-design/icons";
 import { useTranslations } from "next-intl";
 import { api, ClientView } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import CustomerTable from "@/components/customers/CustomerTable";
 import { buildPagedListParams } from "@/lib/dashboard/build-paged-list-params";
 import { usePagedResource } from "@/lib/dashboard/use-paged-resource";
@@ -94,7 +95,17 @@ export default function CustomersPage() {
     );
 
     return (
-        <DashboardPage title={t("title")} subtitle={t("subtitle")} filterBar={filterBar}>
+        <DashboardPage
+            title={t("title")}
+            subtitle={t("subtitle")}
+            filterBar={filterBar}
+            extra={
+                <HelpDeepLinkButton
+                    dashboardPath="/dashboard/customers"
+                    helpSlug="payments/customers"
+                />
+            }
+        >
             {accessToken ? (
                 <CustomerTable
                     customers={customers}
