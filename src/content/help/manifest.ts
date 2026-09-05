@@ -38,12 +38,11 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
     domain: "getting-started",
     published: true,
     order: 20,
-    relatedSlugs: [],
+    relatedSlugs: ["developers/payment-channels"],
     dashboardLinks: [
       {
         path: "/dashboard/configs",
         labelKey: "open_configs",
-        primary: true,
       },
     ],
   },
@@ -266,5 +265,60 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
         primary: true,
       },
     ],
+  },
+  {
+    slug: "developers/developer-center",
+    domain: "developers",
+    published: true,
+    order: 10,
+    relatedSlugs: [
+      "developers/webhooks",
+      "developers/payment-channels",
+    ],
+    dashboardLinks: [
+      {
+        path: "/dashboard/developer",
+        labelKey: "open_developer_center",
+        primary: true,
+      },
+    ],
+    marketingPath: "/developers",
+  },
+  {
+    slug: "developers/webhooks",
+    domain: "developers",
+    published: true,
+    order: 20,
+    relatedSlugs: ["developers/developer-center"],
+    dashboardLinks: [
+      {
+        path: "/dashboard/developer/webhook-verification",
+        labelKey: "open_webhook_verification",
+        primary: true,
+      },
+      {
+        path: "/dashboard/developer",
+        labelKey: "open_developer_center",
+      },
+    ],
+    marketingPath: "/developers",
+  },
+  {
+    slug: "developers/payment-channels",
+    domain: "developers",
+    published: true,
+    order: 30,
+    relatedSlugs: [
+      "getting-started/payment-channel",
+      "developers/developer-center",
+    ],
+    dashboardLinks: [
+      {
+        path: "/dashboard/configs",
+        labelKey: "open_configs",
+        primary: true,
+      },
+    ],
+    marketingPath: "/developers",
   },
 ];
