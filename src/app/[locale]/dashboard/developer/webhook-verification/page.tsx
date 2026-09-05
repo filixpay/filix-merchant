@@ -5,6 +5,7 @@ import { Alert, Card, Col, Row, Space, Steps, Typography } from "antd";
 import { ArrowLeftOutlined, SafetyCertificateOutlined } from "@ant-design/icons";
 import { useLocale } from "next-intl";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 
 const VERIFICATION_STEPS = [
     "从 HTTP Header 中读取 X-FilixPay-Signature 的值；",
@@ -38,9 +39,15 @@ export default function WebhookVerificationPage() {
             subtitle="了解如何验证来自 FilixPay 平台的 Webhook 请求签名"
             contentMode="table"
             extra={
-                <Link href={`/${locale}/dashboard/developer`}>
-                    <ArrowLeftOutlined /> Back to Developer Center
-                </Link>
+                <Space>
+                    <HelpDeepLinkButton
+                        dashboardPath="/dashboard/developer/webhook-verification"
+                        helpSlug="developers/webhooks"
+                    />
+                    <Link href={`/${locale}/dashboard/developer`}>
+                        <ArrowLeftOutlined /> Back to Developer Center
+                    </Link>
+                </Space>
             }
         >
             <Alert

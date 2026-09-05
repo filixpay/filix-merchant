@@ -13,6 +13,7 @@ import {
 } from "@/lib/api";
 import { createSandboxSession } from "@/lib/sandbox-client";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import ApplicationsPanel from "@/components/developer/ApplicationsPanel";
 import ExplorerPanel from "@/components/developer/ExplorerPanel";
 import IntegrationSandboxPanel from "@/components/developer/IntegrationSandboxPanel";
@@ -221,7 +222,18 @@ export default function DeveloperPage() {
     ];
 
     return (
-        <DashboardPage title={t("title")} subtitle={t("subtitle")} contentMode="table" plain>
+        <DashboardPage
+            title={t("title")}
+            subtitle={t("subtitle")}
+            contentMode="table"
+            plain
+            extra={
+                <HelpDeepLinkButton
+                    dashboardPath="/dashboard/developer"
+                    helpSlug="developers/developer-center"
+                />
+            }
+        >
             <Tabs
                 activeKey={activeTab}
                 onChange={setActiveTab}

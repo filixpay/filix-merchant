@@ -210,7 +210,10 @@ export default function ConfigsPage() {
 
     const extra = (
         <>
-            <HelpDeepLinkButton dashboardPath="/dashboard/configs" />
+            <HelpDeepLinkButton
+                dashboardPath="/dashboard/configs"
+                helpSlug="developers/payment-channels"
+            />
             <Button type="primary" icon={<PlusOutlined />} onClick={openGlobalAdd}>
                 {t("add_config")}
             </Button>
