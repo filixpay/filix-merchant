@@ -7108,7 +7108,8 @@
       "open_refunds": "打开退款",
       "open_disputes": "打开争议",
       "open_developer_center": "打开开发者中心",
-      "open_webhook_verification": "打开 Webhook 验签说明"
+      "open_webhook_verification": "打开 Webhook 验签说明",
+      "open_customers": "打开客户"
     },
     "outbound": {
       "section_title": "相关资源",

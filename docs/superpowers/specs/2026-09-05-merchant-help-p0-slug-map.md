@@ -67,3 +67,11 @@ Intentional override (not a P0 regression):
 | ZH | 交易 → 收单设置 → 支付配置 | 支付配置 |
 
 Spec: `docs/superpowers/specs/2026-09-06-merchant-help-p1-developers-design.md`
+
+## P1 amendment (2026-09-06) — Customers batch
+
+| Dashboard path | Page-level `?` after P1 | Notes |
+|----------------|-------------------------|-------|
+| `/dashboard/customers` | `payments/customers` | New published guide; single page-level `?` |
+
+Credit domain skipped this cycle. Spec: `docs/superpowers/specs/2026-09-06-merchant-help-p1-customers-design.md`

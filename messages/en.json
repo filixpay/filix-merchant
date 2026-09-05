@@ -7059,7 +7059,8 @@
       "open_refunds": "Open Refunds",
       "open_disputes": "Open Disputes",
       "open_developer_center": "Open Developer Center",
-      "open_webhook_verification": "Open Webhook Verification"
+      "open_webhook_verification": "Open Webhook Verification",
+      "open_customers": "Open Customers"
     },
     "outbound": {
       "section_title": "Related resources",
