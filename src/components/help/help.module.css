@@ -1,0 +1,100 @@
+/* Help docs shell — marketing-adjacent tokens, not Dashboard/Ant Design */
+
+.shell {
+  min-height: calc(100vh - 72px);
+  padding-top: 72px;
+  background: linear-gradient(180deg, var(--slate-50) 0%, #ffffff 48%);
+  color: var(--slate-800);
+}
+
+.shellInner {
+  max-width: min(94%, 1200px);
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.sidebar {
+  position: sticky;
+  top: 96px;
+  padding: 8px 0;
+}
+
+.brandLink {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--slate-900);
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.brandLink:hover {
+  color: var(--primary-600);
+}
+
+.brandDesc {
+  margin: 0 0 20px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--slate-500);
+}
+
+.domainNav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-top: 1px solid var(--slate-200);
+  padding-top: 16px;
+}
+
+.domainLink {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--slate-600);
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.domainLink:hover {
+  background: var(--primary-50);
+  color: var(--primary-700);
+}
+
+.main {
+  min-width: 0;
+  padding: 8px 0;
+}
+
+@media (max-width: 900px) {
+  .shellInner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding-top: 28px;
+  }
+
+  .sidebar {
+    position: static;
+    border-bottom: 1px solid var(--slate-200);
+    padding-bottom: 20px;
+  }
+
+  .domainNav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .domainLink {
+    padding: 6px 10px;
+    font-size: 13px;
+    background: var(--slate-100);
+  }
+}

@@ -7016,5 +7016,45 @@
       "status": "Status",
       "id": "Transfer ID"
     }
+  },
+  "Help": {
+    "search_placeholder": "Search FilixPay Help...",
+    "related_guides": "Related guides",
+    "previous": "Previous",
+    "next": "Next",
+    "open_in_merchant_center": "Open in Merchant Center",
+    "start_here": "Start here",
+    "browse_all": "Browse all guides",
+    "still_need_help": "Still need help?",
+    "popular_guides": "Popular guides",
+    "in_this_guide": "In this guide",
+    "coming_soon": "More guides in this section are coming soon.",
+    "who_this_is_for": "Who this is for",
+    "when_to_use": "When to use this",
+    "before_you_start": "Before you start",
+    "steps": "Steps",
+    "key_fields": "Key fields",
+    "common_issues": "Common issues",
+    "next_step": "Next step",
+    "home_title": "FilixPay Help",
+    "home_description": "Learn how to use FilixPay Merchant Center.",
+    "dashboardLinks": {
+      "open_transfers": "Open Transfers",
+      "open_reviews": "Open Reviews",
+      "open_onboarding_status": "Open Onboarding Status",
+      "open_onboarding_apply": "Open Onboarding Application",
+      "open_configs": "Open Payment Configs",
+      "open_products": "Open Products",
+      "open_products_new": "Create Product",
+      "open_orders": "Open Orders",
+      "open_balance": "Open Balance",
+      "open_activity": "Open Activity",
+      "open_money_in": "Open Money-In",
+      "open_payouts": "Open Payouts",
+      "open_settlements": "Open Settlements",
+      "open_reconciliation": "Open Reconciliation",
+      "open_refunds": "Open Refunds",
+      "open_disputes": "Open Disputes"
+    }
   }
 }

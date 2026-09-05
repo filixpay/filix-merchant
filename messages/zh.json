@@ -7065,5 +7065,45 @@
       "status": "状态",
       "id": "转账 ID"
     }
+  },
+  "Help": {
+    "search_placeholder": "搜索 FilixPay 帮助...",
+    "related_guides": "相关指南",
+    "previous": "上一篇",
+    "next": "下一篇",
+    "open_in_merchant_center": "在商户中心打开",
+    "start_here": "从这里开始",
+    "browse_all": "浏览全部指南",
+    "still_need_help": "仍需帮助？",
+    "popular_guides": "热门指南",
+    "in_this_guide": "本指南内容",
+    "coming_soon": "本分类下的更多指南即将上线。",
+    "who_this_is_for": "适用对象",
+    "when_to_use": "何时使用",
+    "before_you_start": "开始之前",
+    "steps": "操作步骤",
+    "key_fields": "关键字段",
+    "common_issues": "常见问题",
+    "next_step": "下一步",
+    "home_title": "FilixPay 帮助",
+    "home_description": "了解如何使用 FilixPay 商户中心。",
+    "dashboardLinks": {
+      "open_transfers": "打开转账",
+      "open_reviews": "打开审核",
+      "open_onboarding_status": "打开开通状态",
+      "open_onboarding_apply": "打开开通申请",
+      "open_configs": "打开支付配置",
+      "open_products": "打开商品",
+      "open_products_new": "创建商品",
+      "open_orders": "打开订单",
+      "open_balance": "打开余额",
+      "open_activity": "打开资金动态",
+      "open_money_in": "打开入金",
+      "open_payouts": "打开出金",
+      "open_settlements": "打开结算",
+      "open_reconciliation": "打开对账",
+      "open_refunds": "打开退款",
+      "open_disputes": "打开争议"
+    }
   }
 }
