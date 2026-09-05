@@ -79,7 +79,7 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
     domain: "payments",
     published: true,
     order: 10,
-    relatedSlugs: ["payments/customers"],
+    relatedSlugs: ["payments/customers", "payments/payment-splits"],
     dashboardLinks: [
       {
         path: "/dashboard/orders",
@@ -116,6 +116,20 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
       {
         path: "/dashboard/customers",
         labelKey: "open_customers",
+        primary: true,
+      },
+    ],
+  },
+  {
+    slug: "payments/payment-splits",
+    domain: "payments",
+    published: true,
+    order: 40,
+    relatedSlugs: ["payments/orders"],
+    dashboardLinks: [
+      {
+        path: "/dashboard/payment-splits",
+        labelKey: "open_payment_splits",
         primary: true,
       },
     ],
