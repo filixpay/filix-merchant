@@ -94,8 +94,8 @@ function LoginForm() {
       </Link>
 
       <div className={styles.footer}>
-        <a href="#">Help</a> &middot; <a href="#">Privacy</a> &middot;{" "}
-        <a href="#">Terms</a>
+        <Link href={`/${locale}/help`}>Help</Link> &middot;{" "}
+        <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
       </div>
     </div>
   );
