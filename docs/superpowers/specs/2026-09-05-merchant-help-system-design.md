@@ -1,7 +1,7 @@
 # FilixPay Merchant Help System — Design v1
 
 **Date:** 2026-09-05  
-**Status:** Approved — implementation plan at `docs/superpowers/plans/2026-09-05-merchant-help-system.md`  
+**Status:** Approved — P0 implemented on `main`. P1 sequencing: **Developers first** (see `2026-09-06-merchant-help-p1-developers-design.md`); **Credit second**; remaining P1 items in later batches.  
 **Scope:** Public, indexable Merchant Center usage guides under `/{locale}/help/**`  
 **Out of scope (V1):** CMS authoring, AI search, screenshot-dependent flows, full locale translations beyond EN+ZH, Checkouts published content
 
@@ -531,7 +531,10 @@ Independent published guides only:
 
 ### P1 / P2 (ordered later)
 
-- **P1:** customers, payment-splits, external-accounts, crypto, fraud/risk-rules, credit domain, developer UI guides  
+- **P1 (batched):**  
+  1. **Developers UI guides first** — design: `docs/superpowers/specs/2026-09-06-merchant-help-p1-developers-design.md`  
+  2. **Credit domain second** — separate design (not started)  
+  3. Then: customers, payment-splits, external-accounts, crypto, fraud/risk-rules  
 - **P2:** notifications, audit-logs, maintenance detail, close-account, reporting  
 
 ---
