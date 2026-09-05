@@ -8,6 +8,7 @@ import { useSession } from "next-auth/react";
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import SettlementTable from "@/components/settlements/SettlementTable";
 import { usePagedResource } from "@/lib/dashboard/use-paged-resource";
 import {
@@ -139,6 +140,7 @@ export default function SettlementsPage() {
       subtitle={t("subtitle")}
       filterBar={filterBar}
       contentMode="table"
+      extra={<HelpDeepLinkButton dashboardPath="/dashboard/money/settlements" />}
     >
       <SettlementTable
         items={items}

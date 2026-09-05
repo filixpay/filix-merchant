@@ -9,6 +9,7 @@ import { useSession } from "next-auth/react";
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import TransactionReconTable from "@/components/transaction-reconciliation/TransactionReconTable";
 import { downloadReportBlob } from "@/components/reporting/download-report-blob";
 import { usePagedResource } from "@/lib/dashboard/use-paged-resource";
@@ -193,13 +194,16 @@ export default function TransactionReconciliationPage() {
       filterBar={filterBar}
       contentMode="table"
       extra={
-        <Button
-          icon={<DownloadOutlined />}
-          loading={exporting}
-          onClick={() => void handleExport()}
-        >
-          {t("export")}
-        </Button>
+        <>
+          <HelpDeepLinkButton dashboardPath="/dashboard/money/transaction-reconciliation" />
+          <Button
+            icon={<DownloadOutlined />}
+            loading={exporting}
+            onClick={() => void handleExport()}
+          >
+            {t("export")}
+          </Button>
+        </>
       }
     >
       {noReconData ? (

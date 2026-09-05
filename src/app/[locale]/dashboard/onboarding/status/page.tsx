@@ -21,6 +21,7 @@ import {
     type MerchantApplication,
 } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import ApplicationStatusSummary from "@/components/onboarding/ApplicationStatusSummary";
 import ApplicationStatusTimeline from "@/components/onboarding/ApplicationStatusTimeline";
 import { formatOnboardingDateTime } from "@/components/onboarding/onboarding-status-ui";
@@ -273,6 +274,7 @@ export default function OnboardingStatusPage() {
                         : t("statusSubtitle", { status: t(`status.${application.status}`) })
                     : undefined
             }
+            extra={<HelpDeepLinkButton dashboardPath="/dashboard/onboarding/status" />}
         >
             {loading ? (
                 <div className={styles.statusPageContent}>

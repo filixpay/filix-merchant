@@ -13,6 +13,7 @@ import {
   type MoneyInView,
 } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import CreateMoneyInModal from "@/components/money/CreateMoneyInModal";
 import MoneyAssetFilterSelect from "@/components/money/MoneyAssetFilterSelect";
 import MoneyInListTable from "@/components/money/MoneyInListTable";
@@ -150,7 +151,17 @@ export default function MoneyInPage() {
   );
 
   return (
-    <DashboardPage title={t("title")} subtitle={t("subtitle")} contentMode="table" extra={filter}>
+    <DashboardPage
+      title={t("title")}
+      subtitle={t("subtitle")}
+      contentMode="table"
+      extra={
+        <>
+          <HelpDeepLinkButton dashboardPath="/dashboard/money/money-in" />
+          {filter}
+        </>
+      }
+    >
       <Space direction="vertical" size={16} style={{ width: "100%" }}>
         {!assetsLoading && assetOptions.length === 0 && !assetsError ? (
           <Alert type="info" showIcon message={t("no_assets")} />

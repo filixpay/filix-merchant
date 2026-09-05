@@ -8,6 +8,7 @@ import { Download, Plus, Search, SlidersHorizontal } from 'lucide-react';
 import { api } from '@/lib/api';
 import type { ChannelView, LocationView, OrderView, SubMerchantView } from '@/lib/api';
 import DashboardPage from '@/components/layout/DashboardPage';
+import { HelpDeepLinkButton } from '@/components/help/HelpDeepLinkButton';
 import OrderListTable from '@/components/orders/OrderListTable';
 import OrderStatsCards from '@/components/orders/OrderStatsCards';
 import CreateOrderModal from '@/components/orders/CreateOrderModal';
@@ -331,6 +332,7 @@ export default function OrdersPage() {
 
     const extra = (
         <Flex gap={8} align="center">
+            <HelpDeepLinkButton dashboardPath="/dashboard/orders" />
             <Button
                 className={styles.exportButton}
                 icon={<Download size={14} strokeWidth={2} />}

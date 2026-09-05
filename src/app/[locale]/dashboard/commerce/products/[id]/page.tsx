@@ -20,6 +20,7 @@ import {
     isValidStorefrontUrl,
 } from "@/lib/commerce/storefront-url";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import ProductEditorForm, { type ProductEditorValues } from "@/components/commerce/ProductEditorForm";
 import ProductFormFooter from "@/components/commerce/ProductFormFooter";
 import ProductStatusBadges from "@/components/commerce/ProductStatusBadges";
@@ -219,7 +220,16 @@ export default function CommerceProductDetailPage() {
 
     if (loading) {
         return (
-            <DashboardPage title={t("detail.title")} subtitle={backLink}>
+            <DashboardPage
+                title={t("detail.title")}
+                subtitle={backLink}
+                extra={
+                    <HelpDeepLinkButton
+                        dashboardPath="/dashboard/commerce/products"
+                        helpSlug="commerce/products"
+                    />
+                }
+            >
                 <Skeleton active paragraph={{ rows: 10 }} />
             </DashboardPage>
         );
@@ -227,7 +237,16 @@ export default function CommerceProductDetailPage() {
 
     if (!product) {
         return (
-            <DashboardPage title={t("detail.title")} subtitle={backLink}>
+            <DashboardPage
+                title={t("detail.title")}
+                subtitle={backLink}
+                extra={
+                    <HelpDeepLinkButton
+                        dashboardPath="/dashboard/commerce/products"
+                        helpSlug="commerce/products"
+                    />
+                }
+            >
                 <Typography.Text type="danger">{t("detail.not_found")}</Typography.Text>
             </DashboardPage>
         );
@@ -241,13 +260,19 @@ export default function CommerceProductDetailPage() {
             subtitle={backLink}
             contentMode="form"
             extra={
-                <PublishActions
-                    product={product}
-                    loading={actionLoading}
-                    onPublish={handlePublish}
-                    onUnpublish={handleUnpublish}
-                    onRetrySync={handleRetrySync}
-                />
+                <>
+                    <HelpDeepLinkButton
+                        dashboardPath="/dashboard/commerce/products"
+                        helpSlug="commerce/products/publish"
+                    />
+                    <PublishActions
+                        product={product}
+                        loading={actionLoading}
+                        onPublish={handlePublish}
+                        onUnpublish={handleUnpublish}
+                        onRetrySync={handleRetrySync}
+                    />
+                </>
             }
         >
             <Card style={{ marginBottom: 16 }}>

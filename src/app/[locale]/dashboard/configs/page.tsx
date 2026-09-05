@@ -15,6 +15,7 @@ import {
     SubMerchantView,
 } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import CreateConfigModal, {
     type CreateConfigFormValues,
     type CreateConfigPrefill,
@@ -208,9 +209,12 @@ export default function ConfigsPage() {
     });
 
     const extra = (
-        <Button type="primary" icon={<PlusOutlined />} onClick={openGlobalAdd}>
-            {t("add_config")}
-        </Button>
+        <>
+            <HelpDeepLinkButton dashboardPath="/dashboard/configs" />
+            <Button type="primary" icon={<PlusOutlined />} onClick={openGlobalAdd}>
+                {t("add_config")}
+            </Button>
+        </>
     );
 
     return (

@@ -7,6 +7,7 @@ import { Button, Flex, Form, Input, Select } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import { api, type DisputeListItem, type DisputeOperationalSummary } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import DisputeOperationalKpis from "@/components/disputes/DisputeOperationalKpis";
 import DisputeListTable from "@/components/disputes/DisputeListTable";
 import { usePagedResource } from "@/lib/dashboard/use-paged-resource";
@@ -111,7 +112,12 @@ export default function DisputesPage() {
     );
 
     return (
-        <DashboardPage title={t("title")} subtitle={t("subtitle")} filterBar={filterBar}>
+        <DashboardPage
+            title={t("title")}
+            subtitle={t("subtitle")}
+            filterBar={filterBar}
+            extra={<HelpDeepLinkButton dashboardPath="/dashboard/disputes" />}
+        >
             <DisputeOperationalKpis summary={summary} loading={loading} />
             <DisputeListTable
                 disputes={disputes}

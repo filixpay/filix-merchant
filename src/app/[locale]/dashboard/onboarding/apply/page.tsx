@@ -20,6 +20,7 @@ import {
     type MerchantApplication,
 } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import SchemaDynamicForm, {
     buildProfileRequest,
     extractReturnHighlights,
@@ -331,6 +332,7 @@ export default function OnboardingApplyPage() {
         <DashboardPage
             title={t("applyTitle")}
             subtitle={applicationType === "UPGRADE" ? t("upgradeSubtitle") : t("newSubtitle")}
+            extra={<HelpDeepLinkButton dashboardPath="/dashboard/onboarding/apply" />}
         >
             {application?.status === "RETURNED" && application.returnedReason ? (
                 <Alert type="warning" showIcon message={application.returnedReason} style={{ marginBottom: 16 }} />

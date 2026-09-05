@@ -15,6 +15,7 @@ import {
   type ProductListStatusFilter,
 } from "@/lib/api/domains/commerce/product-list-filters";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import ProductListTable from "@/components/commerce/ProductListTable";
 import styles from "./commerce-products-page.module.css";
 
@@ -278,11 +279,17 @@ export default function CommerceProductsPage() {
       filterBar={filterBar}
       contentMode="table"
       extra={
-        <Link href={`/${locale}/dashboard/commerce/products/new`}>
-          <Button type="primary" icon={<PlusOutlined />}>
-            {t("list.create")}
-          </Button>
-        </Link>
+        <>
+          <HelpDeepLinkButton
+            dashboardPath="/dashboard/commerce/products"
+            helpSlug="commerce/products"
+          />
+          <Link href={`/${locale}/dashboard/commerce/products/new`}>
+            <Button type="primary" icon={<PlusOutlined />}>
+              {t("list.create")}
+            </Button>
+          </Link>
+        </>
       }
     >
       <Flex vertical gap={12}>

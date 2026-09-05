@@ -8,6 +8,7 @@ import { Button, Form, Input, Flex } from "antd";
 import { PlusOutlined, ReloadOutlined, SearchOutlined } from "@ant-design/icons";
 import { api, RefundView } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import RefundListTable from "@/components/refunds/RefundListTable";
 import CreateRefundModal from "@/components/refunds/CreateRefundModal";
 import RefundDetailsModal from "@/components/refunds/RefundDetailsModal";
@@ -144,9 +145,12 @@ function RefundsPageContent() {
     );
 
     const extra = (
-        <Button type="primary" icon={<PlusOutlined />} onClick={() => setShowCreateModal(true)}>
-            {t("create_refund")}
-        </Button>
+        <>
+            <HelpDeepLinkButton dashboardPath="/dashboard/refunds" />
+            <Button type="primary" icon={<PlusOutlined />} onClick={() => setShowCreateModal(true)}>
+                {t("create_refund")}
+            </Button>
+        </>
     );
 
     return (

@@ -13,6 +13,7 @@ import {
   type MoneyPayoutView,
 } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import CreatePayoutModal from "@/components/money/CreatePayoutModal";
 import MoneyAssetFilterSelect from "@/components/money/MoneyAssetFilterSelect";
 import PayoutListTable from "@/components/money/PayoutListTable";
@@ -150,7 +151,17 @@ export default function MoneyPayoutsPage() {
   );
 
   return (
-    <DashboardPage title={t("title")} subtitle={t("subtitle")} contentMode="table" extra={filter}>
+    <DashboardPage
+      title={t("title")}
+      subtitle={t("subtitle")}
+      contentMode="table"
+      extra={
+        <>
+          <HelpDeepLinkButton dashboardPath="/dashboard/money/payouts" />
+          {filter}
+        </>
+      }
+    >
       <Space direction="vertical" size={16} style={{ width: "100%" }}>
         {!assetsLoading && assetOptions.length === 0 && !assetsError ? (
           <Alert type="info" showIcon message={t("no_assets")} />

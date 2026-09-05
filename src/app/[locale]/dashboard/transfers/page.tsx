@@ -6,6 +6,7 @@ import { Tabs, Badge, Space, Pagination } from "antd";
 import { useTranslations } from "next-intl";
 import { api, TransferView } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import TransferAuditTable from "@/components/transfer-audit/TransferAuditTable";
 import { buildPagedListParams } from "@/lib/dashboard/build-paged-list-params";
 import { usePagedResource } from "@/lib/dashboard/use-paged-resource";
@@ -138,6 +139,7 @@ export default function TransfersPage() {
             title={t("title")}
             subtitle={t("subtitle")}
             filterBar={filterBar}
+            extra={<HelpDeepLinkButton dashboardPath="/dashboard/transfers" />}
         >
             <Space direction="vertical" size={24} style={{ width: "100%" }}>
                 {accessToken ? (

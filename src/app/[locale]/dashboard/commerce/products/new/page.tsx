@@ -9,6 +9,7 @@ import { ArrowLeftOutlined } from "@ant-design/icons";
 import { useLocale, useTranslations } from "next-intl";
 import { api, type CommerceCategoryView, type CommerceProductTypeView } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import ProductEditorForm, {
   type ProductEditorFormValues,
   type ProductEditorValues,
@@ -99,7 +100,17 @@ export default function CommerceProductCreatePage() {
   );
 
   return (
-    <DashboardPage title={t("create.title")} subtitle={backLink} contentMode="form">
+    <DashboardPage
+      title={t("create.title")}
+      subtitle={backLink}
+      contentMode="form"
+      extra={
+        <HelpDeepLinkButton
+          dashboardPath="/dashboard/commerce/products/new"
+          helpSlug="commerce/products/create"
+        />
+      }
+    >
       <ProductEditorForm
         form={form}
         mode="create"

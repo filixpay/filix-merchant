@@ -13,6 +13,7 @@ import {
   type MoneyAssetCapability,
 } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import CreateMoneyInModal from "@/components/money/CreateMoneyInModal";
 import CreatePayoutModal from "@/components/money/CreatePayoutModal";
 import CreateTransferModal from "@/components/money/CreateTransferModal";
@@ -213,7 +214,12 @@ export default function MoneyBalancePage() {
       title={t("title")}
       subtitle={t("subtitle")}
       contentMode="overview"
-      extra={!loading && !error ? headerExtra : undefined}
+      extra={
+        <>
+          <HelpDeepLinkButton dashboardPath="/dashboard/money/balance" />
+          {!loading && !error ? headerExtra : null}
+        </>
+      }
     >
       {loading ? (
         <div className={styles.skeletonGrid}>
