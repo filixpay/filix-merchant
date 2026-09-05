@@ -7019,6 +7019,7 @@
   },
   "Help": {
     "search_placeholder": "Search FilixPay Help...",
+    "search_no_results": "No matching guides",
     "related_guides": "Related guides",
     "previous": "Previous",
     "next": "Next",

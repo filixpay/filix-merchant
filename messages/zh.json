@@ -7068,6 +7068,7 @@
   },
   "Help": {
     "search_placeholder": "搜索 FilixPay 帮助...",
+    "search_no_results": "未找到匹配的指南",
     "related_guides": "相关指南",
     "previous": "上一篇",
     "next": "下一篇",

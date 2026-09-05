@@ -8,6 +8,7 @@ import {
   type HelpContentLocale,
 } from "@/lib/help/content-locales";
 import { ORGANIZATION_EMAIL } from "@/lib/seo/constants";
+import HelpSearch from "./HelpSearch";
 import styles from "./help.module.css";
 
 type Props = {
@@ -33,22 +34,7 @@ export default async function HelpHomeView({
         <p className={styles.pageDesc}>{t("home_description")}</p>
       </header>
 
-      <div className={styles.searchBox}>
-        <label className={styles.srOnly} htmlFor="help-search">
-          {t("search_placeholder")}
-        </label>
-        <input
-          id="help-search"
-          type="search"
-          name="q"
-          className={styles.searchInput}
-          placeholder={t("search_placeholder")}
-          autoComplete="off"
-          // Wired in Task 10 (HelpSearch)
-          readOnly
-          aria-disabled="true"
-        />
-      </div>
+      <HelpSearch locale={locale} />
 
       <section className={styles.section} aria-labelledby="help-start-here">
         <h2 id="help-start-here" className={styles.sectionTitle}>
