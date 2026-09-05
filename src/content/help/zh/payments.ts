@@ -329,4 +329,132 @@ export const zhPayments: Record<string, HelpArticleContent> = {
       },
     },
   },
+  "payments/payment-splits": {
+    title: "在商户中心查看分账记录",
+    description:
+      "打开 FilixPay 商户中心分账记录，按流水号筛选，并在分账详情中查看接收方明细。",
+    keywords: [
+      "FilixPay 分账记录",
+      "分账",
+      "流水号筛选",
+      "分账接收方",
+      "商户中心分账",
+    ],
+    body: {
+      whoFor:
+        "使用直清业务账户、需要在商户中心查看订单分账记录与接收方状态的运营人员。",
+      whenToUse:
+        "需要按流水号查找分账、查看分账状态，或打开详情查看接收方时使用。",
+      beforeYouStart: [
+        "登录 FilixPay 商户中心。",
+        "使用能在「交易」下看到「分账记录」的业务账户（直清）。若没有该菜单，请切换账户或向管理员确认结算模式——Help 不说明如何变更结算模式。",
+        "搜索时准备好流水号（例如 TRD_EXAMPLE_001）。",
+      ],
+      blocks: [
+        {
+          type: "paragraph",
+          text: "「分账记录」列出订单分账，并可打开详情对话框查看接收方。本指南仅覆盖列表、流水号筛选与详情对话框，不覆盖分账规则配置或分账 API。",
+        },
+        {
+          type: "heading",
+          text: "打开分账记录",
+          anchor: "open",
+        },
+        {
+          type: "steps",
+          items: [
+            "登录商户中心。",
+            "在「交易」下打开「分账记录」。",
+            "确认页面标题为「分账记录」，表格上方有流水号筛选。",
+          ],
+        },
+        {
+          type: "heading",
+          text: "阅读分账列表",
+          anchor: "list",
+        },
+        {
+          type: "fields",
+          rows: [
+            { field: "ID", description: "分账记录标识。" },
+            { field: "流水号", description: "该分账对应的交易流水号。" },
+            {
+              field: "分账金额",
+              description: "分账金额；次要文字可显示订单总额。",
+            },
+            {
+              field: "分账类型",
+              description: "即时分账或延时分账（以界面标签为准）。",
+            },
+            {
+              field: "分账状态",
+              description: "状态徽标（如待分账、成功、失败）。",
+            },
+            {
+              field: "接收方数量",
+              description: "成功数 / 接收方总数；失败数可能单独显示。",
+            },
+            { field: "创建时间", description: "分账记录创建时间。" },
+          ],
+        },
+        {
+          type: "heading",
+          text: "按流水号筛选",
+          anchor: "search",
+        },
+        {
+          type: "steps",
+          items: [
+            "在筛选栏填写流水号。",
+            "提交以应用筛选。",
+            "使用重置清空筛选并回到完整列表。",
+            "需要时使用分页浏览。",
+          ],
+        },
+        {
+          type: "heading",
+          text: "打开分账详情",
+          anchor: "details",
+        },
+        {
+          type: "steps",
+          items: [
+            "在行操作中选择查看，打开「分账详情」。",
+            "查看基本信息（流水号、状态、类型、金额、创建时间）。",
+            "在接收方明细表中查看接收方、名称、金额、比例与状态。",
+            "查看完毕后关闭对话框。本页没有单独的详情 URL。",
+          ],
+        },
+        {
+          type: "heading",
+          text: "常见问题",
+          anchor: "common-issues",
+        },
+        {
+          type: "issues",
+          items: [
+            {
+              problem: "侧栏找不到「分账记录」。",
+              solution:
+                "该入口面向直清业务账户。请确认已选择正确账户。Help 不说明如何变更结算模式——若仍无菜单，请联系管理员。",
+            },
+            {
+              problem: "提示暂无分账记录。",
+              solution:
+                "先重置流水号筛选。若仍为空，说明当前账户下尚无分账记录。",
+            },
+            {
+              problem: "分账详情打不开或一直加载。",
+              solution:
+                "关闭对话框，确认仍处于登录状态后再次查看；若因网络失败可重试。",
+            },
+          ],
+        },
+      ],
+      nextStep: {
+        label: "管理订单",
+        href: "/help/payments/orders",
+      },
+    },
+  },
 };
