@@ -192,6 +192,39 @@ export default async function HelpArticleView({
         </section>
       ) : null}
 
+      {article.marketingPath || article.developerPath ? (
+        <section className={styles.section} aria-labelledby="help-outbound">
+          <h2 id="help-outbound" className={styles.sectionTitle}>
+            {t("outbound.section_title")}
+          </h2>
+          <div className={styles.outboundGroup}>
+            {article.marketingPath ? (
+              <Link
+                href={`/${locale}${article.marketingPath}`}
+                className={styles.outboundLink}
+              >
+                {t("outbound.marketing")}
+              </Link>
+            ) : null}
+            {article.developerPath ? (
+              <Link
+                href={
+                  article.developerPath.startsWith("http")
+                    ? article.developerPath
+                    : `/${locale}${article.developerPath}`
+                }
+                className={styles.outboundLink}
+                {...(article.developerPath.startsWith("http")
+                  ? { target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
+              >
+                {t("outbound.developer_docs")}
+              </Link>
+            ) : null}
+          </div>
+        </section>
+      ) : null}
+
       {body?.nextStep ? (
         <section className={styles.nextStep} aria-labelledby="help-next-step">
           <h2 id="help-next-step" className={styles.sectionTitle}>
