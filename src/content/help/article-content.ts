@@ -5,6 +5,7 @@ import { enPayments } from "./en/payments";
 import { enFunds } from "./en/funds";
 import { enRisk } from "./en/risk";
 import { enCommerce } from "./en/commerce";
+import { enDevelopers } from "./en/developers";
 import { zhGettingStarted } from "./zh/getting-started";
 import { zhPayments } from "./zh/payments";
 import { zhFunds } from "./zh/funds";
@@ -28,6 +29,7 @@ export const HELP_ARTICLE_CONTENT: Record<
     ...enFunds,
     ...enRisk,
     ...enCommerce,
+    ...enDevelopers,
   },
   zh: {
     ...zhGettingStarted,
