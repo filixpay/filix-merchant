@@ -221,7 +221,10 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
     domain: "commerce",
     published: true,
     order: 10,
-    relatedSlugs: [],
+    relatedSlugs: [
+      "commerce/products/create",
+      "commerce/products/publish",
+    ],
     dashboardLinks: [
       {
         path: "/dashboard/commerce/products",
@@ -235,7 +238,10 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
     domain: "commerce",
     published: true,
     order: 20,
-    relatedSlugs: [],
+    relatedSlugs: [
+      "commerce/products/publish",
+      "commerce/products",
+    ],
     dashboardLinks: [
       {
         path: "/dashboard/commerce/products/new",
@@ -249,7 +255,10 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
     domain: "commerce",
     published: true,
     order: 30,
-    relatedSlugs: [],
+    relatedSlugs: [
+      "commerce/products/create",
+      "commerce/products",
+    ],
     dashboardLinks: [
       {
         path: "/dashboard/commerce/products",
