@@ -24,27 +24,34 @@ export function writeMerchantsCache(merchants: MerchantDetailView[]) {
     sessionStorage.setItem(MERCHANTS_CACHE_KEY, JSON.stringify(merchants));
 }
 
-export function getStoredSelectedMerchantId(): number | null {
+export function getStoredSelectedMerchantId(): string | number | null {
     if (typeof window === "undefined") return null;
-    const saved = localStorage.getItem("selectedMerchantId");
+    const saved = localStorage.getItem("selectedMerchantId")?.trim();
     if (!saved) return null;
-    const id = parseInt(saved, 10);
-    return Number.isNaN(id) ? null : id;
+    // API merchant ids may be UUID strings; parseInt("01a0…") === 1 and breaks matching.
+    if (/^\d+$/.test(saved)) {
+        const asNumber = Number(saved);
+        return Number.isSafeInteger(asNumber) ? asNumber : saved;
+    }
+    return saved;
 }
 
 export { getStoredSelectedMerchantCode };
 
 export function findSelectedMerchant(
     merchants: MerchantDetailView[],
-    selectedId: number | null,
+    selectedId: string | number | null,
 ): MerchantDetailView | null {
     if (!merchants.length) return null;
-    if (selectedId != null) {
-        const found = merchants.find((merchant) => merchant.id === selectedId);
+    if (selectedId != null && selectedId !== "") {
+        const selectedKey = String(selectedId);
+        const found = merchants.find((merchant) => String(merchant.id) === selectedKey);
         // #region agent log
-        fetch('http://127.0.0.1:7897/ingest/133c483d-e320-4bae-9560-8d2829a55a07',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'22a5f0'},body:JSON.stringify({sessionId:'22a5f0',runId:'pre-fix',hypothesisId:'H2',location:'merchant-shell.ts:findSelectedMerchant',message:'resolve legacy merchant list selection',data:{selectedId,ids:merchants.map((m)=>({id:m.id,idType:typeof m.id,code:m.code==null?null:String(m.code)})),matched:Boolean(found),fallbackToFirst:!found},timestamp:Date.now()})}).catch(()=>{});
+        fetch('http://127.0.0.1:7897/ingest/133c483d-e320-4bae-9560-8d2829a55a07',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'22a5f0'},body:JSON.stringify({sessionId:'22a5f0',runId:'post-fix',hypothesisId:'H2',location:'merchant-shell.ts:findSelectedMerchant',message:'resolve legacy merchant list selection',data:{selectedId:selectedKey,ids:merchants.map((m)=>({id:m.id,idType:typeof m.id,code:m.code==null?null:String(m.code)})),matched:Boolean(found),fallbackToFirst:false},timestamp:Date.now()})}).catch(()=>{});
         // #endregion
-        if (found) return found;
+        // Explicit selection that is missing must not fall back to merchants[0]:
+        // that path overwrote selectedMerchantCode and reset the org business account.
+        return found ?? null;
     }
     return merchants[0];
 }

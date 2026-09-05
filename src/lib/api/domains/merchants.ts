@@ -25,7 +25,8 @@ export interface MerchantView {
 }
 
 export interface MerchantDetailView {
-    id: number;
+    /** Portal may return numeric or UUID string ids. */
+    id: number | string;
     code: number | string;
     name: string;
     merchantType: string;

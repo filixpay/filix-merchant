@@ -14,7 +14,7 @@ export type { MerchantIdentity };
 
 interface IdentitySwitcherProps {
     merchants: MerchantDetailView[];
-    selectedMerchantId: number | null;
+    selectedMerchantId: number | string | null;
     loading?: boolean;
     onSelect: (merchant: MerchantDetailView) => void;
     onMerchantsReload?: () => void;
@@ -35,14 +35,16 @@ export default function IdentitySwitcher({
     const [isOpen, setIsOpen] = useState(false);
     const [isActivateModalOpen, setIsActivateModalOpen] = useState(false);
 
-    const currentMerchant = merchants.find((merchant) => merchant.id === selectedMerchantId);
+    const currentMerchant = merchants.find(
+        (merchant) => String(merchant.id) === String(selectedMerchantId),
+    );
     const currentIdentity: MerchantIdentity = currentMerchant
         ? getMerchantIdentity(currentMerchant)
         : "independent";
     const hasThreeParty = merchants.some((merchant) => merchant.settlementMode === "PLATFORM");
 
     const handleSelect = (merchant: MerchantDetailView) => {
-        if (selectedMerchantId === merchant.id) {
+        if (String(selectedMerchantId) === String(merchant.id)) {
             setIsOpen(false);
             return;
         }
@@ -105,7 +107,7 @@ export default function IdentitySwitcher({
                             <button
                                 type="button"
                                 key={merchant.id}
-                                className={`${styles.option} ${selectedMerchantId === merchant.id ? styles.selected : ""}`}
+                                className={`${styles.option} ${String(selectedMerchantId) === String(merchant.id) ? styles.selected : ""}`}
                                 onClick={() => handleSelect(merchant)}
                             >
                                 <div className={styles.optionIcon}>
@@ -123,7 +125,7 @@ export default function IdentitySwitcher({
                                             : t("sub_merchant.desc")}
                                     </div>
                                 </div>
-                                {selectedMerchantId === merchant.id && (
+                                {String(selectedMerchantId) === String(merchant.id) && (
                                     <CheckCircleIcon className={styles.checkIcon} />
                                 )}
                             </button>
