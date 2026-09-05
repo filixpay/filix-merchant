@@ -359,4 +359,141 @@ export const enPayments: Record<string, HelpArticleContent> = {
       },
     },
   },
+  "payments/payment-splits": {
+    title: "Review payment split records in Merchant Center",
+    description:
+      "Open Payment Splits in FilixPay Merchant Center to list split records, filter by trade number, and view receiver details in the split details dialog.",
+    keywords: [
+      "FilixPay payment splits",
+      "split payment records",
+      "trade no split",
+      "split receivers",
+      "Merchant Center payment splits",
+    ],
+    body: {
+      whoFor:
+        "Operators on direct-settlement business accounts who need to review order payment-split records and receiver status in Merchant Center.",
+      whenToUse:
+        "Use this when you need to find a split by trade number, check split status, or open split details to see receivers.",
+      beforeYouStart: [
+        "Sign in to FilixPay Merchant Center.",
+        "Use a business account that can see Split Payment Records under Transactions (direct settlement). If the menu is missing, switch accounts or confirm settlement mode with your admin — Help does not document how to change settlement mode.",
+        "Have a trade number ready when searching (for example TRD_EXAMPLE_001).",
+      ],
+      blocks: [
+        {
+          type: "paragraph",
+          text: "Payment Splits lists split records for orders and lets you open a details dialog for receivers. This guide covers the list, Trade No filter, and details dialog only. It does not cover configuring split rules or Payment Split APIs.",
+        },
+        {
+          type: "heading",
+          text: "Open Payment Splits",
+          anchor: "open",
+        },
+        {
+          type: "steps",
+          items: [
+            "Sign in to Merchant Center.",
+            "Under Transactions, open Split Payment Records.",
+            "Confirm the page title Payment Splits and the Trade No filter above the table.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Read the split list",
+          anchor: "list",
+        },
+        {
+          type: "fields",
+          rows: [
+            { field: "ID", description: "Split record identifier." },
+            {
+              field: "Trade No",
+              description: "Trade / payment reference for the split.",
+            },
+            {
+              field: "Split Amount",
+              description:
+                "Split amount, with order total shown as secondary text.",
+            },
+            {
+              field: "Split Type",
+              description: "Immediate or Delayed (as labeled in the UI).",
+            },
+            {
+              field: "Status",
+              description:
+                "Split status badge (for example Pending, Success, Failed).",
+            },
+            {
+              field: "Receivers",
+              description:
+                "Success count versus receiver count; failures may show separately.",
+            },
+            {
+              field: "Created At",
+              description: "When the split record was created.",
+            },
+          ],
+        },
+        {
+          type: "heading",
+          text: "Filter by Trade No",
+          anchor: "search",
+        },
+        {
+          type: "steps",
+          items: [
+            "Enter Trade No in the filter (placeholder Trade No).",
+            "Submit to apply the filter.",
+            "Use Reset to clear the filter and reload the full list.",
+            "Paginate through results as needed.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Open split details",
+          anchor: "details",
+        },
+        {
+          type: "steps",
+          items: [
+            "On a row, choose the view action to open Split Details.",
+            "Review basic information (trade no, status, type, amounts, created time).",
+            "Review Receiver Details in the dialog table (receiver, name, amount, proportion, status).",
+            "Close the dialog when finished. There is no separate detail URL for this screen.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Common issues",
+          anchor: "common-issues",
+        },
+        {
+          type: "issues",
+          items: [
+            {
+              problem: "I cannot find Split Payment Records in the menu.",
+              solution:
+                "This item is shown for direct-settlement business accounts. Confirm you selected the correct account. Help does not document how to change settlement mode — ask your admin if the menu stays hidden.",
+            },
+            {
+              problem: "No split payment records found.",
+              solution:
+                "Clear the Trade No filter with Reset. If the list is still empty, no split records are available for this account yet.",
+            },
+            {
+              problem: "Split Details does not load.",
+              solution:
+                "Close the dialog, confirm you are still signed in, then open view again. Retry if the network failed.",
+            },
+          ],
+        },
+      ],
+      nextStep: {
+        label: "Manage orders",
+        href: "/help/payments/orders",
+      },
+    },
+  },
 };
