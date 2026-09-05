@@ -75,3 +75,11 @@ Spec: `docs/superpowers/specs/2026-09-06-merchant-help-p1-developers-design.md`
 | `/dashboard/customers` | `payments/customers` | New published guide; single page-level `?` |
 
 Credit domain skipped this cycle. Spec: `docs/superpowers/specs/2026-09-06-merchant-help-p1-customers-design.md`
+
+## P1 amendment (2026-09-06) — Payment Splits batch
+
+| Dashboard path | Page-level `?` | Notes |
+|----------------|----------------|-------|
+| `/dashboard/payment-splits` | `payments/payment-splits` | Menu may be hidden unless direct settlement |
+
+Spec: `docs/superpowers/specs/2026-09-06-merchant-help-p1-payment-splits-design.md`
