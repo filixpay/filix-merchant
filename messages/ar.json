@@ -4704,7 +4704,9 @@
         "downloads": "مركز التنزيلات",
         "downloads_desc": "وثائق النشر ونماذج الاتفاقيات",
         "reconciliation_settlement": "المطابقة والتسوية",
-        "reconciliation_settlement_desc": "كيف تدير FilixPay سير عمل المطابقة وضوابط التسوية"
+        "reconciliation_settlement_desc": "كيف تدير FilixPay سير عمل المطابقة وضوابط التسوية",
+        "help": "مركز المساعدة",
+        "help_desc": "أدلة لسير عمل مركز التجار"
       }
     }
   },

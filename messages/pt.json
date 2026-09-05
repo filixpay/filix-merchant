@@ -4704,7 +4704,9 @@
         "downloads": "Central de downloads",
         "downloads_desc": "Docs de implantação e modelos de contrato",
         "reconciliation_settlement": "Conciliação e liquidação",
-        "reconciliation_settlement_desc": "Como a FilixPay gerencia fluxos de conciliação e controles de liquidação"
+        "reconciliation_settlement_desc": "Como a FilixPay gerencia fluxos de conciliação e controles de liquidação",
+        "help": "Central de ajuda",
+        "help_desc": "Guias para fluxos do Merchant Center"
       }
     }
   },

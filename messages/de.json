@@ -4704,7 +4704,9 @@
         "downloads": "Download-Center",
         "downloads_desc": "Bereitstellungsdokumente & Vertragsvorlagen",
         "reconciliation_settlement": "Abstimmung & Abrechnung",
-        "reconciliation_settlement_desc": "Wie FilixPay Abstimmungsabläufe und Abrechnungssteuerungen verwaltet"
+        "reconciliation_settlement_desc": "Wie FilixPay Abstimmungsabläufe und Abrechnungssteuerungen verwaltet",
+        "help": "Hilfezentrum",
+        "help_desc": "Anleitungen für Merchant-Center-Abläufe"
       }
     }
   },

@@ -4704,7 +4704,9 @@
         "downloads": "Centro de descargas",
         "downloads_desc": "Documentos de despliegue y muestras de acuerdos",
         "reconciliation_settlement": "Conciliación y liquidación",
-        "reconciliation_settlement_desc": "Cómo FilixPay gestiona los flujos de conciliación y los controles de liquidación"
+        "reconciliation_settlement_desc": "Cómo FilixPay gestiona los flujos de conciliación y los controles de liquidación",
+        "help": "Centro de ayuda",
+        "help_desc": "Guías para los flujos del Centro de comerciantes"
       }
     }
   },

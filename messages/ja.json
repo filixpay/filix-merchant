@@ -4704,7 +4704,9 @@
         "downloads": "ダウンロードセンター",
         "downloads_desc": "デプロイメントドキュメントと契約サンプル",
         "reconciliation_settlement": "照合と精算",
-        "reconciliation_settlement_desc": "FilixPayにおける照合ワークフローと精算制御の仕組み"
+        "reconciliation_settlement_desc": "FilixPayにおける照合ワークフローと精算制御の仕組み",
+        "help": "ヘルプセンター",
+        "help_desc": "マーチャントセンターの操作ガイド"
       }
     }
   },

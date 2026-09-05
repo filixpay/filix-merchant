@@ -4755,7 +4755,9 @@
         "downloads": "下载中心",
         "downloads_desc": "部署文档与协议样本",
         "reconciliation_settlement": "对账与结算",
-        "reconciliation_settlement_desc": "FilixPay 对账与结算体系说明"
+        "reconciliation_settlement_desc": "FilixPay 对账与结算体系说明",
+        "help": "帮助中心",
+        "help_desc": "商户中心操作指南"
       }
     }
   },

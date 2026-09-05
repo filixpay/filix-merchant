@@ -4704,7 +4704,9 @@
         "downloads": "Download Center",
         "downloads_desc": "Deployment docs & agreement samples",
         "reconciliation_settlement": "Reconciliation & Settlement",
-        "reconciliation_settlement_desc": "How FilixPay manages reconciliation workflows and settlement controls"
+        "reconciliation_settlement_desc": "How FilixPay manages reconciliation workflows and settlement controls",
+        "help": "Help Center",
+        "help_desc": "Guides for Merchant Center workflows"
       }
     }
   },

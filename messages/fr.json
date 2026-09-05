@@ -4704,7 +4704,9 @@
         "downloads": "Centre de téléchargement",
         "downloads_desc": "Docs de déploiement et modèles d'accords",
         "reconciliation_settlement": "Rapprochement et règlement",
-        "reconciliation_settlement_desc": "Comment FilixPay gère les flux de rapprochement et les contrôles de règlement"
+        "reconciliation_settlement_desc": "Comment FilixPay gère les flux de rapprochement et les contrôles de règlement",
+        "help": "Centre d'aide",
+        "help_desc": "Guides pour les flux du Merchant Center"
       }
     }
   },

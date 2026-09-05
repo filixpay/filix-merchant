@@ -4704,7 +4704,9 @@
         "downloads": "다운로드 센터",
         "downloads_desc": "배포 문서 및 계약서 샘플",
         "reconciliation_settlement": "대사 및 정산",
-        "reconciliation_settlement_desc": "FilixPay의 대사 워크플로 및 정산 제어 방식"
+        "reconciliation_settlement_desc": "FilixPay의 대사 워크플로 및 정산 제어 방식",
+        "help": "도움말 센터",
+        "help_desc": "머천트 센터 워크플로 가이드"
       }
     }
   },
