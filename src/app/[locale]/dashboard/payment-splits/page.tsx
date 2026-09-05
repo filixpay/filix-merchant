@@ -7,6 +7,7 @@ import { SearchOutlined, ReloadOutlined } from "@ant-design/icons";
 import { useTranslations } from "next-intl";
 import { api, PaymentSplitView } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import PaymentSplitTable from "@/components/payment-splits/PaymentSplitTable";
 import { usePagedResource } from "@/lib/dashboard/use-paged-resource";
 
@@ -82,6 +83,12 @@ export default function PaymentSplitsPage() {
             title={t("title")}
             subtitle={t("subtitle")}
             filterBar={filterBar}
+            extra={
+                <HelpDeepLinkButton
+                    dashboardPath="/dashboard/payment-splits"
+                    helpSlug="payments/payment-splits"
+                />
+            }
         >
             {accessToken ? (
                 <PaymentSplitTable
