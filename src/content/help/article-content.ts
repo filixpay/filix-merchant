@@ -11,6 +11,7 @@ import { zhPayments } from "./zh/payments";
 import { zhFunds } from "./zh/funds";
 import { zhRisk } from "./zh/risk";
 import { zhCommerce } from "./zh/commerce";
+import { zhDevelopers } from "./zh/developers";
 
 export type HelpArticleContent = {
   title: string;
@@ -37,5 +38,6 @@ export const HELP_ARTICLE_CONTENT: Record<
     ...zhFunds,
     ...zhRisk,
     ...zhCommerce,
+    ...zhDevelopers,
   },
 };
