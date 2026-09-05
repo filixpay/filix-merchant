@@ -210,4 +210,123 @@ export const zhPayments: Record<string, HelpArticleContent> = {
       },
     },
   },
+  "payments/customers": {
+    title: "在商户中心查找客户",
+    description:
+      "打开 FilixPay 商户中心的客户页，查看客户列表，并按客户号、邮箱或电话筛选。",
+    keywords: [
+      "FilixPay 客户 商户中心",
+      "客户列表",
+      "按邮箱查找客户",
+      "客户号",
+      "电话筛选客户",
+    ],
+    body: {
+      whoFor: "需要在 FilixPay 商户中心用客户列表与筛选条件定位已有客户记录的运营人员。",
+      whenToUse: "当你需要按客户号、邮箱或电话查找客户，或查看列表中展示的客户字段时使用。",
+      beforeYouStart: [
+        "使用具备「客户」权限的账号登录商户中心。",
+        "搜索时准备至少一个标识（客户号、邮箱如 customer@example.com、或电话如 13800138000）。",
+      ],
+      blocks: [
+        {
+          type: "paragraph",
+          text: "侧栏「客户」对应页面标题为「客户」。本指南覆盖打开列表、阅读行内字段与筛选。不覆盖创建/编辑客户、Customer API，也不描述单独的详情页——当前界面没有这些能力。",
+        },
+        {
+          type: "heading",
+          text: "打开客户列表",
+          anchor: "open",
+        },
+        {
+          type: "steps",
+          items: [
+            "登录商户中心。",
+            "在侧栏打开「客户」。",
+            "确认页面标题为「客户」，表格上方有筛选栏。",
+          ],
+        },
+        {
+          type: "heading",
+          text: "在列表中查看客户记录",
+          anchor: "list",
+        },
+        {
+          type: "paragraph",
+          text: "客户记录以表格行展示。本页没有单独的客户详情页——请直接阅读行内字段。",
+        },
+        {
+          type: "fields",
+          rows: [
+            { field: "客户号", description: "列表中的客户唯一编号。" },
+            { field: "姓名", description: "客户显示名称。" },
+            { field: "邮箱", description: "记录上的邮箱。" },
+            {
+              field: "手机号",
+              description: "表格中的手机号列（标签为「手机号」）。",
+            },
+            { field: "客户状态", description: "商户中心展示的状态徽标。" },
+            { field: "创建时间", description: "客户记录创建时间。" },
+          ],
+        },
+        {
+          type: "heading",
+          text: "按客户号、邮箱或电话搜索",
+          anchor: "search",
+        },
+        {
+          type: "steps",
+          items: [
+            "在筛选栏按需填写客户号、邮箱和/或电话。电话筛选项占位为「电话」（与表格列「手机号」不同）。",
+            "点击「查询」应用筛选；留空的字段不会参与筛选。",
+            "同时填写多个字段时，商户中心会一并应用这些条件。",
+            "点击「重置」清空筛选并回到未筛选列表。",
+            "使用分页浏览结果。",
+          ],
+        },
+        {
+          type: "heading",
+          text: "常见场景",
+          anchor: "scenarios",
+        },
+        {
+          type: "steps",
+          items: [
+            "已知邮箱：填写邮箱（例如 customer@example.com），再查询。",
+            "已知电话：填写电话（例如 13800138000），再查询。",
+            "已知客户号：填写客户号，再查询。",
+          ],
+        },
+        {
+          type: "heading",
+          text: "常见问题",
+          anchor: "common-issues",
+        },
+        {
+          type: "issues",
+          items: [
+            {
+              problem: "提示暂无客户数据。",
+              solution:
+                "确认当前组织/业务账户正确，先重置筛选再查询。若仍为空，说明该账户下尚无客户记录。",
+            },
+            {
+              problem: "查询后没有匹配行。",
+              solution:
+                "检查拼写与多余空格，可先只填一个条件。注意筛选项是「电话」，表格列名是「手机号」。",
+            },
+            {
+              problem: "我以为会有客户详情页。",
+              solution:
+                "当前商户中心此页仅在表格中展示记录。请使用行内字段查看；本 UI 不含单独详情路由。",
+            },
+          ],
+        },
+      ],
+      nextStep: {
+        label: "查看支付与订单",
+        href: "/help/payments/orders",
+      },
+    },
+  },
 };
