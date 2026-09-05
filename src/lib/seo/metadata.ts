@@ -33,6 +33,29 @@ export function buildAlternates(locale: string, path: string) {
   };
 }
 
+export function buildHelpAlternates(
+  locale: string,
+  path: string,
+  publishedLocales: readonly string[],
+) {
+  const suffix = normalizePath(path);
+  const languages: Record<string, string> = {};
+  for (const loc of publishedLocales) {
+    languages[loc] = `/${loc}${suffix}`;
+  }
+  // x-default: DEFAULT_LOCALE when published; otherwise first published locale (never point at unpublished EN).
+  const xDefaultLocale = publishedLocales.includes(DEFAULT_LOCALE)
+    ? DEFAULT_LOCALE
+    : publishedLocales[0];
+  if (xDefaultLocale) {
+    languages["x-default"] = `/${xDefaultLocale}${suffix}`;
+  }
+  return {
+    canonical: `/${locale}${suffix}`, // self-canonical always
+    languages,
+  };
+}
+
 export function buildPageMetadata(input: PageSeoInput): Metadata {
   const { locale, path, title, description, keywords, ogImage, robots } = input;
   const alternates = buildAlternates(locale, path);
