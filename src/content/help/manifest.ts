@@ -79,7 +79,7 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
     domain: "payments",
     published: true,
     order: 10,
-    relatedSlugs: [],
+    relatedSlugs: ["payments/customers"],
     dashboardLinks: [
       {
         path: "/dashboard/orders",
@@ -103,6 +103,20 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
       {
         path: "/dashboard/reviews",
         labelKey: "open_reviews",
+      },
+    ],
+  },
+  {
+    slug: "payments/customers",
+    domain: "payments",
+    published: true,
+    order: 30,
+    relatedSlugs: ["payments/orders"],
+    dashboardLinks: [
+      {
+        path: "/dashboard/customers",
+        labelKey: "open_customers",
+        primary: true,
       },
     ],
   },
