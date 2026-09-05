@@ -2,11 +2,12 @@
 
 import { useCallback, useMemo, useState } from "react";
 import { useSession } from "next-auth/react";
-import { Alert, Button } from "antd";
+import { Alert, Button, Space } from "antd";
 import { Plus } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { moneyProductApi, type ExternalAccountView } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import CreateExternalAccountModal from "@/components/money/CreateExternalAccountModal";
 import ExternalAccountTable from "@/components/money/ExternalAccountTable";
 import { buildPagedListParams } from "@/lib/dashboard/build-paged-list-params";
@@ -58,9 +59,15 @@ export default function MoneyExternalAccountsPage() {
   );
 
   const extra = (
-    <Button type="primary" icon={<Plus size={16} />} onClick={() => setShowCreate(true)}>
-      {t("create_account")}
-    </Button>
+    <Space size={8}>
+      <HelpDeepLinkButton
+        dashboardPath="/dashboard/money/external-accounts"
+        helpSlug="funds/external-accounts"
+      />
+      <Button type="primary" icon={<Plus size={16} />} onClick={() => setShowCreate(true)}>
+        {t("create_account")}
+      </Button>
+    </Space>
   );
 
   return (

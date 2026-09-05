@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
-import { Alert, Button, message } from "antd";
+import { Alert, Button, Space, message } from "antd";
 import { Lock, Plus } from "lucide-react";
 import { useTranslations } from "next-intl";
 import {
@@ -13,6 +13,7 @@ import {
   CryptoSupportedAsset,
 } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import DepositWalletTable from "@/components/crypto-deposit-wallets/DepositWalletTable";
 import DepositWalletFormDrawer from "@/components/crypto-deposit-wallets/DepositWalletFormDrawer";
 import { handleDashboardApiError } from "@/lib/dashboard/handle-dashboard-api-error";
@@ -110,11 +111,19 @@ export default function MoneyCryptoPage() {
     }
   };
 
-  const extra = canManage ? (
-    <Button type="primary" icon={<Plus size={16} />} onClick={handleCreate}>
-      {t("add_wallet")}
-    </Button>
-  ) : undefined;
+  const extra = (
+    <Space size={8}>
+      <HelpDeepLinkButton
+        dashboardPath="/dashboard/money/crypto"
+        helpSlug="funds/crypto"
+      />
+      {canManage ? (
+        <Button type="primary" icon={<Plus size={16} />} onClick={handleCreate}>
+          {t("add_wallet")}
+        </Button>
+      ) : null}
+    </Space>
+  );
 
   return (
     <DashboardPage title={t("title")} subtitle={t("subtitle")} contentMode="table" extra={extra}>

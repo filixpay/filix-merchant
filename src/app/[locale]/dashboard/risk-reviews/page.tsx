@@ -7,6 +7,7 @@ import { Button, Flex, Form, Input, Select } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import { api, type RiskReviewListItem, RiskPriority } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import RiskReviewTable from "@/components/risk-reviews/RiskReviewTable";
 import { usePagedResource } from "@/lib/dashboard/use-paged-resource";
 import {
@@ -116,7 +117,17 @@ export default function RiskReviewsPage() {
     );
 
     return (
-        <DashboardPage title={t("title")} subtitle={t("subtitle")} filterBar={filterBar}>
+        <DashboardPage
+            title={t("title")}
+            subtitle={t("subtitle")}
+            filterBar={filterBar}
+            extra={
+                <HelpDeepLinkButton
+                    dashboardPath="/dashboard/risk-reviews"
+                    helpSlug="risk/controls"
+                />
+            }
+        >
             <RiskReviewTable
                 reviews={reviews}
                 loading={loading}

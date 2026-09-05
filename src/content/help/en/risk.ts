@@ -199,4 +199,130 @@ export const enRisk: Record<string, HelpArticleContent> = {
       },
     },
   },
+  "risk/controls": {
+    title: "Fraud events, risk reviews, and risk rules",
+    description:
+      "Find Fraud Events, the Risk Review Queue, and read-only Risk Rules under Risk Management in FilixPay Merchant Center.",
+    keywords: [
+      "fraud events",
+      "risk review queue",
+      "risk rules",
+      "PRE_AUTH",
+      "risk management",
+    ],
+    body: {
+      whoFor:
+        "Operators who monitor fraud signals, check the manual review queue, or view platform and merchant risk rules.",
+      whenToUse:
+        "Use this when you open Risk Management → Fraud, Risk Reviews, or Risk Rules to investigate a signal or understand which PRE_AUTH rules are in effect.",
+      beforeYouStart: [
+        "Sign in with access to Risk Management menus.",
+        "Have an order ID, payment ID, or keyword ready when searching Fraud Events or Risk Reviews (for example ORD_EXAMPLE_001).",
+        "Know that Risk Rules in Merchant Center are read-only — Help does not document how to create or edit rules.",
+      ],
+      blocks: [
+        {
+          type: "paragraph",
+          text: "Risk Management exposes three related surfaces. Fraud Events lists detected fraud signals and investigation status. Risk Review Queue is a read-only list of suspicious orders and payouts flagged for manual review. Risk Rules shows platform and merchant PRE_AUTH rules (read-only). This guide maps What / Where / When and how to open each list; it does not cover scoring algorithms or Credit.",
+        },
+        {
+          type: "heading",
+          text: "What / Where / When",
+          anchor: "map",
+        },
+        {
+          type: "fields",
+          rows: [
+            {
+              field: "Fraud Events",
+              description:
+                "Open Risk Management → Fraud when you need event type, severity, related order, and investigation status.",
+            },
+            {
+              field: "Risk Review Queue",
+              description:
+                "Open Risk Management → Risk Reviews when an order or payout is flagged for manual review (Pending / Approved / Rejected).",
+            },
+            {
+              field: "Risk Rules",
+              description:
+                "Open Risk Management → Risk Rules when you need to see which PRE_AUTH velocity or amount rules are enabled and how they enforce (Block or Review before payment).",
+            },
+          ],
+        },
+        {
+          type: "heading",
+          text: "Work with Fraud Events",
+          anchor: "fraud",
+        },
+        {
+          type: "steps",
+          items: [
+            "Open Risk Management → Fraud (Fraud Events).",
+            "Filter by keyword, Status, and Severity as needed, then Search. Use Reset to clear filters.",
+            "Read Event Type, Risk Type, Description, Severity, Related Order, Status, and Detected At.",
+            "Open a row to view Fraud Event Detail (payment ID, provider, risk score, and metadata when present).",
+            "Use Back to fraud events to return to the list.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Work with Risk Reviews",
+          anchor: "reviews",
+        },
+        {
+          type: "steps",
+          items: [
+            "Open Risk Management → Risk Reviews (Risk Review Queue).",
+            "Filter by keyword, Status, Priority, and Review type when needed, then Search.",
+            "Read Resource (Order or Payout), Reason, Priority, Status, and Flagged At.",
+            "Open a row for Review Detail (reason code, queued/decided times, decision note, linked fraud event, resume link when shown).",
+            "Treat the queue as read-only in Merchant Center — decisions may be completed outside this list UI.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "View Risk Rules",
+          anchor: "rules",
+        },
+        {
+          type: "steps",
+          items: [
+            "Open Risk Management → Risk Rules.",
+            "Review Name, Type (Velocity or Amount), Severity, Enforcement, Scope (Platform or Merchant), Enabled, and Priority.",
+            "Use this list to understand which rules can block or send traffic to review before payment. Do not expect an edit action on this page.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Common issues",
+          anchor: "common-issues",
+        },
+        {
+          type: "issues",
+          items: [
+            {
+              problem: "I cannot edit a risk rule in Merchant Center.",
+              solution:
+                "Risk Rules is read-only here. Ask your admin or platform operator if a rule change is required. Help does not document rule authoring APIs.",
+            },
+            {
+              problem: "Is a fraud event the same as a chargeback?",
+              solution:
+                "No. Fraud Events and Risk Reviews are risk-control surfaces. Card-network disputes live under Disputes & Chargebacks — see /help/risk/disputes. Merchant-started returns are under Refunds — see /help/risk/refunds.",
+            },
+            {
+              problem: "Review queue stays Pending with no action button.",
+              solution:
+                "The Merchant Center queue is read-only. Open Review Detail for linked fraud or resume information, and follow your internal review process or platform instructions.",
+            },
+          ],
+        },
+      ],
+      nextStep: {
+        label: "Disputes & Chargebacks",
+        href: "/help/risk/disputes",
+      },
+    },
+  },
 };

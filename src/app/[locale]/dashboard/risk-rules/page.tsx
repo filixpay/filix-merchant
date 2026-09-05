@@ -5,6 +5,7 @@ import { useSession } from "next-auth/react";
 import { useTranslations } from "next-intl";
 import { api, type RiskRuleView } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import RiskRuleTable from "@/components/risk/RiskRuleTable";
 import { handleDashboardApiError } from "@/lib/dashboard/handle-dashboard-api-error";
 
@@ -56,7 +57,16 @@ export default function RiskRulesPage() {
     }, [accessToken, reload]);
 
     return (
-        <DashboardPage title={t("title")} subtitle={t("subtitle")}>
+        <DashboardPage
+            title={t("title")}
+            subtitle={t("subtitle")}
+            extra={
+                <HelpDeepLinkButton
+                    dashboardPath="/dashboard/risk-rules"
+                    helpSlug="risk/controls"
+                />
+            }
+        >
             <RiskRuleTable
                 rules={rules}
                 loading={loading}

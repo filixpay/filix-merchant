@@ -164,7 +164,7 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
     domain: "funds",
     published: true,
     order: 20,
-    relatedSlugs: [],
+    relatedSlugs: ["funds/crypto"],
     dashboardLinks: [
       {
         path: "/dashboard/money/money-in",
@@ -178,7 +178,7 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
     domain: "funds",
     published: true,
     order: 30,
-    relatedSlugs: [],
+    relatedSlugs: ["funds/external-accounts"],
     dashboardLinks: [
       {
         path: "/dashboard/money/payouts",
@@ -216,11 +216,39 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
     ],
   },
   {
+    slug: "funds/external-accounts",
+    domain: "funds",
+    published: true,
+    order: 60,
+    relatedSlugs: ["funds/payouts"],
+    dashboardLinks: [
+      {
+        path: "/dashboard/money/external-accounts",
+        labelKey: "open_external_accounts",
+        primary: true,
+      },
+    ],
+  },
+  {
+    slug: "funds/crypto",
+    domain: "funds",
+    published: true,
+    order: 70,
+    relatedSlugs: ["funds/money-in"],
+    dashboardLinks: [
+      {
+        path: "/dashboard/money/crypto",
+        labelKey: "open_crypto",
+        primary: true,
+      },
+    ],
+  },
+  {
     slug: "risk/refunds",
     domain: "risk",
     published: true,
     order: 10,
-    relatedSlugs: [],
+    relatedSlugs: ["risk/controls"],
     dashboardLinks: [
       {
         path: "/dashboard/refunds",
@@ -234,12 +262,34 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
     domain: "risk",
     published: true,
     order: 20,
-    relatedSlugs: [],
+    relatedSlugs: ["risk/controls"],
     dashboardLinks: [
       {
         path: "/dashboard/disputes",
         labelKey: "open_disputes",
         primary: true,
+      },
+    ],
+  },
+  {
+    slug: "risk/controls",
+    domain: "risk",
+    published: true,
+    order: 30,
+    relatedSlugs: ["risk/disputes", "risk/refunds"],
+    dashboardLinks: [
+      {
+        path: "/dashboard/fraud",
+        labelKey: "open_fraud",
+        primary: true,
+      },
+      {
+        path: "/dashboard/risk-reviews",
+        labelKey: "open_risk_reviews",
+      },
+      {
+        path: "/dashboard/risk-rules",
+        labelKey: "open_risk_rules",
       },
     ],
   },

@@ -470,4 +470,285 @@ export const enFunds: Record<string, HelpArticleContent> = {
       },
     },
   },
+  "funds/external-accounts": {
+    title: "External accounts for payouts",
+    description:
+      "Add and manage BANK and CRYPTO (USDT on TRON) destinations under Money → External accounts for FilixPay Merchant Center payouts.",
+    keywords: [
+      "external accounts",
+      "bank account payout",
+      "crypto payout destination",
+      "USDT TRON",
+      "disable external account",
+    ],
+    body: {
+      whoFor:
+        "Operators who need payout destinations before creating withdrawals under Money → Payouts.",
+      whenToUse:
+        "Use this when you open Money → External accounts to add a bank or crypto destination, or to disable one that should no longer receive payouts.",
+      beforeYouStart: [
+        "Sign in with access to Money → External accounts.",
+        "For bank accounts, have country, currency, account holder name, and account number ready (for example holder Example Merchant LLC).",
+        "For crypto destinations, have a USDT address on TRON ready. Full numbers and addresses are masked after save.",
+      ],
+      blocks: [
+        {
+          type: "paragraph",
+          text: "External accounts lists BANK and CRYPTO destinations used when you withdraw from Money → Payouts. This guide covers the list, Add account modal, and Disable. It does not cover creating payouts, and it is separate from Money → Money-In → Digital currency deposit wallets.",
+        },
+        {
+          type: "heading",
+          text: "Open External accounts",
+          anchor: "open",
+        },
+        {
+          type: "steps",
+          items: [
+            "Sign in to Merchant Center.",
+            "Under Money → Payouts, open External accounts.",
+            "Confirm the page title External accounts and the Add account action.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Read the account list",
+          anchor: "list",
+        },
+        {
+          type: "fields",
+          rows: [
+            {
+              field: "Type",
+              description: "Bank or Crypto as shown in the table.",
+            },
+            {
+              field: "Account / address",
+              description:
+                "Masked account number or wallet address after save. Full values are not shown again.",
+            },
+            {
+              field: "Holder / network",
+              description:
+                "Bank account holder name, or crypto network (for example TRON) with memo note when present.",
+            },
+            {
+              field: "Bank / Currency / Country",
+              description:
+                "Bank name, currency, and country for BANK rows. Crypto rows show dashes for these columns.",
+            },
+            {
+              field: "Status",
+              description: "Active or Disabled. Only Active accounts can be used for payouts.",
+            },
+          ],
+        },
+        {
+          type: "heading",
+          text: "Add a bank account",
+          anchor: "add-bank",
+        },
+        {
+          type: "steps",
+          items: [
+            "Choose Add account.",
+            "Set Account type to Bank account.",
+            "Select Country / region and Currency.",
+            "Enter Account holder name (not an email) and Account number.",
+            "Optionally enter Bank name and Bank code, then Save account.",
+            "Confirm the new row appears with a masked Account / address.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Add a crypto destination",
+          anchor: "add-crypto",
+        },
+        {
+          type: "steps",
+          items: [
+            "Choose Add account.",
+            "Set Account type to Crypto address (USDT / TRON).",
+            "Select Network (TRON) and enter Wallet address.",
+            "Optionally enter Memo / tag if your destination requires it, then Save account.",
+            "Confirm the row shows Type Crypto with a masked address.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Disable an account",
+          anchor: "disable",
+        },
+        {
+          type: "steps",
+          items: [
+            "On an Active row, open Actions and choose Disable.",
+            "Confirm the disable prompt.",
+            "Confirm Status becomes Disabled and the account is no longer selectable for new payouts.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Common issues",
+          anchor: "common-issues",
+        },
+        {
+          type: "issues",
+          items: [
+            {
+              problem: "I cannot see the full account number or address after save.",
+              solution:
+                "That is expected. External accounts store masked values only after save. Re-enter details only by adding a new account if you need a different destination.",
+            },
+            {
+              problem: "Is this the same as Digital currency under Money-In?",
+              solution:
+                "No. External accounts are payout destinations. Deposit addresses for receiving crypto live under Money → Money-In → Digital currency — see /help/funds/crypto.",
+            },
+            {
+              problem: "Withdraw cannot find my destination.",
+              solution:
+                "Confirm the account Status is Active on External accounts, then reopen Money → Payouts. See /help/funds/payouts for the withdraw flow.",
+            },
+          ],
+        },
+      ],
+      nextStep: {
+        label: "Payouts",
+        href: "/help/funds/payouts",
+      },
+    },
+  },
+  "funds/crypto": {
+    title: "Digital currency deposit addresses",
+    description:
+      "Configure blockchain deposit addresses under Money → Money-In → Digital currency so FilixPay can monitor on-chain deposits for your merchant.",
+    keywords: [
+      "digital currency",
+      "crypto deposit wallet",
+      "deposit address",
+      "blockchain network",
+      "USDT deposit",
+    ],
+    body: {
+      whoFor:
+        "Operators who configure on-chain addresses for receiving crypto deposits into FilixPay settlement monitoring.",
+      whenToUse:
+        "Use this when you open Money → Money-In → Digital currency to add, edit, copy, or activate/inactivate a deposit address.",
+      beforeYouStart: [
+        "Sign in with permission to manage deposit addresses (Add deposit address appears when you can manage).",
+        "Have the correct chain, settlement asset, and deposit address under your control.",
+        "Read the on-page security notice: FilixPay does not custody private keys or seed phrases.",
+      ],
+      blocks: [
+        {
+          type: "paragraph",
+          text: "Digital currency lists deposit addresses the platform monitors for on-chain deposits. This guide covers the list, add/edit drawer, copy address, and Active/Inactive status. It does not cover crypto payout destinations under External accounts, and it does not document exchange how-tos.",
+        },
+        {
+          type: "heading",
+          text: "Open Digital currency",
+          anchor: "open",
+        },
+        {
+          type: "steps",
+          items: [
+            "Sign in to Merchant Center.",
+            "Under Money → Money-In, open Digital currency.",
+            "Confirm the page title Digital currency and the deposit address table.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Read the wallet list",
+          anchor: "list",
+        },
+        {
+          type: "fields",
+          rows: [
+            {
+              field: "Blockchain network",
+              description: "Chain badge and network/protocol label for the deposit address.",
+            },
+            {
+              field: "Settlement asset",
+              description: "Asset code monitored for settlement (for example USDT).",
+            },
+            {
+              field: "Deposit address",
+              description: "On-chain address with a copy control.",
+            },
+            {
+              field: "Label",
+              description: "Optional label you set when adding or editing.",
+            },
+            {
+              field: "Status",
+              description:
+                "Active or Inactive. When you can manage, click the status pill to toggle.",
+            },
+            {
+              field: "Updated",
+              description: "Last update time for the wallet row.",
+            },
+          ],
+        },
+        {
+          type: "heading",
+          text: "Add or edit a deposit address",
+          anchor: "add-edit",
+        },
+        {
+          type: "steps",
+          items: [
+            "Choose Add deposit address, or open Edit on an existing row.",
+            "Select blockchain network and settlement asset from the supported options.",
+            "Enter the deposit address and confirm it matches the format hint for that chain.",
+            "Optionally set a label, confirm the ownership checkbox when shown, then save.",
+            "Confirm the row appears or updates in the table.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Copy an address",
+          anchor: "copy",
+        },
+        {
+          type: "steps",
+          items: [
+            "On the Deposit address cell, choose the copy control.",
+            "Paste into your wallet or exchange only after verifying the address yourself.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Common issues",
+          anchor: "common-issues",
+        },
+        {
+          type: "issues",
+          items: [
+            {
+              problem: "Add deposit address is missing or the page is read-only.",
+              solution:
+                "Your role may lack manage permission, or addresses are platform-managed. Use the on-page banner text and contact your admin or support for changes.",
+            },
+            {
+              problem: "I confused this with External accounts crypto.",
+              solution:
+                "Digital currency is for receiving deposits. CRYPTO rows under External accounts are payout destinations — see /help/funds/external-accounts.",
+            },
+            {
+              problem: "Deposit sent but Money-In / Balance did not update.",
+              solution:
+                "Confirm the address Status is Active, asset and network match what you sent, then check Money → Money-In — see /help/funds/money-in.",
+            },
+          ],
+        },
+      ],
+      nextStep: {
+        label: "Money-In",
+        href: "/help/funds/money-in",
+      },
+    },
+  },
 };

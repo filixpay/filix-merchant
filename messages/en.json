@@ -7061,7 +7061,12 @@
       "open_developer_center": "Open Developer Center",
       "open_webhook_verification": "Open Webhook Verification",
       "open_customers": "Open Customers",
-      "open_payment_splits": "Open Payment Splits"
+      "open_payment_splits": "Open Payment Splits",
+      "open_external_accounts": "Open External Accounts",
+      "open_crypto": "Open Digital Currency",
+      "open_fraud": "Open Fraud Events",
+      "open_risk_reviews": "Open Risk Reviews",
+      "open_risk_rules": "Open Risk Rules"
     },
     "outbound": {
       "section_title": "Related resources",

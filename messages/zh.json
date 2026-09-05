@@ -7110,7 +7110,12 @@
       "open_developer_center": "打开开发者中心",
       "open_webhook_verification": "打开 Webhook 验签说明",
       "open_customers": "打开客户",
-      "open_payment_splits": "打开分账记录"
+      "open_payment_splits": "打开分账记录",
+      "open_external_accounts": "打开外部账户",
+      "open_crypto": "打开数字货币",
+      "open_fraud": "打开欺诈事件",
+      "open_risk_reviews": "打开风险审核",
+      "open_risk_rules": "打开风险规则"
     },
     "outbound": {
       "section_title": "相关资源",

@@ -7,6 +7,7 @@ import { Button, Flex, Form, Input, Select } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import { api, type FraudEventListItem } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import FraudEventTable from "@/components/fraud/FraudEventTable";
 import { usePagedResource } from "@/lib/dashboard/use-paged-resource";
 import {
@@ -113,7 +114,14 @@ export default function FraudPage() {
     );
 
     return (
-        <DashboardPage title={t("title")} subtitle={t("subtitle")} filterBar={filterBar}>
+        <DashboardPage
+            title={t("title")}
+            subtitle={t("subtitle")}
+            filterBar={filterBar}
+            extra={
+                <HelpDeepLinkButton dashboardPath="/dashboard/fraud" helpSlug="risk/controls" />
+            }
+        >
             <FraudEventTable
                 events={events}
                 loading={loading}
