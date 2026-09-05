@@ -223,4 +223,140 @@ export const enPayments: Record<string, HelpArticleContent> = {
       },
     },
   },
+  "payments/customers": {
+    title: "Find customers in Merchant Center",
+    description:
+      "Open Customer Management in FilixPay Merchant Center to review the customer list and search by customer code, email, or phone.",
+    keywords: [
+      "FilixPay customers Merchant Center",
+      "customer list",
+      "find customer by email",
+      "customer code",
+      "customer phone search",
+    ],
+    body: {
+      whoFor:
+        "Operators who need to locate an existing customer record in FilixPay Merchant Center using the Customers list and filters.",
+      whenToUse:
+        "Use this when you need to find a customer by code, email, or phone, or review customer fields shown on the list.",
+      beforeYouStart: [
+        "Sign in to FilixPay Merchant Center with access to Customers.",
+        "Have at least one identifier ready when searching (customer code, email such as customer@example.com, or phone such as 13800138000).",
+      ],
+      blocks: [
+        {
+          type: "paragraph",
+          text: "Customers (page title: Customer Management) is the Merchant Center list for viewing customer records. This guide covers opening the list, reading row fields, and searching. It does not cover creating or editing customers, Customer APIs, or a separate detail page — those are not part of this screen.",
+        },
+        {
+          type: "heading",
+          text: "Open the customer list",
+          anchor: "open",
+        },
+        {
+          type: "steps",
+          items: [
+            "Sign in to Merchant Center.",
+            "Open Customers from the sidebar.",
+            "Confirm the page title Customer Management and the filter bar above the table.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Review customer records on the list",
+          anchor: "list",
+        },
+        {
+          type: "paragraph",
+          text: "Customer records appear as table rows. There is no separate customer detail page on this screen — read the fields shown in each row.",
+        },
+        {
+          type: "fields",
+          rows: [
+            {
+              field: "Customer Code",
+              description: "Unique customer code shown in the list.",
+            },
+            {
+              field: "Name",
+              description: "Customer display name.",
+            },
+            {
+              field: "Email",
+              description: "Email address on the record.",
+            },
+            {
+              field: "Mobile",
+              description: "Mobile number column on the table (label Mobile).",
+            },
+            {
+              field: "Status",
+              description: "Customer status badge as shown in Merchant Center.",
+            },
+            {
+              field: "Created At",
+              description: "When the customer record was created.",
+            },
+          ],
+        },
+        {
+          type: "heading",
+          text: "Search by code, email, or phone",
+          anchor: "search",
+        },
+        {
+          type: "steps",
+          items: [
+            "In the filter bar, enter Customer Code, Email, and/or Phone as needed. The Phone filter placeholder is Phone (distinct from the Mobile table column).",
+            "Choose Search to apply filters. Empty fields are ignored.",
+            "When multiple fields are filled, Merchant Center applies the provided filters together.",
+            "Choose Reset to clear filters and return to the unfiltered list.",
+            "Use pagination controls to move through results.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Common scenarios",
+          anchor: "scenarios",
+        },
+        {
+          type: "steps",
+          items: [
+            "Known email: enter Email (for example customer@example.com), then Search.",
+            "Known phone: enter Phone (for example 13800138000), then Search.",
+            "Known customer code: enter Customer Code, then Search.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Common issues",
+          anchor: "common-issues",
+        },
+        {
+          type: "issues",
+          items: [
+            {
+              problem: "No customer data found.",
+              solution:
+                "Confirm you are in the correct organization or business account, clear filters with Reset, then Search again. If the list is still empty, no customers are available for this account yet.",
+            },
+            {
+              problem: "Search returns no matching rows.",
+              solution:
+                "Check spelling and extra spaces. Try one identifier at a time. Remember the filter uses Phone while the table column is labeled Mobile.",
+            },
+            {
+              problem: "I expected a customer detail page.",
+              solution:
+                "This Merchant Center screen shows records in the table only. Use the row fields for review. A separate detail route is not part of this UI.",
+            },
+          ],
+        },
+      ],
+      nextStep: {
+        label: "Review payments and orders",
+        href: "/help/payments/orders",
+      },
+    },
+  },
 };
