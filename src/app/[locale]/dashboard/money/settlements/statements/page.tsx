@@ -8,6 +8,7 @@ import { useSession } from "next-auth/react";
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import MoneyAssetLabel from "@/components/money/MoneyAssetLabel";
 import SettlementStatementTable from "@/components/settlement-statements/SettlementStatementTable";
 import { moneyProductApi } from "@/lib/api";
@@ -185,7 +186,15 @@ export default function SettlementStatementsPage() {
       title={t("title")}
       subtitle={subtitle}
       contentMode="table"
-      extra={filter}
+      extra={
+        <>
+          <HelpDeepLinkButton
+            dashboardPath="/dashboard/money/settlements/statements"
+            helpSlug="funds/settlements"
+          />
+          {filter}
+        </>
+      }
     >
       <Space direction="vertical" size={16} style={{ width: "100%" }}>
         {periodNotStarted ? (

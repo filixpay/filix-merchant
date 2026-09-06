@@ -16,6 +16,8 @@ export type HelpDashboardLink = {
   /** Key under `Help.dashboardLinks.*` in messages — never a hard-coded display string. */
   labelKey: string;
   primary?: boolean;
+  /** Optional Help article fragment (without `#`), e.g. `settings`. */
+  hash?: string;
 };
 
 export type HelpBodyBlock =

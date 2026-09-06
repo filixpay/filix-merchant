@@ -8,6 +8,7 @@ import {
   type HelpContentLocale,
 } from "@/lib/help/content-locales";
 import HelpOpenInDashboard from "./HelpOpenInDashboard";
+import HelpHashScroll from "./HelpHashScroll";
 import styles from "./help.module.css";
 
 type Props = {
@@ -113,6 +114,7 @@ export default async function HelpArticleView({
 
   return (
     <article className={styles.page}>
+      <HelpHashScroll />
       <nav className={styles.breadcrumb} aria-label="Breadcrumb">
         <Link href={`/${locale}`}>
           {domainLocale === "zh" ? "首页" : "Home"}

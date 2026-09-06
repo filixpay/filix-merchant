@@ -8,6 +8,7 @@ import type { ColumnsType } from "antd/es/table";
 import { CheckOutlined, CloseOutlined, EyeOutlined, ReloadOutlined } from "@ant-design/icons";
 import { api, type RefundView } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import RefundDetailsModal from "@/components/refunds/RefundDetailsModal";
 import {
     formatRefundAmount,
@@ -205,9 +206,15 @@ function RefundApprovalsPageContent() {
             subtitle={tApprovals("subtitle")}
             contentMode="table"
             extra={
-                <Button icon={<ReloadOutlined />} onClick={() => void reload()} loading={isRefreshing}>
-                    {tCommon("refresh")}
-                </Button>
+                <>
+                    <HelpDeepLinkButton
+                        dashboardPath="/dashboard/refunds/approvals"
+                        helpSlug="risk/refunds"
+                    />
+                    <Button icon={<ReloadOutlined />} onClick={() => void reload()} loading={isRefreshing}>
+                        {tCommon("refresh")}
+                    </Button>
+                </>
             }
         >
             <Flex vertical gap={12}>

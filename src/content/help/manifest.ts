@@ -267,6 +267,11 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
         labelKey: "open_settlements",
         primary: true,
       },
+      {
+        path: "/dashboard/money/settlements/statements",
+        labelKey: "open_settlement_statements",
+        hash: "statements",
+      },
     ],
   },
   {
@@ -322,6 +327,16 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
         path: "/dashboard/refunds",
         labelKey: "open_refunds",
         primary: true,
+      },
+      {
+        path: "/dashboard/refunds/settings",
+        labelKey: "open_refund_settings",
+        hash: "settings",
+      },
+      {
+        path: "/dashboard/refunds/approvals",
+        labelKey: "open_refund_approvals",
+        hash: "approvals",
       },
     ],
   },

@@ -41,8 +41,34 @@ export function getHelpHrefForDashboardPath(
   locale: string,
   dashboardPath: string,
   helpSlug?: string,
+  hash?: string,
 ): string | null {
-  const slug = helpSlug ?? getPrimaryHelpSlugForDashboardPath(dashboardPath);
+  const target = normalizeDashboardPath(dashboardPath);
+  let slug = helpSlug ?? null;
+  let resolvedHash = hash;
+
+  if (!slug || resolvedHash === undefined) {
+    for (const def of HELP_ARTICLE_DEFS) {
+      if (!def.published || !def.dashboardLinks?.length) continue;
+      const match = def.dashboardLinks.find(
+        (link) => normalizeDashboardPath(link.path) === target,
+      );
+      if (!match) continue;
+      if (!slug) slug = def.slug;
+      if (resolvedHash === undefined && match.hash) {
+        resolvedHash = match.hash;
+      }
+      if (match.primary || helpSlug === def.slug) break;
+    }
+  }
+
+  if (!slug) {
+    slug = getPrimaryHelpSlugForDashboardPath(dashboardPath);
+  }
   if (!slug) return null;
-  return `/${locale}/help/${slug}`;
+  const fragment =
+    resolvedHash && resolvedHash.length > 0
+      ? `#${resolvedHash.replace(/^#/, "")}`
+      : "";
+  return `/${locale}/help/${slug}${fragment}`;
 }

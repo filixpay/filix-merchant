@@ -8,13 +8,16 @@ import { getHelpHrefForDashboardPath } from "@/lib/help/dashboard-deep-links";
 export function HelpDeepLinkButton({
   dashboardPath,
   helpSlug,
+  hash,
 }: {
   dashboardPath: string;
   /** When a path has multiple Help candidates, pick explicitly. */
   helpSlug?: string;
+  /** Optional article fragment (with or without `#`). */
+  hash?: string;
 }) {
   const locale = useLocale();
-  const href = getHelpHrefForDashboardPath(locale, dashboardPath, helpSlug);
+  const href = getHelpHrefForDashboardPath(locale, dashboardPath, helpSlug, hash);
   if (!href) return null;
   return (
     <Link

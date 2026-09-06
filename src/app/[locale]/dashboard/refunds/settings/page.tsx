@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { Alert, Button, Card, Form, InputNumber, Space, Switch, Typography, message } from "antd";
 import { api, type RefundSettings } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import { handleDashboardApiError } from "@/lib/dashboard/handle-dashboard-api-error";
 
 type FormValues = {
@@ -79,7 +80,17 @@ export default function RefundSettingsPage() {
     };
 
     return (
-        <DashboardPage title={t("title")} subtitle={t("subtitle")} contentMode="form">
+        <DashboardPage
+            title={t("title")}
+            subtitle={t("subtitle")}
+            contentMode="form"
+            extra={
+                <HelpDeepLinkButton
+                    dashboardPath="/dashboard/refunds/settings"
+                    helpSlug="risk/refunds"
+                />
+            }
+        >
             <Card loading={loading} style={{ maxWidth: 560 }}>
                 {settings?.usingPlatformDefault ? (
                     <Alert

@@ -384,27 +384,29 @@ export const enFunds: Record<string, HelpArticleContent> = {
   "funds/settlements": {
     title: "Settlement bills",
     description:
-      "Review settlement bills in FilixPay Merchant Center: gross, fee, net, release time, and provider reconciliation status.",
+      "Review settlement bills and settlement records in FilixPay Merchant Center: gross, fee, net, release, payout, and period coverage.",
     keywords: [
       "settlements",
       "settlement bills",
+      "settlement records",
+      "settlement statements",
       "net settlement",
       "released at",
       "provider reconciliation",
     ],
     body: {
       whoFor:
-        "Finance operators who need released settlement facts and how they reconcile with providers.",
+        "Finance operators who need released settlement facts, period statements, and how they reconcile with providers.",
       whenToUse:
-        "Use this when you open Money → Settlement → Settlement bills after acquiring activity should settle to funds.",
+        "Use this when you open Money → Settlement → Settlement bills or Settlement records after acquiring activity should settle to funds.",
       beforeYouStart: [
-        "Know the settlement period or Money-In reference you are investigating.",
-        "Have access to Money → Settlement bills.",
+        "Know the settlement period, asset, or Money-In reference you are investigating.",
+        "Have access to Money → Settlement bills and Settlement records.",
       ],
       blocks: [
         {
           type: "paragraph",
-          text: "Settlement bills show released settlement amounts (gross, fee, net) with provider and reconciliation status. Use this page to understand how settled funds relate to balance.",
+          text: "Settlement bills show released settlement amounts (gross, fee, net) with provider and reconciliation status. Use this page to understand how settled funds relate to balance. Settlement records (statements) summarize day, week, or month periods for the same Money → Settlement area.",
         },
         {
           type: "heading",
@@ -420,6 +422,15 @@ export const enFunds: Record<string, HelpArticleContent> = {
             "Check Reconciliation status (Pending, Matched, Exception) and provider.",
             "If needed, continue to Transaction Reconciliation for order-level matching.",
           ],
+        },
+        {
+          type: "heading",
+          text: "Settlement records",
+          anchor: "statements",
+        },
+        {
+          type: "paragraph",
+          text: "Settlement records lists period statements by asset and Day / Week / Month. Filter by asset and date range, then open a row by statement key for detail. Columns include statement period, asset, status (Open / Closed), Settlement Net, Released, Payout, and data coverage (OK / Partial coverage / Inconsistent). Open periods show live amounts as of now; a period that has not started yet is unavailable.",
         },
         {
           type: "heading",
@@ -446,6 +457,11 @@ export const enFunds: Record<string, HelpArticleContent> = {
               field: "Reconciliation / Provider",
               description: "Match state against the payment provider and which provider settled.",
             },
+            {
+              field: "Statement period / Coverage",
+              description:
+                "On Settlement records: the Day/Week/Month key and whether period data coverage is complete.",
+            },
           ],
         },
         {
@@ -464,7 +480,12 @@ export const enFunds: Record<string, HelpArticleContent> = {
             {
               problem: "I expected a settlement but none appears.",
               solution:
-                "Confirm the period and asset filters, wait for release timing, and verify related orders reached success before settlement.",
+                "Confirm the period and asset filters on Settlement bills or Settlement records, wait for release timing, and verify related orders reached success before settlement.",
+            },
+            {
+              problem: "Settlement records says the period has not started.",
+              solution:
+                "Choose a past or current period range. Future Day/Week/Month keys have no statement yet.",
             },
           ],
         },

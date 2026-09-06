@@ -10,17 +10,20 @@ export const enRisk: Record<string, HelpArticleContent> = {
       "refund management",
       "initiate refund",
       "refund status",
+      "refund settings",
+      "refund approvals",
+      "auto-execute threshold",
       "after-sales",
     ],
     body: {
       whoFor:
-        "Operators who process customer refunds or monitor refund order status.",
+        "Operators who process customer refunds, configure auto-execute thresholds, or approve pending refunds.",
       whenToUse:
-        "Use this when you open Transactions → Refunds, or after initiating a refund from an order.",
+        "Use this when you open Transactions → Refunds, Refund settings, Refund approvals, or after initiating a refund from an order.",
       beforeYouStart: [
         "Have the original Order ID or Refund ID ready.",
-        "Confirm your role can create refunds or view the refunds list.",
-        "Know whether refund settings require approval above a threshold.",
+        "Confirm your role can create refunds, change Refund settings, or act on Refund approvals.",
+        "Know whether amount-based approval is enabled and what the auto-execute threshold is.",
       ],
       blocks: [
         {
@@ -42,6 +45,43 @@ export const enRisk: Record<string, HelpArticleContent> = {
             "If the amount exceeds auto-execute settings, wait for Refund approvals before execution completes.",
             "Watch status move from Requested or Processing to Succeeded, Failed, or Cancelled.",
           ],
+        },
+        {
+          type: "heading",
+          text: "Refund settings",
+          anchor: "settings",
+        },
+        {
+          type: "paragraph",
+          text: "Refund settings controls when a refund executes automatically versus waiting for merchant approval. Settlement currency is shown read-only. You can enable Skip amount-based approval, or set an Auto-execute threshold in settlement currency. Cross-currency refunds are converted via FX before comparison; if no quote is available, the refund still creates but awaits approval. Save settings or Refresh to reload.",
+        },
+        {
+          type: "fields",
+          rows: [
+            {
+              field: "Settlement currency",
+              description: "Read-only currency used when comparing refund amounts to the threshold.",
+            },
+            {
+              field: "Skip amount-based approval",
+              description:
+                "When enabled, amount alone never triggers approval. FX conversion failures can still require approval.",
+            },
+            {
+              field: "Auto-execute threshold",
+              description:
+                "Refunds at or below this amount (in settlement currency) execute automatically. Larger amounts stay pending until approved. A platform-default banner may appear when you have not set a merchant override.",
+            },
+          ],
+        },
+        {
+          type: "heading",
+          text: "Refund approvals",
+          anchor: "approvals",
+        },
+        {
+          type: "paragraph",
+          text: "Refund approvals lists refunds that exceeded the auto-execute threshold and are waiting for approval. Review Refund ID, Order ID, amount, status, and created time. Approve executes the refund through the payment channel; Reject cancels the request so it does not hit the channel. Open View detail for the full refund record.",
         },
         {
           type: "heading",
@@ -80,12 +120,12 @@ export const enRisk: Record<string, HelpArticleContent> = {
             {
               problem: "Refund stays in Processing.",
               solution:
-                "Refresh the list and open detail. If approvals apply, check the refund approvals queue. Confirm the original order is in a refundable status.",
+                "Refresh the list and open detail. If approvals apply, check Refund approvals. Confirm the original order is in a refundable status.",
             },
             {
               problem: "Create Refund is unavailable.",
               solution:
-                "Open the order first and use Initiate Refund when the trade status allows it, or confirm your role permissions and refund settings.",
+                "Open the order first and use Initiate Refund when the trade status allows it, or confirm your role permissions and Refund settings.",
             },
             {
               problem: "Is this the same as a chargeback?",
