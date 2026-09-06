@@ -7066,7 +7066,9 @@
       "open_crypto": "Open Digital Currency",
       "open_fraud": "Open Fraud Events",
       "open_risk_reviews": "Open Risk Reviews",
-      "open_risk_rules": "Open Risk Rules"
+      "open_risk_rules": "Open Risk Rules",
+      "open_credit_limit": "Open Credit Limit",
+      "open_available_credit": "Open My Available Credit"
     },
     "outbound": {
       "section_title": "Related resources",

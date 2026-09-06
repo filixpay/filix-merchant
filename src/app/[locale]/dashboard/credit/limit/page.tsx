@@ -7,6 +7,7 @@ import { PlusOutlined, ReloadOutlined } from "@ant-design/icons";
 import { useTranslations } from "next-intl";
 import { api, CreditLineView } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import CreditLineListTable from "@/components/credit/CreditLineListTable";
 import CreateCreditLineModal from "@/components/credit/CreateCreditLineModal";
 import AdjustCreditLimitModal from "@/components/credit/AdjustCreditLimitModal";
@@ -63,6 +64,10 @@ export default function CreditLimitPage() {
 
     const extra = (
         <Space>
+            <HelpDeepLinkButton
+                dashboardPath="/dashboard/credit/limit"
+                helpSlug="credit/limit"
+            />
             <Button
                 icon={<ReloadOutlined />}
                 onClick={reload}

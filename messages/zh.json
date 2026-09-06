@@ -7115,7 +7115,9 @@
       "open_crypto": "打开数字货币",
       "open_fraud": "打开欺诈事件",
       "open_risk_reviews": "打开风险审核",
-      "open_risk_rules": "打开风险规则"
+      "open_risk_rules": "打开风险规则",
+      "open_credit_limit": "打开信用额度管理",
+      "open_available_credit": "打开我的可用额度"
     },
     "outbound": {
       "section_title": "相关资源",

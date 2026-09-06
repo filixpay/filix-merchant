@@ -5,6 +5,7 @@ import { useSession } from "next-auth/react";
 import { useTranslations } from "next-intl";
 import { api, CreditLineView } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import CreditLineListTable from "@/components/credit/CreditLineListTable";
 import CreditLineHistoryDrawer, {
     type CreditLineHistoryKind,
@@ -43,7 +44,16 @@ export default function AvailableCreditPage() {
     };
 
     return (
-        <DashboardPage title={t("title")} subtitle={t("subtitle")}>
+        <DashboardPage
+            title={t("title")}
+            subtitle={t("subtitle")}
+            extra={
+                <HelpDeepLinkButton
+                    dashboardPath="/dashboard/member-credit/available-credit"
+                    helpSlug="credit/available-credit"
+                />
+            }
+        >
             {accessToken ? (
                 <>
                     <CreditLineListTable

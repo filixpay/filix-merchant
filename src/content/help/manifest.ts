@@ -399,4 +399,32 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
     ],
     marketingPath: "/developers",
   },
+  {
+    slug: "credit/limit",
+    domain: "credit",
+    published: true,
+    order: 10,
+    relatedSlugs: ["credit/available-credit"],
+    dashboardLinks: [
+      {
+        path: "/dashboard/credit/limit",
+        labelKey: "open_credit_limit",
+        primary: true,
+      },
+    ],
+  },
+  {
+    slug: "credit/available-credit",
+    domain: "credit",
+    published: true,
+    order: 20,
+    relatedSlugs: ["credit/limit"],
+    dashboardLinks: [
+      {
+        path: "/dashboard/member-credit/available-credit",
+        labelKey: "open_available_credit",
+        primary: true,
+      },
+    ],
+  },
 ];
