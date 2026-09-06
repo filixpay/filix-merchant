@@ -43,6 +43,24 @@ export const enFunds: Record<string, HelpArticleContent> = {
         },
         {
           type: "heading",
+          text: "Available balance",
+          anchor: "available",
+        },
+        {
+          type: "paragraph",
+          text: "Available balance is the amount you can typically use for payout or transfer on that asset account, subject to capability limits and account health (Active / Limited). If Available looks lower than expected, check Pending and recent Activity for holds, fees, refunds, or payouts.",
+        },
+        {
+          type: "heading",
+          text: "Pending balance",
+          anchor: "pending",
+        },
+        {
+          type: "paragraph",
+          text: "Pending balance is funds not yet available while processing or hold rules apply. Pending does not mean lost funds — wait for status changes in Activity, or open the related Money-In, payout, or settlement movement for detail.",
+        },
+        {
+          type: "heading",
           text: "Activity",
           anchor: "activity",
         },
@@ -61,11 +79,12 @@ export const enFunds: Record<string, HelpArticleContent> = {
             {
               field: "Available balance",
               description:
-                "Funds you can typically use for payout or transfer, subject to capability limits.",
+                "Funds you can typically use for payout or transfer, subject to capability limits. See Available balance above.",
             },
             {
               field: "Pending balance",
-              description: "Funds not yet available while processing or hold rules apply.",
+              description:
+                "Funds not yet available while processing or hold rules apply. See Pending balance above.",
             },
             {
               field: "Asset account",

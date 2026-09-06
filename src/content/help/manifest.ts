@@ -391,10 +391,12 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
         path: "/dashboard/coverage-insurance",
         labelKey: "open_coverage_insurance",
         primary: true,
+        hash: "insurance",
       },
       {
         path: "/dashboard/coverage-config",
         labelKey: "open_coverage_config",
+        hash: "config",
       },
     ],
   },

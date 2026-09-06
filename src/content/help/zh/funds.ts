@@ -36,6 +36,24 @@ export const zhFunds: Record<string, HelpArticleContent> = {
         },
         {
           type: "heading",
+          text: "可用余额",
+          anchor: "available",
+        },
+        {
+          type: "paragraph",
+          text: "可用余额是该资产账户上通常可用于出金或转账的金额，仍受能力限制与账户健康度（正常 / 受限）约束。若可用余额低于预期，请查看待入账与近期流水中的冻结、手续费、退款或出金。",
+        },
+        {
+          type: "heading",
+          text: "待入账余额",
+          anchor: "pending",
+        },
+        {
+          type: "paragraph",
+          text: "待入账余额是处理中或受冻结规则影响、尚未可用的资金。待入账不等于资金丢失——可等待流水状态变化，或打开相关入金、出金、结算变动查看详情。",
+        },
+        {
+          type: "heading",
           text: "流水",
           anchor: "activity",
         },
@@ -53,11 +71,11 @@ export const zhFunds: Record<string, HelpArticleContent> = {
           rows: [
             {
               field: "可用余额",
-              description: "通常可用于出金或转账的资金，仍受能力限制约束。",
+              description: "通常可用于出金或转账的资金，仍受能力限制约束。详见上文「可用余额」。",
             },
             {
               field: "待入账余额",
-              description: "处理中或受冻结规则影响、尚未可用的资金。",
+              description: "处理中或受冻结规则影响、尚未可用的资金。详见上文「待入账余额」。",
             },
             {
               field: "资产账户",
