@@ -1,7 +1,7 @@
 # FilixPay Merchant Help System — Design v1
 
 **Date:** 2026-09-05  
-**Status:** Approved — P0–P3 on `main` (`2026-09-06-merchant-help-p3-design.md` shipped). Checkouts post-V1 extension: `2026-09-06-merchant-help-checkouts-design.md`.  
+**Status:** Approved — P0–P3 on `main` (`2026-09-06-merchant-help-p3-design.md` shipped). Checkouts post-V1 extension: `2026-09-06-merchant-help-checkouts-design.md`. Enterprise (集团治理) Help design: `2026-09-06-merchant-help-enterprise-design.md`.  
 **Scope:** Public, indexable Merchant Center usage guides under `/{locale}/help/**`  
 **Out of scope (V1):** CMS authoring, AI search, screenshot-dependent flows, full locale translations beyond EN+ZH. Checkouts published content was V1-reserved; see Checkouts extension design when shipping.
 
@@ -542,6 +542,7 @@ Independent published guides only:
   2. **Security + service plan** — shipped (`2026-09-06-merchant-help-p2-security-service-plan-design.md`)  
 - **P3:** merchant organization + locations/sub-merchants, funds transfers, risk coverage — shipped (`2026-09-06-merchant-help-p3-design.md`)  
 - **Post-V1:** Checkouts (`payments/checkouts`) — shipped (`2026-09-06-merchant-help-checkouts-design.md`)  
+- **Post-V1:** Enterprise Portal / 集团治理 Help — design approved (`2026-09-06-merchant-help-enterprise-design.md`)  
 
 ---
 
