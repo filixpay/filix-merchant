@@ -1,7 +1,7 @@
 # Merchant Help P1 — Credit Design
 
 **Date:** 2026-09-06  
-**Status:** Shipped (content + Dashboard deep links)  
+**Status:** Shipped (content + Dashboard deep links); copy polish vs HEAD drawers 2026-09-06  
 **Parent:** `docs/superpowers/specs/2026-09-05-merchant-help-system-design.md`
 
 ## Extension notice

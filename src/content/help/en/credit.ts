@@ -110,8 +110,8 @@ export const enCredit: Record<string, HelpArticleContent> = {
         {
           type: "steps",
           items: [
-            "On a row, choose Adjustment Logs to review operator, old/new limit, adjustment amount, and time.",
-            "On a row, choose Credit Transactions to review business ID, type (Usage, Repayment, Adjustment, Refund), amount, and used-before / used-after balances.",
+            "On a row, choose Adjustment Logs. The drawer title may read Limit Adjustment Records; review Debitor, operator, old/new limit, adjustment amount, and time.",
+            "On a row, choose Credit Transactions. The drawer title may read Credit Transaction History; review Customer, business ID, type (Usage, Repayment, Adjustment, Refund), amount, and used-before / used-after balances.",
             "Close the drawer when finished. These histories are drawers on this page, not separate Dashboard routes.",
           ],
         },
@@ -136,7 +136,7 @@ export const enCredit: Record<string, HelpArticleContent> = {
             {
               problem: "Adjustment Logs is missing from the left menu.",
               solution:
-                "Open Adjustment Logs or Credit Transactions from the row actions on Credit Limit. There is no separate history page in the live menu.",
+                "Open Adjustment Logs or Credit Transactions from the row actions on Credit Limit. There is no separate history page in the live menu. Use Refresh in the page header if the list looks stale.",
             },
           ],
         },
@@ -199,11 +199,13 @@ export const enCredit: Record<string, HelpArticleContent> = {
             },
             {
               field: "Total Limit",
-              description: "Current credit limit for the line.",
+              description:
+                "Current credit limit for the line (amounts display as USD in the UI).",
             },
             {
               field: "Used Amount / Available Amount",
-              description: "How much is used and how much remains available.",
+              description:
+                "How much is used and how much remains available (USD display).",
             },
             {
               field: "Payment Term",
@@ -224,8 +226,8 @@ export const enCredit: Record<string, HelpArticleContent> = {
         {
           type: "steps",
           items: [
-            "On a row, choose Adjustment Logs to see previous limit, new limit, amount, operator, and time.",
-            "On a row, choose Credit Transactions to see usage, repayment, adjustment, and refund history with used-before / used-after amounts.",
+            "On a row, choose Adjustment Logs. The drawer title may read Credit Adjustment History; review previous limit, new limit, amount, operator, and time.",
+            "On a row, choose Credit Transactions. The drawer title may read Credit Payment History; review Usage, Repayment, Adjustment, and Refund rows with used-before / used-after amounts.",
             "Close the drawer when finished.",
           ],
         },
