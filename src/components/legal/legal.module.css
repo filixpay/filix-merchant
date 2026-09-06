@@ -73,6 +73,14 @@
   color: var(--foreground, #0f172a);
 }
 
+.subsectionTitle {
+  margin: 20px 0 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--foreground, #0f172a);
+}
+
 .paragraph {
   margin: 0 0 10px;
   font-size: 0.975rem;
@@ -82,6 +90,65 @@
 
 .paragraph:last-child {
   margin-bottom: 0;
+}
+
+.list {
+  margin: 0 0 12px;
+  padding-left: 1.25rem;
+  font-size: 0.975rem;
+  line-height: 1.75;
+  color: var(--slate-700, #334155);
+}
+
+.list li {
+  margin-bottom: 4px;
+}
+
+.list li:last-child {
+  margin-bottom: 0;
+}
+
+.orderedList {
+  margin: 0 0 12px;
+  padding-left: 1.35rem;
+  font-size: 0.975rem;
+  line-height: 1.75;
+  color: var(--slate-700, #334155);
+}
+
+.orderedList li {
+  margin-bottom: 4px;
+}
+
+.orderedList li:last-child {
+  margin-bottom: 0;
+}
+
+.definitions {
+  margin: 0 0 12px;
+}
+
+.definitionItem {
+  margin: 0 0 12px;
+}
+
+.definitionItem:last-child {
+  margin-bottom: 0;
+}
+
+.definitionTerm {
+  margin: 0 0 4px;
+  font-size: 0.975rem;
+  font-weight: 650;
+  line-height: 1.5;
+  color: var(--foreground, #0f172a);
+}
+
+.definitionText {
+  margin: 0;
+  font-size: 0.975rem;
+  line-height: 1.75;
+  color: var(--slate-700, #334155);
 }
 
 @media (max-width: 640px) {
