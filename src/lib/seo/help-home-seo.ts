@@ -7,25 +7,27 @@ const HELP_HOME_SEO: Record<
   { title: string; description: string; keywords: string[] }
 > = {
   en: {
-    title: "FilixPay Help — Merchant Center guides",
+    title: "FilixPay Help Center | Merchant Center User Guide",
     description:
-      "Learn how to use FilixPay Merchant Center: set up your merchant, create products, manage payments, funds, and more.",
+      "FilixPay Merchant Center Help Center with guides for merchant onboarding, payment setup, transactions, funds and settlements, product management, account security, and developer features.",
     keywords: [
-      "FilixPay Help",
+      "FilixPay Help Center",
       "FilixPay Merchant Center",
-      "merchant guide",
-      "how to use FilixPay",
+      "Merchant Center user guide",
+      "FilixPay merchant setup",
+      "FilixPay payment configuration",
     ],
   },
   zh: {
-    title: "FilixPay 帮助 — 商户中心使用指南",
+    title: "FilixPay 帮助中心｜商户中心使用指南",
     description:
-      "了解如何使用 FilixPay 商户中心：完成商户开通、创建商品、管理支付与资金等。",
+      "FilixPay 商户中心帮助中心，提供商户入驻、支付配置、交易管理、资金与结算、商品管理、账户安全及开发者功能使用指南。",
     keywords: [
-      "FilixPay 帮助",
+      "FilixPay 帮助中心",
       "FilixPay 商户中心",
-      "商户指南",
-      "如何使用 FilixPay",
+      "商户中心使用指南",
+      "FilixPay 商户入驻",
+      "FilixPay 支付配置",
     ],
   },
 };

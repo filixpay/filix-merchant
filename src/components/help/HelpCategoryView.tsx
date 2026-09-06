@@ -26,7 +26,7 @@ export default async function HelpCategoryView({
 }: Props) {
   const t = await getTranslations({ locale, namespace: "Help" });
   const domainLocale = titleLocale(locale);
-  const title = domain.title[domainLocale];
+  const title = domain.heading[domainLocale];
   const description = domain.description[domainLocale];
 
   return (
@@ -36,7 +36,7 @@ export default async function HelpCategoryView({
         <span className={styles.breadcrumbSep} aria-hidden="true">
           /
         </span>
-        <Link href={`/${locale}/help`}>{t("home_title")}</Link>
+        <Link href={`/${locale}/help`}>{t("home_nav")}</Link>
         <span className={styles.breadcrumbSep} aria-hidden="true">
           /
         </span>

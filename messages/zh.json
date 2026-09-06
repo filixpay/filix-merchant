@@ -864,7 +864,7 @@
     },
     "footer": {
       "slogan": "让支付更简单，让生意更全球",
-      "rights": "© 2026 Filix.com 保留所有权利。"
+      "rights": "© 2026 FilixPay 保留所有权利。"
     },
     "onboarding": {
       "title": "商户入驻",
@@ -4775,7 +4775,7 @@
     "company_title": "公司",
     "contact_us": "联系我们",
     "about": "关于 FilixPay",
-    "rights": "© 2026 Filix.com 保留所有权利。"
+    "rights": "© 2026 FilixPay 保留所有权利。"
   },
   "Pages": {
     "products": {
@@ -7300,8 +7300,8 @@
     "key_fields": "关键字段",
     "common_issues": "常见问题",
     "next_step": "下一步",
-    "home_title": "FilixPay 帮助",
-    "home_description": "了解如何使用 FilixPay 商户中心。",
+    "home_title": "FilixPay 商户中心使用指南",
+    "home_description": "商户入驻、支付配置、交易与资金、商品管理、账户安全等使用指南。",
     "dashboardLinks": {
       "open_transfers": "打开转账",
       "open_reviews": "打开审核",
@@ -7350,6 +7350,7 @@
       "section_title": "相关资源",
       "marketing": "FilixPay 开发者介绍",
       "developer_docs": "API 与开发者文档"
-    }
+    },
+    "home_nav": "帮助中心"
   }
 }

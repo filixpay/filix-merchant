@@ -683,7 +683,7 @@
     },
     "footer": {
       "slogan": "Make Payment Simple, Make Business Global",
-      "rights": "© 2026 Filix.com All rights reserved."
+      "rights": "© 2026 FilixPay All rights reserved."
     },
     "onboarding": {
       "title": "Merchant Onboarding",
@@ -4724,7 +4724,7 @@
     "company_title": "Company",
     "contact_us": "Contact Us",
     "about": "About FilixPay",
-    "rights": "© 2026 Filix.com. All rights reserved."
+    "rights": "© 2026 FilixPay. All rights reserved."
   },
   "Pages": {
     "products": {
@@ -6675,8 +6675,6 @@
     "statusTitle": "Application Status",
     "statusSubtitle": "Current status: {status}",
     "statusSubtitleDraft": "Your application has not been submitted yet.",
-    "statusSubtitle": "Current status: {status}",
-    "statusSubtitleDraft": "Your application has not been submitted yet.",
     "newSubtitle": "Complete your business profile for formal merchant approval.",
     "upgradeSubtitle": "Upgrade your trial account to a formal merchant.",
     "steps": {
@@ -7251,8 +7249,8 @@
     "key_fields": "Key fields",
     "common_issues": "Common issues",
     "next_step": "Next step",
-    "home_title": "FilixPay Help",
-    "home_description": "Learn how to use FilixPay Merchant Center.",
+    "home_title": "FilixPay Merchant Center User Guide",
+    "home_description": "Guides for merchant setup, payments, funds, products, account security, and more.",
     "dashboardLinks": {
       "open_transfers": "Open Transfers",
       "open_reviews": "Open Reviews",
@@ -7301,6 +7299,7 @@
       "section_title": "Related resources",
       "marketing": "FilixPay for developers",
       "developer_docs": "API & developer docs"
-    }
+    },
+    "home_nav": "Help Center"
   }
 }

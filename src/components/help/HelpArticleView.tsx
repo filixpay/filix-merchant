@@ -107,7 +107,7 @@ export default async function HelpArticleView({
 }: Props) {
   const t = await getTranslations({ locale, namespace: "Help" });
   const domainLocale = titleLocale(locale);
-  const domainTitle = domain.title[domainLocale];
+  const domainTitle = domain.heading[domainLocale];
   const body = article.body;
   const dashboardLinks = article.dashboardLinks ?? [];
 
@@ -120,7 +120,7 @@ export default async function HelpArticleView({
         <span className={styles.breadcrumbSep} aria-hidden="true">
           /
         </span>
-        <Link href={`/${locale}/help`}>{t("home_title")}</Link>
+        <Link href={`/${locale}/help`}>{t("home_nav")}</Link>
         <span className={styles.breadcrumbSep} aria-hidden="true">
           /
         </span>

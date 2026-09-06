@@ -26,9 +26,9 @@ export default async function HelpShell({ locale, children }: Props) {
   return (
     <div className={styles.shell}>
       <div className={styles.shellInner}>
-        <aside className={styles.sidebar} aria-label={t("home_title")}>
+        <aside className={styles.sidebar} aria-label={t("home_nav")}>
           <Link href={`/${locale}/help`} className={styles.brandLink}>
-            {t("home_title")}
+            {t("home_nav")}
           </Link>
           <p className={styles.brandDesc}>{t("home_description")}</p>
           <nav className={styles.domainNav}>

@@ -10,6 +10,10 @@ import {
 } from "@/lib/help/content-locales";
 import { ensureHelpLocale } from "@/lib/help/ensure-help-locale";
 import { generateHelpMetadata } from "@/lib/seo/generate-help-metadata";
+import {
+  formatHelpDocumentTitle,
+  helpBreadcrumbHomeName,
+} from "@/lib/seo/help-page-seo";
 import { breadcrumbListSchema } from "@/lib/seo/json-ld";
 import { getEnv } from "@/lib/env";
 
@@ -42,7 +46,7 @@ export async function generateMetadata({
   return generateHelpMetadata({
     locale,
     path: `/help/${domain}`,
-    title: meta.title[loc],
+    title: formatHelpDocumentTitle(meta.heading[loc], locale),
     description: meta.description[loc],
   });
 }
@@ -65,10 +69,10 @@ export default async function HelpDomainPage({ params }: PageProps) {
   const loc = domainLocale(locale);
 
   const breadcrumb = breadcrumbListSchema([
-    { name: "Home", url: `${siteUrl}/${locale}` },
-    { name: t("home_title"), url: `${siteUrl}/${locale}/help` },
+    { name: helpBreadcrumbHomeName(locale), url: `${siteUrl}/${locale}` },
+    { name: t("home_nav"), url: `${siteUrl}/${locale}/help` },
     {
-      name: meta.title[loc],
+      name: meta.heading[loc],
       url: `${siteUrl}/${locale}/help/${domain}`,
     },
   ]);
