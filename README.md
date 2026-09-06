@@ -6,9 +6,9 @@
 
 Open-source merchant portal for payment and commerce operations, built with Next.js and FilixPay APIs.
 
-Manage products, orders, payments, and commerce operations from a modern merchant dashboard.
+Manage products, orders, payments, and commerce operations from a self-hosted merchant portal.
 
-FilixPay is an open-source payment infrastructure platform designed for modern commerce and global money movement.
+It provides localized marketing pages and a Keycloak-backed dashboard that talks to FilixPay Portal APIs.
 
 [Website](https://www.filixpay.com) · [Issues](https://github.com/filixpay/filix-merchant/issues) · [License](LICENSE)
 
@@ -21,6 +21,23 @@ FilixPay is an open-source payment infrastructure platform designed for modern c
 - Next.js and TypeScript
 - Designed to integrate with FilixPay payment infrastructure
 - Open source (Apache-2.0)
+
+## Architecture
+
+```text
+Merchant operators
+        │
+        ▼
+FilixPay Merchant Portal
+        │
+        ▼
+FilixPay Portal APIs / OIDC
+        │
+        ▼
+FilixPay Payment Infrastructure
+```
+
+FilixPay Merchant Portal focuses on merchant and commerce operations. Payment execution, funds movement, and accounting remain part of the FilixPay payment infrastructure.
 
 ## Getting Started
 
