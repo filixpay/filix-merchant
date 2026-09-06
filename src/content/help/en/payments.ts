@@ -496,4 +496,101 @@ export const enPayments: Record<string, HelpArticleContent> = {
       },
     },
   },
+  "payments/transaction-reports": {
+    title: "Export transaction reports",
+    description:
+      "Discover, filter, and export transaction report rows under Reporting → Transaction Reports in FilixPay Merchant Center.",
+    keywords: [
+      "transaction reports",
+      "export CSV",
+      "reporting transactions",
+      "merchant order id report",
+      "trade no report",
+    ],
+    body: {
+      whoFor:
+        "Operators who need a report-style list or CSV export of transactions within their authorized scope.",
+      whenToUse:
+        "Use this when you open Reporting → Transaction Reports to search by merchant order ID, status, channel, amount, or created time, or to export CSV.",
+      beforeYouStart: [
+        "Sign in with access to Reporting → Transaction Reports.",
+        "Have a Merchant Order ID or date range ready when searching (for example DEMO-ORD-1001).",
+        "Know that this is a reporting view — day-to-day order operations stay under Transactions → Orders.",
+      ],
+      blocks: [
+        {
+          type: "paragraph",
+          text: "Transaction Report lists discoverable transactions and supports Export CSV. Open a row for a read-only summary and timeline, with a link to business detail when available. This guide covers list, filters, export, and detail. It does not replace Order Management.",
+        },
+        {
+          type: "heading",
+          text: "Open Transaction Reports",
+          anchor: "open",
+        },
+        {
+          type: "steps",
+          items: [
+            "Sign in to Merchant Center.",
+            "Open Reporting → Transaction Reports.",
+            "Confirm the page title Transaction Report and the Export CSV action.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Filter the list",
+          anchor: "search",
+        },
+        {
+          type: "steps",
+          items: [
+            "Enter Merchant order ID, Status, Channel, Amount min/max, and Created range as needed.",
+            "Search to apply filters. Use Reset to clear them.",
+            "Paginate through Merchant order ID, Trade no., Order type, Status, Amount, Channel, and Created at.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Export and open detail",
+          anchor: "export",
+        },
+        {
+          type: "steps",
+          items: [
+            "Choose Export CSV to download the current filter scope as a CSV file.",
+            "Open a row to view the report detail summary and timeline.",
+            "Use View business detail when shown to jump to the related business page, or stay on the report detail path.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Common issues",
+          anchor: "common-issues",
+        },
+        {
+          type: "issues",
+          items: [
+            {
+              problem: "Export failed.",
+              solution:
+                "Confirm you are still signed in, narrow filters if the range is very large, then retry Export CSV.",
+            },
+            {
+              problem: "I need to refund or patch an order.",
+              solution:
+                "Use Transactions → Orders for operational actions — see /help/payments/orders. Reporting is discover and export only.",
+            },
+            {
+              problem: "Amounts do not match settlements.",
+              solution:
+                "Compare with settlement and reconciliation guides under Funds — see /help/funds/reconciliation.",
+            },
+          ],
+        },
+      ],
+      nextStep: {
+        label: "Manage orders",
+        href: "/help/payments/orders",
+      },
+    },
+  },
 };

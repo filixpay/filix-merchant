@@ -7,6 +7,7 @@ import { Button, DatePicker, Flex, Form, Select } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import { api, type AuditLogItem, type AuditLogListQuery } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import AuditLogTable from "@/components/audit-logs/AuditLogTable";
 import { usePagedResource } from "@/lib/dashboard/use-paged-resource";
 import {
@@ -110,7 +111,18 @@ export default function AuditLogsPage() {
     );
 
     return (
-        <DashboardPage title={t("title")} subtitle={t("subtitle")} filterBar={filterBar} contentMode="table">
+        <DashboardPage
+            title={t("title")}
+            subtitle={t("subtitle")}
+            filterBar={filterBar}
+            contentMode="table"
+            extra={
+                <HelpDeepLinkButton
+                    dashboardPath="/dashboard/audit-logs"
+                    helpSlug="account/audit-logs"
+                />
+            }
+        >
             <AuditLogTable
                 items={items}
                 loading={loading}

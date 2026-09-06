@@ -7117,7 +7117,14 @@
       "open_risk_reviews": "打开风险审核",
       "open_risk_rules": "打开风险规则",
       "open_credit_limit": "打开信用额度管理",
-      "open_available_credit": "打开我的可用额度"
+      "open_available_credit": "打开我的可用额度",
+      "open_notifications": "打开消息与待办",
+      "open_audit_logs": "打开审计日志",
+      "open_maintenance_profile": "打开商户资料",
+      "open_maintenance_changes": "打开资料变更",
+      "open_maintenance_contact": "打开联系方式",
+      "open_close_account": "打开关闭账户",
+      "open_transaction_reports": "打开交易报表"
     },
     "outbound": {
       "section_title": "相关资源",

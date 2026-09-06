@@ -1,7 +1,7 @@
 # FilixPay Merchant Help System — Design v1
 
 **Date:** 2026-09-05  
-**Status:** Approved — P0 on `main`. P1 complete except ongoing maintenance: Developers + Customers + Payment Splits + external-accounts + crypto + risk/controls + **Credit** shipped.  
+**Status:** Approved — P0+P1 on `main`. **P2 account batch shipped** (`2026-09-06-merchant-help-p2-account-design.md`); security + service-plan still later.  
 **Scope:** Public, indexable Merchant Center usage guides under `/{locale}/help/**`  
 **Out of scope (V1):** CMS authoring, AI search, screenshot-dependent flows, full locale translations beyond EN+ZH, Checkouts published content
 
@@ -537,7 +537,9 @@ Independent published guides only:
   3. **Customers** — shipped  
   4. **Payment Splits** — shipped  
   5. **External accounts + Crypto + Risk controls** — shipped  
-- **P2:** notifications, audit-logs, maintenance detail, close-account, reporting  
+- **P2:**  
+  1. **Account + transaction reports** — shipped (`2026-09-06-merchant-help-p2-account-design.md`)  
+  2. Later: security, service-plan (same account domain)  
 
 ---
 

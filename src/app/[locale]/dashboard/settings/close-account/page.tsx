@@ -25,6 +25,7 @@ import {
     type MerchantCloseRequest,
 } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 
 const STATUS_TAG_COLOR: Record<string, string> = {
     DRAFT: "default",
@@ -215,7 +216,16 @@ export default function CloseAccountPage() {
     };
 
     return (
-        <DashboardPage title="关闭账户" subtitle="提交账户关闭申请，审核通过后将关闭商户账户">
+        <DashboardPage
+            title="关闭账户"
+            subtitle="提交账户关闭申请，审核通过后将关闭商户账户"
+            extra={
+                <HelpDeepLinkButton
+                    dashboardPath="/dashboard/settings/close-account"
+                    helpSlug="account/close-account"
+                />
+            }
+        >
             <Space direction="vertical" size="large" style={{ width: "100%" }}>
                 <Alert
                     type="warning"

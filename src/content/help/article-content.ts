@@ -7,6 +7,7 @@ import { enRisk } from "./en/risk";
 import { enCommerce } from "./en/commerce";
 import { enCredit } from "./en/credit";
 import { enDevelopers } from "./en/developers";
+import { enAccount } from "./en/account";
 import { zhGettingStarted } from "./zh/getting-started";
 import { zhPayments } from "./zh/payments";
 import { zhFunds } from "./zh/funds";
@@ -14,6 +15,7 @@ import { zhRisk } from "./zh/risk";
 import { zhCommerce } from "./zh/commerce";
 import { zhCredit } from "./zh/credit";
 import { zhDevelopers } from "./zh/developers";
+import { zhAccount } from "./zh/account";
 
 export type HelpArticleContent = {
   title: string;
@@ -34,6 +36,7 @@ export const HELP_ARTICLE_CONTENT: Record<
     ...enCommerce,
     ...enCredit,
     ...enDevelopers,
+    ...enAccount,
   },
   zh: {
     ...zhGettingStarted,
@@ -43,5 +46,6 @@ export const HELP_ARTICLE_CONTENT: Record<
     ...zhCommerce,
     ...zhCredit,
     ...zhDevelopers,
+    ...zhAccount,
   },
 };

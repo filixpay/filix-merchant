@@ -7,6 +7,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Badge, Button, Segmented, Tabs } from "antd";
 import { api, type ActionTaskView, type MerchantNotification } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import NotificationList from "@/components/notifications/NotificationList";
 import TaskList from "@/components/notifications/TaskList";
 import { invalidateNotificationState } from "@/lib/notifications/invalidate";
@@ -108,11 +109,17 @@ export default function NotificationsPage() {
             title={t("title")}
             subtitle={t("subtitle")}
             extra={
-                activeTab === "notifications" ? (
-                    <Button loading={markingAll} onClick={() => void handleMarkAllRead()}>
-                        {t("mark_all_read")}
-                    </Button>
-                ) : null
+                <>
+                    <HelpDeepLinkButton
+                        dashboardPath="/dashboard/notifications"
+                        helpSlug="account/notifications"
+                    />
+                    {activeTab === "notifications" ? (
+                        <Button loading={markingAll} onClick={() => void handleMarkAllRead()}>
+                            {t("mark_all_read")}
+                        </Button>
+                    ) : null}
+                </>
             }
             plain
         >

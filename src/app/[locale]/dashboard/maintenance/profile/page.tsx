@@ -8,6 +8,7 @@ import Link from "next/link";
 import { Copy, Edit3, Info, Mail, RefreshCw, TriangleAlert } from "lucide-react";
 import { api, ApiError, type MerchantDetailView } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import {
     canUpgradeToFormal,
     isTrialMerchant,
@@ -236,6 +237,10 @@ export default function MerchantProfilePage() {
 
     const pageActions = (
         <div className={styles.actions}>
+            <HelpDeepLinkButton
+                dashboardPath="/dashboard/maintenance/profile"
+                helpSlug="account/maintenance"
+            />
             <button type="button" className={styles.actionBtn} onClick={load} disabled={loading}>
                 <RefreshCw size={13} strokeWidth={2} />
                 {t("refresh")}

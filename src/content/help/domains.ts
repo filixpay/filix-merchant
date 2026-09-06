@@ -96,8 +96,8 @@ export const HELP_DOMAINS: HelpDomainMeta[] = [
     isGettingStarted: false,
     title: { en: "Account & Security", zh: "账户与安全" },
     description: {
-      en: "Security, notifications, audit logs, service plan, and account settings.",
-      zh: "安全、通知、审计、服务方案与账户设置。",
+      en: "Security, notifications, audit logs, maintenance, close account, and account settings.",
+      zh: "安全、通知、审计、资料维护、关闭账户与账户设置。",
     },
   },
 ];

@@ -8,6 +8,7 @@ import { Col, Row, Skeleton, Typography } from "antd";
 import { ArrowLeftOutlined } from "@ant-design/icons";
 import { useLocale, useTranslations } from "next-intl";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import TransactionDetailSummary from "@/components/reporting/TransactionDetailSummary";
 import TransactionTimelinePanel from "@/components/reporting/TransactionTimelinePanel";
 import { isReportResourceNotFound } from "@/components/reporting/transaction-detail-model";
@@ -132,6 +133,12 @@ export default function ReportingTransactionDetailPage() {
                         </div>
                     ) : null}
                 </div>
+            }
+            extra={
+                <HelpDeepLinkButton
+                    dashboardPath="/dashboard/reporting/transactions"
+                    helpSlug="payments/transaction-reports"
+                />
             }
         >
             <Row gutter={[16, 16]}>

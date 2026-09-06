@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { Button, DatePicker, Flex, Form, Input, InputNumber, notification, Select, Space } from "antd";
 import { DownloadOutlined, SearchOutlined } from "@ant-design/icons";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import TransactionListTable from "@/components/reporting/TransactionListTable";
 import filterStyles from "@/components/reporting/TransactionFilterBar.module.css";
 import { downloadReportBlob } from "@/components/reporting/download-report-blob";
@@ -164,14 +165,20 @@ export default function ReportingTransactionsPage() {
     );
 
     const exportButton = (
-        <Button
-            icon={<DownloadOutlined />}
-            loading={exporting}
-            disabled={!accessToken}
-            onClick={handleExport}
-        >
-            {t("export")}
-        </Button>
+        <Space size={8}>
+            <HelpDeepLinkButton
+                dashboardPath="/dashboard/reporting/transactions"
+                helpSlug="payments/transaction-reports"
+            />
+            <Button
+                icon={<DownloadOutlined />}
+                loading={exporting}
+                disabled={!accessToken}
+                onClick={handleExport}
+            >
+                {t("export")}
+            </Button>
+        </Space>
     );
 
     return (

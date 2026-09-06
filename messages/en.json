@@ -7068,7 +7068,14 @@
       "open_risk_reviews": "Open Risk Reviews",
       "open_risk_rules": "Open Risk Rules",
       "open_credit_limit": "Open Credit Limit",
-      "open_available_credit": "Open My Available Credit"
+      "open_available_credit": "Open My Available Credit",
+      "open_notifications": "Open Notifications & Tasks",
+      "open_audit_logs": "Open Audit Logs",
+      "open_maintenance_profile": "Open Merchant Profile",
+      "open_maintenance_changes": "Open Profile Changes",
+      "open_maintenance_contact": "Open Contact Info",
+      "open_close_account": "Open Close Account",
+      "open_transaction_reports": "Open Transaction Reports"
     },
     "outbound": {
       "section_title": "Related resources",

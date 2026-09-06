@@ -13,6 +13,7 @@ import {
     type MerchantContactView,
 } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import styles from "./contact-page.module.css";
 
 type ContactFormValues = {
@@ -220,7 +221,16 @@ export default function MaintenanceContactPage() {
     };
 
     return (
-        <DashboardPage title={t("contactTitle")} subtitle={t("contactSubtitle")}>
+        <DashboardPage
+            title={t("contactTitle")}
+            subtitle={t("contactSubtitle")}
+            extra={
+                <HelpDeepLinkButton
+                    dashboardPath="/dashboard/maintenance/contact"
+                    helpSlug="account/maintenance"
+                />
+            }
+        >
             <div className={styles.page}>
                 <section className={styles.card}>
                     <div className={styles.cardHeader}>

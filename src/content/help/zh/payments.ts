@@ -457,4 +457,93 @@ export const zhPayments: Record<string, HelpArticleContent> = {
       },
     },
   },
+  "payments/transaction-reports": {
+    title: "导出交易报表",
+    description:
+      "在 FilixPay 商户中心「报表 → 交易报表」发现、筛选并导出交易报表行。",
+    keywords: ["交易报表", "导出 CSV", "报表交易", "商户订单号报表", "流水号报表"],
+    body: {
+      whoFor: "需要在授权范围内查看报表式交易列表或导出 CSV 的运营人员。",
+      whenToUse:
+        "打开「报表 → 交易报表」按商户订单号、状态、渠道、金额或创建时间搜索，或导出 CSV 时使用本说明。",
+      beforeYouStart: [
+        "使用可访问「报表 → 交易报表」的账号登录。",
+        "搜索时请准备商户订单号或时间范围（例如 DEMO-ORD-1001）。",
+        "这是报表视图——日常订单操作仍在「交易 → 订单」。",
+      ],
+      blocks: [
+        {
+          type: "paragraph",
+          text: "交易报表列出可发现的交易并支持导出 CSV。打开行可查看只读摘要与时间线，并在可用时跳转业务详情。本说明覆盖列表、筛选、导出与详情；不能替代订单管理。",
+        },
+        {
+          type: "heading",
+          text: "打开交易报表",
+          anchor: "open",
+        },
+        {
+          type: "steps",
+          items: [
+            "登录商户中心。",
+            "打开「报表 → 交易报表」。",
+            "确认页面标题为「交易报表」，并可见导出 CSV。",
+          ],
+        },
+        {
+          type: "heading",
+          text: "筛选列表",
+          anchor: "search",
+        },
+        {
+          type: "steps",
+          items: [
+            "按需填写商户订单号、状态、渠道、金额上下限与创建时间范围。",
+            "搜索以应用筛选；用重置清空。",
+            "分页查看商户订单号、流水号、订单类型、状态、金额、渠道与创建时间。",
+          ],
+        },
+        {
+          type: "heading",
+          text: "导出并打开详情",
+          anchor: "export",
+        },
+        {
+          type: "steps",
+          items: [
+            "选择导出 CSV，按当前筛选范围下载 CSV 文件。",
+            "打开行查看报表详情摘要与时间线。",
+            "在显示时使用查看业务详情跳转到相关业务页，或停留在报表详情路径。",
+          ],
+        },
+        {
+          type: "heading",
+          text: "常见问题",
+          anchor: "common-issues",
+        },
+        {
+          type: "issues",
+          items: [
+            {
+              problem: "导出失败。",
+              solution: "确认仍处于登录状态；若范围过大请缩小筛选后重试导出 CSV。",
+            },
+            {
+              problem: "需要退款或修改订单。",
+              solution:
+                "请到「交易 → 订单」做业务操作，参见 /help/payments/orders。报表仅用于发现与导出。",
+            },
+            {
+              problem: "金额与结算对不上。",
+              solution:
+                "请对照资金下的结算与对账说明，参见 /help/funds/reconciliation。",
+            },
+          ],
+        },
+      ],
+      nextStep: {
+        label: "管理订单",
+        href: "/help/payments/orders",
+      },
+    },
+  },
 };

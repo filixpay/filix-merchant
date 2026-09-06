@@ -27,6 +27,7 @@ import {
     type MerchantChangeRequest,
 } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import ChangeStatusTimeline from "@/components/maintenance/ChangeStatusTimeline";
 import {
     buildChangeProfileDisplayRows,
@@ -283,6 +284,10 @@ export default function MaintenanceChangeDetailPage() {
             }
             extra={
                 <Space wrap>
+                    <HelpDeepLinkButton
+                        dashboardPath="/dashboard/maintenance/changes"
+                        helpSlug="account/maintenance"
+                    />
                     <Link href={`/${locale}/dashboard/maintenance/changes`}>
                         <Button>{t("backToList")}</Button>
                     </Link>

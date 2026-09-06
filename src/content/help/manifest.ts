@@ -79,7 +79,7 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
     domain: "payments",
     published: true,
     order: 10,
-    relatedSlugs: ["payments/customers", "payments/payment-splits"],
+    relatedSlugs: ["payments/customers", "payments/payment-splits", "payments/transaction-reports"],
     dashboardLinks: [
       {
         path: "/dashboard/orders",
@@ -130,6 +130,20 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
       {
         path: "/dashboard/payment-splits",
         labelKey: "open_payment_splits",
+        primary: true,
+      },
+    ],
+  },
+  {
+    slug: "payments/transaction-reports",
+    domain: "payments",
+    published: true,
+    order: 50,
+    relatedSlugs: ["payments/orders", "funds/reconciliation"],
+    dashboardLinks: [
+      {
+        path: "/dashboard/reporting/transactions",
+        labelKey: "open_transaction_reports",
         primary: true,
       },
     ],
@@ -206,7 +220,7 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
     domain: "funds",
     published: true,
     order: 50,
-    relatedSlugs: [],
+    relatedSlugs: ["funds/settlements", "payments/transaction-reports"],
     dashboardLinks: [
       {
         path: "/dashboard/money/transaction-reconciliation",
@@ -423,6 +437,78 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
       {
         path: "/dashboard/member-credit/available-credit",
         labelKey: "open_available_credit",
+        primary: true,
+      },
+    ],
+  },
+  {
+    slug: "account/notifications",
+    domain: "account",
+    published: true,
+    order: 10,
+    relatedSlugs: ["account/audit-logs", "account/maintenance"],
+    dashboardLinks: [
+      {
+        path: "/dashboard/notifications",
+        labelKey: "open_notifications",
+        primary: true,
+      },
+    ],
+  },
+  {
+    slug: "account/audit-logs",
+    domain: "account",
+    published: true,
+    order: 20,
+    relatedSlugs: [
+      "account/notifications",
+      "developers/developer-center",
+      "risk/controls",
+    ],
+    dashboardLinks: [
+      {
+        path: "/dashboard/audit-logs",
+        labelKey: "open_audit_logs",
+        primary: true,
+      },
+    ],
+  },
+  {
+    slug: "account/maintenance",
+    domain: "account",
+    published: true,
+    order: 30,
+    relatedSlugs: [
+      "account/close-account",
+      "funds/external-accounts",
+      "getting-started/merchant-setup",
+    ],
+    dashboardLinks: [
+      {
+        path: "/dashboard/maintenance/profile",
+        labelKey: "open_maintenance_profile",
+        primary: true,
+      },
+      {
+        path: "/dashboard/maintenance/changes",
+        labelKey: "open_maintenance_changes",
+      },
+      {
+        path: "/dashboard/maintenance/contact",
+        labelKey: "open_maintenance_contact",
+      },
+    ],
+  },
+  {
+    slug: "account/close-account",
+    domain: "account",
+    published: true,
+    order: 40,
+    relatedSlugs: ["account/maintenance", "funds/balance"],
+    dashboardLinks: [
+      {
+        path: "/dashboard/settings/close-account",
+        labelKey: "open_close_account",
         primary: true,
       },
     ],

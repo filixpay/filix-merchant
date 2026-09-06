@@ -17,6 +17,7 @@ import {
 } from "@/lib/api";
 import { normalizePagedResponse } from "@/lib/dashboard/normalize-paged-response";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import { getMaintenanceStatusTagColor, sortChangeRequestsByIdDesc, truncateIdMiddle, formatChangeSubmittedAtDisplay } from "@/components/maintenance/maintenance-change-ui";
 import { REGISTRATION_COUNTRY_GROUPS } from "@/lib/onboarding/registration-countries";
 
@@ -129,9 +130,15 @@ export default function MaintenanceChangesPage() {
             title={t("changesTitle")}
             subtitle={t("changesSubtitle")}
             extra={
-                <Button type="primary" icon={<PlusOutlined />} onClick={() => setCreateOpen(true)}>
-                    {t("create")}
-                </Button>
+                <Space>
+                    <HelpDeepLinkButton
+                        dashboardPath="/dashboard/maintenance/changes"
+                        helpSlug="account/maintenance"
+                    />
+                    <Button type="primary" icon={<PlusOutlined />} onClick={() => setCreateOpen(true)}>
+                        {t("create")}
+                    </Button>
+                </Space>
             }
         >
             <Space style={{ width: "100%", marginBottom: 16, flexWrap: "wrap" }} align="end">
