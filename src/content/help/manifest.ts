@@ -156,11 +156,51 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
     relatedSlugs: [],
   },
   {
+    slug: "merchant/organization",
+    domain: "merchant",
+    published: true,
+    order: 10,
+    relatedSlugs: [
+      "getting-started/merchant-setup",
+      "account/maintenance",
+      "merchant/locations",
+    ],
+    dashboardLinks: [
+      {
+        path: "/dashboard/organization",
+        labelKey: "open_organization",
+        primary: true,
+      },
+    ],
+  },
+  {
+    slug: "merchant/locations",
+    domain: "merchant",
+    published: true,
+    order: 20,
+    relatedSlugs: [
+      "merchant/organization",
+      "developers/payment-channels",
+      "payments/orders",
+    ],
+    dashboardLinks: [
+      {
+        path: "/dashboard/locations",
+        labelKey: "open_locations",
+        primary: true,
+      },
+      {
+        path: "/dashboard/sub-merchants",
+        labelKey: "open_sub_merchants",
+      },
+    ],
+  },
+  {
     slug: "funds/balance",
     domain: "funds",
     published: true,
     order: 10,
-    relatedSlugs: [],
+    relatedSlugs: ["funds/transfers"],
     dashboardLinks: [
       {
         path: "/dashboard/money/balance",
@@ -192,11 +232,25 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
     domain: "funds",
     published: true,
     order: 30,
-    relatedSlugs: ["funds/external-accounts"],
+    relatedSlugs: ["funds/external-accounts", "funds/transfers"],
     dashboardLinks: [
       {
         path: "/dashboard/money/payouts",
         labelKey: "open_payouts",
+        primary: true,
+      },
+    ],
+  },
+  {
+    slug: "funds/transfers",
+    domain: "funds",
+    published: true,
+    order: 35,
+    relatedSlugs: ["funds/balance", "account/security", "funds/payouts"],
+    dashboardLinks: [
+      {
+        path: "/dashboard/money/transfers",
+        labelKey: "open_money_transfers",
         primary: true,
       },
     ],
@@ -290,7 +344,7 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
     domain: "risk",
     published: true,
     order: 30,
-    relatedSlugs: ["risk/disputes", "risk/refunds"],
+    relatedSlugs: ["risk/disputes", "risk/refunds", "risk/coverage"],
     dashboardLinks: [
       {
         path: "/dashboard/fraud",
@@ -304,6 +358,24 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
       {
         path: "/dashboard/risk-rules",
         labelKey: "open_risk_rules",
+      },
+    ],
+  },
+  {
+    slug: "risk/coverage",
+    domain: "risk",
+    published: true,
+    order: 40,
+    relatedSlugs: ["risk/disputes", "risk/controls"],
+    dashboardLinks: [
+      {
+        path: "/dashboard/coverage-insurance",
+        labelKey: "open_coverage_insurance",
+        primary: true,
+      },
+      {
+        path: "/dashboard/coverage-config",
+        labelKey: "open_coverage_config",
       },
     ],
   },

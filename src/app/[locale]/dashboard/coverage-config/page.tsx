@@ -9,6 +9,7 @@ import { useTranslations } from "next-intl";
 import type { ColumnsType } from "antd/es/table";
 import { api } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import DashboardTableEmpty from "@/components/layout/DashboardTableEmpty";
 import DashboardTableError from "@/components/layout/DashboardTableError";
 import CoverageProviderForm, {
@@ -325,7 +326,16 @@ export default function CoverageConfigPage() {
     ];
 
     return (
-        <DashboardPage title={t("title")} subtitle={t("subtitle")}>
+        <DashboardPage
+            title={t("title")}
+            subtitle={t("subtitle")}
+            extra={
+                <HelpDeepLinkButton
+                    dashboardPath="/dashboard/coverage-config"
+                    helpSlug="risk/coverage"
+                />
+            }
+        >
             <Space direction="vertical" size="middle" style={{ width: "100%" }}>
                 {isPlatformMerchant ? (
                     <Alert type="info" showIcon message={t("platform_hosted_banner")} />

@@ -325,4 +325,110 @@ export const enRisk: Record<string, HelpArticleContent> = {
       },
     },
   },
+  "risk/coverage": {
+    title: "Coverage insurance and chargeback coverage",
+    description:
+      "Subscribe to platform-hosted coverage insurance or configure chargeback coverage providers under Risk Management → Coverage Services in FilixPay Merchant Center.",
+    keywords: [
+      "coverage insurance",
+      "chargeback coverage",
+      "coverage config",
+      "dispute coverage provider",
+      "activate coverage",
+    ],
+    body: {
+      whoFor:
+        "Merchants who enable platform coverage insurance or configure third-party chargeback coverage providers for new cases.",
+      whenToUse:
+        "Use this when you open Coverage Insurance or Chargeback Coverage under Risk Management → Coverage Services. Which page you see depends on settlement mode and merchant type.",
+      beforeYouStart: [
+        "Sign in with access to Coverage Services menus.",
+        "Know your settlement mode: PLATFORM merchants often use Coverage Insurance; DIRECT (and some PLATFORM merchants) use Chargeback Coverage config.",
+        "For provider config, have provider credentials ready — never paste real secrets into Help examples.",
+      ],
+      blocks: [
+        {
+          type: "paragraph",
+          text: "Coverage Services exposes two related pages. Coverage Insurance activates or turns off platform-hosted coverage for your account. Chargeback Coverage configures provider connections (add, test, activate/deactivate). Access is capability-gated — if a page redirects away, use the other coverage surface or confirm settlement mode with your admin.",
+        },
+        {
+          type: "heading",
+          text: "What / Where / When",
+          anchor: "map",
+        },
+        {
+          type: "fields",
+          rows: [
+            {
+              field: "Coverage Insurance",
+              description:
+                "Open Risk Management → Coverage Services → Coverage Insurance to agree and Activate, or Turn off coverage. Review provider, subscribed time, and agreement version when shown.",
+            },
+            {
+              field: "Chargeback Coverage",
+              description:
+                "Open Risk Management → Coverage Services → Chargeback Coverage to Add Configuration, Edit, Test Connection, and Activate or Deactivate providers.",
+            },
+          ],
+        },
+        {
+          type: "heading",
+          text: "Coverage Insurance",
+          anchor: "insurance",
+        },
+        {
+          type: "steps",
+          items: [
+            "Open Coverage Insurance.",
+            "Read the agreement and choose Activate when you are ready to subscribe.",
+            "To stop coverage, choose Turn off and confirm the dialog.",
+            "Confirm subscribed / not subscribed / unavailable states from the on-page status.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Chargeback Coverage config",
+          anchor: "config",
+        },
+        {
+          type: "steps",
+          items: [
+            "Open Chargeback Coverage.",
+            "Choose Add Configuration and select a provider.",
+            "Complete the schema fields shown (for example team, shop domain, environment, coverage limit, currency, mode) and secret fields when required.",
+            "Use Test Connection, then Activate or Deactivate. Platform operators may also see maintenance controls.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Common issues",
+          anchor: "common-issues",
+        },
+        {
+          type: "issues",
+          items: [
+            {
+              problem: "The coverage page redirects or is unavailable.",
+              solution:
+                "Your settlement mode or merchant type may gate insurance vs config. Try the sibling Coverage Services page or ask your admin which surface applies.",
+            },
+            {
+              problem: "Is coverage the same as disputes?",
+              solution:
+                "Coverage configures protection for new cases. Existing chargeback cases are under Disputes — see /help/risk/disputes.",
+            },
+            {
+              problem: "Test Connection failed.",
+              solution:
+                "Recheck provider fields and secrets, then retry Test Connection before Activate. Help does not document provider-side dashboards.",
+            },
+          ],
+        },
+      ],
+      nextStep: {
+        label: "Disputes & Chargebacks",
+        href: "/help/risk/disputes",
+      },
+    },
+  },
 };

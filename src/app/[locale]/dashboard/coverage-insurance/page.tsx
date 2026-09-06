@@ -8,6 +8,7 @@ import { SafetyOutlined } from "@ant-design/icons";
 import { useTranslations } from "next-intl";
 import { api, ApiError } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import { useMerchantCapabilities } from "@/components/layout/use-merchant-capabilities";
 import { handleDashboardApiError } from "@/lib/dashboard/handle-dashboard-api-error";
 import { resolveMerchantCoverageAccess } from "@/lib/coverage/merchant-coverage-access";
@@ -127,7 +128,16 @@ export default function CoverageInsurancePage() {
     };
 
     return (
-        <DashboardPage title={t("title")} subtitle={t("subtitle")}>
+        <DashboardPage
+            title={t("title")}
+            subtitle={t("subtitle")}
+            extra={
+                <HelpDeepLinkButton
+                    dashboardPath="/dashboard/coverage-insurance"
+                    helpSlug="risk/coverage"
+                />
+            }
+        >
             {pageState === "loading" ? (
                 <div style={{ display: "flex", justifyContent: "center", padding: 48 }}>
                     <Spin size="large" />

@@ -7077,7 +7077,13 @@
       "open_close_account": "Open Close Account",
       "open_transaction_reports": "Open Transaction Reports",
       "open_transaction_password": "Open Transaction Password",
-      "open_service_plan": "Open Service Plan"
+      "open_service_plan": "Open Service Plan",
+      "open_organization": "Open Organization",
+      "open_locations": "Open Locations",
+      "open_sub_merchants": "Open Sub-Merchants",
+      "open_money_transfers": "Open Money Transfers",
+      "open_coverage_insurance": "Open Coverage Insurance",
+      "open_coverage_config": "Open Chargeback Coverage"
     },
     "outbound": {
       "section_title": "Related resources",

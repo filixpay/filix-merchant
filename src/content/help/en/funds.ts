@@ -283,6 +283,104 @@ export const enFunds: Record<string, HelpArticleContent> = {
       },
     },
   },
+  "funds/transfers": {
+    title: "Transfer funds between merchants",
+    description:
+      "Create and track merchant-to-merchant transfers under Money → Transfers in FilixPay Merchant Center.",
+    keywords: [
+      "money transfers",
+      "merchant to merchant transfer",
+      "create transfer",
+      "payee merchant code",
+      "transfer PIN",
+    ],
+    body: {
+      whoFor:
+        "Operators who move available balance from one merchant account to another merchant payee inside FilixPay.",
+      whenToUse:
+        "Use this when you open Money → Transfers to create a transfer or open transfer detail — not for Offline Collection bank-transfer audit.",
+      beforeYouStart: [
+        "Confirm Transfer capability is available for the debit asset on Balance.",
+        "Have the payee merchant code ready (for example MCH_EXAMPLE_001).",
+        "Set a transaction password first if the confirm step requires it — see /help/account/security.",
+      ],
+      blocks: [
+        {
+          type: "paragraph",
+          text: "Transfers lists merchant-to-merchant fund moves. Create transfer selects debit asset, amount, and payee, then confirms with the transaction password. This is not Offline Collection (Pending audit under Transactions). Cleared transfers cannot be reversed from this UI.",
+        },
+        {
+          type: "heading",
+          text: "Open Transfers",
+          anchor: "open",
+        },
+        {
+          type: "steps",
+          items: [
+            "Sign in to Merchant Center.",
+            "Open Money → Transfers.",
+            "Confirm the page title Transfers and the Create transfer action.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Create a transfer",
+          anchor: "create",
+        },
+        {
+          type: "steps",
+          items: [
+            "Choose Create transfer.",
+            "Select the debit asset and enter the amount.",
+            "Enter the payee merchant code and confirm the looked-up name or alias.",
+            "Confirm with your transaction password and submit.",
+            "Watch the list for Transfer ID, time, amount, counterparty, and status.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Open transfer detail",
+          anchor: "detail",
+        },
+        {
+          type: "steps",
+          items: [
+            "Open a row to view amount, status, counterparty, and timestamps.",
+            "If status is Cleared, treat the transfer as final — this page does not offer reverse.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Common issues",
+          anchor: "common-issues",
+        },
+        {
+          type: "issues",
+          items: [
+            {
+              problem: "Create transfer is unavailable.",
+              solution:
+                "Check Transfer capability and available balance for the asset on Money → Balance — see /help/funds/balance.",
+            },
+            {
+              problem: "Confirm asks for a transaction password I never set.",
+              solution:
+                "Set the PIN under Security Settings → Transaction Password — see /help/account/security.",
+            },
+            {
+              problem: "Is this Offline Collection?",
+              solution:
+                "No. Offline Collection is Pending audit / confirmation under Transactions — see /help/payments/offline-collection. Money → Transfers is merchant-to-merchant balance movement.",
+            },
+          ],
+        },
+      ],
+      nextStep: {
+        label: "Payouts",
+        href: "/help/funds/payouts",
+      },
+    },
+  },
   "funds/settlements": {
     title: "Settlement bills",
     description:

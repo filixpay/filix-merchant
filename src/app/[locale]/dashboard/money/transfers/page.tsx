@@ -13,6 +13,7 @@ import {
   type TransferQuery,
 } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import CreateTransferModal from "@/components/money/CreateTransferModal";
 import MoneyAssetFilterSelect from "@/components/money/MoneyAssetFilterSelect";
 import TransferListTable from "@/components/money/TransferListTable";
@@ -132,6 +133,10 @@ export default function MoneyTransfersPage() {
 
   const filter = (
     <Flex align="center" gap={8} wrap="wrap">
+      <HelpDeepLinkButton
+        dashboardPath="/dashboard/money/transfers"
+        helpSlug="funds/transfers"
+      />
       <MoneyAssetFilterSelect
         label={t("asset_filter_label")}
         allLabel={t("asset_filter_all")}

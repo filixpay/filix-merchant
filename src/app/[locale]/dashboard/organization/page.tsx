@@ -38,6 +38,7 @@ import {
     type TeamRole,
 } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import OrganizationRolesPanel from "@/components/organization/OrganizationRolesPanel";
 import { useOrganizationCapabilities } from "@/components/layout/use-organization-capabilities";
 import { useOrganizationMerchants } from "@/components/layout/use-organization-merchants";
@@ -1367,7 +1368,15 @@ function OrganizationPageContent() {
 
     if (!accessToken || organizationsLoading) {
         return (
-            <DashboardPage title={t("title")}>
+            <DashboardPage
+                title={t("title")}
+                extra={
+                    <HelpDeepLinkButton
+                        dashboardPath="/dashboard/organization"
+                        helpSlug="merchant/organization"
+                    />
+                }
+            >
                 <Card loading />
             </DashboardPage>
         );
@@ -1375,14 +1384,31 @@ function OrganizationPageContent() {
 
     if (!activeOrganization) {
         return (
-            <DashboardPage title={t("title")}>
+            <DashboardPage
+                title={t("title")}
+                extra={
+                    <HelpDeepLinkButton
+                        dashboardPath="/dashboard/organization"
+                        helpSlug="merchant/organization"
+                    />
+                }
+            >
                 <Alert type="warning" showIcon message={t("no_active_org")} />
             </DashboardPage>
         );
     }
 
     return (
-        <DashboardPage title={t("title")} subtitle={subtitle}>
+        <DashboardPage
+            title={t("title")}
+            subtitle={subtitle}
+            extra={
+                <HelpDeepLinkButton
+                    dashboardPath="/dashboard/organization"
+                    helpSlug="merchant/organization"
+                />
+            }
+        >
             <Tabs
                 defaultActiveKey="accounts"
                 items={[

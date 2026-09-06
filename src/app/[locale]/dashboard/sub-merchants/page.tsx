@@ -2,11 +2,12 @@
 
 import { useMemo, useState } from "react";
 import { useSession } from "next-auth/react";
-import { Button } from "antd";
+import { Button, Space } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
 import { useTranslations } from "next-intl";
 import { api, SubMerchantView } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import SubMerchantTable from "@/components/sub-merchants/SubMerchantTable";
 import CreateSubMerchantModal from "@/components/sub-merchants/CreateSubMerchantModal";
 import EditSubMerchantModal from "@/components/sub-merchants/EditSubMerchantModal";
@@ -50,9 +51,15 @@ export default function SubMerchantsPage() {
     };
 
     const extra = (
-        <Button type="primary" icon={<PlusOutlined />} onClick={() => setIsModalOpen(true)}>
-            {t("create_sub_merchant")}
-        </Button>
+        <Space size={8}>
+            <HelpDeepLinkButton
+                dashboardPath="/dashboard/sub-merchants"
+                helpSlug="merchant/locations"
+            />
+            <Button type="primary" icon={<PlusOutlined />} onClick={() => setIsModalOpen(true)}>
+                {t("create_sub_merchant")}
+            </Button>
+        </Space>
     );
 
     return (

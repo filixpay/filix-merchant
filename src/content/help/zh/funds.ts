@@ -260,6 +260,97 @@ export const zhFunds: Record<string, HelpArticleContent> = {
       },
     },
   },
+  "funds/transfers": {
+    title: "商户间资金转账",
+    description:
+      "在 FilixPay 商户中心「资金 → 转账」创建并跟踪商户间资金转账。",
+    keywords: ["资金转账", "商户间转账", "发起转账", "收款商户号", "转账 PIN"],
+    body: {
+      whoFor: "需要把可用余额从本商户转到另一 FilixPay 商户收款方的运营人员。",
+      whenToUse:
+        "打开「资金 → 转账」发起转账或查看转账详情时使用本说明——不是线下归集的银行转账审核。",
+      beforeYouStart: [
+        "确认余额页面对应资产具备转账能力。",
+        "准备收款商户号（例如 MCH_EXAMPLE_001）。",
+        "若确认步骤需要交易密码，请先设置，参见 /help/account/security。",
+      ],
+      blocks: [
+        {
+          type: "paragraph",
+          text: "转账列出商户间资金划转。发起转账时选择扣款资产、金额与收款方，并用交易密码确认。这不是线下归集（交易下的待审核）。已清算转账无法在本页撤销。",
+        },
+        {
+          type: "heading",
+          text: "打开转账",
+          anchor: "open",
+        },
+        {
+          type: "steps",
+          items: [
+            "登录商户中心。",
+            "打开「资金 → 转账」。",
+            "确认页面标题为「转账」，并可见「发起转账」。",
+          ],
+        },
+        {
+          type: "heading",
+          text: "发起转账",
+          anchor: "create",
+        },
+        {
+          type: "steps",
+          items: [
+            "选择「发起转账」。",
+            "选择扣款资产并填写金额。",
+            "填写收款商户号，并确认查询到的名称或别名。",
+            "用交易密码确认并提交。",
+            "在列表查看转账 ID、时间、金额、对手方与状态。",
+          ],
+        },
+        {
+          type: "heading",
+          text: "打开转账详情",
+          anchor: "detail",
+        },
+        {
+          type: "steps",
+          items: [
+            "打开行查看金额、状态、对手方与时间戳。",
+            "若状态为已清算，视为最终完成——本页不提供冲正。",
+          ],
+        },
+        {
+          type: "heading",
+          text: "常见问题",
+          anchor: "common-issues",
+        },
+        {
+          type: "issues",
+          items: [
+            {
+              problem: "无法发起转账。",
+              solution:
+                "在「资金 → 余额」检查该资产的转账能力与可用余额，参见 /help/funds/balance。",
+            },
+            {
+              problem: "确认时要求交易密码但我未设置。",
+              solution:
+                "先在「安全设置 → 交易密码」设置 PIN，参见 /help/account/security。",
+            },
+            {
+              problem: "这是线下归集吗？",
+              solution:
+                "不是。线下归集在「交易」下的待审核/确认，参见 /help/payments/offline-collection。「资金 → 转账」是商户间余额划转。",
+            },
+          ],
+        },
+      ],
+      nextStep: {
+        label: "出金",
+        href: "/help/funds/payouts",
+      },
+    },
+  },
   "funds/settlements": {
     title: "结算单",
     description:

@@ -2,11 +2,12 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useSession } from "next-auth/react";
-import { Button } from "antd";
+import { Button, Space } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
 import { useTranslations } from "next-intl";
 import { api, LocationView, SubMerchantView } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import LocationTable from "@/components/locations/LocationTable";
 import CreateLocationModal from "@/components/locations/CreateLocationModal";
 import EditLocationModal from "@/components/locations/EditLocationModal";
@@ -69,9 +70,15 @@ export default function LocationsPage() {
     };
 
     const extra = (
-        <Button type="primary" icon={<PlusOutlined />} onClick={() => setShowCreateModal(true)}>
-            {t("create_location")}
-        </Button>
+        <Space size={8}>
+            <HelpDeepLinkButton
+                dashboardPath="/dashboard/locations"
+                helpSlug="merchant/locations"
+            />
+            <Button type="primary" icon={<PlusOutlined />} onClick={() => setShowCreateModal(true)}>
+                {t("create_location")}
+            </Button>
+        </Space>
     );
 
     return (
