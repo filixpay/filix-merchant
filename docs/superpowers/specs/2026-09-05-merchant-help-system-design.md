@@ -540,7 +540,7 @@ Independent published guides only:
 - **P2:**  
   1. **Account + transaction reports** — shipped (`2026-09-06-merchant-help-p2-account-design.md`)  
   2. **Security + service plan** — shipped (`2026-09-06-merchant-help-p2-security-service-plan-design.md`)  
-- **P3:** merchant organization + locations/sub-merchants, funds transfers, risk coverage (`2026-09-06-merchant-help-p3-design.md`)  
+- **P3:** merchant organization + locations/sub-merchants, funds transfers, risk coverage — shipped (`2026-09-06-merchant-help-p3-design.md`)  
 
 ---
 
