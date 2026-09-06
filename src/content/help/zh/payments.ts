@@ -546,4 +546,146 @@ export const zhPayments: Record<string, HelpArticleContent> = {
       },
     },
   },
+  "payments/checkouts": {
+    title: "收银台配置",
+    description:
+      "在 FilixPay 商户中心「收银台配置」中创建并管理跨语言聚合收银台页面。",
+    keywords: [
+      "收银台配置",
+      "收银台",
+      "聚合收银台",
+      "支付配置",
+      "FilixPay 收银台",
+    ],
+    body: {
+      whoFor: "需要配置品牌化收银台并挂载支付配置、以便买家付款的运营人员。",
+      whenToUse:
+        "当你打开「收银台配置」添加、编辑、启用/停用或删除收银台时，使用本指南。",
+      beforeYouStart: [
+        "使用可访问「收银台配置」的账号登录。",
+        "请先在支付通道配置下准备至少一条支付配置——见 /help/developers/payment-channels。",
+        "明确将使用的收银台代码（唯一标识，例如 checkout-demo）。",
+      ],
+      blocks: [
+        {
+          type: "paragraph",
+          text: "收银台配置用于管理跨语言聚合收银台页面（收银台计数器）。它不是订单，不是入金里的「打开结账」，也不是自托管 filix-checkout 部署说明。演示 Logo 可使用 https://cdn.example.com/logo.png。",
+        },
+        {
+          type: "heading",
+          text: "打开收银台配置",
+          anchor: "open",
+        },
+        {
+          type: "steps",
+          items: [
+            "登录商户中心。",
+            "从侧栏打开「收银台配置」。",
+            "查看列表：收银台名称（含品牌色）、代码、配置数量、状态与操作。",
+          ],
+        },
+        {
+          type: "heading",
+          text: "添加配置",
+          anchor: "create",
+        },
+        {
+          type: "steps",
+          items: [
+            "选择「添加配置」。",
+            "填写收银台代码（唯一标识）。创建后不可再改代码。",
+            "填写默认显示名称：英文必填，中文与日文可选。",
+            "可选填写 Logo 链接与品牌颜色。",
+            "填写支持货币与买家地区（逗号分隔，* 表示全部）。",
+            "在「支付配置列表」中按优先级添加已有支付配置，然后提交。",
+          ],
+        },
+        {
+          type: "heading",
+          text: "编辑配置",
+          anchor: "edit",
+        },
+        {
+          type: "steps",
+          items: [
+            "在行上选择编辑，打开「编辑配置」。",
+            "更新名称、品牌、货币、地区或支付配置列表。",
+            "收银台代码保持锁定。提交以保存。",
+          ],
+        },
+        {
+          type: "heading",
+          text: "状态与删除",
+          anchor: "status",
+        },
+        {
+          type: "steps",
+          items: [
+            "点击状态徽标可在 ACTIVE 与 INACTIVE 间切换（启用或停用）。",
+            "需要移除时选择删除并确认。",
+          ],
+        },
+        {
+          type: "heading",
+          text: "关键字段",
+          anchor: "key-fields",
+        },
+        {
+          type: "fields",
+          rows: [
+            {
+              field: "收银台名称 / 代码",
+              description: "列表中的本地化显示名称，以及唯一的收银台代码标识。",
+            },
+            {
+              field: "配置数量",
+              description: "挂载到该收银台的支付配置条数。",
+            },
+            {
+              field: "状态",
+              description: "ACTIVE 或 INACTIVE。点击徽标可切换。",
+            },
+            {
+              field: "支付配置列表",
+              description:
+                "按优先级选择的已有支付配置。若列表为空，请先在支付通道配置中创建配置。",
+            },
+            {
+              field: "货币 / 买家地区",
+              description: "逗号分隔的允许列表；* 表示全部货币或全部买家地区。",
+            },
+          ],
+        },
+        {
+          type: "heading",
+          text: "常见问题",
+          anchor: "common-issues",
+        },
+        {
+          type: "issues",
+          items: [
+            {
+              problem: "支付配置列表没有可选配置。",
+              solution:
+                "先打开支付通道配置并创建支付配置——见 /help/developers/payment-channels——再返回添加配置。",
+            },
+            {
+              problem: "买家无法通过该收银台付款。",
+              solution:
+                "确认状态为 ACTIVE、至少挂载一条支付配置，且货币与买家地区匹配买家场景。",
+            },
+            {
+              problem: "这和订单或入金结账是一回事吗？",
+              solution:
+                "不是。收银台配置定义收银台页面。订单跟踪支付——见 /help/payments/orders。入金可能打开单独的结账链接用于充值。",
+            },
+          ],
+        },
+      ],
+      nextStep: {
+        label: "支付通道配置",
+        href: "/help/developers/payment-channels",
+      },
+    },
+  },
 };

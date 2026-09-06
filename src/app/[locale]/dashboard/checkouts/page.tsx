@@ -12,6 +12,7 @@ import {
     PaymentConfigView,
 } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import CheckoutTable from "@/components/checkouts/CheckoutTable";
 import CheckoutFormModal, { type CheckoutFormState } from "@/components/checkouts/CheckoutFormModal";
 import { mapCheckoutToForm } from "@/components/checkouts/checkout-model";
@@ -134,9 +135,15 @@ export default function CheckoutsPage() {
     };
 
     const extra = (
-        <Button type="primary" icon={<PlusOutlined />} onClick={handleCreate}>
-            {t("create_counter")}
-        </Button>
+        <>
+            <HelpDeepLinkButton
+                dashboardPath="/dashboard/checkouts"
+                helpSlug="payments/checkouts"
+            />
+            <Button type="primary" icon={<PlusOutlined />} onClick={handleCreate}>
+                {t("create_counter")}
+            </Button>
+        </>
     );
 
     return (

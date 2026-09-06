@@ -151,9 +151,16 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
   {
     slug: "payments/checkouts",
     domain: "payments",
-    published: false,
-    order: 99,
-    relatedSlugs: [],
+    published: true,
+    order: 25,
+    relatedSlugs: ["developers/payment-channels", "payments/orders"],
+    dashboardLinks: [
+      {
+        path: "/dashboard/checkouts",
+        labelKey: "open_checkouts",
+        primary: true,
+      },
+    ],
   },
   {
     slug: "merchant/organization",

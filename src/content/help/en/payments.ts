@@ -593,4 +593,149 @@ export const enPayments: Record<string, HelpArticleContent> = {
       },
     },
   },
+  "payments/checkouts": {
+    title: "Checkout Config",
+    description:
+      "Create and manage multi-language aggregated checkout pages in FilixPay Merchant Center Checkout Config.",
+    keywords: [
+      "checkout config",
+      "checkout counters",
+      "aggregated checkout",
+      "payment configurations",
+      "FilixPay checkout",
+    ],
+    body: {
+      whoFor:
+        "Operators who configure branded checkout counters and attach payment configurations before buyers pay.",
+      whenToUse:
+        "Use this when you open Checkout Config to add, edit, activate, deactivate, or delete a checkout counter.",
+      beforeYouStart: [
+        "Sign in with access to Checkout Config.",
+        "Have at least one Payment Config ready under Payment channel configuration — see /help/developers/payment-channels.",
+        "Know the checkout code you will use (unique ID, for example checkout-demo).",
+      ],
+      blocks: [
+        {
+          type: "paragraph",
+          text: "Checkout Config manages multi-language aggregated checkout pages (checkout counters). It is not Orders, not Money-In Open checkout, and not a self-hosted filix-checkout deployment guide. Demo logos may use https://cdn.example.com/logo.png.",
+        },
+        {
+          type: "heading",
+          text: "Open Checkout Config",
+          anchor: "open",
+        },
+        {
+          type: "steps",
+          items: [
+            "Sign in to Merchant Center.",
+            "Open Checkout Config from the sidebar.",
+            "Review the list: Counter Name (with brand color), Code, Configs count, Status, and Actions.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Add Configuration",
+          anchor: "create",
+        },
+        {
+          type: "steps",
+          items: [
+            "Choose Add Configuration.",
+            "Enter Checkout Code (Unique ID). You cannot change the code later.",
+            "Enter Default Display Name for EN (required), and optionally ZH and JA.",
+            "Optionally set Logo URL and Brand Color.",
+            "Enter Supported Currencies and Buyer Countries as comma-separated values (use * for all).",
+            "Under Payment Configurations, add rows with Priority and an existing payment config, then submit.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Edit Configuration",
+          anchor: "edit",
+        },
+        {
+          type: "steps",
+          items: [
+            "On a row, choose Edit to open Edit Configuration.",
+            "Update titles, branding, currencies, countries, or Payment Configurations.",
+            "Checkout Code stays locked. Submit to save.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Status and delete",
+          anchor: "status",
+        },
+        {
+          type: "steps",
+          items: [
+            "Click the Status badge to toggle ACTIVE and INACTIVE (activate or deactivate).",
+            "To remove a counter, choose Delete and confirm.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Key fields",
+          anchor: "key-fields",
+        },
+        {
+          type: "fields",
+          rows: [
+            {
+              field: "Counter Name / Code",
+              description:
+                "Localized display name shown in the list, and the unique Checkout Code identifier.",
+            },
+            {
+              field: "Configs",
+              description: "How many Payment Configurations are attached to this counter.",
+            },
+            {
+              field: "Status",
+              description: "ACTIVE or INACTIVE. Click the badge to toggle.",
+            },
+            {
+              field: "Payment Configurations",
+              description:
+                "Priority-ordered payment configs selected from existing Payment Configs. Create configs under Payment channels first if the list is empty.",
+            },
+            {
+              field: "Currencies / Buyer Countries",
+              description:
+                "Comma-separated allow lists; * means all currencies or all buyer countries.",
+            },
+          ],
+        },
+        {
+          type: "heading",
+          text: "Common issues",
+          anchor: "common-issues",
+        },
+        {
+          type: "issues",
+          items: [
+            {
+              problem: "Payment Configurations has nothing to select.",
+              solution:
+                "Open Payment channel configuration and create a Payment Config first — see /help/developers/payment-channels — then return to Add Configuration.",
+            },
+            {
+              problem: "Buyers cannot pay through this counter.",
+              solution:
+                "Confirm Status is ACTIVE, at least one Payment Configuration is attached, and currencies / buyer countries match the buyer context.",
+            },
+            {
+              problem: "Is this the same as Orders or Money-In checkout?",
+              solution:
+                "No. Checkout Config defines checkout pages. Orders track payments — see /help/payments/orders. Money-In may open a separate checkout URL for deposits.",
+            },
+          ],
+        },
+      ],
+      nextStep: {
+        label: "Payment channels",
+        href: "/help/developers/payment-channels",
+      },
+    },
+  },
 };
