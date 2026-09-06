@@ -94,8 +94,9 @@ function LoginForm() {
       </Link>
 
       <div className={styles.footer}>
-        <Link href={`/${locale}/help`}>Help</Link> &middot;{" "}
-        <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+        <Link href={`/${locale}/help`}>{t("help")}</Link> &middot;{" "}
+        <Link href={`/${locale}/privacy`}>{t("privacy")}</Link> &middot;{" "}
+        <Link href={`/${locale}/terms`}>{t("terms")}</Link>
       </div>
     </div>
   );

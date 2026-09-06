@@ -1,8 +1,10 @@
 import type { MetadataRoute } from "next";
 import { HELP_ARTICLE_DEFS } from "@/content/help/manifest";
 import { HELP_DOMAINS } from "@/content/help/domains";
+import { listIndexableLegalPaths } from "@/content/legal/loaders";
 import { getEnv } from "@/lib/env";
 import { HELP_CONTENT_LOCALES } from "@/lib/help/content-locales";
+import { LEGAL_CONTENT_LOCALES } from "@/lib/legal/content-locales";
 import { LOCALES } from "@/lib/seo/constants";
 import { PUBLIC_ROUTES } from "@/lib/seo/public-routes";
 
@@ -39,6 +41,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ...(lastModified ? { lastModified: new Date(lastModified) } : {}),
         changeFrequency: "monthly",
         priority: path === "/help" ? 0.8 : 0.7,
+      });
+    }
+  }
+
+  // Legal: only when status is "final" (draft stays noindex and off sitemap).
+  for (const { path } of listIndexableLegalPaths()) {
+    for (const locale of LEGAL_CONTENT_LOCALES) {
+      entries.push({
+        url: `${siteUrl}/${locale}${path}`,
+        lastModified: new Date(),
+        changeFrequency: "monthly",
+        priority: 0.5,
       });
     }
   }

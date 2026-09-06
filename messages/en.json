@@ -287,7 +287,10 @@
     "merchant_cta": "Enter Merchant Center",
     "enterprise_title": "Enterprise Center",
     "enterprise_body": "Manage organizations, members, permissions, and multi-merchant relationships",
-    "enterprise_cta": "Enter Enterprise Center"
+    "enterprise_cta": "Enter Enterprise Center",
+    "help": "Help",
+    "privacy": "Privacy",
+    "terms": "Terms"
   },
   "Dashboard": {
     "title": "Dashboard",
@@ -4721,6 +4724,9 @@
     "solutions_title": "Solutions",
     "technology_title": "Technology",
     "resources_title": "Resources",
+    "legal_title": "Legal",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
     "company_title": "Company",
     "contact_us": "Contact Us",
     "about": "About FilixPay",

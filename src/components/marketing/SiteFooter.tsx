@@ -70,6 +70,13 @@ export default function SiteFooter() {
                         <Link href={buildHref('/resources/downloads')} className={styles.footerLink}>{tNav('menu.resources.downloads')}</Link>
                         <Link href={buildHref('/open-source')} className={styles.footerLink}>{tNav('menu.resources.open_source')}</Link>
                     </div>
+
+                    {/* Legal — use current locale; non-content locales 308 → /en/... */}
+                    <div>
+                        <div className={styles.footerColumnTitle}>{t('legal_title')}</div>
+                        <Link href={buildHref('/terms')} className={styles.footerLink}>{t('terms')}</Link>
+                        <Link href={buildHref('/privacy')} className={styles.footerLink}>{t('privacy')}</Link>
+                    </div>
                 </div>
 
                 <div className={styles.footerBottom}>

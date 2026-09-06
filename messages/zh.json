@@ -468,7 +468,10 @@
     "merchant_cta": "进入商户中心",
     "enterprise_title": "集团管理中心",
     "enterprise_body": "管理组织、成员、权限、多商户关系",
-    "enterprise_cta": "进入集团中心"
+    "enterprise_cta": "进入集团中心",
+    "help": "帮助",
+    "privacy": "隐私政策",
+    "terms": "服务条款"
   },
   "Dashboard": {
     "title": "概览",
@@ -4772,6 +4775,9 @@
     "solutions_title": "解决方案",
     "technology_title": "技术",
     "resources_title": "资源",
+    "legal_title": "法律信息",
+    "terms": "服务条款",
+    "privacy": "隐私政策",
     "company_title": "公司",
     "contact_us": "联系我们",
     "about": "关于 FilixPay",
