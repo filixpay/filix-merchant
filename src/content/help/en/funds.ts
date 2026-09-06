@@ -43,6 +43,15 @@ export const enFunds: Record<string, HelpArticleContent> = {
         },
         {
           type: "heading",
+          text: "Activity",
+          anchor: "activity",
+        },
+        {
+          type: "paragraph",
+          text: "Money → Activity is the movement feed for your balances. Filter by asset and direction (In / Out / Transfer). Each row shows how funds moved — for example payment, refund, settlement, fee, payout, transfer, money-in, or adjustment — with time, amount, and reference. Use it when Available or Pending on Balance does not match what you expect.",
+        },
+        {
+          type: "heading",
           text: "Key fields",
           anchor: "key-fields",
         },

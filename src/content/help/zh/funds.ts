@@ -36,6 +36,15 @@ export const zhFunds: Record<string, HelpArticleContent> = {
         },
         {
           type: "heading",
+          text: "流水",
+          anchor: "activity",
+        },
+        {
+          type: "paragraph",
+          text: "「资金 → 流水」是余额变动明细。可按资产与方向（入 / 出 / 转账）筛选。每行说明资金如何变动——例如支付、退款、结算、手续费、出金、转账、入金或调账——并含时间、金额与参考号。当余额页的可用或待入账与预期不符时，用流水排查。",
+        },
+        {
+          type: "heading",
           text: "关键字段",
           anchor: "key-fields",
         },

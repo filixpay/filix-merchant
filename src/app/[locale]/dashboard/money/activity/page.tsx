@@ -10,6 +10,7 @@ import {
   type MoneyActivityQuery,
 } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import MoneyActivityTable from "@/components/money/MoneyActivityTable";
 import MoneyAssetFilterSelect from "@/components/money/MoneyAssetFilterSelect";
 import { usePagedResource } from "@/lib/dashboard/use-paged-resource";
@@ -113,7 +114,20 @@ export default function MoneyActivityPage() {
   );
 
   return (
-    <DashboardPage title={t("title")} subtitle={t("subtitle")} contentMode="table" extra={filter}>
+    <DashboardPage
+      title={t("title")}
+      subtitle={t("subtitle")}
+      contentMode="table"
+      extra={
+        <>
+          <HelpDeepLinkButton
+            dashboardPath="/dashboard/money/activity"
+            helpSlug="funds/balance"
+          />
+          {filter}
+        </>
+      }
+    >
       <Space direction="vertical" size={16} style={{ width: "100%" }}>
         {!assetsLoading && assetOptions.length === 0 && !assetsError ? (
           <Alert type="info" showIcon message={t("no_assets")} />

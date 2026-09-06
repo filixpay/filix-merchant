@@ -210,6 +210,7 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
       {
         path: "/dashboard/money/activity",
         labelKey: "open_activity",
+        hash: "activity",
       },
     ],
   },
@@ -365,14 +366,17 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
         path: "/dashboard/fraud",
         labelKey: "open_fraud",
         primary: true,
+        hash: "fraud",
       },
       {
         path: "/dashboard/risk-reviews",
         labelKey: "open_risk_reviews",
+        hash: "reviews",
       },
       {
         path: "/dashboard/risk-rules",
         labelKey: "open_risk_rules",
+        hash: "rules",
       },
     ],
   },
