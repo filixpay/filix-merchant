@@ -23,6 +23,8 @@ Implementation must **reuse** typed content modules, manifest, loaders, sitemap 
 
 V1 had reserved `payments/checkouts` with `published: false`. Product has re-exposed Checkout Config in Merchant Center; this batch **publishes** that reserved slug.
 
+**Product note:** A future Merchant Center Checkout **reposition** (access / capability management, not UI builder) is tracked in `docs/superpowers/specs/2026-09-06-merchant-checkout-reposition-backlog.md`. When that ships, rewrite this Help guide to match the new IA.
+
 ---
 
 ## 1. Goal
