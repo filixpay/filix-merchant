@@ -7,6 +7,7 @@ import { useSession } from "next-auth/react";
 import { useLocale, useTranslations } from "next-intl";
 import { useParams, useRouter } from "next/navigation";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import SettlementStatementDetailView from "@/components/settlement-statements/SettlementStatementDetailView";
 import detailStyles from "@/components/settlement-statements/SettlementStatementDetailView.module.css";
 import { downloadReportBlob } from "@/components/reporting/download-report-blob";
@@ -122,6 +123,11 @@ export default function SettlementStatementDetailPage() {
       contentMode="table"
       extra={
         <Space wrap>
+          <HelpDeepLinkButton
+            dashboardPath="/dashboard/money/settlements/statements"
+            helpSlug="funds/settlements"
+            hash="statement-detail"
+          />
           <Button
             icon={<ArrowLeftOutlined />}
             onClick={() => router.push(`/${locale}/dashboard/money/settlements/statements`)}

@@ -462,6 +462,24 @@ export const enFunds: Record<string, HelpArticleContent> = {
         },
         {
           type: "heading",
+          text: "Settlement bill detail",
+          anchor: "detail",
+        },
+        {
+          type: "paragraph",
+          text: "Open a Settlement bills row to see Settlement basics (Money-In ref, release ref, Released at, Gross / Fee / Net), Provider settlement (provider, provider reference, settlement date), Reconciliation (expected vs actual net, status Pending / Matched / Exception, difference), and Settlement timeline events such as Candidate created, Released, and Ledger posted.",
+        },
+        {
+          type: "heading",
+          text: "Settlement statement detail",
+          anchor: "statement-detail",
+        },
+        {
+          type: "paragraph",
+          text: "Open a Settlement records row for statement detail: Summary (window, as-of, Settlement Net, Released, Payout, coverage), Payout & release progress, Business events with linked journals, and Diagnostics for conflicts or unclassified journals. Download XLSX when the period is available. Periods that have not started show a warning instead of amounts.",
+        },
+        {
+          type: "heading",
           text: "Key fields",
           anchor: "key-fields",
         },
@@ -563,6 +581,15 @@ export const enFunds: Record<string, HelpArticleContent> = {
             "Open mismatch rows and compare provider amounts with local order amounts.",
             "Follow up on exceptions with Settlement bills and Orders until status is Matched or explained.",
           ],
+        },
+        {
+          type: "heading",
+          text: "Reconciliation detail",
+          anchor: "detail",
+        },
+        {
+          type: "paragraph",
+          text: "Open a Transaction Reconciliation row for order-scoped detail. Association shows Payment ID, Order ID, channel, business date, reconciliation status (Matched / Mismatch / Pending / Not reconciled), and mismatch type when present. Comparison lists provider transaction/order IDs, amount, and status beside FilixPay local amount and status so you can explain differences before returning to Settlement bills or Orders.",
         },
         {
           type: "heading",

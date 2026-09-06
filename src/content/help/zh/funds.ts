@@ -430,6 +430,24 @@ export const zhFunds: Record<string, HelpArticleContent> = {
         },
         {
           type: "heading",
+          text: "结算单详情",
+          anchor: "detail",
+        },
+        {
+          type: "paragraph",
+          text: "打开结算单行可查看结算基础信息（Money-In 参考、释放参考、释放时间、总额 / 手续费 / 净额）、提供方结算（提供方、提供方参考号、结算日期）、对账（预期净额与实际净额、状态待处理 / 已匹配 / 异常、差额），以及结算时间线事件（如候选已创建、已释放、账本已入账）。",
+        },
+        {
+          type: "heading",
+          text: "结算记录详情",
+          anchor: "statement-detail",
+        },
+        {
+          type: "paragraph",
+          text: "打开结算记录行进入详情：摘要（时间窗口、截至时间、结算净额、已释放、出金、数据覆盖）、出金与释放进度、含关联分录的业务事件，以及冲突或未分类分录诊断。周期可用时可下载 XLSX；尚未开始的周期显示警告而非金额。",
+        },
+        {
+          type: "heading",
           text: "关键字段",
           anchor: "key-fields",
         },
@@ -523,6 +541,15 @@ export const zhFunds: Record<string, HelpArticleContent> = {
             "打开不一致行，比较提供方金额与本地订单金额。",
             "结合结算单与订单跟进异常，直至匹配或可解释。",
           ],
+        },
+        {
+          type: "heading",
+          text: "对账详情",
+          anchor: "detail",
+        },
+        {
+          type: "paragraph",
+          text: "打开交易对账行可查看订单范围详情。关联信息含支付单号、订单号、通道、业务日期、对账状态（已匹配 / 不一致 / 待处理 / 未对账）及不一致类型（如有）。比对区并排展示提供方交易/订单号、金额与状态，以及 FilixPay 本地金额与状态，便于解释差异后再回到结算单或订单。",
         },
         {
           type: "heading",

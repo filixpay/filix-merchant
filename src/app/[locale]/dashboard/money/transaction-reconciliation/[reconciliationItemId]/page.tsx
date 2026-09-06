@@ -7,6 +7,7 @@ import { useSession } from "next-auth/react";
 import { useLocale, useTranslations } from "next-intl";
 import { useParams, useRouter } from "next/navigation";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import TransactionReconDetailView from "@/components/transaction-reconciliation/TransactionReconDetailView";
 import { handleDashboardApiError } from "@/lib/dashboard/handle-dashboard-api-error";
 import {
@@ -54,12 +55,19 @@ export default function TransactionReconciliationDetailPage() {
       subtitle={t("detail.reconScopeOrder")}
       contentMode="table"
       extra={
-        <Button
-          icon={<ArrowLeftOutlined />}
-          onClick={() => router.push(`/${locale}/dashboard/money/transaction-reconciliation`)}
-        >
-          {t("detail.back")}
-        </Button>
+        <>
+          <HelpDeepLinkButton
+            dashboardPath="/dashboard/money/transaction-reconciliation"
+            helpSlug="funds/reconciliation"
+            hash="detail"
+          />
+          <Button
+            icon={<ArrowLeftOutlined />}
+            onClick={() => router.push(`/${locale}/dashboard/money/transaction-reconciliation`)}
+          >
+            {t("detail.back")}
+          </Button>
+        </>
       }
     >
       {loading ? (

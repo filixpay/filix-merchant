@@ -7,6 +7,7 @@ import { useSession } from "next-auth/react";
 import { useLocale, useTranslations } from "next-intl";
 import { useParams, useRouter } from "next/navigation";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import SettlementDetailView from "@/components/settlements/SettlementDetailView";
 import { handleDashboardApiError } from "@/lib/dashboard/handle-dashboard-api-error";
 import { settlementsApi, type SettlementDetail } from "@/lib/settlements/api";
@@ -50,12 +51,19 @@ export default function SettlementDetailPage() {
       title={t("detail.title")}
       contentMode="table"
       extra={
-        <Button
-          icon={<ArrowLeftOutlined />}
-          onClick={() => router.push(`/${locale}/dashboard/money/settlements`)}
-        >
-          {t("detail.back")}
-        </Button>
+        <>
+          <HelpDeepLinkButton
+            dashboardPath="/dashboard/money/settlements"
+            helpSlug="funds/settlements"
+            hash="detail"
+          />
+          <Button
+            icon={<ArrowLeftOutlined />}
+            onClick={() => router.push(`/${locale}/dashboard/money/settlements`)}
+          >
+            {t("detail.back")}
+          </Button>
+        </>
       }
     >
       {loading ? (
