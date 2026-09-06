@@ -22,6 +22,7 @@ import {
     EnterpriseOrganizationDirectoryEntry,
 } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import { getStoredSelectedEnterpriseCode } from "@/components/layout/enterprise-shell";
 import { useEnterpriseCapabilities } from "@/components/layout/use-enterprise-capabilities";
 import { isEnterpriseAdmin } from "@/lib/enterprise/enterprise-permissions";
@@ -178,11 +179,17 @@ export default function EnterpriseOrganizationsPage() {
             title={t("title")}
             subtitle={t("subtitle")}
             extra={
-                canAdmin ? (
-                    <Button type="primary" icon={<PlusOutlined />} onClick={() => setCreateOpen(true)}>
-                        {t("create")}
-                    </Button>
-                ) : undefined
+                <>
+                    <HelpDeepLinkButton
+                        dashboardPath="/enterprise/organizations"
+                        helpSlug="enterprise/governance"
+                    />
+                    {canAdmin ? (
+                        <Button type="primary" icon={<PlusOutlined />} onClick={() => setCreateOpen(true)}>
+                            {t("create")}
+                        </Button>
+                    ) : null}
+                </>
             }
             contentMode="table"
         >

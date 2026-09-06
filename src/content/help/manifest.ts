@@ -171,6 +171,7 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
       "getting-started/merchant-setup",
       "account/maintenance",
       "merchant/locations",
+      "enterprise/governance",
     ],
     dashboardLinks: [
       {
@@ -648,6 +649,41 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
         path: "/dashboard/settings/close-account",
         labelKey: "open_close_account",
         primary: true,
+      },
+    ],
+  },
+  {
+    slug: "enterprise/governance",
+    domain: "enterprise",
+    published: true,
+    order: 10,
+    relatedSlugs: ["merchant/organization"],
+    dashboardLinks: [
+      {
+        path: "/enterprise/dashboard",
+        labelKey: "open_enterprise_dashboard",
+        primary: true,
+        hash: "dashboard",
+      },
+      {
+        path: "/enterprise/pick",
+        labelKey: "open_enterprise_pick",
+        hash: "pick",
+      },
+      {
+        path: "/enterprise/organizations",
+        labelKey: "open_enterprise_organizations",
+        hash: "organizations",
+      },
+      {
+        path: "/enterprise/members",
+        labelKey: "open_enterprise_members",
+        hash: "members",
+      },
+      {
+        path: "/enterprise/audit",
+        labelKey: "open_enterprise_audit",
+        hash: "audit",
       },
     ],
   },

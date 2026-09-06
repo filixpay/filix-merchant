@@ -6,6 +6,7 @@ import { useSession } from "next-auth/react";
 import { useLocale, useTranslations } from "next-intl";
 import { Card, List, Spin } from "antd";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import { useEnterpriseCapabilities } from "@/components/layout/use-enterprise-capabilities";
 import { enterpriseCodeToString } from "@/components/layout/enterprise-shell";
 
@@ -19,6 +20,13 @@ export default function EnterprisePickPage() {
     const { enterprises, enterprisesLoading, selectEnterprise } =
         useEnterpriseCapabilities(accessToken);
 
+    const helpExtra = (
+        <HelpDeepLinkButton
+            dashboardPath="/enterprise/pick"
+            helpSlug="enterprise/governance"
+        />
+    );
+
     useEffect(() => {
         if (!enterprisesLoading && enterprises.length === 1) {
             selectEnterprise(enterprises[0]);
@@ -28,14 +36,14 @@ export default function EnterprisePickPage() {
 
     if (enterprisesLoading) {
         return (
-            <DashboardPage title={t("title")} subtitle={t("subtitle")} plain>
+            <DashboardPage title={t("title")} subtitle={t("subtitle")} plain extra={helpExtra}>
                 <Spin size="large" />
             </DashboardPage>
         );
     }
 
     return (
-        <DashboardPage title={t("title")} subtitle={t("subtitle")}>
+        <DashboardPage title={t("title")} subtitle={t("subtitle")} extra={helpExtra}>
             <Card>
                 <List
                     dataSource={enterprises}

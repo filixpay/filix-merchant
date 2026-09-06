@@ -142,6 +142,20 @@ export const HELP_DOMAINS: HelpDomainMeta[] = [
       zh: "了解 FilixPay 商户中心的账户安全、交易密码、审计日志、通知、商户资料、服务计划及账户关闭操作。",
     },
   },
+  {
+    id: "enterprise",
+    order: 9,
+    isGettingStarted: false,
+    title: { en: "Enterprise Governance", zh: "集团治理" },
+    heading: {
+      en: "FilixPay Enterprise Governance",
+      zh: "FilixPay 集团治理",
+    },
+    description: {
+      en: "Select an enterprise, manage the organization directory and enterprise members, and review governance audit events in FilixPay Enterprise Portal.",
+      zh: "在 FilixPay 集团门户中选择集团、管理组织目录与集团成员，并查看治理审计事件。",
+    },
+  },
 ];
 
 export function getHelpDomain(id: string): HelpDomainMeta | undefined {

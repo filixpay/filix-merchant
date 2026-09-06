@@ -542,7 +542,7 @@ Independent published guides only:
   2. **Security + service plan** — shipped (`2026-09-06-merchant-help-p2-security-service-plan-design.md`)  
 - **P3:** merchant organization + locations/sub-merchants, funds transfers, risk coverage — shipped (`2026-09-06-merchant-help-p3-design.md`)  
 - **Post-V1:** Checkouts (`payments/checkouts`) — shipped (`2026-09-06-merchant-help-checkouts-design.md`)  
-- **Post-V1:** Enterprise Portal / 集团治理 Help — design approved (`2026-09-06-merchant-help-enterprise-design.md`)  
+- **Post-V1:** Enterprise Portal / 集团治理 Help — shipped (`2026-09-06-merchant-help-enterprise-design.md`)  
 
 ---
 

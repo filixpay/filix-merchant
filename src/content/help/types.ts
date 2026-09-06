@@ -9,7 +9,8 @@ export type HelpDomainId =
   | "commerce"
   | "credit"
   | "developers"
-  | "account";
+  | "account"
+  | "enterprise";
 
 export type HelpDashboardLink = {
   path: string;

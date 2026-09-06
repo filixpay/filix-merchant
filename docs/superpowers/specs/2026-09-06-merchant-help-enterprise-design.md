@@ -1,9 +1,9 @@
 # Merchant Help — Enterprise (集团治理) Design
 
 **Date:** 2026-09-06  
-**Status:** Approved — ready for implementation  
+**Status:** Shipped (content + Enterprise Portal deep links)  
 **Parent:** Extends frozen V1 — `docs/superpowers/specs/2026-09-05-merchant-help-system-design.md`  
-**Gap:** Login portal「集团管理中心」→ `/enterprise/**` 当前无 Help 文章、无页面 `?`
+**Gap:** Resolved — `/enterprise/**` Help + page `?`  
 
 ## Extension notice (read first)
 

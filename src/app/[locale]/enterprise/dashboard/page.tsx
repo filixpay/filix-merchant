@@ -23,6 +23,7 @@ import {
     EnterpriseTopOrganizationRow,
 } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import { getStoredSelectedEnterpriseCode } from "@/components/layout/enterprise-shell";
 import { handleDashboardApiError } from "@/lib/dashboard/handle-dashboard-api-error";
 
@@ -145,14 +146,20 @@ export default function EnterpriseDashboardPage() {
             subtitle={t("subtitle")}
             contentMode="overview"
             extra={
-                <Button
-                    icon={<DownloadOutlined />}
-                    loading={exporting}
-                    disabled={!accessToken || !enterpriseCode}
-                    onClick={handleExport}
-                >
-                    {t("export_csv")}
-                </Button>
+                <>
+                    <HelpDeepLinkButton
+                        dashboardPath="/enterprise/dashboard"
+                        helpSlug="enterprise/governance"
+                    />
+                    <Button
+                        icon={<DownloadOutlined />}
+                        loading={exporting}
+                        disabled={!accessToken || !enterpriseCode}
+                        onClick={handleExport}
+                    >
+                        {t("export_csv")}
+                    </Button>
+                </>
             }
         >
             {errorCode === "ENTERPRISE_CODE_REQUIRED" && (

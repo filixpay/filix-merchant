@@ -11,6 +11,7 @@ import {
     EnterpriseAuditLogPage,
 } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import { getStoredSelectedEnterpriseCode } from "@/components/layout/enterprise-shell";
 import { handleDashboardApiError } from "@/lib/dashboard/handle-dashboard-api-error";
 
@@ -80,8 +81,17 @@ export default function EnterpriseAuditPage() {
     }, [loadAudit]);
 
     return (
-        <DashboardPage title={t("title")} subtitle={t("subtitle")} contentMode="table">
-            <Form
+        <DashboardPage
+            title={t("title")}
+            subtitle={t("subtitle")}
+            contentMode="table"
+            extra={
+                <HelpDeepLinkButton
+                    dashboardPath="/enterprise/audit"
+                    helpSlug="enterprise/governance"
+                />
+            }
+        >            <Form
                 form={form}
                 layout="inline"
                 style={{ marginBottom: 16, rowGap: 8 }}

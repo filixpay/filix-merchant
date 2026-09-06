@@ -7354,7 +7354,12 @@
       "open_sub_merchants": "打开子商户",
       "open_money_transfers": "打开资金转账",
       "open_coverage_insurance": "打开保险风控",
-      "open_coverage_config": "打开拒付保障"
+      "open_coverage_config": "打开拒付保障",
+      "open_enterprise_dashboard": "打开集团概览",
+      "open_enterprise_pick": "打开选择集团",
+      "open_enterprise_organizations": "打开组织目录",
+      "open_enterprise_members": "打开集团成员",
+      "open_enterprise_audit": "打开集团审计"
     },
     "outbound": {
       "section_title": "相关资源",
