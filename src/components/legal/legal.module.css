@@ -1,5 +1,6 @@
 .shell {
   min-height: 60vh;
+  padding-top: 72px; /* clear fixed SiteNavbar (same as Help) */
   background: var(--background, #fff);
   color: var(--foreground, #0f172a);
 }

@@ -548,8 +548,6 @@ const PRIVACY_ZH: LegalDocument = {
           title: "",
           paragraphs: [
             "我们将在适用法律要求的期限内处理您的请求。",
-            "隐私/法务联系地址：待确认。",
-            "在正式隐私联系地址确定后，应在此处替换。",
           ],
         },
       ],
@@ -1099,8 +1097,6 @@ const PRIVACY_EN: LegalDocument = {
           title: "",
           paragraphs: [
             "We will handle your request within the timeframes required by applicable law.",
-            "Privacy / Legal contact address: To be confirmed.",
-            "This placeholder will be replaced once a dedicated privacy contact address is designated.",
           ],
         },
       ],
