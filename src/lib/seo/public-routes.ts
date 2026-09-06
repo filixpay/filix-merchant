@@ -31,4 +31,8 @@ export const PUBLIC_ROUTES: PublicRoute[] = [
   { path: "/resources/blog", changeFrequency: "monthly", priority: 0.6 },
   { path: "/resources/downloads", changeFrequency: "monthly", priority: 0.6 },
   { path: "/whitepaper", changeFrequency: "monthly", priority: 0.6 },
+  { path: "/open-source", changeFrequency: "monthly", priority: 0.9 },
+  { path: "/open-source/checkout", changeFrequency: "monthly", priority: 0.85 },
+  { path: "/open-source/saleor", changeFrequency: "monthly", priority: 0.85 },
+  { path: "/open-source/merchant-portal", changeFrequency: "monthly", priority: 0.85 },
 ];

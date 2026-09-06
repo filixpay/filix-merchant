@@ -877,6 +877,21 @@
   color: #0f172a;
 }
 
+.archDiagram {
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 24px 28px;
+  overflow-x: auto;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  background: #0f172a;
+  color: #e2e8f0;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.55;
+  white-space: pre;
+}
+
 .screenshotStack {
   display: flex;
   flex-direction: column;

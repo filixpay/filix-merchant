@@ -4757,7 +4757,9 @@
         "reconciliation_settlement": "对账与结算",
         "reconciliation_settlement_desc": "FilixPay 对账与结算体系说明",
         "help": "帮助中心",
-        "help_desc": "商户中心操作指南"
+        "help_desc": "商户中心操作指南",
+        "open_source": "开源项目",
+        "open_source_desc": "Checkout、Saleor 与商户门户的 Apache-2.0 开源仓库"
       }
     }
   },
@@ -6326,6 +6328,216 @@
           "title": "API 规范文件",
           "desc": "OpenAPI/Swagger 接口规范文档"
         }
+      }
+    },
+    "open_source": {
+      "badge": "OPEN SOURCE",
+      "hero_title": "FilixPay 开源",
+      "hero_desc": "面向现代商业的开源支付基础设施。",
+      "hero_desc_extra": "以 Apache-2.0 公开 Checkout、Saleor 支付集成与商户门户，连接商业体验与 FilixPay 支付基础设施。",
+      "projects": {
+        "title": "开源项目",
+        "subtitle": "三个公开仓库，分别聚焦 payment checkout、Saleor payment integration 与 merchant portal。",
+        "checkout": {
+          "icon": "💳",
+          "title": "FilixPay Checkout",
+          "desc": "面向现代商业的开源支付收银台，支持安全、灵活的支付流程，并接入 FilixPay。",
+          "role": "面向顾客的支付收银台"
+        },
+        "saleor": {
+          "icon": "🛒",
+          "title": "FilixPay Saleor 支付集成",
+          "desc": "面向 Saleor Commerce 的开源支付集成，连接 Saleor checkout 与 FilixPay 支付基础设施。",
+          "role": "Saleor Commerce 支付集成"
+        },
+        "merchant": {
+          "icon": "🏪",
+          "title": "FilixPay Merchant Portal",
+          "desc": "面向支付与商业运营的开源商户门户，基于 Next.js 与 FilixPay APIs 构建。",
+          "role": "商户与商业运营"
+        }
+      },
+      "architecture": {
+        "title": "架构",
+        "desc": "开源项目位于商业体验层。支付执行与账务仍在 FilixPay 支付基础设施内。",
+        "diagram": "Commerce experiences (open source)\n  ├── Merchant Portal\n  ├── Checkout\n  └── Commerce Integrations (e.g. Saleor)\n            ↓\n   FilixPay Payment Infrastructure\n     Payment / Money-In / Money-Out\n     Transfer / Settlement / Ledger",
+        "boundary": "支付执行与账务仍属于 FilixPay 支付基础设施。"
+      },
+      "licensing": {
+        "title": "开源 vs 商业源码授权",
+        "desc": "这些 Apache-2.0 GitHub 项目是公开开源仓库，不同于 FilixPay 支付运行时私有部署的商业源码授权。",
+        "cta": "查看私有部署与授权说明"
+      },
+      "cta": {
+        "title": "在 GitHub 上了解 FilixPay",
+        "desc": "浏览开源项目、架构说明与自托管指南。",
+        "github": "在 GitHub 查看",
+        "developers": "开发者文档"
+      }
+    },
+    "open_source_checkout": {
+      "badge": "OPEN SOURCE · CHECKOUT",
+      "hero_title": "FilixPay Checkout",
+      "hero_desc": "面向现代商业的开源支付收银台，支持安全、灵活的支付流程，并接入 FilixPay。",
+      "hero_desc_extra": "可自托管现代支付收银台体验；支付执行与账务仍属于 FilixPay 支付基础设施。",
+      "features_title": "能力",
+      "features": {
+        "0": {
+          "icon": "💳",
+          "title": "Payment checkout",
+          "desc": "面向商店前台的顾客支付收银台流程。"
+        },
+        "1": {
+          "icon": "🌐",
+          "title": "Commerce checkout flows",
+          "desc": "为全球商业场景设计的灵活支付体验。"
+        },
+        "2": {
+          "icon": "🔒",
+          "title": "Secure payment experience",
+          "desc": "安全衔接到 FilixPay 支付基础设施。"
+        },
+        "3": {
+          "icon": "🧩",
+          "title": "Global payment infrastructure",
+          "desc": "将收银台连接到 FilixPay 路由、运行时与支付通道。"
+        },
+        "4": {
+          "icon": "⚙️",
+          "title": "Modern TypeScript stack",
+          "desc": "可自托管、可扩展的 Next.js / TypeScript 开源收银台。"
+        }
+      },
+      "architecture": {
+        "title": "架构",
+        "desc": "Checkout 是顾客支付体验层，不是支付运行时或账本。",
+        "diagram": "Commerce Storefront\n        ↓\nFilixPay Checkout\n        ↓\nFilixPay Payment Infrastructure\n  → Payment Routing / Payment Runtime / Payment Providers",
+        "boundary": "支付执行与账务仍属于 FilixPay 支付基础设施。"
+      },
+      "getting_started": {
+        "title": "快速开始",
+        "desc": "克隆仓库，按自托管指南部署，并将商店前台连接到 FilixPay。"
+      },
+      "ecosystem": {
+        "title": "FilixPay 生态",
+        "desc": "Checkout 与商户门户、Saleor 支付集成协同工作。"
+      },
+      "cta": {
+        "title": "获取 FilixPay Checkout",
+        "desc": "面向现代商业的开源支付收银台。",
+        "github": "在 GitHub 查看",
+        "hub": "开源中心",
+        "org": "FilixPay on GitHub"
+      }
+    },
+    "open_source_saleor": {
+      "badge": "OPEN SOURCE · SALEOR",
+      "hero_title": "FilixPay Saleor 支付集成",
+      "hero_desc": "面向 Saleor Commerce 的开源支付集成，连接 Saleor checkout 与 FilixPay 支付基础设施。",
+      "hero_desc_extra": "将 Saleor 商店前台 checkout 接入 FilixPay，同时保持支付执行与账务责任在 FilixPay 内。",
+      "features_title": "能力",
+      "features": {
+        "0": {
+          "icon": "🛒",
+          "title": "Saleor Commerce payment integration",
+          "desc": "面向 Saleor Commerce checkout 的 Payment App 集成。"
+        },
+        "1": {
+          "icon": "🔗",
+          "title": "Payment checkout integration",
+          "desc": "将 Saleor checkout 流程连接到 FilixPay 支付体验。"
+        },
+        "2": {
+          "icon": "🏦",
+          "title": "FilixPay payment infrastructure",
+          "desc": "把支付执行路由到 FilixPay 基础设施。"
+        },
+        "3": {
+          "icon": "🌍",
+          "title": "Global commerce payment flows",
+          "desc": "支持 Saleor 上的现代商业支付场景。"
+        },
+        "4": {
+          "icon": "🔒",
+          "title": "Secure payment processing",
+          "desc": "从 Saleor 安全衔接到 FilixPay 支付处理。"
+        }
+      },
+      "architecture": {
+        "title": "架构",
+        "desc": "Saleor 集成把商业 checkout 连接到 FilixPay，并不拥有支付账务。",
+        "diagram": "Saleor Storefront\n        ↓\nSaleor Checkout\n        ↓\nFilixPay Saleor Integration\n        ↓\nFilixPay Payment Infrastructure",
+        "boundary": "支付执行与账务仍属于 FilixPay 支付基础设施。"
+      },
+      "getting_started": {
+        "title": "快速开始",
+        "desc": "从仓库 Manifest 安装 Payment App，并将 Saleor 实例连接到 FilixPay。"
+      },
+      "ecosystem": {
+        "title": "FilixPay 生态",
+        "desc": "Saleor 集成与 Checkout、Merchant Portal 共同构成 FilixPay 开源套件。"
+      },
+      "cta": {
+        "title": "获取 Saleor 支付集成",
+        "desc": "面向 Saleor Commerce 的开源支付集成。",
+        "github": "在 GitHub 查看",
+        "hub": "开源中心",
+        "org": "FilixPay on GitHub"
+      }
+    },
+    "open_source_merchant": {
+      "badge": "OPEN SOURCE · MERCHANT PORTAL",
+      "hero_title": "FilixPay Merchant Portal",
+      "hero_desc": "面向支付与商业运营的开源商户门户，基于 Next.js 与 FilixPay APIs 构建。",
+      "hero_desc_extra": "通过自托管商户门户管理商品、订单、支付与商业运营。提供本地化营销页，以及连接 FilixPay Portal APIs 的 Keycloak 鉴权仪表盘。",
+      "features_title": "能力",
+      "features": {
+        "0": {
+          "icon": "🏪",
+          "title": "Merchant portal",
+          "desc": "面向商户与商业运营的自托管门户。"
+        },
+        "1": {
+          "icon": "📦",
+          "title": "Products & orders",
+          "desc": "在支付运营之外管理商品与订单流程。"
+        },
+        "2": {
+          "icon": "💳",
+          "title": "Payments operations",
+          "desc": "通过 FilixPay APIs 处理支付与商业运营。"
+        },
+        "3": {
+          "icon": "🔐",
+          "title": "Keycloak-backed dashboard",
+          "desc": "连接 FilixPay Portal APIs 的身份鉴权商户仪表盘。"
+        },
+        "4": {
+          "icon": "⚙️",
+          "title": "Next.js & TypeScript",
+          "desc": "营销页与商户仪表盘的现代开源技术栈。"
+        }
+      },
+      "architecture": {
+        "title": "架构",
+        "desc": "商户门户是 FilixPay APIs 与支付基础设施之上的运营体验层。",
+        "diagram": "Merchant operators\n        ↓\nFilixPay Merchant Portal\n        ↓\nFilixPay Portal APIs\n        ↓\nFilixPay Payment Infrastructure",
+        "boundary": "支付执行与账务仍属于 FilixPay 支付基础设施。"
+      },
+      "getting_started": {
+        "title": "快速开始",
+        "desc": "克隆仓库，配置环境变量，并针对你的 FilixPay 部署自托管商户门户。"
+      },
+      "ecosystem": {
+        "title": "FilixPay 生态",
+        "desc": "Merchant Portal 与 Checkout、Saleor 支付集成相互链接。"
+      },
+      "cta": {
+        "title": "获取 Merchant Portal",
+        "desc": "面向支付与商业运营的开源商户门户。",
+        "github": "在 GitHub 查看",
+        "hub": "开源中心",
+        "org": "FilixPay on GitHub"
       }
     },
     "common": {

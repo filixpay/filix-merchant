@@ -68,6 +68,7 @@ export default function SiteFooter() {
                         <Link href={buildHref('/resources/reconciliation-settlement')} className={styles.footerLink}>{tNav('menu.resources.reconciliation_settlement')}</Link>
                         <Link href={buildHref('/resources/blog')} className={styles.footerLink}>{tNav('menu.resources.blog')}</Link>
                         <Link href={buildHref('/resources/downloads')} className={styles.footerLink}>{tNav('menu.resources.downloads')}</Link>
+                        <Link href={buildHref('/open-source')} className={styles.footerLink}>{tNav('menu.resources.open_source')}</Link>
                     </div>
                 </div>
 

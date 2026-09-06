@@ -4706,7 +4706,9 @@
         "reconciliation_settlement": "Reconciliation & Settlement",
         "reconciliation_settlement_desc": "How FilixPay manages reconciliation workflows and settlement controls",
         "help": "Help Center",
-        "help_desc": "Guides for Merchant Center workflows"
+        "help_desc": "Guides for Merchant Center workflows",
+        "open_source": "Open Source",
+        "open_source_desc": "Apache-2.0 projects for checkout, Saleor, and merchant portal"
       }
     }
   },
@@ -6275,6 +6277,216 @@
           "title": "API Specification",
           "desc": "OpenAPI/Swagger specification file"
         }
+      }
+    },
+    "open_source": {
+      "badge": "OPEN SOURCE",
+      "hero_title": "FilixPay Open Source",
+      "hero_desc": "Open-source payment infrastructure for modern commerce.",
+      "hero_desc_extra": "Apache-2.0 repositories for payment checkout, Saleor payment integration, and merchant portal — built to connect commerce experiences with FilixPay payment infrastructure.",
+      "projects": {
+        "title": "Open Source Projects",
+        "subtitle": "Three public repositories with clear keyword ownership across checkout, Saleor, and merchant operations.",
+        "checkout": {
+          "icon": "💳",
+          "title": "FilixPay Checkout",
+          "desc": "Open-source payment checkout for modern commerce, built for secure and flexible payment flows with FilixPay.",
+          "role": "Customer-facing payment checkout"
+        },
+        "saleor": {
+          "icon": "🛒",
+          "title": "FilixPay Payment Integration for Saleor",
+          "desc": "Open-source payment integration for Saleor Commerce, connecting Saleor checkout with FilixPay payment infrastructure.",
+          "role": "Payment integration for Saleor Commerce"
+        },
+        "merchant": {
+          "icon": "🏪",
+          "title": "FilixPay Merchant Portal",
+          "desc": "Open-source merchant portal for payment and commerce operations, built with Next.js and FilixPay APIs.",
+          "role": "Merchant and commerce operations"
+        }
+      },
+      "architecture": {
+        "title": "Architecture",
+        "desc": "Open-source projects sit at the commerce experience layer. Payment execution and accounting remain inside FilixPay payment infrastructure.",
+        "diagram": "Commerce experiences (open source)\n  ├── Merchant Portal\n  ├── Checkout\n  └── Commerce Integrations (e.g. Saleor)\n            ↓\n   FilixPay Payment Infrastructure\n     Payment / Money-In / Money-Out\n     Transfer / Settlement / Ledger",
+        "boundary": "Payment execution and accounting remain part of the FilixPay payment infrastructure."
+      },
+      "licensing": {
+        "title": "Open Source vs Commercial Source Licensing",
+        "desc": "These Apache-2.0 GitHub projects are public open source. They are not the same as FilixPay commercial core source-code licensing for private deployment of the payment runtime.",
+        "cta": "View private deployment & licensing"
+      },
+      "cta": {
+        "title": "Explore FilixPay on GitHub",
+        "desc": "Browse the open-source projects, architecture notes, and self-host guides.",
+        "github": "View on GitHub",
+        "developers": "Developer docs"
+      }
+    },
+    "open_source_checkout": {
+      "badge": "OPEN SOURCE · CHECKOUT",
+      "hero_title": "FilixPay Checkout",
+      "hero_desc": "Open-source payment checkout for modern commerce, built for secure and flexible payment flows with FilixPay.",
+      "hero_desc_extra": "Self-host a modern payment checkout experience while payment execution and accounting remain part of the FilixPay payment infrastructure.",
+      "features_title": "Features",
+      "features": {
+        "0": {
+          "icon": "💳",
+          "title": "Payment checkout",
+          "desc": "Customer-facing checkout flows for modern commerce storefronts."
+        },
+        "1": {
+          "icon": "🌐",
+          "title": "Commerce checkout flows",
+          "desc": "Flexible payment UX designed for global commerce scenarios."
+        },
+        "2": {
+          "icon": "🔒",
+          "title": "Secure payment experience",
+          "desc": "Built for secure handoff into FilixPay payment infrastructure."
+        },
+        "3": {
+          "icon": "🧩",
+          "title": "Global payment infrastructure",
+          "desc": "Connects checkout to FilixPay routing, runtime, and providers."
+        },
+        "4": {
+          "icon": "⚙️",
+          "title": "Modern TypeScript stack",
+          "desc": "Open-source Next.js / TypeScript checkout you can self-host and extend."
+        }
+      },
+      "architecture": {
+        "title": "Architecture",
+        "desc": "Checkout is the customer payment experience layer — not the payment runtime or ledger.",
+        "diagram": "Commerce Storefront\n        ↓\nFilixPay Checkout\n        ↓\nFilixPay Payment Infrastructure\n  → Payment Routing / Payment Runtime / Payment Providers",
+        "boundary": "Payment execution and accounting remain part of the FilixPay payment infrastructure."
+      },
+      "getting_started": {
+        "title": "Getting Started",
+        "desc": "Clone the repository, follow the self-host guide, and connect your storefront to FilixPay."
+      },
+      "ecosystem": {
+        "title": "Part of FilixPay",
+        "desc": "Checkout works alongside the merchant portal and Saleor payment integration."
+      },
+      "cta": {
+        "title": "Get FilixPay Checkout",
+        "desc": "Open-source payment checkout for modern commerce.",
+        "github": "View on GitHub",
+        "hub": "Open Source Hub",
+        "org": "FilixPay on GitHub"
+      }
+    },
+    "open_source_saleor": {
+      "badge": "OPEN SOURCE · SALEOR",
+      "hero_title": "FilixPay Payment Integration for Saleor",
+      "hero_desc": "Open-source payment integration for Saleor Commerce, connecting Saleor checkout with FilixPay payment infrastructure.",
+      "hero_desc_extra": "Integrate Saleor storefront checkout with FilixPay while keeping payment execution and accounting responsibilities inside FilixPay.",
+      "features_title": "Features",
+      "features": {
+        "0": {
+          "icon": "🛒",
+          "title": "Saleor Commerce payment integration",
+          "desc": "Payment App integration designed for Saleor Commerce checkout."
+        },
+        "1": {
+          "icon": "🔗",
+          "title": "Payment checkout integration",
+          "desc": "Connects Saleor checkout flows to FilixPay payment experiences."
+        },
+        "2": {
+          "icon": "🏦",
+          "title": "FilixPay payment infrastructure",
+          "desc": "Routes payment execution into FilixPay infrastructure."
+        },
+        "3": {
+          "icon": "🌍",
+          "title": "Global commerce payment flows",
+          "desc": "Supports modern commerce payment scenarios on Saleor."
+        },
+        "4": {
+          "icon": "🔒",
+          "title": "Secure payment processing",
+          "desc": "Secure handoff from Saleor into FilixPay payment processing."
+        }
+      },
+      "architecture": {
+        "title": "Architecture",
+        "desc": "The Saleor integration connects commerce checkout to FilixPay — it does not own payment accounting.",
+        "diagram": "Saleor Storefront\n        ↓\nSaleor Checkout\n        ↓\nFilixPay Saleor Integration\n        ↓\nFilixPay Payment Infrastructure",
+        "boundary": "Payment execution and accounting remain part of the FilixPay payment infrastructure."
+      },
+      "getting_started": {
+        "title": "Getting Started",
+        "desc": "Install the Payment App from the repository manifest and connect your Saleor instance to FilixPay."
+      },
+      "ecosystem": {
+        "title": "Part of FilixPay",
+        "desc": "Saleor integration complements Checkout and the Merchant Portal in the FilixPay open-source suite."
+      },
+      "cta": {
+        "title": "Get the Saleor Integration",
+        "desc": "Open-source payment integration for Saleor Commerce.",
+        "github": "View on GitHub",
+        "hub": "Open Source Hub",
+        "org": "FilixPay on GitHub"
+      }
+    },
+    "open_source_merchant": {
+      "badge": "OPEN SOURCE · MERCHANT PORTAL",
+      "hero_title": "FilixPay Merchant Portal",
+      "hero_desc": "Open-source merchant portal for payment and commerce operations, built with Next.js and FilixPay APIs.",
+      "hero_desc_extra": "Manage products, orders, payments, and commerce operations from a self-hosted merchant portal. It provides localized marketing pages and a Keycloak-backed dashboard that talks to FilixPay Portal APIs.",
+      "features_title": "Features",
+      "features": {
+        "0": {
+          "icon": "🏪",
+          "title": "Merchant portal",
+          "desc": "Self-hosted portal for merchant and commerce operations."
+        },
+        "1": {
+          "icon": "📦",
+          "title": "Products & orders",
+          "desc": "Operate catalog and order workflows alongside payment operations."
+        },
+        "2": {
+          "icon": "💳",
+          "title": "Payments operations",
+          "desc": "Work with FilixPay APIs for payment and commerce operations."
+        },
+        "3": {
+          "icon": "🔐",
+          "title": "Keycloak-backed dashboard",
+          "desc": "Identity-aware merchant dashboard connected to FilixPay Portal APIs."
+        },
+        "4": {
+          "icon": "⚙️",
+          "title": "Next.js & TypeScript",
+          "desc": "Modern open-source stack for marketing pages and the merchant dashboard."
+        }
+      },
+      "architecture": {
+        "title": "Architecture",
+        "desc": "The merchant portal is the operations experience layer on top of FilixPay APIs and payment infrastructure.",
+        "diagram": "Merchant operators\n        ↓\nFilixPay Merchant Portal\n        ↓\nFilixPay Portal APIs\n        ↓\nFilixPay Payment Infrastructure",
+        "boundary": "Payment execution and accounting remain part of the FilixPay payment infrastructure."
+      },
+      "getting_started": {
+        "title": "Getting Started",
+        "desc": "Clone the repository, configure environment variables, and self-host the merchant portal against your FilixPay deployment."
+      },
+      "ecosystem": {
+        "title": "Part of FilixPay",
+        "desc": "Merchant Portal links with Checkout and the Saleor payment integration."
+      },
+      "cta": {
+        "title": "Get the Merchant Portal",
+        "desc": "Open-source merchant portal for payment and commerce operations.",
+        "github": "View on GitHub",
+        "hub": "Open Source Hub",
+        "org": "FilixPay on GitHub"
       }
     },
     "common": {

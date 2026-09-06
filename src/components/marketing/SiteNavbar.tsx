@@ -58,6 +58,7 @@ const NAV_SECTIONS: NavSection[] = [
             { icon: 'RS', titleKey: 'reconciliation_settlement', descKey: 'reconciliation_settlement_desc', href: '/resources/reconciliation-settlement' },
             { icon: '📝', titleKey: 'blog', descKey: 'blog_desc', href: '/resources/blog' },
             { icon: '📥', titleKey: 'downloads', descKey: 'downloads_desc', href: '/resources/downloads' },
+            { icon: '🧩', titleKey: 'open_source', descKey: 'open_source_desc', href: '/open-source' },
         ]
     },
 ];

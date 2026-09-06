@@ -453,6 +453,90 @@ export const MARKETING_PAGE_SEO: Record<string, MarketingPageSeoEntry> = {
       keywords: ["FilixPay 白皮书", "支付平台", "商户平台", "FilixPay"],
     },
   },
+  open_source: {
+    path: "/open-source",
+    en: {
+      title: "FilixPay Open Source | Payment Infrastructure Projects",
+      description:
+        "Open-source payment infrastructure for modern commerce — Apache-2.0 Checkout, Saleor payment integration, and Merchant Portal.",
+      keywords: [
+        "open-source payment infrastructure",
+        "payment checkout",
+        "merchant portal",
+        "Saleor payment integration",
+        "FilixPay",
+      ],
+    },
+    zh: {
+      title: "FilixPay 开源 | 支付基础设施开源项目",
+      description:
+        "面向现代商业的开源支付基础设施：Apache-2.0 Checkout、Saleor 支付集成与 Merchant Portal。",
+      keywords: ["开源支付基础设施", "支付收银台", "商户门户", "Saleor 支付集成", "FilixPay"],
+    },
+  },
+  open_source_checkout: {
+    path: "/open-source/checkout",
+    en: {
+      title: "FilixPay Checkout | Open-Source Payment Checkout",
+      description:
+        "Open-source payment checkout for modern commerce, built for secure and flexible payment flows with FilixPay.",
+      keywords: [
+        "payment checkout",
+        "open-source payment checkout",
+        "commerce checkout",
+        "FilixPay Checkout",
+        "FilixPay",
+      ],
+    },
+    zh: {
+      title: "FilixPay Checkout | 开源支付收银台",
+      description:
+        "面向现代商业的开源支付收银台，支持安全、灵活的支付流程，并接入 FilixPay。",
+      keywords: ["支付收银台", "开源收银台", "commerce checkout", "FilixPay Checkout", "FilixPay"],
+    },
+  },
+  open_source_saleor: {
+    path: "/open-source/saleor",
+    en: {
+      title: "FilixPay Payment Integration for Saleor | Open Source",
+      description:
+        "Open-source payment integration for Saleor Commerce, connecting Saleor checkout with FilixPay payment infrastructure.",
+      keywords: [
+        "Saleor payment integration",
+        "Saleor Commerce",
+        "payment integration",
+        "FilixPay",
+        "open source",
+      ],
+    },
+    zh: {
+      title: "FilixPay Saleor 支付集成 | 开源",
+      description:
+        "面向 Saleor Commerce 的开源支付集成，连接 Saleor checkout 与 FilixPay 支付基础设施。",
+      keywords: ["Saleor 支付集成", "Saleor Commerce", "支付集成", "FilixPay", "开源"],
+    },
+  },
+  open_source_merchant: {
+    path: "/open-source/merchant-portal",
+    en: {
+      title: "FilixPay Merchant Portal | Open-Source Merchant Dashboard",
+      description:
+        "Open-source merchant portal for payment and commerce operations, built with Next.js and FilixPay APIs.",
+      keywords: [
+        "merchant portal",
+        "merchant dashboard",
+        "open-source merchant portal",
+        "payment operations",
+        "FilixPay",
+      ],
+    },
+    zh: {
+      title: "FilixPay Merchant Portal | 开源商户门户",
+      description:
+        "面向支付与商业运营的开源商户门户，基于 Next.js 与 FilixPay APIs 构建。",
+      keywords: ["商户门户", "商户仪表盘", "开源商户门户", "支付运营", "FilixPay"],
+    },
+  },
 };
 
 export function getMarketingPageSeo(pageKey: string, locale: string) {

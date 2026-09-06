@@ -28,6 +28,41 @@ interface MarketingPageProps {
     children?: React.ReactNode;
 }
 
+function isExternalHref(href: string) {
+    return /^(https?:|mailto:)/i.test(href);
+}
+
+function ActionLink({
+    href,
+    className,
+    children,
+}: {
+    href: string;
+    className: string;
+    children: React.ReactNode;
+}) {
+    if (isExternalHref(href)) {
+        const external = href.startsWith("http");
+        return (
+            <a
+                href={href}
+                className={className}
+                {...(external
+                    ? { target: "_blank", rel: "noopener noreferrer" }
+                    : {})}
+            >
+                {children}
+            </a>
+        );
+    }
+
+    return (
+        <Link href={href} className={className}>
+            {children}
+        </Link>
+    );
+}
+
 export default function MarketingPage({
     badge,
     heroTitle,
@@ -46,6 +81,8 @@ export default function MarketingPage({
     children,
 }: MarketingPageProps) {
     const locale = useLocale();
+    const primaryHref = heroPrimaryHref || `/${locale}/login`;
+    const bottomCtaHref = ctaButtonHref || `/${locale}/login`;
 
     return (
         <>
@@ -61,16 +98,13 @@ export default function MarketingPage({
                         )}
                     </div>
                     <div className={styles.heroActions}>
-                        <Link
-                            href={heroPrimaryHref || `/${locale}/login`}
-                            className={styles.btnPrimary}
-                        >
+                        <ActionLink href={primaryHref} className={styles.btnPrimary}>
                             {heroPrimaryText || "Get Started"}
-                        </Link>
+                        </ActionLink>
                         {heroSecondaryHref ? (
-                            <Link href={heroSecondaryHref} className={styles.btnSecondary}>
+                            <ActionLink href={heroSecondaryHref} className={styles.btnSecondary}>
                                 {heroSecondaryText || "Learn More"}
-                            </Link>
+                            </ActionLink>
                         ) : (
                             <a href="mailto:invest@filixpay.com" className={styles.btnSecondary}>
                                 {heroSecondaryText || "Contact Sales"}
@@ -111,12 +145,9 @@ export default function MarketingPage({
                     <div className={styles.ctaContainer}>
                         <h2 className={styles.ctaTitle}>{ctaTitle}</h2>
                         {ctaDesc && <p className={styles.ctaDesc}>{ctaDesc}</p>}
-                        <Link
-                            href={ctaButtonHref || `/${locale}/login`}
-                            className={styles.btnPrimary}
-                        >
+                        <ActionLink href={bottomCtaHref} className={styles.btnPrimary}>
                             {ctaButtonText || 'Get Started'}
-                        </Link>
+                        </ActionLink>
                     </div>
                 </section>
             )}
