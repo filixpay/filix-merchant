@@ -386,4 +386,196 @@ export const zhAccount: Record<string, HelpArticleContent> = {
       },
     },
   },
+  "account/security": {
+    title: "设置交易密码",
+    description:
+      "在 FilixPay 商户中心「账户与设置 → 安全设置 → 交易密码」绑定安全邮箱，并设置或修改 6 位交易 PIN。",
+    keywords: ["交易密码", "支付 PIN", "安全邮箱", "设置交易密码", "修改支付密码"],
+    body: {
+      whoFor: "需要在出金或转账前设置交易 PIN，或需要修改已有 PIN 的运营人员。",
+      whenToUse:
+        "打开「账户与设置 → 安全设置 → 交易密码」，或在出金/转账流程提示先设置 PIN 时使用本说明。",
+      beforeYouStart: [
+        "使用可访问「安全设置 → 交易密码」的账号登录。",
+        "准备安全邮箱——若页面显示未绑定，请先在联系方式中绑定（例如 security-ops@example.com）。",
+        "选择非弱口令的 6 位 PIN（不要使用 123456 这类序列）。",
+      ],
+      blocks: [
+        {
+          type: "paragraph",
+          text: "交易密码用于管理资金操作（如出金、转账）所需的 6 位 PIN。页面展示安全账户绑定与交易 PIN 状态，并通过三步弹窗完成邮箱验证码校验、设置 PIN 与成功确认。本说明只覆盖该页；不写登录 MFA，也不写审计日志。",
+        },
+        {
+          type: "heading",
+          text: "打开交易密码",
+          anchor: "open",
+        },
+        {
+          type: "steps",
+          items: [
+            "登录商户中心。",
+            "打开「账户与设置 → 安全设置 → 交易密码」。",
+            "确认页面标题为「交易密码」。",
+          ],
+        },
+        {
+          type: "heading",
+          text: "绑定安全邮箱",
+          anchor: "bind-email",
+        },
+        {
+          type: "steps",
+          items: [
+            "在「安全账户绑定」中查看商户名称与绑定邮箱。",
+            "若显示未绑定，选择「立即绑定」打开联系方式并更新邮箱。",
+            "绑定完成后返回交易密码页——设置密码弹窗需要已绑定邮箱。",
+          ],
+        },
+        {
+          type: "heading",
+          text: "设置或修改 PIN",
+          anchor: "set-pin",
+        },
+        {
+          type: "steps",
+          items: [
+            "在「交易 PIN 状态」中选择「设置交易密码」或「修改密码」。",
+            "验证步骤：向安全邮箱获取验证码并填写，然后继续。",
+            "设置 PIN 步骤：输入并确认 6 位交易密码，然后设置密码。",
+            "完成步骤：确认成功并选择完成。",
+            "确认本会话成功设置后状态标签显示为已启用。",
+          ],
+        },
+        {
+          type: "heading",
+          text: "常见问题",
+          anchor: "common-issues",
+        },
+        {
+          type: "issues",
+          items: [
+            {
+              problem: "弹窗提示邮箱未设置。",
+              solution:
+                "请先在联系方式绑定安全邮箱，参见 /help/account/maintenance#contact，然后再返回本页。",
+            },
+            {
+              problem: "刷新后状态仍显示未设置。",
+              solution:
+                "本页在当前会话成功设置后显示已启用。若需再次修改，打开「修改密码」。Help 不写超出页面展示的服务端 PIN 状态徽章。",
+            },
+            {
+              problem: "出金提示需要先设置 PIN。",
+              solution:
+                "先在本页完成设置交易密码，再返回「资金 → 出金」，参见 /help/funds/payouts。",
+            },
+          ],
+        },
+      ],
+      nextStep: {
+        label: "出金",
+        href: "/help/funds/payouts",
+      },
+    },
+  },
+  "account/service-plan": {
+    title: "选择服务计划",
+    description:
+      "在「账户与设置 → 服务计划」选择 FilixPay 平台服务方案、通过结账支付，并继续待支付的服务费记录。",
+    keywords: ["服务计划", "平台服务费", "选择方案", "付费记录", "周月年套餐"],
+    body: {
+      whoFor: "需要购买或续费平台服务计划，并查看服务费付费记录的商户。",
+      whenToUse:
+        "打开「账户与设置 → 服务计划」选择周 / 月 / 半年 / 年方案，或对待支付服务费订单点击「支付」时使用本说明。",
+      beforeYouStart: [
+        "使用可访问服务计划的账号登录。",
+        "确认要购买的周期（周、月、半年或年）。",
+        "选择方案后会跳转到外部结账页——在结账完成支付后再返回商户中心。",
+      ],
+      blocks: [
+        {
+          type: "paragraph",
+          text: "服务计划展示四个方案卡片，以及仅含平台服务费订单的付费记录表。选择方案会创建服务费订单并跳转结账；待支付行可用「支付」继续结账。本说明只覆盖该页——不写跳转后的结账页 UI，也不写完整订单管理。",
+        },
+        {
+          type: "heading",
+          text: "打开服务计划",
+          anchor: "open",
+        },
+        {
+          type: "steps",
+          items: [
+            "登录商户中心。",
+            "打开「账户与设置 → 服务计划」。",
+            "确认页面标题为「服务计划」，上方为方案卡片，下方为付费记录。",
+          ],
+        },
+        {
+          type: "heading",
+          text: "选择方案",
+          anchor: "choose",
+        },
+        {
+          type: "steps",
+          items: [
+            "查看周、月、半年、年四个卡片（名称、价格与简短说明）。",
+            "在目标卡片上选择「选择方案」。",
+            "在打开的结账页完成支付。",
+            "支付完成后返回商户中心。",
+          ],
+        },
+        {
+          type: "heading",
+          text: "付费记录",
+          anchor: "records",
+        },
+        {
+          type: "fields",
+          rows: [
+            {
+              field: "订单号",
+              description: "服务费商户订单号，必要时带主题文案。",
+            },
+            {
+              field: "金额 / 状态 / 创建时间",
+              description: "订单金额、状态徽章与创建时间。",
+            },
+            {
+              field: "支付",
+              description: "出现在待支付的平台服务费行，用于继续结账。",
+            },
+          ],
+        },
+        {
+          type: "heading",
+          text: "常见问题",
+          anchor: "common-issues",
+        },
+        {
+          type: "issues",
+          items: [
+            {
+              problem: "结账未打开或支付失败。",
+              solution:
+                "确认仍处于登录状态，重试「选择方案」或「支付」，并确认能创建支付令牌。若订单已是待支付，请在该行使用「支付」。",
+            },
+            {
+              problem: "需要查看全部订单，不只服务费。",
+              solution:
+                "请到「交易 → 订单」查看完整列表，参见 /help/payments/orders。本页仅列出 PLATFORM_SERVICE_FEE 记录。",
+            },
+            {
+              problem: "想关闭账户而不是续费。",
+              solution:
+                "请使用「账户与设置 → 关闭账户」，参见 /help/account/close-account。",
+            },
+          ],
+        },
+      ],
+      nextStep: {
+        label: "管理订单",
+        href: "/help/payments/orders",
+      },
+    },
+  },
 };

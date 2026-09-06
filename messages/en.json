@@ -7075,7 +7075,9 @@
       "open_maintenance_changes": "Open Profile Changes",
       "open_maintenance_contact": "Open Contact Info",
       "open_close_account": "Open Close Account",
-      "open_transaction_reports": "Open Transaction Reports"
+      "open_transaction_reports": "Open Transaction Reports",
+      "open_transaction_password": "Open Transaction Password",
+      "open_service_plan": "Open Service Plan"
     },
     "outbound": {
       "section_title": "Related resources",

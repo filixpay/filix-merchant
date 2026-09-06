@@ -7124,7 +7124,9 @@
       "open_maintenance_changes": "打开资料变更",
       "open_maintenance_contact": "打开联系方式",
       "open_close_account": "打开关闭账户",
-      "open_transaction_reports": "打开交易报表"
+      "open_transaction_reports": "打开交易报表",
+      "open_transaction_password": "打开交易密码",
+      "open_service_plan": "打开服务计划"
     },
     "outbound": {
       "section_title": "相关资源",

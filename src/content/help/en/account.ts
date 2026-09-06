@@ -415,4 +415,211 @@ export const enAccount: Record<string, HelpArticleContent> = {
       },
     },
   },
+  "account/security": {
+    title: "Set a transaction password",
+    description:
+      "Bind a security email and set or change the 6-digit transaction PIN under Account & Settings → Security Settings → Transaction Password in FilixPay Merchant Center.",
+    keywords: [
+      "transaction password",
+      "payment PIN",
+      "security email",
+      "set transaction password",
+      "change payment password",
+    ],
+    body: {
+      whoFor:
+        "Operators who must set a transaction PIN before withdrawals or transfers, or who need to change an existing PIN.",
+      whenToUse:
+        "Use this when you open Account & Settings → Security Settings → Transaction Password, or when a payout/transfer flow asks you to set a PIN first.",
+      beforeYouStart: [
+        "Sign in with access to Security Settings → Transaction Password.",
+        "Have a security email available — bind it under Contact Info if the page shows unbound (for example security-ops@example.com).",
+        "Choose a 6-digit PIN that is not a weak sequence such as 123456.",
+      ],
+      blocks: [
+        {
+          type: "paragraph",
+          text: "Transaction Password manages the 6-digit PIN used for fund movements such as withdrawals and transfers. The page shows Security Account Binding and Transaction PIN Status, then opens a three-step modal to verify email captcha, set the PIN, and confirm success. This guide covers that page only. It does not cover login MFA or Audit Logs.",
+        },
+        {
+          type: "heading",
+          text: "Open Transaction Password",
+          anchor: "open",
+        },
+        {
+          type: "steps",
+          items: [
+            "Sign in to Merchant Center.",
+            "Open Account & Settings → Security Settings → Transaction Password.",
+            "Confirm the page title Transaction Password.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Bind a security email",
+          anchor: "bind-email",
+        },
+        {
+          type: "steps",
+          items: [
+            "In Security Account Binding, check Merchant Name and Security Email.",
+            "If the email shows unbound, choose Bind now to open Contact Info and update the contact email.",
+            "Return to Transaction Password after the email is bound — the set-password modal requires a bound email.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Set or change the PIN",
+          anchor: "set-pin",
+        },
+        {
+          type: "steps",
+          items: [
+            "In Transaction PIN Status, choose Set Transaction Password or Change Password.",
+            "Step Verify: request a captcha/code to the security email, enter it, then Continue.",
+            "Step Set PIN: enter a 6-digit Transaction Password and confirm it, then Set Password.",
+            "Step Done: confirm success and choose Done.",
+            "Confirm the status tag shows Active after a successful set in this session.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Common issues",
+          anchor: "common-issues",
+        },
+        {
+          type: "issues",
+          items: [
+            {
+              problem: "The modal says email is not set.",
+              solution:
+                "Bind a security email under Contact Info first — see /help/account/maintenance#contact — then return here.",
+            },
+            {
+              problem: "Status still shows Unset after I refresh.",
+              solution:
+                "This page marks Active after a successful set in the current session. If you need to change the PIN again, open Change Password. Help does not document a separate server-hydrated PIN badge beyond what the page shows.",
+            },
+            {
+              problem: "Payout asks me to set a PIN.",
+              solution:
+                "Complete Set Transaction Password here, then return to Money → Payouts — see /help/funds/payouts.",
+            },
+          ],
+        },
+      ],
+      nextStep: {
+        label: "Payouts",
+        href: "/help/funds/payouts",
+      },
+    },
+  },
+  "account/service-plan": {
+    title: "Choose a service plan",
+    description:
+      "Select a FilixPay platform service plan, pay via checkout, and resume pending service-fee payment records under Account & Settings → Service Plan.",
+    keywords: [
+      "service plan",
+      "platform service fee",
+      "choose plan",
+      "payment records",
+      "weekly monthly yearly plan",
+    ],
+    body: {
+      whoFor:
+        "Merchants who purchase or renew a platform service plan and need to track service-fee payment records.",
+      whenToUse:
+        "Use this when you open Account & Settings → Service Plan to choose Weekly, Monthly, Half-Year, or Yearly pricing, or to Pay a pending service-fee order.",
+      beforeYouStart: [
+        "Sign in with access to Service Plan.",
+        "Know which plan period you intend to buy (Weekly, Monthly, Half-Year, or Yearly).",
+        "Expect Choose Plan to redirect to an external checkout — complete payment there, then return to Merchant Center.",
+      ],
+      blocks: [
+        {
+          type: "paragraph",
+          text: "Service Plan shows four plan cards and a Payment Records table filtered to platform service-fee orders. Choosing a plan creates a service-fee order and redirects to checkout. Pending rows can use Pay to resume checkout. This guide covers that page only — not the checkout UI after redirect, and not general Orders management.",
+        },
+        {
+          type: "heading",
+          text: "Open Service Plan",
+          anchor: "open",
+        },
+        {
+          type: "steps",
+          items: [
+            "Sign in to Merchant Center.",
+            "Open Account & Settings → Service Plan.",
+            "Confirm the page title Service Plan and the plan cards above Payment Records.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Choose a plan",
+          anchor: "choose",
+        },
+        {
+          type: "steps",
+          items: [
+            "Review Weekly, Monthly, Half-Year, and Yearly cards (name, price, and short description).",
+            "Choose Choose Plan on the card you want.",
+            "Complete payment on the checkout page that opens.",
+            "Return to Merchant Center when payment finishes.",
+          ],
+        },
+        {
+          type: "heading",
+          text: "Payment Records",
+          anchor: "records",
+        },
+        {
+          type: "fields",
+          rows: [
+            {
+              field: "Order ID",
+              description: "Service-fee merchant order ID with subject text when shown.",
+            },
+            {
+              field: "Amount / Status / Created at",
+              description: "Order amount, status badge, and created time.",
+            },
+            {
+              field: "Pay",
+              description:
+                "Shown on Pending platform service-fee rows to resume checkout.",
+            },
+          ],
+        },
+        {
+          type: "heading",
+          text: "Common issues",
+          anchor: "common-issues",
+        },
+        {
+          type: "issues",
+          items: [
+            {
+              problem: "Checkout did not open or Pay failed.",
+              solution:
+                "Confirm you are still signed in, retry Choose Plan or Pay, and check that a payment token can be created. If the order already exists as Pending, use Pay on that row.",
+            },
+            {
+              problem: "I need all orders, not only service fees.",
+              solution:
+                "Open Transactions → Orders for the full order list — see /help/payments/orders. This page lists PLATFORM_SERVICE_FEE records only.",
+            },
+            {
+              problem: "I want to close the account instead.",
+              solution:
+                "Use Close Account under Account & Settings — see /help/account/close-account.",
+            },
+          ],
+        },
+      ],
+      nextStep: {
+        label: "Manage orders",
+        href: "/help/payments/orders",
+      },
+    },
+  },
 };

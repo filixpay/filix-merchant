@@ -15,6 +15,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useSession, signIn } from "next-auth/react";
 import { api, ApiError, MerchantDetailView } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import SetPaymentPasswordModal from "./SetPaymentPasswordModal";
 import { maskEmail } from "./transaction-password-model";
 import styles from "./transaction-password-page.module.css";
@@ -82,14 +83,33 @@ export default function TransactionPasswordPage() {
 
     if (loading) {
         return (
-            <DashboardPage title={t("title")} subtitle={t("subtitle")}>
+            <DashboardPage
+                title={t("title")}
+                subtitle={t("subtitle")}
+                extra={
+                    <HelpDeepLinkButton
+                        dashboardPath="/dashboard/security-settings/transaction-password"
+                        helpSlug="account/security"
+                    />
+                }
+            >
                 <Skeleton active paragraph={{ rows: 6 }} />
             </DashboardPage>
         );
     }
 
     return (
-        <DashboardPage title={t("title")} subtitle={t("subtitle")} plain>
+        <DashboardPage
+            title={t("title")}
+            subtitle={t("subtitle")}
+            plain
+            extra={
+                <HelpDeepLinkButton
+                    dashboardPath="/dashboard/security-settings/transaction-password"
+                    helpSlug="account/security"
+                />
+            }
+        >
             <div className={styles.layout}>
                 <div className={styles.mainColumn}>
                     <section className={styles.card}>

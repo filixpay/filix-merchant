@@ -9,6 +9,7 @@ import { useTranslations } from "next-intl";
 import { api, OrderView } from "@/lib/api";
 import { buildCheckoutTokenUrl } from "@/lib/checkout/checkout-url";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import {
     formatAmount,
     formatDateTime,
@@ -167,7 +168,17 @@ export default function ServicePlanPage() {
     ];
 
     return (
-        <DashboardPage title={t("title")} subtitle={t("subtitle")} contentMode="table">
+        <DashboardPage
+            title={t("title")}
+            subtitle={t("subtitle")}
+            contentMode="table"
+            extra={
+                <HelpDeepLinkButton
+                    dashboardPath="/dashboard/service-plan"
+                    helpSlug="account/service-plan"
+                />
+            }
+        >
             <Row gutter={[16, 16]} style={{ marginBottom: 32 }}>
                 {PLANS.map((plan) => (
                     <Col key={plan.id} xs={24} sm={12} lg={6}>

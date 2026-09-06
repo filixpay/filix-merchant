@@ -446,7 +446,7 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
     domain: "account",
     published: true,
     order: 10,
-    relatedSlugs: ["account/audit-logs", "account/maintenance"],
+    relatedSlugs: ["account/audit-logs", "account/maintenance", "account/security"],
     dashboardLinks: [
       {
         path: "/dashboard/notifications",
@@ -462,6 +462,7 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
     order: 20,
     relatedSlugs: [
       "account/notifications",
+      "account/security",
       "developers/developer-center",
       "risk/controls",
     ],
@@ -474,12 +475,31 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
     ],
   },
   {
+    slug: "account/security",
+    domain: "account",
+    published: true,
+    order: 25,
+    relatedSlugs: [
+      "account/maintenance",
+      "account/audit-logs",
+      "funds/payouts",
+    ],
+    dashboardLinks: [
+      {
+        path: "/dashboard/security-settings/transaction-password",
+        labelKey: "open_transaction_password",
+        primary: true,
+      },
+    ],
+  },
+  {
     slug: "account/maintenance",
     domain: "account",
     published: true,
     order: 30,
     relatedSlugs: [
       "account/close-account",
+      "account/security",
       "funds/external-accounts",
       "getting-started/merchant-setup",
     ],
@@ -500,11 +520,29 @@ export const HELP_ARTICLE_DEFS: HelpArticleDef[] = [
     ],
   },
   {
+    slug: "account/service-plan",
+    domain: "account",
+    published: true,
+    order: 35,
+    relatedSlugs: ["payments/orders", "account/close-account"],
+    dashboardLinks: [
+      {
+        path: "/dashboard/service-plan",
+        labelKey: "open_service_plan",
+        primary: true,
+      },
+    ],
+  },
+  {
     slug: "account/close-account",
     domain: "account",
     published: true,
     order: 40,
-    relatedSlugs: ["account/maintenance", "funds/balance"],
+    relatedSlugs: [
+      "account/maintenance",
+      "account/service-plan",
+      "funds/balance",
+    ],
     dashboardLinks: [
       {
         path: "/dashboard/settings/close-account",
