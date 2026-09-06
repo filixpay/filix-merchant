@@ -16,6 +16,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useParams, useRouter } from "next/navigation";
 import { ApiError, moneyProductApi, type MoneyTransferView } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import { handleDashboardApiError } from "@/lib/dashboard/handle-dashboard-api-error";
 import { formatWalletAmountDisplay } from "@/lib/money/asset-display";
 import { moneyTransfersPath } from "@/lib/money/money-transfers-redirect";
@@ -159,14 +160,21 @@ export default function MoneyTransferDetailPage() {
       subtitle={t("detailSubtitle")}
       plain
       extra={
-        <button
-          type="button"
-          className={styles.backBtn}
-          onClick={() => router.push(moneyTransfersPath(locale))}
-        >
-          <ArrowLeft size={14} strokeWidth={2.5} />
-          {t("backToList")}
-        </button>
+        <>
+          <HelpDeepLinkButton
+            dashboardPath="/dashboard/money/transfers"
+            helpSlug="funds/transfers"
+            hash="detail"
+          />
+          <button
+            type="button"
+            className={styles.backBtn}
+            onClick={() => router.push(moneyTransfersPath(locale))}
+          >
+            <ArrowLeft size={14} strokeWidth={2.5} />
+            {t("backToList")}
+          </button>
+        </>
       }
     >
       {loading ? <Skeleton active paragraph={{ rows: 8 }} /> : null}

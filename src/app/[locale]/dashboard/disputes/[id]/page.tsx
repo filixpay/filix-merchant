@@ -10,6 +10,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { api, type DisputeView, EvidenceCategory } from "@/lib/api";
 import { invalidateNotificationState } from "@/lib/notifications/invalidate";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import MerchantActionCenter from "@/components/disputes/MerchantActionCenter";
 import ImmutableTimeline from "@/components/disputes/ImmutableTimeline";
 import CoveragePanel from "@/components/disputes/CoveragePanel";
@@ -86,9 +87,17 @@ export default function DisputeDetailPage() {
         </Link>
     );
 
+    const helpExtra = (
+        <HelpDeepLinkButton
+            dashboardPath="/dashboard/disputes"
+            helpSlug="risk/disputes"
+            hash="detail"
+        />
+    );
+
     if (loading) {
         return (
-            <DashboardPage title={t("detail.title")} subtitle={backLink}>
+            <DashboardPage title={t("detail.title")} subtitle={backLink} extra={helpExtra}>
                 <Skeleton active paragraph={{ rows: 8 }} />
             </DashboardPage>
         );
@@ -96,7 +105,7 @@ export default function DisputeDetailPage() {
 
     if (!dispute) {
         return (
-            <DashboardPage title={t("detail.title")} subtitle={backLink}>
+            <DashboardPage title={t("detail.title")} subtitle={backLink} extra={helpExtra}>
                 <Typography.Text type="danger">{error ?? t("detail.not_found")}</Typography.Text>
             </DashboardPage>
         );
@@ -113,6 +122,7 @@ export default function DisputeDetailPage() {
                     </Typography.Text>
                 </div>
             }
+            extra={helpExtra}
         >
             <Row gutter={[16, 16]}>
                 <Col xs={24} lg={14}>

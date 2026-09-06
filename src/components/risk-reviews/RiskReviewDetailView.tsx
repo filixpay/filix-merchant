@@ -6,6 +6,7 @@ import { ArrowLeftOutlined } from "@ant-design/icons";
 import { useLocale, useTranslations } from "next-intl";
 import type { RiskReviewDetail } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import ImmutableTimeline from "@/components/disputes/ImmutableTimeline";
 import RelatedRiskPanel from "@/components/risk/RelatedRiskPanel";
 import { getPriorityColor } from "@/components/disputes/dispute-model";
@@ -33,9 +34,17 @@ export default function RiskReviewDetailView({ review, loading, error }: RiskRev
         </Link>
     );
 
+    const helpExtra = (
+        <HelpDeepLinkButton
+            dashboardPath="/dashboard/risk-reviews"
+            helpSlug="risk/controls"
+            hash="reviews"
+        />
+    );
+
     if (loading) {
         return (
-            <DashboardPage title={t("detail.title")} subtitle={backLink}>
+            <DashboardPage title={t("detail.title")} subtitle={backLink} extra={helpExtra}>
                 <Skeleton active paragraph={{ rows: 8 }} />
             </DashboardPage>
         );
@@ -43,7 +52,7 @@ export default function RiskReviewDetailView({ review, loading, error }: RiskRev
 
     if (!review) {
         return (
-            <DashboardPage title={t("detail.title")} subtitle={backLink}>
+            <DashboardPage title={t("detail.title")} subtitle={backLink} extra={helpExtra}>
                 <Typography.Text type="danger">{error ?? t("detail.not_found")}</Typography.Text>
             </DashboardPage>
         );
@@ -68,6 +77,7 @@ export default function RiskReviewDetailView({ review, loading, error }: RiskRev
                     </Typography.Text>
                 </div>
             }
+            extra={helpExtra}
         >
             <Row gutter={[16, 16]}>
                 <Col xs={24} lg={14}>

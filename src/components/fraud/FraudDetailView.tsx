@@ -6,6 +6,7 @@ import { ArrowLeftOutlined } from "@ant-design/icons";
 import { useLocale, useTranslations } from "next-intl";
 import type { FraudEventDetail } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import ImmutableTimeline from "@/components/disputes/ImmutableTimeline";
 import MerchantOrderLink from "@/components/orders/MerchantOrderLink";
 import RelatedRiskPanel from "@/components/risk/RelatedRiskPanel";
@@ -31,9 +32,17 @@ export default function FraudDetailView({ event, loading, error }: FraudDetailVi
         </Link>
     );
 
+    const helpExtra = (
+        <HelpDeepLinkButton
+            dashboardPath="/dashboard/fraud"
+            helpSlug="risk/controls"
+            hash="fraud"
+        />
+    );
+
     if (loading) {
         return (
-            <DashboardPage title={t("detail.title")} subtitle={backLink}>
+            <DashboardPage title={t("detail.title")} subtitle={backLink} extra={helpExtra}>
                 <Skeleton active paragraph={{ rows: 8 }} />
             </DashboardPage>
         );
@@ -41,7 +50,7 @@ export default function FraudDetailView({ event, loading, error }: FraudDetailVi
 
     if (!event) {
         return (
-            <DashboardPage title={t("detail.title")} subtitle={backLink}>
+            <DashboardPage title={t("detail.title")} subtitle={backLink} extra={helpExtra}>
                 <Typography.Text type="danger">{error ?? t("detail.not_found")}</Typography.Text>
             </DashboardPage>
         );
@@ -60,6 +69,7 @@ export default function FraudDetailView({ event, loading, error }: FraudDetailVi
                     </Typography.Text>
                 </div>
             }
+            extra={helpExtra}
         >
             <Row gutter={[16, 16]}>
                 <Col xs={24} lg={14}>

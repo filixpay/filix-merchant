@@ -165,6 +165,15 @@ export const enFunds: Record<string, HelpArticleContent> = {
         },
         {
           type: "heading",
+          text: "Money-In detail",
+          anchor: "detail",
+        },
+        {
+          type: "paragraph",
+          text: "Open a Money-In row for detail: amount and status hero, basics (Money-In ID, status, amount, asset, time, funding session when shown), and a pay CTA when a checkout URL is still available. Use Back to return to Money-In records, then confirm Balance or Activity if status is success.",
+        },
+        {
+          type: "heading",
           text: "Key fields",
           anchor: "key-fields",
         },
@@ -257,6 +266,15 @@ export const enFunds: Record<string, HelpArticleContent> = {
             "Select asset, amount, and destination external account, then submit.",
             "Watch status until the payout succeeds or fails; confirm Balance and Activity updated.",
           ],
+        },
+        {
+          type: "heading",
+          text: "Payout detail",
+          anchor: "detail",
+        },
+        {
+          type: "paragraph",
+          text: "Open a Payout row for detail: amount and status hero, timeline (Submitted → Processing → Confirmed → Posted), destination external account, and failure reason when the payout failed, was rejected, or cancelled. Use Back to return to Payout records.",
         },
         {
           type: "heading",

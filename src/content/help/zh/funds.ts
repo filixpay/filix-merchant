@@ -149,6 +149,15 @@ export const zhFunds: Record<string, HelpArticleContent> = {
         },
         {
           type: "heading",
+          text: "入金详情",
+          anchor: "detail",
+        },
+        {
+          type: "paragraph",
+          text: "打开 Money-In 行进入详情：金额与状态概览、基础信息（Money-In ID、状态、金额、资产、时间，以及展示时的入金会话），若仍有结账链接可使用支付入口。返回入金记录后，若状态为成功请在余额或流水中确认。",
+        },
+        {
+          type: "heading",
           text: "关键字段",
           anchor: "key-fields",
         },
@@ -233,6 +242,15 @@ export const zhFunds: Record<string, HelpArticleContent> = {
             "选择资产、金额与目标外部账户后提交。",
             "跟踪状态至成功或失败，并确认余额与流水已更新。",
           ],
+        },
+        {
+          type: "heading",
+          text: "出金详情",
+          anchor: "detail",
+        },
+        {
+          type: "paragraph",
+          text: "打开出金行进入详情：金额与状态概览、时间线（已提交 → 处理中 → 已确认 → 已入账）、目标外部账户，以及失败/拒绝/取消时的失败原因。返回可回到出金记录列表。",
         },
         {
           type: "heading",

@@ -175,6 +175,15 @@ export const zhRisk: Record<string, HelpArticleContent> = {
         },
         {
           type: "heading",
+          text: "争议详情",
+          anchor: "detail",
+        },
+        {
+          type: "paragraph",
+          text: "打开案件查看详情：案件号、订单号、通道、金额、原因、优先级、状态与答复截止。在商户行动中心完成要求操作并上传证据（收据、物流、沟通或其他）。在截止前查看时间线、保障相关面板（如有）与关联风险链接。",
+        },
+        {
+          type: "heading",
           text: "关键字段",
           anchor: "key-fields",
         },

@@ -183,6 +183,15 @@ export const enRisk: Record<string, HelpArticleContent> = {
         },
         {
           type: "heading",
+          text: "Dispute detail",
+          anchor: "detail",
+        },
+        {
+          type: "paragraph",
+          text: "Open a case for dispute detail: Case No., Order ID, channel, amount, reason, priority, status, and Response Due. Use the Merchant Action Center to complete required actions and upload evidence (Receipt, Shipping, Communication, or Other). Review the timeline, coverage panels when shown, and related risk links before the deadline.",
+        },
+        {
+          type: "heading",
           text: "Key fields",
           anchor: "key-fields",
         },

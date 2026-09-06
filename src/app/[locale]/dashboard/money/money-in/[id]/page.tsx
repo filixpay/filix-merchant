@@ -15,6 +15,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useParams, useRouter } from "next/navigation";
 import { ApiError, moneyProductApi, type MoneyInView } from "@/lib/api";
 import DashboardPage from "@/components/layout/DashboardPage";
+import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import MoneyAssetLabel from "@/components/money/MoneyAssetLabel";
 import { handleDashboardApiError } from "@/lib/dashboard/handle-dashboard-api-error";
 import { resolveMoneyInCheckoutUrl } from "@/lib/money/money-in-checkout-redirect";
@@ -143,6 +144,11 @@ export default function MoneyInDetailPage() {
       contentMode="overview"
       extra={
         <div className={styles.headerActions}>
+          <HelpDeepLinkButton
+            dashboardPath="/dashboard/money/money-in"
+            helpSlug="funds/money-in"
+            hash="detail"
+          />
           {checkoutUrl ? (
             <a className={styles.payBtn} href={checkoutUrl}>
               {t("detail.pay_cta")}
