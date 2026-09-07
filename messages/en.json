@@ -6879,6 +6879,24 @@
       "APPROVE": "Approved",
       "RETURN": "Returned",
       "REJECT": "Rejected"
+    },
+    "agreement": {
+      "title": "Merchant service agreement & fees",
+      "intro": "Before submitting your application, please confirm the merchant service and fee rules below.",
+      "feeHeading": "Merchant service fees",
+      "saasLabel": "FilixPay SaaS payment collection",
+      "saasValue": "Free",
+      "commerceLabel": "E-commerce platform sales orders",
+      "commerceValue": "5%",
+      "feeAccrual": "Service fees accrue only when billable orders or transactions occur.",
+      "billing": "On the 1st of each month, FilixPay generates the previous calendar month’s service-fee invoice.",
+      "threshold": "Payment is triggered when the outstanding service-fee balance reaches RMB 500, and is due by the 5th of that month.",
+      "thresholdNote": "RMB 500 is a payment-trigger threshold, not a free allowance.",
+      "linkServiceAgreement": "FilixPay Merchant Service Agreement",
+      "linkFeeRules": "FilixPay Merchant Service & Fee Rules",
+      "linkPrivacy": "FilixPay Privacy Policy",
+      "checkbox": "I have read and agree to the FilixPay Merchant Service Agreement and the Merchant Service & Fee Rules that apply to me.",
+      "required": "Please confirm that you agree to the Merchant Service Agreement and fee rules before submitting."
     }
   },
   "Maintenance": {

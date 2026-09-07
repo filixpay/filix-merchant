@@ -3,6 +3,8 @@ import {
   type LegalContentLocale,
   type LegalSlug,
 } from "@/lib/legal/content-locales";
+import { MERCHANT_FEES_BY_LOCALE } from "./merchant-fees";
+import { MERCHANT_TERMS_BY_LOCALE } from "./merchant-terms";
 import { PRIVACY_BY_LOCALE } from "./privacy";
 import { TERMS_BY_LOCALE } from "./terms";
 import type { LegalDocument, LegalPublicationStatus } from "./types";
@@ -16,7 +18,16 @@ export function getLegalDocument(
   locale: string,
 ): LegalDocument {
   const loc = asContentLocale(locale);
-  return slug === "terms" ? TERMS_BY_LOCALE[loc] : PRIVACY_BY_LOCALE[loc];
+  switch (slug) {
+    case "terms":
+      return TERMS_BY_LOCALE[loc];
+    case "privacy":
+      return PRIVACY_BY_LOCALE[loc];
+    case "merchant-terms":
+      return MERCHANT_TERMS_BY_LOCALE[loc];
+    case "merchant-fees":
+      return MERCHANT_FEES_BY_LOCALE[loc];
+  }
 }
 
 export function getTerms(locale: string): LegalDocument {
@@ -27,7 +38,15 @@ export function getPrivacy(locale: string): LegalDocument {
   return getLegalDocument("privacy", locale);
 }
 
-/** Sitemap/robots gate: final only when both documents are final. */
+export function getMerchantTerms(locale: string): LegalDocument {
+  return getLegalDocument("merchant-terms", locale);
+}
+
+export function getMerchantFees(locale: string): LegalDocument {
+  return getLegalDocument("merchant-fees", locale);
+}
+
+/** Sitemap/robots gate: final only when platform Terms + Privacy are final. */
 export function getLegalPublicationStatus(): LegalPublicationStatus {
   const terms = TERMS_BY_LOCALE.en.status;
   const privacy = PRIVACY_BY_LOCALE.en.status;

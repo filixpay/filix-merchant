@@ -6930,6 +6930,24 @@
       "APPROVE": "通过",
       "RETURN": "退回补件",
       "REJECT": "拒绝"
+    },
+    "agreement": {
+      "title": "商户服务协议与费用确认",
+      "intro": "在完成入驻前，请确认以下商户服务及收费规则。",
+      "feeHeading": "商户服务费",
+      "saasLabel": "FilixPay SaaS 收款",
+      "saasValue": "免费",
+      "commerceLabel": "电商平台销售订单",
+      "commerceValue": "5%",
+      "feeAccrual": "服务费按符合计费条件的订单或交易产生。",
+      "billing": "每月 1 日生成上月账单。",
+      "threshold": "未结清服务费余额达到人民币 500 元后触发付款义务，应于当月 5 日前完成支付。",
+      "thresholdNote": "人民币 500 元为付款触发阈值，不是免收费额度。",
+      "linkServiceAgreement": "《FilixPay 商户服务协议》",
+      "linkFeeRules": "《FilixPay 商户服务与收费规则》",
+      "linkPrivacy": "《FilixPay 隐私政策》",
+      "checkbox": "我已阅读并同意《FilixPay 商户服务协议》及适用于我的商户服务与收费规则",
+      "required": "请先勾选同意商户服务协议与收费规则后再提交。"
     }
   },
   "Maintenance": {

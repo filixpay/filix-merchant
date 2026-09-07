@@ -28,10 +28,12 @@ import SchemaDynamicForm, {
     type SchemaFormValues,
 } from "@/components/onboarding/SchemaDynamicForm";
 import OnboardingConfirmSummary from "@/components/onboarding/OnboardingConfirmSummary";
+import OnboardingAgreementSection from "@/components/onboarding/OnboardingAgreementSection";
 import { buildDraftProgress } from "@/lib/api/domains/onboarding/draft-progress";
 import { canUpgradeToFormal } from "@/lib/merchant/merchant-tier";
 import { SETTLEMENT_CURRENCY_OPTIONS, formatSettlementCurrencyLabel } from "@/lib/onboarding/settlement-currency";
 import { REGISTRATION_COUNTRY_GROUPS } from "@/lib/onboarding/registration-countries";
+import { REQUIRED_ONBOARDING_ACCEPTANCES } from "@/lib/onboarding/required-agreements";
 import styles from "./onboarding-apply.module.css";
 
 type MerchantTypeChoice = "LEGAL_ENTITY" | "INDIVIDUAL";
@@ -50,6 +52,8 @@ export default function OnboardingApplyPage() {
     const [merchantType, setMerchantType] = useState<MerchantTypeChoice>("LEGAL_ENTITY");
     const [settlementCurrency, setSettlementCurrency] = useState<string>("USD");
     const [settlementConfirmed, setSettlementConfirmed] = useState(false);
+    const [agreementAccepted, setAgreementAccepted] = useState(false);
+    const [agreementError, setAgreementError] = useState(false);
     const [schema, setSchema] = useState<ApplicationSchemaDto | null>(null);
     const [application, setApplication] = useState<MerchantApplication | null>(null);
     const [applicationType, setApplicationType] = useState<ApplicationType>("NEW");
@@ -298,6 +302,11 @@ export default function OnboardingApplyPage() {
             message.error(t("settlementConfirmRequired"));
             return;
         }
+        if (!agreementAccepted) {
+            setAgreementError(true);
+            message.error(t("agreement.required"));
+            return;
+        }
         const missingDocuments = getMissingRequiredDocumentFieldCodes(schema, documents);
         if (missingDocuments.length > 0) {
             message.error(t("documentsRequired"));
@@ -305,14 +314,21 @@ export default function OnboardingApplyPage() {
         }
         setLoading(true);
         try {
-            const submitted = await api.onboarding.submit(accessToken, application.id);
+            const submitted = await api.onboarding.submit(accessToken, application.id, {
+                acceptances: REQUIRED_ONBOARDING_ACCEPTANCES,
+            });
             const id = submitted?.id ?? application.id;
             setApplication(submitted ?? { ...application, status: "SUBMITTED" });
             localStorage.setItem(APPLICATION_ID_STORAGE_KEY, id);
             message.success(t("submitSuccess"));
             router.push(`/${locale}/dashboard/onboarding/status?id=${id}`);
         } catch (err) {
-            message.error(err instanceof ApiError ? err.message : t("errors.generic"));
+            if (err instanceof ApiError && err.code === "AGREEMENT_ACCEPTANCE_REQUIRED") {
+                setAgreementError(true);
+                message.error(t("agreement.required"));
+            } else {
+                message.error(err instanceof ApiError ? err.message : t("errors.generic"));
+            }
         } finally {
             setLoading(false);
         }
@@ -485,9 +501,32 @@ export default function OnboardingApplyPage() {
                     >
                         {t("settlementConfirmAll", { currency: displaySettlement })}
                     </Checkbox>
+                    <OnboardingAgreementSection />
+                    <Checkbox
+                        className={styles.agreementCheckbox}
+                        checked={agreementAccepted}
+                        onChange={(e) => {
+                            setAgreementAccepted(e.target.checked);
+                            if (e.target.checked) {
+                                setAgreementError(false);
+                            }
+                        }}
+                    >
+                        {t("agreement.checkbox")}
+                    </Checkbox>
+                    {agreementError ? (
+                        <p className={styles.agreementValidation} role="alert">
+                            {t("agreement.required")}
+                        </p>
+                    ) : null}
                     <div className={styles.confirmActions}>
                         <Button onClick={() => setStep(1)}>{t("backToPrevious")}</Button>
-                        <Button type="primary" loading={loading} onClick={handleSubmit}>
+                        <Button
+                            type="primary"
+                            loading={loading}
+                            disabled={!settlementConfirmed || !agreementAccepted}
+                            onClick={handleSubmit}
+                        >
                             {t("submit")}
                         </Button>
                     </div>
