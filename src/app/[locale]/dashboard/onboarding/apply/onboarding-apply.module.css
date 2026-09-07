@@ -188,6 +188,13 @@
     color: rgba(0, 0, 0, 0.88);
 }
 
+.confirmChecks {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
 .confirmActions {
     display: flex;
     flex-wrap: wrap;
@@ -283,7 +290,7 @@
 }
 
 .agreementCheckbox {
-    margin-bottom: 8px;
+    margin-bottom: 0;
 }
 
 .agreementValidation {

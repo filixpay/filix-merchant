@@ -6778,7 +6778,7 @@
     "settlementCurrencyRequired": "请选择结算币种",
     "settlementConfirm": "我已确认结算币种为 {currency}，并理解此后无法修改。",
     "settlementConfirmAll": "我已确认上述信息及结算币种 ({currency}) 准确无误，提交后不可更改。",
-    "settlementConfirmRequired": "请确认信息准确无误后再提交",
+    "settlementConfirmRequired": "请先勾选确认申请信息及结算币种后再提交",
     "continue": "继续",
     "saveAndContinue": "保存并继续",
     "confirmHint": "提交前请确认以下信息。",

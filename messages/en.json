@@ -6727,7 +6727,7 @@
     "settlementCurrencyRequired": "Please select a settlement currency",
     "settlementConfirm": "I confirm settlement currency {currency} and understand it cannot be changed later.",
     "settlementConfirmAll": "I confirm the information above and settlement currency ({currency}) are accurate and cannot be changed after submission.",
-    "settlementConfirmRequired": "Please confirm the information is accurate before submitting",
+    "settlementConfirmRequired": "Please confirm the application details and settlement currency before submitting",
     "continue": "Continue",
     "saveAndContinue": "Save and continue",
     "confirmHint": "Review your information before submitting for approval.",

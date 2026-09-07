@@ -495,25 +495,32 @@ export default function OnboardingApplyPage() {
                         locale={locale}
                         onEditStep={setStep}
                     />
-                    <Checkbox
-                        checked={settlementConfirmed}
-                        onChange={(e) => setSettlementConfirmed(e.target.checked)}
-                    >
-                        {t("settlementConfirmAll", { currency: displaySettlement })}
-                    </Checkbox>
                     <OnboardingAgreementSection />
-                    <Checkbox
-                        className={styles.agreementCheckbox}
-                        checked={agreementAccepted}
-                        onChange={(e) => {
-                            setAgreementAccepted(e.target.checked);
-                            if (e.target.checked) {
-                                setAgreementError(false);
-                            }
-                        }}
-                    >
-                        {t("agreement.checkbox")}
-                    </Checkbox>
+                    <div className={styles.confirmChecks}>
+                        <Checkbox
+                            checked={settlementConfirmed}
+                            onChange={(e) => setSettlementConfirmed(e.target.checked)}
+                        >
+                            {t("settlementConfirmAll", { currency: displaySettlement })}
+                        </Checkbox>
+                        <Checkbox
+                            className={styles.agreementCheckbox}
+                            checked={agreementAccepted}
+                            onChange={(e) => {
+                                setAgreementAccepted(e.target.checked);
+                                if (e.target.checked) {
+                                    setAgreementError(false);
+                                }
+                            }}
+                        >
+                            {t("agreement.checkbox")}
+                        </Checkbox>
+                    </div>
+                    {agreementAccepted && !settlementConfirmed ? (
+                        <p className={styles.agreementValidation} role="alert">
+                            {t("settlementConfirmRequired")}
+                        </p>
+                    ) : null}
                     {agreementError ? (
                         <p className={styles.agreementValidation} role="alert">
                             {t("agreement.required")}
