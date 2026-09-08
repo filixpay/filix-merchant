@@ -23,8 +23,10 @@ import DashboardPage from "@/components/layout/DashboardPage";
 import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import ProductEditorForm, { type ProductEditorValues } from "@/components/commerce/ProductEditorForm";
 import ProductFormFooter from "@/components/commerce/ProductFormFooter";
+import ProductCmsLinksSection from "@/components/commerce/ProductCmsLinksSection";
 import ProductStatusBadges from "@/components/commerce/ProductStatusBadges";
 import PublishActions from "@/components/commerce/PublishActions";
+import type { CmsLinkRef } from "@/lib/api/domains/commerce";
 
 const POLL_MS = 2500;
 const POLL_MAX_MS = 120_000;
@@ -45,6 +47,9 @@ export default function CommerceProductDetailPage() {
     const [loading, setLoading] = useState(true);
     const [saving, setSaving] = useState(false);
     const [actionLoading, setActionLoading] = useState(false);
+    const [cmsLinks, setCmsLinks] = useState<CmsLinkRef[]>([]);
+    const [cmsLinksLoading, setCmsLinksLoading] = useState(false);
+    const [cmsLinksSaving, setCmsLinksSaving] = useState(false);
     const pollStartedRef = useRef<number | null>(null);
     const activationPollStartedRef = useRef<number | null>(null);
     const activationPollTimerRef = useRef<number | null>(null);
@@ -64,6 +69,7 @@ export default function CommerceProductDetailPage() {
             return;
         }
         setLoading(true);
+        setCmsLinksLoading(true);
         Promise.all([
             loadProduct().catch((err) => {
                 message.error(err instanceof Error ? err.message : tCommon("error"));
@@ -71,8 +77,22 @@ export default function CommerceProductDetailPage() {
             }),
             api.commerce.categories.list(accessToken).then(setCategories).catch(() => []),
             api.commerce.productTypes.list(accessToken).then(setProductTypes).catch(() => []),
-        ]).finally(() => setLoading(false));
-    }, [accessToken, loadProduct, message, tCommon]);
+            api.commerce.products
+                .getCmsLinks(accessToken, params.id)
+                .then((payload) => {
+                    setCmsLinks(
+                        (payload.links ?? []).map((row) => ({
+                            type: String(row.type),
+                            id: row.id,
+                        })),
+                    );
+                })
+                .catch(() => setCmsLinks([])),
+        ]).finally(() => {
+            setLoading(false);
+            setCmsLinksLoading(false);
+        });
+    }, [accessToken, loadProduct, message, params.id, tCommon]);
 
     useEffect(() => {
         if (!accessToken || !product || !isInFlightIntegration(product.integrationStatus)) {
@@ -115,11 +135,39 @@ export default function CommerceProductDetailPage() {
         try {
             const updated = await api.commerce.products.update(accessToken, product.id, values);
             setProduct(updated);
+            const payload = await api.commerce.products.replaceCmsLinks(accessToken, product.id, cmsLinks);
+            setCmsLinks(
+                (payload.links ?? []).map((row) => ({
+                    type: String(row.type),
+                    id: row.id,
+                })),
+            );
             message.success(t("messages.saved"));
         } catch (err) {
             message.error(err instanceof Error ? err.message : tCommon("error"));
         } finally {
             setSaving(false);
+        }
+    };
+
+    const handleSaveCmsLinks = async () => {
+        if (!accessToken || !product) {
+            return;
+        }
+        setCmsLinksSaving(true);
+        try {
+            const payload = await api.commerce.products.replaceCmsLinks(accessToken, product.id, cmsLinks);
+            setCmsLinks(
+                (payload.links ?? []).map((row) => ({
+                    type: String(row.type),
+                    id: row.id,
+                })),
+            );
+            message.success(t("cms.links_saved"));
+        } catch (err) {
+            message.error(err instanceof Error ? err.message : tCommon("error"));
+        } finally {
+            setCmsLinksSaving(false);
         }
     };
 
@@ -327,17 +375,46 @@ export default function CommerceProductDetailPage() {
                         onUploadImage={(file) => api.commerce.media.upload(accessToken!, file).then((r) => r.url)}
                         onSubmit={handleSave}
                     />
+                    <ProductCmsLinksSection
+                        accessToken={accessToken}
+                        value={cmsLinks}
+                        onChange={setCmsLinks}
+                        disabled={
+                            cmsLinksLoading ||
+                            cmsLinksSaving ||
+                            isInFlightIntegration(product.integrationStatus)
+                        }
+                    />
                     <ProductFormFooter
                         formId="commerce-product-editor"
                         mode="edit"
-                        loading={saving}
-                        disabled={saving || isInFlightIntegration(product.integrationStatus)}
+                        loading={saving || cmsLinksSaving}
+                        disabled={saving || cmsLinksSaving || isInFlightIntegration(product.integrationStatus)}
                     />
                 </>
             ) : (
-                <Card>
-                    <Typography.Paragraph>{t("detail.read_only_hint")}</Typography.Paragraph>
-                </Card>
+                <>
+                    <Card>
+                        <Typography.Paragraph>{t("detail.read_only_hint")}</Typography.Paragraph>
+                    </Card>
+                    <ProductCmsLinksSection
+                        accessToken={accessToken}
+                        value={cmsLinks}
+                        onChange={setCmsLinks}
+                        disabled={cmsLinksLoading || cmsLinksSaving}
+                    />
+                    <div style={{ marginTop: 12 }}>
+                        <Typography.Link
+                            onClick={() => {
+                                if (!cmsLinksSaving) {
+                                    void handleSaveCmsLinks();
+                                }
+                            }}
+                        >
+                            {cmsLinksSaving ? tCommon("loading") : t("cms.save_links")}
+                        </Typography.Link>
+                    </div>
+                </>
             )}
         </DashboardPage>
     );

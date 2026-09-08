@@ -13,6 +13,11 @@ import {
     unpublishProduct,
     updateProduct,
 } from "./products";
+import {
+    getProductCmsLinks,
+    replaceProductCmsLinks,
+    searchCmsEntities,
+} from "./cms";
 
 export type {
     CommerceCategoryView,
@@ -22,6 +27,15 @@ export type {
     CreateCommerceProductBody,
     UpdateCommerceProductBody,
 } from "./types";
+
+export type {
+    CmsEntitySummary,
+    CmsEntityType,
+    CmsLinkRef,
+    CreateProductWithCmsResult,
+    ProductCmsLinksPayload,
+} from "./cms";
+export { CMS_ENTITY_TYPES } from "./cms";
 
 export type {
     CommerceActivationPhase,
@@ -58,6 +72,11 @@ export const commerceApi = {
         unpublish: unpublishProduct,
         retrySync: retrySyncProduct,
         delete: deleteProduct,
+        getCmsLinks: getProductCmsLinks,
+        replaceCmsLinks: replaceProductCmsLinks,
+    },
+    cms: {
+        searchEntities: searchCmsEntities,
     },
     categories: {
         list: listCategories,

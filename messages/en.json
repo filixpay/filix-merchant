@@ -1587,7 +1587,26 @@
       "publishing": "Publishing in progress…",
       "unpublished": "Product unpublished",
       "synced": "Sync completed",
-      "deleted": "Product deleted"
+      "deleted": "Product deleted",
+      "cms_links_not_applied": "Product created, but platform content was not saved. After product sync completes, save again under Platform content."
+    },
+    "cms": {
+      "title": "Platform content",
+      "hint": "Link published heritage, GI, brand, food, and topic content so customers understand your product.",
+      "add": "Add",
+      "empty": "None selected",
+      "searchPlaceholder": "Search by name…",
+      "noResults": "No matching content",
+      "pickTitle": "Select {type}",
+      "save_links": "Save content links",
+      "links_saved": "Platform content links saved",
+      "types": {
+        "heritage": "Heritage",
+        "gi": "Geographical indication",
+        "brand": "Brand",
+        "food": "Food",
+        "topic": "Topic"
+      }
     }
   },
   "CommerceActivation": {

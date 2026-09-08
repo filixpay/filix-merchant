@@ -307,7 +307,26 @@
       "publishing": "发布处理中…",
       "unpublished": "商品已下架",
       "synced": "同步完成",
-      "deleted": "商品已删除"
+      "deleted": "商品已删除",
+      "cms_links_not_applied": "商品已创建，平台内容暂未保存。商品同步完成后可在「平台内容」中重新保存。"
+    },
+    "cms": {
+      "title": "平台内容",
+      "hint": "关联平台已有的非遗、地理标志、品牌、美食与专题内容，帮助顾客了解商品背景。",
+      "add": "添加",
+      "empty": "尚未选择",
+      "searchPlaceholder": "按名称搜索…",
+      "noResults": "没有匹配内容",
+      "pickTitle": "选择{type}",
+      "save_links": "保存内容关联",
+      "links_saved": "平台内容关联已保存",
+      "types": {
+        "heritage": "非物质文化遗产",
+        "gi": "地理标志",
+        "brand": "品牌",
+        "food": "美食",
+        "topic": "专题"
+      }
     }
   },
   "CommerceActivation": {

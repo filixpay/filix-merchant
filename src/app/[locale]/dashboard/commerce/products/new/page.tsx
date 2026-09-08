@@ -15,6 +15,8 @@ import ProductEditorForm, {
   type ProductEditorValues,
 } from "@/components/commerce/ProductEditorForm";
 import ProductFormFooter from "@/components/commerce/ProductFormFooter";
+import ProductCmsLinksSection from "@/components/commerce/ProductCmsLinksSection";
+import type { CmsLinkRef } from "@/lib/api/domains/commerce";
 
 function newClientRequestId(): string {
   if (typeof crypto !== "undefined" && "randomUUID" in crypto) {
@@ -39,6 +41,7 @@ export default function CommerceProductCreatePage() {
   const [productTypes, setProductTypes] = useState<CommerceProductTypeView[]>([]);
   const [productTypesLoading, setProductTypesLoading] = useState(true);
   const [submitting, setSubmitting] = useState(false);
+  const [cmsLinks, setCmsLinks] = useState<CmsLinkRef[]>([]);
 
   useEffect(() => {
     if (!accessToken) {
@@ -67,14 +70,18 @@ export default function CommerceProductCreatePage() {
       const created = await api.commerce.products.create(accessToken, {
         ...values,
         clientRequestId: clientRequestIdRef.current,
+        cmsLinks: cmsLinks.length > 0 ? cmsLinks : undefined,
       });
+      if (!created.cmsLinksApplied) {
+        message.warning(t("messages.cms_links_not_applied"));
+      }
       if (publishAfterCreate) {
-        await api.commerce.products.publish(accessToken, created.id);
+        await api.commerce.products.publish(accessToken, created.product.id);
         message.success(t("messages.published"));
-      } else {
+      } else if (created.cmsLinksApplied) {
         message.success(t("messages.created"));
       }
-      router.push(`/${locale}/dashboard/commerce/products/${created.id}`);
+      router.push(`/${locale}/dashboard/commerce/products/${created.product.id}`);
     } catch (err) {
       message.error(err instanceof Error ? err.message : tCommon("error"));
     } finally {
@@ -121,6 +128,12 @@ export default function CommerceProductCreatePage() {
         disabled={submitting}
         onUploadImage={(file) => api.commerce.media.upload(accessToken!, file).then((r) => r.url)}
         onSubmit={handleSubmit}
+      />
+      <ProductCmsLinksSection
+        accessToken={accessToken}
+        value={cmsLinks}
+        onChange={setCmsLinks}
+        disabled={submitting}
       />
       <ProductFormFooter
         formId="commerce-product-editor"

@@ -88,6 +88,15 @@ export interface CreateCommerceProductBody {
     stock: number;
     images: string[];
     clientRequestId: string;
+    /** Optional merchant-linked CMS entities (FilixPay Product × CMS Association). */
+    cmsLinks?: Array<{ type: string; id: string }>;
+}
+
+/** Create response envelope when cmsLinks apply outcome is present. */
+export interface CreateCommerceProductEnvelopeDto {
+    product: CommerceProductDto;
+    cmsLinksApplied?: boolean;
+    cmsLinksApplyReason?: string | null;
 }
 
 export interface UpdateCommerceProductBody {

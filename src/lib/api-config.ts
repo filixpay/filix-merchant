@@ -161,6 +161,7 @@ export const ENDPOINTS = {
         MERCHANT_CONTACT: '/portal/merchant/contact',
         MERCHANT_CLOSE_REQUESTS: '/portal/merchant-close-requests',
         COMMERCE_PRODUCTS: '/portal/merchant/products',
+        CMS_ENTITIES: '/portal/merchant/cms-entities',
         COMMERCE_CATEGORIES: '/portal/merchant/commerce/categories',
         COMMERCE_PRODUCT_TYPES: '/portal/merchant/commerce/product-types',
         COMMERCE_MEDIA: '/portal/merchant/commerce/media',

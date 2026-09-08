@@ -7,8 +7,10 @@ import type {
     CommerceProductListQuery,
     CommerceProductView,
     CreateCommerceProductBody,
+    CreateCommerceProductEnvelopeDto,
     UpdateCommerceProductBody,
 } from "./types";
+import type { CreateProductWithCmsResult } from "./cms";
 
 function productsBase(): string {
     return ENDPOINTS.PORTAL.COMMERCE_PRODUCTS;
@@ -29,8 +31,11 @@ export async function getProduct(token: string, id: string): Promise<CommercePro
     return mapCommerceProductDto(dto);
 }
 
-export async function createProduct(token: string, body: CreateCommerceProductBody): Promise<CommerceProductView> {
-    const dto = await request<CommerceProductDto>(productsBase(), {
+export async function createProduct(
+    token: string,
+    body: CreateCommerceProductBody,
+): Promise<CreateProductWithCmsResult> {
+    const data = await request<CreateCommerceProductEnvelopeDto | CommerceProductDto>(productsBase(), {
         method: "POST",
         headers: {
             ...authHeaders(token),
@@ -38,7 +43,19 @@ export async function createProduct(token: string, body: CreateCommerceProductBo
         },
         body: JSON.stringify(body),
     });
-    return mapCommerceProductDto(dto);
+    if (data && typeof data === "object" && "product" in data && data.product) {
+        const envelope = data as CreateCommerceProductEnvelopeDto;
+        return {
+            product: mapCommerceProductDto(envelope.product),
+            cmsLinksApplied: envelope.cmsLinksApplied !== false,
+            cmsLinksApplyReason: envelope.cmsLinksApplyReason ?? null,
+        };
+    }
+    return {
+        product: mapCommerceProductDto(data as CommerceProductDto),
+        cmsLinksApplied: true,
+        cmsLinksApplyReason: null,
+    };
 }
 
 export async function updateProduct(
