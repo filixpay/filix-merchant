@@ -38,7 +38,7 @@ export interface ProductCmsLinksPayload {
 }
 
 export interface CreateProductWithCmsResult {
-  product: import("./types").CommerceProductDto;
+  product: import("./types").CommerceProductView;
   cmsLinksApplied: boolean;
   cmsLinksApplyReason?: string | null;
 }
