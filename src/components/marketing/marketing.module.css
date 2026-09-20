@@ -453,6 +453,8 @@
   color: #64748b;
   text-decoration: none;
   transition: color 0.2s;
+  line-height: 1.4;
+  max-width: 22rem;
 }
 
 .footerFriendlyLink + .footerFriendlyLink {

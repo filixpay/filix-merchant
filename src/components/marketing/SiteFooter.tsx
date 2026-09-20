@@ -36,7 +36,6 @@ export default function SiteFooter() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={styles.footerFriendlyLink}
-                                title={t('friendly_link_knowva_title')}
                             >
                                 {t('friendly_link_knowva')}
                             </a>
