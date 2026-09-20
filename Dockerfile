@@ -30,7 +30,7 @@ COPY . .
 ARG NEXTAUTH_SECRET=build-placeholder-secret
 ARG NEXTAUTH_URL=https://www.filixpay.com/auth-api/auth
 ARG NEXT_PUBLIC_SITE_URL=https://www.filixpay.com
-ARG NEXT_PUBLIC_CHECKOUT_URL=https://www.filixpay.com
+ARG NEXT_PUBLIC_CHECKOUT_URL=https://checkout.filixpay.com
 
 RUN \
   if [ -f yarn.lock ]; then yarn run build; \

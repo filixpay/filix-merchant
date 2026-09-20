@@ -48,4 +48,4 @@ jobs:
           NEXTAUTH_SECRET: ci-build-placeholder-secret
           NEXTAUTH_URL: https://www.filixpay.com/auth-api/auth
           NEXT_PUBLIC_SITE_URL: https://www.filixpay.com
-          NEXT_PUBLIC_CHECKOUT_URL: https://www.filixpay.com
+          NEXT_PUBLIC_CHECKOUT_URL: https://checkout.filixpay.com
