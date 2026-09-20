@@ -448,10 +448,15 @@
 }
 
 .footerFriendlyLink {
+  display: block;
   font-size: 13px;
   color: #64748b;
   text-decoration: none;
   transition: color 0.2s;
+}
+
+.footerFriendlyLink + .footerFriendlyLink {
+  margin-top: 6px;
 }
 
 .footerFriendlyLink:hover {

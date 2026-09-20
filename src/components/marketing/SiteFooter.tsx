@@ -31,6 +31,15 @@ export default function SiteFooter() {
                             >
                                 {t('friendly_link_micselect')}
                             </a>
+                            <a
+                                href="https://knowva.filixpay.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.footerFriendlyLink}
+                                title={t('friendly_link_knowva_title')}
+                            >
+                                {t('friendly_link_knowva')}
+                            </a>
                         </nav>
                     </div>
 
