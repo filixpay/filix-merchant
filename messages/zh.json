@@ -2447,7 +2447,7 @@
       "check_live_webhook": "ACTIVE LIVE Webhook"
     },
     "api_credentials_desc": "管理您的 API 密钥以进行程序化访问。",
-    "view_swagger": "查看我们的 Swagger API 文档。",
+    "view_swagger": "查看 Swagger 文档",
     "generate_button": "生成/重置 API 密钥",
     "generate_confirm_title": "生成 API 凭证",
     "generate_confirm_content": "确定要生成/重置 API 凭证吗？此操作会使当前凭证失效。",

@@ -2423,7 +2423,7 @@
       "check_live_webhook": "Webhook LIVE ACTIVE"
     },
     "api_credentials_desc": "Gestiona tus claves API para acceso programático.",
-    "view_swagger": "Ver nuestra documentación de API Swagger.",
+    "view_swagger": "Ver docs de Swagger",
     "generate_button": "Generar/restablecer clave API",
     "generate_confirm_title": "Generar credenciales de API",
     "generate_confirm_content": "¿Seguro que quieres generar o restablecer las credenciales de API? Esto invalidará tus credenciales actuales.",

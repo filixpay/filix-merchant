@@ -2423,7 +2423,7 @@
       "check_live_webhook": "ACTIVE LIVE Webhook"
     },
     "api_credentials_desc": "프로그래밍 방식 액세스를 위한 API 키를 관리합니다.",
-    "view_swagger": "Swagger API 문서 보기.",
+    "view_swagger": "Swagger 문서 보기",
     "generate_button": "API 키 생성/재설정",
     "generate_confirm_title": "API 자격 증명 생성",
     "generate_confirm_content": "API 자격 증명을 생성하거나 재설정하시겠습니까? 현재 자격 증명은 무효화됩니다.",

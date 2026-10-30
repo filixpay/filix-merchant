@@ -2,7 +2,8 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { useSession, signIn } from "next-auth/react";
-import { Tabs } from "antd";
+import { Button, Tabs } from "antd";
+import { ApiOutlined } from "@ant-design/icons";
 import { useTranslations } from "next-intl";
 import {
     api,
@@ -12,6 +13,7 @@ import {
     WebhookEndpointView,
 } from "@/lib/api";
 import { createSandboxSession } from "@/lib/sandbox-client";
+import { MERCHANT_OPENAPI_SWAGGER_HREF } from "@/lib/developer/docs";
 import DashboardPage from "@/components/layout/DashboardPage";
 import { HelpDeepLinkButton } from "@/components/help/HelpDeepLinkButton";
 import ApplicationsPanel from "@/components/developer/ApplicationsPanel";
@@ -228,10 +230,20 @@ export default function DeveloperPage() {
             contentMode="table"
             plain
             extra={
-                <HelpDeepLinkButton
-                    dashboardPath="/dashboard/developer"
-                    helpSlug="developers/developer-center"
-                />
+                <>
+                    <Button
+                        href={MERCHANT_OPENAPI_SWAGGER_HREF}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        icon={<ApiOutlined />}
+                    >
+                        {t("view_swagger")}
+                    </Button>
+                    <HelpDeepLinkButton
+                        dashboardPath="/dashboard/developer"
+                        helpSlug="developers/developer-center"
+                    />
+                </>
             }
         >
             <Tabs

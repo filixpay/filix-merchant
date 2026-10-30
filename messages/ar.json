@@ -2423,7 +2423,7 @@
       "check_live_webhook": "ويب هوك LIVE بحالة ACTIVE"
     },
     "api_credentials_desc": "أدِر مفاتيح API للوصول البرمجي.",
-    "view_swagger": "عرض وثائق Swagger لـ API.",
+    "view_swagger": "عرض وثائق Swagger",
     "generate_button": "إنشاء/إعادة تعيين مفتاح API",
     "generate_confirm_title": "إنشاء بيانات اعتماد API",
     "generate_confirm_content": "هل أنت متأكد أنك تريد إنشاء أو إعادة تعيين بيانات اعتماد API؟ سيُبطِل ذلك بيانات الاعتماد الحالية.",

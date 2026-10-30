@@ -2423,7 +2423,7 @@
       "check_live_webhook": "Webhook LIVE ACTIVE"
     },
     "api_credentials_desc": "Gerencie suas chaves de API para acesso programático.",
-    "view_swagger": "Veja nossa documentação Swagger da API.",
+    "view_swagger": "Ver documentação Swagger",
     "generate_button": "Gerar/Redefinir chave de API",
     "generate_confirm_title": "Gerar credenciais da API",
     "generate_confirm_content": "Tem certeza de que deseja gerar ou redefinir as credenciais da API? Isso invalidará suas credenciais atuais.",

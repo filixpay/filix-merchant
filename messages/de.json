@@ -2423,7 +2423,7 @@
       "check_live_webhook": "ACTIVE LIVE-Webhook"
     },
     "api_credentials_desc": "Verwalten Sie Ihre API-Schlüssel für programmatischen Zugriff.",
-    "view_swagger": "Unsere Swagger API-Dokumentation ansehen.",
+    "view_swagger": "Swagger-Dokumentation anzeigen",
     "generate_button": "API-Schlüssel generieren/zurücksetzen",
     "generate_confirm_title": "API-Zugangsdaten generieren",
     "generate_confirm_content": "Möchten Sie API-Zugangsdaten wirklich generieren oder zurücksetzen? Dadurch werden Ihre aktuellen Zugangsdaten ungültig.",

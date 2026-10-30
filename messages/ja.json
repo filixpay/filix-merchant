@@ -2423,7 +2423,7 @@
       "check_live_webhook": "ACTIVE な LIVE Webhook"
     },
     "api_credentials_desc": "プログラムアクセス用の API キーを管理します。",
-    "view_swagger": "Swagger API ドキュメントを表示。",
+    "view_swagger": "Swagger ドキュメントを表示",
     "generate_button": "API キーを生成／リセット",
     "generate_confirm_title": "API 認証情報を生成",
     "generate_confirm_content": "API 認証情報を生成またはリセットしますか？現在の認証情報は無効になります。",

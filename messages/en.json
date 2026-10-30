@@ -2445,7 +2445,7 @@
       "check_live_webhook": "ACTIVE LIVE webhook"
     },
     "api_credentials_desc": "Manage your API keys for programmatic access.",
-    "view_swagger": "View our Swagger API Documentation.",
+    "view_swagger": "View Swagger Docs",
     "generate_button": "Generate/Reset API Key",
     "generate_confirm_title": "Generate API Credentials",
     "generate_confirm_content": "Are you sure you want to generate or reset API credentials? This will invalidate your current credentials.",

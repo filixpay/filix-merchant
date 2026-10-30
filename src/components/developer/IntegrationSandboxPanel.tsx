@@ -34,6 +34,7 @@ import {
     getStepLabelKey,
 } from "./sandbox-ui-model";
 import { SANDBOX_WEBHOOK_POLL_INTERVAL_MS } from "@/lib/sandbox/sandbox-config";
+import { MERCHANT_OPENAPI_SWAGGER_HREF } from "@/lib/developer/docs";
 
 interface IntegrationSandboxPanelProps {
     accessToken?: string;
@@ -335,7 +336,7 @@ export default function IntegrationSandboxPanel({
                             {tOrders("go_to_pay")}
                         </Button>
                     )}
-                    <Link href="https://www.filixpay.com/openapi/v1/swagger" target="_blank">
+                    <Link href={MERCHANT_OPENAPI_SWAGGER_HREF} target="_blank" rel="noopener noreferrer">
                         <Button>{t("view_swagger")}</Button>
                     </Link>
                     <Link href={`/${locale}/dashboard/developer`}>
