@@ -1,7 +1,8 @@
 "use client";
 
 import type { ReactNode } from "react";
-import { Button, Empty, Space } from "antd";
+import { Alert, Box, Button, Stack } from "@mui/material";
+import { RefreshCw } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 interface DashboardTableErrorProps {
@@ -13,9 +14,22 @@ export default function DashboardTableError({ description, onRetry }: DashboardT
     const tCommon = useTranslations("Common");
 
     return (
-        <Space direction="vertical" size={12} align="center">
-            <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description={description} />
-            {onRetry ? <Button onClick={onRetry}>{tCommon("refresh")}</Button> : null}
-        </Space>
+        <Box sx={{ py: 4, display: "flex", justifyContent: "center" }}>
+            <Stack spacing={2} sx={{ alignItems: "center", maxWidth: 480, width: "100%" }}>
+                <Alert severity="error" sx={{ width: "100%" }}>
+                    {description}
+                </Alert>
+                {onRetry ? (
+                    <Button
+                        variant="outlined"
+                        size="small"
+                        startIcon={<RefreshCw size={14} />}
+                        onClick={onRetry}
+                    >
+                        {tCommon("refresh")}
+                    </Button>
+                ) : null}
+            </Stack>
+        </Box>
     );
 }

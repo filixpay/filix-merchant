@@ -1,6 +1,6 @@
 "use client";
 
-
+import { Box, Typography } from "@mui/material";
 import { formatWalletAmountDisplay } from "@/lib/money/asset-display";
 import { useLocale } from "next-intl";
 
@@ -29,23 +29,40 @@ export default function AmountCell({ amount, currency, alignRight = false }: Amo
     );
 
     return (
-        <div style={{
-            display: "inline-flex",
-            alignItems: "baseline",
-            justifyContent: alignRight ? "flex-end" : "flex-start",
-            width: alignRight ? "100%" : "auto",
-            fontVariantNumeric: "tabular-nums",
-            fontFeatureSettings: '"tnum"',
-            whiteSpace: "nowrap"
-        }}>
-            <span style={{ fontWeight: 600, color: "#0f172a", fontSize: 13, letterSpacing: "-0.01em" }}>
+        <Box
+            sx={{
+                display: "inline-flex",
+                alignItems: "baseline",
+                justifyContent: alignRight ? "flex-end" : "flex-start",
+                width: alignRight ? "100%" : "auto",
+                fontVariantNumeric: "tabular-nums",
+                whiteSpace: "nowrap",
+            }}
+        >
+            <Typography
+                component="span"
+                sx={{
+                    fontWeight: 600,
+                    color: "#0f172a",
+                    fontSize: 13,
+                    letterSpacing: "-0.01em",
+                }}
+            >
                 {symbol}{formattedAmount}
-            </span>
+            </Typography>
             {currency && (
-                <span style={{ marginLeft: 6, fontSize: 11, fontWeight: 500, color: "#64748b" }}>
+                <Typography
+                    component="span"
+                    sx={{
+                        ml: 0.75,
+                        fontSize: 11,
+                        fontWeight: 500,
+                        color: "#64748b",
+                    }}
+                >
                     {currency}
-                </span>
+                </Typography>
             )}
-        </div>
+        </Box>
     );
 }

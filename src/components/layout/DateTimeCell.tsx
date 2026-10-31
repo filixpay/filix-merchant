@@ -1,5 +1,7 @@
 "use client";
 
+import { Typography } from "@mui/material";
+
 interface DateTimeCellProps {
     /** ISO 8601 string or Date object or timestamp */
     value: string | number | Date | null | undefined;
@@ -13,12 +15,22 @@ interface DateTimeCellProps {
  * Provides consistent mono-spaced, secondary text formatting for timestamps.
  */
 export default function DateTimeCell({ value, format = "datetime" }: DateTimeCellProps) {
-    if (!value) return <span style={{ color: "#94a3b8" }}>—</span>;
+    if (!value) {
+        return (
+            <Typography component="span" sx={{ color: "#94a3b8", fontSize: 13 }}>
+                —
+            </Typography>
+        );
+    }
 
     const date = new Date(value);
     
     if (isNaN(date.getTime())) {
-        return <span style={{ color: "#94a3b8" }}>Invalid Date</span>;
+        return (
+            <Typography component="span" sx={{ color: "#94a3b8", fontSize: 13 }}>
+                Invalid Date
+            </Typography>
+        );
     }
 
     // Default formatting rules:
@@ -31,9 +43,12 @@ export default function DateTimeCell({ value, format = "datetime" }: DateTimeCel
 
     if (format === "date") {
         return (
-            <span style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "#475569", whiteSpace: "nowrap" }}>
+            <Typography
+                component="span"
+                sx={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "#475569", whiteSpace: "nowrap" }}
+            >
                 {formattedDate}
-            </span>
+            </Typography>
         );
     }
 
@@ -44,8 +59,11 @@ export default function DateTimeCell({ value, format = "datetime" }: DateTimeCel
     const formattedTime = `${hours}:${minutes}:${seconds}`;
 
     return (
-        <span style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "#475569", whiteSpace: "nowrap" }}>
+        <Typography
+            component="span"
+            sx={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "#475569", whiteSpace: "nowrap" }}
+        >
             {formattedDate} <span style={{ color: "#94a3b8", fontSize: 11 }}>{formattedTime}</span>
-        </span>
+        </Typography>
     );
 }
