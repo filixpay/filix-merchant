@@ -1,11 +1,23 @@
 "use client";
 
-import { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { signIn } from 'next-auth/react';
-import { Dropdown, message, Space, Table } from 'antd';
-import type { ColumnsType } from 'antd/es/table';
-import type { MenuProps } from 'antd';
+import { useSnackbar } from 'notistack';
+import {
+    Box,
+    CircularProgress,
+    Menu,
+    MenuItem,
+    Paper,
+    Table,
+    TableBody,
+    TableCell,
+    TableContainer,
+    TableHead,
+    TablePagination,
+    TableRow,
+} from '@mui/material';
 import {
     AlertCircle,
     Copy,
@@ -16,7 +28,6 @@ import {
 import { api, ApiError } from '@/lib/api';
 import type { LocationView, OrderView, SubMerchantView, TraceTimelineItem } from '@/lib/api';
 import { buildCheckoutTokenUrl } from '@/lib/checkout/checkout-url';
-import { formatWalletAmountDisplay } from '@/lib/money/asset-display';
 import PaymentModal from './PaymentModal';
 import OrderDetailsModal from './OrderDetailsModal';
 import CreateRefundModal from '../refunds/CreateRefundModal';
@@ -27,7 +38,6 @@ import StatusBadge from '@/components/layout/StatusBadge';
 import { type StatusBadgeTone } from '@/components/layout/StatusBadge';
 import OrderIdCell from './OrderIdCell';
 import {
-    formatDateTime,
     getOrderStatus,
     getRefundableAmount,
     normalizeOrderType,
@@ -44,6 +54,143 @@ type OrderRowAction = {
     onClick: () => void;
     danger?: boolean;
 };
+
+interface OrderRowActionsCellProps {
+    order: OrderView;
+    status: string;
+    refundableAmount: number;
+    onInitiatePayment: (order: OrderView) => void;
+    onMissingOrder: (merchantOrderId: string) => void;
+    onRefund: (order: OrderView, refundableAmount: number) => void;
+    onCopyOrder?: (merchantOrderId: string) => void;
+}
+
+function OrderRowActionsCell({
+    order,
+    status,
+    refundableAmount,
+    onInitiatePayment,
+    onMissingOrder,
+    onRefund,
+    onCopyOrder,
+}: OrderRowActionsCellProps) {
+    const t = useTranslations('Orders');
+    const tCommon = useTranslations('Common');
+    const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+    const menuOpen = Boolean(anchorEl);
+
+    const actions: OrderRowAction[] = [];
+    if (status === 'PENDING') {
+        actions.push({
+            key: 'payment',
+            label: tCommon('initiate_payment'),
+            icon: <CreditCard size={14} strokeWidth={2} />,
+            onClick: () => onInitiatePayment(order),
+        });
+    }
+    if (status !== 'SUCCESS') {
+        actions.push({
+            key: 'missing',
+            label: t('missing_deal'),
+            icon: <AlertCircle size={14} strokeWidth={2} />,
+            onClick: () => onMissingOrder(order.merchantOrderId),
+        });
+    }
+    if (status === 'SUCCESS' && refundableAmount > 0) {
+        actions.push({
+            key: 'refund',
+            label: t('initiate_refund'),
+            icon: <RotateCcw size={14} strokeWidth={2} />,
+            onClick: () => onRefund(order, refundableAmount),
+            danger: true,
+        });
+    }
+    if (onCopyOrder) {
+        actions.push({
+            key: 'copy',
+            label: t('copy_order'),
+            icon: <Copy size={14} strokeWidth={2} />,
+            onClick: () => onCopyOrder(order.merchantOrderId),
+        });
+    }
+
+    if (actions.length === 0) {
+        return <span className={styles.actionsEmpty}>-</span>;
+    }
+
+    const [primaryAction, ...overflowActions] = actions;
+
+    return (
+        <div className={styles.actionsCell}>
+            <button
+                type="button"
+                className={[
+                    styles.actionLink,
+                    primaryAction.key === 'payment' ? styles.actionLinkPrimary : '',
+                    primaryAction.danger ? styles.actionLinkDanger : '',
+                ]
+                    .filter(Boolean)
+                    .join(' ')}
+                onClick={primaryAction.onClick}
+            >
+                {primaryAction.label}
+            </button>
+            {overflowActions.length > 0 && (
+                <>
+                    <button
+                        type="button"
+                        className={styles.moreButton}
+                        aria-label={tCommon('actions')}
+                        onClick={(e) => setAnchorEl(e.currentTarget)}
+                    >
+                        <MoreHorizontal size={16} strokeWidth={2} />
+                    </button>
+                    <Menu
+                        anchorEl={anchorEl}
+                        open={menuOpen}
+                        onClose={() => setAnchorEl(null)}
+                        anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+                        transformOrigin={{ vertical: "top", horizontal: "right" }}
+                        slotProps={{
+                            paper: {
+                                sx: {
+                                    mt: 0.5,
+                                    minWidth: 140,
+                                    borderRadius: "8px",
+                                    boxShadow: "0 4px 16px rgba(15, 23, 42, 0.12)",
+                                    border: "1px solid #eef2f6",
+                                },
+                            },
+                        }}
+                    >
+                        {overflowActions.map((action) => (
+                            <MenuItem
+                                key={action.key}
+                                onClick={() => {
+                                    setAnchorEl(null);
+                                    action.onClick();
+                                }}
+                                sx={{
+                                    fontSize: 13,
+                                    py: 0.75,
+                                    px: 1.5,
+                                    gap: 1,
+                                    color: action.danger ? "error.main" : "text.primary",
+                                    "&:hover": {
+                                        bgcolor: action.danger ? "#fef2f2" : "#f1f5f9",
+                                    },
+                                }}
+                            >
+                                {action.icon}
+                                <span>{action.label}</span>
+                            </MenuItem>
+                        ))}
+                    </Menu>
+                </>
+            )}
+        </div>
+    );
+}
 
 interface OrderListTableProps {
     orders: OrderView[];
@@ -79,6 +226,7 @@ export default function OrderListTable({
     const t = useTranslations('Orders');
     const tCommon = useTranslations('Common');
     const locale = useLocale();
+    const { enqueueSnackbar } = useSnackbar();
 
     const handleAuthError = (err: unknown) => {
         if (err instanceof ApiError && err.status === 401 && err.code !== 'MISSING_ACCESS_TOKEN') {
@@ -136,7 +284,9 @@ export default function OrderListTable({
         } catch (err) {
             console.error(err);
             handleAuthError(err);
-            message.error(err instanceof Error ? err.message : t("action_feedback.payment_failed"));
+            enqueueSnackbar(err instanceof Error ? err.message : t("action_feedback.payment_failed"), {
+                variant: "error",
+            });
         }
     };
 
@@ -152,7 +302,9 @@ export default function OrderListTable({
         } catch (err) {
             console.error(err);
             handleAuthError(err);
-            message.error(err instanceof Error ? err.message : t("action_feedback.details_failed"));
+            enqueueSnackbar(err instanceof Error ? err.message : t("action_feedback.details_failed"), {
+                variant: "error",
+            });
             setShowDetailModal(false);
         } finally {
             setLoadingDetail(false);
@@ -169,7 +321,9 @@ export default function OrderListTable({
         } catch (err) {
             console.error(err);
             handleAuthError(err);
-            message.error(err instanceof Error ? err.message : t("action_feedback.missing_failed"));
+            enqueueSnackbar(err instanceof Error ? err.message : t("action_feedback.missing_failed"), {
+                variant: "error",
+            });
             setShowMissingModal(false);
         } finally {
             setLoadingMissing(false);
@@ -213,185 +367,7 @@ export default function OrderListTable({
         [subMerchants],
     );
 
-    const columns: ColumnsType<OrderView> = [
-        {
-            title: t('headers.order_id'),
-            width: 300,
-            render: (_, order) => (
-                <OrderIdCell
-                    merchantOrderId={order.merchantOrderId}
-                    tradeNo={order.tradeNo}
-                    onOpenDetails={() => handleViewDetails(order)}
-                />
-            ),
-        },
-        {
-            title: t('headers.order_type'),
-            width: 120,
-            render: (_, order) => {
-                const label = orderTypeLabel(order.orderType);
-                return label === '-' ? '-' : (
-                    <span className={styles.typeBadge}>{label}</span>
-                );
-            },
-        },
-        {
-            title: t('headers.sub_merchant_location'),
-            width: 190,
-            render: (_, order) => (
-                <>
-                    <span className={styles.merchantPrimary}>
-                        {order.subMerchantId
-                            ? subMerchantNameById.get(order.subMerchantId) || order.subMerchantId
-                            : '-'}
-                    </span>
-                    <span className={styles.merchantSecondary}>
-                        {order.locationId
-                            ? locationNameById.get(order.locationId) || order.locationId
-                            : '-'}
-                    </span>
-                </>
-            ),
-        },
-        {
-            title: t('headers.payment_channel'),
-            dataIndex: 'channelCode',
-            width: 130,
-            render: (channelCode) =>
-                channelCode ? (
-                    <span className={styles.channelBadge}>{channelCode}</span>
-                ) : (
-                    '-'
-                ),
-        },
-        {
-            title: t('headers.amount'),
-            width: 140,
-            align: 'right',
-            render: (_, order) => (
-                <AmountCell 
-                    amount={order.totalAmount?.amount ?? 0}
-                    currency={order.totalAmount?.currency ?? ''}
-                    alignRight
-                />
-            ),
-        },
-        {
-            title: t('headers.status'),
-            width: 130,
-            render: (_, order) => {
-                const status = getOrderStatus(order);
-                const label = ORDER_TRADE_STATUS_OPTIONS.includes(status as any) ? t(`trade_status.${status}` as any) : status;
-                return <StatusBadge label={label} tone={mapStatusToTone(status)} />;
-            },
-        },
-        {
-            title: t('headers.created_at'),
-            width: 160,
-            render: (_, order) => <DateTimeCell value={order.createdAt} />
-        },
-        {
-            title: tCommon('actions'),
-            key: 'actions',
-            align: 'right',
-            fixed: 'right',
-            width: 140,
-            render: (_, order) => {
-                const status = getOrderStatus(order);
-                const refundableAmount = getRefundableAmount(order);
-                const actions: OrderRowAction[] = [];
-
-                if (status === 'PENDING') {
-                    actions.push({
-                        key: 'payment',
-                        label: tCommon('initiate_payment'),
-                        icon: <CreditCard size={14} strokeWidth={2} />,
-                        onClick: () => handleInitiatePayment(order),
-                    });
-                }
-                if (status !== 'SUCCESS') {
-                    actions.push({
-                        key: 'missing',
-                        label: t('missing_deal'),
-                        icon: <AlertCircle size={14} strokeWidth={2} />,
-                        onClick: () => handleMissingOrder(order.merchantOrderId),
-                    });
-                }
-                if (status === 'SUCCESS' && refundableAmount > 0) {
-                    actions.push({
-                        key: 'refund',
-                        label: t('initiate_refund'),
-                        icon: <RotateCcw size={14} strokeWidth={2} />,
-                        onClick: () => {
-                            setRefundInitialData({
-                                tradeNo: order.tradeNo,
-                                amount: refundableAmount,
-                                currency: order.totalAmount?.currency,
-                            });
-                            setShowRefundModal(true);
-                        },
-                        danger: true,
-                    });
-                }
-                if (onCopyOrder) {
-                    actions.push({
-                        key: 'copy',
-                        label: t('copy_order'),
-                        icon: <Copy size={14} strokeWidth={2} />,
-                        onClick: () => onCopyOrder(order.merchantOrderId),
-                    });
-                }
-
-                if (actions.length === 0) {
-                    return <span className={styles.actionsEmpty}>-</span>;
-                }
-
-                const [primaryAction, ...overflowActions] = actions;
-                const overflowMenu: MenuProps = {
-                    items: overflowActions.map((action) => ({
-                        key: action.key,
-                        label: action.label,
-                        icon: action.icon,
-                        danger: action.danger,
-                    })),
-                    onClick: ({ key }) => {
-                        overflowActions.find((action) => action.key === key)?.onClick();
-                    },
-                };
-
-                return (
-                    <div className={styles.actionsCell}>
-                        <button
-                            type="button"
-                            className={[
-                                styles.actionLink,
-                                primaryAction.key === 'payment' ? styles.actionLinkPrimary : '',
-                                primaryAction.danger ? styles.actionLinkDanger : '',
-                            ]
-                                .filter(Boolean)
-                                .join(' ')}
-                            onClick={primaryAction.onClick}
-                        >
-                            {primaryAction.label}
-                        </button>
-                        {overflowActions.length > 0 ? (
-                            <Dropdown menu={overflowMenu} trigger={['click']}>
-                                <button
-                                    type="button"
-                                    className={styles.moreButton}
-                                    aria-label={tCommon('actions')}
-                                >
-                                    <MoreHorizontal size={16} strokeWidth={2} />
-                                </button>
-                            </Dropdown>
-                        ) : null}
-                    </div>
-                );
-            },
-        },
-    ];
-
-    const { tableLoading, locale: tableLocale, refreshBanner } = useDashboardTableFeedback({
+    const { tableLoading, emptyComponent, refreshBanner } = useDashboardTableFeedback({
         loading,
         isRefreshing,
         error,
@@ -402,26 +378,140 @@ export default function OrderListTable({
 
     return (
         <>
-            <Space direction="vertical" size={12} style={{ width: '100%' }}>
+            <Box sx={{ width: '100%', position: 'relative' }}>
                 {refreshBanner}
-                <Table<OrderView>
-                    rowKey="merchantOrderId"
-                    size="middle"
-                    columns={columns}
-                    dataSource={orders}
-                    loading={tableLoading}
-                    scroll={{ x: 1340 }}
-                    locale={tableLocale}
-                    pagination={{
-                        current: page + 1,
-                        pageSize,
-                        total,
-                        showSizeChanger: true,
-                        showTotal: (count) => tCommon('total', { count }),
-                        onChange: onPageChange,
+                <TableContainer
+                    component={Paper}
+                    elevation={0}
+                    sx={{
+                        borderRadius: "8px",
+                        border: "1px solid #eef2f6",
+                        overflowX: "auto",
                     }}
-                />
-            </Space>
+                >
+                    <Table sx={{ minWidth: 1200 }} size="medium">
+                        <TableHead>
+                            <TableRow>
+                                <TableCell sx={{ width: 280 }}>{t('headers.order_id')}</TableCell>
+                                <TableCell sx={{ width: 120 }}>{t('headers.order_type')}</TableCell>
+                                <TableCell sx={{ width: 190 }}>{t('headers.sub_merchant_location')}</TableCell>
+                                <TableCell sx={{ width: 130 }}>{t('headers.payment_channel')}</TableCell>
+                                <TableCell align="right" sx={{ width: 140 }}>{t('headers.amount')}</TableCell>
+                                <TableCell sx={{ width: 130 }}>{t('headers.status')}</TableCell>
+                                <TableCell sx={{ width: 160 }}>{t('headers.created_at')}</TableCell>
+                                <TableCell align="right" sx={{ width: 140 }}>{tCommon('actions')}</TableCell>
+                            </TableRow>
+                        </TableHead>
+                        <TableBody>
+                            {tableLoading && orders.length === 0 ? (
+                                <TableRow>
+                                    <TableCell colSpan={8} align="center" sx={{ py: 8 }}>
+                                        <CircularProgress size={32} />
+                                    </TableCell>
+                                </TableRow>
+                            ) : orders.length === 0 ? (
+                                <TableRow>
+                                    <TableCell colSpan={8} align="center" sx={{ py: 6 }}>
+                                        {emptyComponent}
+                                    </TableCell>
+                                </TableRow>
+                            ) : (
+                                orders.map((order) => {
+                                    const status = getOrderStatus(order);
+                                    const refundableAmount = getRefundableAmount(order);
+                                    const label = ORDER_TRADE_STATUS_OPTIONS.includes(status as any)
+                                        ? t(`trade_status.${status}` as any)
+                                        : status;
+
+                                    return (
+                                        <TableRow key={order.merchantOrderId} hover>
+                                            <TableCell>
+                                                <OrderIdCell
+                                                    merchantOrderId={order.merchantOrderId}
+                                                    tradeNo={order.tradeNo}
+                                                    onOpenDetails={() => handleViewDetails(order)}
+                                                />
+                                            </TableCell>
+                                            <TableCell>
+                                                {orderTypeLabel(order.orderType) === '-' ? '-' : (
+                                                    <span className={styles.typeBadge}>
+                                                        {orderTypeLabel(order.orderType)}
+                                                    </span>
+                                                )}
+                                            </TableCell>
+                                            <TableCell>
+                                                <span className={styles.merchantPrimary}>
+                                                    {order.subMerchantId
+                                                        ? subMerchantNameById.get(order.subMerchantId) || order.subMerchantId
+                                                        : '-'}
+                                                </span>
+                                                <span className={styles.merchantSecondary}>
+                                                    {order.locationId
+                                                        ? locationNameById.get(order.locationId) || order.locationId
+                                                        : '-'}
+                                                </span>
+                                            </TableCell>
+                                            <TableCell>
+                                                {order.channelCode ? (
+                                                    <span className={styles.channelBadge}>{order.channelCode}</span>
+                                                ) : (
+                                                    '-'
+                                                )}
+                                            </TableCell>
+                                            <TableCell align="right">
+                                                <AmountCell
+                                                    amount={order.totalAmount?.amount ?? 0}
+                                                    currency={order.totalAmount?.currency ?? ''}
+                                                    alignRight
+                                                />
+                                            </TableCell>
+                                            <TableCell>
+                                                <StatusBadge label={label} tone={mapStatusToTone(status)} />
+                                            </TableCell>
+                                            <TableCell>
+                                                <DateTimeCell value={order.createdAt} />
+                                            </TableCell>
+                                            <TableCell align="right">
+                                                <OrderRowActionsCell
+                                                    order={order}
+                                                    status={status}
+                                                    refundableAmount={refundableAmount}
+                                                    onInitiatePayment={handleInitiatePayment}
+                                                    onMissingOrder={handleMissingOrder}
+                                                    onRefund={(ord, amt) => {
+                                                        setRefundInitialData({
+                                                            tradeNo: ord.tradeNo,
+                                                            amount: amt,
+                                                            currency: ord.totalAmount?.currency,
+                                                        });
+                                                        setShowRefundModal(true);
+                                                    }}
+                                                    onCopyOrder={onCopyOrder}
+                                                />
+                                            </TableCell>
+                                        </TableRow>
+                                    );
+                                })
+                            )}
+                        </TableBody>
+                    </Table>
+                    {total > 0 && (
+                        <TablePagination
+                            component="div"
+                            count={total}
+                            page={page}
+                            rowsPerPage={pageSize}
+                            rowsPerPageOptions={[10, 20, 50, 100]}
+                            onPageChange={(_, newPage) => onPageChange?.(newPage, pageSize)}
+                            onRowsPerPageChange={(e) => onPageChange?.(0, parseInt(e.target.value, 10))}
+                            labelRowsPerPage={tCommon('pagination.rows_per_page')}
+                            labelDisplayedRows={({ from, to, count }) =>
+                                `${from}–${to} / ${count !== -1 ? count : `more than ${to}`}`
+                            }
+                        />
+                    )}
+                </TableContainer>
+            </Box>
 
             <PaymentModal
                 isOpen={showPaymentModal}

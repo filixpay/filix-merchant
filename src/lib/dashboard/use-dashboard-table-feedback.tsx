@@ -1,7 +1,6 @@
 "use client";
 
-import { Alert, Button } from "antd";
-import type { TableProps } from "antd/es/table";
+import { Alert, Button } from "@mui/material";
 import { useMemo } from "react";
 import { useTranslations } from "next-intl";
 import DashboardTableEmpty from "@/components/layout/DashboardTableEmpty";
@@ -38,36 +37,41 @@ export function useDashboardTableFeedback({
     const tableLoading = loading || isRefreshing;
     const resolvedErrorDescription = errorDescription ?? tCommon("error");
 
-    const locale: TableProps["locale"] = useMemo(
+    const emptyComponent = useMemo(() => {
+        if (tableState === "error") {
+            return (
+                <DashboardTableError
+                    description={resolvedErrorDescription}
+                    onRetry={onRetry}
+                />
+            );
+        }
+        return <DashboardTableEmpty description={emptyDescription} />;
+    }, [tableState, resolvedErrorDescription, emptyDescription, onRetry]);
+
+    const locale = useMemo(
         () => ({
-            emptyText:
-                tableState === "error" ? (
-                    <DashboardTableError
-                        description={resolvedErrorDescription}
-                        onRetry={onRetry}
-                    />
-                ) : (
-                    <DashboardTableEmpty description={emptyDescription} />
-                ),
+            emptyText: emptyComponent,
         }),
-        [tableState, resolvedErrorDescription, emptyDescription, onRetry],
+        [emptyComponent],
     );
 
     const refreshBanner =
         tableState === "refresh-error" ? (
             <Alert
-                type="warning"
-                showIcon
-                message={tCommon("error")}
+                severity="warning"
                 action={
                     onRetry ? (
-                        <Button size="small" onClick={onRetry}>
+                        <Button size="small" onClick={onRetry} color="inherit">
                             {tCommon("refresh")}
                         </Button>
                     ) : null
                 }
-            />
+                sx={{ mb: 1.5 }}
+            >
+                {tCommon("error")}
+            </Alert>
         ) : null;
 
-    return { tableState, tableLoading, locale, refreshBanner };
+    return { tableState, tableLoading, locale, emptyComponent, refreshBanner };
 }
