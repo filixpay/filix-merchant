@@ -32,6 +32,7 @@
     "@mui/material": "^9.5.0",
     "@mui/material-nextjs": "^9.5.0",
     "@mui/system": "^9.5.0",
+    "@mui/x-data-grid": "^9.17.0",
     "@mui/x-date-pickers": "^9.17.0",
     "@nine-thirty-five/material-symbols-react": "^2.2.1",
     "@swc/helpers": "^0.5.20",
