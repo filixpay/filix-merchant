@@ -1,7 +1,9 @@
 name: CI
 
-# Quality gate for pull requests only. Main-branch releases use docker-publish.yml.
+# Quality gate for pull requests and pushes to main. Main-branch releases use docker-publish.yml.
 on:
+  push:
+    branches: [main]
   pull_request:
     branches: [main]
     paths-ignore:

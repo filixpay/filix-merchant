@@ -1,4 +1,5 @@
 "use client";
+// CI trigger: added comment for workflow test
 
 // Replace AntD Table with MUI DataGrid
 import { DataGrid, GridColDef, GridRenderCellParams } from "@mui/x-data-grid";
