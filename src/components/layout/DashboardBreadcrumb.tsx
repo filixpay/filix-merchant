@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { Breadcrumbs, Typography } from "@mui/material";
 import type { DashboardBreadcrumbItem } from "./dashboard-breadcrumb";
 import styles from "./layout.module.css";
 
@@ -18,27 +19,41 @@ export default function DashboardBreadcrumb({ items }: DashboardBreadcrumbProps)
 
     return (
         <nav className={styles.breadcrumb} aria-label="Breadcrumb">
-            <ol className={styles.breadcrumbList}>
-                {ancestors.map((item) => (
-                    <li key={item.key} className={styles.breadcrumbItem}>
-                        {item.href ? (
-                            <Link href={item.href} className={styles.breadcrumbLink}>
-                                {item.label}
-                            </Link>
-                        ) : (
-                            <span className={styles.breadcrumbMuted}>{item.label}</span>
-                        )}
-                        <span className={styles.breadcrumbSeparator} aria-hidden>
-                            /
+            <Breadcrumbs
+                separator={<span className={styles.breadcrumbSeparator} aria-hidden>/</span>}
+                className={styles.breadcrumbList}
+                sx={{
+                    fontSize: 13,
+                    "& .MuiBreadcrumbs-separator": {
+                        mx: 0.75,
+                        color: "#94a3b8",
+                    },
+                }}
+            >
+                {ancestors.map((item) =>
+                    item.href ? (
+                        <Link key={item.key} href={item.href} className={styles.breadcrumbLink}>
+                            {item.label}
+                        </Link>
+                    ) : (
+                        <span key={item.key} className={styles.breadcrumbMuted}>
+                            {item.label}
                         </span>
-                    </li>
-                ))}
-                <li className={`${styles.breadcrumbItem} ${styles.breadcrumbCurrentItem}`}>
-                    <span className={styles.breadcrumbCurrent} aria-current="page">
-                        {current.label}
-                    </span>
-                </li>
-            </ol>
+                    ),
+                )}
+                <Typography
+                    component="span"
+                    className={styles.breadcrumbCurrent}
+                    sx={{
+                        fontSize: 13,
+                        fontWeight: 500,
+                        color: "text.primary",
+                    }}
+                    aria-current="page"
+                >
+                    {current.label}
+                </Typography>
+            </Breadcrumbs>
             <span className={styles.breadcrumbMobileCurrent} aria-current="page">
                 {current.label}
             </span>

@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "antd";
+import { IconButton } from "@mui/material";
 import { Menu as MenuIcon } from "lucide-react";
 import { useMemo } from "react";
 import { usePathname } from "next/navigation";
@@ -39,13 +39,14 @@ export default function DashboardHeader({
     return (
         <header className={styles.header}>
             <div className={styles.headerLeft}>
-                <Button
+                <IconButton
                     className={styles.mobileToggle}
-                    type="text"
-                    icon={<MenuIcon size={20} strokeWidth={1.5} className={styles.headerIcon} />}
                     onClick={onMobileMenuToggle}
                     aria-label="Toggle menu"
-                />
+                    size="small"
+                >
+                    <MenuIcon size={20} strokeWidth={1.5} className={styles.headerIcon} />
+                </IconButton>
                 <DashboardBreadcrumb items={breadcrumbItems} />
             </div>
 
