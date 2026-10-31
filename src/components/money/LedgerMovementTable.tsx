@@ -81,7 +81,7 @@ export default function LedgerMovementTable({
             ) : (
               <ArrowUpRight size={12} strokeWidth={2} aria-hidden />
             )}
-            {presentLedgerMovementLabel(t, t.has, "businessTypes", value as string)}
+            {presentLedgerMovementLabel(t, t.has, "businessTypes", (value ?? "") as string)}
           </span>
         );
       },
@@ -91,7 +91,7 @@ export default function LedgerMovementTable({
       headerName: t("headers.journal"),
       width: 100,
       renderCell: (params: GridRenderCellParams<any, MerchantLedgerMovementRow>) => (
-        <span className={styles.journalCell}>{params.value || "—"}</span>
+        <span className={styles.journalCell}>{(params.value as unknown as string) || "—"}</span>
       ),
     },
     {
@@ -143,11 +143,11 @@ export default function LedgerMovementTable({
       rows={rows}
       columns={columns}
       loading={loading}
-      pageSize={pageSize}
+      paginationModel={{ page, pageSize }}
       paginationMode="server"
       rowCount={total}
       page={page}
-      onPageChange={(newPage) => onPageChange?.(newPage)}
+      onPaginationModelChange={(model) => onPageChange?.(model.page)}
       hideFooterPagination={hideFooterPagination}
       autoHeight
       // Show custom empty text when no rows
