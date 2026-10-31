@@ -6,6 +6,14 @@ import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { App, ConfigProvider } from "antd";
 import type { ThemeConfig } from "antd";
 import { SessionProvider, useSession } from "next-auth/react";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
+import { ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import { SnackbarProvider } from "notistack";
+import { LocalizationProvider } from "@mui/x-date-pickers";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import "dayjs/locale/zh-cn";
+import { muiTheme } from "@/lib/theme/mui-theme";
 import { createAppQueryClient } from "@/lib/query/client";
 
 const dashboardTheme: ThemeConfig = {
@@ -122,20 +130,29 @@ export default function Providers({ children }: { children: React.ReactNode }) {
     const [queryClient] = useState(createAppQueryClient);
 
     return (
-        <SessionProvider
-            basePath="/auth-api/auth"
-            refetchInterval={5 * 60}
-            refetchOnWindowFocus={false}
-        >
-            <QueryClientProvider client={queryClient}>
-                <QueryCacheOnSignOut>
-                    <AntdRegistry>
-                        <ConfigProvider theme={dashboardTheme}>
-                            <App>{children}</App>
-                        </ConfigProvider>
-                    </AntdRegistry>
-                </QueryCacheOnSignOut>
-            </QueryClientProvider>
-        </SessionProvider>
+        <AppRouterCacheProvider>
+            <ThemeProvider theme={muiTheme}>
+                <CssBaseline />
+                <LocalizationProvider dateAdapter={AdapterDayjs} adapterLocale="zh-cn">
+                    <SnackbarProvider maxSnack={3}>
+                        <SessionProvider
+                            basePath="/auth-api/auth"
+                            refetchInterval={5 * 60}
+                            refetchOnWindowFocus={false}
+                        >
+                            <QueryClientProvider client={queryClient}>
+                                <QueryCacheOnSignOut>
+                                    <AntdRegistry>
+                                        <ConfigProvider theme={dashboardTheme}>
+                                            <App>{children}</App>
+                                        </ConfigProvider>
+                                    </AntdRegistry>
+                                </QueryCacheOnSignOut>
+                            </QueryClientProvider>
+                        </SessionProvider>
+                    </SnackbarProvider>
+                </LocalizationProvider>
+            </ThemeProvider>
+        </AppRouterCacheProvider>
     );
 }
