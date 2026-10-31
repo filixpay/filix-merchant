@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Skeleton } from "antd";
+import { Skeleton } from "@mui/material";
 import { useTranslations } from "next-intl";
 import styles from "./OrganizationSwitcher.module.css";
 import { BuildingStorefrontIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
@@ -57,7 +57,7 @@ export default function MerchantBusinessSwitcher({
             <div className={styles.container}>
                 <div className={styles.label}>{t("current_account")}</div>
                 <div className={styles.summarySkeleton}>
-                    <Skeleton active paragraph={{ rows: 1 }} title={false} />
+                    <Skeleton variant="rounded" width="100%" height={38} sx={{ borderRadius: "8px" }} />
                 </div>
             </div>
         );
