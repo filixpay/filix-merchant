@@ -4,7 +4,17 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import { Alert, Avatar, Button, Layout, Menu, Space, Spin } from "antd";
+import {
+    Alert,
+    Avatar,
+    Box,
+    Button,
+    CircularProgress,
+    Drawer,
+    IconButton,
+    Stack,
+} from "@mui/material";
+import { Menu } from "antd";
 import { LogOut, Menu as MenuIcon } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -26,8 +36,6 @@ import {
 import styles from "./layout.module.css";
 import SidebarCollapseToggle from "./SidebarCollapseToggle";
 import { sanitizeCallbackUrl } from "@/lib/auth/dashboard-route";
-
-const { Sider, Header, Content } = Layout;
 
 export default function EnterpriseDashboardLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
@@ -119,9 +127,20 @@ export default function EnterpriseDashboardLayout({ children }: { children: Reac
 
     if (status === "loading" && !session) {
         return (
-            <div className={styles.authGate}>
-                <Spin size="large" tip={tCommon("loading")} />
-            </div>
+            <Box
+                className={styles.authGate}
+                sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 2,
+                    minHeight: "100vh",
+                }}
+            >
+                <CircularProgress size={36} />
+                <span style={{ fontSize: 13, color: "#64748b" }}>{tCommon("loading")}</span>
+            </Box>
         );
     }
 
@@ -130,21 +149,71 @@ export default function EnterpriseDashboardLayout({ children }: { children: Reac
     }
 
     return (
-        <Layout className={`${styles.shell} dashboard-typography`} hasSider>
-            <div
-                className={`${styles.mobileOverlay} ${isMobileMenuOpen ? styles.mobileOverlayOpen : ""}`}
-                onClick={() => setIsMobileMenuOpen(false)}
-            />
-
-            <Sider
-                className={`${styles.sider} dashboard-shell-sider ${isMobileMenuOpen ? styles.siderOpen : ""}`}
-                width={256}
-                collapsedWidth={64}
-                collapsed={isCollapsed}
-                trigger={null}
+        <Box
+            className={`${styles.shell} dashboard-typography`}
+            sx={{ display: "flex", minHeight: "100vh", bgcolor: "#ffffff" }}
+        >
+            {/* Mobile Drawer */}
+            <Drawer
+                variant="temporary"
+                open={isMobileMenuOpen}
+                onClose={() => setIsMobileMenuOpen(false)}
+                ModalProps={{ keepMounted: true }}
+                sx={{
+                    display: { xs: "block", md: "none" },
+                    "& .MuiDrawer-paper": {
+                        width: 256,
+                        boxSizing: "border-box",
+                        borderRight: "1px solid #e2e8f0",
+                        bgcolor: "#ffffff",
+                    },
+                }}
             >
                 <div className={styles.siderScroll}>
-                    {(!isCollapsed || isMobileMenuOpen) && accessToken && (
+                    {accessToken && (
+                        <EnterpriseSwitcher
+                            variant="sidebar"
+                            enterprises={enterprises}
+                            selectedEnterpriseCode={
+                                activeEnterprise
+                                    ? enterpriseCodeToString(activeEnterprise.enterpriseCode)
+                                    : selectedEnterpriseCode
+                            }
+                            loading={enterprisesLoading}
+                            onSelect={handleEnterpriseSelect}
+                        />
+                    )}
+                    <Menu
+                        mode="inline"
+                        inlineCollapsed={false}
+                        selectedKeys={[selectedKey]}
+                        items={menuItems}
+                        className={styles.menu}
+                    />
+                </div>
+            </Drawer>
+
+            {/* Desktop permanent Drawer */}
+            <Drawer
+                variant="permanent"
+                className="dashboard-shell-sider"
+                sx={{
+                    display: { xs: "none", md: "block" },
+                    width: isCollapsed ? 64 : 256,
+                    flexShrink: 0,
+                    "& .MuiDrawer-paper": {
+                        width: isCollapsed ? 64 : 256,
+                        boxSizing: "border-box",
+                        border: "none",
+                        borderRight: "1px solid #e2e8f0",
+                        transition: "width 0.2s ease",
+                        overflowX: "hidden",
+                        bgcolor: "#ffffff",
+                    },
+                }}
+            >
+                <div className={styles.siderScroll}>
+                    {!isCollapsed && accessToken && (
                         <EnterpriseSwitcher
                             variant="sidebar"
                             enterprises={enterprises}
@@ -165,23 +234,35 @@ export default function EnterpriseDashboardLayout({ children }: { children: Reac
                         className={styles.menu}
                     />
                 </div>
-            </Sider>
+            </Drawer>
 
             <SidebarCollapseToggle
                 collapsed={isCollapsed}
                 onToggle={() => setIsCollapsed((value) => !value)}
             />
 
-            <Layout className={`${styles.mainLayout} dashboard-shell-main`}>
-                <Header className={styles.header}>
+            <Box
+                component="div"
+                className={`${styles.mainLayout} dashboard-shell-main`}
+                sx={{
+                    flexGrow: 1,
+                    minWidth: 0,
+                    display: "flex",
+                    flexDirection: "column",
+                    minHeight: "100vh",
+                    bgcolor: "#ffffff",
+                }}
+            >
+                <Box component="header" className={styles.header}>
                     <div className={styles.headerLeft}>
-                        <Button
+                        <IconButton
                             className={styles.mobileToggle}
-                            type="text"
-                            icon={<MenuIcon size={20} strokeWidth={1.5} className={styles.headerIcon} />}
                             onClick={() => setIsMobileMenuOpen((open) => !open)}
                             aria-label="Toggle menu"
-                        />
+                            size="small"
+                        >
+                            <MenuIcon size={20} strokeWidth={1.5} className={styles.headerIcon} />
+                        </IconButton>
                         {activeEnterprise && (
                             <div className={styles.merchantInfo}>
                                 <div className={styles.merchantName}>{activeEnterprise.name}</div>
@@ -194,37 +275,50 @@ export default function EnterpriseDashboardLayout({ children }: { children: Reac
                         )}
                     </div>
                     <div className={styles.headerRight}>
-                        <Space className={styles.headerActions} size={12}>
+                        <Stack direction="row" spacing={1.5} sx={{ alignItems: "center" }} className={styles.headerActions}>
                             <LanguageSwitcher />
-                            <Avatar className={styles.avatar}>
+                            <Avatar
+                                sx={{
+                                    width: 32,
+                                    height: 32,
+                                    bgcolor: "primary.main",
+                                    fontSize: 14,
+                                    fontWeight: 600,
+                                }}
+                            >
                                 {session?.user?.name?.[0] || "E"}
                             </Avatar>
                             <Button
-                                type="text"
-                                icon={<LogOut size={16} strokeWidth={1.5} />}
+                                variant="text"
+                                startIcon={<LogOut size={16} strokeWidth={1.5} />}
                                 onClick={handleLogout}
+                                sx={{
+                                    color: "text.secondary",
+                                    fontSize: 13,
+                                    "&:hover": { color: "text.primary" },
+                                }}
                             >
                                 {t("logout")}
                             </Button>
-                        </Space>
+                        </Stack>
                     </div>
-                </Header>
+                </Box>
 
-                <Content className={styles.content}>
+                <Box component="main" className={styles.content} sx={{ flexGrow: 1, overflow: "auto" }}>
                     {!selectedEnterpriseCode &&
                         enterprises.length === 0 &&
                         !enterprisesLoading && (
                             <Alert
-                                type="info"
-                                showIcon
-                                message={tEnterprise("no_enterprises_title")}
-                                description={tEnterprise("no_enterprises_desc")}
-                                style={{ marginBottom: 16 }}
-                            />
+                                severity="info"
+                                sx={{ mb: 2 }}
+                            >
+                                <strong>{tEnterprise("no_enterprises_title")}</strong>:{" "}
+                                {tEnterprise("no_enterprises_desc")}
+                            </Alert>
                         )}
                     {children}
-                </Content>
-            </Layout>
-        </Layout>
+                </Box>
+            </Box>
+        </Box>
     );
 }

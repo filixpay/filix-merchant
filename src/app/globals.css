@@ -306,21 +306,6 @@ html[data-sidebar-collapsed="1"] .dashboard-shell-main {
   margin-left: 64px;
 }
 
-.dashboard-shell-sider.ant-layout-sider {
-  flex: 0 0 256px !important;
-  max-width: 256px !important;
-  min-width: 256px !important;
-  width: 256px !important;
-}
-
-html[data-sidebar-collapsed="1"] .dashboard-shell-sider.ant-layout-sider,
-.dashboard-shell-sider.ant-layout-sider-collapsed {
-  flex: 0 0 64px !important;
-  max-width: 64px !important;
-  min-width: 64px !important;
-  width: 64px !important;
-}
-
 @media (max-width: 768px) {
   html[data-sidebar-collapsed="0"] .dashboard-shell-main,
   html[data-sidebar-collapsed="1"] .dashboard-shell-main {

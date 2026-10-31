@@ -3,11 +3,10 @@
 import { usePathname, useRouter } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import { Alert, Layout, Menu, Spin } from "antd";
+import { Alert, Box, CircularProgress, Drawer } from "@mui/material";
+import { Menu } from "antd";
 import { useTranslations, useLocale } from "next-intl";
 import WorkspaceSwitcher from "./WorkspaceSwitcher";
-/** @deprecated Legacy merchant/group switcher — kept for transition; use MerchantBusinessSwitcher */
-import IdentitySwitcher from "./IdentitySwitcher";
 import { clearStoredSelectedMerchantCode } from "@/lib/merchant/selected-merchant-code";
 import {
     buildDashboardMenuModel,
@@ -18,7 +17,6 @@ import {
 } from "./dashboard-menu";
 import { getRouteDashboardContentMode, resolveDashboardContentMode } from "./dashboard-content-mode";
 import {
-    getStoredSelectedMerchantId,
     readSidebarCollapsed,
     syncSidebarCollapsedDom,
 } from "./merchant-shell";
@@ -44,8 +42,6 @@ import { useDashboardContentMode } from "./dashboard-content-mode-context";
 import SidebarCollapseToggle from "./SidebarCollapseToggle";
 import DashboardHeader from "./DashboardHeader";
 import SupportFloatingEntry from "@/components/support/SupportFloatingEntry";
-
-const { Sider, Content } = Layout;
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
@@ -94,10 +90,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         : null;
 
     const {
-        merchants,
-        merchantsLoading,
         activeMerchant,
-        reloadMerchants,
         selectMerchant,
     } = useMerchantCapabilities(accessToken, businessAccountCode);
 
@@ -135,14 +128,6 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             router.push(`/${locale}/dashboard`);
         },
         [locale, router, selectBusinessAccount],
-    );
-
-    const handleMerchantSelect = useCallback(
-        (merchant: Parameters<typeof selectMerchant>[0]) => {
-            selectMerchant(merchant);
-            router.push(`/${locale}/dashboard`);
-        },
-        [locale, router, selectMerchant],
     );
 
     const menuModel = useMemo(
@@ -199,9 +184,20 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
     if (status === "loading" && !session) {
         return (
-            <div className={styles.authGate}>
-                <Spin size="large" tip={tCommon("loading")} />
-            </div>
+            <Box
+                className={styles.authGate}
+                sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 2,
+                    minHeight: "100vh",
+                }}
+            >
+                <CircularProgress size={36} />
+                <span style={{ fontSize: 13, color: "#64748b" }}>{tCommon("loading")}</span>
+            </Box>
         );
     }
 
@@ -210,21 +206,28 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     }
 
     return (
-        <Layout className={`${styles.shell} dashboard-typography`} hasSider>
-            <div
-                className={`${styles.mobileOverlay} ${isMobileMenuOpen ? styles.mobileOverlayOpen : ""}`}
-                onClick={() => setIsMobileMenuOpen(false)}
-            />
-
-            <Sider
-                className={`${styles.sider} dashboard-shell-sider ${isMobileMenuOpen ? styles.siderOpen : ""}`}
-                width={256}
-                collapsedWidth={64}
-                collapsed={isCollapsed}
-                trigger={null}
+        <Box
+            className={`${styles.shell} dashboard-typography`}
+            sx={{ display: "flex", minHeight: "100vh", bgcolor: "#ffffff" }}
+        >
+            {/* Mobile temporary Drawer */}
+            <Drawer
+                variant="temporary"
+                open={isMobileMenuOpen}
+                onClose={() => setIsMobileMenuOpen(false)}
+                ModalProps={{ keepMounted: true }}
+                sx={{
+                    display: { xs: "block", md: "none" },
+                    "& .MuiDrawer-paper": {
+                        width: 256,
+                        boxSizing: "border-box",
+                        borderRight: "1px solid #e2e8f0",
+                        bgcolor: "#ffffff",
+                    },
+                }}
             >
                 <div className={styles.siderScroll}>
-                    {(!isCollapsed || isMobileMenuOpen) && accessToken && (
+                    {accessToken && (
                         <WorkspaceSwitcher
                             organization={activeOrganization}
                             organizations={organizations}
@@ -237,15 +240,58 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                             canAccessEnterprisePortal={canAccessEnterprisePortal}
                         />
                     )}
-                    {false && (!isCollapsed || isMobileMenuOpen) && accessToken && (
-                        <IdentitySwitcher
-                            variant="sidebar"
-                            merchants={merchants}
-                            selectedMerchantId={activeMerchant?.id ?? getStoredSelectedMerchantId()}
-                            loading={merchantsLoading}
-                            onSelect={handleMerchantSelect}
-                            onMerchantsReload={reloadMerchants}
-                            accessToken={accessToken!}
+                    <Menu
+                        mode="inline"
+                        inlineCollapsed={false}
+                        selectedKeys={[selectedKey]}
+                        openKeys={openKeys}
+                        onOpenChange={setOpenKeys}
+                        items={menuItems.main}
+                        className={styles.menu}
+                    />
+                    {menuItems.footer.length > 0 ? (
+                        <Menu
+                            mode="inline"
+                            inlineCollapsed={false}
+                            selectedKeys={[selectedKey]}
+                            items={menuItems.footer}
+                            className={`${styles.menu} ${styles.menuFooter}`}
+                        />
+                    ) : null}
+                </div>
+            </Drawer>
+
+            {/* Desktop permanent Drawer */}
+            <Drawer
+                variant="permanent"
+                className="dashboard-shell-sider"
+                sx={{
+                    display: { xs: "none", md: "block" },
+                    width: isCollapsed ? 64 : 256,
+                    flexShrink: 0,
+                    "& .MuiDrawer-paper": {
+                        width: isCollapsed ? 64 : 256,
+                        boxSizing: "border-box",
+                        border: "none",
+                        borderRight: "1px solid #e2e8f0",
+                        transition: "width 0.2s ease",
+                        overflowX: "hidden",
+                        bgcolor: "#ffffff",
+                    },
+                }}
+            >
+                <div className={styles.siderScroll}>
+                    {!isCollapsed && accessToken && (
+                        <WorkspaceSwitcher
+                            organization={activeOrganization}
+                            organizations={organizations}
+                            merchants={businessAccounts}
+                            activeMerchant={activeBusinessAccount}
+                            selectedMerchantCode={businessAccountCode}
+                            loading={organizationsLoading || businessAccountsLoading}
+                            onSelectMerchant={handleBusinessAccountSelect}
+                            onSelectOrganization={handleOrganizationSelect}
+                            canAccessEnterprisePortal={canAccessEnterprisePortal}
                         />
                     )}
                     <Menu
@@ -267,11 +313,22 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                         />
                     ) : null}
                 </div>
-            </Sider>
+            </Drawer>
 
             <SidebarCollapseToggle collapsed={isCollapsed} onToggle={toggleCollapsed} />
 
-            <Layout className={`${styles.mainLayout} dashboard-shell-main`}>
+            <Box
+                component="div"
+                className={`${styles.mainLayout} dashboard-shell-main`}
+                sx={{
+                    flexGrow: 1,
+                    minWidth: 0,
+                    display: "flex",
+                    flexDirection: "column",
+                    minHeight: "100vh",
+                    bgcolor: "#ffffff",
+                }}
+            >
                 <DashboardHeader
                     menuModel={menuModel}
                     locale={locale}
@@ -284,37 +341,36 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                     <TaskUrgencyBanner layout="strip" />
                 </div>
 
-                <Content className={contentClassName}>
+                <Box component="main" className={contentClassName} sx={{ flexGrow: 1, overflow: "auto" }}>
                     {merchantScopeDenied ? (
                         <Alert
-                            type="warning"
-                            showIcon
-                            closable
+                            severity="warning"
                             onClose={acknowledgeMerchantScopeDenied}
-                            message={tOrganization("scope_denied")}
-                            style={{ marginBottom: 16 }}
-                        />
+                            sx={{ mb: 2 }}
+                        >
+                            {tOrganization("scope_denied")}
+                        </Alert>
                     ) : null}
                     {activeMerchant?.customerStatus === "SUSPENDED" ? (
                         <Alert
-                            type="warning"
-                            showIcon
-                            message="账户已暂停，无法发起交易或资料变更"
-                            style={{ marginBottom: 16 }}
-                        />
+                            severity="warning"
+                            sx={{ mb: 2 }}
+                        >
+                            账户已暂停，无法发起交易或资料变更
+                        </Alert>
                     ) : null}
                     {activeMerchant?.customerStatus === "RISK_FROZEN" ? (
                         <Alert
-                            type="error"
-                            showIcon
-                            message="账户已风控冻结，无法发起新交易，请联系客服或等待运营处理"
-                            style={{ marginBottom: 16 }}
-                        />
+                            severity="error"
+                            sx={{ mb: 2 }}
+                        >
+                            账户已风控冻结，无法发起新交易，请联系客服或等待运营处理
+                        </Alert>
                     ) : null}
                     {children}
-                </Content>
+                </Box>
                 <SupportFloatingEntry />
-            </Layout>
-        </Layout>
+            </Box>
+        </Box>
     );
 }
