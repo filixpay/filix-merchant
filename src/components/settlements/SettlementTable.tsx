@@ -1,7 +1,7 @@
 /* Updated to use MUI components instead of Ant Design */
 "use client"
 
-import { useState } from "react"
+import { useState, type ChangeEvent } from "react"
 import { Check, ChevronRight, Copy } from "lucide-react"
 import { useLocale, useTranslations } from "next-intl"
 import { useDashboardTableFeedback } from "@/lib/dashboard/use-dashboard-table-feedback"
@@ -88,7 +88,7 @@ export default function SettlementTable({ items, loading, isRefreshing = false, 
   const [copiedId, setCopiedId] = useState<string | null>(null)
   const { enqueueSnackbar } = useSnackbar()
 
-  const { tableLoading, emptyComponent, refreshBanner } = useDashboardTableFeedback({
+  const { tableLoading, locale: tableLocale, refreshBanner } = useDashboardTableFeedback({
     loading,
     isRefreshing,
     error,
@@ -129,7 +129,8 @@ export default function SettlementTable({ items, loading, isRefreshing = false, 
     rowsPerPage: pageSize,
     rowsPerPageOptions: [10, 20, 50, 100] as const,
     onPageChange: (_: unknown, newPage: number) => onPageChange(newPage, pageSize),
-    onRowsPerPageChange: (e) => onPageChange(0, parseInt(e.target.value, 10)),
+    onRowsPerPageChange: (e: ChangeEvent<HTMLInputElement>) =>
+      onPageChange(0, parseInt(e.target.value, 10)),
     labelRowsPerPage: t("pagination.rows_per_page" as any),
     labelDisplayedRows: ({ from, to, count }: { from: number; to: number; count: number }) => `${from}–${to} / ${count !== -1 ? count : `more than ${to}`}`,
   }

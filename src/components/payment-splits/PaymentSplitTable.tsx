@@ -27,8 +27,9 @@ import {
   Tooltip,
   Typography,
 } from "@mui/material";
-import type { PaymentSplitView, PaymentSplitDetailView, api, ApiError } from "@/lib/api";
+import { api, ApiError, type PaymentSplitView, type PaymentSplitDetailView } from "@/lib/api";
 import { signIn } from "next-auth/react";
+import type { ChangeEvent } from "react";
 
 interface PaymentSplitTableProps {
   records: PaymentSplitView[];
@@ -98,7 +99,8 @@ export default function PaymentSplitTable({
     rowsPerPage: pageSize,
     rowsPerPageOptions: [10, 20, 50, 100] as const,
     onPageChange: (_: unknown, newPage: number) => onPageChange(newPage, pageSize),
-    onRowsPerPageChange: (e) => onPageChange(0, parseInt(e.target.value, 10)),
+    onRowsPerPageChange: (e: ChangeEvent<HTMLInputElement>) =>
+      onPageChange(0, parseInt(e.target.value, 10)),
     labelRowsPerPage: tCommon("pagination.rows_per_page" as any),
     labelDisplayedRows: ({ from, to, count }: { from: number; to: number; count: number }) =>
       `${from}–${to} / ${count !== -1 ? count : `more than ${to}`}`,
@@ -142,7 +144,7 @@ export default function PaymentSplitTable({
                     <TradeNoText value={r.tradeNo} ellipsis />
                   </TableCell>
                   <TableCell>
-                    <Stack direction="vertical" spacing={0}>
+                    <Stack direction="column" spacing={0}>
                       <Typography variant="body2" color="success.main">{formatAmount(r.splitAmount)}</Typography>
                       <Typography variant="caption" color="text.secondary">Total: {formatAmount(r.orderAmount)}</Typography>
                     </Stack>
@@ -152,7 +154,7 @@ export default function PaymentSplitTable({
                     <Chip label={t(`statuses.${r.paymentSplitStatus}`) || r.paymentSplitStatus} color={getStatusTagColor(r.paymentSplitStatus) as any} size="small" />
                   </TableCell>
                   <TableCell>
-                    <Stack direction="vertical" spacing={0}>
+                    <Stack direction="column" spacing={0}>
                       <Typography variant="body2">{r.successCount} / {r.receiverCount}</Typography>
                       {r.failureCount > 0 && (
                         <Typography variant="caption" color="error.main">Fail: {r.failureCount}</Typography>

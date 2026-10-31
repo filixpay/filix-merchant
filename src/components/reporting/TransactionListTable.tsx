@@ -2,6 +2,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import type { ChangeEvent } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import MoneyMovementIdCell from "@/components/money/MoneyMovementIdCell";
 import AmountCell from "@/components/layout/AmountCell";
@@ -168,7 +169,8 @@ export default function TransactionListTable({
     rowsPerPage: query.size,
     rowsPerPageOptions: [10, 20, 50, 100] as const,
     onPageChange: (_: unknown, newPage: number) => onQueryChange({ ...query, page: newPage, size: query.size }),
-    onRowsPerPageChange: (e) => onQueryChange({ ...query, page: 0, size: parseInt(e.target.value, 10) }),
+    onRowsPerPageChange: (e: ChangeEvent<HTMLInputElement>) =>
+      onQueryChange({ ...query, page: 0, size: parseInt(e.target.value, 10) }),
     labelRowsPerPage: t("pagination.rows_per_page" as any),
     labelDisplayedRows: ({ from, to, count }: { from: number; to: number; count: number }) =>
       `${from}–${to} / ${count !== -1 ? count : `more than ${to}`}`,

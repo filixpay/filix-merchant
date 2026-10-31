@@ -1,10 +1,7 @@
 "use client";
-// CI trigger: added comment for workflow test
 
-// Replace AntD Table with MUI DataGrid
 import { DataGrid, GridColDef, GridRenderCellParams } from "@mui/x-data-grid";
 import { Typography } from "@mui/material";
-// AntD ColumnsType import removed – using MUI GridColDef
 import { ArrowDownLeft, ArrowUpRight } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import TradeNoText from "@/components/TradeNoText";
@@ -51,7 +48,7 @@ export default function LedgerMovementTable({
       field: "occurredAt",
       headerName: t("headers.time"),
       width: 168,
-      renderCell: (params: GridRenderCellParams<any, MerchantLedgerMovementRow>) => {
+      renderCell: (params: GridRenderCellParams<MerchantLedgerMovementRow>) => {
         const record = params.row;
         return (
           <span className={styles.timeCell}>
@@ -72,7 +69,7 @@ export default function LedgerMovementTable({
       field: "businessType",
       headerName: t("headers.type"),
       width: 128,
-      renderCell: (params: GridRenderCellParams<any, MerchantLedgerMovementRow>) => {
+      renderCell: (params: GridRenderCellParams<MerchantLedgerMovementRow>) => {
         const { value, row: record } = params;
         const isCredit = record.signedAmountPrefix === "+";
         return (
@@ -91,15 +88,15 @@ export default function LedgerMovementTable({
       field: "journalNumber",
       headerName: t("headers.journal"),
       width: 100,
-      renderCell: (params: GridRenderCellParams<any, MerchantLedgerMovementRow>) => (
-        <span className={styles.journalCell}>{(params.value as unknown as string) || "—"}</span>
+      renderCell: (params: GridRenderCellParams<MerchantLedgerMovementRow>) => (
+        <span className={styles.journalCell}>{(params.value as string) || "—"}</span>
       ),
     },
     {
       field: "reference",
       headerName: t("headers.reference"),
       width: 260,
-      renderCell: (params: GridRenderCellParams<any, MerchantLedgerMovementRow>) => {
+      renderCell: (params: GridRenderCellParams<MerchantLedgerMovementRow>) => {
         const record = params.row;
         if (!record.referenceId && !record.externalReference) {
           return <Typography variant="body2" color="text.secondary">—</Typography>;
@@ -125,7 +122,7 @@ export default function LedgerMovementTable({
       headerName: t("headers.amount"),
       width: 120,
       align: "right",
-      renderCell: (params: GridRenderCellParams<any, MerchantLedgerMovementRow>) => {
+      renderCell: (params: GridRenderCellParams<MerchantLedgerMovementRow>) => {
         const record = params.row;
         const amountParts = formatWalletAmountDisplay(String(record.amount), record.assetCode, locale);
         const isCredit = record.signedAmountPrefix === "+";
@@ -147,12 +144,10 @@ export default function LedgerMovementTable({
       paginationModel={{ page, pageSize }}
       paginationMode="server"
       rowCount={total}
-      page={page}
       onPaginationModelChange={(model) => onPageChange?.(model.page)}
       hideFooterPagination={hideFooterPagination}
       autoHeight
-      // Show custom empty text when no rows
-      componentsProps={{
+      slotProps={{
         noRowsOverlay: {
           children: <>{emptyText || t("empty")}</>,
         },

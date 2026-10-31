@@ -27,13 +27,14 @@ COPY . .
 # Learn more here: https://nextjs.org/telemetry
 # Uncomment the following line in case you want to disable telemetry during the build.
 # ENV NEXT_TELEMETRY_DISABLED=1
-# Build-time placeholders only (ARG does not persist into the runtime image).
-ARG NEXTAUTH_SECRET=build-placeholder-secret
+# Build-time placeholders only (do not persist into the runtime image as secrets).
+# NEXTAUTH_SECRET is set inline on the build command to avoid SecretsUsedInArgOrEnv.
 ARG NEXTAUTH_URL=https://www.filixpay.com/auth-api/auth
 ARG NEXT_PUBLIC_SITE_URL=https://www.filixpay.com
 ARG NEXT_PUBLIC_CHECKOUT_URL=https://checkout.filixpay.com
 
 RUN \
+  export NEXTAUTH_SECRET=build-placeholder && \
   if [ -f yarn.lock ]; then yarn run build; \
   elif [ -f package-lock.json ]; then npm run build; \
   elif [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm run build; \
