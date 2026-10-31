@@ -13,8 +13,12 @@ import {
     Drawer,
     IconButton,
     Stack,
+    List,
+    ListItemButton,
+    ListItemText,
+    Tooltip,
+    Typography,
 } from "@mui/material";
-import { Menu } from "antd";
 import { LogOut, Menu as MenuIcon } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -95,16 +99,10 @@ export default function EnterpriseDashboardLayout({ children }: { children: Reac
         [locale, router, selectEnterprise],
     );
 
-    const menuItems = useMemo(() => {
-        return buildEnterpriseMenuModel(tEnterprise, locale).map((item) => ({
-            key: item.key,
-            label: (
-                <Link href={item.href} onClick={() => setIsMobileMenuOpen(false)}>
-                    {item.label}
-                </Link>
-            ),
-        }));
-    }, [locale, tEnterprise]);
+    const enterpriseMenuItems = useMemo(
+        () => buildEnterpriseMenuModel(tEnterprise, locale),
+        [locale, tEnterprise],
+    );
 
     const selectedKey = getEnterpriseSelectedMenuKey(pathname, locale);
 
@@ -183,13 +181,67 @@ export default function EnterpriseDashboardLayout({ children }: { children: Reac
                             onSelect={handleEnterpriseSelect}
                         />
                     )}
-                    <Menu
-                        mode="inline"
-                        inlineCollapsed={false}
-                        selectedKeys={[selectedKey]}
-                        items={menuItems}
-                        className={styles.menu}
-                    />
+                    <List dense disablePadding sx={{ py: 0.5 }}>
+                        {enterpriseMenuItems.map((item) => {
+                            const isSelected = selectedKey === item.key;
+                            return (
+                                <ListItemButton
+                                    key={item.key}
+                                    component={Link}
+                                    href={item.href}
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                    selected={isSelected}
+                                    sx={{
+                                        minHeight: 32,
+                                        height: 32,
+                                        px: 2,
+                                        mx: 1,
+                                        my: "1px",
+                                        borderRadius: "6px",
+                                        position: "relative",
+                                        color: isSelected ? "primary.main" : "text.secondary",
+                                        bgcolor: isSelected ? "#eff6ff !important" : "transparent",
+                                        fontWeight: isSelected ? 600 : 500,
+                                        fontSize: 13,
+                                        "&:hover": {
+                                            bgcolor: isSelected ? "#eff6ff" : "#f1f5f9",
+                                            color: isSelected ? "primary.main" : "#0f172a",
+                                        },
+                                        ...(isSelected && {
+                                            "&::before": {
+                                                content: '""',
+                                                position: "absolute",
+                                                left: 0,
+                                                top: "50%",
+                                                transform: "translateY(-50%)",
+                                                width: "3px",
+                                                height: "16px",
+                                                bgcolor: "primary.main",
+                                                borderRadius: "0 999px 999px 0",
+                                            },
+                                        }),
+                                    }}
+                                >
+                                    <ListItemText
+                                        primary={
+                                            <Typography
+                                                sx={{
+                                                    fontSize: 13,
+                                                    fontWeight: isSelected ? 600 : 500,
+                                                    whiteSpace: "nowrap",
+                                                    overflow: "hidden",
+                                                    textOverflow: "ellipsis",
+                                                }}
+                                            >
+                                                {item.label}
+                                            </Typography>
+                                        }
+                                        sx={{ m: 0 }}
+                                    />
+                                </ListItemButton>
+                            );
+                        })}
+                    </List>
                 </div>
             </Drawer>
 
@@ -226,13 +278,76 @@ export default function EnterpriseDashboardLayout({ children }: { children: Reac
                             onSelect={handleEnterpriseSelect}
                         />
                     )}
-                    <Menu
-                        mode="inline"
-                        inlineCollapsed={isCollapsed}
-                        selectedKeys={[selectedKey]}
-                        items={menuItems}
-                        className={styles.menu}
-                    />
+                    <List dense disablePadding sx={{ py: 0.5 }}>
+                        {enterpriseMenuItems.map((item) => {
+                            const isSelected = selectedKey === item.key;
+                            const btn = (
+                                <ListItemButton
+                                    key={item.key}
+                                    component={Link}
+                                    href={item.href}
+                                    selected={isSelected}
+                                    sx={{
+                                        minHeight: 32,
+                                        height: 32,
+                                        px: isCollapsed ? 1.5 : 2,
+                                        mx: 1,
+                                        my: "1px",
+                                        borderRadius: "6px",
+                                        position: "relative",
+                                        justifyContent: isCollapsed ? "center" : "flex-start",
+                                        color: isSelected ? "primary.main" : "text.secondary",
+                                        bgcolor: isSelected ? "#eff6ff !important" : "transparent",
+                                        fontWeight: isSelected ? 600 : 500,
+                                        fontSize: 13,
+                                        "&:hover": {
+                                            bgcolor: isSelected ? "#eff6ff" : "#f1f5f9",
+                                            color: isSelected ? "primary.main" : "#0f172a",
+                                        },
+                                        ...(isSelected && {
+                                            "&::before": {
+                                                content: '""',
+                                                position: "absolute",
+                                                left: 0,
+                                                top: "50%",
+                                                transform: "translateY(-50%)",
+                                                width: "3px",
+                                                height: "16px",
+                                                bgcolor: "primary.main",
+                                                borderRadius: "0 999px 999px 0",
+                                            },
+                                        }),
+                                    }}
+                                >
+                                    {!isCollapsed && (
+                                        <ListItemText
+                                            primary={
+                                                <Typography
+                                                    sx={{
+                                                        fontSize: 13,
+                                                        fontWeight: isSelected ? 600 : 500,
+                                                        whiteSpace: "nowrap",
+                                                        overflow: "hidden",
+                                                        textOverflow: "ellipsis",
+                                                    }}
+                                                >
+                                                    {item.label}
+                                                </Typography>
+                                            }
+                                            sx={{ m: 0 }}
+                                        />
+                                    )}
+                                </ListItemButton>
+                            );
+                            return isCollapsed ? (
+                                <Tooltip key={item.key} title={item.label} placement="right">
+                                    {btn}
+                                </Tooltip>
+                            ) : (
+                                btn
+                            );
+                        })}
+                    </List>
                 </div>
             </Drawer>
 

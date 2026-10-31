@@ -1,7 +1,22 @@
-import type React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Link from "next/link";
 import type { MenuProps } from "antd";
 import {
+    List,
+    ListItemButton,
+    ListItemIcon,
+    ListItemText,
+    Collapse,
+    Tooltip,
+    Menu as PopoverMenu,
+    MenuItem as PopoverMenuItem,
+    Box,
+    Typography,
+} from "@mui/material";
+import {
+    ChevronDown,
     Building as BankOutlined,
     Wallet as WalletOutlined,
     GitBranch as PartitionOutlined,
@@ -587,6 +602,331 @@ export function toAntdMenuItems(
             };
         })
         .filter((entry): entry is NonNullable<typeof entry> => entry != null);
+}
+
+
+export interface MuiMenuItemsProps {
+    menuModel: DashboardMenuItem[];
+    locale: string;
+    selectedKey: string;
+    openKeys?: string[];
+    onOpenChange?: (openKeys: string[]) => void;
+    onNavigate?: () => void;
+    isCollapsed?: boolean;
+}
+
+export function MuiMenuItem({
+    item,
+    locale,
+    selectedKey,
+    openKeys = [],
+    onOpenChange,
+    onNavigate,
+    isCollapsed = false,
+    level = 0,
+}: {
+    item: DashboardMenuItem;
+    locale: string;
+    selectedKey: string;
+    openKeys?: string[];
+    onOpenChange?: (openKeys: string[]) => void;
+    onNavigate?: () => void;
+    isCollapsed?: boolean;
+    level?: number;
+}) {
+    const Icon = item.icon;
+    const hasChildren = Boolean(item.children && item.children.length > 0);
+    const itemHref = item.href ? localizedHref(locale, item.href) : undefined;
+    const isSelected = Boolean(itemHref && selectedKey === itemHref);
+    const isOpen = Boolean(!isCollapsed && openKeys.includes(item.key));
+    const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+    const popoverOpen = Boolean(anchorEl);
+
+    const handleParentClick = (e: React.MouseEvent<HTMLElement>) => {
+        if (isCollapsed) {
+            setAnchorEl(e.currentTarget);
+            return;
+        }
+        if (onOpenChange) {
+            const nextKeys = isOpen
+                ? openKeys.filter((k) => k !== item.key)
+                : [...openKeys, item.key];
+            onOpenChange(nextKeys);
+        }
+    };
+
+    const handlePopoverClose = () => {
+        setAnchorEl(null);
+    };
+
+    if (hasChildren) {
+        const hasSelectedChild = item.children?.some((child) => {
+            const childHref = child.href ? localizedHref(locale, child.href) : "";
+            if (childHref && selectedKey === childHref) return true;
+            return child.children?.some((grandchild) => {
+                const gHref = grandchild.href ? localizedHref(locale, grandchild.href) : "";
+                return gHref && selectedKey === gHref;
+            });
+        });
+
+        const parentButton = (
+            <ListItemButton
+                onClick={handleParentClick}
+                sx={{
+                    minHeight: 32,
+                    height: 32,
+                    px: isCollapsed ? 1.5 : level > 0 ? 3 : 2,
+                    mx: 1,
+                    my: "1px",
+                    borderRadius: "6px",
+                    color: hasSelectedChild ? "text.primary" : "text.secondary",
+                    bgcolor: isOpen && !hasSelectedChild ? "rgba(248, 250, 252, 0.8)" : "transparent",
+                    justifyContent: isCollapsed ? "center" : "flex-start",
+                    fontSize: 13,
+                    "&:hover": {
+                        bgcolor: "#f1f5f9",
+                        color: "#0f172a",
+                        "& .menu-icon": { color: "#64748b" },
+                    },
+                }}
+            >
+                <ListItemIcon
+                    sx={{
+                        minWidth: isCollapsed ? 0 : 28,
+                        mr: isCollapsed ? 0 : 0.5,
+                        color: hasSelectedChild ? "primary.main" : "#94a3b8",
+                        justifyContent: "center",
+                    }}
+                >
+                    <Icon className="menu-icon" size={16} strokeWidth={1.75} />
+                </ListItemIcon>
+                {!isCollapsed && (
+                    <>
+                        <ListItemText
+                            primary={
+                                <Typography
+                                    sx={{
+                                        fontSize: 13,
+                                        fontWeight: hasSelectedChild ? 600 : 500,
+                                        whiteSpace: "nowrap",
+                                        overflow: "hidden",
+                                        textOverflow: "ellipsis",
+                                    }}
+                                >
+                                    {item.label}
+                                </Typography>
+                            }
+                            sx={{ m: 0 }}
+                        />
+                        <ChevronDown
+                            size={14}
+                            style={{
+                                transform: isOpen ? "rotate(180deg)" : "none",
+                                transition: "transform 0.2s ease",
+                                color: "#94a3b8",
+                                flexShrink: 0,
+                            }}
+                        />
+                    </>
+                )}
+            </ListItemButton>
+        );
+
+        return (
+            <Box component="div">
+                {isCollapsed ? (
+                    <Tooltip title={item.label} placement="right" disableHoverListener={popoverOpen}>
+                        {parentButton}
+                    </Tooltip>
+                ) : (
+                    parentButton
+                )}
+
+                {isCollapsed && (
+                    <PopoverMenu
+                        anchorEl={anchorEl}
+                        open={popoverOpen}
+                        onClose={handlePopoverClose}
+                        anchorOrigin={{ vertical: "top", horizontal: "right" }}
+                        transformOrigin={{ vertical: "top", horizontal: "left" }}
+                        slotProps={{
+                            paper: {
+                                sx: {
+                                    ml: 1,
+                                    py: 0.5,
+                                    minWidth: 160,
+                                    borderRadius: "8px",
+                                    boxShadow: "0 4px 16px rgba(15, 23, 42, 0.12)",
+                                },
+                            },
+                        }}
+                    >
+                        <Box sx={{ px: 2, py: 1, fontSize: 12, fontWeight: 600, color: "text.secondary" }}>
+                            {item.label}
+                        </Box>
+                        {item.children
+                            ?.filter((c) => c.visible !== false)
+                            .map((child) => {
+                                const childHref = child.href ? localizedHref(locale, child.href) : "/dashboard";
+                                const isChildSelected = selectedKey === childHref;
+                                return (
+                                    <PopoverMenuItem
+                                        key={child.key}
+                                        component={Link}
+                                        href={childHref}
+                                        onClick={() => {
+                                            handlePopoverClose();
+                                            onNavigate?.();
+                                        }}
+                                        selected={isChildSelected}
+                                        sx={{
+                                            fontSize: 13,
+                                            py: 0.75,
+                                            px: 2,
+                                            color: isChildSelected ? "primary.main" : "text.primary",
+                                            fontWeight: isChildSelected ? 600 : 400,
+                                        }}
+                                    >
+                                        {child.label}
+                                    </PopoverMenuItem>
+                                );
+                            })}
+                    </PopoverMenu>
+                )}
+
+                {!isCollapsed && (
+                    <Collapse in={isOpen} timeout="auto" unmountOnExit>
+                        <List dense disablePadding component="div">
+                            {item.children
+                                ?.filter((c) => c.visible !== false)
+                                .map((child) => (
+                                    <MuiMenuItem
+                                        key={child.key}
+                                        item={child}
+                                        locale={locale}
+                                        selectedKey={selectedKey}
+                                        openKeys={openKeys}
+                                        onOpenChange={onOpenChange}
+                                        onNavigate={onNavigate}
+                                        isCollapsed={false}
+                                        level={level + 1}
+                                    />
+                                ))}
+                        </List>
+                    </Collapse>
+                )}
+            </Box>
+        );
+    }
+
+    const leafButton = (
+        <ListItemButton
+            component={Link}
+            href={itemHref ?? "/dashboard"}
+            onClick={onNavigate}
+            selected={isSelected}
+            sx={{
+                minHeight: 32,
+                height: 32,
+                px: isCollapsed ? 1.5 : level > 0 ? 3 : 2,
+                mx: 1,
+                my: "1px",
+                borderRadius: "6px",
+                position: "relative",
+                justifyContent: isCollapsed ? "center" : "flex-start",
+                color: isSelected ? "primary.main" : "text.secondary",
+                bgcolor: isSelected ? "#eff6ff !important" : "transparent",
+                fontWeight: isSelected ? 600 : 500,
+                fontSize: 13,
+                "&:hover": {
+                    bgcolor: isSelected ? "#eff6ff" : "#f1f5f9",
+                    color: isSelected ? "primary.main" : "#0f172a",
+                    "& .menu-icon": { color: isSelected ? "primary.main" : "#64748b" },
+                },
+                ...(isSelected && {
+                    "&::before": {
+                        content: '""',
+                        position: "absolute",
+                        left: 0,
+                        top: "50%",
+                        transform: "translateY(-50%)",
+                        width: "3px",
+                        height: "16px",
+                        bgcolor: "primary.main",
+                        borderRadius: "0 999px 999px 0",
+                    },
+                }),
+            }}
+        >
+            <ListItemIcon
+                sx={{
+                    minWidth: isCollapsed ? 0 : 28,
+                    mr: isCollapsed ? 0 : 0.5,
+                    color: isSelected ? "primary.main" : "#94a3b8",
+                    justifyContent: "center",
+                }}
+            >
+                <Icon className="menu-icon" size={16} strokeWidth={1.75} />
+            </ListItemIcon>
+            {!isCollapsed && (
+                <ListItemText
+                    primary={
+                        <Typography
+                            sx={{
+                                fontSize: 13,
+                                fontWeight: isSelected ? 600 : 500,
+                                whiteSpace: "nowrap",
+                                overflow: "hidden",
+                                textOverflow: "ellipsis",
+                            }}
+                        >
+                            {item.label}
+                        </Typography>
+                    }
+                    sx={{ m: 0 }}
+                />
+            )}
+        </ListItemButton>
+    );
+
+    if (isCollapsed) {
+        return (
+            <Tooltip title={item.label} placement="right">
+                {leafButton}
+            </Tooltip>
+        );
+    }
+
+    return leafButton;
+}
+
+export function MuiMenuItems({
+    menuModel,
+    locale,
+    selectedKey,
+    openKeys = [],
+    onOpenChange,
+    onNavigate,
+    isCollapsed = false,
+}: MuiMenuItemsProps) {
+    return (
+        <List dense disablePadding sx={{ py: 0.5 }}>
+            {menuModel
+                .filter((m) => m.visible !== false)
+                .map((menuItem) => (
+                    <MuiMenuItem
+                        key={menuItem.key}
+                        item={menuItem}
+                        locale={locale}
+                        selectedKey={selectedKey}
+                        openKeys={openKeys}
+                        onOpenChange={onOpenChange}
+                        onNavigate={onNavigate}
+                        isCollapsed={isCollapsed}
+                    />
+                ))}
+        </List>
+    );
 }
 
 export function getSelectedMenuKey(pathname: string, locale: string) {

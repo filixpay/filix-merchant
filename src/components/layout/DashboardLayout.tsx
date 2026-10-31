@@ -4,7 +4,6 @@ import { usePathname, useRouter } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { Alert, Box, CircularProgress, Drawer } from "@mui/material";
-import { Menu } from "antd";
 import { useTranslations, useLocale } from "next-intl";
 import WorkspaceSwitcher from "./WorkspaceSwitcher";
 import { clearStoredSelectedMerchantCode } from "@/lib/merchant/selected-merchant-code";
@@ -13,7 +12,7 @@ import {
     getDefaultOpenKeys,
     getSelectedMenuKey,
     splitDashboardMenuForSider,
-    toAntdMenuItems,
+    MuiMenuItems,
 } from "./dashboard-menu";
 import { getRouteDashboardContentMode, resolveDashboardContentMode } from "./dashboard-content-mode";
 import {
@@ -138,14 +137,10 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             }),
         [t, activeMerchant, moneyGate, moneyCapability],
     );
-    const menuItems = useMemo(() => {
-        const { main, footer } = splitDashboardMenuForSider(menuModel);
-        const closeMobile = () => setIsMobileMenuOpen(false);
-        return {
-            main: toAntdMenuItems(main, locale, closeMobile) ?? [],
-            footer: toAntdMenuItems(footer, locale, closeMobile) ?? [],
-        };
-    }, [menuModel, locale]);
+    const { main: mainMenuItems, footer: footerMenuItems } = useMemo(
+        () => splitDashboardMenuForSider(menuModel),
+        [menuModel],
+    );
 
     const selectedKey = getSelectedMenuKey(pathname, locale);
     const routeContentMode = getRouteDashboardContentMode(pathname);
@@ -240,23 +235,29 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                             canAccessEnterprisePortal={canAccessEnterprisePortal}
                         />
                     )}
-                    <Menu
-                        mode="inline"
-                        inlineCollapsed={false}
-                        selectedKeys={[selectedKey]}
-                        openKeys={openKeys}
-                        onOpenChange={setOpenKeys}
-                        items={menuItems.main}
-                        className={styles.menu}
-                    />
-                    {menuItems.footer.length > 0 ? (
-                        <Menu
-                            mode="inline"
-                            inlineCollapsed={false}
-                            selectedKeys={[selectedKey]}
-                            items={menuItems.footer}
-                            className={`${styles.menu} ${styles.menuFooter}`}
+                    <Box sx={{ flex: 1, minHeight: 0, overflowY: "auto", overflowX: "hidden" }}>
+                        <MuiMenuItems
+                            menuModel={mainMenuItems}
+                            locale={locale}
+                            selectedKey={selectedKey}
+                            openKeys={openKeys}
+                            onOpenChange={setOpenKeys}
+                            onNavigate={() => setIsMobileMenuOpen(false)}
+                            isCollapsed={false}
                         />
+                    </Box>
+                    {footerMenuItems.length > 0 ? (
+                        <Box sx={{ flexShrink: 0, borderTop: "1px solid #e2e8f0", bgcolor: "#ffffff" }}>
+                            <MuiMenuItems
+                                menuModel={footerMenuItems}
+                                locale={locale}
+                                selectedKey={selectedKey}
+                                openKeys={openKeys}
+                                onOpenChange={setOpenKeys}
+                                onNavigate={() => setIsMobileMenuOpen(false)}
+                                isCollapsed={false}
+                            />
+                        </Box>
                     ) : null}
                 </div>
             </Drawer>
@@ -294,23 +295,27 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                             canAccessEnterprisePortal={canAccessEnterprisePortal}
                         />
                     )}
-                    <Menu
-                        mode="inline"
-                        inlineCollapsed={isCollapsed}
-                        selectedKeys={[selectedKey]}
-                        openKeys={isCollapsed ? undefined : openKeys}
-                        onOpenChange={setOpenKeys}
-                        items={menuItems.main}
-                        className={styles.menu}
-                    />
-                    {menuItems.footer.length > 0 ? (
-                        <Menu
-                            mode="inline"
-                            inlineCollapsed={isCollapsed}
-                            selectedKeys={[selectedKey]}
-                            items={menuItems.footer}
-                            className={`${styles.menu} ${styles.menuFooter}`}
+                    <Box sx={{ flex: 1, minHeight: 0, overflowY: "auto", overflowX: "hidden" }}>
+                        <MuiMenuItems
+                            menuModel={mainMenuItems}
+                            locale={locale}
+                            selectedKey={selectedKey}
+                            openKeys={openKeys}
+                            onOpenChange={setOpenKeys}
+                            isCollapsed={isCollapsed}
                         />
+                    </Box>
+                    {footerMenuItems.length > 0 ? (
+                        <Box sx={{ flexShrink: 0, borderTop: "1px solid #e2e8f0", bgcolor: "#ffffff" }}>
+                            <MuiMenuItems
+                                menuModel={footerMenuItems}
+                                locale={locale}
+                                selectedKey={selectedKey}
+                                openKeys={openKeys}
+                                onOpenChange={setOpenKeys}
+                                isCollapsed={isCollapsed}
+                            />
+                        </Box>
                     ) : null}
                 </div>
             </Drawer>
