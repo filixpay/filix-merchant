@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Skeleton } from "antd";
+import Skeleton from "@mui/material/Skeleton";
 import { useTranslations } from "next-intl";
 import styles from "./OrganizationSwitcher.module.css";
 import { BuildingOffice2Icon, ChevronDownIcon } from "@heroicons/react/24/outline";
@@ -46,7 +46,7 @@ export default function OrganizationSwitcher({
             <div className={styles.container}>
                 <div className={styles.label}>{t("current_organization")}</div>
                 <div className={styles.summarySkeleton}>
-                    <Skeleton active paragraph={{ rows: 1 }} title={false} />
+                    <Skeleton variant="rounded" height={40} />
                 </div>
             </div>
         );

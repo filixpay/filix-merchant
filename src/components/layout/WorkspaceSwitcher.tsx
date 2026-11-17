@@ -2,7 +2,8 @@
 
 import { useState, type MouseEvent } from "react";
 import Link from "next/link";
-import { message, Skeleton } from "antd";
+import Skeleton from "@mui/material/Skeleton";
+import { enqueueSnackbar } from "notistack";
 import { Copy } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import {
@@ -42,9 +43,9 @@ function CopyableCodeMeta({
     }
     try {
       await navigator.clipboard.writeText(value);
-      message.success(copiedLabel);
+      enqueueSnackbar(copiedLabel, { variant: "success" });
     } catch {
-      message.error(copyLabel);
+      enqueueSnackbar(copyLabel, { variant: "error" });
     }
   };
 
@@ -142,7 +143,7 @@ export default function WorkspaceSwitcher({
     return (
       <div className={styles.container}>
         <div className={styles.summarySkeleton}>
-          <Skeleton active paragraph={{ rows: 1 }} title={false} />
+          <Skeleton variant="rounded" height={40} />
         </div>
       </div>
     );
@@ -196,7 +197,7 @@ export default function WorkspaceSwitcher({
             </div>
             {merchantsLoading ? (
               <div className={styles.listSkeleton}>
-                <Skeleton active paragraph={{ rows: 2 }} title={false} />
+                <Skeleton variant="rounded" height={60} />
               </div>
             ) : merchants.length === 0 ? (
               <div className={styles.emptyHint}>{t("no_business_accounts")}</div>
