@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { Typography, Flex } from "antd";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 import styles from "./layout.module.css";
 import type { DashboardContentMode } from "./dashboard-content-mode";
 import { useDashboardContentMode } from "./dashboard-content-mode-context";
@@ -37,12 +38,13 @@ export default function DashboardPage({
     return (
         <div className={styles.pageContainer}>
             <header className={styles.pageHeader}>
-                <Flex justify="space-between" align="flex-start">
+                <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
                     <div>
-                        <Typography.Title
-                            level={2}
-                            style={{
-                                margin: 0,
+                        <Typography
+                            variant="h2"
+                            component="h1"
+                            sx={{
+                                m: 0,
                                 color: "#1e293b",
                                 fontWeight: 600,
                                 letterSpacing: "-0.01em",
@@ -50,18 +52,19 @@ export default function DashboardPage({
                             }}
                         >
                             {title}
-                        </Typography.Title>
+                        </Typography>
                         {subtitle && (
-                            <Typography.Text
-                                type="secondary"
-                                style={{ fontSize: 13, marginTop: 2, display: "block" }}
+                            <Typography
+                                variant="body2"
+                                color="text.secondary"
+                                sx={{ fontSize: 13, mt: 0.5, display: "block" }}
                             >
                                 {subtitle}
-                            </Typography.Text>
+                            </Typography>
                         )}
                     </div>
                     {extra && <div className={styles.pageExtra}>{extra}</div>}
-                </Flex>
+                </Box>
             </header>
 
             {filterBar && (
@@ -76,4 +79,3 @@ export default function DashboardPage({
         </div>
     );
 }
-
