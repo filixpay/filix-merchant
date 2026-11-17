@@ -1,0 +1,346 @@
+{
+  "Configs": {
+    "title": "Configurações de Pagamento",
+    "subtitle": "Gerencie seus canais de pagamento conectados e credenciais. O roteamento de pagamentos seleciona automaticamente os canais habilitados.",
+    "add_config": "Adicionar Configuração",
+    "edit_config": "Editar Configuração",
+    "edit_activation_hint": "Para canais sem credenciais, escolha abrir ou fechar e envie.",
+    "edit_params_hint": "Use o interruptor da lista para abrir ou fechar; a edição aqui atualiza apenas os parâmetros do canal.",
+    "edit_success": "Configuração atualizada",
+    "status_toggle_open_success": "Canal aberto",
+    "status_toggle_close_success": "Canal fechado",
+    "status_open": "Aberto",
+    "status_close": "Fechado",
+    "status_applying": "Em análise",
+    "status_rejected": "Rejeitado",
+    "status_forbidden": "Desabilitado",
+    "status_required": "Escolha abrir ou fechar",
+    "headers": {
+      "payment_brand": "Marca de Pagamento",
+      "payment_channel": "Canal de Pagamento",
+      "payment_scenario": "Cenário de Pagamento",
+      "sub_merchant": "Subcomerciante",
+      "status": "Status"
+    },
+    "loading": "Carregando configurações...",
+    "empty": "Nenhuma configuração encontrada. Adicione uma para começar a aceitar pagamentos.",
+    "confirm_delete": "Tem certeza de que deseja excluir esta configuração?",
+    "routing_hint": "O roteamento de pagamentos seleciona automaticamente os canais habilitados",
+    "scenario_unavailable": "Nenhum canal habilitado neste cenário",
+    "scenario_applying": "O canal está em análise e ainda não está ativo. Edite e confirme Aberto para habilitar pagamentos",
+    "add_channel": "Adicionar canal",
+    "channels_section": "Canais de pagamento",
+    "channel_route_active": "Roteamento ativo",
+    "channel_route_stopped": "Canal interrompido",
+    "availability_badge": "{available}/{total} disponíveis",
+    "prefill_summary": "Adicionando canal para \"{brand} · {scenario} · {subMerchant}\"",
+    "duplicate_channel": "Este canal já existe",
+    "pagination_summary": "{total} configs · {scenarios} cenários",
+    "edit_secret_hint": "Os segredos nunca são exibidos na interface. Deixe um campo em branco para manter a credencial salva.",
+    "edit_security_title": "Criptografado em trânsito",
+    "save_config": "Salvar configuração",
+    "secret_status": {
+      "configured": "Configurado",
+      "missing": "Não definido"
+    },
+    "env": {
+      "live": "Modo live",
+      "test": "Modo teste"
+    },
+    "credential_help": {
+      "prompt": "Precisa de ajuda para encontrar as chaves de API?",
+      "open_console": "Abrir console do provedor"
+    },
+    "validation": {
+      "stripe_secret_prefix": "A Secret Key deve corresponder ao ambiente selecionado (sk_live_ / sk_test_)",
+      "stripe_publishable_prefix": "A Publishable Key deve corresponder ao ambiente selecionado (pk_live_ / pk_test_)",
+      "stripe_webhook_prefix": "O Webhook Secret deve começar com whsec_"
+    },
+    "sections": {
+      "alipay": "Configuração do Alipay",
+      "wechat": "Configuração do WeChat",
+      "stripe": "Configuração do Stripe",
+      "paypal": "Configuração do PayPal",
+      "nowpayments": "Configuração do NowPayments"
+    },
+    "fields": {
+      "required": "Este campo é obrigatório",
+      "secret_keep_placeholder": "Deixe em branco para manter o segredo atual",
+      "app_id": "App ID",
+      "partner_id": "Partner ID",
+      "sandbox_mode": "Modo Sandbox",
+      "alipay_public_key": "Chave Pública do Alipay",
+      "app_private_key": "Chave Privada do App",
+      "app_secret": "App Secret",
+      "mch_id": "Merchant ID",
+      "v2_api_key": "V2 API Key",
+      "v3_api_key": "V3 API Key",
+      "v3_serial_no": "Nº de Série V3",
+      "v3_private_key": "Chave Privada V3",
+      "v3_public_key": "Chave Pública V3",
+      "secret_key": "Secret Key",
+      "publishable_key": "Publishable Key (Opcional)",
+      "webhook_secret": "Webhook Secret (Opcional)",
+      "client_id": "Client ID",
+      "client_secret": "Client Secret",
+      "webhook_id": "Webhook ID (Opcional)",
+      "api_key": "API Key",
+      "ipn_secret": "IPN Secret (Opcional)",
+      "default_currency": "Moeda Padrão (Opcional)"
+    }
+  },
+  "CommerceProducts": {
+    "list": {
+      "title": "Produtos de comércio",
+      "subtitle": "Crie e publique produtos na sua vitrine.",
+      "create": "Criar produto"
+    },
+    "create": {
+      "title": "Criar produto",
+      "back": "Voltar aos produtos",
+      "submit": "Criar produto",
+      "save_draft": "Salvar rascunho",
+      "publish": "Publicar produto"
+    },
+    "detail": {
+      "title": "Detalhe do produto",
+      "back": "Voltar aos produtos",
+      "status": "Status",
+      "external_id": "ID do produto Saleor",
+      "store": "Loja",
+      "purchase_link": "Link de compra",
+      "view_purchase_page": "Ver página de compra",
+      "last_error": "Último erro de sincronização",
+      "not_found": "Produto não encontrado.",
+      "read_only_hint": "Produtos publicados ou suspensos só podem ser publicados ou despublicados — a edição fica disponível em rascunho com integração pronta ou com falha."
+    },
+    "columns": {
+      "thumbnail": "Imagem",
+      "title": "Produto",
+      "sku": "SKU",
+      "price": "Preço",
+      "stock": "Estoque",
+      "status": "Status",
+      "store": "Loja",
+      "updated": "Atualizado",
+      "actions": "Ações"
+    },
+    "filters": {
+      "search_placeholder": "Buscar nome do produto / SKU…",
+      "category_all": "Todas as categorias",
+      "status_all": "Todos os status",
+      "status_published": "No ar",
+      "status_suspended": "Despublicado",
+      "status_draft": "Rascunho",
+      "status_syncing": "Sincronizando",
+      "search": "Buscar",
+      "reset": "Redefinir"
+    },
+    "listStatus": {
+      "live": "No ar",
+      "suspended": "Despublicado",
+      "draft": "Rascunho",
+      "syncing": "Sincronizando",
+      "sync_failed": "Falha na sincronização",
+      "needs_attention": "Requer atenção"
+    },
+    "stock": {
+      "out_of_stock": "Sem estoque",
+      "low": "Estoque baixo"
+    },
+    "bulk": {
+      "selected": "{count} selecionados",
+      "unpublish": "Despublicar em lote",
+      "delete": "Excluir em lote",
+      "unpublish_title": "Despublicar os produtos selecionados?",
+      "unpublish_body": "Isso despublicará {count} produto(s) no ar.",
+      "unpublish_done": "{count} produto(s) despublicado(s)",
+      "delete_title": "Excluir os produtos selecionados?",
+      "delete_body": "Isso exclui permanentemente {count} produto(s). Esta ação não pode ser desfeita.",
+      "delete_done": "{count} produto(s) excluído(s)",
+      "no_unpublishable": "Nenhum produto selecionado pode ser despublicado"
+    },
+    "empty": "Ainda não há produtos. Crie seu primeiro produto.",
+    "actions": {
+      "edit": "Editar",
+      "more": "Mais ações",
+      "view_storefront": "Ver produto",
+      "publish": "Publicar",
+      "unpublish": "Despublicar",
+      "retry_sync": "Sincronizar",
+      "delete": "Excluir",
+      "save": "Salvar alterações",
+      "cancel": "Cancelar"
+    },
+    "business": {
+      "DRAFT": "Rascunho",
+      "PUBLISHED": "Publicado",
+      "SUSPENDED": "Suspenso",
+      "legacy": "Requer atenção"
+    },
+    "integration": {
+      "CREATING": "Criando",
+      "SYNCING": "Sincronizando",
+      "READY": "Pronto",
+      "FAILED": "Falhou",
+      "UNKNOWN": "Desconhecido"
+    },
+    "editor": {
+      "title": "Título",
+      "title_required": "O título é obrigatório",
+      "description": "Descrição",
+      "category": "Categoria",
+      "category_required": "A categoria é obrigatória",
+      "product_type": "Tipo de produto",
+      "product_type_required": "O tipo de produto é obrigatório",
+      "sku": "SKU",
+      "sku_required": "O SKU é obrigatório",
+      "price": "Preço",
+      "price_required": "O preço é obrigatório",
+      "stock": "Estoque",
+      "stock_required": "O estoque é obrigatório",
+      "images": "Imagens",
+      "upload_hint": "Clique ou arraste imagens para enviar",
+      "upload_types": "JPEG, PNG ou WebP de até {size} MB",
+      "image_uploaded": "Imagem enviada",
+      "image_upload_failed": "Falha no envio da imagem",
+      "image_too_large": "A imagem deve ter no máximo {size} MB",
+      "remove_image": "Remover",
+      "primary_image": "Principal",
+      "set_primary": "Definir como principal",
+      "section_basic": "Informações básicas",
+      "section_media": "Imagens do produto",
+      "section_pricing": "Preços e estoque",
+      "section_organization": "Organização",
+      "section_publish": "Configurações de publicação",
+      "publish_hint": "Salve como rascunho para continuar editando na página de detalhes. Publicar agora coloca o produto no ar na sua vitrine.",
+      "publish_mode": "Modo de publicação",
+      "publish_mode_draft": "Salvar como rascunho",
+      "publish_mode_live": "Publicar agora"
+    },
+    "publish": {
+      "confirm_title": "Publicar produto?",
+      "confirm_body": "Isso torna o produto visível no canal da sua vitrine."
+    },
+    "unpublish": {
+      "confirm_title": "Despublicar produto?",
+      "confirm_body": "Isso oculta o produto do canal da sua vitrine."
+    },
+    "delete": {
+      "confirm_title": "Excluir o produto permanentemente?",
+      "confirm_body": "Se estiver publicado, será despublicado primeiro. Em seguida, o produto é removido permanentemente da FilixPay e do Saleor. Esta ação não pode ser desfeita."
+    },
+    "messages": {
+      "created": "Produto criado",
+      "saved": "Produto salvo",
+      "published": "Produto publicado",
+      "publishing": "Publicação em andamento…",
+      "unpublished": "Produto despublicado",
+      "synced": "Sincronização concluída",
+      "deleted": "Produto excluído"
+    }
+  },
+  "CommerceActivation": {
+    "title": "Comece a operar sua loja",
+    "subtitle": "Alguns passos para vender seus produtos globalmente",
+    "trust": "Como comerciante FilixPay, você pode criar e publicar produtos diretamente no Merchant Center — sem necessidade de revisão do catálogo da plataforma.",
+    "steps": {
+      "profile": "Completar o perfil da loja",
+      "profile_link": "Atualizar perfil (opcional)",
+      "publish": "Publicar seu primeiro produto",
+      "orders": "Começar a receber pedidos"
+    },
+    "cta": {
+      "publish_first": "Publicar o primeiro produto",
+      "continue_publish": "Continuar publicando",
+      "syncing": "Sincronizando com a vitrine…",
+      "retry_publish": "Tentar publicar novamente"
+    },
+    "timeout": {
+      "message": "Seu produto ainda está sendo processado. Atualize mais tarde para verificar o resultado.",
+      "refresh": "Atualizar status"
+    },
+    "failed": {
+      "fallback": "A publicação não foi concluída. Tente novamente."
+    },
+    "celebration": {
+      "title": "Produto publicado",
+      "visibility": "Após a publicação, o produto entra no processamento de exibição da vitrine e fica visível para os compradores quando a sincronização for concluída.",
+      "view_storefront": "Ver na vitrine",
+      "continue_publish": "Continuar publicando"
+    }
+  },
+  "Customers": {
+    "title": "Gestão de Clientes",
+    "subtitle": "Visualize e gerencie as informações dos seus clientes.",
+    "search": "Pesquisar",
+    "headers": {
+      "name": "Nome",
+      "code": "Código do Cliente",
+      "email": "E-mail",
+      "mobile": "Celular",
+      "phone": "Telefone",
+      "status": "Status",
+      "created_at": "Criado em"
+    },
+    "loading": "Carregando clientes...",
+    "empty": "Nenhum dado de cliente encontrado."
+  },
+  "Locations": {
+    "title": "Locais de Operação",
+    "subtitle": "Gerencie as informações dos locais do seu negócio.",
+    "create_location": "Adicionar Local",
+    "edit_location": "Editar Local",
+    "qrcode": "QR Code",
+    "anti_fraud_code": "Código Antifraude",
+    "headers": {
+      "name": "Nome",
+      "address": "Endereço",
+      "contact": "Contato",
+      "status": "Status",
+      "default": "Padrão",
+      "created_at": "Criado em"
+    },
+    "form": {
+      "name": "Nome do Local",
+      "sub_merchant": "Subcomerciante",
+      "address": "Endereço",
+      "country": "País",
+      "mobile_phone": "Celular",
+      "email": "E-mail de Contato",
+      "service_phone": "Telefone de Atendimento",
+      "status": "Status",
+      "default": "Definir como padrão",
+      "status_required": "Selecione um status",
+      "submit": "Enviar",
+      "cancel": "Cancelar",
+      "success": "Local criado com sucesso",
+      "edit_success": "Local atualizado com sucesso"
+    },
+    "empty": "Nenhum dado de local encontrado.",
+    "status_active": "Ativo",
+    "status_inactive": "Inativo",
+    "confirm_delete": "Tem certeza de que deseja excluir este local?"
+  },
+  "SubMerchants": {
+    "title": "Gestão de Subcomerciantes",
+    "subtitle": "Visualize e gerencie as informações dos seus subcomerciantes.",
+    "create_sub_merchant": "Adicionar Subcomerciante",
+    "edit_sub_merchant": "Editar Subcomerciante",
+    "form": {
+      "name": "Nome do Comerciante",
+      "alias": "Alias de Liquidação",
+      "success": "Subcomerciante criado com sucesso",
+      "edit_success": "Subcomerciante atualizado com sucesso"
+    },
+    "headers": {
+      "name": "Nome do Comerciante",
+      "alias": "Alias",
+      "code": "Código do Comerciante",
+      "merchant_id": "ID do Comerciante",
+      "status": "Status",
+      "created_at": "Criado em"
+    },
+    "empty": "Nenhum dado de subcomerciante encontrado."
+  }
+}

@@ -1,0 +1,459 @@
+{
+  "Pages": {
+    "products": {
+      "title": "Produkte",
+      "subtitle": "Umfassende Zahlungslösungen für jedes Geschäftszenario",
+      "hero_title": "Eine Plattform, unbegrenzte Zahlungsmöglichkeiten",
+      "hero_desc": "Von Fiat bis Krypto, von Inland bis grenzüberschreitend — FilixPay bietet eine einheitliche Zahlungsinfrastruktur, die mit Ihrem Unternehmen skaliert."
+    },
+    "payment_platform": {
+      "badge": "KERNPRODUKT",
+      "hero_title": "Enterprise-Zahlungsinfrastrukturplattform",
+      "hero_desc": "Aufbauen, verwalten und skalieren Sie Zahlungsprozesse mit einheitlichen APIs, Transaktionsmanagement und Abrechnungsinfrastruktur.",
+      "hero_desc_extra": "FilixPay ermöglicht globalen Unternehmen, Zahlungen anzubinden sowie Transaktionen, Abrechnungen und Händlerbetrieb über eine Plattform zu steuern.",
+      "features_title": "Kernfähigkeiten",
+      "features": {
+        "connectivity": {
+          "icon": "API",
+          "title": "Zahlungsanbindung",
+          "desc": "Verbinden Sie globale Zahlungskanäle über einheitliche APIs — Stripe, Wallets, Banküberweisungen und digitale Assets aus einer Integrationsschicht.",
+          "detail_desc": "Reduzieren Sie Integrationsaufwand mit einer einzigen Orchestrierungsschicht für Checkout, gehostete Zahlungsseiten und serverseitige API-Flows.",
+          "points": {
+            "0": "Einheitliche OpenAPI für Auftragserstellung, Rückerstattungen und Statusabfragen",
+            "1": "Mehrkanal-Routing über inländische und grenzüberschreitende Zahlungsmethoden",
+            "2": "Optionale Unterstützung digitaler Asset-Zahlungen ohne Änderung der Kern-Auftragsflows"
+          }
+        },
+        "transactions": {
+          "icon": "TX",
+          "title": "Transaktionsmanagement",
+          "desc": "Verwalten Sie Aufträge, Rückerstattungen, Zahlungsstatus und Prüfpfade mit voller Lebenszyklus-Sichtbarkeit über alle Kanäle.",
+          "detail_desc": "Betriebs- und Entwicklungsteams teilen eine einzige Quelle der Wahrheit — von der Autorisierung bis zu abrechnungsbereiten Status.",
+          "points": {
+            "0": "Auftrags-, Rückerstattungs- und Streitfalldatensätze verknüpft mit Zahlungsversuchen",
+            "1": "Echtzeit-Statusverfolgung mit webhook-gesteuerten Händlerbenachrichtigungen",
+            "2": "Prüffähige Transaktionshistorie für Finanz- und Compliance-Reviews"
+          }
+        },
+        "settlement": {
+          "icon": "ST",
+          "title": "Abrechnung & Mittel",
+          "desc": "Saldenverfolgung, Abrechnungsbelege, Split-Payments, Auszahlungen und Mittelabgleich für Finanzteams.",
+          "detail_desc": "Unterstützt Plattformabrechnung und Direktabrechnung mit automatisierter Rechnungsstellung und nachvollziehbaren Mittelbewegungen.",
+          "points": {
+            "0": "Abrechnungsbelege und Saldenansichten für Händler-Finanzteams",
+            "1": "Split-Payment-Zuweisung für Plattformen und Multi-Händler-Unternehmen",
+            "2": "Auszahlungs-, Einzahlungs- und Überweisungsdatensätze verknüpft mit Abrechnungsergebnissen"
+          }
+        },
+        "merchant_ops": {
+          "icon": "MC",
+          "title": "Händlerbetrieb",
+          "desc": "Kontenverwaltung, Berechtigungen, API-Zugangsdaten, Webhooks und Transaktionsüberwachung in einer Betriebsplattform.",
+          "detail_desc": "Geben Sie Händleradministratoren die benötigten Kontrollen, ohne die Enterprise-Governance auf Organisationsebene freizugeben.",
+          "points": {
+            "0": "Händlerprofile, Zugangsdaten und Zahlungkonfiguration in einer Konsole",
+            "1": "Rollenbasierter Zugriff für Finanz-, Betriebs- und Entwicklungsteams",
+            "2": "Webhook-Endpunkte und API-Schlüssel mit Prüfsichtbarkeit verwaltet"
+          }
+        }
+      },
+      "business_models": {
+        "title": "Übersicht der Geschäftsmodelle",
+        "desc": "FilixPay unterstützt unabhängige Händler, Plattformbetreiber und Unternehmensgruppen mit flexiblen Abrechnungsmodellen.",
+        "items": {
+          "direct": {
+            "title": "Direktabrechnung",
+            "desc": "Unabhängige Händler verbinden Kanäle direkt mit transparentem Clearing und Abrechnung."
+          },
+          "platform": {
+            "title": "Plattformabrechnung (Platform Model)",
+            "desc": "Plattformen ziehen im Namen von Sub-Händlern ein — mit konfigurierbaren Split- und Abrechnungsregeln."
+          },
+          "enterprise": {
+            "title": "Enterprise- & Konzernbetrieb",
+            "desc": "Organisationen mit mehreren Geschäftseinheiten koordinieren Zahlungsprozesse unter Governance-Richtlinien."
+          }
+        }
+      },
+      "links": {
+        "title": "FilixPay-Plattform entdecken",
+        "desc": "Weiter zu verwandten Produktbereichen: Händlerbetrieb, Entwickler, Abrechnung und Enterprise-Governance.",
+        "merchant_center": {
+          "title": "Händlerzentrum",
+          "desc": "Zahlungsbetriebsplattform für Konten, Berechtigungen, Zugangsdaten und Transaktionsüberwachung."
+        },
+        "developers": {
+          "title": "Entwicklerplattform",
+          "desc": "Zahlungs-APIs, SDKs, Webhooks, Sandbox und Integrationsdokumentation."
+        },
+        "payment_splitting": {
+          "title": "Zahlungssplitting",
+          "desc": "Automatisiertes Split-Payment und Abrechnung für Marktplätze und Multi-Händler-Plattformen."
+        },
+        "for_enterprise": {
+          "title": "Für Enterprise",
+          "desc": "Multi-Händler-Governance, RBAC, Organisationsisolation und Bereitstellungsoptionen."
+        }
+      },
+      "cta": {
+        "title": "Mit FilixPay-Zahlungsinfrastruktur starten",
+        "desc": "Entdecken Sie Funktionen für den Händlerbetrieb oder melden Sie sich im Händlerportal an, um Zahlungskanäle zu konfigurieren.",
+        "primary": "Händlerzentrum entdecken",
+        "secondary": "Im Händlerportal anmelden"
+      }
+    },
+    "merchant_center": {
+      "badge": "HÄNDLERBETRIEB",
+      "hero_title": "FilixPay Händlerzentrum",
+      "hero_desc": "Steuern Sie Zahlungsprozesse aus einer Konsole — Transaktionen, Abrechnung, Reporting, Zugangsdaten, Webhooks und Teamzugriff.",
+      "hero_desc_extra": "Das FilixPay Händlerzentrum ist die Betriebsplattform für Händler, Plattformen und Enterprise-Geschäftseinheiten für den täglichen Zahlungsworkflow.",
+      "features_title": "Plattformfähigkeiten",
+      "features": {
+        "transactions": {
+          "icon": "TX",
+          "title": "Transaktionsmanagement",
+          "desc": "Suchen, filtern und überwachen Sie Aufträge, Rückerstattungen und Zahlungsstatus kanalübergreifend in einer einheitlichen Betriebsansicht.",
+          "detail_desc": "Betriebsteams erhalten volle Lebenszyklus-Sichtbarkeit von der Autorisierung bis zu abrechnungsbereiten Status — ohne Werkzeugwechsel.",
+          "points": {
+            "0": "Auftrags- und Rückerstattungsdatensätze verknüpft mit Zahlungsversuchen und Kanalantworten",
+            "1": "Echtzeit-Statusverfolgung mit exportfähiger Transaktionshistorie",
+            "2": "Prüffreundliche Ansichten für Finanz- und Supportteams"
+          }
+        },
+        "settlement": {
+          "icon": "ST",
+          "title": "Abrechnung & Mittel",
+          "desc": "Verfolgen Sie Salden, Abrechnungsbelege, Auszahlungen und Mittelbewegungen im Zusammenhang mit Ihrer Zahlungsaktivität.",
+          "detail_desc": "Finanzteams stimmen Abrechnungsergebnisse auf derselben Plattform ab, die auch für die tägliche Transaktionsüberwachung genutzt wird.",
+          "points": {
+            "0": "Salden- und Abrechnungsbelegansichten für Händler-Finanzworkflows",
+            "1": "Auszahlungs-, Einzahlungs- und Überweisungsdatensätze verknüpft mit Abrechnungsstatus",
+            "2": "Unterstützung für Plattformabrechnung und Direktabrechnung"
+          }
+        },
+        "reporting": {
+          "icon": "RP",
+          "title": "Reporting & Analytics",
+          "desc": "Operatives und finanzielles Reporting zu Zahlungsvolumen, Erfolgsquoten und Abrechnungstrends.",
+          "detail_desc": "Verwandeln Sie Transaktions- und Abrechnungsdaten in handlungsrelevante Berichte für Betriebs- und Finanzverantwortliche.",
+          "points": {
+            "0": "Zusammenfassungen zu Zahlungsvolumen und Erfolgsquote nach Kanal und Zeitraum",
+            "1": "Abrechnungs- und Mittelberichte für Abstimmungsworkflows",
+            "2": "Exportfähige Datenansichten für Finanz- und Geschäftsreviews"
+          }
+        },
+        "api_credentials": {
+          "icon": "KEY",
+          "title": "API-Zugangsdaten",
+          "desc": "Erstellen und rotieren Sie API-Schlüssel, verwalten Sie Sandbox- und Produktionszugangsdaten und steuern Sie den Entwicklerzugriff.",
+          "detail_desc": "Entwickler und Administratoren verwalten Integrationszugangsdaten mit Sichtbarkeit aktiver Schlüssel und Umgebungen.",
+          "points": {
+            "0": "Getrennte Verwaltung von Sandbox- und Produktions-API-Schlüsseln",
+            "1": "Zugangsdatenrotation ohne Störung aktiver Integrationen",
+            "2": "Zugriffskontrollen abgestimmt auf Händler-Teamrollen"
+          }
+        },
+        "webhooks": {
+          "icon": "WH",
+          "title": "Webhooks",
+          "desc": "Konfigurieren Sie Webhook-Endpunkte für Zahlungsereignisse, Zustellungsversuche und integrationsgesteuerte Automatisierung.",
+          "detail_desc": "Halten Sie nachgelagerte Systeme mit zuverlässiger Webhook-Zustellung über den Zahlungslebenszyklus synchron.",
+          "points": {
+            "0": "Endpunktkonfiguration für Auftrags-, Zahlungs- und Rückerstattungsbenachrichtigungen",
+            "1": "Zustellungssichtbarkeit zur Integrationstroubleshootung",
+            "2": "Ereignisgesteuerte Workflows für Auftrags- und Fulfillment-Systeme"
+          }
+        },
+        "team_permissions": {
+          "icon": "TM",
+          "title": "Teamberechtigungen",
+          "desc": "Rollenbasierter Zugriff für Finanz-, Betriebs- und Entwicklungsteams innerhalb eines Händlerkontos.",
+          "detail_desc": "Delegieren Sie den täglichen Zahlungsbetrieb an die richtigen Personen, ohne den vollständigen Kontozugriff freizugeben.",
+          "points": {
+            "0": "Rollenbasierte Berechtigungen für Finanz-, Betriebs- und Entwicklerrollen",
+            "1": "Kontrollierter Zugriff auf Zugangsdaten, Transaktionen und Konfiguration",
+            "2": "Team-Workflows begrenzt auf ein einzelnes Händlerkonto"
+          }
+        },
+        "self_hosted_checkout": {
+          "icon": "CK",
+          "title": "Self-Hosted Checkout",
+          "desc": "Stellen Sie das Open-Source-Checkout-Frontend mit Docker auf Ihrer eigenen Domain bereit — ohne Codeänderungen.",
+          "detail_desc": "Betreiben Sie die Zahlungsseite unter checkout.yourdomain.com statt einer Drittanbieter-URL. FilixPay übernimmt die Zahlungslogik; Sie steuern Branding, Hosting und Zugriffsprotokolle.",
+          "points": {
+            "0": "Offizielles GHCR-Image ziehen und ausschließlich über Umgebungsvariablen konfigurieren",
+            "1": "Zugangsdaten aus dem Entwicklerzentrum (Client ID / Secret) zur Anbindung an FilixPay-APIs nutzen",
+            "2": "Apache-2.0 Open Source — Frontend prüfen; Kernrisikologie und Kanallogik bleiben bei FilixPay"
+          }
+        }
+      },
+      "checkout_deployment": {
+        "title": "Bereitstellung von Self-Hosted Checkout",
+        "desc": "Für Händler, die die Zahlungsseite auf eigener Domain und Infrastruktur betreiben möchten — nicht den gehosteten FilixPay-Checkout. Stellen Sie das Open-Source-Frontend filix-checkout mit Docker bereit; keine Frontend-Codeänderungen nötig.",
+        "benefits": {
+          "brand": {
+            "title": "Ihre Domain, Ihre Marke",
+            "desc": "Stellen Sie den Checkout unter checkout.yourdomain.com bereit, damit Kunden Ihre Marke in der Adresszeile sehen — das senkt Abbrüche und stärkt Vertrauen."
+          },
+          "compliance": {
+            "title": "Klare Datengrenzen",
+            "desc": "Checkout-Frontend-Code, Zugriffsprotokolle und Bereitstellungsumgebung bleiben auf Ihren Servern — einfacher für interne Compliance und Audit-Anforderungen."
+          },
+          "open_source": {
+            "title": "Open Source & prüfbar",
+            "desc": "Apache-2.0-lizenzierter Next.js-Checkout. Prüfen Sie den Code selbst; die Zahlungskernlogik bleibt im FilixPay-Backend mit derselben Sicherheitsgrenze."
+          },
+          "low_cost": {
+            "title": "Geringer Integrationsaufwand",
+            "desc": "Keine Änderungen an der Geschäftslogik — konfigurieren Sie API-Zugangsdaten und URLs per Umgebungsdatei, ziehen Sie das Docker-Image und gehen Sie live."
+          }
+        },
+        "steps": {
+          "credentials": {
+            "title": "1. API-Zugangsdaten erhalten",
+            "desc": "Erstellen Sie FILIXPAY_BACKEND_CLIENT_ID und FILIXPAY_BACKEND_CLIENT_SECRET im FilixPay Entwicklerzentrum."
+          },
+          "docker": {
+            "title": "2. Mit Docker bereitstellen",
+            "desc": "Ziehen Sie ghcr.io/filixpay/filix-checkout, mounten Sie Ihre Env-Datei und starten Sie auf Port 3001. Pinne Sie für Produktion ein Versions-Tag."
+          },
+          "domain": {
+            "title": "3. Domain binden",
+            "desc": "Stellen Sie checkout.example.com über Nginx oder Caddy mit HTTPS bereit. Setzen Sie NEXTAUTH_URL auf die öffentliche URL."
+          }
+        },
+        "note": "Dies ist ein schlankes Self-Hosted-Checkout-Frontend — nicht die vollständige FilixPay Private Deployment (PostgreSQL-, Redis-, Keycloak-Stack). Vergleichen Sie auf der Seite Private Deployment.",
+        "cta_docs": "Bereitstellungsleitfaden anzeigen",
+        "cta_developers": "Zum Entwicklerzentrum",
+        "cta_compare": "Mit Private Deployment vergleichen"
+      },
+      "audience": {
+        "title": "Wer das Händlerzentrum nutzt",
+        "desc": "Das FilixPay Händlerzentrum richtet sich an Unternehmen, die eine dedizierte Betriebskonsole für Zahlungsworkflows benötigen — nicht Enterprise-Governance auf Organisationsebene.",
+        "items": {
+          "merchants": {
+            "title": "Unabhängige Händler",
+            "desc": "Betreiben Sie Zahlungsprozesse, überwachen Sie Transaktionen und verwalten Sie Zugangsdaten für ein einzelnes Geschäftskonto."
+          },
+          "platforms": {
+            "title": "Plattformen & Marktplätze",
+            "desc": "Steuern Sie Sub-Händler-Zahlungsworkflows, Split-Abrechnungen und plattformweites Reporting aus einer Konsole."
+          },
+          "enterprises": {
+            "title": "Enterprise-Geschäftseinheiten",
+            "desc": "Geben Sie Geschäftseinheiten einen Händlerbetriebs-Workspace für Transaktionen, Abrechnung und Teamzugriff."
+          }
+        }
+      },
+      "links": {
+        "title": "Verwandte Produkte entdecken",
+        "desc": "Das Händlerzentrum verbindet sich mit der breiteren FilixPay-Zahlungsinfrastruktur, der Entwicklerplattform und den Abrechnungsfähigkeiten.",
+        "payment_platform": {
+          "title": "Zahlungsplattform",
+          "desc": "Enterprise-Zahlungsinfrastruktur für APIs, Transaktionsmanagement und Abrechnung."
+        },
+        "developers": {
+          "title": "Entwicklerplattform",
+          "desc": "Zahlungs-APIs, SDKs, Webhooks, Sandbox und Integrationsdokumentation."
+        },
+        "payment_splitting": {
+          "title": "Zahlungssplitting",
+          "desc": "Automatisiertes Split-Payment und Abrechnung für Marktplätze und Multi-Händler-Plattformen."
+        }
+      },
+      "cta": {
+        "title": "Im Händlerzentrum anmelden",
+        "desc": "Greifen Sie auf Ihr Händlerportal zu, um Zahlungskanäle zu konfigurieren, Transaktionen zu verwalten und den täglichen Zahlungsbetrieb zu führen.",
+        "primary": "Im Händlerportal anmelden",
+        "secondary": "Entwicklerdokumentation anzeigen"
+      }
+    },
+    "developers": {
+      "badge": "ENTWICKLERPLATTFORM",
+      "hero_title": "Zahlungen mit APIs aufbauen",
+      "hero_desc": "Integrieren Sie FilixPay mit REST-APIs, SDKs, Sandbox-Umgebungen und Webhooks, um Checkout, Aufträge und Abrechnungsflows zu verbinden.",
+      "hero_desc_extra": "Die FilixPay Entwicklerplattform gibt Engineering-Teams die Werkzeuge, um Enterprise-Zahlungsintegrationen zu bauen, zu testen und zu betreiben.",
+      "features_title": "Entwicklerfähigkeiten",
+      "features": {
+        "api": {
+          "icon": "API",
+          "title": "Zahlungs-APIs",
+          "desc": "OpenAPI-first REST-Endpunkte für Auftragserstellung, Rückerstattungen, Zahlungsstatus und Abrechnungsabfragen.",
+          "detail_desc": "Integrieren Sie serverseitige Zahlungsflows mit konsistenten Request-Modellen über Kanäle und Umgebungen hinweg.",
+          "points": {
+            "0": "Aufträge anlegen, Zahlungen erfassen und Rückerstattungen über einheitliche Endpunkte auslösen",
+            "1": "Transaktionsstatus und Abrechnungsergebnisse programmatisch abfragen",
+            "2": "Sandbox- und Produktionsumgebungen mit getrennten Zugangsdaten"
+          }
+        },
+        "sdk": {
+          "icon": "SDK",
+          "title": "SDKs & Client-Bibliotheken",
+          "desc": "Sprachspezifische Hilfen zur beschleunigten Integration mit typisierten Request-Buildern und Fehlerbehandlung.",
+          "detail_desc": "Reduzieren Sie Boilerplate mit SDK-Mustern, die an die FilixPay-OpenAPI-Spezifikationen angeglichen sind.",
+          "points": {
+            "0": "Client-Bibliotheken für gängige serverseitige Integrationsmuster",
+            "1": "Signatur- und Authentifizierungshilfen für sichere API-Aufrufe",
+            "2": "Beispiele abgestimmt auf Checkout- und Webhook-Workflows"
+          }
+        },
+        "sandbox": {
+          "icon": "SB",
+          "title": "Sandbox",
+          "desc": "Testen Sie Zahlungsflows End-to-End mit Sandbox-Zugangsdaten, bevor Sie in Produktion gehen.",
+          "detail_desc": "Entwickler validieren Integrationen in einer isolierten Umgebung mit derselben API-Oberfläche wie in Produktion.",
+          "points": {
+            "0": "Sandbox-API-Schlüssel getrennt von Produktionszugangsdaten",
+            "1": "Simulieren Sie Auftrags- und Zahlungslebenszyklus-Ereignisse für Integrationstests",
+            "2": "Integrations-Sandbox-Tools in der Entwicklerkonsole"
+          }
+        },
+        "webhooks": {
+          "icon": "WH",
+          "title": "Webhooks",
+          "desc": "Empfangen Sie Echtzeit-Benachrichtigungen zu Zahlungsereignissen für Aufträge, Zahlungen, Rückerstattungen und Abrechnungsupdates.",
+          "detail_desc": "Halten Sie nachgelagerte Systeme mit zuverlässiger Webhook-Zustellung über den Zahlungslebenszyklus synchron.",
+          "points": {
+            "0": "Endpunkte für Auftrags-, Zahlungs- und Rückerstattungsbenachrichtigungen konfigurieren",
+            "1": "Zustellungsprotokolle und Retry-Sichtbarkeit zur Integrationstroubleshootung",
+            "2": "Ereignisgesteuerte Workflows für Auftragserfüllung und Abgleich"
+          }
+        }
+      },
+      "quick_start": {
+        "title": "Schnellstart",
+        "desc": "Von Zugangsdaten bis zur ersten Sandbox-Zahlung in drei Schritten.",
+        "steps": {
+          "0": "Melden Sie sich im Händlerportal an und öffnen Sie die Entwicklerkonsole, um Sandbox-API-Zugangsdaten zu erstellen.",
+          "1": "Erstellen Sie einen Testauftrag über die Payment API oder das SDK mit Ihrem Sandbox-Schlüssel.",
+          "2": "Konfigurieren Sie einen Webhook-Endpunkt und prüfen Sie die Ereigniszustellung in der Entwicklerkonsole."
+        }
+      },
+      "checkout_deployment": {
+        "title": "Bereitstellung von Self-Hosted Checkout",
+        "desc": "Stellen Sie das Open-Source-Frontend filix-checkout mit Docker auf Ihrer eigenen Domain bereit. Verbinden Sie sich mit Zugangsdaten aus dem Entwicklerzentrum — ohne Frontend-Codeänderungen.",
+        "points": {
+          "0": "Erstellen Sie FILIXPAY_BACKEND_CLIENT_ID / CLIENT_SECRET in der Entwicklerkonsole vor der Bereitstellung.",
+          "1": "Ziehen Sie ghcr.io/filixpay/filix-checkout und konfigurieren Sie per Umgebungsdatei — pinne Sie in Produktion ein Versions-Tag.",
+          "2": "Die Zahlungskernlogik bleibt bei FilixPay; Sie hosten Checkout-UI und BFF-Proxy auf Ihrer Infrastruktur."
+        },
+        "cta_docs": "Bereitstellungsleitfaden anzeigen",
+        "cta_merchant_center": "Übersicht im Händlerzentrum"
+      },
+      "links": {
+        "title": "Verwandte Produkte entdecken",
+        "desc": "Entwicklerintegrationen verbinden sich mit der FilixPay-Zahlungsinfrastruktur und dem Händlerbetrieb.",
+        "payment_platform": {
+          "title": "Zahlungsplattform",
+          "desc": "Enterprise-Zahlungsinfrastruktur für APIs, Transaktionsmanagement und Abrechnung."
+        },
+        "merchant_center": {
+          "title": "Händlerzentrum",
+          "desc": "Zahlungsbetriebsplattform für Konten, Berechtigungen, Zugangsdaten und Transaktionsüberwachung."
+        }
+      },
+      "cta": {
+        "title": "Mit FilixPay integrieren",
+        "desc": "Folgen Sie dem Schnellstartleitfaden oder öffnen Sie die Entwicklerkonsole, um Zugangsdaten, Sandbox und Webhooks zu verwalten.",
+        "primary": "Schnellstart anzeigen",
+        "secondary": "Entwicklerkonsole öffnen"
+      }
+    },
+    "for_enterprise": {
+      "badge": "ENTERPRISE-GOVERNANCE",
+      "hero_title": "Enterprise-Zahlungsgovernance für Konzerne und regulierte Unternehmen",
+      "hero_desc": "FilixPay For Enterprise hilft der Zentrale, Multi-Organisations-Zahlungsprozesse mit Multi-Händler-Management, RBAC, Mitglieder-Governance und Isolation auf Organisationsebene zu steuern.",
+      "hero_desc_extra": "Das FilixPay Händlerzentrum deckt den Einzelhändler-Betrieb ab; For Enterprise ergänzt Organisations-Governance für Konzerne, Holdings und regulierte Unternehmen.",
+      "features_title": "Governance-Fähigkeiten",
+      "features": {
+        "multi_org": {
+          "icon": "ORG",
+          "title": "Multi-Organisations-Governance",
+          "desc": "Zentralisieren Sie Enterprise-Governance über Rechtsträger hinweg und bewahren Sie gleichzeitig den unabhängigen Betrieb jeder Organisation.",
+          "detail_desc": "Die Zentrale legt Organisationen an und verwaltet sie, ohne den täglichen Händlerbetrieb zu ersetzen.",
+          "points": {
+            "0": "Enterprise-weite Sichtbarkeit über Organisationen und Händler",
+            "1": "Governance-Grenzen, die auf der Organisationsebene enden",
+            "2": "Zentrale Richtlinien mit dezentraler Geschäftsausführung"
+          }
+        },
+        "multi_merchant": {
+          "icon": "MM",
+          "title": "Multi-Händler-Management",
+          "desc": "Koordinieren Sie Zahlungsprozesse über Tochtergesellschaften, Geschäftseinheiten und Projektteams unter einheitlicher Governance.",
+          "detail_desc": "Durchbrechen Sie Mittelsilos mit überwachten Konten und transparentem Acquiring über Konzernhändler hinweg.",
+          "points": {
+            "0": "Einheitliche Acquiring-Strategie mit Unterzeichnung auf Entitätsebene",
+            "1": "Sub-Händler- und projektbezogene Zahlungsworkflows",
+            "2": "Transparente Mittelströme für die Aufsicht der Zentrale"
+          }
+        },
+        "rbac": {
+          "icon": "RBAC",
+          "title": "RBAC & Mitglieder-Governance",
+          "desc": "Rollenbasierte Zugriffskontrollen und Governance des Mitgliederlebenszyklus für Enterprise-Administratoren und Organisationsinhaber.",
+          "detail_desc": "Delegieren Sie Governance-Verantwortung mit prüfbaren Mitgliederberechtigungen und Freigabe-Workflows.",
+          "points": {
+            "0": "Trennung der Rollen Enterprise ADMIN und Organization OWNER",
+            "1": "Mitgliedereinladungen, Rollenzuweisungen und Zugriffsreviews",
+            "2": "Prüfbare Governance-Aktionen über Organisationen hinweg"
+          }
+        },
+        "isolation": {
+          "icon": "ISO",
+          "title": "Organisationsisolation",
+          "desc": "Starke Isolation zwischen Organisationen bei gleichzeitiger enterprise-weiter Governance-Sichtbarkeit.",
+          "detail_desc": "Jede Organisation arbeitet mit scoped Zugangsdaten, Händlern und Autorisierungsgrenzen.",
+          "points": {
+            "0": "Scoped Händler- und Zugangsdatenverwaltung pro Organisation",
+            "1": "Autorisierung bleibt innerhalb der Organisationsgrenzen",
+            "2": "Enterprise-Aufsicht ohne Zentralisierung des Betriebs"
+          }
+        }
+      },
+      "private_deployment": {
+        "title": "Optionen für Private Deployment",
+        "desc": "FilixPay kann in Ihrer eigenen Umgebung für Datensouveränität und regulierte Branchen bereitgestellt werden — kontaktieren Sie den Vertrieb, um Bereitstellungsoptionen zu besprechen."
+      },
+      "links": {
+        "title": "Zahlungsinfrastruktur entdecken",
+        "desc": "Enterprise-Governance baut auf der FilixPay-Zahlungsinfrastruktur für APIs, Transaktionen und Abrechnung auf.",
+        "payment_platform": {
+          "title": "Zahlungsplattform",
+          "desc": "Enterprise-Zahlungsinfrastruktur für APIs, Transaktionsmanagement und Abrechnung."
+        }
+      },
+      "cta": {
+        "title": "Sprechen Sie mit unserem Enterprise-Team",
+        "desc": "Kontaktieren Sie den Vertrieb, um Multi-Organisations-Governance, RBAC-Anforderungen und Bereitstellungsoptionen für Ihren Konzern zu besprechen.",
+        "primary": "Vertrieb kontaktieren",
+        "secondary": "Zahlungsplattform entdecken"
+      }
+    },
+    "credit_payment": {
+      "title": "Kreditzahlung",
+      "subtitle": "Flexible kreditbasierte Zahlungslösungen für B2B- und Abo-Unternehmen",
+      "hero_title": "Buy Now, Pay Later — für Unternehmen gebaut",
+      "hero_desc": "Ermöglichen Sie Kreditlinien, Ratenzahlungspläne und aufgeschobene Zahlungen mit Enterprise-Risikomanagement und Echtzeit-Kontenverfolgung.",
+      "features": {
+        "credit_line": {
+          "title": "Kreditlinienverwaltung",
+          "desc": "Legen Sie Kreditlimits für Ihre Geschäftskunden fest und verwalten Sie sie mit flexiblen Zahlungsbedingungen."
+        },
+        "installment": {
+          "title": "Ratenzahlungspläne",
+          "desc": "Unterstützen Sie mehrperiodige Zahlungspläne mit automatisierter Abrechnung und Einzug."
+        },
+        "risk": {
+          "title": "Risikokontrolle",
+          "desc": "Echtzeit-Credit-Scoring und Risikobewertung mit konfigurierbaren Regeln."
+        },
+        "reconciliation": {
+          "title": "Auto-Abgleich",
+          "desc": "Automatisierte Zuordnung von Zahlungen zu Rechnungen mit detailliertem Reporting."
+        }
+      }
+    }
+  }
+}

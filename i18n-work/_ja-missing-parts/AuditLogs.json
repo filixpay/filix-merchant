@@ -1,0 +1,45 @@
+{
+  "AuditLogs": {
+    "title": "Audit Logs",
+    "subtitle": "Read-only audit trail for security-sensitive actions in your merchant account.",
+    "empty": "No audit records found.",
+    "table_total": "Total {count} records",
+    "view_link": "View",
+    "timeline_hint": "View Timeline in the related order detail",
+    "metadata_truncated": "Metadata was truncated",
+    "columns": {
+      "time": "Time",
+      "actor": "Actor",
+      "action": "Action",
+      "resource": "Resource",
+      "result": "Result",
+      "link": "Link"
+    },
+    "filter": {
+      "date_range": "Date range",
+      "date_range_start": "Start time",
+      "date_range_end": "End time",
+      "action": "Action type",
+      "result": "Result"
+    },
+    "result": {
+      "SUCCESS": "Success",
+      "FAILURE": "Failure",
+      "DENIED": "Denied"
+    },
+    "actor_type": {
+      "MERCHANT_USER": "Merchant user",
+      "OPERATOR": "Operator",
+      "SYSTEM": "System",
+      "API": "API",
+      "WEBHOOK": "Webhook"
+    },
+    "detail": {
+      "reason": "Reason",
+      "event_id": "Event ID",
+      "request_id": "Request ID",
+      "trace_id": "Trace ID",
+      "metadata": "Metadata"
+    }
+  }
+}

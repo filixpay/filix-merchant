@@ -1,0 +1,24 @@
+{
+  "TransferRecords": {
+    "title": "Transfer Records",
+    "subtitle": "View fund transfer history between merchants.",
+    "headers": {
+      "transfer_no": "Transfer No",
+      "amount": "Amount",
+      "status": "Status",
+      "created_at": "Transfer Time"
+    },
+    "empty": "No transfer records found.",
+    "item_details": {
+      "title": "Transfer Details",
+      "headers": {
+        "payee_name": "Payee Name",
+        "payee_account": "Account Number",
+        "bank": "Bank Name",
+        "amount": "Amount",
+        "status": "Status",
+        "created_at": "Created At"
+      }
+    }
+  }
+}

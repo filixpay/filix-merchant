@@ -1,0 +1,286 @@
+{
+  "Pages": {
+    "identity": {
+      "title": "Identity & Auth",
+      "hero_title": "Enterprise Identity: Building a Financial-Grade Security Foundation with Keycloak",
+      "hero_desc": "In payment systems, identity authentication is not only the first door of user experience but also the core defense line for fund security and compliant operations. We adopt Keycloak - an open-source Identity and Access Management (IAM) platform led by Red Hat - as a unified identity authentication engine, providing financial-grade security, global compliance support, and capacity for tens of millions of users for your payment business.",
+      "why_keycloak_title": "✅ Why Keycloak? — Verified by Top Global Institutions",
+      "why_keycloak_desc": "Keycloak has been deeply adopted by numerous industries with high security requirements, including finance, government, telecommunications, and cloud computing:",
+      "cases": [
+        {
+          "name": "Hitachi",
+          "desc": "Built an authorization server for Japanese banks that meets Financial-grade API (FAPI) standards, passing 700+ consistency tests to meet the most stringent open banking compliance requirements."
+        },
+        {
+          "name": "Austrian Federal Computing Centre (BRZ)",
+          "desc": "As a technology partner of the Austrian government, it supports unified authentication for 2 million+ users and 130+ public services, operating stably for many years."
+        },
+        {
+          "name": "Infosys",
+          "desc": "Built an identity platform for a large Japanese pharmaceutical group, managing over 2 million users and supporting 4000+ pharmacists logging in safely daily in 750+ pharmacies."
+        },
+        {
+          "name": "VMware (Broadcom)",
+          "desc": "Deeply integrated Keycloak into its Telco Cloud Operations platform to achieve automated management of users, roles, and permissions."
+        }
+      ],
+      "cases_conclusion": "These cases prove: Keycloak can not only handle high concurrency and large-scale user pressure but also meet the compliance thresholds of highly regulated industries such as finance and government.",
+      "features_title": "🔐 Security Capabilities Tailored for Payment Scenarios",
+      "feature_1_title": "1. Financial-Grade Protocol Support",
+      "feature_1_desc": "Full implementation of OpenID Connect, OAuth 2.0, SAML 2.0; native support for FAPI (Financial-grade API) security specifications to meet PSD2 and open banking compliance; support for PKCE, MTLS, JWT signature verification, and other advanced security mechanisms.",
+      "feature_2_title": "2. Strong Authentication & Access Control",
+      "feature_2_desc": "Multi-Factor Authentication (MFA): SMS, TOTP, WebAuthn (FIDO2); Role-Based Access Control (RBAC) and fine-grained permission policies; session management: automatic timeout, forced logout, and device binding.",
+      "feature_3_title": "3. Compliance-Ready Architecture",
+      "feature_3_desc": "GDPR Ready: Data minimization, consent management, data export/deletion; PCI DSS Friendly: No contact with cardholder data (PAN), serves only as an authentication layer, reducing compliance scope; compatible with multi-level protection scheme (MLPS) requirements.",
+      "feature_4_title": "4. High Availability & Scalability",
+      "feature_4_desc": "Supports cluster deployment, database sharding, and cache optimization; proven in multiple national platforms to handle millions of daily active users; private deployment ensures data sovereignty and network isolation.",
+      "integration_title": "🛠️ Seamlessly Integrate with Your Payment System",
+      "integration_desc": "Keycloak provides standardized interfaces for easy integration with:",
+      "integration_items": [
+        "Merchant Backend Management System (SSO)",
+        "Payment Gateway Operator Authentication",
+        "Partner API Access Authorization",
+        "Internal Staff Permission Management Platform"
+      ],
+      "integration_footer": "Also supports federation with existing identity sources like LDAP, Active Directory, and social accounts for a smooth migration without burden.",
+      "choice_title": "💡 Our Choice: Open Source + Enterprise-Grade Protection",
+      "choice_desc": "Keycloak is a Red Hat-supported open-source project, giving you:",
+      "choice_item_1": "Cost advantage with zero licensing fees",
+      "choice_item_2": "Technical ecosystem with active community and comprehensive documentation",
+      "choice_item_3": "Enterprise SLA support options with Red Hat Single Sign-On (Commercial version)",
+      "cta_quote": "\"We chose Keycloak not just because it's free, but because it's been verified by global financial and government institutions—it's an identity engine truly capable of carrying the security of payment systems.\"",
+      "cta_desc": "Experience now: Our payment platform has a built-in Keycloak authentication system, supporting rapid connection to your existing IAM system, helping you achieve a perfect balance between security and efficiency."
+    },
+    "blockchain": {
+      "title": "Blockchain Integration",
+      "subtitle": "Multi-chain adaption and cross-chain interoperability",
+      "hero_title": "Connect Every Chain, Trust Every Transaction",
+      "hero_desc": "Native support for major consortium blockchains with cross-chain verification and compliance-ready audit trails.",
+      "deprecated": {
+        "badge": "Deprecated",
+        "title": "This technology direction is no longer FilixPay's product positioning",
+        "desc": "FilixPay focuses on enterprise payment infrastructure — payment connectivity, transaction management, settlement, and merchant operations.",
+        "extra": "This page is retained for historical reference and is no longer indexed as a core FilixPay capability.",
+        "notice_title": "Recommended next step",
+        "notice_body": "Learn how FilixPay helps enterprises build and operate payment infrastructure.",
+        "cta": "Explore Payment Platform",
+        "cta_title": "Continue with payment infrastructure",
+        "cta_desc": "See FilixPay's enterprise payment platform capabilities."
+      }
+    },
+    "case_studies": {
+      "title": "Case Studies",
+      "subtitle": "See how businesses around the world are succeeding with FilixPay",
+      "items": [
+        {
+          "title": "MicSelect - Global Cross-Border E-Commerce Payment Integration",
+          "desc": "A next-generation global e-commerce payment system built on Saleor + FilixPay",
+          "link": "/resources/case-studies/micselect"
+        }
+      ],
+      "micselect": {
+        "badge": "Case Study",
+        "title": "MicSelect - Global Cross-Border E-Commerce Payment Integration",
+        "subtitle": "A next-generation global e-commerce payment system built on Saleor + FilixPay",
+        "background_eyebrow": "Client Background",
+        "background_text": "MicSelect is a curated cross-border e-commerce platform featuring quality China-made products, focused on premium supply chains and an international shopping experience. Built on the Saleor open-source e-commerce framework and Next.js, MicSelect is dedicated to delivering quality Chinese-manufactured goods with a seamless online shopping experience for global consumers.",
+        "background_link_text": "Visit MicSelect →",
+        "background_solutions_link_text": "View MicSelect Solutions →",
+        "challenges_eyebrow": "Challenges",
+        "challenges_items": [
+          "Unified integration of multiple payment channels",
+          "Optimizing payment success rates for global users",
+          "Complex cross-border order reconciliation",
+          "Insufficient payment extensibility of the e-commerce platform",
+          "Webhook and asynchronous payment status synchronization"
+        ],
+        "solution_eyebrow": "Solution",
+        "solution_intro": "FilixPay provided MicSelect with a complete payment infrastructure:",
+        "solution_items": [
+          "Aggregated international payment channels including Stripe and PayPal",
+          "Unified checkout and payment routing",
+          "Asynchronous payment notifications via Webhooks",
+          "Automated payment reconciliation and settlement",
+          "OpenAPI merchant platform",
+          "Multi-environment payment sandbox capabilities",
+          "Deep integration with Saleor"
+        ],
+        "architecture_eyebrow": "Architecture",
+        "arch_saleor": "Saleor",
+        "arch_saleor_label": "E-Commerce Platform",
+        "arch_payment_app": "FilixPay Payment App",
+        "arch_payment_app_label": "Payment Application",
+        "arch_gateway": "FilixPay Gateway",
+        "arch_gateway_label": "Payment Gateway",
+        "arch_channels_label": "Payment Channels",
+        "results_eyebrow": "Results",
+        "results_items": [
+          "Successfully achieved a global payment closed loop",
+          "Enhanced payment system scalability",
+          "Reduced payment channel integration complexity",
+          "Enabled automated order status synchronization",
+          "Delivered unified payment operations capability"
+        ],
+        "cta_title": "Start Integrating FilixPay",
+        "cta_desc": "Build global payment capabilities like MicSelect. Start integrating with FilixPay today."
+      }
+    },
+    "compliance": {
+      "title": "Compliance Guide",
+      "subtitle": "Navigate global payment regulations with confidence",
+      "hero_title": "Compliance Made Simple",
+      "hero_desc": "Comprehensive guides covering GDPR, PCI-DSS, FATF Travel Rule, and regional payment regulations to keep your business compliant."
+    },
+    "blog": {
+      "title": "Blog & Articles",
+      "subtitle": "Technical insights, industry analysis, and product updates",
+      "posts": [
+        {
+          "title": "FilixPay Checkout - Independent Domain Deployment (Demo)",
+          "desc": "React-based independent checkout interface supporting multi-chain adaption and private domain deployment.",
+          "link": "https://github.com/filixpay/filix-checkout"
+        },
+        {
+          "title": "FilixPay Merchant Center - Modern Merchant Dashboard",
+          "desc": "A merchant management system built with Next.js and Shadcn UI, featuring multi-merchant management, fund accounts, withdrawals, and access control.",
+          "link": "https://github.com/filixpay/filix-merchant"
+        }
+      ]
+    },
+    "downloads": {
+      "title": "Download Center",
+      "subtitle": "Deployment documentation, agreement samples, and technical resources",
+      "items": {
+        "deploy_doc": {
+          "title": "Deployment Guide",
+          "desc": "Complete guide for private deployment setup"
+        },
+        "license_sample": {
+          "title": "License Agreement Sample",
+          "desc": "Source code license agreement template"
+        },
+        "api_spec": {
+          "title": "API Specification",
+          "desc": "OpenAPI/Swagger specification file"
+        }
+      }
+    },
+    "common": {
+      "learn_more": "Learn More",
+      "get_started": "Get Started",
+      "contact_sales": "Contact Sales",
+      "coming_soon": "Coming Soon",
+      "back_home": "Back to Home",
+      "key_features": "Key Features",
+      "why_choose": "Why Choose This Solution",
+      "use_cases": "Use Cases",
+      "consequences": "Consequences"
+    },
+    "private_deployment": {
+      "badge": "ENTERPRISE DEPLOYMENT",
+      "hero_title": "Full Stack Control · Enterprise Grade · Data Sovereignty",
+      "specs_title": "Deployment Specifications",
+      "specs_server_title": "Server Requirements",
+      "specs_stack_title": "Technology Stack",
+      "specs_col_item": "Item",
+      "specs_col_requirement": "Requirement",
+      "specs_items": {
+        "os": "OS",
+        "os_value": "Linux (Ubuntu 22.04+)",
+        "cpu": "CPU",
+        "cpu_value": "4 Cores",
+        "memory": "Memory",
+        "memory_value": "≥ 8 GB",
+        "disk": "Disk",
+        "disk_value": "≥ 20 GB",
+        "docker": "Docker",
+        "docker_value": "20.10+",
+        "compose": "Docker Compose",
+        "compose_value": "v2.0+"
+      },
+      "stack": {
+        "postgres": {
+          "name": "PostgreSQL 15–18",
+          "desc": "Core Database"
+        },
+        "redis": {
+          "name": "Redis 7.2",
+          "desc": "Cache Service"
+        },
+        "keycloak": {
+          "name": "Keycloak 26.0",
+          "desc": "Identity & Auth"
+        },
+        "compose": {
+          "name": "Docker Compose",
+          "desc": "Orchestration"
+        }
+      },
+      "architecture_label": "System Topology",
+      "pricing_section_title": "Investment & Pricing",
+      "pricing_intro": "Transparent one-time licensing with complete system asset delivery — build owned payment infrastructure with confidence.",
+      "pricing_badge": "Enterprise License",
+      "pricing_onetime": "One-time Fee",
+      "pricing_included_title": "What's Included",
+      "pricing_included": [
+        "Complete source code (merchant center, payment gateway, settlement engine)",
+        "Deployment documentation, database scripts, API specifications",
+        "One-time deployment support and technical handover",
+        "One year free professional maintenance"
+      ],
+      "pricing_maintenance_label": "Annual Maintenance (from Year 2)",
+      "pricing_maintenance_value": "10% of license fee (2,800 USD/year)",
+      "pricing_cta": "Contact Sales for Details",
+      "licensing_title": "Source Code Licensing",
+      "final_cta_title": "Ready to deploy your own payment infrastructure?",
+      "final_cta_desc": "Contact our enterprise team for custom deployment planning and licensing details.",
+      "final_cta_primary": "Contact Sales",
+      "final_cta_docs": "View Deployment Docs",
+      "final_cta_download": "Download License Agreement",
+      "view_deployment_docs": "View Deployment Docs",
+      "deployment_comparison": {
+        "title": "Self-Hosted Checkout vs. Full Private Deployment",
+        "desc": "FilixPay offers two deployment paths with different scope and investment. Choose based on whether you need only a branded checkout page or a complete on-premise payment platform.",
+        "columns": {
+          "dimension": "Dimension",
+          "checkout": "Self-Hosted Checkout",
+          "full_stack": "Full Private Deployment"
+        },
+        "rows": {
+          "scope": {
+            "label": "What you deploy",
+            "checkout": "Open-source checkout frontend + BFF proxy (filix-checkout)",
+            "full_stack": "Complete FilixPay stack: merchant center, payment gateway, settlement engine"
+          },
+          "audience": {
+            "label": "Best for",
+            "checkout": "Merchants who want checkout on their own domain with minimal ops",
+            "full_stack": "Banks, payment providers, and enterprises requiring full data sovereignty"
+          },
+          "infrastructure": {
+            "label": "Infrastructure",
+            "checkout": "Single Docker container; optional Nginx/Caddy reverse proxy",
+            "full_stack": "PostgreSQL, Redis, Keycloak, Docker Compose cluster"
+          },
+          "licensing": {
+            "label": "Licensing",
+            "checkout": "Apache-2.0 open source; free to self-host",
+            "full_stack": "Enterprise source license with one-time fee and maintenance"
+          },
+          "complexity": {
+            "label": "Setup effort",
+            "checkout": "Hours—env file + docker pull + HTTPS domain",
+            "full_stack": "Days to weeks—full stack deployment and handover"
+          },
+          "when_to_choose": {
+            "label": "When to choose",
+            "checkout": "Brand-controlled checkout URL; FilixPay SaaS for everything else",
+            "full_stack": "All payment data and systems must run inside your network"
+          }
+        },
+        "checkout_cta": "View Checkout Deployment Guide",
+        "merchant_center_cta": "Merchant Center Overview"
+      }
+    }
+  }
+}

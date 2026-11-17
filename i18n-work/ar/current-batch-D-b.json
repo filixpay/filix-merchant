@@ -1,0 +1,105 @@
+{
+  "CommerceActivation": {
+    "title": "Start running your store",
+    "subtitle": "A few steps to get your products selling globally",
+    "trust": "As a FilixPay merchant, you can create and publish products in Merchant Center directly — no platform catalog review required.",
+    "steps": {
+      "profile": "Complete store profile",
+      "profile_link": "Update profile (optional)",
+      "publish": "Publish your first product",
+      "orders": "Start receiving orders"
+    },
+    "cta": {
+      "publish_first": "Publish first product",
+      "continue_publish": "Continue publishing",
+      "syncing": "Syncing to storefront…",
+      "retry_publish": "Retry publish"
+    },
+    "timeout": {
+      "message": "Your product is still being processed. Refresh later to check the result.",
+      "refresh": "Refresh status"
+    },
+    "failed": {
+      "fallback": "Publish did not complete. Please retry."
+    },
+    "celebration": {
+      "title": "Product published",
+      "visibility": "After publishing, the product enters storefront display processing and becomes visible to shoppers once sync completes.",
+      "view_storefront": "View on storefront",
+      "continue_publish": "Continue publishing"
+    }
+  },
+  "Customers": {
+    "title": "إدارة العملاء",
+    "subtitle": "عرض وإدارة معلومات عملائك.",
+    "search": "بحث",
+    "headers": {
+      "name": "الاسم",
+      "code": "رمز العميل",
+      "email": "البريد الإلكتروني",
+      "mobile": "الهاتف المحمول",
+      "phone": "الهاتف",
+      "status": "حالة العميل",
+      "created_at": "وقت الإنشاء"
+    },
+    "loading": "جارٍ تحميل العملاء...",
+    "empty": "لا توجد بيانات للعملاء حالياً."
+  },
+  "Locations": {
+    "title": "المواقع",
+    "subtitle": "إدارة معلومات مواقع عملك.",
+    "create_location": "إضافة موقع",
+    "edit_location": "Edit Location",
+    "qrcode": "QR Code",
+    "anti_fraud_code": "Anti-Fraud Code",
+    "headers": {
+      "name": "الاسم",
+      "address": "العنوان",
+      "contact": "معلومات الاتصال",
+      "status": "الحالة",
+      "default": "افتراضي",
+      "created_at": "وقت الإنشاء"
+    },
+    "form": {
+      "name": "اسم الموقع",
+      "sub_merchant": "Sub-Merchant",
+      "address": "العنوان التفصيلي",
+      "country": "الدولة / المنطقة",
+      "mobile_phone": "رقم الهاتف المحمول",
+      "email": "البريد الإلكتروني للاتصال",
+      "service_phone": "هاتف الخدمة",
+      "status": "Status",
+      "default": "Set as Default",
+      "status_required": "Please select a status",
+      "submit": "إرسال",
+      "cancel": "إلغاء",
+      "success": "تم إنشاء الموقع",
+      "edit_success": "Location updated successfully"
+    },
+    "empty": "لا توجد بيانات للمواقع حالياً.",
+    "status_active": "Active",
+    "status_inactive": "Inactive",
+    "confirm_delete": "Are you sure you want to delete this location?"
+  },
+  "SubMerchants": {
+    "title": "إدارة التجار الفرعيين",
+    "subtitle": "عرض وإدارة معلومات التجار الفرعيين.",
+    "create_sub_merchant": "إضافة تاجر فرعي",
+    "edit_sub_merchant": "Edit Sub-Merchant",
+    "form": {
+      "name": "اسم التاجر",
+      "alias": "الاسم المستعار للتسوية",
+      "success": "تم إنشاء التاجر الفرعي بنجاح",
+      "edit_success": "Sub-merchant updated successfully"
+    },
+    "headers": {
+      "name": "اسم التاجر",
+      "alias": "الاسم المستعار",
+      "code": "رمز التاجر",
+      "merchant_id": "معرف التاجر",
+      "status": "الحالة",
+      "created_at": "تاريخ الإنشاء"
+    },
+    "empty": "لا توجد بيانات للتجار الفرعيين."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "Deposits": {
+    "title": "Deposit Records",
+    "subtitle": "View and search your account deposit history.",
+    "create_deposit": "Recharge",
+    "headers": {
+      "order_id": "Deposit Order ID",
+      "trade_no": "Trade No",
+      "amount": "Amount",
+      "status": "Status",
+      "created_at": "Created At",
+      "paid_at": "Paid At"
+    },
+    "create_modal": {
+      "title": "Initiate Recharge",
+      "amount": "Amount",
+      "currency": "Currency",
+      "submit": "Recharge Now",
+      "cancel": "Cancel",
+      "success": "Recharge request submitted"
+    },
+    "empty": "No deposit records found."
+  }
+}

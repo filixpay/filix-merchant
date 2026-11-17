@@ -1,0 +1,40 @@
+{
+  "Support": {
+    "entry_label": "Support Center",
+    "entry_label_with_unread": "Support Center, {count} new replies",
+    "entry_collapse": "Minimize support entry",
+    "entry_expand": "Expand support entry",
+    "title": "Support",
+    "create_title": "Ask a question",
+    "new_question": "New question",
+    "back_to_list": "Back to list",
+    "refresh": "Refresh",
+    "question_label": "Question",
+    "question_placeholder": "Describe your issue…",
+    "submit_question": "Submit",
+    "create_success": "Question submitted",
+    "ticket_title": "Ticket {number}",
+    "subject_label": "Subject: ",
+    "view_detail": "View details",
+    "answered_hint": "This ticket has been answered. To ask a follow-up, ",
+    "create_new_ticket": "create a new ticket",
+    "status": {
+      "open": "Open",
+      "answered": "Answered"
+    },
+    "sender": {
+      "merchant": "Me",
+      "operator": "Support"
+    },
+    "empty": {
+      "list": "No support conversations yet",
+      "messages": "No messages yet"
+    },
+    "errors": {
+      "load_list": "Failed to load conversations",
+      "load_detail": "Failed to load conversation",
+      "create": "Failed to submit question",
+      "blank_content": "Please enter your question"
+    }
+  }
+}

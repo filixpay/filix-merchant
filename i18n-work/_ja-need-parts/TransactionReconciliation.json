@@ -1,0 +1,81 @@
+{
+  "TransactionReconciliation": {
+    "title": "Transaction Reconciliation",
+    "subtitle": "Provider transaction bills matched against your orders (reconciliation scope: Order).",
+    "empty": "No reconciliation items in this range.",
+    "emptyNoReconData": "No provider reconciliation data for this channel and date range.",
+    "emptyCoverageNoRows": "Provider trade bills exist for this range, but no orders are visible for your merchant (check channel authorization, order ownership, and channelOrderId mapping).",
+    "emptyHint": "Try a different date range or channel, then Query — or reset filters.",
+    "query": "Query",
+    "reset": "Reset",
+    "loadError": "Failed to load transaction reconciliation.",
+    "export": "Export CSV",
+    "exportFailed": "Export failed.",
+    "noReconDataTitle": "No provider reconciliation data",
+    "noReconDataDescription": "FilixPay has not received a provider reconciliation batch for the selected channel and bizDate range. This is different from having no matching orders.",
+    "reconciliationLevelOrder": "Order",
+    "filters": {
+      "channelCode": "Channel",
+      "channel_all": "All channels",
+      "scope": "Scope"
+    },
+    "channels": {
+      "ALL": "All channels",
+      "STRIPE": "STRIPE",
+      "PAYPAL": "PAYPAL"
+    },
+    "scope": {
+      "default": "Reconciled only",
+      "allTransactions": "All transactions"
+    },
+    "columns": {
+      "payment": "Payment",
+      "order": "Order",
+      "reconciliationLevel": "Reconciliation level",
+      "channelCode": "Channel",
+      "reconciliationStatus": "Reconciliation status",
+      "bizDate": "Biz date",
+      "actions": "Actions"
+    },
+    "reconStatus": {
+      "MATCHED": "Matched",
+      "MISMATCH": "Mismatch",
+      "RECONCILIATION_PENDING": "Pending",
+      "NOT_RECONCILED": "Not reconciled"
+    },
+    "sections": {
+      "association": "Payment / Order association",
+      "comparison": "Provider vs FilixPay",
+      "provider": "Provider",
+      "filixpay": "FilixPay"
+    },
+    "fields": {
+      "paymentId": "Payment ID",
+      "orderId": "Order ID",
+      "reconciliationLevel": "Reconciliation level",
+      "channelCode": "Channel",
+      "bizDate": "Biz date",
+      "reconciliationStatus": "Reconciliation status",
+      "mismatchType": "Mismatch type",
+      "providerTransactionId": "Provider transaction ID",
+      "providerOrderId": "Provider order ID",
+      "providerAmount": "Provider amount",
+      "providerStatus": "Provider status",
+      "localAmount": "FilixPay amount",
+      "localStatus": "FilixPay status"
+    },
+    "detail": {
+      "title": "Transaction reconciliation detail",
+      "reconScopeOrder": "Recon scope: Order",
+      "back": "Back to list",
+      "notFound": "Reconciliation record not found."
+    },
+    "actions": {
+      "view_detail": "Details"
+    },
+    "copy_payment_id": "Copy payment ID",
+    "copy_order_id": "Copy order ID",
+    "copy_success": "Copied",
+    "copy_failed": "Copy failed"
+  }
+}

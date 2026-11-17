@@ -1,0 +1,85 @@
+{
+  "Reporting": {
+    "widgets": {
+      "availableBalance": "Available Balance",
+      "todayVolume": "Today's Volume",
+      "successRate": "Success Rate",
+      "pendingSettlement": "Pending Settlement"
+    },
+    "no_data": "No data available",
+    "forbidden": "You do not have permission to view this",
+    "failed": "Failed to load",
+    "retry": "Retry",
+    "transactions": {
+      "title": "Transaction Report",
+      "subtitle": "Discover and export transactions under your authorized scope.",
+      "empty": "No transactions found.",
+      "table_total": "Total {count} transactions",
+      "export": "Export CSV",
+      "export_failed": "Export failed",
+      "filters": {
+        "merchant_order_id": "Merchant order ID",
+        "status": "Status",
+        "channel": "Channel",
+        "amount_min": "Min amount",
+        "amount_max": "Max amount",
+        "created_from": "Created from",
+        "created_to": "Created to"
+      },
+      "columns": {
+        "merchant_order_id": "Merchant order ID",
+        "trade_no": "Trade no.",
+        "order_type": "Order type",
+        "status": "Status",
+        "amount": "Amount",
+        "channel": "Channel",
+        "created_at": "Created at"
+      },
+      "statuses": {
+        "PENDING": "Pending",
+        "PROCESSING": "Processing",
+        "PARTIAL_SUCCESS": "Partial success",
+        "SUCCESS": "Success",
+        "CLOSED": "Closed",
+        "FAILED": "Failed",
+        "REQUIRES_CAPTURE": "Requires capture",
+        "DISPUTED": "Disputed"
+      },
+      "orderTypes": {
+        "TRADE": "Trade order",
+        "DEPOSIT": "Deposit",
+        "TRANSFER": "Transfer",
+        "PAYOUT": "Payout",
+        "WITHDRAWAL": "Withdrawal",
+        "REFUND": "Refund",
+        "DIRECT_DEBIT": "Direct debit",
+        "PLATFORM_SERVICE_FEE": "Platform service fee"
+      },
+      "detail": {
+        "title": "Transaction detail",
+        "back_to_list": "Back to transactions",
+        "resource_unavailable": "Resource unavailable",
+        "view_business_detail": "View business detail",
+        "fields": {
+          "merchant_order_id": "Merchant order ID",
+          "trade_no": "Trade no.",
+          "status": "Status",
+          "order_type": "Order type",
+          "amount": "Amount",
+          "paid_amount": "Paid amount",
+          "refunded_amount": "Refunded amount",
+          "currency": "Currency",
+          "channel": "Channel",
+          "subject": "Subject",
+          "created_at": "Created at",
+          "paid_at": "Paid at",
+          "updated_at": "Updated at"
+        },
+        "timeline": {
+          "title": "Timeline",
+          "empty": "No timeline events."
+        }
+      }
+    }
+  }
+}

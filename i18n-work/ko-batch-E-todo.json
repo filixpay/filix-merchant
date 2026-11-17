@@ -1,0 +1,2158 @@
+{
+  "Disputes.title": {
+    "en": "Disputes & Chargebacks",
+    "ja": "紛争・チャージバック"
+  },
+  "Disputes.subtitle": {
+    "en": "Monitor chargeback cases, response deadlines, and required merchant actions.",
+    "ja": "チャージバック案件、対応期限、および必要なマーチャント対応を監視します。"
+  },
+  "Disputes.empty": {
+    "en": "No dispute cases found.",
+    "ja": "紛争案件が見つかりません。"
+  },
+  "Disputes.back_to_list": {
+    "en": "Back to disputes",
+    "ja": "紛争一覧に戻る"
+  },
+  "Disputes.kpis.action_required": {
+    "en": "Cases Require Action",
+    "ja": "対応が必要な案件"
+  },
+  "Disputes.kpis.due_soon": {
+    "en": "Due Soon (<3 days)",
+    "ja": "まもなく期限（<3日）"
+  },
+  "Disputes.kpis.overdue": {
+    "en": "Overdue",
+    "ja": "期限超過"
+  },
+  "Disputes.headers.case_number": {
+    "en": "Case No.",
+    "ja": "案件番号"
+  },
+  "Disputes.headers.order_id": {
+    "en": "Order ID",
+    "ja": "注文ID"
+  },
+  "Disputes.headers.channel": {
+    "en": "Channel",
+    "ja": "チャネル"
+  },
+  "Disputes.headers.created_at": {
+    "en": "Created At",
+    "ja": "作成日時"
+  },
+  "Disputes.headers.amount": {
+    "en": "Amount",
+    "ja": "金額"
+  },
+  "Disputes.headers.reason": {
+    "en": "Reason",
+    "ja": "理由"
+  },
+  "Disputes.headers.priority": {
+    "en": "Priority",
+    "ja": "優先度"
+  },
+  "Disputes.headers.status": {
+    "en": "Status",
+    "ja": "ステータス"
+  },
+  "Disputes.headers.response_due": {
+    "en": "Response Due",
+    "ja": "対応期限"
+  },
+  "Disputes.filters.keyword": {
+    "en": "Case No. / Order ID",
+    "ja": "案件番号 / 注文ID"
+  },
+  "Disputes.filters.status": {
+    "en": "Status",
+    "ja": "ステータス"
+  },
+  "Disputes.filters.channel": {
+    "en": "Channel",
+    "ja": "チャネル"
+  },
+  "Disputes.filters.all_status": {
+    "en": "All statuses",
+    "ja": "すべてのステータス"
+  },
+  "Disputes.table_total": {
+    "en": "Total {count}",
+    "ja": "合計 {count}"
+  },
+  "Disputes.priority.CRITICAL": {
+    "en": "Critical",
+    "ja": "緊急"
+  },
+  "Disputes.priority.HIGH": {
+    "en": "High",
+    "ja": "高"
+  },
+  "Disputes.priority.MEDIUM": {
+    "en": "Medium",
+    "ja": "中"
+  },
+  "Disputes.priority.LOW": {
+    "en": "Low",
+    "ja": "低"
+  },
+  "Disputes.status.DRAFT": {
+    "en": "Draft",
+    "ja": "下書き"
+  },
+  "Disputes.status.SUBMITTED": {
+    "en": "Submitted",
+    "ja": "提出済み"
+  },
+  "Disputes.status.UNDER_REVIEW": {
+    "en": "Under Review",
+    "ja": "審査中"
+  },
+  "Disputes.status.WON": {
+    "en": "Won",
+    "ja": "勝訴"
+  },
+  "Disputes.status.LOST": {
+    "en": "Lost",
+    "ja": "敗訴"
+  },
+  "Disputes.status.ACCEPTED": {
+    "en": "Accepted",
+    "ja": "認責済み"
+  },
+  "Disputes.evidence_category.RECEIPT": {
+    "en": "Receipt",
+    "ja": "領収書"
+  },
+  "Disputes.evidence_category.SHIPPING": {
+    "en": "Shipping",
+    "ja": "配送"
+  },
+  "Disputes.evidence_category.COMMUNICATION": {
+    "en": "Communication",
+    "ja": "やり取り記録"
+  },
+  "Disputes.evidence_category.OTHER": {
+    "en": "Other",
+    "ja": "その他"
+  },
+  "Disputes.action_center.title": {
+    "en": "Merchant Action Center",
+    "ja": "マーチャント対応センター"
+  },
+  "Disputes.action_center.locked": {
+    "en": "This case is locked. Evidence can no longer be edited.",
+    "ja": "この案件はロックされています。証拠は編集できません。"
+  },
+  "Disputes.action_center.upload_hint": {
+    "en": "Click or drag files to upload evidence",
+    "ja": "クリックまたはドラッグして証拠ファイルをアップロード"
+  },
+  "Disputes.action_center.file": {
+    "en": "File",
+    "ja": "ファイル"
+  },
+  "Disputes.action_center.category": {
+    "en": "Category",
+    "ja": "カテゴリ"
+  },
+  "Disputes.action_center.upload_types": {
+    "en": "Supports PDF, JPG, PNG, WEBP. Max {size}MB per file.",
+    "ja": "PDF、JPG、PNG、WEBPに対応。1ファイル最大 {size}MB。"
+  },
+  "Disputes.action_center.file_size": {
+    "en": "Size",
+    "ja": "サイズ"
+  },
+  "Disputes.action_center.file_too_large": {
+    "en": "File too large. Max {size}MB per file.",
+    "ja": "ファイルが大きすぎます。1ファイル最大 {size}MB です。"
+  },
+  "Disputes.actions.save_draft": {
+    "en": "Save Draft",
+    "ja": "下書きを保存"
+  },
+  "Disputes.actions.submit": {
+    "en": "Submit Evidence",
+    "ja": "証拠を提出"
+  },
+  "Disputes.actions.accept_liability": {
+    "en": "Accept Liability",
+    "ja": "責任を受け入れる"
+  },
+  "Disputes.actions.accept_liability_confirm_title": {
+    "en": "Accept chargeback liability?",
+    "ja": "チャージバックの責任を受け入れますか？"
+  },
+  "Disputes.actions.accept_liability_confirm_body": {
+    "en": "You will not be able to submit evidence after accepting liability.",
+    "ja": "責任を受け入れた後は証拠を提出できなくなります。"
+  },
+  "Disputes.actions.submit_confirm_title": {
+    "en": "Submit evidence?",
+    "ja": "証拠を提出しますか？"
+  },
+  "Disputes.actions.submit_confirm_body": {
+    "en": "Submission cannot be undone. Evidence will be sent to the payment channel for review.",
+    "ja": "提出後は取り消しできません。証拠は審査のため決済チャネルへ送信されます。"
+  },
+  "Disputes.messages.draft_saved": {
+    "en": "Evidence draft saved",
+    "ja": "証拠の下書きを保存しました"
+  },
+  "Disputes.messages.submitted": {
+    "en": "Evidence submitted for review",
+    "ja": "証拠を提出し、審査に回しました"
+  },
+  "Disputes.messages.liability_accepted": {
+    "en": "Liability accepted",
+    "ja": "責任を受け入れました"
+  },
+  "Disputes.messages.evidence_uploaded": {
+    "en": "Evidence file uploaded",
+    "ja": "証拠ファイルをアップロードしました"
+  },
+  "Disputes.messages.evidence_required": {
+    "en": "Please upload at least one evidence file",
+    "ja": "少なくとも1件の証拠ファイルをアップロードしてください"
+  },
+  "Disputes.reason_codes.fraudulent": {
+    "en": "Fraudulent",
+    "ja": "不正取引"
+  },
+  "Disputes.reason_codes.duplicate": {
+    "en": "Duplicate charge",
+    "ja": "二重請求"
+  },
+  "Disputes.reason_codes.product_not_received": {
+    "en": "Product not received",
+    "ja": "商品未受領"
+  },
+  "Disputes.reason_codes.unrecognized": {
+    "en": "Unrecognized charge",
+    "ja": "身に覚えのない請求"
+  },
+  "Disputes.reason_codes.credit_not_processed": {
+    "en": "Credit not processed",
+    "ja": "返金未処理"
+  },
+  "Disputes.reason_codes.general": {
+    "en": "General dispute",
+    "ja": "一般紛争"
+  },
+  "Disputes.reason_codes.incorrect_account_details": {
+    "en": "Incorrect account details",
+    "ja": "口座情報の誤り"
+  },
+  "Disputes.reason_codes.insufficient_funds": {
+    "en": "Insufficient funds",
+    "ja": "残高不足"
+  },
+  "Disputes.reason_codes.bank_cannot_process": {
+    "en": "Bank cannot process",
+    "ja": "銀行で処理不可"
+  },
+  "Disputes.reason_codes.debit_not_authorized": {
+    "en": "Debit not authorized",
+    "ja": "未承認の引き落とし"
+  },
+  "Disputes.reason_codes.customer_initiated": {
+    "en": "Customer initiated",
+    "ja": "顧客が開始"
+  },
+  "Disputes.reason_codes.merchandise_or_service_not_received": {
+    "en": "Merchandise or service not received",
+    "ja": "商品またはサービス未受領"
+  },
+  "Disputes.reason_codes.unauthorized": {
+    "en": "Unauthorized",
+    "ja": "未承認"
+  },
+  "Disputes.reason_codes.merchandise_or_service_not_as_described": {
+    "en": "Merchandise or service not as described",
+    "ja": "商品またはサービスが説明と異なる"
+  },
+  "Disputes.reason_codes.cancelled_recurring_billing": {
+    "en": "Cancelled recurring billing",
+    "ja": "解約済みの定期課金"
+  },
+  "Disputes.reason_codes.non_receipt": {
+    "en": "Non-receipt",
+    "ja": "未受領"
+  },
+  "Disputes.reason_codes.not_as_described": {
+    "en": "Not as described",
+    "ja": "説明と異なる"
+  },
+  "Disputes.reason_codes.duplicate_transaction": {
+    "en": "Duplicate transaction",
+    "ja": "重複取引"
+  },
+  "Disputes.reason_codes.credit_not_received": {
+    "en": "Credit not received",
+    "ja": "返金未受領"
+  },
+  "Disputes.timeline.title": {
+    "en": "Case Timeline",
+    "ja": "案件タイムライン"
+  },
+  "Disputes.timeline.actor": {
+    "en": "By {actor}",
+    "ja": "操作者：{actor}"
+  },
+  "Disputes.timeline.actors.system": {
+    "en": "System auto-trigger",
+    "ja": "システム自動トリガー"
+  },
+  "Disputes.timeline.actors.merchant": {
+    "en": "Merchant action",
+    "ja": "マーチャント操作"
+  },
+  "Disputes.timeline.events.CASE_OPENED": {
+    "en": "Dispute opened",
+    "ja": "紛争を開始"
+  },
+  "Disputes.timeline.events.EVIDENCE_DRAFT_SAVED": {
+    "en": "Evidence draft saved",
+    "ja": "証拠の下書きを保存"
+  },
+  "Disputes.timeline.events.EVIDENCE_SUBMITTED": {
+    "en": "Evidence submitted",
+    "ja": "証拠を提出"
+  },
+  "Disputes.timeline.events.REVIEW_STARTED": {
+    "en": "Under bank review",
+    "ja": "銀行審査中"
+  },
+  "Disputes.timeline.events.CHANNEL_STATUS_CHANGED": {
+    "en": "Channel status updated",
+    "ja": "チャネルステータスを更新"
+  },
+  "Disputes.timeline.events.CASE_RESOLVED": {
+    "en": "Dispute resolved",
+    "ja": "紛争を解決"
+  },
+  "Disputes.timeline.events.LIABILITY_ACCEPTED": {
+    "en": "Liability accepted",
+    "ja": "責任を受け入れ"
+  },
+  "Disputes.timeline.events.EVIDENCE_FORWARDED_TO_CHANNEL": {
+    "en": "Evidence forwarded to channel",
+    "ja": "証拠をチャネルへ転送"
+  },
+  "Disputes.timeline.events.CHANNEL_EVIDENCE_SUBMIT_FAILED": {
+    "en": "Channel evidence submit failed",
+    "ja": "チャネルへの証拠提出に失敗"
+  },
+  "Disputes.timeline.titles.dispute_opened": {
+    "en": "Dispute opened",
+    "ja": "紛争を開始"
+  },
+  "Disputes.timeline.titles.dispute_resolved": {
+    "en": "Dispute resolved",
+    "ja": "紛争を解決"
+  },
+  "Disputes.timeline.titles.evidence_draft_saved": {
+    "en": "Evidence draft saved",
+    "ja": "証拠の下書きを保存"
+  },
+  "Disputes.timeline.titles.evidence_submitted": {
+    "en": "Evidence submitted",
+    "ja": "証拠を提出"
+  },
+  "Disputes.timeline.titles.under_bank_review": {
+    "en": "Under bank review",
+    "ja": "銀行審査中"
+  },
+  "Disputes.timeline.titles.liability_accepted": {
+    "en": "Liability accepted",
+    "ja": "責任を受け入れ"
+  },
+  "Disputes.timeline.titles.channel_status_updated": {
+    "en": "Channel status updated",
+    "ja": "チャネルステータスを更新"
+  },
+  "Disputes.timeline.titles.evidence_forwarded_to_channel": {
+    "en": "Evidence forwarded to channel",
+    "ja": "証拠をチャネルへ転送"
+  },
+  "Disputes.timeline.titles.channel_evidence_submit_failed": {
+    "en": "Channel evidence submit failed",
+    "ja": "チャネルへの証拠提出に失敗"
+  },
+  "Disputes.timeline.descriptions.charge_dispute_created": {
+    "en": "Stripe: dispute created",
+    "ja": "Stripe：紛争を作成"
+  },
+  "Disputes.timeline.descriptions.charge_dispute_updated": {
+    "en": "Stripe: dispute updated",
+    "ja": "Stripe：紛争を更新"
+  },
+  "Disputes.timeline.descriptions.charge_dispute_closed": {
+    "en": "Stripe: dispute closed",
+    "ja": "Stripe：紛争をクローズ"
+  },
+  "Disputes.timeline.descriptions.charge_dispute_funds_withdrawn": {
+    "en": "Stripe: dispute funds withdrawn",
+    "ja": "Stripe：紛争資金を引き落とし"
+  },
+  "Disputes.timeline.descriptions.charge_dispute_funds_reinstated": {
+    "en": "Stripe: dispute funds reinstated",
+    "ja": "Stripe：紛争資金を復元"
+  },
+  "Disputes.timeline.descriptions.customer_dispute_created": {
+    "en": "PayPal: dispute created",
+    "ja": "PayPal：紛争を作成"
+  },
+  "Disputes.timeline.descriptions.customer_dispute_updated": {
+    "en": "PayPal: dispute updated",
+    "ja": "PayPal：紛争を更新"
+  },
+  "Disputes.timeline.descriptions.customer_dispute_resolved": {
+    "en": "PayPal: dispute resolved",
+    "ja": "PayPal：紛争を解決"
+  },
+  "Disputes.timeline.descriptions.submitted_files_to_channel": {
+    "en": "Submitted {count} file(s) to {channel}",
+    "ja": "{channel} に {count} 件のファイルを提出"
+  },
+  "Disputes.timeline.descriptions.files_attached": {
+    "en": "{count} file(s) attached",
+    "ja": "{count} 件のファイルを添付"
+  },
+  "Disputes.timeline.descriptions.channel_status_transition": {
+    "en": "{oldStatus} → {newStatus}",
+    "ja": "{oldStatus} → {newStatus}"
+  },
+  "Disputes.timeline.descriptions.case_locked_for_review": {
+    "en": "Case locked for review",
+    "ja": "審査のため案件をロック"
+  },
+  "Disputes.timeline.descriptions.merchant_accepted_chargeback_liability": {
+    "en": "Merchant accepted chargeback liability",
+    "ja": "マーチャントがチャージバックの責任を受け入れました"
+  },
+  "Disputes.timeline.channel_statuses.needs_response": {
+    "en": "Needs response",
+    "ja": "対応が必要"
+  },
+  "Disputes.timeline.channel_statuses.under_review": {
+    "en": "Under review",
+    "ja": "審査中"
+  },
+  "Disputes.timeline.channel_statuses.won": {
+    "en": "Won",
+    "ja": "勝訴"
+  },
+  "Disputes.timeline.channel_statuses.lost": {
+    "en": "Lost",
+    "ja": "敗訴"
+  },
+  "Disputes.timeline.channel_statuses.charge_refunded": {
+    "en": "Charge refunded",
+    "ja": "請求を返金済み"
+  },
+  "Disputes.timeline.channel_statuses.warning_needs_response": {
+    "en": "Warning needs response",
+    "ja": "警告・対応が必要"
+  },
+  "Disputes.timeline.channel_statuses.warning_under_review": {
+    "en": "Warning under review",
+    "ja": "警告・審査中"
+  },
+  "Disputes.timeline.channel_statuses.warning_closed": {
+    "en": "Warning closed",
+    "ja": "警告・クローズ"
+  },
+  "Disputes.timeline.resolutions.MERCHANT_WON": {
+    "en": "Merchant won",
+    "ja": "マーチャント勝訴"
+  },
+  "Disputes.timeline.resolutions.BUYER_WON": {
+    "en": "Buyer won",
+    "ja": "購入者勝訴"
+  },
+  "Disputes.timeline.resolutions.MERCHANT_ACCEPTED": {
+    "en": "Merchant accepted",
+    "ja": "マーチャントが認責"
+  },
+  "Disputes.timeline.resolutions.PARTIAL": {
+    "en": "Partial win",
+    "ja": "一部勝訴"
+  },
+  "Disputes.detail.title": {
+    "en": "Dispute Case",
+    "ja": "紛争案件"
+  },
+  "Disputes.detail.reason_code": {
+    "en": "Reason Code",
+    "ja": "理由コード"
+  },
+  "Disputes.detail.not_found": {
+    "en": "Dispute case not found.",
+    "ja": "紛争案件が見つかりません。"
+  },
+  "Disputes.coverage_assessment.title": {
+    "en": "Coverage Assessment",
+    "ja": "保障評価"
+  },
+  "Disputes.coverage_assessment.headers.status": {
+    "en": "Coverage Status",
+    "ja": "保障ステータス"
+  },
+  "Disputes.coverage_assessment.headers.provider": {
+    "en": "Provider",
+    "ja": "プロバイダー"
+  },
+  "Disputes.coverage_assessment.headers.stage": {
+    "en": "Evaluation Stage",
+    "ja": "評価段階"
+  },
+  "Disputes.coverage_assessment.headers.limit": {
+    "en": "Coverage Limit",
+    "ja": "保障上限"
+  },
+  "Disputes.coverage_assessment.headers.reference": {
+    "en": "Reference",
+    "ja": "参照番号"
+  },
+  "Disputes.coverage_assessment.headers.assessment_id": {
+    "en": "Assessment ID",
+    "ja": "評価ID"
+  },
+  "Disputes.coverage_assessment.status.COVERED": {
+    "en": "Covered",
+    "ja": "保障対象"
+  },
+  "Disputes.coverage_assessment.status.NOT_COVERED": {
+    "en": "Not Covered",
+    "ja": "保障対象外"
+  },
+  "Disputes.coverage_assessment.status.PARTIAL": {
+    "en": "Partially Covered",
+    "ja": "一部保障"
+  },
+  "Disputes.coverage_assessment.stage.PRE_AUTH": {
+    "en": "Pre-auth",
+    "ja": "与信前"
+  },
+  "Disputes.coverage_assessment.stage.POST_AUTH": {
+    "en": "Post-auth",
+    "ja": "与信後"
+  },
+  "Disputes.coverage_assessment.stage.MANUAL": {
+    "en": "Manual",
+    "ja": "手動"
+  },
+  "Disputes.coverage_assessment.stage.ASYNC_UPDATE": {
+    "en": "Async update",
+    "ja": "非同期更新"
+  },
+  "Disputes.coverage_assessment.timeline.title": {
+    "en": "Assessment Timeline",
+    "ja": "評価タイムライン"
+  },
+  "Disputes.coverage.title": {
+    "en": "Chargeback Protection",
+    "ja": "チャージバック保障"
+  },
+  "Disputes.coverage.headers.status": {
+    "en": "Claim Status",
+    "ja": "請求ステータス"
+  },
+  "Disputes.coverage.headers.provider": {
+    "en": "Provider",
+    "ja": "プロバイダー"
+  },
+  "Disputes.coverage.headers.amount": {
+    "en": "Claim Amount",
+    "ja": "請求金額"
+  },
+  "Disputes.coverage.headers.provider_claim_id": {
+    "en": "Provider Claim ID",
+    "ja": "プロバイダー請求ID"
+  },
+  "Disputes.coverage.status.CREATED": {
+    "en": "Created",
+    "ja": "作成済み"
+  },
+  "Disputes.coverage.status.UNDER_REVIEW": {
+    "en": "Under Review",
+    "ja": "審査中"
+  },
+  "Disputes.coverage.status.APPROVED": {
+    "en": "Approved",
+    "ja": "承認済み"
+  },
+  "Disputes.coverage.status.REJECTED": {
+    "en": "Declined",
+    "ja": "却下"
+  },
+  "Disputes.coverage.status.PAID": {
+    "en": "Paid",
+    "ja": "支払済み"
+  },
+  "Disputes.coverage.status.CLOSED": {
+    "en": "Closed",
+    "ja": "クローズ"
+  },
+  "Disputes.coverage.event_type.CREATED": {
+    "en": "Claim created",
+    "ja": "請求を作成"
+  },
+  "Disputes.coverage.event_type.SUBMITTED": {
+    "en": "Submitted to provider",
+    "ja": "プロバイダーへ提出"
+  },
+  "Disputes.coverage.event_type.UNDER_REVIEW": {
+    "en": "Under review",
+    "ja": "審査中"
+  },
+  "Disputes.coverage.event_type.APPROVED": {
+    "en": "Approved",
+    "ja": "承認済み"
+  },
+  "Disputes.coverage.event_type.REJECTED": {
+    "en": "Declined",
+    "ja": "却下"
+  },
+  "Disputes.coverage.event_type.PAID": {
+    "en": "Paid",
+    "ja": "支払済み"
+  },
+  "Disputes.coverage.event_type.CLOSED": {
+    "en": "Closed",
+    "ja": "クローズ"
+  },
+  "Disputes.coverage.timeline.title": {
+    "en": "Coverage Timeline",
+    "ja": "保障タイムライン"
+  },
+  "Disputes.response_due.overdue": {
+    "en": "⚠️ Overdue",
+    "ja": "⚠️ 期限超過"
+  },
+  "Disputes.response_due.hours_left": {
+    "en": "⚠️ {hours}h left",
+    "ja": "⚠️ 残り {hours} 時間"
+  },
+  "Disputes.response_due.days_left": {
+    "en": "{days} days left",
+    "ja": "残り {days} 日"
+  },
+  "Support.entry_label": {
+    "en": "Support Center",
+    "ja": "サポートセンター"
+  },
+  "Support.entry_label_with_unread": {
+    "en": "Support Center, {count} new replies",
+    "ja": "サポートセンター、新着返信 {count} 件"
+  },
+  "Support.entry_collapse": {
+    "en": "Minimize support entry",
+    "ja": "サポート入口を最小化"
+  },
+  "Support.entry_expand": {
+    "en": "Expand support entry",
+    "ja": "サポート入口を展開"
+  },
+  "Support.title": {
+    "en": "Support",
+    "ja": "サポート"
+  },
+  "Support.create_title": {
+    "en": "Ask a question",
+    "ja": "質問する"
+  },
+  "Support.new_question": {
+    "en": "New question",
+    "ja": "新しい質問"
+  },
+  "Support.back_to_list": {
+    "en": "Back to list",
+    "ja": "一覧に戻る"
+  },
+  "Support.refresh": {
+    "en": "Refresh",
+    "ja": "更新"
+  },
+  "Support.question_label": {
+    "en": "Question",
+    "ja": "質問"
+  },
+  "Support.question_placeholder": {
+    "en": "Describe your issue…",
+    "ja": "問題の内容を記入してください…"
+  },
+  "Support.submit_question": {
+    "en": "Submit",
+    "ja": "送信"
+  },
+  "Support.create_success": {
+    "en": "Question submitted",
+    "ja": "質問を送信しました"
+  },
+  "Support.ticket_title": {
+    "en": "Ticket {number}",
+    "ja": "チケット {number}"
+  },
+  "Support.subject_label": {
+    "en": "Subject: ",
+    "ja": "件名："
+  },
+  "Support.view_detail": {
+    "en": "View details",
+    "ja": "詳細を見る"
+  },
+  "Support.answered_hint": {
+    "en": "This ticket has been answered. To ask a follow-up, ",
+    "ja": "このチケットには回答済みです。追加の質問がある場合は、"
+  },
+  "Support.create_new_ticket": {
+    "en": "create a new ticket",
+    "ja": "新しいチケットを作成"
+  },
+  "Support.status.open": {
+    "en": "Open",
+    "ja": "未回答"
+  },
+  "Support.status.answered": {
+    "en": "Answered",
+    "ja": "回答済み"
+  },
+  "Support.sender.merchant": {
+    "en": "Me",
+    "ja": "自分"
+  },
+  "Support.sender.operator": {
+    "en": "Support",
+    "ja": "サポート"
+  },
+  "Support.empty.list": {
+    "en": "No support conversations yet",
+    "ja": "サポートの会話はまだありません"
+  },
+  "Support.empty.messages": {
+    "en": "No messages yet",
+    "ja": "メッセージはまだありません"
+  },
+  "Support.errors.load_list": {
+    "en": "Failed to load conversations",
+    "ja": "会話の読み込みに失敗しました"
+  },
+  "Support.errors.load_detail": {
+    "en": "Failed to load conversation",
+    "ja": "会話の読み込みに失敗しました"
+  },
+  "Support.errors.create": {
+    "en": "Failed to submit question",
+    "ja": "質問の送信に失敗しました"
+  },
+  "Support.errors.blank_content": {
+    "en": "Please enter your question",
+    "ja": "質問内容を入力してください"
+  },
+  "Notifications.title": {
+    "en": "Notifications & Tasks",
+    "ja": "通知とタスク"
+  },
+  "Notifications.subtitle": {
+    "en": "Stay on top of platform messages and items that need your action.",
+    "ja": "プラットフォームからのメッセージと対応が必要な項目を確認できます。"
+  },
+  "Notifications.view_all": {
+    "en": "View all",
+    "ja": "すべて表示"
+  },
+  "Notifications.loading": {
+    "en": "Loading…",
+    "ja": "読み込み中…"
+  },
+  "Notifications.mark_all_read": {
+    "en": "Mark all as read",
+    "ja": "すべて既読にする"
+  },
+  "Notifications.tab.notifications": {
+    "en": "Notifications",
+    "ja": "通知"
+  },
+  "Notifications.tab.tasks": {
+    "en": "Tasks",
+    "ja": "タスク"
+  },
+  "Notifications.filter.all": {
+    "en": "All",
+    "ja": "すべて"
+  },
+  "Notifications.filter.unread": {
+    "en": "Unread",
+    "ja": "未読"
+  },
+  "Notifications.columns.reference": {
+    "en": "Reference",
+    "ja": "参照番号"
+  },
+  "Notifications.columns.details": {
+    "en": "Details",
+    "ja": "詳細"
+  },
+  "Notifications.columns.status_time": {
+    "en": "Status / Time",
+    "ja": "ステータス / 時刻"
+  },
+  "Notifications.empty.notifications": {
+    "en": "No notifications yet.",
+    "ja": "通知はまだありません。"
+  },
+  "Notifications.empty.unread": {
+    "en": "No unread notifications.",
+    "ja": "未読の通知はありません。"
+  },
+  "Notifications.empty.tasks": {
+    "en": "No open tasks.",
+    "ja": "未処理のタスクはありません。"
+  },
+  "Notifications.empty.completed_tasks": {
+    "en": "No completed tasks.",
+    "ja": "完了したタスクはありません。"
+  },
+  "Notifications.severity.INFO": {
+    "en": "Info",
+    "ja": "情報"
+  },
+  "Notifications.severity.SUCCESS": {
+    "en": "Success",
+    "ja": "成功"
+  },
+  "Notifications.severity.WARNING": {
+    "en": "Warning",
+    "ja": "警告"
+  },
+  "Notifications.severity.ERROR": {
+    "en": "Error",
+    "ja": "エラー"
+  },
+  "Notifications.priority.CRITICAL": {
+    "en": "Critical",
+    "ja": "緊急"
+  },
+  "Notifications.priority.HIGH": {
+    "en": "High",
+    "ja": "高"
+  },
+  "Notifications.priority.MEDIUM": {
+    "en": "Medium",
+    "ja": "中"
+  },
+  "Notifications.priority.LOW": {
+    "en": "Low",
+    "ja": "低"
+  },
+  "Notifications.banner.dismiss": {
+    "en": "Dismiss",
+    "ja": "閉じる"
+  },
+  "Notifications.banner.action": {
+    "en": "Take action",
+    "ja": "対応する"
+  },
+  "Notifications.resume_link": {
+    "en": "Resume payment",
+    "ja": "支払いを再開"
+  },
+  "Notifications.widget.action_center": {
+    "en": "Action Center",
+    "ja": "アクションセンター"
+  },
+  "Notifications.widget.recent": {
+    "en": "Recent Notifications",
+    "ja": "最近の通知"
+  },
+  "Notifications.widget.summary": {
+    "en": "{openTasks} open task(s) · {overdue} overdue",
+    "ja": "未処理タスク {openTasks} 件 · 期限超過 {overdue} 件"
+  },
+  "Notifications.counts.unread": {
+    "en": "Unread notifications",
+    "ja": "未読通知"
+  },
+  "Notifications.counts.open_tasks": {
+    "en": "Open tasks",
+    "ja": "未処理タスク"
+  },
+  "Notifications.task.action": {
+    "en": "Process",
+    "ja": "処理する"
+  },
+  "Notifications.task.review_action": {
+    "en": "Review",
+    "ja": "審査する"
+  },
+  "Notifications.task.due": {
+    "en": "Due {time}",
+    "ja": "期限 {time}"
+  },
+  "Notifications.task.overdue": {
+    "en": "Overdue · {time}",
+    "ja": "期限超過 · {time}"
+  },
+  "Notifications.tasks.open": {
+    "en": "Open tasks",
+    "ja": "未処理タスク"
+  },
+  "Notifications.tasks.completed": {
+    "en": "Completed",
+    "ja": "完了"
+  },
+  "Notifications.status.read": {
+    "en": "Read",
+    "ja": "既読"
+  },
+  "Notifications.status.unread": {
+    "en": "Unread",
+    "ja": "未読"
+  },
+  "Notifications.actions.view_details": {
+    "en": "View details",
+    "ja": "詳細を見る"
+  },
+  "Notifications.showing_count": {
+    "en": "Showing {shown} of {total}",
+    "ja": "{total} 件中 {shown} 件を表示"
+  },
+  "AuditLogs.title": {
+    "en": "Audit Logs",
+    "ja": "監査ログ"
+  },
+  "AuditLogs.subtitle": {
+    "en": "Read-only audit trail for security-sensitive actions in your merchant account.",
+    "ja": "マーチャントアカウントのセキュリティ関連操作の読み取り専用監査記録です。"
+  },
+  "AuditLogs.empty": {
+    "en": "No audit records found.",
+    "ja": "監査記録が見つかりません。"
+  },
+  "AuditLogs.table_total": {
+    "en": "Total {count} records",
+    "ja": "合計 {count} 件"
+  },
+  "AuditLogs.view_link": {
+    "en": "View",
+    "ja": "表示"
+  },
+  "AuditLogs.timeline_hint": {
+    "en": "View Timeline in the related order detail",
+    "ja": "関連する注文詳細のタイムラインで確認してください"
+  },
+  "AuditLogs.metadata_truncated": {
+    "en": "Metadata was truncated",
+    "ja": "メタデータは切り詰められました"
+  },
+  "AuditLogs.columns.time": {
+    "en": "Time",
+    "ja": "時刻"
+  },
+  "AuditLogs.columns.actor": {
+    "en": "Actor",
+    "ja": "操作者"
+  },
+  "AuditLogs.columns.action": {
+    "en": "Action",
+    "ja": "操作"
+  },
+  "AuditLogs.columns.resource": {
+    "en": "Resource",
+    "ja": "リソース"
+  },
+  "AuditLogs.columns.result": {
+    "en": "Result",
+    "ja": "結果"
+  },
+  "AuditLogs.columns.link": {
+    "en": "Link",
+    "ja": "リンク"
+  },
+  "AuditLogs.filter.date_range": {
+    "en": "Date range",
+    "ja": "期間"
+  },
+  "AuditLogs.filter.date_range_start": {
+    "en": "Start time",
+    "ja": "開始時刻"
+  },
+  "AuditLogs.filter.date_range_end": {
+    "en": "End time",
+    "ja": "終了時刻"
+  },
+  "AuditLogs.filter.action": {
+    "en": "Action type",
+    "ja": "操作タイプ"
+  },
+  "AuditLogs.filter.result": {
+    "en": "Result",
+    "ja": "結果"
+  },
+  "AuditLogs.result.SUCCESS": {
+    "en": "Success",
+    "ja": "成功"
+  },
+  "AuditLogs.result.FAILURE": {
+    "en": "Failure",
+    "ja": "失敗"
+  },
+  "AuditLogs.result.DENIED": {
+    "en": "Denied",
+    "ja": "拒否"
+  },
+  "AuditLogs.actor_type.MERCHANT_USER": {
+    "en": "Merchant user",
+    "ja": "マーチャントユーザー"
+  },
+  "AuditLogs.actor_type.OPERATOR": {
+    "en": "Operator",
+    "ja": "オペレーター"
+  },
+  "AuditLogs.actor_type.SYSTEM": {
+    "en": "System",
+    "ja": "システム"
+  },
+  "AuditLogs.actor_type.API": {
+    "en": "API",
+    "ja": "API"
+  },
+  "AuditLogs.actor_type.WEBHOOK": {
+    "en": "Webhook",
+    "ja": "Webhook"
+  },
+  "AuditLogs.detail.reason": {
+    "en": "Reason",
+    "ja": "理由"
+  },
+  "AuditLogs.detail.event_id": {
+    "en": "Event ID",
+    "ja": "イベントID"
+  },
+  "AuditLogs.detail.request_id": {
+    "en": "Request ID",
+    "ja": "リクエストID"
+  },
+  "AuditLogs.detail.trace_id": {
+    "en": "Trace ID",
+    "ja": "Trace ID"
+  },
+  "AuditLogs.detail.metadata": {
+    "en": "Metadata",
+    "ja": "メタデータ"
+  },
+  "audit.action.auth.login": {
+    "en": "Login",
+    "ja": "ログイン"
+  },
+  "audit.action.auth.logout": {
+    "en": "Logout",
+    "ja": "ログアウト"
+  },
+  "audit.action.auth.password.change": {
+    "en": "Change payment password",
+    "ja": "支払いパスワードの変更"
+  },
+  "audit.action.auth.mfa.enable": {
+    "en": "Enable MFA",
+    "ja": "MFAを有効化"
+  },
+  "audit.action.auth.mfa.disable": {
+    "en": "Disable MFA",
+    "ja": "MFAを無効化"
+  },
+  "audit.action.auth.access.denied": {
+    "en": "Access denied",
+    "ja": "アクセス拒否"
+  },
+  "audit.action.apikey.create": {
+    "en": "Create API key",
+    "ja": "APIキーを作成"
+  },
+  "audit.action.apikey.rotate": {
+    "en": "Rotate API key",
+    "ja": "APIキーをローテーション"
+  },
+  "audit.action.apikey.delete": {
+    "en": "Delete API key",
+    "ja": "APIキーを削除"
+  },
+  "audit.action.webhook.create": {
+    "en": "Create webhook",
+    "ja": "Webhookを作成"
+  },
+  "audit.action.webhook.update": {
+    "en": "Update webhook",
+    "ja": "Webhookを更新"
+  },
+  "audit.action.webhook.delete": {
+    "en": "Delete webhook",
+    "ja": "Webhookを削除"
+  },
+  "audit.action.webhook.replay": {
+    "en": "Replay webhook",
+    "ja": "Webhookを再送"
+  },
+  "audit.action.merchant.config.update": {
+    "en": "Update merchant config",
+    "ja": "マーチャント設定を更新"
+  },
+  "audit.action.coverage.enable": {
+    "en": "Enable coverage",
+    "ja": "保障を有効化"
+  },
+  "audit.action.coverage.disable": {
+    "en": "Disable coverage",
+    "ja": "保障を無効化"
+  },
+  "audit.action.coverage.update": {
+    "en": "Update coverage config",
+    "ja": "保障設定を更新"
+  },
+  "audit.action.risk.review.approve": {
+    "en": "Review approved",
+    "ja": "審査を承認"
+  },
+  "audit.action.risk.review.reject": {
+    "en": "Review rejected",
+    "ja": "審査を却下"
+  },
+  "audit.action.risk.review.assign": {
+    "en": "Review assigned",
+    "ja": "審査を割り当て"
+  },
+  "audit.action.role.grant": {
+    "en": "Grant role",
+    "ja": "ロールを付与"
+  },
+  "audit.action.role.revoke": {
+    "en": "Revoke role",
+    "ja": "ロールを取り消し"
+  },
+  "audit.action.permission.update": {
+    "en": "Update permission",
+    "ja": "権限を更新"
+  },
+  "audit.action.operator.create": {
+    "en": "Create operator",
+    "ja": "オペレーターを作成"
+  },
+  "audit.action.operator.update": {
+    "en": "Update operator",
+    "ja": "オペレーターを更新"
+  },
+  "audit.action.operator.disable": {
+    "en": "Disable operator",
+    "ja": "オペレーターを無効化"
+  },
+  "RiskReviews.title": {
+    "en": "Risk Review Queue",
+    "ja": "リスク審査キュー"
+  },
+  "RiskReviews.subtitle": {
+    "en": "Read-only queue of suspicious orders and payouts flagged for manual review.",
+    "ja": "手動審査対象としてフラグされた疑わしい注文・支払いの読み取り専用キューです。"
+  },
+  "RiskReviews.empty": {
+    "en": "No risk review items found.",
+    "ja": "リスク審査項目が見つかりません。"
+  },
+  "RiskReviews.table_total": {
+    "en": "Total {count} reviews",
+    "ja": "合計 {count} 件の審査"
+  },
+  "RiskReviews.filters.keyword": {
+    "en": "Search reviews",
+    "ja": "審査を検索"
+  },
+  "RiskReviews.filters.status": {
+    "en": "Status",
+    "ja": "ステータス"
+  },
+  "RiskReviews.filters.priority": {
+    "en": "Priority",
+    "ja": "優先度"
+  },
+  "RiskReviews.filters.review_type": {
+    "en": "Review type",
+    "ja": "審査タイプ"
+  },
+  "RiskReviews.detail.title": {
+    "en": "Review Detail",
+    "ja": "審査詳細"
+  },
+  "RiskReviews.detail.back_to_list": {
+    "en": "Back to reviews",
+    "ja": "審査一覧に戻る"
+  },
+  "RiskReviews.detail.not_found": {
+    "en": "Review not found.",
+    "ja": "審査が見つかりません。"
+  },
+  "RiskReviews.detail.review_type": {
+    "en": "Review Type",
+    "ja": "審査タイプ"
+  },
+  "RiskReviews.detail.reason_code": {
+    "en": "Reason Code",
+    "ja": "理由コード"
+  },
+  "RiskReviews.detail.queued_at": {
+    "en": "Queued At",
+    "ja": "キュー投入日時"
+  },
+  "RiskReviews.detail.decided_at": {
+    "en": "Decided At",
+    "ja": "判定日時"
+  },
+  "RiskReviews.detail.decision_note": {
+    "en": "Decision Note",
+    "ja": "判定メモ"
+  },
+  "RiskReviews.detail.linked_fraud": {
+    "en": "Linked Fraud Event",
+    "ja": "関連不正イベント"
+  },
+  "RiskReviews.detail.resume_link": {
+    "en": "Resume Link",
+    "ja": "再開リンク"
+  },
+  "RiskReviews.resume_link": {
+    "en": "Resume payment",
+    "ja": "支払いを再開"
+  },
+  "RiskReviews.headers.resource": {
+    "en": "Resource",
+    "ja": "リソース"
+  },
+  "RiskReviews.headers.reason": {
+    "en": "Reason",
+    "ja": "理由"
+  },
+  "RiskReviews.headers.priority": {
+    "en": "Priority",
+    "ja": "優先度"
+  },
+  "RiskReviews.headers.status": {
+    "en": "Status",
+    "ja": "ステータス"
+  },
+  "RiskReviews.headers.created_at": {
+    "en": "Flagged At",
+    "ja": "フラグ日時"
+  },
+  "RiskReviews.resource_type.ORDER": {
+    "en": "Order",
+    "ja": "注文"
+  },
+  "RiskReviews.resource_type.PAYOUT": {
+    "en": "Payout",
+    "ja": "支払い"
+  },
+  "RiskReviews.status.PENDING": {
+    "en": "Pending",
+    "ja": "保留中"
+  },
+  "RiskReviews.status.APPROVED": {
+    "en": "Approved",
+    "ja": "承認済み"
+  },
+  "RiskReviews.status.REJECTED": {
+    "en": "Rejected",
+    "ja": "却下"
+  },
+  "Reporting.widgets.availableBalance": {
+    "en": "Available Balance",
+    "ja": "利用可能残高"
+  },
+  "Reporting.widgets.todayVolume": {
+    "en": "Today's Volume",
+    "ja": "本日の取引量"
+  },
+  "Reporting.widgets.successRate": {
+    "en": "Success Rate",
+    "ja": "成功率"
+  },
+  "Reporting.widgets.pendingSettlement": {
+    "en": "Pending Settlement",
+    "ja": "精算待ち"
+  },
+  "Reporting.no_data": {
+    "en": "No data available",
+    "ja": "データがありません"
+  },
+  "Reporting.forbidden": {
+    "en": "You do not have permission to view this",
+    "ja": "これを表示する権限がありません"
+  },
+  "Reporting.failed": {
+    "en": "Failed to load",
+    "ja": "読み込みに失敗しました"
+  },
+  "Reporting.retry": {
+    "en": "Retry",
+    "ja": "再試行"
+  },
+  "Reporting.transactions.title": {
+    "en": "Transaction Report",
+    "ja": "取引レポート"
+  },
+  "Reporting.transactions.subtitle": {
+    "en": "Discover and export transactions under your authorized scope.",
+    "ja": "権限のある範囲の取引を検索・エクスポートできます。"
+  },
+  "Reporting.transactions.empty": {
+    "en": "No transactions found.",
+    "ja": "取引が見つかりません。"
+  },
+  "Reporting.transactions.table_total": {
+    "en": "Total {count} transactions",
+    "ja": "合計 {count} 件の取引"
+  },
+  "Reporting.transactions.export": {
+    "en": "Export CSV",
+    "ja": "CSVをエクスポート"
+  },
+  "Reporting.transactions.export_failed": {
+    "en": "Export failed",
+    "ja": "エクスポートに失敗しました"
+  },
+  "Reporting.transactions.filters.merchant_order_id": {
+    "en": "Merchant order ID",
+    "ja": "マーチャント注文ID"
+  },
+  "Reporting.transactions.filters.status": {
+    "en": "Status",
+    "ja": "ステータス"
+  },
+  "Reporting.transactions.filters.channel": {
+    "en": "Channel",
+    "ja": "チャネル"
+  },
+  "Reporting.transactions.filters.amount_min": {
+    "en": "Min amount",
+    "ja": "最小金額"
+  },
+  "Reporting.transactions.filters.amount_max": {
+    "en": "Max amount",
+    "ja": "最大金額"
+  },
+  "Reporting.transactions.filters.created_from": {
+    "en": "Created from",
+    "ja": "作成日時（開始）"
+  },
+  "Reporting.transactions.filters.created_to": {
+    "en": "Created to",
+    "ja": "作成日時（終了）"
+  },
+  "Reporting.transactions.columns.merchant_order_id": {
+    "en": "Merchant order ID",
+    "ja": "マーチャント注文ID"
+  },
+  "Reporting.transactions.columns.trade_no": {
+    "en": "Trade no.",
+    "ja": "取引番号"
+  },
+  "Reporting.transactions.columns.order_type": {
+    "en": "Order type",
+    "ja": "注文タイプ"
+  },
+  "Reporting.transactions.columns.status": {
+    "en": "Status",
+    "ja": "ステータス"
+  },
+  "Reporting.transactions.columns.amount": {
+    "en": "Amount",
+    "ja": "金額"
+  },
+  "Reporting.transactions.columns.channel": {
+    "en": "Channel",
+    "ja": "チャネル"
+  },
+  "Reporting.transactions.columns.created_at": {
+    "en": "Created at",
+    "ja": "作成日時"
+  },
+  "Reporting.transactions.statuses.PENDING": {
+    "en": "Pending",
+    "ja": "保留中"
+  },
+  "Reporting.transactions.statuses.PROCESSING": {
+    "en": "Processing",
+    "ja": "処理中"
+  },
+  "Reporting.transactions.statuses.PARTIAL_SUCCESS": {
+    "en": "Partial success",
+    "ja": "一部成功"
+  },
+  "Reporting.transactions.statuses.SUCCESS": {
+    "en": "Success",
+    "ja": "成功"
+  },
+  "Reporting.transactions.statuses.CLOSED": {
+    "en": "Closed",
+    "ja": "クローズ"
+  },
+  "Reporting.transactions.statuses.FAILED": {
+    "en": "Failed",
+    "ja": "失敗"
+  },
+  "Reporting.transactions.statuses.REQUIRES_CAPTURE": {
+    "en": "Requires capture",
+    "ja": "キャプチャが必要"
+  },
+  "Reporting.transactions.statuses.DISPUTED": {
+    "en": "Disputed",
+    "ja": "紛争中"
+  },
+  "Reporting.transactions.orderTypes.TRADE": {
+    "en": "Trade order",
+    "ja": "取引注文"
+  },
+  "Reporting.transactions.orderTypes.DEPOSIT": {
+    "en": "Deposit",
+    "ja": "入金"
+  },
+  "Reporting.transactions.orderTypes.TRANSFER": {
+    "en": "Transfer",
+    "ja": "振替"
+  },
+  "Reporting.transactions.orderTypes.PAYOUT": {
+    "en": "Payout",
+    "ja": "支払い"
+  },
+  "Reporting.transactions.orderTypes.WITHDRAWAL": {
+    "en": "Withdrawal",
+    "ja": "出金"
+  },
+  "Reporting.transactions.orderTypes.REFUND": {
+    "en": "Refund",
+    "ja": "返金"
+  },
+  "Reporting.transactions.orderTypes.DIRECT_DEBIT": {
+    "en": "Direct debit",
+    "ja": "口座振替"
+  },
+  "Reporting.transactions.orderTypes.PLATFORM_SERVICE_FEE": {
+    "en": "Platform service fee",
+    "ja": "プラットフォームサービス手数料"
+  },
+  "Reporting.transactions.detail.title": {
+    "en": "Transaction detail",
+    "ja": "取引詳細"
+  },
+  "Reporting.transactions.detail.back_to_list": {
+    "en": "Back to transactions",
+    "ja": "取引一覧に戻る"
+  },
+  "Reporting.transactions.detail.resource_unavailable": {
+    "en": "Resource unavailable",
+    "ja": "リソースを利用できません"
+  },
+  "Reporting.transactions.detail.view_business_detail": {
+    "en": "View business detail",
+    "ja": "業務詳細を表示"
+  },
+  "Reporting.transactions.detail.fields.merchant_order_id": {
+    "en": "Merchant order ID",
+    "ja": "マーチャント注文ID"
+  },
+  "Reporting.transactions.detail.fields.trade_no": {
+    "en": "Trade no.",
+    "ja": "取引番号"
+  },
+  "Reporting.transactions.detail.fields.status": {
+    "en": "Status",
+    "ja": "ステータス"
+  },
+  "Reporting.transactions.detail.fields.order_type": {
+    "en": "Order type",
+    "ja": "注文タイプ"
+  },
+  "Reporting.transactions.detail.fields.amount": {
+    "en": "Amount",
+    "ja": "金額"
+  },
+  "Reporting.transactions.detail.fields.paid_amount": {
+    "en": "Paid amount",
+    "ja": "支払済み金額"
+  },
+  "Reporting.transactions.detail.fields.refunded_amount": {
+    "en": "Refunded amount",
+    "ja": "返金額"
+  },
+  "Reporting.transactions.detail.fields.currency": {
+    "en": "Currency",
+    "ja": "通貨"
+  },
+  "Reporting.transactions.detail.fields.channel": {
+    "en": "Channel",
+    "ja": "チャネル"
+  },
+  "Reporting.transactions.detail.fields.subject": {
+    "en": "Subject",
+    "ja": "件名"
+  },
+  "Reporting.transactions.detail.fields.created_at": {
+    "en": "Created at",
+    "ja": "作成日時"
+  },
+  "Reporting.transactions.detail.fields.paid_at": {
+    "en": "Paid at",
+    "ja": "支払日時"
+  },
+  "Reporting.transactions.detail.fields.updated_at": {
+    "en": "Updated at",
+    "ja": "更新日時"
+  },
+  "Reporting.transactions.detail.timeline.title": {
+    "en": "Timeline",
+    "ja": "タイムライン"
+  },
+  "Reporting.transactions.detail.timeline.empty": {
+    "en": "No timeline events.",
+    "ja": "タイムラインイベントはありません。"
+  },
+  "Risk.related_risk.title": {
+    "en": "Related Risk",
+    "ja": "関連リスク"
+  },
+  "Risk.related_risk.fraud_events": {
+    "en": "Fraud Events",
+    "ja": "不正イベント"
+  },
+  "Risk.related_risk.reviews": {
+    "en": "Reviews",
+    "ja": "審査"
+  },
+  "Risk.payment_timeline.title": {
+    "en": "Payment Risk Timeline",
+    "ja": "支払いリスクタイムライン"
+  },
+  "Risk.payment_timeline.entity.FRAUD": {
+    "en": "Fraud",
+    "ja": "不正"
+  },
+  "Risk.payment_timeline.entity.REVIEW": {
+    "en": "Review",
+    "ja": "審査"
+  },
+  "Risk.payment_timeline.entity.DISPUTE": {
+    "en": "Dispute",
+    "ja": "紛争"
+  },
+  "Risk.payment_timeline.entity.PAYMENT": {
+    "en": "Payment",
+    "ja": "支払い"
+  },
+  "Risk.dashboard.title": {
+    "en": "Risk Overview",
+    "ja": "リスク概要"
+  },
+  "Risk.dashboard.view_fraud": {
+    "en": "View fraud events",
+    "ja": "不正イベントを表示"
+  },
+  "Risk.dashboard.pending_reviews": {
+    "en": "Pending Reviews",
+    "ja": "保留中の審査"
+  },
+  "Risk.dashboard.open_disputes": {
+    "en": "Open Disputes",
+    "ja": "進行中の紛争"
+  },
+  "Risk.dashboard.high_fraud_today": {
+    "en": "High Fraud Today",
+    "ja": "本日の高リスク不正"
+  },
+  "Risk.dashboard.blocked_amount": {
+    "en": "Blocked Amount",
+    "ja": "ブロック金額"
+  },
+  "Risk.dashboard.blocked_unsupported": {
+    "en": "Not supported yet",
+    "ja": "まだ未対応"
+  },
+  "Risk.dashboard.review_sla_hours": {
+    "en": "Review SLA (hrs)",
+    "ja": "審査SLA（時間）"
+  },
+  "Risk.dashboard.chargeback_ratio": {
+    "en": "Chargeback Ratio",
+    "ja": "チャージバック率"
+  },
+  "Risk.dashboard.rejected_today": {
+    "en": "Rejected Today",
+    "ja": "本日の却下"
+  },
+  "Risk.dashboard.pending_review_attempts": {
+    "en": "Pending Review Payments",
+    "ja": "審査待ちの支払い"
+  },
+  "Risk.dashboard.pending_events": {
+    "en": "Pending risk actions",
+    "ja": "未処理のリスク対応"
+  },
+  "Risk.dashboard.monitoring_metrics": {
+    "en": "Ongoing monitoring",
+    "ja": "継続モニタリング"
+  },
+  "RiskRules.title": {
+    "en": "Risk Rules",
+    "ja": "リスクルール"
+  },
+  "RiskRules.subtitle": {
+    "en": "View platform and merchant PRE_AUTH rules (read-only).",
+    "ja": "プラットフォームおよびマーチャントの PRE_AUTH ルールを表示します（読み取り専用）。"
+  },
+  "RiskRules.empty": {
+    "en": "No risk rules found.",
+    "ja": "リスクルールが見つかりません。"
+  },
+  "RiskRules.headers.name": {
+    "en": "Name",
+    "ja": "名称"
+  },
+  "RiskRules.headers.rule_type": {
+    "en": "Type",
+    "ja": "タイプ"
+  },
+  "RiskRules.headers.severity": {
+    "en": "Severity",
+    "ja": "重大度"
+  },
+  "RiskRules.headers.enforcement": {
+    "en": "Enforcement",
+    "ja": "執行"
+  },
+  "RiskRules.headers.scope": {
+    "en": "Scope",
+    "ja": "スコープ"
+  },
+  "RiskRules.headers.enabled": {
+    "en": "Enabled",
+    "ja": "有効"
+  },
+  "RiskRules.headers.priority": {
+    "en": "Priority",
+    "ja": "優先度"
+  },
+  "RiskRules.headers.config": {
+    "en": "Configuration",
+    "ja": "設定"
+  },
+  "RiskRules.rule_type.VELOCITY": {
+    "en": "Velocity",
+    "ja": "頻度"
+  },
+  "RiskRules.rule_type.AMOUNT": {
+    "en": "Amount",
+    "ja": "金額"
+  },
+  "RiskRules.enforcement.BLOCK": {
+    "en": "Block",
+    "ja": "ブロック"
+  },
+  "RiskRules.enforcement.REVIEW_BEFORE_AUTH": {
+    "en": "Review before payment",
+    "ja": "支払い前に審査"
+  },
+  "RiskRules.scope.platform": {
+    "en": "Platform",
+    "ja": "プラットフォーム"
+  },
+  "RiskRules.scope.merchant": {
+    "en": "Merchant",
+    "ja": "マーチャント"
+  },
+  "RiskRules.config.schema": {
+    "en": "Schema",
+    "ja": "Schema"
+  },
+  "RiskRules.config.velocity": {
+    "en": "Max {maxCount} attempts within {windowMinutes} minutes",
+    "ja": "{windowMinutes} 分以内に最大 {maxCount} 回"
+  },
+  "RiskRules.config.amount": {
+    "en": "Threshold: {threshold}",
+    "ja": "しきい値：{threshold}"
+  },
+  "Fraud.title": {
+    "en": "Fraud Events",
+    "ja": "不正イベント"
+  },
+  "Fraud.subtitle": {
+    "en": "Monitor detected fraud signals and investigation status.",
+    "ja": "検出された不正シグナルと調査ステータスを監視します。"
+  },
+  "Fraud.empty": {
+    "en": "No fraud events found.",
+    "ja": "不正イベントが見つかりません。"
+  },
+  "Fraud.table_total": {
+    "en": "Total {count} events",
+    "ja": "合計 {count} 件のイベント"
+  },
+  "Fraud.filters.keyword": {
+    "en": "Search events",
+    "ja": "イベントを検索"
+  },
+  "Fraud.filters.status": {
+    "en": "Status",
+    "ja": "ステータス"
+  },
+  "Fraud.filters.severity": {
+    "en": "Severity",
+    "ja": "重大度"
+  },
+  "Fraud.detail.title": {
+    "en": "Fraud Event Detail",
+    "ja": "不正イベント詳細"
+  },
+  "Fraud.detail.back_to_list": {
+    "en": "Back to fraud events",
+    "ja": "不正イベント一覧に戻る"
+  },
+  "Fraud.detail.not_found": {
+    "en": "Fraud event not found.",
+    "ja": "不正イベントが見つかりません。"
+  },
+  "Fraud.detail.payment_id": {
+    "en": "Payment ID",
+    "ja": "支払いID"
+  },
+  "Fraud.detail.provider": {
+    "en": "Provider",
+    "ja": "プロバイダー"
+  },
+  "Fraud.detail.score": {
+    "en": "Risk Score",
+    "ja": "リスクスコア"
+  },
+  "Fraud.detail.metadata.title": {
+    "en": "Metadata",
+    "ja": "メタデータ"
+  },
+  "Fraud.detail.metadata.v1.deviceId": {
+    "en": "Device ID",
+    "ja": "デバイスID"
+  },
+  "Fraud.detail.metadata.v1.ipAddress": {
+    "en": "IP Address",
+    "ja": "IPアドレス"
+  },
+  "Fraud.detail.metadata.v1.velocityCount": {
+    "en": "Velocity Count",
+    "ja": "頻度カウント"
+  },
+  "Fraud.detail.metadata.v1.amountThreshold": {
+    "en": "Amount Threshold",
+    "ja": "金額しきい値"
+  },
+  "Fraud.detail.metadata.v1.countryCode": {
+    "en": "Country",
+    "ja": "国"
+  },
+  "Fraud.detail.metadata.v1.cardFingerprint": {
+    "en": "Card Fingerprint",
+    "ja": "カードフィンガープリント"
+  },
+  "Fraud.headers.event_type": {
+    "en": "Event Type",
+    "ja": "イベントタイプ"
+  },
+  "Fraud.headers.risk_type": {
+    "en": "Risk Type",
+    "ja": "リスクタイプ"
+  },
+  "Fraud.headers.description": {
+    "en": "Description",
+    "ja": "説明"
+  },
+  "Fraud.headers.severity": {
+    "en": "Severity",
+    "ja": "重大度"
+  },
+  "Fraud.headers.order_id": {
+    "en": "Related Order",
+    "ja": "関連注文"
+  },
+  "Fraud.headers.status": {
+    "en": "Status",
+    "ja": "ステータス"
+  },
+  "Fraud.headers.detected_at": {
+    "en": "Detected At",
+    "ja": "検出日時"
+  },
+  "Fraud.status.OPEN": {
+    "en": "Open",
+    "ja": "未処理"
+  },
+  "Fraud.status.INVESTIGATING": {
+    "en": "Investigating",
+    "ja": "調査中"
+  },
+  "Fraud.status.CLOSED": {
+    "en": "Closed",
+    "ja": "クローズ"
+  },
+  "Fraud.risk_type.DEVICE": {
+    "en": "Device anomaly",
+    "ja": "デバイス異常"
+  },
+  "Fraud.risk_type.VELOCITY": {
+    "en": "Velocity anomaly",
+    "ja": "頻度異常"
+  },
+  "Fraud.risk_type.GEO": {
+    "en": "Geographic anomaly",
+    "ja": "地理的異常"
+  },
+  "Fraud.risk_type.BIN": {
+    "en": "BIN anomaly",
+    "ja": "BIN異常"
+  },
+  "Fraud.risk_type.AMOUNT": {
+    "en": "Amount anomaly",
+    "ja": "金額異常"
+  },
+  "Fraud.risk_type.IP_MISMATCH": {
+    "en": "IP mismatch",
+    "ja": "IP不一致"
+  },
+  "Fraud.risk_type.COMBINED": {
+    "en": "Combined risk",
+    "ja": "複合リスク"
+  },
+  "Fraud.risk_type.FRAUD": {
+    "en": "Fraud risk",
+    "ja": "不正リスク"
+  },
+  "Fraud.summary.DEVICE": {
+    "en": "Device fingerprint does not match billing profile",
+    "ja": "デバイスフィンガープリントが請求プロフィールと一致しません"
+  },
+  "Fraud.summary.VELOCITY": {
+    "en": "Transaction velocity exceeded the threshold",
+    "ja": "取引頻度がしきい値を超えました"
+  },
+  "Fraud.summary.GEO": {
+    "en": "Transaction geography differs from expected behavior",
+    "ja": "取引の地理情報が想定される行動と異なります"
+  },
+  "Fraud.summary.BIN": {
+    "en": "Card BIN shows elevated risk characteristics",
+    "ja": "カードBINに高リスクの特徴が見られます"
+  },
+  "Fraud.summary.AMOUNT": {
+    "en": "Transaction amount is outside the normal range",
+    "ja": "取引金額が通常の範囲外です"
+  },
+  "Fraud.summary.IP_MISMATCH": {
+    "en": "IP address does not match billing information",
+    "ja": "IPアドレスが請求情報と一致しません"
+  },
+  "Fraud.summary.COMBINED": {
+    "en": "Multiple risk signals triggered together",
+    "ja": "複数のリスクシグナルが同時に発動しました"
+  },
+  "Fraud.summary.FRAUD": {
+    "en": "Suspicious fraud activity detected",
+    "ja": "不審な不正活動を検出しました"
+  },
+  "CoverageInsurance.title": {
+    "en": "Coverage Insurance",
+    "ja": "保障保険"
+  },
+  "CoverageInsurance.subtitle": {
+    "en": "Subscribe to platform-hosted chargeback coverage for new orders.",
+    "ja": "新規注文向けのプラットフォームホスト型チャージバック保障に申し込みます。"
+  },
+  "CoverageInsurance.product_title": {
+    "en": "Platform Chargeback Coverage",
+    "ja": "プラットフォームチャージバック保障"
+  },
+  "CoverageInsurance.product_description": {
+    "en": "Filix Pay provides integrated dispute coverage through our platform insurance partners.",
+    "ja": "Filix Pay は、プラットフォームの保険パートナーを通じて統合的な紛争保障を提供します。"
+  },
+  "CoverageInsurance.unavailable_title": {
+    "en": "Service not available yet",
+    "ja": "サービスはまだご利用いただけません"
+  },
+  "CoverageInsurance.unavailable_body": {
+    "en": "Platform coverage is being prepared. Please check back later or contact support.",
+    "ja": "プラットフォーム保障を準備中です。しばらくしてから再度ご確認いただくか、サポートまでお問い合わせください。"
+  },
+  "CoverageInsurance.agreement_body": {
+    "en": "By subscribing, you authorize Filix Pay to apply platform-hosted chargeback coverage to eligible new orders under the current service agreement.",
+    "ja": "申し込みにより、現行のサービス契約に基づき、対象となる新規注文に Filix Pay がプラットフォームホスト型チャージバック保障を適用することを承認します。"
+  },
+  "CoverageInsurance.agreement_checkbox": {
+    "en": "I have read and agree to the coverage service agreement (v1).",
+    "ja": "保障サービス契約（v1）を読み、同意します。"
+  },
+  "CoverageInsurance.unsubscribed_banner": {
+    "en": "Coverage is turned off for new orders. Existing claims will continue to be processed.",
+    "ja": "新規注文の保障はオフです。既存の請求は引き続き処理されます。"
+  },
+  "CoverageInsurance.status.subscribed": {
+    "en": "Active",
+    "ja": "有効"
+  },
+  "CoverageInsurance.status.not_subscribed": {
+    "en": "Not subscribed",
+    "ja": "未加入"
+  },
+  "CoverageInsurance.status.unsubscribed": {
+    "en": "Unsubscribed",
+    "ja": "解約済み"
+  },
+  "CoverageInsurance.fields.provider": {
+    "en": "Provider",
+    "ja": "プロバイダー"
+  },
+  "CoverageInsurance.fields.subscribed_at": {
+    "en": "Subscribed at",
+    "ja": "加入日時"
+  },
+  "CoverageInsurance.fields.agreement_version": {
+    "en": "Agreement version",
+    "ja": "契約バージョン"
+  },
+  "CoverageInsurance.actions.subscribe": {
+    "en": "Activate coverage",
+    "ja": "保障を有効化"
+  },
+  "CoverageInsurance.actions.unsubscribe": {
+    "en": "Turn off coverage",
+    "ja": "保障をオフにする"
+  },
+  "CoverageInsurance.unsubscribe_modal.title": {
+    "en": "Turn off coverage?",
+    "ja": "保障をオフにしますか？"
+  },
+  "CoverageInsurance.unsubscribe_modal.warning": {
+    "en": "After you turn off coverage, new orders will no longer be covered by platform chargeback insurance. Existing claims will continue to be processed without interruption.",
+    "ja": "保障をオフにすると、新規注文はプラットフォームのチャージバック保険の対象外になります。既存の請求は中断なく引き続き処理されます。"
+  },
+  "CoverageInsurance.unsubscribe_modal.confirm": {
+    "en": "Turn off",
+    "ja": "オフにする"
+  },
+  "CoverageInsurance.unsubscribe_modal.cancel": {
+    "en": "Cancel",
+    "ja": "キャンセル"
+  },
+  "CoverageInsurance.messages.load_failed": {
+    "en": "Failed to load coverage subscription",
+    "ja": "保障の加入状況の読み込みに失敗しました"
+  },
+  "CoverageInsurance.messages.subscribed": {
+    "en": "Coverage activated",
+    "ja": "保障を有効化しました"
+  },
+  "CoverageInsurance.messages.subscribe_failed": {
+    "en": "Failed to activate coverage",
+    "ja": "保障の有効化に失敗しました"
+  },
+  "CoverageInsurance.messages.unsubscribed": {
+    "en": "Coverage turned off",
+    "ja": "保障をオフにしました"
+  },
+  "CoverageInsurance.messages.unsubscribe_failed": {
+    "en": "Failed to turn off coverage",
+    "ja": "保障のオフに失敗しました"
+  },
+  "CoverageConfig.title": {
+    "en": "Chargeback Coverage",
+    "ja": "チャージバック保障"
+  },
+  "CoverageConfig.subtitle": {
+    "en": "Configure dispute coverage providers for new chargeback cases.",
+    "ja": "新しいチャージバック案件向けの紛争保障プロバイダーを設定します。"
+  },
+  "CoverageConfig.empty": {
+    "en": "No coverage configurations yet.",
+    "ja": "保障設定はまだありません。"
+  },
+  "CoverageConfig.provider_switch_warning": {
+    "en": "Switching provider only affects new chargeback cases.",
+    "ja": "プロバイダーの切り替えは新しいチャージバック案件にのみ影響します。"
+  },
+  "CoverageConfig.active_banner": {
+    "en": "Active provider: {provider} ({id})",
+    "ja": "有効なプロバイダー：{provider}（{id}）"
+  },
+  "CoverageConfig.no_active_banner": {
+    "en": "No active coverage provider. New disputes will skip coverage claims.",
+    "ja": "有効な保障プロバイダーがありません。新規紛争では保障請求をスキップします。"
+  },
+  "CoverageConfig.platform_hosted_banner": {
+    "en": "This configuration powers platform-hosted coverage for subscribed Platform settlement merchants.",
+    "ja": "この設定は、加入済みのプラットフォーム精算マーチャント向けプラットフォームホスト型保障を支えます。"
+  },
+  "CoverageConfig.maintenance_banner": {
+    "en": "Maintenance mode: new assessments are paused; in-flight claim webhooks continue.",
+    "ja": "メンテナンスモード：新規評価は一時停止中です。進行中の請求Webhookは継続します。"
+  },
+  "CoverageConfig.columns.provider": {
+    "en": "Provider",
+    "ja": "プロバイダー"
+  },
+  "CoverageConfig.columns.status": {
+    "en": "Status",
+    "ja": "ステータス"
+  },
+  "CoverageConfig.columns.version": {
+    "en": "Version",
+    "ja": "バージョン"
+  },
+  "CoverageConfig.columns.updated_at": {
+    "en": "Updated",
+    "ja": "更新日時"
+  },
+  "CoverageConfig.status.active": {
+    "en": "Active",
+    "ja": "有効"
+  },
+  "CoverageConfig.status.disabled": {
+    "en": "Disabled",
+    "ja": "無効"
+  },
+  "CoverageConfig.status.maintenance": {
+    "en": "Maintenance",
+    "ja": "メンテナンス"
+  },
+  "CoverageConfig.fields.provider": {
+    "en": "Provider",
+    "ja": "プロバイダー"
+  },
+  "CoverageConfig.fields.provider_placeholder": {
+    "en": "Select a provider",
+    "ja": "プロバイダーを選択"
+  },
+  "CoverageConfig.config_fields.teamId": {
+    "en": "Team ID",
+    "ja": "Team ID"
+  },
+  "CoverageConfig.config_fields.shopDomain": {
+    "en": "Shop Domain",
+    "ja": "ショップドメイン"
+  },
+  "CoverageConfig.config_fields.environment": {
+    "en": "Environment",
+    "ja": "環境"
+  },
+  "CoverageConfig.config_fields.coverageLimit": {
+    "en": "Coverage Limit",
+    "ja": "保障上限"
+  },
+  "CoverageConfig.config_fields.currency": {
+    "en": "Currency",
+    "ja": "通貨"
+  },
+  "CoverageConfig.config_fields.mode": {
+    "en": "Mode",
+    "ja": "モード"
+  },
+  "CoverageConfig.secret_fields.apiKey": {
+    "en": "API Key",
+    "ja": "API Key"
+  },
+  "CoverageConfig.secret_fields.webhookSecret": {
+    "en": "Webhook Secret",
+    "ja": "Webhook Secret"
+  },
+  "CoverageConfig.secret_keep_hint": {
+    "en": "Current value: {masked}. Leave blank to keep unchanged.",
+    "ja": "現在の値：{masked}。変更しない場合は空のままにしてください。"
+  },
+  "CoverageConfig.secret_placeholder_edit": {
+    "en": "Leave blank to keep current value",
+    "ja": "変更しない場合は空のまま"
+  },
+  "CoverageConfig.validation.provider_required": {
+    "en": "Please select a provider",
+    "ja": "プロバイダーを選択してください"
+  },
+  "CoverageConfig.validation.field_required": {
+    "en": "{field} is required",
+    "ja": "{field} は必須です"
+  },
+  "CoverageConfig.actions.create": {
+    "en": "Add Configuration",
+    "ja": "設定を追加"
+  },
+  "CoverageConfig.actions.edit": {
+    "en": "Edit",
+    "ja": "編集"
+  },
+  "CoverageConfig.actions.activate": {
+    "en": "Activate",
+    "ja": "有効化"
+  },
+  "CoverageConfig.actions.deactivate": {
+    "en": "Deactivate",
+    "ja": "無効化"
+  },
+  "CoverageConfig.actions.enter_maintenance": {
+    "en": "Enter maintenance",
+    "ja": "メンテナンスに入る"
+  },
+  "CoverageConfig.actions.resume": {
+    "en": "Resume service",
+    "ja": "サービスを再開"
+  },
+  "CoverageConfig.actions.test_connection": {
+    "en": "Test Connection",
+    "ja": "接続をテスト"
+  },
+  "CoverageConfig.modal.create_title": {
+    "en": "Add Coverage Configuration",
+    "ja": "保障設定を追加"
+  },
+  "CoverageConfig.modal.edit_title": {
+    "en": "Edit Coverage Configuration",
+    "ja": "保障設定を編集"
+  },
+  "CoverageConfig.messages.created": {
+    "en": "Coverage configuration created",
+    "ja": "保障設定を作成しました"
+  },
+  "CoverageConfig.messages.updated": {
+    "en": "Coverage configuration updated",
+    "ja": "保障設定を更新しました"
+  },
+  "CoverageConfig.messages.activated": {
+    "en": "Coverage configuration activated",
+    "ja": "保障設定を有効化しました"
+  },
+  "CoverageConfig.messages.deactivated": {
+    "en": "Coverage configuration deactivated",
+    "ja": "保障設定を無効化しました"
+  },
+  "CoverageConfig.messages.maintenance_entered": {
+    "en": "Coverage entered maintenance mode",
+    "ja": "保障がメンテナンスモードに入りました"
+  },
+  "CoverageConfig.messages.resumed": {
+    "en": "Coverage resumed",
+    "ja": "保障を再開しました"
+  },
+  "CoverageConfig.messages.test_ok": {
+    "en": "Connection OK ({latencyMs} ms, {providerVersion})",
+    "ja": "接続OK（{latencyMs} ms、{providerVersion}）"
+  },
+  "CoverageConfig.messages.test_failed": {
+    "en": "Connection test failed: {status}",
+    "ja": "接続テストに失敗しました：{status}"
+  }
+}

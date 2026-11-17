@@ -1,0 +1,659 @@
+{
+  "Pages": {
+    "crypto_payment": {
+      "title": "Pagamento cripto",
+      "subtitle": "Cobrança nativa on-chain de USDT na TRON pelo gateway blockchain da FilixPay",
+      "hero_title": "Pagamentos USDT na TRON, integrados",
+      "hero_desc": "Receba USDT TRC20 com endereços de depósito gerenciados pelo merchant, matching por valor único e confirmação pelo gateway blockchain—tudo unificado no mesmo checkout e fluxo de pedidos da FilixPay.",
+      "pipeline": {
+        "configure": {
+          "title": "Configurar carteiras",
+          "desc": "Vincule endereços de depósito de USDT na TRON"
+        },
+        "checkout": {
+          "title": "Cobrança no checkout",
+          "desc": "Exiba endereço e valor a pagar"
+        },
+        "confirm": {
+          "title": "Confirmação on-chain",
+          "desc": "O gateway verifica o depósito"
+        }
+      },
+      "what": {
+        "title": "O que é o pagamento cripto da FilixPay?",
+        "desc": "A FilixPay é uma camada de orquestração de pagamentos—não uma custodiante nem uma exchange. O canal nativo CRYPTO conecta seu checkout a depósitos de USDT na TRON via o gateway blockchain da FilixPay, com extensão opcional NowPayments para faturas multi-moeda."
+      },
+      "native": {
+        "title": "Canal nativo de USDT na TRON (principal)",
+        "desc": "Cobrança on-chain pronta para produção de USDT TRC20 com carteiras de depósito controladas pelo merchant e matching automático de pagamentos.",
+        "points": {
+          "0": "Rede e ativo: USDT na mainnet TRON (TRC20)",
+          "1": "Modos de depósito: matching STATIC por valor único ou alocação de endereço HD",
+          "2": "O checkout exibe o endereço de depósito e o valor exato a pagar para o cliente"
+        }
+      },
+      "wallets": {
+        "title": "Gestão de carteiras de depósito",
+        "desc": "Os merchants configuram os endereços de recebimento no centro do merchant antes de entrar em produção.",
+        "points": {
+          "0": "Merchants fourth-party gerenciam suas próprias carteiras de depósito de USDT na TRON",
+          "1": "Sub-merchants third-party usam carteiras gerenciadas pela plataforma (visualização somente leitura)",
+          "2": "Uma carteira de depósito ativa por rede/ativo por merchant"
+        }
+      },
+      "extension": {
+        "title": "Extensão NowPayments (opcional)",
+        "desc": "Precisa de mais ativos digitais além de USDT na TRON? Conecte sua própria conta NowPayments como canal upstream adicional.",
+        "points": {
+          "0": "Informe sua API Key e IPN Secret da NowPayments na configuração de pagamento",
+          "1": "Redirecione clientes ao checkout de fatura da NowPayments para moedas suportadas",
+          "2": "A FilixPay cuida da vinculação de pedidos, callbacks IPN e reconciliação de faturas de trade"
+        },
+        "footnote": "O escopo multi-moeda depende da sua conta merchant NowPayments—não é uma garantia nativa da FilixPay."
+      },
+      "merchant_center": {
+        "title": "Capacidades do centro do merchant",
+        "items": {
+          "configs": {
+            "title": "Configuração de pagamento",
+            "desc": "Vincule credenciais do gateway CRYPTO ou chaves de API da NowPayments por cenário de pagamento."
+          },
+          "wallets": {
+            "title": "Endereços de depósito cripto",
+            "desc": "Crie e mantenha endereços de recebimento de USDT na TRON para o canal nativo."
+          },
+          "orders": {
+            "title": "Pedidos e webhooks",
+            "desc": "Acompanhe o status do pagamento e receba webhooks do merchant quando os depósitos forem confirmados."
+          }
+        }
+      },
+      "workflow": {
+        "title": "Fluxo de cobrança",
+        "desc": "Da criação do checkout à confirmação on-chain.",
+        "steps": {
+          "order": {
+            "title": "Criar checkout",
+            "desc": "O merchant ou a API cria um pedido e seleciona o canal de pagamento cripto configurado."
+          },
+          "present": {
+            "title": "Apresentar pagamento",
+            "desc": "O CRYPTO nativo mostra o endereço TRON e o valor único a pagar; a NowPayments redireciona para a URL da fatura."
+          },
+          "pay": {
+            "title": "Cliente paga",
+            "desc": "O cliente envia USDT on-chain ou conclui o pagamento na página de fatura da NowPayments."
+          },
+          "settle": {
+            "title": "Confirmar e notificar",
+            "desc": "O gateway ou o IPN confirma o pagamento; o status do pedido é atualizado e os webhooks do merchant são disparados."
+          }
+        }
+      },
+      "scenarios": {
+        "cross_border": {
+          "title": "Cobrança cross-border de USDT",
+          "desc": "Aceite pagamentos em stablecoin de clientes globais sem trilhos de cartão."
+        },
+        "chargeback_free": {
+          "title": "Alternativa sem chargeback",
+          "desc": "A finalidade on-chain elimina a exposição a chargebacks de cartão em casos de uso elegíveis."
+        },
+        "platform": {
+          "title": "Cripto gerenciado pela plataforma",
+          "desc": "Merchants de platform settlement herdam a configuração cripto da plataforma sem gerenciar carteiras."
+        }
+      },
+      "faq": {
+        "title": "Perguntas frequentes",
+        "items": {
+          "what_coins": {
+            "q": "Quais criptomoedas a FilixPay oferece suporte nativo?",
+            "a": "O canal nativo CRYPTO atualmente oferece suporte a USDT na mainnet TRON (TRC20). Para ativos digitais adicionais, conecte sua própria conta NowPayments como canal upstream opcional."
+          },
+          "wallet_required": {
+            "q": "Preciso configurar carteiras de depósito?",
+            "a": "Sim para o canal nativo de USDT na TRON. Merchants fourth-party adicionam endereços de depósito em Endereços de depósito cripto. Sub-merchants third-party em settlement gerenciado pela plataforma usam as carteiras configuradas do merchant da plataforma."
+          },
+          "deposit_modes": {
+            "q": "O que são os modos de depósito STATIC e HD?",
+            "a": "O modo STATIC reserva um valor único a pagar no seu endereço de depósito para cada pedido. O modo HD aloca endereços pelo gateway blockchain. O modo ativo é definido na configuração do canal CRYPTO."
+          },
+          "nowpayments": {
+            "q": "Como funciona a extensão NowPayments?",
+            "a": "Você informa suas credenciais de API da NowPayments na configuração de pagamento. A FilixPay cria faturas, redireciona clientes ao checkout da NowPayments e processa callbacks IPN no status unificado do pedido."
+          },
+          "chargebacks": {
+            "q": "Pagamentos cripto são reversíveis?",
+            "a": "Transferências on-chain de USDT são finais após a confirmação. Chargebacks no estilo de cartão não se aplicam à cobrança cripto nativa, embora reembolsos operacionais devam ser tratados conforme a política do seu negócio."
+          },
+          "refunds": {
+            "q": "A FilixPay oferece suporte a reembolsos cripto automáticos?",
+            "a": "Reembolsos on-chain automáticos pelo canal nativo CRYPTO não estão disponíveis na versão atual. Planeje fluxos de reembolso manuais quando necessário."
+          }
+        }
+      },
+      "cta": {
+        "title": "Pronto para receber USDT na TRON pela FilixPay?",
+        "desc": "Configure carteiras de depósito e canais de pagamento no centro do merchant, ou fale conosco para setup gerenciado pela plataforma."
+      }
+    },
+    "payment_splitting": {
+      "title": "Divisão de pagamentos",
+      "subtitle": "Capacidades automatizadas de split-payment e settlement para negócios de plataforma",
+      "hero_title": "Divisão de pagamentos para plataformas e settlement multi-merchant",
+      "hero_desc": "Automatize como um pagamento é alocado entre plataformas, merchants, sub-merchants, taxas de serviço, comissões e destinatários de settlement.",
+      "what": {
+        "title": "O que é divisão de pagamentos?",
+        "desc": "A divisão de pagamentos conecta cobrança, alocação de destinatários, faturas de settlement e registros de reconciliação para que negócios de plataforma reduzam operações financeiras manuais."
+      },
+      "features": {
+        "multi_receiver": {
+          "icon": "M",
+          "title": "Múltiplos destinatários",
+          "desc": "Divida um pagamento do cliente entre merchants, sub-merchants, contas da plataforma e parceiros."
+        },
+        "commission": {
+          "icon": "%",
+          "title": "Comissão da plataforma",
+          "desc": "Separe taxas de serviço e comissões da plataforma antes do settlement do merchant."
+        },
+        "settlement": {
+          "icon": "S",
+          "title": "Pronto para settlement",
+          "desc": "Conecte registros de divisão a faturas de settlement e fluxos de reconciliação financeira."
+        },
+        "webhook": {
+          "icon": "API",
+          "title": "API e webhooks",
+          "desc": "Use API e callbacks de webhook para acompanhar status de pagamento, divisão e settlement."
+        }
+      },
+      "scenarios": {
+        "marketplace": {
+          "icon": "O",
+          "title": "Pedidos de marketplace",
+          "desc": "Aloque pagamentos de clientes a merchants da plataforma e destinatários de settlement."
+        },
+        "commission": {
+          "icon": "F",
+          "title": "Comissão de serviço",
+          "desc": "Mantenha as taxas da plataforma enquanto envia o restante a receber aos merchants."
+        },
+        "saas": {
+          "icon": "S",
+          "title": "Plataformas SaaS",
+          "desc": "Suporte a merchants multi-tenant que cobram por meio de uma plataforma de pagamento compartilhada."
+        },
+        "chain": {
+          "icon": "G",
+          "title": "Redes e grupos",
+          "desc": "Faça settlement de fundos entre lojas, subsidiárias ou unidades de negócio."
+        },
+        "cross_border": {
+          "icon": "X",
+          "title": "Settlement cross-border",
+          "desc": "Suporte a cenários de settlement multipartes para comércio de plataformas globais."
+        },
+        "partner": {
+          "icon": "R",
+          "title": "Repasse de receita a parceiros",
+          "desc": "Distribua receita a parceiros, canais ou prestadores de serviço."
+        }
+      },
+      "workflow": {
+        "title": "Como funciona o fluxo de split-payment",
+        "desc": "Do pagamento do cliente ao settlement do destinatário, cada etapa se conecta a registros que as equipes financeiras podem rastrear.",
+        "steps": {
+          "pay": {
+            "title": "Cliente paga",
+            "desc": "O cliente conclui o pagamento pelo fluxo de checkout da plataforma."
+          },
+          "receive": {
+            "title": "Plataforma recebe",
+            "desc": "A plataforma registra o pagamento e prepara o cálculo da divisão."
+          },
+          "calculate": {
+            "title": "Regras calculam a divisão",
+            "desc": "Regras de negócio determinam valores, destinatários, comissões e taxas."
+          },
+          "credit": {
+            "title": "Destinatários são creditados",
+            "desc": "Os destinatários recebem os valores alocados conforme o resultado da divisão."
+          },
+          "settle": {
+            "title": "Fatura de settlement é gerada",
+            "desc": "Registros de settlement resumem os resultados da divisão para operações financeiras."
+          },
+          "reconcile": {
+            "title": "Financeiro reconcilia",
+            "desc": "Equipes financeiras comparam pedidos, registros de divisão e faturas de settlement."
+          }
+        }
+      },
+      "rules": {
+        "title": "Regras e modelo de destinatário",
+        "desc": "Defina como a receita é distribuída entre merchants, contas da plataforma, taxas de serviço e destinatários de settlement.",
+        "items": {
+          "fixed_amount": {
+            "icon": "#",
+            "title": "Valor fixo",
+            "desc": "Aloque um valor fixo a um destinatário ou taxa da plataforma."
+          },
+          "percentage": {
+            "icon": "%",
+            "title": "Percentual",
+            "desc": "Divida por percentual para receita do merchant ou repasse a parceiros."
+          },
+          "commission": {
+            "icon": "C",
+            "title": "Comissão",
+            "desc": "Mantenha a comissão da plataforma antes do settlement."
+          },
+          "receiver": {
+            "icon": "R",
+            "title": "Destinatário",
+            "desc": "Encaminhe valores a merchants, sub-merchants, lojas ou parceiros."
+          },
+          "currency": {
+            "icon": "$",
+            "title": "Moeda",
+            "desc": "Suporte à lógica de settlement por moeda da transação e do settlement."
+          },
+          "cycle": {
+            "icon": "D",
+            "title": "Ciclo de settlement",
+            "desc": "Conecte resultados de divisão a ciclos de settlement diários, semanais ou personalizados."
+          }
+        }
+      },
+      "settlement": {
+        "title": "Settlement e reconciliação",
+        "desc": "A divisão de pagamentos não deve parar na alocação. Equipes financeiras precisam de faturas de settlement e registros de reconciliação que expliquem cada valor.",
+        "records": {
+          "title": "Registros de divisão",
+          "desc": "Acompanhe valor do pedido, valor dividido, quantidade de destinatários, sucessos, falhas e status da divisão."
+        },
+        "bills": {
+          "title": "Faturas de settlement",
+          "desc": "Conecte resultados de divisão a itens da fatura de settlement para exportações financeiras e reconciliação de fim de período."
+        }
+      },
+      "exceptions": {
+        "title": "Tratamento de exceções",
+        "desc": "A divisão de pagamentos precisa de estados claros quando regras de negócio, contas de destinatários, reembolsos ou o timing do settlement geram exceções.",
+        "items": {
+          "receiver_unavailable": {
+            "title": "Destinatário indisponível",
+            "desc": "Identifique problemas na conta do destinatário antes de concluir o settlement."
+          },
+          "rule_mismatch": {
+            "title": "Inconsistência de regra",
+            "desc": "Exponha conflitos de regra ou informações de destinatário ausentes para revisão operacional."
+          },
+          "refund_after_split": {
+            "title": "Reembolso após a divisão",
+            "desc": "Rastreie como reembolsos afetam registros de divisão e resultados de settlement."
+          },
+          "partial_failure": {
+            "title": "Falha parcial da divisão",
+            "desc": "Separe alocações bem-sucedidas e com falha para acompanhamento."
+          },
+          "settlement_pending": {
+            "title": "Settlement pendente",
+            "desc": "Torne estados de settlement pendente visíveis para equipes financeiras."
+          },
+          "reconciliation_difference": {
+            "title": "Diferença de reconciliação",
+            "desc": "Ajude equipes financeiras a investigar diferenças entre pedido, divisão e settlement."
+          }
+        }
+      },
+      "developer": {
+        "title": "Integração via API e webhook",
+        "desc": "Desenvolvedores podem integrar registros de split-payment, consultas de settlement e callbacks de webhook às operações da plataforma.",
+        "cta": "Explorar o Developer Center"
+      },
+      "faq": {
+        "title": "FAQ de divisão de pagamentos",
+        "items": {
+          "what_is": {
+            "q": "O que é divisão de pagamentos?",
+            "a": "A divisão de pagamentos aloca um pagamento entre vários destinatários, como merchants, sub-merchants, contas da plataforma e parceiros."
+          },
+          "difference_from_payout": {
+            "q": "Como a divisão de pagamentos difere do payout?",
+            "a": "A divisão de pagamentos define como a receita do pagamento é alocada, enquanto o payout é a movimentação posterior dos fundos liquidados para um banco ou conta."
+          },
+          "multiple_receivers": {
+            "q": "Um pedido pode ser dividido entre vários destinatários?",
+            "a": "Sim. Uma plataforma pode alocar um pedido a vários destinatários conforme regras de negócio."
+          },
+          "platform_commission": {
+            "q": "A plataforma pode reter uma comissão?",
+            "a": "Sim. Taxas ou comissões da plataforma podem ser separadas antes do settlement do merchant."
+          },
+          "refunds": {
+            "q": "Como reembolsos são tratados após a divisão?",
+            "a": "Reembolsos devem ser rastreáveis em relação ao pedido original, aos registros de divisão e ao resultado do settlement."
+          },
+          "reconciliation": {
+            "q": "O financeiro pode reconciliar registros de divisão com faturas de settlement?",
+            "a": "Sim. Registros de divisão e itens da fatura de settlement devem oferecer um fluxo financeiro rastreável."
+          },
+          "api_webhook": {
+            "q": "A FilixPay oferece suporte a integração via API e webhook?",
+            "a": "A FilixPay oferece recursos para desenvolvedores de status de pagamento, registros de settlement e fluxos de integração orientados por webhook."
+          }
+        }
+      },
+      "channel_rules": {
+        "title": "Regras de canal para divisão de pagamentos",
+        "items": [
+          {
+            "id": "wechat",
+            "title": "1. WeChat Pay: modelo de congelamento e descongelamento de fundos",
+            "desc": "O mecanismo de divisão do WeChat se concentra em 'Congelar primeiro, dividir depois', ideal para cenários que exigem divisão adiada ou com riscos de reembolso.",
+            "flow": {
+              "title": "Fluxo principal:",
+              "steps": [
+                "Transação e congelamento: Após o pagamento bem-sucedido, os fundos são congelados na conta do merchant (estado Pending Split) em vez de entrar no saldo disponível.",
+                "Iniciar divisão: Quando as condições de divisão são atendidas (por exemplo, entrega confirmada), a API de divisão é chamada. O WeChat descongela e aloca os fundos aos destinatários especificados.",
+                "Concluir divisão: Se não for necessária nova divisão, a API de conclusão descongela os fundos restantes para o saldo disponível do merchant."
+              ]
+            },
+            "compliance": {
+              "title": "Pontos-chave de compliance:",
+              "items": [
+                "Limite de proporção de divisão: O máximo padrão costuma ser 30% do valor do pedido (ajustável com autorização).",
+                "Duração da divisão: Os fundos podem ficar congelados por até 180 dias (alguns documentos mencionam 30 dias; o descongelamento automático ocorre se nenhuma divisão for iniciada).",
+                "Frequência de divisão: Oferece suporte a várias divisões (até 50 vezes) para várias partes (até 50 destinatários por divisão)."
+              ]
+            }
+          },
+          {
+            "id": "alipay",
+            "title": "2. Alipay: confirmação de settlement e divisão assíncrona",
+            "desc": "O Alipay enfatiza a 'Confirmação de settlement' e oferece fortes capacidades síncronas/assíncronas para cenários de alta concorrência.",
+            "flow": {
+              "title": "Fluxo principal:",
+              "steps": [
+                "Transação e congelamento: Os fundos entram em estado de settlement pendente. A plataforma inicia 'Confirm Settlement' para congelar fundos para divisão.",
+                "Iniciar divisão: Chamar a API de settlement (alipay.trade.order.settle) oferece suporte aos modos síncrono (tempo real) e assíncrono (alta frequência).",
+                "Divisão reversa: Oferece suporte à reversão pelo caminho original dos fundos divididos em caso de reembolsos."
+              ]
+            },
+            "compliance": {
+              "title": "Pontos-chave de compliance:",
+              "items": [
+                "Limite de proporção de divisão: O valor máximo não pode exceder 100% do total do pedido mais suplementos (dependente da política).",
+                "Validade da divisão: A divisão normalmente é válida por até 365 dias após a transação.",
+                "Vinculação de destinatários: Destinatários devem ter verificação de nome real e ser adicionados ao 'Split Relation Set' da plataforma via API.",
+                "Desempenho: O modo sync é limitado (30 QPS), enquanto o modo async oferece suporte a até 500 QPS para plataformas de alto tráfego."
+              ]
+            }
+          },
+          {
+            "id": "stripe",
+            "title": "3. Stripe: Separate Charges and Transfers (Connect)",
+            "desc": "O Stripe Connect é altamente flexível, usando o modelo 'Separate Charges and Transfers' para marketplaces globais ou multipartes complexos.",
+            "flow": {
+              "title": "Fluxo principal:",
+              "steps": [
+                "Cobrança da plataforma: Um PaymentIntent é criado na conta Stripe da plataforma; os fundos pertencem inicialmente à plataforma.",
+                "Disparar Transfer: Após o sucesso, a plataforma chama a Transfers API (frequentemente acionada por webhooks payment_intent.succeeded).",
+                "Alocação de fundos: Transfers são vinculadas às cobranças de origem via source_transaction, permitindo que os fundos fluam automaticamente para Connected Accounts durante o settlement."
+              ]
+            },
+            "compliance": {
+              "title": "Pontos-chave de compliance:",
+              "items": [
+                "Saldo insuficiente: A vinculação source_transaction evita falhas de transfer por falta de saldo da plataforma ao processar via fluxos internos de fundos.",
+                "Application fees: Plataformas podem deduzir taxas de serviço (application_fee_amount) na cobrança antes de distribuir o restante.",
+                "Flexibilidade: Oferece suporte à divisão para vários destinatários (vendedores, afiliados, logística) sem restrições fixas de proporção (sujeito ao acordo da plataforma)."
+              ]
+            }
+          }
+        ],
+        "comparison": {
+          "title": "📊 Resumo comparativo multiplataforma",
+          "headers": [
+            "Dimensão",
+            "WeChat Pay",
+            "Alipay",
+            "Stripe (Connect)"
+          ],
+          "rows": [
+            [
+              "Mecanismo principal",
+              "Freeze -> Unfreeze Split",
+              "Confirm -> Freeze Split",
+              "Platform Collect -> Transfer"
+            ],
+            [
+              "Proporção de divisão",
+              "Máx. padrão 30%",
+              "Até 100% (dependente da política)",
+              "Flexível (config da plataforma)"
+            ],
+            [
+              "Duração",
+              "Máx. 180 dias congelados",
+              "Máx. 365 dias de validade",
+              "Ciclo padrão de payout"
+            ],
+            [
+              "Req. do destinatário",
+              "Merchant ID ou WalletID",
+              "Nome real verificado e vinculado",
+              "Connected Account obrigatória"
+            ],
+            [
+              "Melhores cenários",
+              "Varejo, alimentação, settlement adiado",
+              "Comissão, plataformas de alto volume",
+              "Marketplace global, payouts complexos"
+            ]
+          ]
+        }
+      },
+      "cta": {
+        "title": "Construa fluxos de split-payment com a FilixPay",
+        "desc": "Suporte a repasse de receita da plataforma, settlement de merchants e reconciliação financeira a partir de uma única infraestrutura de pagamento."
+      }
+    },
+    "risk_control": {
+      "title": "Controle de risco de pagamento",
+      "subtitle": "Proteja cada transação da autorização ao settlement",
+      "hero_title": "Controle de risco de pagamento",
+      "hero_desc": "Proteja cada transação com regras em tempo real, revisão especializada e seguro de chargeback integrado—conecte Signifyd, Riskified ou Forter com suas próprias credenciais, ou assine a cobertura hospedada pela plataforma FilixPay.",
+      "pipeline": {
+        "rules": {
+          "title": "Motor de regras",
+          "desc": "Prevenção de fraude em tempo real"
+        },
+        "monitor": {
+          "title": "Monitor de eventos",
+          "desc": "Eventos de fraude e revisão especializada"
+        },
+        "coverage": {
+          "title": "Parceiros de seguro",
+          "desc": "Signifyd · Riskified · Forter"
+        }
+      },
+      "modules": {
+        "rules": {
+          "title": "Motor de regras em tempo real e prevenção de fraude",
+          "desc": "Decisões de risco em milissegundos durante a autorização com regras configuráveis do merchant e checagens pré/pós-autorização.",
+          "points": {
+            "0": "Checagens concorrentes de compliance e fraude na autorização",
+            "1": "Limites configuráveis por geografia, comportamento e velocity",
+            "2": "Proteção em nível de transação distinta do risco de linha de crédito"
+          }
+        },
+        "monitor": {
+          "title": "Monitoramento de eventos de fraude e revisão manual especializada",
+          "desc": "A Dual-Layer Verification combina triagem inteligente com revisão manual especializada para minimizar recusas indevidas.",
+          "points": {
+            "0": "Detecção e acompanhamento automatizados de eventos de fraude",
+            "1": "Fila de revisão manual especializada para transações anômalas",
+            "2": "Alertas a operadores para decisões urgentes"
+          }
+        },
+        "coverage": {
+          "title": "Parceiros integrados de seguro de chargeback",
+          "desc": "A FilixPay integra nativamente provedores líderes de seguro de chargeback e garantia antifraude. Os merchants escolhem como consumir a cobertura—use seu próprio contrato com o provedor ou assine o serviço hospedado pela plataforma.",
+          "disclaimer": "* Sujeito a termos de serviço, elegibilidade e limites de cobertura.",
+          "points": {
+            "0": "Uma camada de integração para Signifyd, Riskified e Forter",
+            "1": "Configure você mesmo as credenciais do provedor no centro do merchant",
+            "2": "Ou assine a cobertura hospedada pela plataforma sem gerenciar chaves de API"
+          }
+        }
+      },
+      "delivery_modes": {
+        "title": "Duas formas de ativar a cobertura",
+        "desc": "A FilixPay oferece suporte tanto à configuração de provedor gerenciada pelo merchant quanto à assinatura hospedada pela plataforma—atendendo merchants independentes e sub-merchants de marketplace.",
+        "items": {
+          "self_config": {
+            "icon": "🔑",
+            "title": "Traga seu próprio provedor (BYOK)",
+            "desc": "Conecte sua conta existente da Signifyd, Riskified ou Forter. Configure chaves de API, segredos de webhook e ambiente no centro do merchant—a FilixPay roteia avaliações e sinistros para o parceiro escolhido.",
+            "points": {
+              "0": "Controle total do contrato e das credenciais do provedor",
+              "1": "Ideal para merchants independentes com relacionamento direto com a seguradora",
+              "2": "Troque de provedor com um fluxo de configuração guiado"
+            }
+          },
+          "platform_subscription": {
+            "icon": "🛡️",
+            "title": "Assinatura de cobertura hospedada pela plataforma",
+            "desc": "Merchants third-party na plataforma Filix podem assinar o seguro de cobertura alimentado pela configuração de provedor do merchant da plataforma—sem necessidade de cadastro separado na seguradora.",
+            "points": {
+              "0": "Assinatura com um clique no centro do merchant",
+              "1": "Elegibilidade vinculada à conformidade com regras de segurança pré-autorização",
+              "2": "A plataforma opera o relacionamento com o provedor em seu nome"
+            }
+          }
+        }
+      },
+      "providers": {
+        "title": "Parceiros de seguro e garantia antifraude suportados",
+        "desc": "O diferencial central da FilixPay é a integração profunda e pronta para produção com provedores líderes de proteção contra chargeback—não um score genérico de fraude, mas fluxos reais de cobertura respaldados por seguradora.",
+        "items": {
+          "signifyd": {
+            "name": "Signifyd",
+            "tagline": "Proteção de comércio com garantia de chargeback",
+            "desc": "A Signifyd combina decisão de fraude em tempo real com cobertura garantida de chargeback para pedidos de e-commerce aprovados. A FilixPay encaminha o contexto da transação, recebe decisões de cobertura e automatiza fluxos de sinistro via webhooks."
+          },
+          "riskified": {
+            "name": "Riskified",
+            "tagline": "Inteligência antifraude empresarial e garantia de chargeback",
+            "desc": "A Riskified oferece prevenção de fraude baseada em IA, confiada por varejistas globais. Merchants na FilixPay podem rotear pedidos para decisões de política e aproveitar programas de garantia de chargeback quando elegíveis."
+          },
+          "forter": {
+            "name": "Forter",
+            "tagline": "Prevenção de fraude em tempo real para comércio digital",
+            "desc": "A Forter oferece decisão de fraude centrada em identidade e proteção contra abuso de chargeback em escala. A FilixPay integra avaliação, atualizações por webhook e envio de sinistros para merchants respaldados pela Forter."
+          }
+        },
+        "footnote": "A disponibilidade do provedor e o escopo de recursos dependem do tipo de merchant, do modo de configuração e dos termos do contrato com o parceiro."
+      },
+      "audience": {
+        "title": "Feito para comércio de alto risco",
+        "desc": "O controle de risco da FilixPay atende merchants cross-border, operadores de marketplace e negócios que precisam de fluxos antifraude prontos para auditoria.",
+        "items": {
+          "cross_border": {
+            "title": "E-commerce cross-border",
+            "desc": "Proteja a receita internacional de cartão não presente."
+          },
+          "marketplace": {
+            "title": "Plataforma e marketplace",
+            "desc": "Ecossistemas de merchants third-party com supervisão de risco compartilhada."
+          },
+          "high_risk": {
+            "title": "Exposição elevada a disputas",
+            "desc": "Verticais em que a ansiedade com chargebacks freia o crescimento."
+          }
+        }
+      },
+      "workflow": {
+        "title": "Fluxo de ponta a ponta",
+        "desc": "Um caminho linear único do checkout à proteção elegível.",
+        "steps": {
+          "checkout": {
+            "title": "Checkout do cliente",
+            "desc": "O merchant inicia o pagamento e a FilixPay captura o contexto da transação, como metadados e sinais do dispositivo."
+          },
+          "rules": {
+            "title": "Avaliação de regras",
+            "desc": "O motor de risco compara regras do merchant e políticas globais em milissegundos para aprovar, bloquear ou encaminhar para revisão."
+          },
+          "review": {
+            "title": "Monitoramento de fraude e revisão",
+            "desc": "Eventos de alto risco disparam acompanhamento automatizado. A Dual-Layer Verification encaminha casos à revisão manual especializada para recuperar vendas legítimas."
+          },
+          "coverage": {
+            "title": "Proteção contra chargeback respaldada pelo provedor",
+            "desc": "A FilixPay envia chargebacks elegíveis relacionados a fraude ao parceiro Signifyd, Riskified ou Forter configurado—ou à cobertura hospedada pela plataforma para merchants assinantes."
+          }
+        }
+      },
+      "faq": {
+        "title": "Perguntas frequentes",
+        "items": {
+          "what_is": {
+            "q": "O que é controle de risco de pagamento?",
+            "a": "O controle de risco de pagamento é um framework de segurança em várias camadas projetado para detectar, avaliar e mitigar atividades fraudulentas ao longo do ciclo de vida da transação—protegendo sua receita legítima sem degradar a experiência do usuário."
+          },
+          "vs_chargeback": {
+            "q": "Como o controle de risco difere da proteção contra chargeback?",
+            "a": "O controle de risco atua como mecanismo de defesa proativo (regras pré-autorização e pós-autorização para impedir a fraude), enquanto a proteção contra chargeback oferece segurança reativa (cobertura financeira para transações qualificadas se ocorrer uma disputa imprevista)."
+          },
+          "rule_engine": {
+            "q": "Como funciona o motor de regras?",
+            "a": "Nosso motor executa checagens concorrentes de compliance e fraude em milissegundos durante a autorização. Merchants podem configurar limites granulares com base em localização geográfica, heurísticas comportamentais e limites de velocity pelo painel do merchant."
+          },
+          "flagged_review": {
+            "q": "O que acontece quando uma transação é sinalizada para revisão?",
+            "a": "Quando uma transação apresenta padrões anômalos, ela dispara um evento interno de fraude. Para evitar recusas indevidas, nossa plataforma emprega o modelo Dual-Layer Verification, encaminha o caso a uma fila de revisão manual especializada e alerta os operadores imediatamente."
+          },
+          "coverage_eligibility": {
+            "q": "Quem é elegível à cobertura de chargeback?",
+            "a": "Merchants independentes podem ativar a cobertura configurando Signifyd, Riskified ou Forter no centro do merchant. Merchants de plataforma third-party podem assinar planos de cobertura hospedados pela plataforma. A elegibilidade de cada transação depende das regras do provedor e da conformidade com requisitos localizados de segurança pré-autorização."
+          },
+          "coverage_providers": {
+            "q": "Quais provedores de seguro de chargeback a FilixPay oferece suporte?",
+            "a": "A FilixPay integra Signifyd, Riskified e Forter com avaliação unificada, tratamento de webhook e envio de sinistros. Merchants conectam suas próprias credenciais de provedor (BYOK) ou assinam a cobertura hospedada pela plataforma alimentada pela configuração do merchant da plataforma."
+          },
+          "crypto_relation": {
+            "q": "Como isso se relaciona a pagamentos cripto (zero chargebacks)?",
+            "a": "Embora ativos digitais tenham nativamente finalidade transacional (o que significa que chargebacks não podem ser iniciados tecnicamente), nosso motor de risco ainda aplica regras pré-autorização a pagamentos cripto para detectar padrões anômalos de carteira e conformidade com listas de bloqueio de endereços."
+          }
+        }
+      },
+      "cta": {
+        "title": "Pronto para conectar seu parceiro de seguro de chargeback?",
+        "desc": "Configure Signifyd, Riskified ou Forter—ou assine a cobertura hospedada pela plataforma no centro do merchant."
+      }
+    },
+    "cross_border": {
+      "title": "E-commerce cross-border",
+      "subtitle": "Soluções de pagamento de ponta a ponta para vendedores online globais",
+      "hero_title": "Venda globalmente, cobre localmente",
+      "hero_desc": "Integre com Shopify, WooCommerce e lojas personalizadas. Aceite métodos de pagamento locais em mais de 50 países com conversão automática de moeda."
+    },
+    "web3_ecommerce": {
+      "title": "E-commerce Web3",
+      "subtitle": "Infraestrutura de pagamento para a economia descentralizada",
+      "hero_title": "A camada de pagamento para o comércio Web3",
+      "hero_desc": "De marketplaces de NFT a ecossistemas GameFi, impulsione seu comércio Web3 com trilhos de pagamento cripto fluidos."
+    },
+    "saas_provider": {
+      "title": "Soluções para provedores SaaS",
+      "subtitle": "Infraestrutura de pagamento multi-tenant para negócios de plataforma",
+      "hero_title": "Construa sua plataforma de pagamento",
+      "hero_desc": "Capacidades de pagamento white-label com pagamentos divididos, gestão de sub-merchants e settlement automatizado para sua plataforma SaaS."
+    }
+  }
+}

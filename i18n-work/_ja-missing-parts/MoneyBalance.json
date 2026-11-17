@@ -1,0 +1,67 @@
+{
+  "MoneyBalance": {
+    "title": "Balance",
+    "subtitle": "Unified multi-asset balances; deposit, transfer, or withdraw when capability allows.",
+    "available": "Available",
+    "balance_type": "Balance type",
+    "amount": "Amount",
+    "actions": "Actions",
+    "view_details": "View details",
+    "money_in_status": "Money-In",
+    "payout_status": "Payout",
+    "deposit_cta": "Deposit",
+    "withdraw_cta": "Withdraw",
+    "transfer_cta": "Transfer",
+    "status_healthy": "Active",
+    "status_restricted": "Limited",
+    "restriction_item": "{operation} is not enabled",
+    "restriction_ops": {
+      "moneyIn": "Deposit",
+      "payout": "Withdraw",
+      "transfer": "Transfer"
+    },
+    "asset_account": "{asset} account",
+    "updated_at": "Updated {time}",
+    "as_of": "As of {time}",
+    "empty": "No asset balances yet.",
+    "empty_title": "No asset balances yet",
+    "empty_desc": "No funds have flowed into this account yet. After your first deposit, balances will appear here by currency.",
+    "empty_deposit_cta": "Make first deposit",
+    "refresh": "Refresh",
+    "assets_section_title": "Balances by currency",
+    "retry": "Retry",
+    "movements": {
+      "title": "Balance movements",
+      "empty": "No ledger movements for this balance yet.",
+      "headers": {
+        "time": "Time",
+        "type": "Type",
+        "journal": "Journal",
+        "reference": "Reference",
+        "amount": "Amount",
+        "asset": "Asset",
+        "balanceAfter": "Balance after"
+      },
+      "related_reference": "Related: {id}",
+      "total_count": "{count} movements",
+      "buckets": {
+        "AVAILABLE": "Available",
+        "PENDING": "Pending"
+      },
+      "businessTypes": {
+        "PAYMENT": "Payment",
+        "PAYMENT_REVERSAL": "Payment reversal",
+        "REFUND": "Refund",
+        "REFUND_REVERSAL": "Refund reversal",
+        "SETTLEMENT": "Settlement",
+        "SETTLEMENT_REVERSAL": "Settlement reversal",
+        "FEE": "Fee",
+        "PAYOUT": "Payout",
+        "TRANSFER": "Transfer",
+        "MONEY_IN": "Money-In",
+        "ADJUSTMENT": "Adjustment",
+        "OTHER": "Other"
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "MoneyIn": {
+    "title": "Money-In",
+    "subtitle": "Add funds via the Money product API.",
+    "methods_title": "Funding Methods",
+    "methods_subtitle": "Configure deposit addresses used to receive funds.",
+    "tabs": {
+      "records": "Deposits",
+      "methods": "Funding Methods"
+    },
+    "empty": "No Money-In records yet.",
+    "retry": "Retry",
+    "create_cta": "Create Money-In",
+    "unavailable_title": "Money-In create unavailable",
+    "asset_filter_label": "Asset",
+    "asset_filter_all": "All",
+    "asset_filter_placeholder": "Select asset",
+    "no_assets": "No present balances yet — Money-In filter needs an asset.",
+    "columns": {
+      "time": "Time",
+      "amount": "Amount",
+      "asset": "Asset",
+      "status": "Status",
+      "id": "Money-In ID"
+    },
+    "create": {
+      "title": "Add funds",
+      "subtitle": "Deposit into your multi-asset wallet",
+      "asset": "Target asset",
+      "asset_account": "{asset} account",
+      "asset_required": "Asset is required",
+      "amount": "Deposit amount",
+      "amount_required": "Amount is required",
+      "amount_invalid": "Enter a valid decimal amount",
+      "settlement_hint": "Funds typically arrive within 1–3 business days, depending on the payment channel.",
+      "quick_amounts_label": "Quick amounts",
+      "submit": "Confirm deposit",
+      "cancel": "Cancel",
+      "checkout_unavailable": "Money-In created, but Checkout could not open. Check the detail and retry. Detail: {detail}"
+    },
+    "detail": {
+      "title": "Money-In detail",
+      "subtitle": "Review the amount, status, and timing for this deposit.",
+      "back": "Back to Money-In list",
+      "empty": "Money-In not found.",
+      "failure_reason": "Failure reason",
+      "pay_cta": "Pay now",
+      "pay_unavailable": "Payment",
+      "pay_unavailable_hint": "No Checkout token is available (Intent may not be PROCESSING, or FundingSession was lost). Recreate Money-In or contact support.",
+      "hero_amount_label": "Deposit amount",
+      "hero_time": "Posted at: {time}",
+      "status_badge_success": "Deposit successful · {status}",
+      "status_badge_processing": "Deposit in progress · {status}",
+      "status_badge_failed": "Deposit unsuccessful · {status}",
+      "section_basic": "Transaction details",
+      "copy_id": "Copy Money-In ID",
+      "copy_funding_session": "Copy funding session ID",
+      "copied": "Copied",
+      "copy_failed": "Copy failed",
+      "funding_session": "Funding session ID",
+      "updated_at": "Updated at",
+      "footer_hint": "Amount and status reflect the live Money product result. Copy the Money-In ID for reconciliation."
+    }
+  }
+}

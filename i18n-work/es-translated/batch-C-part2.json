@@ -1,0 +1,503 @@
+{
+  "Pages": {
+    "payment_splitting": {
+      "title": "Reparto de pagos",
+      "subtitle": "Capacidades automatizadas de pago fraccionado y liquidación para negocios de plataforma",
+      "hero_title": "Reparto de pagos para plataformas y liquidación multi-comerciante",
+      "hero_desc": "Automatice cómo se asigna un pago entre plataformas, comerciantes, subcomerciantes, comisiones de servicio, comisiones y destinatarios de liquidación.",
+      "what": {
+        "title": "¿Qué es el reparto de pagos?",
+        "desc": "El reparto de pagos conecta el cobro, la asignación a receptores, las facturas de liquidación y los registros de conciliación para que los negocios de plataforma reduzcan las operaciones financieras manuales."
+      },
+      "features": {
+        "multi_receiver": {
+          "icon": "M",
+          "title": "Múltiples receptores",
+          "desc": "Fraccione un pago de cliente entre comerciantes, subcomerciantes, cuentas de plataforma y socios."
+        },
+        "commission": {
+          "icon": "%",
+          "title": "Comisión de plataforma",
+          "desc": "Separe las comisiones y tarifas de servicio de la plataforma antes de la liquidación del comerciante."
+        },
+        "settlement": {
+          "icon": "S",
+          "title": "Listo para liquidación",
+          "desc": "Conecte los registros de reparto con facturas de liquidación y flujos de conciliación financiera."
+        },
+        "webhook": {
+          "icon": "API",
+          "title": "API y webhooks",
+          "desc": "Use API y callbacks de webhook para seguir el estado de pago, reparto y liquidación."
+        }
+      },
+      "scenarios": {
+        "marketplace": {
+          "icon": "O",
+          "title": "Pedidos de marketplace",
+          "desc": "Asigne pagos de clientes a comerciantes de la plataforma y receptores de liquidación."
+        },
+        "commission": {
+          "icon": "F",
+          "title": "Comisión de servicio",
+          "desc": "Conserve las tarifas de plataforma mientras envía el restante cobrable a los comerciantes."
+        },
+        "saas": {
+          "icon": "S",
+          "title": "Plataformas SaaS",
+          "desc": "Admite comerciantes multi-tenant que cobran a través de una plataforma de pagos compartida."
+        },
+        "chain": {
+          "icon": "G",
+          "title": "Cadenas y grupos",
+          "desc": "Liquide fondos entre tiendas, filiales o unidades de negocio."
+        },
+        "cross_border": {
+          "icon": "X",
+          "title": "Liquidación transfronteriza",
+          "desc": "Admite escenarios de liquidación multiparte para el comercio de plataformas globales."
+        },
+        "partner": {
+          "icon": "R",
+          "title": "Reparto de ingresos con socios",
+          "desc": "Distribuya ingresos a socios, canales o proveedores de servicios."
+        }
+      },
+      "workflow": {
+        "title": "Cómo funciona el flujo de pago fraccionado",
+        "desc": "Desde el pago del cliente hasta la liquidación del receptor, cada paso se conecta a registros que los equipos financieros pueden rastrear.",
+        "steps": {
+          "pay": {
+            "title": "El cliente paga",
+            "desc": "Un cliente completa el pago a través del flujo de checkout de la plataforma."
+          },
+          "receive": {
+            "title": "La plataforma recibe",
+            "desc": "La plataforma registra el pago y prepara el cálculo del reparto."
+          },
+          "calculate": {
+            "title": "Las reglas calculan el reparto",
+            "desc": "Las reglas de negocio determinan importes, receptores, comisiones y tarifas."
+          },
+          "credit": {
+            "title": "Se abona a los receptores",
+            "desc": "Los receptores reciben sus importes asignados según el resultado del reparto."
+          },
+          "settle": {
+            "title": "Se genera la factura de liquidación",
+            "desc": "Los registros de liquidación resumen los resultados del reparto para las operaciones financieras."
+          },
+          "reconcile": {
+            "title": "Finanzas concilia",
+            "desc": "Los equipos financieros comparan pedidos, registros de reparto y facturas de liquidación."
+          }
+        }
+      },
+      "rules": {
+        "title": "Reglas y modelo de receptores",
+        "desc": "Defina cómo se distribuyen los ingresos entre comerciantes, cuentas de plataforma, comisiones de servicio y receptores de liquidación.",
+        "items": {
+          "fixed_amount": {
+            "icon": "#",
+            "title": "Importe fijo",
+            "desc": "Asigne un valor fijo a un receptor o a una tarifa de plataforma."
+          },
+          "percentage": {
+            "icon": "%",
+            "title": "Porcentaje",
+            "desc": "Fraccione por porcentaje para ingresos del comerciante o reparto con socios."
+          },
+          "commission": {
+            "icon": "C",
+            "title": "Comisión",
+            "desc": "Conserve la comisión de plataforma antes de la liquidación."
+          },
+          "receiver": {
+            "icon": "R",
+            "title": "Receptor",
+            "desc": "Enrute importes a comerciantes, subcomerciantes, tiendas o socios."
+          },
+          "currency": {
+            "icon": "$",
+            "title": "Moneda",
+            "desc": "Admite lógica de liquidación por moneda de transacción y de liquidación."
+          },
+          "cycle": {
+            "icon": "D",
+            "title": "Ciclo de liquidación",
+            "desc": "Conecte los resultados del reparto con ciclos de liquidación diarios, semanales o personalizados."
+          }
+        }
+      },
+      "settlement": {
+        "title": "Liquidación y conciliación",
+        "desc": "El reparto de pagos no debe detenerse en la asignación. Los equipos financieros necesitan facturas de liquidación y registros de conciliación que expliquen cada importe.",
+        "records": {
+          "title": "Registros de reparto",
+          "desc": "Siga el importe del pedido, el importe repartido, el número de receptores, éxitos, fallos y el estado del reparto."
+        },
+        "bills": {
+          "title": "Facturas de liquidación",
+          "desc": "Conecte los resultados del reparto a partidas de facturas de liquidación para exportaciones financieras y conciliación de cierre de periodo."
+        }
+      },
+      "exceptions": {
+        "title": "Gestión de excepciones",
+        "desc": "El reparto de pagos necesita estados claros cuando las reglas de negocio, las cuentas de receptores, los reembolsos o los plazos de liquidación generan excepciones.",
+        "items": {
+          "receiver_unavailable": {
+            "title": "Receptor no disponible",
+            "desc": "Identifique problemas de cuenta del receptor antes de completar la liquidación."
+          },
+          "rule_mismatch": {
+            "title": "Desajuste de reglas",
+            "desc": "Muestre conflictos de reglas o información de receptor faltante para revisión de operaciones."
+          },
+          "refund_after_split": {
+            "title": "Reembolso tras el reparto",
+            "desc": "Rastree cómo los reembolsos afectan a los registros de reparto y a los resultados de liquidación."
+          },
+          "partial_failure": {
+            "title": "Fallo parcial del reparto",
+            "desc": "Separe las asignaciones de receptores exitosas y fallidas para el seguimiento."
+          },
+          "settlement_pending": {
+            "title": "Liquidación pendiente",
+            "desc": "Haga visibles los estados de liquidación pendiente a los equipos financieros."
+          },
+          "reconciliation_difference": {
+            "title": "Diferencia de conciliación",
+            "desc": "Ayude a los equipos financieros a investigar diferencias entre pedidos, reparto y liquidación."
+          }
+        }
+      },
+      "developer": {
+        "title": "Integración API y webhook",
+        "desc": "Los desarrolladores pueden integrar registros de pago fraccionado, consultas de liquidación y callbacks de webhook en sus operaciones de plataforma.",
+        "cta": "Explorar el Centro de desarrolladores"
+      },
+      "faq": {
+        "title": "FAQ de reparto de pagos",
+        "items": {
+          "what_is": {
+            "q": "¿Qué es el reparto de pagos?",
+            "a": "El reparto de pagos asigna un pago entre múltiples receptores como comerciantes, subcomerciantes, cuentas de plataforma y socios."
+          },
+          "difference_from_payout": {
+            "q": "¿En qué se diferencia el reparto de pagos del payout?",
+            "a": "El reparto de pagos define cómo se asignan los ingresos del pago, mientras que el payout es el movimiento posterior de fondos liquidados a un banco o cuenta."
+          },
+          "multiple_receivers": {
+            "q": "¿Se puede fraccionar un pedido entre múltiples receptores?",
+            "a": "Sí. Una plataforma puede asignar un pedido a múltiples receptores según las reglas de negocio."
+          },
+          "platform_commission": {
+            "q": "¿Puede la plataforma conservar una comisión?",
+            "a": "Sí. Las tarifas o comisiones de plataforma pueden separarse antes de la liquidación del comerciante."
+          },
+          "refunds": {
+            "q": "¿Cómo se gestionan los reembolsos tras el reparto?",
+            "a": "Los reembolsos deben ser trazables respecto al pedido original, los registros de reparto y el resultado de liquidación."
+          },
+          "reconciliation": {
+            "q": "¿Puede finanzas conciliar registros de reparto con facturas de liquidación?",
+            "a": "Sí. Los registros de reparto y las partidas de facturas de liquidación deben proporcionar un flujo financiero trazable."
+          },
+          "api_webhook": {
+            "q": "¿FilixPay admite integración API y webhook?",
+            "a": "FilixPay ofrece capacidades para desarrolladores para estado de pago, registros de liquidación y flujos de integración impulsados por webhooks."
+          }
+        }
+      },
+      "channel_rules": {
+        "title": "Reglas de canal para el reparto de pagos",
+        "items": [
+          {
+            "id": "wechat",
+            "title": "1. WeChat Pay: modelo de congelación y descongelación de fondos",
+            "desc": "El mecanismo de reparto de WeChat se centra en «Congelar primero, repartir después», ideal para escenarios que requieren reparto diferido o con riesgos de reembolso.",
+            "flow": {
+              "title": "Flujo principal:",
+              "steps": [
+                "Transacción y congelación: Tras un pago exitoso, los fondos se congelan en la cuenta del comerciante (estado Pending Split) en lugar de entrar en el saldo disponible.",
+                "Iniciar reparto: Cuando se cumplen las condiciones de reparto (p. ej., entrega confirmada), se llama a la API de reparto. WeChat descongela y asigna fondos a los receptores especificados.",
+                "Completar reparto: Si no se necesita más reparto, la API de finalización descongela los fondos restantes al saldo disponible del comerciante."
+              ]
+            },
+            "compliance": {
+              "title": "Puntos clave de cumplimiento:",
+              "items": [
+                "Límite de ratio de reparto: El máximo por defecto suele ser el 30 % del importe del pedido (ajustable con autorización).",
+                "Duración del reparto: Los fondos pueden permanecer congelados hasta 180 días (algunos documentos mencionan 30 días; se produce descongelación automática si no se inicia el reparto).",
+                "Frecuencia de reparto: Admite múltiples repartos (hasta 50 veces) a múltiples partes (hasta 50 receptores por reparto)."
+              ]
+            }
+          },
+          {
+            "id": "alipay",
+            "title": "2. Alipay: confirmación de liquidación y reparto asíncrono",
+            "desc": "Alipay enfatiza la «Confirmación de liquidación» y ofrece sólidas capacidades síncronas/asíncronas para escenarios de alta concurrencia.",
+            "flow": {
+              "title": "Flujo principal:",
+              "steps": [
+                "Transacción y congelación: Los fondos entran en un estado de liquidación pendiente. La plataforma inicia «Confirm Settlement» para congelar fondos para el reparto.",
+                "Iniciar reparto: Llamar a la API de liquidación (alipay.trade.order.settle) admite modos síncrono (tiempo real) y asíncrono (alta frecuencia).",
+                "Reparto inverso: Admite la reversión por la vía original de fondos repartidos en caso de reembolsos."
+              ]
+            },
+            "compliance": {
+              "title": "Puntos clave de cumplimiento:",
+              "items": [
+                "Límite de ratio de reparto: El importe máximo no puede superar el 100 % del total del pedido más suplementos (según política).",
+                "Validez del reparto: El reparto suele ser válido hasta 365 días después de la transacción.",
+                "Vinculación de receptores: Los receptores deben estar verificados con nombre real y añadidos al «Split Relation Set» de la plataforma mediante API.",
+                "Rendimiento: El modo síncrono está limitado (30 QPS), mientras que el asíncrono admite hasta 500 QPS para plataformas de alto tráfico."
+              ]
+            }
+          },
+          {
+            "id": "stripe",
+            "title": "3. Stripe: Separate Charges and Transfers (Connect)",
+            "desc": "Stripe Connect es muy flexible y usa el modelo «Separate Charges and Transfers» para marketplaces globales o multiparte complejos.",
+            "flow": {
+              "title": "Flujo principal:",
+              "steps": [
+                "Cobro de la plataforma: Se crea un PaymentIntent en la cuenta Stripe de la plataforma; los fondos pertenecen inicialmente a la plataforma.",
+                "Disparar Transfer: Tras el éxito, la plataforma llama a la API Transfers (a menudo disparada por webhooks payment_intent.succeeded).",
+                "Asignación de fondos: Las transfers se vinculan a los cargos de origen mediante source_transaction, permitiendo que los fondos fluyan automáticamente a Connected Accounts durante la liquidación."
+              ]
+            },
+            "compliance": {
+              "title": "Puntos clave de cumplimiento:",
+              "items": [
+                "Saldo insuficiente: La vinculación source_transaction evita fallos de transfer por falta de saldo de plataforma procesando mediante flujos internos de fondos.",
+                "Application Fees: Las plataformas pueden deducir comisiones de servicio (application_fee_amount) en el cobro antes de distribuir el resto.",
+                "Flexibilidad: Admite reparto a múltiples receptores (vendedores, afiliados, logística) sin restricciones fijas de ratio (sujeto al acuerdo de plataforma)."
+              ]
+            }
+          }
+        ],
+        "comparison": {
+          "title": "📊 Resumen comparativo multiplataforma",
+          "headers": [
+            "Dimensión",
+            "WeChat Pay",
+            "Alipay",
+            "Stripe (Connect)"
+          ],
+          "rows": [
+            [
+              "Mecanismo principal",
+              "Congelar → Descongelar y repartir",
+              "Confirmar → Congelar y repartir",
+              "Cobro de plataforma → Transfer"
+            ],
+            [
+              "Ratio de reparto",
+              "Máx. por defecto 30 %",
+              "Hasta 100 % (según política)",
+              "Flexible (configuración de plataforma)"
+            ],
+            [
+              "Duración",
+              "Máx. 180 días congelado",
+              "Máx. 365 días de validez",
+              "Ciclo de payout estándar"
+            ],
+            [
+              "Req. del receptor",
+              "Merchant ID o WalletID",
+              "Verificado con nombre real y vinculado",
+              "Connected Account obligatorio"
+            ],
+            [
+              "Mejores escenarios",
+              "Retail, restauración, liquidación diferida",
+              "Comisiones, plataformas de alto volumen",
+              "Marketplace global, payouts complejos"
+            ]
+          ]
+        }
+      },
+      "cta": {
+        "title": "Construya flujos de pago fraccionado con FilixPay",
+        "desc": "Admite reparto de ingresos de plataforma, liquidación de comerciantes y conciliación financiera desde una sola infraestructura de pagos."
+      }
+    },
+    "risk_control": {
+      "title": "Control de riesgo de pagos",
+      "subtitle": "Proteja cada transacción desde la autorización hasta la liquidación",
+      "hero_title": "Control de riesgo de pagos",
+      "hero_desc": "Proteja cada transacción con reglas en tiempo real, revisión experta y seguro de chargeback integrado: conecte Signifyd, Riskified o Forter con sus propias credenciales, o suscríbase a la cobertura alojada en la plataforma FilixPay.",
+      "pipeline": {
+        "rules": {
+          "title": "Motor de reglas",
+          "desc": "Prevención de fraude en tiempo real"
+        },
+        "monitor": {
+          "title": "Monitor de eventos",
+          "desc": "Eventos de fraude y revisión experta"
+        },
+        "coverage": {
+          "title": "Socios de seguro",
+          "desc": "Signifyd · Riskified · Forter"
+        }
+      },
+      "modules": {
+        "rules": {
+          "title": "Motor de reglas en tiempo real y prevención de fraude",
+          "desc": "Decisiones de riesgo en milisegundos durante la autorización con reglas de comerciante configurables y comprobaciones pre/post-autorización.",
+          "points": {
+            "0": "Comprobaciones concurrentes de cumplimiento y fraude en la autorización",
+            "1": "Umbrales configurables por geografía, comportamiento y velocidad",
+            "2": "Protección a nivel de transacción distinta del riesgo de línea de crédito"
+          }
+        },
+        "monitor": {
+          "title": "Monitorización de eventos de fraude y revisión manual experta",
+          "desc": "La verificación Dual-Layer combina cribado inteligente con revisión manual experta para minimizar rechazos falsos.",
+          "points": {
+            "0": "Detección y seguimiento automatizados de eventos de fraude",
+            "1": "Cola de revisión manual experta para transacciones anómalas",
+            "2": "Alertas a operadores para decisiones urgentes"
+          }
+        },
+        "coverage": {
+          "title": "Socios integrados de seguro de chargeback",
+          "desc": "FilixPay integra de forma nativa a proveedores líderes de seguro de chargeback y garantía antifraude. Los comerciantes eligen cómo consumir la cobertura: aportan su propio contrato con el proveedor o se suscriben al servicio alojado en la plataforma.",
+          "disclaimer": "* Sujeto a términos del servicio, elegibilidad y límites de cobertura.",
+          "points": {
+            "0": "Una sola capa de integración para Signifyd, Riskified y Forter",
+            "1": "Configure usted mismo las credenciales del proveedor en el centro de comerciantes",
+            "2": "O suscríbase a la cobertura alojada en la plataforma sin gestionar claves API"
+          }
+        }
+      },
+      "delivery_modes": {
+        "title": "Dos formas de activar la cobertura",
+        "desc": "FilixPay admite tanto la configuración de proveedor gestionada por el comerciante como la suscripción alojada en la plataforma, adaptándose a comerciantes independientes y subcomerciantes de marketplace.",
+        "items": {
+          "self_config": {
+            "icon": "🔑",
+            "title": "Aporte su propio proveedor (BYOK)",
+            "desc": "Conecte su cuenta existente de Signifyd, Riskified o Forter. Configure claves API, secretos de webhook y entorno en el centro de comerciantes; FilixPay enruta evaluaciones y reclamaciones a su socio elegido.",
+            "points": {
+              "0": "Control total del contrato y las credenciales del proveedor",
+              "1": "Ideal para comerciantes independientes con relaciones directas con el asegurador",
+              "2": "Cambie de proveedor con un flujo de configuración guiado"
+            }
+          },
+          "platform_subscription": {
+            "icon": "🛡️",
+            "title": "Suscripción a cobertura alojada en la plataforma",
+            "desc": "Los comerciantes de tercera parte en la plataforma Filix pueden suscribirse a seguro de cobertura impulsado por la configuración de proveedor del comerciante de plataforma, sin registro aparte ante el asegurador.",
+            "points": {
+              "0": "Suscripción con un clic en el centro de comerciantes",
+              "1": "Elegibilidad vinculada al cumplimiento de reglas de seguridad pre-autorización",
+              "2": "La plataforma opera la relación con el proveedor en su nombre"
+            }
+          }
+        }
+      },
+      "providers": {
+        "title": "Socios admitidos de seguro y garantía antifraude",
+        "desc": "El diferenciador principal de FilixPay es la integración profunda y lista para producción con proveedores líderes de protección contra chargebacks: no una puntuación de fraude genérica, sino flujos reales de cobertura respaldados por aseguradores.",
+        "items": {
+          "signifyd": {
+            "name": "Signifyd",
+            "tagline": "Protección del comercio con garantía de chargeback",
+            "desc": "Signifyd combina decisión de fraude en tiempo real con cobertura garantizada de chargeback para pedidos de e-commerce aprobados. FilixPay reenvía el contexto de la transacción, recibe decisiones de cobertura y automatiza flujos de reclamación mediante webhooks."
+          },
+          "riskified": {
+            "name": "Riskified",
+            "tagline": "Inteligencia antifraude empresarial y garantía de chargeback",
+            "desc": "Riskified ofrece prevención de fraude impulsada por IA, de confianza para retailers globales. Los comerciantes en FilixPay pueden enrutar pedidos para decisiones de política y aprovechar programas de garantía de chargeback cuando sean elegibles."
+          },
+          "forter": {
+            "name": "Forter",
+            "tagline": "Prevención de fraude en tiempo real para el comercio digital",
+            "desc": "Forter ofrece decisión de fraude centrada en la identidad y protección contra abuso de chargebacks a escala. FilixPay integra evaluación, actualizaciones por webhook y envío de reclamaciones para comerciantes respaldados por Forter."
+          }
+        },
+        "footnote": "La disponibilidad del proveedor y el alcance de funciones dependen de su tipo de comerciante, modo de configuración y términos del contrato con el socio."
+      },
+      "audience": {
+        "title": "Diseñado para el comercio de alto riesgo",
+        "desc": "El control de riesgo de FilixPay admite comerciantes transfronterizos, operadores de marketplace y negocios que necesitan flujos antifraude listos para auditoría.",
+        "items": {
+          "cross_border": {
+            "title": "E-commerce transfronterizo",
+            "desc": "Proteja los ingresos internacionales card-not-present."
+          },
+          "marketplace": {
+            "title": "Plataforma y marketplace",
+            "desc": "Ecosistemas de comerciantes de tercera parte con supervisión de riesgo compartida."
+          },
+          "high_risk": {
+            "title": "Exposición elevada a disputas",
+            "desc": "Verticales donde la ansiedad por chargebacks frena el crecimiento."
+          }
+        }
+      },
+      "workflow": {
+        "title": "Flujo de cadena completa",
+        "desc": "Una sola ruta lineal desde el checkout hasta la protección elegible.",
+        "steps": {
+          "checkout": {
+            "title": "Checkout del cliente",
+            "desc": "El comerciante inicia el pago y FilixPay captura el contexto de la transacción, como metadatos y señales del dispositivo."
+          },
+          "rules": {
+            "title": "Evaluación de reglas",
+            "desc": "El motor de riesgo compara reglas del comerciante y políticas globales en milisegundos para aprobar, bloquear o enviar a revisión."
+          },
+          "review": {
+            "title": "Monitorización y revisión de fraude",
+            "desc": "Los eventos de alto riesgo activan el seguimiento automatizado. La verificación Dual-Layer envía los casos a revisión manual experta para recuperar ventas legítimas."
+          },
+          "coverage": {
+            "title": "Protección de chargeback respaldada por el proveedor",
+            "desc": "FilixPay envía chargebacks relacionados con fraude elegibles a su socio configurado Signifyd, Riskified o Forter, o a la cobertura alojada en la plataforma para comerciantes suscritos."
+          }
+        }
+      },
+      "faq": {
+        "title": "Preguntas frecuentes",
+        "items": {
+          "what_is": {
+            "q": "¿Qué es el control de riesgo de pagos?",
+            "a": "El control de riesgo de pagos es un marco de seguridad multicapa diseñado para detectar, evaluar y mitigar actividades fraudulentas a lo largo del ciclo de vida de la transacción, protegiendo sus ingresos legítimos sin degradar la experiencia del usuario."
+          },
+          "vs_chargeback": {
+            "q": "¿En qué se diferencia el control de riesgo de la protección contra chargebacks?",
+            "a": "El control de riesgo actúa como mecanismo de defensa proactivo (reglas pre-autorización y post-autorización para impedir el fraude), mientras que la protección contra chargebacks ofrece seguridad reactiva (cobertura financiera para transacciones cualificadas si surge una disputa imprevista)."
+          },
+          "rule_engine": {
+            "q": "¿Cómo funciona el motor de reglas?",
+            "a": "Nuestro motor ejecuta comprobaciones concurrentes de cumplimiento y fraude en milisegundos durante la autorización. Los comerciantes pueden configurar umbrales granulares según ubicación geográfica, heurísticas de comportamiento y límites de velocidad desde el panel de comerciantes."
+          },
+          "flagged_review": {
+            "q": "¿Qué ocurre cuando una transacción se marca para revisión?",
+            "a": "Cuando una transacción muestra patrones anómalos, se dispara un evento interno de fraude. Para evitar rechazos falsos, nuestra plataforma emplea un modelo de verificación Dual-Layer, la envía a una cola de revisión manual experta y alerta a los operadores de inmediato."
+          },
+          "coverage_eligibility": {
+            "q": "¿Quién es elegible para la cobertura de chargeback?",
+            "a": "Los comerciantes independientes pueden activar la cobertura configurando Signifyd, Riskified o Forter en el centro de comerciantes. Los comerciantes de plataforma de tercera parte pueden suscribirse a planes de cobertura alojados en la plataforma. La elegibilidad de cada transacción depende de las reglas del proveedor y del cumplimiento de los requisitos de seguridad pre-autorización localizados."
+          },
+          "coverage_providers": {
+            "q": "¿Qué proveedores de seguro de chargeback admite FilixPay?",
+            "a": "FilixPay integra Signifyd, Riskified y Forter con evaluación unificada, manejo de webhooks y envío de reclamaciones. Los comerciantes conectan sus propias credenciales de proveedor (BYOK) o se suscriben a la cobertura alojada en la plataforma impulsada por la configuración del comerciante de plataforma."
+          },
+          "crypto_relation": {
+            "q": "¿Cómo se relaciona esto con los pagos cripto (cero chargebacks)?",
+            "a": "Aunque los activos digitales presentan de forma nativa finalidad transaccional (es decir, técnicamente no se pueden iniciar chargebacks), nuestro motor de riesgo sigue aplicando reglas pre-autorización a los pagos cripto para detectar patrones anómalos de billetera y cumplimiento de listas de bloqueo de direcciones."
+          }
+        }
+      },
+      "cta": {
+        "title": "¿Listo para conectar su socio de seguro de chargeback?",
+        "desc": "Configure Signifyd, Riskified o Forter, o suscríbase a la cobertura alojada en la plataforma desde el centro de comerciantes."
+      }
+    }
+  }
+}

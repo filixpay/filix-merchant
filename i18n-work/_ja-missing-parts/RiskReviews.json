@@ -1,0 +1,43 @@
+{
+  "RiskReviews": {
+    "title": "Risk Review Queue",
+    "subtitle": "Read-only queue of suspicious orders and payouts flagged for manual review.",
+    "empty": "No risk review items found.",
+    "table_total": "Total {count} reviews",
+    "filters": {
+      "keyword": "Search reviews",
+      "status": "Status",
+      "priority": "Priority",
+      "review_type": "Review type"
+    },
+    "detail": {
+      "title": "Review Detail",
+      "back_to_list": "Back to reviews",
+      "not_found": "Review not found.",
+      "review_type": "Review Type",
+      "reason_code": "Reason Code",
+      "queued_at": "Queued At",
+      "decided_at": "Decided At",
+      "decision_note": "Decision Note",
+      "linked_fraud": "Linked Fraud Event",
+      "resume_link": "Resume Link"
+    },
+    "resume_link": "Resume payment",
+    "headers": {
+      "resource": "Resource",
+      "reason": "Reason",
+      "priority": "Priority",
+      "status": "Status",
+      "created_at": "Flagged At"
+    },
+    "resource_type": {
+      "ORDER": "Order",
+      "PAYOUT": "Payout"
+    },
+    "status": {
+      "PENDING": "Pending",
+      "APPROVED": "Approved",
+      "REJECTED": "Rejected"
+    }
+  }
+}

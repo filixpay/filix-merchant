@@ -1,0 +1,459 @@
+{
+  "Pages": {
+    "products": {
+      "title": "Products",
+      "subtitle": "Comprehensive payment solutions for every business scenario",
+      "hero_title": "One Platform, Infinite Payment Possibilities",
+      "hero_desc": "From fiat to crypto, from domestic to cross-border, FilixPay provides a unified payment infrastructure that scales with your business."
+    },
+    "payment_platform": {
+      "badge": "CORE PRODUCT",
+      "hero_title": "Enterprise Payment Infrastructure Platform",
+      "hero_desc": "Build, manage and scale payment operations with unified APIs, transaction management and settlement infrastructure.",
+      "hero_desc_extra": "FilixPay enables global businesses to connect payments, manage transactions, settlements and merchant operations through one platform.",
+      "features_title": "Core Capabilities",
+      "features": {
+        "connectivity": {
+          "icon": "API",
+          "title": "Payment Connectivity",
+          "desc": "Connect global payment channels through unified APIs—Stripe, wallets, bank transfers, and digital assets from one integration layer.",
+          "detail_desc": "Reduce integration overhead with a single orchestration layer for checkout, hosted payment pages, and server-side API flows.",
+          "points": {
+            "0": "Unified OpenAPI for order creation, refunds, and status queries",
+            "1": "Multi-channel routing across domestic and cross-border payment methods",
+            "2": "Optional digital asset payment support without changing core order flows"
+          }
+        },
+        "transactions": {
+          "icon": "TX",
+          "title": "Transaction Management",
+          "desc": "Manage orders, refunds, payment status, and audit trails with full lifecycle visibility across channels.",
+          "detail_desc": "Operations teams and developers share one source of truth from authorization through settlement-ready states.",
+          "points": {
+            "0": "Order, refund, and dispute records linked to payment attempts",
+            "1": "Real-time status tracking with webhook-driven merchant notifications",
+            "2": "Audit-ready transaction history for finance and compliance review"
+          }
+        },
+        "settlement": {
+          "icon": "ST",
+          "title": "Settlement & Funds",
+          "desc": "Balance tracking, settlement bills, split payments, withdrawals, and fund flow reconciliation for finance teams.",
+          "detail_desc": "Support Platform settlement and Direct settlement models with automated billing and traceable fund movement.",
+          "points": {
+            "0": "Settlement bills and balance views for merchant finance teams",
+            "1": "Split payment allocation for platforms and multi-merchant businesses",
+            "2": "Withdrawal, deposit, and transfer records connected to settlement outcomes"
+          }
+        },
+        "merchant_ops": {
+          "icon": "MC",
+          "title": "Merchant Operations",
+          "desc": "Account management, permissions, API credentials, webhooks, and transaction monitoring in one operations platform.",
+          "detail_desc": "Give merchant administrators the controls they need without exposing organization-level enterprise governance.",
+          "points": {
+            "0": "Merchant profiles, credentials, and payment configuration in one console",
+            "1": "Role-based access for finance, operations, and developer teams",
+            "2": "Webhook endpoints and API keys managed with audit visibility"
+          }
+        }
+      },
+      "business_models": {
+        "title": "Business Model Overview",
+        "desc": "FilixPay supports independent merchants, platform operators, and enterprise groups with flexible settlement modes.",
+        "items": {
+          "direct": {
+            "title": "Direct settlement",
+            "desc": "Independent merchants connect channels directly with transparent clearing and settlement."
+          },
+          "platform": {
+            "title": "Platform settlement Platform Model",
+            "desc": "Platforms collect on behalf of sub-merchants with configurable split and settlement rules."
+          },
+          "enterprise": {
+            "title": "Enterprise & Group Operations",
+            "desc": "Organizations with multiple business units coordinate payment operations under governance policies."
+          }
+        }
+      },
+      "links": {
+        "title": "Explore the FilixPay Platform",
+        "desc": "Continue to related product surfaces across merchant operations, developers, settlement, and enterprise governance.",
+        "merchant_center": {
+          "title": "Merchant Center",
+          "desc": "Payment operations platform for accounts, permissions, credentials, and transaction monitoring."
+        },
+        "developers": {
+          "title": "Developer Platform",
+          "desc": "Payment APIs, SDKs, webhooks, sandbox, and integration documentation."
+        },
+        "payment_splitting": {
+          "title": "Payment Splitting",
+          "desc": "Automated split payment and settlement for marketplaces and multi-merchant platforms."
+        },
+        "for_enterprise": {
+          "title": "For Enterprise",
+          "desc": "Multi-merchant governance, RBAC, organization isolation, and deployment options."
+        }
+      },
+      "cta": {
+        "title": "Start with FilixPay payment infrastructure",
+        "desc": "Explore merchant operations capabilities or sign in to your merchant portal to configure payment channels.",
+        "primary": "Explore Merchant Center",
+        "secondary": "Sign in to Merchant Portal"
+      }
+    },
+    "merchant_center": {
+      "badge": "MERCHANT OPERATIONS",
+      "hero_title": "FilixPay Merchant Center",
+      "hero_desc": "Manage payment operations from one console—transactions, settlement, reporting, credentials, webhooks, and team access.",
+      "hero_desc_extra": "FilixPay Merchant Center is the operations platform for merchants, platforms, and enterprise business units to run day-to-day payment workflows.",
+      "features_title": "Platform Capabilities",
+      "features": {
+        "transactions": {
+          "icon": "TX",
+          "title": "Transaction Management",
+          "desc": "Search, filter, and monitor orders, refunds, and payment status across channels from a unified operations view.",
+          "detail_desc": "Operations teams get full lifecycle visibility from authorization through settlement-ready states without switching tools.",
+          "points": {
+            "0": "Order and refund records linked to payment attempts and channel responses",
+            "1": "Real-time status tracking with export-ready transaction history",
+            "2": "Audit-friendly views for finance and support teams"
+          }
+        },
+        "settlement": {
+          "icon": "ST",
+          "title": "Settlement & Funds",
+          "desc": "Track balances, settlement bills, withdrawals, and fund movements connected to your payment activity.",
+          "detail_desc": "Finance teams reconcile settlement outcomes with the same platform used for daily transaction monitoring.",
+          "points": {
+            "0": "Balance and settlement bill views for merchant finance workflows",
+            "1": "Withdrawal, deposit, and transfer records tied to settlement states",
+            "2": "Support for Platform settlement and Direct settlement models"
+          }
+        },
+        "reporting": {
+          "icon": "RP",
+          "title": "Reporting & Analytics",
+          "desc": "Operational and financial reporting to understand payment volume, success rates, and settlement trends.",
+          "detail_desc": "Turn transaction and settlement data into actionable reports for operations and finance stakeholders.",
+          "points": {
+            "0": "Payment volume and success rate summaries by channel and period",
+            "1": "Settlement and fund flow reports for reconciliation workflows",
+            "2": "Export-ready data views for finance and business review"
+          }
+        },
+        "api_credentials": {
+          "icon": "KEY",
+          "title": "API Credentials",
+          "desc": "Create and rotate API keys, manage sandbox and production credentials, and control developer access.",
+          "detail_desc": "Developers and administrators manage integration credentials with visibility into active keys and environments.",
+          "points": {
+            "0": "Separate sandbox and production API key management",
+            "1": "Credential rotation without disrupting active integrations",
+            "2": "Access controls aligned with merchant team roles"
+          }
+        },
+        "webhooks": {
+          "icon": "WH",
+          "title": "Webhooks",
+          "desc": "Configure webhook endpoints for payment events, delivery retries, and integration-driven automation.",
+          "detail_desc": "Keep downstream systems synchronized with payment lifecycle events through reliable webhook delivery.",
+          "points": {
+            "0": "Endpoint configuration for order, payment, and refund notifications",
+            "1": "Delivery visibility for integration troubleshooting",
+            "2": "Event-driven workflows for order and fulfillment systems"
+          }
+        },
+        "team_permissions": {
+          "icon": "TM",
+          "title": "Team Permissions",
+          "desc": "Role-based access for finance, operations, and developer teams within a merchant account.",
+          "detail_desc": "Delegate day-to-day payment operations to the right people without sharing full account access.",
+          "points": {
+            "0": "Role-based permissions for finance, operations, and developer roles",
+            "1": "Controlled access to credentials, transactions, and configuration",
+            "2": "Team workflows scoped to a single merchant account"
+          }
+        },
+        "self_hosted_checkout": {
+          "icon": "CK",
+          "title": "Self-Hosted Checkout",
+          "desc": "Deploy the open-source checkout frontend on your own domain with Docker—no code changes required.",
+          "detail_desc": "Run the payment page at checkout.yourdomain.com instead of a third-party URL. FilixPay handles payment logic; you control branding, hosting, and access logs.",
+          "points": {
+            "0": "Pull the official GHCR image and configure via environment variables only",
+            "1": "Use Developer Center credentials (Client ID / Secret) to connect to FilixPay APIs",
+            "2": "Apache-2.0 open source—audit the frontend; core risk and channel logic stays on FilixPay"
+          }
+        }
+      },
+      "checkout_deployment": {
+        "title": "Self-Hosted Checkout Deployment",
+        "desc": "For merchants who want the payment page on their own domain and infrastructure—not FilixPay's hosted checkout. Deploy the open-source filix-checkout frontend with Docker; no frontend code changes needed.",
+        "benefits": {
+          "brand": {
+            "title": "Your Domain, Your Brand",
+            "desc": "Serve checkout at checkout.yourdomain.com so customers see your brand in the address bar—helping reduce drop-off and build trust."
+          },
+          "compliance": {
+            "title": "Clear Data Boundaries",
+            "desc": "Checkout frontend code, access logs, and deployment environment stay on your servers—easier for internal compliance and audit requirements."
+          },
+          "open_source": {
+            "title": "Open Source & Auditable",
+            "desc": "Apache-2.0 licensed Next.js checkout. Review the code yourself; payment core logic remains on FilixPay backend with the same security boundary."
+          },
+          "low_cost": {
+            "title": "Low Integration Overhead",
+            "desc": "No business logic changes—configure API credentials and URLs via environment file, pull the Docker image, and go live."
+          }
+        },
+        "steps": {
+          "credentials": {
+            "title": "1. Get API Credentials",
+            "desc": "Create FILIXPAY_BACKEND_CLIENT_ID and FILIXPAY_BACKEND_CLIENT_SECRET in FilixPay Developer Center."
+          },
+          "docker": {
+            "title": "2. Deploy with Docker",
+            "desc": "Pull ghcr.io/filixpay/filix-checkout, mount your env file, and run on port 3001. Pin a version tag for production."
+          },
+          "domain": {
+            "title": "3. Bind Your Domain",
+            "desc": "Expose checkout.example.com via Nginx or Caddy with HTTPS. Set NEXTAUTH_URL to match the public URL."
+          }
+        },
+        "note": "This is a lightweight self-hosted checkout frontend—not the full FilixPay private deployment (PostgreSQL, Redis, Keycloak stack). See the comparison on the Private Deployment page.",
+        "cta_docs": "View Deployment Guide",
+        "cta_developers": "Go to Developer Center",
+        "cta_compare": "Compare with Private Deployment"
+      },
+      "audience": {
+        "title": "Who Uses Merchant Center",
+        "desc": "FilixPay Merchant Center serves businesses that need a dedicated operations console for payment workflows—not organization-level enterprise governance.",
+        "items": {
+          "merchants": {
+            "title": "Independent Merchants",
+            "desc": "Run payment operations, monitor transactions, and manage credentials for a single business account."
+          },
+          "platforms": {
+            "title": "Platforms & Marketplaces",
+            "desc": "Operate sub-merchant payment workflows, split settlements, and platform-level reporting from one console."
+          },
+          "enterprises": {
+            "title": "Enterprise Business Units",
+            "desc": "Give business units a merchant operations workspace for transactions, settlement, and team access."
+          }
+        }
+      },
+      "links": {
+        "title": "Explore Related Products",
+        "desc": "Merchant Center connects to the broader FilixPay payment infrastructure, developer platform, and settlement capabilities.",
+        "payment_platform": {
+          "title": "Payment Platform",
+          "desc": "Enterprise payment infrastructure for APIs, transaction management, and settlement."
+        },
+        "developers": {
+          "title": "Developer Platform",
+          "desc": "Payment APIs, SDKs, webhooks, sandbox, and integration documentation."
+        },
+        "payment_splitting": {
+          "title": "Payment Splitting",
+          "desc": "Automated split payment and settlement for marketplaces and multi-merchant platforms."
+        }
+      },
+      "cta": {
+        "title": "Sign in to Merchant Center",
+        "desc": "Access your merchant portal to configure payment channels, manage transactions, and run day-to-day payment operations.",
+        "primary": "Sign in to Merchant Portal",
+        "secondary": "View Developer Docs"
+      }
+    },
+    "developers": {
+      "badge": "DEVELOPER PLATFORM",
+      "hero_title": "Build payments with APIs",
+      "hero_desc": "Integrate FilixPay with REST APIs, SDKs, sandbox environments, and webhooks to connect checkout, orders, and settlement flows.",
+      "hero_desc_extra": "FilixPay Developer Platform gives engineering teams the tools to build, test, and operate enterprise payment integrations.",
+      "features_title": "Developer Capabilities",
+      "features": {
+        "api": {
+          "icon": "API",
+          "title": "Payment APIs",
+          "desc": "OpenAPI-first REST endpoints for order creation, refunds, payment status, and settlement queries.",
+          "detail_desc": "Integrate server-side payment flows with consistent request models across channels and environments.",
+          "points": {
+            "0": "Create orders, capture payments, and issue refunds through unified endpoints",
+            "1": "Query transaction status and settlement outcomes programmatically",
+            "2": "Sandbox and production environments with separate credentials"
+          }
+        },
+        "sdk": {
+          "icon": "SDK",
+          "title": "SDKs & Client Libraries",
+          "desc": "Language-specific helpers to accelerate integration with typed request builders and error handling.",
+          "detail_desc": "Reduce boilerplate with SDK patterns aligned to FilixPay OpenAPI specifications.",
+          "points": {
+            "0": "Client libraries for common server-side integration patterns",
+            "1": "Signature and authentication helpers for secure API calls",
+            "2": "Examples aligned with checkout and webhook workflows"
+          }
+        },
+        "sandbox": {
+          "icon": "SB",
+          "title": "Sandbox",
+          "desc": "Test payment flows end-to-end with sandbox credentials before going live in production.",
+          "detail_desc": "Developers validate integrations in an isolated environment with the same API surface as production.",
+          "points": {
+            "0": "Sandbox API keys separate from production credentials",
+            "1": "Simulate order and payment lifecycle events for integration testing",
+            "2": "Integration sandbox tools in the developer console"
+          }
+        },
+        "webhooks": {
+          "icon": "WH",
+          "title": "Webhooks",
+          "desc": "Receive real-time payment event notifications for orders, payments, refunds, and settlement updates.",
+          "detail_desc": "Keep downstream systems synchronized with payment lifecycle events through reliable webhook delivery.",
+          "points": {
+            "0": "Configure endpoints for order, payment, and refund notifications",
+            "1": "Delivery logs and retry visibility for integration troubleshooting",
+            "2": "Event-driven workflows for order fulfillment and reconciliation"
+          }
+        }
+      },
+      "quick_start": {
+        "title": "Quick Start",
+        "desc": "Get from credentials to your first sandbox payment in three steps.",
+        "steps": {
+          "0": "Sign in to the merchant portal and open the developer console to create sandbox API credentials.",
+          "1": "Create a test order via the Payment API or SDK using your sandbox key.",
+          "2": "Configure a webhook endpoint and verify event delivery in the developer console."
+        }
+      },
+      "checkout_deployment": {
+        "title": "Self-Hosted Checkout Deployment",
+        "desc": "Deploy the open-source filix-checkout frontend on your own domain with Docker. Use Developer Center credentials to connect—no frontend code changes required.",
+        "points": {
+          "0": "Create FILIXPAY_BACKEND_CLIENT_ID / CLIENT_SECRET in the developer console before deployment.",
+          "1": "Pull ghcr.io/filixpay/filix-checkout and configure via environment file—pin a version tag in production.",
+          "2": "Payment core logic stays on FilixPay; you host the checkout UI and BFF proxy on your infrastructure."
+        },
+        "cta_docs": "View Deployment Guide",
+        "cta_merchant_center": "Overview on Merchant Center"
+      },
+      "links": {
+        "title": "Explore Related Products",
+        "desc": "Developer integrations connect to FilixPay payment infrastructure and merchant operations.",
+        "payment_platform": {
+          "title": "Payment Platform",
+          "desc": "Enterprise payment infrastructure for APIs, transaction management, and settlement."
+        },
+        "merchant_center": {
+          "title": "Merchant Center",
+          "desc": "Payment operations platform for accounts, permissions, credentials, and transaction monitoring."
+        }
+      },
+      "cta": {
+        "title": "Start integrating with FilixPay",
+        "desc": "Follow the quick start guide or open the developer console to manage credentials, sandbox, and webhooks.",
+        "primary": "View Quick Start",
+        "secondary": "Open Developer Console"
+      }
+    },
+    "for_enterprise": {
+      "badge": "ENTERPRISE GOVERNANCE",
+      "hero_title": "Enterprise payment governance for groups and regulated businesses",
+      "hero_desc": "FilixPay For Enterprise helps headquarters govern multi-organization payment operations with multi-merchant management, RBAC, member governance, and organization-level isolation.",
+      "hero_desc_extra": "FilixPay Merchant Center covers single-merchant operations; For Enterprise adds organization governance for groups, conglomerates, and regulated enterprises.",
+      "features_title": "Governance Capabilities",
+      "features": {
+        "multi_org": {
+          "icon": "ORG",
+          "title": "Multi-Organization Governance",
+          "desc": "Centralize enterprise governance across legal entities while preserving independent operations at each organization.",
+          "detail_desc": "Headquarters creates and manages organizations without replacing day-to-day merchant operations.",
+          "points": {
+            "0": "Enterprise-level visibility across organizations and merchants",
+            "1": "Governance boundaries that stop at the organization layer",
+            "2": "Centralized policy with decentralized business execution"
+          }
+        },
+        "multi_merchant": {
+          "icon": "MM",
+          "title": "Multi-Merchant Management",
+          "desc": "Coordinate payment operations across subsidiaries, business units, and project teams under unified governance.",
+          "detail_desc": "Break fund silos with supervised accounts and transparent acquiring across group merchants.",
+          "points": {
+            "0": "Unified acquiring strategy with entity-level signing",
+            "1": "Sub-merchant and project-level payment workflows",
+            "2": "Transparent fund flows for headquarters oversight"
+          }
+        },
+        "rbac": {
+          "icon": "RBAC",
+          "title": "RBAC & Member Governance",
+          "desc": "Role-based access controls and member lifecycle governance for enterprise administrators and organization owners.",
+          "detail_desc": "Delegate governance responsibilities with auditable member permissions and approval workflows.",
+          "points": {
+            "0": "Enterprise ADMIN and Organization OWNER role separation",
+            "1": "Member invitations, role assignments, and access reviews",
+            "2": "Auditable governance actions across organizations"
+          }
+        },
+        "isolation": {
+          "icon": "ISO",
+          "title": "Organization Isolation",
+          "desc": "Strong isolation between organizations while maintaining enterprise-wide governance visibility.",
+          "detail_desc": "Each organization operates with scoped credentials, merchants, and authorization boundaries.",
+          "points": {
+            "0": "Scoped merchant and credential management per organization",
+            "1": "Authorization stays within organization boundaries",
+            "2": "Enterprise oversight without centralizing operations"
+          }
+        }
+      },
+      "private_deployment": {
+        "title": "Private Deployment Options",
+        "desc": "FilixPay can be deployed in your own environment for data sovereignty and regulated industries — contact sales to discuss deployment options."
+      },
+      "links": {
+        "title": "Explore Payment Infrastructure",
+        "desc": "Enterprise governance builds on FilixPay payment infrastructure for APIs, transactions, and settlement.",
+        "payment_platform": {
+          "title": "Payment Platform",
+          "desc": "Enterprise payment infrastructure for APIs, transaction management, and settlement."
+        }
+      },
+      "cta": {
+        "title": "Talk to our enterprise team",
+        "desc": "Contact sales to discuss multi-organization governance, RBAC requirements, and deployment options for your group.",
+        "primary": "Contact Sales",
+        "secondary": "Explore Payment Platform"
+      }
+    },
+    "credit_payment": {
+      "title": "Credit Payment",
+      "subtitle": "Flexible credit-based payment solutions for B2B and subscription businesses",
+      "hero_title": "Buy Now, Pay Later — Built for Business",
+      "hero_desc": "Enable credit lines, installment plans, and deferred payments with enterprise-grade risk management and real-time account tracking.",
+      "features": {
+        "credit_line": {
+          "title": "Credit Line Management",
+          "desc": "Set and manage credit limits for your business customers with flexible payment terms."
+        },
+        "installment": {
+          "title": "Installment Plans",
+          "desc": "Support multi-period payment plans with automated billing and collection."
+        },
+        "risk": {
+          "title": "Risk Control",
+          "desc": "Real-time credit scoring and risk assessment with configurable rules."
+        },
+        "reconciliation": {
+          "title": "Auto Reconciliation",
+          "desc": "Automated matching of payments to invoices with detailed reporting."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "BankAccounts": {
+    "primary_badge": "Primary",
+    "copy_account": "Copy full account number",
+    "copied": "Account number copied",
+    "copy_failed": "Copy failed. Select the number manually.",
+    "headers": {
+      "bank_branch": "Bank / Branch"
+    },
+    "status_values": {
+      "ACTIVE": "Active",
+      "INACTIVE": "Inactive"
+    },
+    "form": {
+      "subtitle": "Configure a corporate bank account for transfers",
+      "primary_hint": "Only one primary account is allowed. Enabling this will unset the current primary.",
+      "bank_name_placeholder": "e.g. China Merchants Bank",
+      "branch_name_placeholder": "e.g. Beijing Wangjing Branch",
+      "account_holder_placeholder": "Must match the bank account opening license",
+      "account_number_placeholder": "Enter card or corporate account number",
+      "city_placeholder": "e.g. Beijing",
+      "bank_name_required": "Bank name is required",
+      "branch_name_required": "Branch name is required",
+      "account_holder_required": "Account holder is required",
+      "account_number_required": "Account number is required",
+      "account_number_invalid": "Enter an 8–32 digit account number",
+      "city_required": "City is required"
+    }
+  }
+}

@@ -1,0 +1,385 @@
+{
+  "PaymentSplits": {
+    "title": "Payment Splits",
+    "subtitle": "View and manage order split details and receiver status.",
+    "headers": {
+      "order_id": "Order ID",
+      "trade_no": "Trade No",
+      "amount": "Order Amount",
+      "order_amount": "Total Amount",
+      "split_amount": "Split Amount",
+      "receivers": "Receivers",
+      "status": "Status",
+      "type": "Split Type",
+      "created_at": "Created At"
+    },
+    "filters": {
+      "order_id": "Order ID",
+      "status": "Status",
+      "all_status": "All Status"
+    },
+    "statuses": {
+      "PENDING": "Pending",
+      "PROCESSING": "Processing",
+      "SUCCESS": "Success",
+      "FAILED": "Failed",
+      "PARTIAL_SUCCESS": "Partial Success",
+      "CLOSED": "Closed"
+    },
+    "types": {
+      "IMMEDIATE": "Immediate",
+      "DELAYED": "Delayed"
+    },
+    "details": {
+      "title": "Split Details",
+      "base_info": "Basic Information",
+      "receivers": "Receiver Details",
+      "receiver_id": "Receiver",
+      "receiver_name": "Name",
+      "amount": "Amount",
+      "proportion": "Proportion",
+      "status": "Status",
+      "progress": "Split Progress",
+      "view_details": "View Details",
+      "serial_no": "Serial No"
+    },
+    "empty": "No split payment records found."
+  },
+  "SettlementReleases": {
+    "title": "Settlement processing",
+    "subtitle": "Track when funds become available balance.",
+    "empty": "No settlement processing records found.",
+    "loadError": "Failed to load settlement processing.",
+    "filters": {
+      "status": "Status",
+      "paymentId": "Search payment ID",
+      "search": "Search candidate or payment ID"
+    },
+    "columns": {
+      "id": "Candidate ID",
+      "paymentId": "Payment ID",
+      "businessRef": "Business Ref",
+      "amount": "Amount",
+      "status": "Status",
+      "eligibleAt": "Expected processing time",
+      "nextEvaluationAt": "Next evaluation",
+      "releasedAt": "Available at",
+      "createdAt": "Created at",
+      "reasonCode": "Reason",
+      "ids": "Candidate / payment",
+      "paymentShort": "Pay",
+      "statusReason": "Status & reason",
+      "actions": "Actions"
+    },
+    "status": {
+      "PENDING": "Pending",
+      "EVALUATING": "Evaluating",
+      "AVAILABLE": "Available",
+      "BLOCKED": "Blocked",
+      "FAILED": "Failed",
+      "SKIPPED": "Skipped"
+    },
+    "detail": {
+      "title": "Settlement processing detail",
+      "back": "Back to list",
+      "notFound": "Settlement processing record not found.",
+      "journalId": "Journal ID",
+      "releaseJournalId": "Release Journal ID",
+      "retryCount": "Retry count",
+      "lastTriggeredAt": "Last triggered at",
+      "paymentTitle": "Payment",
+      "paymentSucceededAt": "Payment succeeded at",
+      "journalUnavailableTitle": "Availability journal unavailable",
+      "journalUnavailableBody": "This candidate references a journal that could not be resolved. Available-at time is hidden until the ledger fact is available.",
+      "bannerTitle": "Task is {status}",
+      "retryChip": "{count} retries",
+      "reasonLabel": "Reason:",
+      "noReason": "No reason code provided.",
+      "basicsTitle": "Basics & amount",
+      "journalsTitle": "Ledger journals",
+      "timelineTitle": "Schedule timeline",
+      "paymentAmount": "Payment amount",
+      "lastTriggeredWithRetry": "Last trigger (retry {count})",
+      "releasedPending": "Not released"
+    },
+    "actions": {
+      "view_detail": "Details"
+    },
+    "pagination": {
+      "total": "Total {count} settlement jobs"
+    },
+    "amount_pending": "Pending eval",
+    "copy_id": "Copy candidate ID",
+    "copy_payment_id": "Copy payment ID",
+    "copy_success": "Copied",
+    "copy_failed": "Copy failed",
+    "copy_business_ref": "Copy business ref",
+    "copy_journal_id": "Copy journal ID",
+    "copy_release_journal_id": "Copy release journal ID",
+    "reasonGuidance": {
+      "CAPABILITY_DISABLED": "The merchant capability is disabled, so automatic settlement evaluation is paused.",
+      "NOT_PRODUCTIZED": "This money product is not available for this merchant yet.",
+      "OWNER_NOT_SUPPORTED": "This owner type is not supported for this settlement action.",
+      "fallback": "The system returned this reason code. Check merchant capability settings."
+    },
+    "next_eval_hint": "Next auto evaluation",
+    "reasonShort": {
+      "CAPABILITY_DISABLED": "Capability disabled",
+      "CONTEXT_RESOLVE_FAILED": "Context resolve failed",
+      "NOT_PRODUCTIZED": "Not productized",
+      "OWNER_NOT_SUPPORTED": "Owner not supported"
+    }
+  },
+  "TransactionReconciliation": {
+    "title": "Transaction Reconciliation",
+    "subtitle": "Provider transaction bills matched against your orders (reconciliation scope: Order).",
+    "empty": "No reconciliation items in this range.",
+    "emptyNoReconData": "No provider reconciliation data for this channel and date range.",
+    "emptyCoverageNoRows": "Provider trade bills exist for this range, but no orders are visible for your merchant (check channel authorization, order ownership, and channelOrderId mapping).",
+    "emptyHint": "Try a different date range or channel, then Query — or reset filters.",
+    "query": "Query",
+    "reset": "Reset",
+    "loadError": "Failed to load transaction reconciliation.",
+    "export": "Export CSV",
+    "exportFailed": "Export failed.",
+    "noReconDataTitle": "No provider reconciliation data",
+    "noReconDataDescription": "FilixPay has not received a provider reconciliation batch for the selected channel and bizDate range. This is different from having no matching orders.",
+    "reconciliationLevelOrder": "Order",
+    "filters": {
+      "channelCode": "Channel",
+      "channel_all": "All channels",
+      "scope": "Scope"
+    },
+    "channels": {
+      "ALL": "All channels",
+      "STRIPE": "STRIPE",
+      "PAYPAL": "PAYPAL"
+    },
+    "scope": {
+      "default": "Reconciled only",
+      "allTransactions": "All transactions"
+    },
+    "columns": {
+      "payment": "Payment",
+      "order": "Order",
+      "reconciliationLevel": "Reconciliation level",
+      "channelCode": "Channel",
+      "reconciliationStatus": "Reconciliation status",
+      "bizDate": "Biz date",
+      "actions": "Actions"
+    },
+    "reconStatus": {
+      "MATCHED": "Matched",
+      "MISMATCH": "Mismatch",
+      "RECONCILIATION_PENDING": "Pending",
+      "NOT_RECONCILED": "Not reconciled"
+    },
+    "sections": {
+      "association": "Payment / Order association",
+      "comparison": "Provider vs FilixPay",
+      "provider": "Provider",
+      "filixpay": "FilixPay"
+    },
+    "fields": {
+      "paymentId": "Payment ID",
+      "orderId": "Order ID",
+      "reconciliationLevel": "Reconciliation level",
+      "channelCode": "Channel",
+      "bizDate": "Biz date",
+      "reconciliationStatus": "Reconciliation status",
+      "mismatchType": "Mismatch type",
+      "providerTransactionId": "Provider transaction ID",
+      "providerOrderId": "Provider order ID",
+      "providerAmount": "Provider amount",
+      "providerStatus": "Provider status",
+      "localAmount": "FilixPay amount",
+      "localStatus": "FilixPay status"
+    },
+    "detail": {
+      "title": "Transaction reconciliation detail",
+      "reconScopeOrder": "Recon scope: Order",
+      "back": "Back to list",
+      "notFound": "Reconciliation record not found."
+    },
+    "actions": {
+      "view_detail": "Details"
+    },
+    "copy_payment_id": "Copy payment ID",
+    "copy_order_id": "Copy order ID",
+    "copy_success": "Copied",
+    "copy_failed": "Copy failed"
+  },
+  "Settlements": {
+    "title": "Settlement bills",
+    "subtitle": "Released settlement facts with provider reconciliation status.",
+    "empty": "No settlements found.",
+    "loadError": "Failed to load settlements.",
+    "filters": {
+      "reconStatus": "Reconciliation status",
+      "asset": "Asset",
+      "paymentId": "Payment ID"
+    },
+    "columns": {
+      "settlementId": "Settlement ID",
+      "moneyInRef": "Money-In ref",
+      "asset": "Asset",
+      "gross": "Gross",
+      "fee": "Fee",
+      "net": "Net",
+      "releasedAt": "Released at",
+      "reconStatus": "Reconciliation",
+      "provider": "Provider",
+      "actions": "Actions"
+    },
+    "reconStatus": {
+      "PENDING": "Pending",
+      "MATCHED": "Matched",
+      "EXCEPTION": "Exception"
+    },
+    "sections": {
+      "settlement": "Settlement basics",
+      "providerSettlement": "Provider settlement",
+      "reconciliation": "Reconciliation",
+      "timeline": "Settlement timeline"
+    },
+    "fields": {
+      "moneyInRef": "Money-In ref",
+      "releaseRef": "Release ref",
+      "releasedAt": "Released at",
+      "gross": "Gross",
+      "fee": "Fee",
+      "net": "Net",
+      "provider": "Provider",
+      "providerReference": "Provider reference",
+      "settlementDate": "Settlement date",
+      "expectedNet": "Expected net",
+      "actualNet": "Actual net",
+      "reconStatus": "Reconciliation status",
+      "difference": "Difference"
+    },
+    "timeline": {
+      "CANDIDATE_CREATED": "Candidate created",
+      "RELEASED": "Released",
+      "LEDGER_POSTED": "Ledger posted",
+      "PROVIDER_STATEMENT_INGESTED": "Provider statement ingested",
+      "RECON_MATCHED": "Reconciliation matched",
+      "RECON_EXCEPTION": "Reconciliation exception"
+    },
+    "timelineEmpty": "No timeline events yet.",
+    "detail": {
+      "title": "Settlement detail",
+      "back": "Back to list",
+      "notFound": "Settlement not found."
+    },
+    "actions": {
+      "view": "View",
+      "view_detail": "View detail"
+    },
+    "copy_settlement_id": "Copy settlement ID",
+    "copy_success": "Copied",
+    "copy_failed": "Copy failed",
+    "copy_money_in_ref": "Copy money-in ref",
+    "copy_release_ref": "Copy release ref",
+    "summary": {
+      "net": "Settlement net",
+      "gross": "Gross",
+      "fee": "Fee",
+      "reconStatus": "Reconciliation"
+    },
+    "providerEmptyNotice": "No provider settlement document available yet."
+  },
+  "SettlementStatements": {
+    "title": "Settlement records",
+    "subtitle": "View day/week/month settlement periods and the settlement amount for the current period.",
+    "empty": "No settlement statements found.",
+    "loadError": "Failed to load settlement statements.",
+    "noAssets": "No available balance assets to query settlement statements.",
+    "periodNotStarted": "This period has not started yet, so the statement is unavailable.",
+    "downloadError": "Failed to download the settlement statement.",
+    "openHint": "This period is still open; amounts are live as of now.",
+    "openBanner": "This period is still open; amounts are live as of now.",
+    "filters": {
+      "asset": "Asset",
+      "assetPlaceholder": "Select asset",
+      "allAssets": "All currencies",
+      "periodKind": "Period"
+    },
+    "periodKind": {
+      "DAY": "Day",
+      "WEEK": "Week",
+      "MONTH": "Month"
+    },
+    "periodState": {
+      "OPEN": "Open",
+      "CLOSED": "Closed"
+    },
+    "coverageState": {
+      "OK": "OK",
+      "PARTIAL_COVERAGE": "Partial coverage",
+      "INCONSISTENT": "Inconsistent"
+    },
+    "columns": {
+      "periodKey": "Statement period",
+      "asset": "Asset",
+      "settlementNet": "Settlement Net",
+      "gross": "Gross",
+      "fee": "Fee",
+      "adjustment": "Adjustment",
+      "released": "Released",
+      "payout": "Payout",
+      "state": "State",
+      "timezone": "Timezone",
+      "periodState": "Status",
+      "coverage": "Data coverage",
+      "actions": "Actions"
+    },
+    "detail": {
+      "title": "Settlement statement detail",
+      "back": "Back to list",
+      "notFound": "Settlement statement not found.",
+      "download": "Download XLSX",
+      "summaryTitle": "Summary",
+      "asOf": "As of",
+      "window": "Window",
+      "effectiveAt": "Effective at",
+      "payoutProgress": "Payout & release progress",
+      "pendingPayout": "Pending payout",
+      "payoutStatusNone": "Status: not paid out",
+      "payoutStatusPartial": "Status: partially paid out"
+    },
+    "events": {
+      "title": "Business events",
+      "empty": "No events.",
+      "businessRef": "Business ref",
+      "gross": "Gross",
+      "fee": "Fee",
+      "adjustment": "Adjustment",
+      "noJournals": "No linked journals.",
+      "count": "{count} events",
+      "eventType": "Event type",
+      "effectiveAt": "Effective at",
+      "copy": "Copy business ref",
+      "copy_success": "Copied",
+      "copy_failed": "Copy failed"
+    },
+    "diagnostics": {
+      "title": "Diagnostics",
+      "conflicts": "Conflicts",
+      "unclassified": "Unclassified",
+      "journalId": "Journal ID",
+      "kind": "Kind",
+      "businessType": "Business type",
+      "reason": "Reason"
+    },
+    "actions": {
+      "view_detail": "Details"
+    },
+    "pagination": {
+      "total": "Total {count} statements"
+    },
+    "timezoneChip": {
+      "label": "{timezone}",
+      "fallback": "Asia/Shanghai"
+    }
+  }
+}

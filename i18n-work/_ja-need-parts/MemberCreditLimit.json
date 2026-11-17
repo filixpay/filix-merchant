@@ -1,0 +1,18 @@
+{
+  "MemberCreditLimit": {
+    "title": "My Available Credit",
+    "subtitle": "View your current credit line information, including total limit, used amount, and available balance.",
+    "view_adjustments": "Adjustment Logs",
+    "view_transactions": "Credit Transactions",
+    "headers": {
+      "creditor": "Creditor",
+      "credit_limit": "Total Limit",
+      "used_amount": "Used Amount",
+      "available_amount": "Available Amount",
+      "payment_term": "Payment Term",
+      "status": "Status"
+    },
+    "loading": "Loading credit lines...",
+    "empty": "No credit lines have been assigned to you yet."
+  }
+}

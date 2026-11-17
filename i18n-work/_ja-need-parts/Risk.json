@@ -1,0 +1,33 @@
+{
+  "Risk": {
+    "related_risk": {
+      "title": "Related Risk",
+      "fraud_events": "Fraud Events",
+      "reviews": "Reviews"
+    },
+    "payment_timeline": {
+      "title": "Payment Risk Timeline",
+      "entity": {
+        "FRAUD": "Fraud",
+        "REVIEW": "Review",
+        "DISPUTE": "Dispute",
+        "PAYMENT": "Payment"
+      }
+    },
+    "dashboard": {
+      "title": "Risk Overview",
+      "view_fraud": "View fraud events",
+      "pending_reviews": "Pending Reviews",
+      "open_disputes": "Open Disputes",
+      "high_fraud_today": "High Fraud Today",
+      "blocked_amount": "Blocked Amount",
+      "blocked_unsupported": "Not supported yet",
+      "review_sla_hours": "Review SLA (hrs)",
+      "chargeback_ratio": "Chargeback Ratio",
+      "rejected_today": "Rejected Today",
+      "pending_review_attempts": "Pending Review Payments",
+      "pending_events": "Pending risk actions",
+      "monitoring_metrics": "Ongoing monitoring"
+    }
+  }
+}

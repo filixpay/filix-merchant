@@ -1,0 +1,32 @@
+{
+  "audit": {
+    "action": {
+      "auth.login": "Login",
+      "auth.logout": "Logout",
+      "auth.password.change": "Change payment password",
+      "auth.mfa.enable": "Enable MFA",
+      "auth.mfa.disable": "Disable MFA",
+      "auth.access.denied": "Access denied",
+      "apikey.create": "Create API key",
+      "apikey.rotate": "Rotate API key",
+      "apikey.delete": "Delete API key",
+      "webhook.create": "Create webhook",
+      "webhook.update": "Update webhook",
+      "webhook.delete": "Delete webhook",
+      "webhook.replay": "Replay webhook",
+      "merchant.config.update": "Update merchant config",
+      "coverage.enable": "Enable coverage",
+      "coverage.disable": "Disable coverage",
+      "coverage.update": "Update coverage config",
+      "risk.review.approve": "Review approved",
+      "risk.review.reject": "Review rejected",
+      "risk.review.assign": "Review assigned",
+      "role.grant": "Grant role",
+      "role.revoke": "Revoke role",
+      "permission.update": "Update permission",
+      "operator.create": "Create operator",
+      "operator.update": "Update operator",
+      "operator.disable": "Disable operator"
+    }
+  }
+}

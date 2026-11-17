@@ -1,0 +1,349 @@
+{
+  "Pages": {
+    "group_enterprise": {
+      "title": "Konzern-Enterprise",
+      "subtitle": "Einheitliche Zahlungs- und Mittelsteuerungsplattform für große Konzerne",
+      "hero_title": "Aufbau einer einheitlichen Zahlungs- und Mittelsteuerungsplattform für große Konzerne",
+      "hero_desc": "Von Enterprise-Governance und einheitlichem Acquiring über intelligente Abrechnung bis zur durchgängigen Prüfung — helfen Sie großen Konzernen, zentrale Steuerung durch die Zentrale, unabhängigen Betrieb der Rechtsträger sowie transparente und kontrollierbare Mittel zu erreichen.",
+      "hero_ending": "Zentrale Steuerung. Unabhängiger Betrieb. Transparente Mittel.",
+      "pain_points": {
+        "title": "Lücken in der Mittelkontrolle im Konzernbetrieb",
+        "items": [
+          {
+            "title": "Zahlungseinzug über persönliche QR-Codes",
+            "desc": "Filialen und Projektteams nehmen Zahlungen über persönliche WeChat- oder Alipay-Konten entgegen und umgehen so die Konzernkonten — die Zentrale kann Zuflüsse nicht in Echtzeit nachverfolgen.",
+            "consequences": "Nebenbuch-Mittelkreisläufe, aufwendiger Abgleich, verzerrte Betriebsdaten."
+          },
+          {
+            "title": "Umleitung auf Drittkonten",
+            "desc": "Geschäftseinnahmen fließen auf Drittplattformen oder Privatkonten außerhalb der Konzernkontrolle, erzeugen Nebenbuch-Pools und schwächen die zentrale Mitteldisposition.",
+            "consequences": "Fragmentierte Mittel, Compliance-Risiken, Entscheidungen ohne verlässliche Daten."
+          },
+          {
+            "title": "Fragmentierte Zahlungskanäle",
+            "desc": "Jeder Rechtsträger schließt unabhängig Zahlungsdienstleister an — mit unterschiedlichen Gebühren und Abrechnungszyklen. Der Abgleich wird fehleranfällig und teuer.",
+            "consequences": "Unzuverlässiges Reporting, hoher Wartungsaufwand, komplexe Integrationen."
+          },
+          {
+            "title": "Nebenbuch-Mittelpools",
+            "desc": "Ein Teil der Erlöse erreicht nie gesteuerte Konten oder läuft über informelle Kanäle — der Konzern sieht die tatsächliche Betriebs- und Mittelposition nicht.",
+            "consequences": "Schwache interne Kontrollen, teure Prüfungen, geringe Mitteltransparenz."
+          }
+        ]
+      },
+      "architecture": {
+        "title": "Enterprise-Governance-Architektur",
+        "lead": "Zentrale Steuerung in der Konzernzentrale. Unabhängiger Betrieb bei jedem Rechtsträger.",
+        "lead_en": "Die Governance endet auf der Organization-Ebene und bewahrt die operative Unabhängigkeit jedes Rechtsträgers.",
+        "reinforcing": "Governance zentralisiert die Steuerung, ohne den Betrieb zu zentralisieren.",
+        "not_org_chart": "Dieses Diagramm zeigt ausschließlich Governance-Beziehungen — keine tatsächlichen Organisationszahlen oder Hierarchietiefen.",
+        "example_footnote": "Beispiel: Ein diversifizierter Konzern kann Enterprise der Konzernzentrale, Organization einem Geschäftsbereichs-Rechtsträger und Merchant einer Filiale oder einem Projektbetreiber zuordnen (nur Beispiel — kein Bezug zu einem konkreten Unternehmen oder einer Partnerschaft).",
+        "layers": {
+          "identity": "Identity",
+          "enterprise": "Enterprise",
+          "organization": "Organization",
+          "merchant": "Merchant",
+          "admin": "ADMIN",
+          "viewer": "VIEWER"
+        }
+      },
+      "capabilities": {
+        "title": "Plattformfähigkeiten",
+        "items": [
+          {
+            "icon": "🏛️",
+            "title": "Enterprise-Governance",
+            "desc": "Die Zentrale legt Rechtsträger zentral an und verwaltet sie. Die Governance endet auf der Organization-Ebene — sie ersetzt weder den Tagesbetrieb noch die Autorisierung."
+          },
+          {
+            "icon": "💳",
+            "title": "Einheitliches Acquiring",
+            "desc": "Konzernweite Acquiring-Strategie und Kanalkoordination: Jeder Rechtsträger unterzeichnet und betreibt unter eigener Entität, während die Mittel transparent und kontrollierbar bleiben."
+          },
+          {
+            "icon": "⚡",
+            "title": "Intelligente Abrechnung",
+            "desc": "Lizenzierte Split-Payment-APIs automatisieren das Clearing, reduzieren manuelle Zwischenbuchungen und unterstützen Abrechnung über mehrere Entitäten und Szenarien."
+          },
+          {
+            "icon": "🔍",
+            "title": "Durchgängige Prüfung",
+            "desc": "Governance-Aktionen, Autorisierungsänderungen und Mittelbewegungen sind vollständig nachvollziehbar — für Aufsicht der Zentrale und Compliance-Audits."
+          }
+        ]
+      },
+      "governance_model": {
+        "title": "Governance-Modell",
+        "intro": "FilixPay trennt Governance-Verantwortung vom täglichen Geschäftsbetrieb. So behält die Zentrale Sichtbarkeit und Kontrolle, ohne die operative Autorität der einzelnen Rechtsträger zu ersetzen.",
+        "headers": [
+          "Managementebene",
+          "Hauptverantwortung"
+        ],
+        "items": [
+          [
+            "Enterprise",
+            "Governance"
+          ],
+          [
+            "Organization",
+            "Autorisierung & Betrieb"
+          ],
+          [
+            "Merchant",
+            "Geschäftliche Ausführung"
+          ]
+        ],
+        "admin_not_owner": "Enterprise ADMIN ≠ Organization OWNER"
+      },
+      "rules": {
+        "title": "Zentrale Geschäftsregeln",
+        "headers": [
+          "Dimension",
+          "Regel"
+        ],
+        "items": [
+          [
+            "Governance-Grenze",
+            "Enterprise steuert auf Konzernebene (Anlegen und Verwalten von Organizations). Es besitzt, steuert oder sperrt Merchants nicht direkt — die Autorisierung bleibt bei jeder Organization."
+          ],
+          [
+            "Einheitliches Acquiring",
+            "Der Konzern kann einheitliche Acquiring-Richtlinien festlegen; jede Organization unterzeichnet und betreibt unter ihrem Rechtsträger."
+          ],
+          [
+            "Mittelzufluss",
+            "Kundenzahlungen fließen auf beaufsichtigte Konten — externe Einzugskanäle und persönliche QR-Codes sind untersagt."
+          ],
+          [
+            "Split-Abrechnung",
+            "Lizenzierte Split-APIs automatisieren das Clearing und verringern das Risiko manueller Mittelweiterleitung."
+          ],
+          [
+            "Freigabeprozess",
+            "Organisationsübergreifende Mittelbewegungen erfordern vor der Ausführung die Freigabe durch den Konzern."
+          ]
+        ]
+      },
+      "scenarios": {
+        "title": "Geschäftsszenarien",
+        "scenario_0": {
+          "title": "Enterprise-Einrichtung",
+          "process": "Example Enterprise anlegen → Example Organization anlegen → Organization Owner einladen → Example Merchant 01 anlegen → Betrieb starten",
+          "value": "Konzern-Governance schnell aufbauen — unabhängiger Entitätsbetrieb mit konzernweiter Sichtbarkeit der Zentrale."
+        },
+        "scenario_1": {
+          "title": "Szenario 1: Tochtergesellschaft verkauft Konzernprodukte",
+          "process": "Kunde zahlt → Konzernkonto (einheitliches Acquiring) → Konzern erfasst Umsatz → System weist Tochterprovision zu",
+          "value": "Schützt die Mittelsouveränität des Konzerns durch automatisierte Abrechnung."
+        },
+        "scenario_2": {
+          "title": "Szenario 2: Gemeinsamer Verkauf mit Split",
+          "process": "Eine Bestellung enthält Konzernprodukte und Tochterleistungen → Split-API bei Zahlung → Mittel fließen direkt anteilig auf mehrere Konten",
+          "value": "Kein zweiter Transfer — konform und zeitnah."
+        },
+        "scenario_3": {
+          "title": "Szenario 3: Interne Umbuchung zwischen Entitäten",
+          "process": "Organization stellt Antrag → Konzern gibt frei → Mittel bewegen sich innerhalb des beaufsichtigten Konzernkontos → Ziel-Organization",
+          "value": "Vollständig nachvollziehbare interne Zusammenarbeit, ohne dass Mittel den gesteuerten Perimeter verlassen."
+        }
+      },
+      "compliance": {
+        "title": "Compliance & Risikokontrolle",
+        "headers": [
+          "Risiko",
+          "FilixPay-Lösung"
+        ],
+        "items": [
+          [
+            "Lücken in der Mittelkontrolle",
+            "Einheitliches Acquiring und Pooling auf beaufsichtigten Konten — keine persönlichen QR-Codes oder Nebenbuch-Pools"
+          ],
+          [
+            "Illegales Mittelpooling",
+            "Split-APIs lizenzierter Institute — der Konzern hält keine Kundensalden im Transit"
+          ],
+          [
+            "Steuerliche Nichtkonformität",
+            "Acquiring-, Vertrags- und Rechnungsstellungseinheiten bleiben durch automatisierte Prüfungen ausgerichtet"
+          ],
+          [
+            "Schwache interne Kontrollen",
+            "Vollständige Operationsprotokolle, mehrstufige Freigabe bei Regeländerungen, prüfbare Governance-Aktionen"
+          ],
+          [
+            "Wechselkursrisiko",
+            "Grenzüberschreitende Splits verbinden sich mit FX-Meldungen des Handelsdienstes; Transaktionsnachweise bleiben erhalten"
+          ]
+        ]
+      },
+      "portal": {
+        "title": "Enterprise-Managementportal",
+        "shots": {
+          "directory": {
+            "title": "Enterprise-Verzeichnis",
+            "alt": "Managementansicht von Example Enterprise mit Einträgen zu Example Organization",
+            "caption": "Alle Organizations unter einem Enterprise zentral verwalten"
+          },
+          "switch": {
+            "title": "Organization-Wechsel",
+            "alt": "Wechsel vom Portal Example Enterprise in den operativen Arbeitsbereich von Example Organization",
+            "caption": "Nahtlos in den operativen Arbeitsbereich einer Organization wechseln"
+          },
+          "audit": {
+            "title": "Governance-Audit",
+            "alt": "Governance-Auditprotokoll von Example Enterprise mit Organization-Anlage und zugehörigen Aktionen",
+            "caption": "Governance-Aktionen mit vollständiger Audit-Historie nachverfolgen"
+          }
+        }
+      }
+    },
+    "enterprise": {
+      "title": "Globale Expansion für Unternehmen",
+      "subtitle": "Kostengünstiger Einstieg in globale digitale Zahlungen",
+      "hero_title": "Sicher international wachsen",
+      "hero_desc": "Traditionelle Unternehmen können jetzt Krypto-Zahlungen akzeptieren und global expandieren — ohne die Komplexität, Zahlungsinfrastruktur von Grund auf selbst aufzubauen."
+    },
+    "architecture": {
+      "title": "Architekturübersicht",
+      "subtitle": "Verteilte Zahlungssystemarchitektur auf Enterprise-Niveau",
+      "hero_title": "Für Skalierung gebaut, für Zuverlässigkeit ausgelegt",
+      "hero_desc": "Microservices-Architektur auf Kubernetes mit eventgesteuerter Verarbeitung — für 99,99 % Verfügbarkeit und horizontale Skalierbarkeit."
+    },
+    "performance": {
+      "badge": "Performance-Benchmark",
+      "hero_title": "Lasttest der Create-Order-API",
+      "hero_desc": "Ein gestufter k6-Lasttest am produktionsnahen OpenAPI-Endpunkt create-order zur Validierung von Stabilität und Latenz unter parallelen Schreiblasten.",
+      "metrics_title": "Kennzahlen",
+      "metrics_subtitle": "Gestufte Last von 1 bis 50 gleichzeitigen Nutzern bei durchgehend 0 % Fehlerrate.",
+      "metrics": {
+        "tps": "Bestelldurchsatz (TPS)",
+        "success_rate": "Erfolgsrate",
+        "p95": "P95-Latenz",
+        "p99": "P99-Latenz"
+      },
+      "recommended_limit": "Empfohlenes Produktions-Ratelimit: ~100 TPS (stabile Kapazität × 70 %).",
+      "capacity": {
+        "title": "Schätzung der täglichen Bestellkapazität",
+        "subtitle": "Basierend auf einem 8-Stunden-Geschäftstag mit einem 4-Stunden-Peakfenster.",
+        "intro": "Anhand des stabilen Durchsatzes aus diesem Lasttest schätzen wir, wie viele Bestellungen die create-order-API an einem typischen Geschäftstag verarbeiten kann.",
+        "assumption_hours": "Geschäftliche Annahme: 8 aktive Stunden pro Tag für die Bestellerstellung.",
+        "assumption_peak": "Peak-Annahme: 4 Peakstunden am empfohlenen Limit von 100 TPS.",
+        "assumption_off_peak": "Off-Peak-Annahme: Die übrigen 4 Stunden werden mit 30 % des Peaks geschätzt, also 30 TPS; zusätzlich wird ein flaches Modell mit 100 TPS über alle 8 Stunden als Referenz bei Volllast angegeben.",
+        "formula": "Formel: Bestellungen = TPS × 3.600 Sekunden × Stunden.",
+        "highlight_daily": "Empfohlene Tageskapazität (Peak-/Off-Peak-Modell)",
+        "highlight_daily_desc": "4 Peakstunden à 100 TPS + 4 Off-Peak-Stunden à {offPeak} TPS",
+        "highlight_daily_flat": "Tagesreferenz bei Volllast",
+        "highlight_daily_flat_desc": "Alle 8 Stunden à 100 TPS (auch Off-Peak bei 100 TPS)",
+        "highlight_peak": "4-Stunden-Peakkapazität",
+        "highlight_peak_desc": "Am empfohlenen Limit von 100 TPS",
+        "tps_mixed": "Peak {peak} / Off-Peak {offPeak} TPS",
+        "table": {
+          "scenario": "Szenario",
+          "tps": "Referenz-TPS",
+          "orders": "Erstellte Bestellungen"
+        },
+        "rows": {
+          "peak_limit": "4 Peakstunden (empfohlenes Limit)",
+          "daily_mixed": "8 Geschäftsstunden (Peak-/Off-Peak-Modell, empfohlen)",
+          "daily_flat": "8 Geschäftsstunden (auch Off-Peak bei 100 TPS)",
+          "peak_stable": "4 Peakstunden (stabiler Lasttestwert)",
+          "daily_full": "8 Geschäftsstunden (voller Lasttest-Durchsatz, theoretisches Maximum)"
+        },
+        "disclaimer": "Diese Zahlen beziehen sich auf die Kapazität der create-order-API in einer getesteten Deployment-Umgebung. Zahlungs-, Rückerstattungs-, Abfrage- und andere APIs sind ausgeschlossen. Die Produktionsplanung sollte zudem Peakfaktoren, Redundanz und Monitoring berücksichtigen."
+      },
+      "methodology_title": "Testmethodik",
+      "methodology": {
+        "item1": "Endpunkt: POST /openapi/v1/orders mit Client-Credentials-Authentifizierung",
+        "item2": "Szenario: minimale Bestellpayload nur mit Pflichtfeldern; keine Aufrufe von Zahlungskanälen",
+        "item3": "Werkzeug: Grafana k6 mit gestufter Last bis 50 VUs über 19 Minuten 30 Sekunden",
+        "item4": "Daten: Testbestellungen mit Präfix LOADTEST- zur Identifikation und Bereinigung"
+      },
+      "meta": {
+        "interface": "Endpunkt",
+        "tool": "Lasttest-Werkzeug",
+        "duration": "Dauer",
+        "orders": "Erstellte Bestellungen"
+      },
+      "evidence_title": "Testnachweise",
+      "evidence_subtitle": "k6-Zusammenfassungsausgabe und Systemressourcen-Monitoring während des Lasttests.",
+      "screenshot_summary_alt": "Abschließende k6-Lasttest-Zusammenfassung",
+      "screenshot_summary_caption": "Abbildung 1: k6-Zusammenfassung — 165.229 Bestellungen bei 141 TPS erstellt, P95 353 ms, P99 404 ms, 0 % Fehler.",
+      "screenshot_50vu_alt": "Systemmonitoring bei 50 gleichzeitigen Nutzern",
+      "screenshot_50vu_caption": "Abbildung 2: Peak bei 50 VU — Java und MySQL sind die Haupt-CPU-Verbraucher; Gesamt-CPU ~61 %, Dienst blieb verfügbar.",
+      "screenshot_20vu_alt": "Systemmonitoring bei 20 gleichzeitigen Nutzern",
+      "screenshot_20vu_caption": "Abbildung 3: Stufe 20 VU — Last steigt schrittweise; Anwendung und Datenbank stehen unter gemeinsamer Last.",
+      "conclusion_title": "Fazit",
+      "conclusion_body": "Der FilixPay-OpenAPI-Endpunkt create-order blieb bei 50 gleichzeitigen Nutzern stabil — mit 100 % Erfolgsrate und 404 ms P99-Latenz. Das liefert eine belastbare Basis für Kapazitätsplanung und Integrationserwartungen.",
+      "cta_title": "Höhere Parallelität oder privates Benchmarking benötigt?",
+      "cta_desc": "Kontaktieren Sie uns für eine maßgeschneiderte Performance-Bewertung und Deployment-Optionen."
+    },
+    "identity": {
+      "title": "Identität & Authentifizierung",
+      "hero_title": "Enterprise-Identität: Finanztaugliche Sicherheitsgrundlage mit Keycloak",
+      "hero_desc": "In Zahlungssystemen ist Identitätsauthentifizierung nicht nur die erste Tür der Nutzererfahrung, sondern auch die zentrale Verteidigungslinie für Mittelsicherheit und konformen Betrieb. Wir setzen Keycloak — eine von Red Hat geführte Open-Source-Plattform für Identity and Access Management (IAM) — als einheitliche Authentifizierungs-Engine ein und bieten so finanztaugliche Sicherheit, globale Compliance-Unterstützung und Kapazität für zig Millionen Nutzer für Ihr Zahlungsgeschäft.",
+      "why_keycloak_title": "✅ Warum Keycloak? — Bewährt bei führenden globalen Institutionen",
+      "why_keycloak_desc": "Keycloak wird in zahlreichen Branchen mit hohen Sicherheitsanforderungen intensiv eingesetzt — darunter Finanzen, öffentliche Verwaltung, Telekommunikation und Cloud Computing:",
+      "cases": [
+        {
+          "name": "Hitachi",
+          "desc": "Aufbau eines Authorization-Servers für japanische Banken gemäß Financial-grade API (FAPI), bestanden in über 700 Konsistenztests — für die strengsten Open-Banking-Compliance-Anforderungen."
+        },
+        {
+          "name": "Austrian Federal Computing Centre (BRZ)",
+          "desc": "Als Technologiepartner der österreichischen Regierung unterstützt es die einheitliche Authentifizierung für über 2 Millionen Nutzer und über 130 öffentliche Dienste — seit vielen Jahren stabil im Betrieb."
+        },
+        {
+          "name": "Infosys",
+          "desc": "Aufbau einer Identitätsplattform für einen großen japanischen Pharmakonzern: Verwaltung von über 2 Millionen Nutzern und sichere tägliche Anmeldung von über 4.000 Apothekern in über 750 Apotheken."
+        },
+        {
+          "name": "VMware (Broadcom)",
+          "desc": "Tiefe Integration von Keycloak in die Telco-Cloud-Operations-Plattform zur automatisierten Verwaltung von Nutzern, Rollen und Berechtigungen."
+        }
+      ],
+      "cases_conclusion": "Diese Fälle belegen: Keycloak bewältigt nicht nur hohe Parallelität und großskaligen Nutzerdruck, sondern erfüllt auch die Compliance-Schwellen stark regulierter Branchen wie Finanzen und öffentliche Verwaltung.",
+      "features_title": "🔐 Sicherheitsfunktionen für Zahlungsszenarien",
+      "feature_1_title": "1. Finanztaugliche Protokollunterstützung",
+      "feature_1_desc": "Vollständige Implementierung von OpenID Connect, OAuth 2.0, SAML 2.0; native Unterstützung der FAPI-(Financial-grade API-)Sicherheitsspezifikationen für PSD2- und Open-Banking-Compliance; Unterstützung von PKCE, MTLS, JWT-Signaturprüfung und weiteren fortgeschrittenen Sicherheitsmechanismen.",
+      "feature_2_title": "2. Starke Authentifizierung & Zugriffskontrolle",
+      "feature_2_desc": "Multi-Factor Authentication (MFA): SMS, TOTP, WebAuthn (FIDO2); Role-Based Access Control (RBAC) und fein granulare Berechtigungsrichtlinien; Sitzungsverwaltung: automatischer Timeout, erzwungene Abmeldung und Gerätebindung.",
+      "feature_3_title": "3. Compliance-fähige Architektur",
+      "feature_3_desc": "GDPR Ready: Datenminimierung, Einwilligungsverwaltung, Datenexport/-löschung; PCI DSS Friendly: kein Kontakt zu Karteninhaberdaten (PAN), dient nur als Authentifizierungsschicht und verringert den Compliance-Umfang; kompatibel mit Anforderungen des Multi-Level Protection Scheme (MLPS).",
+      "feature_4_title": "4. Hohe Verfügbarkeit & Skalierbarkeit",
+      "feature_4_desc": "Unterstützt Cluster-Deployment, Datenbank-Sharding und Cache-Optimierung; in mehreren nationalen Plattformen bewährt für Millionen täglicher aktiver Nutzer; privates Deployment sichert Datensouveränität und Netzwerktrennung.",
+      "integration_title": "🛠️ Nahtlose Integration in Ihr Zahlungssystem",
+      "integration_desc": "Keycloak bietet standardisierte Schnittstellen für die einfache Integration mit:",
+      "integration_items": [
+        "Merchant-Backend-Managementsystem (SSO)",
+        "Authentifizierung von Payment-Gateway-Operatoren",
+        "Partner-API-Zugriffsberechtigung",
+        "Interne Mitarbeiter-Berechtigungsplattform"
+      ],
+      "integration_footer": "Unterstützt außerdem die Föderation mit bestehenden Identitätsquellen wie LDAP, Active Directory und Social Accounts — für eine reibungslose Migration ohne unnötigen Aufwand.",
+      "choice_title": "💡 Unsere Wahl: Open Source + Schutz auf Enterprise-Niveau",
+      "choice_desc": "Keycloak ist ein von Red Hat unterstütztes Open-Source-Projekt und bietet Ihnen:",
+      "choice_item_1": "Kostenvorteil durch null Lizenzgebühren",
+      "choice_item_2": "Technisches Ökosystem mit aktiver Community und umfassender Dokumentation",
+      "choice_item_3": "Optionen für Enterprise-SLA-Support mit Red Hat Single Sign-On (kommerzielle Version)",
+      "cta_quote": "„Wir haben Keycloak nicht nur gewählt, weil es kostenlos ist, sondern weil es von globalen Finanz- und Regierungsinstitutionen geprüft wurde — eine Identitäts-Engine, die wirklich die Sicherheit von Zahlungssystemen tragen kann.“",
+      "cta_desc": "Jetzt erleben: Unsere Zahlungsplattform verfügt über ein integriertes Keycloak-Authentifizierungssystem, das eine schnelle Anbindung an Ihr bestehendes IAM ermöglicht und Ihnen hilft, Sicherheit und Effizienz optimal auszubalancieren."
+    },
+    "blockchain": {
+      "title": "Blockchain-Integration",
+      "subtitle": "Multi-Chain-Anbindung und Cross-Chain-Interoperabilität",
+      "hero_title": "Jede Chain verbinden, jeder Transaktion vertrauen",
+      "hero_desc": "Native Unterstützung führender Consortium-Blockchains mit Cross-Chain-Verifikation und compliance-fähigen Audit-Trails.",
+      "deprecated": {
+        "badge": "Veraltet",
+        "title": "Diese Technologieausrichtung entspricht nicht mehr der Produktpositionierung von FilixPay",
+        "desc": "FilixPay konzentriert sich auf Enterprise-Zahlungsinfrastruktur — Zahlungskonnektivität, Transaktionsmanagement, Settlement und Merchant-Betrieb.",
+        "extra": "Diese Seite bleibt als historische Referenz erhalten und wird nicht mehr als Kernfähigkeit von FilixPay indexiert.",
+        "notice_title": "Empfohlener nächster Schritt",
+        "notice_body": "Erfahren Sie, wie FilixPay Unternehmen beim Aufbau und Betrieb von Zahlungsinfrastruktur unterstützt.",
+        "cta": "Zahlungsplattform entdecken",
+        "cta_title": "Weiter mit Zahlungsinfrastruktur",
+        "cta_desc": "Sehen Sie die Fähigkeiten der FilixPay Enterprise-Zahlungsplattform."
+      }
+    }
+  }
+}

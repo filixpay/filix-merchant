@@ -1,0 +1,23 @@
+{
+  "CreditTransaction": {
+    "title": "Credit Transaction History",
+    "subtitle": "View detailed history of credit limit usage, repayments, and adjustments.",
+    "headers": {
+      "business_id": "Business ID",
+      "type": "Type",
+      "amount": "Amount",
+      "balance_before": "Used Before",
+      "balance_after": "Used After",
+      "customer": "Customer",
+      "created_at": "Transaction Time"
+    },
+    "types": {
+      "USE": "Usage",
+      "REPAY": "Repayment",
+      "ADJUST": "Adjustment",
+      "REFUND": "Refund"
+    },
+    "loading": "Loading transaction history...",
+    "empty": "No credit transaction history found."
+  }
+}

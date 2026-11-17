@@ -1,0 +1,75 @@
+{
+  "Refunds": {
+    "create_modal": {
+      "create_success": "Refund order created successfully",
+      "create_failed": "Failed to create refund order"
+    },
+    "status": {
+      "REQUESTED": "Requested",
+      "EXECUTING": "Processing",
+      "SUCCEEDED": "Succeeded",
+      "FAILED": "Failed",
+      "CANCELLED": "Cancelled"
+    },
+    "timeline": {
+      "title": "Refund progress",
+      "progress_title": "Status",
+      "empty": "No timeline events yet.",
+      "awaiting_approval_title": "Awaiting approval",
+      "awaiting_approval_desc": "Amount exceeds the auto-execute threshold ({threshold}). The refund is accepted but will not hit the channel until approved.",
+      "steps": {
+        "requested": "Requested",
+        "approval": "Approval",
+        "executing": "Processing",
+        "terminal": "Done"
+      },
+      "events": {
+        "REQUESTED": "Refund requested",
+        "AWAITING_APPROVAL": "Awaiting approval",
+        "EXECUTING": "Execution started",
+        "ATTEMPT_CREATED": "Channel attempt created",
+        "ATTEMPT_SUBMITTING": "Submitting to channel",
+        "ATTEMPT_SUBMITTED": "Submitted to channel",
+        "ATTEMPT_FAILED_SUBMIT": "Channel submit failed",
+        "ATTEMPT_SUCCEEDED": "Channel refund succeeded",
+        "ATTEMPT_FAILED": "Channel refund failed",
+        "SUCCEEDED": "Refund succeeded",
+        "FAILED": "Refund failed",
+        "CANCELLED": "Refund cancelled"
+      }
+    },
+    "settings": {
+      "title": "Refund settings",
+      "subtitle": "Configure when refunds execute automatically versus requiring merchant approval.",
+      "settlement_currency": "Settlement currency",
+      "threshold": "Auto-execute threshold",
+      "threshold_help": "Refunds at or below this amount (in settlement currency) execute automatically. Larger amounts stay pending until approved.",
+      "threshold_required": "Enter a threshold",
+      "threshold_min": "Threshold cannot be negative",
+      "unlimited": "Skip amount-based approval",
+      "unlimited_help": "When enabled, amount alone never triggers approval. FX conversion failures can still require approval.",
+      "fx_help": "Cross-currency refunds are converted to settlement currency via FX before comparison. If no quote is available, the refund still creates but awaits approval.",
+      "using_platform_default": "Using platform default threshold: {threshold}",
+      "save": "Save settings",
+      "save_success": "Refund settings saved",
+      "save_failed": "Failed to save refund settings",
+      "load_failed": "Failed to load refund settings"
+    },
+    "approvals": {
+      "title": "Refund approvals",
+      "subtitle": "Review refunds that exceeded the auto-execute threshold and are waiting for approval.",
+      "empty": "No refunds awaiting approval.",
+      "approve": "Approve",
+      "reject": "Reject",
+      "approve_confirm": "Approve this refund?",
+      "approve_confirm_desc": "Approval will execute the refund through the payment channel.",
+      "reject_confirm": "Reject this refund?",
+      "reject_confirm_desc": "Rejection cancels the refund request. It will not hit the channel.",
+      "approve_success": "Refund approved and execution started",
+      "reject_success": "Refund rejected and cancelled",
+      "approve_failed": "Failed to approve refund",
+      "reject_failed": "Failed to reject refund",
+      "detail_failed": "Failed to load refund details"
+    }
+  }
+}

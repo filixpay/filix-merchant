@@ -1,0 +1,21 @@
+{
+  "PayoutAudit": {
+    "title": "Pending Payout Audit",
+    "subtitle": "Manage and audit payout applications initiated by merchants.",
+    "headers": {
+      "order_id": "Order ID",
+      "total_amount": "Total Amount",
+      "fee": "Fee",
+      "buyer_code": "Buyer Code",
+      "seller_code": "Seller Code",
+      "seller_name": "Seller Name",
+      "buyer_name": "Buyer Name",
+      "approval_status": "Approval Status",
+      "payout_status": "Payout Status",
+      "created_at": "Created At",
+      "actions": "Actions"
+    },
+    "audit_btn": "Audit",
+    "empty": "No pending payout records found."
+  }
+}

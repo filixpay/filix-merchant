@@ -1,0 +1,445 @@
+{
+  "Disputes": {
+    "title": "النزاعات والاسترجاعات",
+    "subtitle": "راقب حالات الاسترجاع ومواعيد الرد والإجراءات المطلوبة من التاجر.",
+    "empty": "لا توجد حالات نزاع.",
+    "back_to_list": "العودة إلى النزاعات",
+    "kpis": {
+      "action_required": "حالات تتطلب إجراءً",
+      "due_soon": "مستحقة قريبًا (<3 أيام)",
+      "overdue": "متأخرة"
+    },
+    "headers": {
+      "case_number": "رقم الحالة",
+      "order_id": "معرّف الطلب",
+      "channel": "القناة",
+      "created_at": "تاريخ الإنشاء",
+      "amount": "المبلغ",
+      "reason": "السبب",
+      "priority": "الأولوية",
+      "status": "الحالة",
+      "response_due": "موعد الرد"
+    },
+    "filters": {
+      "keyword": "رقم الحالة / معرّف الطلب",
+      "status": "الحالة",
+      "channel": "القناة",
+      "all_status": "جميع الحالات"
+    },
+    "table_total": "الإجمالي {count}",
+    "priority": {
+      "CRITICAL": "حرجة",
+      "HIGH": "عالية",
+      "MEDIUM": "متوسطة",
+      "LOW": "منخفضة"
+    },
+    "status": {
+      "DRAFT": "مسودة",
+      "SUBMITTED": "مُرسَلة",
+      "UNDER_REVIEW": "قيد المراجعة",
+      "WON": "رابحة",
+      "LOST": "خاسرة",
+      "ACCEPTED": "مقبولة"
+    },
+    "evidence_category": {
+      "RECEIPT": "إيصال",
+      "SHIPPING": "شحن",
+      "COMMUNICATION": "مراسلات",
+      "OTHER": "أخرى"
+    },
+    "action_center": {
+      "title": "مركز إجراءات التاجر",
+      "locked": "هذه الحالة مقفلة. لم يعد بالإمكان تعديل الأدلة.",
+      "upload_hint": "انقر أو اسحب الملفات لرفع الأدلة",
+      "file": "الملف",
+      "category": "الفئة",
+      "upload_types": "يدعم PDF وJPG وPNG وWEBP. الحد الأقصى {size} ميجابايت لكل ملف.",
+      "file_size": "الحجم",
+      "file_too_large": "الملف كبير جدًا. الحد الأقصى {size} ميجابايت لكل ملف."
+    },
+    "actions": {
+      "save_draft": "حفظ المسودة",
+      "submit": "إرسال الأدلة",
+      "accept_liability": "قبول المسؤولية",
+      "accept_liability_confirm_title": "قبول مسؤولية الاسترجاع؟",
+      "accept_liability_confirm_body": "لن تتمكن من إرسال الأدلة بعد قبول المسؤولية.",
+      "submit_confirm_title": "إرسال الأدلة؟",
+      "submit_confirm_body": "لا يمكن التراجع عن الإرسال. ستُرسل الأدلة إلى قناة الدفع للمراجعة."
+    },
+    "messages": {
+      "draft_saved": "تم حفظ مسودة الأدلة",
+      "submitted": "تم إرسال الأدلة للمراجعة",
+      "liability_accepted": "تم قبول المسؤولية",
+      "evidence_uploaded": "تم رفع ملف الأدلة",
+      "evidence_required": "يرجى رفع ملف أدلة واحد على الأقل"
+    },
+    "reason_codes": {
+      "fraudulent": "احتيالي",
+      "duplicate": "رسوم مكررة",
+      "product_not_received": "لم يُستلم المنتج",
+      "unrecognized": "رسوم غير معروفة",
+      "credit_not_processed": "لم تُعالَج عملية الاسترداد",
+      "general": "نزاع عام",
+      "incorrect_account_details": "بيانات حساب غير صحيحة",
+      "insufficient_funds": "رصيد غير كافٍ",
+      "bank_cannot_process": "البنك غير قادر على المعالجة",
+      "debit_not_authorized": "خصم غير مصرّح به",
+      "customer_initiated": "بمبادرة من العميل",
+      "merchandise_or_service_not_received": "لم تُستلم البضاعة أو الخدمة",
+      "unauthorized": "غير مصرّح",
+      "merchandise_or_service_not_as_described": "البضاعة أو الخدمة بخلاف الوصف",
+      "cancelled_recurring_billing": "تم إلغاء الفوترة المتكررة",
+      "non_receipt": "عدم الاستلام",
+      "not_as_described": "بخلاف الوصف",
+      "duplicate_transaction": "معاملة مكررة",
+      "credit_not_received": "لم يُستلم الاسترداد"
+    },
+    "timeline": {
+      "title": "الجدول الزمني للحالة",
+      "actor": "بواسطة {actor}",
+      "actors": {
+        "system": "تشغيل تلقائي من النظام",
+        "merchant": "إجراء من التاجر"
+      },
+      "events": {
+        "CASE_OPENED": "فُتح النزاع",
+        "EVIDENCE_DRAFT_SAVED": "تم حفظ مسودة الأدلة",
+        "EVIDENCE_SUBMITTED": "تم إرسال الأدلة",
+        "REVIEW_STARTED": "قيد مراجعة البنك",
+        "CHANNEL_STATUS_CHANGED": "تم تحديث حالة القناة",
+        "CASE_RESOLVED": "تم حل النزاع",
+        "LIABILITY_ACCEPTED": "تم قبول المسؤولية",
+        "EVIDENCE_FORWARDED_TO_CHANNEL": "تم تمرير الأدلة إلى القناة",
+        "CHANNEL_EVIDENCE_SUBMIT_FAILED": "فشل إرسال الأدلة إلى القناة"
+      },
+      "titles": {
+        "dispute_opened": "فُتح النزاع",
+        "dispute_resolved": "تم حل النزاع",
+        "evidence_draft_saved": "تم حفظ مسودة الأدلة",
+        "evidence_submitted": "تم إرسال الأدلة",
+        "under_bank_review": "قيد مراجعة البنك",
+        "liability_accepted": "تم قبول المسؤولية",
+        "channel_status_updated": "تم تحديث حالة القناة",
+        "evidence_forwarded_to_channel": "تم تمرير الأدلة إلى القناة",
+        "channel_evidence_submit_failed": "فشل إرسال الأدلة إلى القناة"
+      },
+      "descriptions": {
+        "charge_dispute_created": "Stripe: تم إنشاء نزاع",
+        "charge_dispute_updated": "Stripe: تم تحديث النزاع",
+        "charge_dispute_closed": "Stripe: تم إغلاق النزاع",
+        "charge_dispute_funds_withdrawn": "Stripe: سُحبت أموال النزاع",
+        "charge_dispute_funds_reinstated": "Stripe: أُعيدت أموال النزاع",
+        "customer_dispute_created": "PayPal: تم إنشاء نزاع",
+        "customer_dispute_updated": "PayPal: تم تحديث النزاع",
+        "customer_dispute_resolved": "PayPal: تم حل النزاع",
+        "submitted_files_to_channel": "تم إرسال {count} ملف/ملفات إلى {channel}",
+        "files_attached": "أُرفق {count} ملف/ملفات",
+        "channel_status_transition": "{oldStatus} ← {newStatus}",
+        "case_locked_for_review": "الحالة مقفلة للمراجعة",
+        "merchant_accepted_chargeback_liability": "قبل التاجر مسؤولية الاسترجاع"
+      },
+      "channel_statuses": {
+        "needs_response": "يتطلب ردًا",
+        "under_review": "قيد المراجعة",
+        "won": "رابحة",
+        "lost": "خاسرة",
+        "charge_refunded": "تم استرداد الرسوم",
+        "warning_needs_response": "تحذير يتطلب ردًا",
+        "warning_under_review": "تحذير قيد المراجعة",
+        "warning_closed": "تم إغلاق التحذير"
+      },
+      "resolutions": {
+        "MERCHANT_WON": "فاز التاجر",
+        "BUYER_WON": "فاز المشتري",
+        "MERCHANT_ACCEPTED": "قبل التاجر",
+        "PARTIAL": "فوز جزئي"
+      }
+    },
+    "detail": {
+      "title": "حالة النزاع",
+      "reason_code": "رمز السبب",
+      "not_found": "لم يتم العثور على حالة النزاع."
+    },
+    "coverage_assessment": {
+      "title": "تقييم التغطية",
+      "headers": {
+        "status": "حالة التغطية",
+        "provider": "المزوّد",
+        "stage": "مرحلة التقييم",
+        "limit": "حد التغطية",
+        "reference": "المرجع",
+        "assessment_id": "معرّف التقييم"
+      },
+      "status": {
+        "COVERED": "مغطى",
+        "NOT_COVERED": "غير مغطى",
+        "PARTIAL": "مغطى جزئيًا"
+      },
+      "stage": {
+        "PRE_AUTH": "قبل التفويض",
+        "POST_AUTH": "بعد التفويض",
+        "MANUAL": "يدوي",
+        "ASYNC_UPDATE": "تحديث غير متزامن"
+      },
+      "timeline": {
+        "title": "الجدول الزمني للتقييم"
+      }
+    },
+    "coverage": {
+      "title": "حماية الاسترجاع",
+      "headers": {
+        "status": "حالة المطالبة",
+        "provider": "المزوّد",
+        "amount": "مبلغ المطالبة",
+        "provider_claim_id": "معرّف مطالبة المزوّد"
+      },
+      "status": {
+        "CREATED": "تم الإنشاء",
+        "UNDER_REVIEW": "قيد المراجعة",
+        "APPROVED": "موافق عليها",
+        "REJECTED": "مرفوضة",
+        "PAID": "مدفوعة",
+        "CLOSED": "مغلقة"
+      },
+      "event_type": {
+        "CREATED": "تم إنشاء المطالبة",
+        "SUBMITTED": "أُرسلت إلى المزوّد",
+        "UNDER_REVIEW": "قيد المراجعة",
+        "APPROVED": "موافق عليها",
+        "REJECTED": "مرفوضة",
+        "PAID": "مدفوعة",
+        "CLOSED": "مغلقة"
+      },
+      "timeline": {
+        "title": "الجدول الزمني للتغطية"
+      }
+    },
+    "response_due": {
+      "overdue": "⚠️ متأخرة",
+      "hours_left": "⚠️ متبقي {hours} ساعة",
+      "days_left": "متبقي {days} يومًا"
+    }
+  },
+  "Support": {
+    "entry_label": "مركز الدعم",
+    "entry_label_with_unread": "مركز الدعم، {count} ردود جديدة",
+    "entry_collapse": "تصغير مدخل الدعم",
+    "entry_expand": "توسيع مدخل الدعم",
+    "title": "الدعم",
+    "create_title": "اطرح سؤالًا",
+    "new_question": "سؤال جديد",
+    "back_to_list": "العودة إلى القائمة",
+    "refresh": "تحديث",
+    "question_label": "السؤال",
+    "question_placeholder": "صِف مشكلتك…",
+    "submit_question": "إرسال",
+    "create_success": "تم إرسال السؤال",
+    "ticket_title": "التذكرة {number}",
+    "subject_label": "الموضوع: ",
+    "view_detail": "عرض التفاصيل",
+    "answered_hint": "تمت الإجابة على هذه التذكرة. لطرح متابعة، ",
+    "create_new_ticket": "أنشئ تذكرة جديدة",
+    "status": {
+      "open": "مفتوحة",
+      "answered": "تم الرد"
+    },
+    "sender": {
+      "merchant": "أنا",
+      "operator": "الدعم"
+    },
+    "empty": {
+      "list": "لا محادثات دعم بعد",
+      "messages": "لا رسائل بعد"
+    },
+    "errors": {
+      "load_list": "فشل تحميل المحادثات",
+      "load_detail": "فشل تحميل المحادثة",
+      "create": "فشل إرسال السؤال",
+      "blank_content": "يرجى إدخال سؤالك"
+    }
+  },
+  "Notifications": {
+    "title": "الإشعارات والمهام",
+    "subtitle": "تابع رسائل المنصة والعناصر التي تتطلب إجراءً منك.",
+    "view_all": "عرض الكل",
+    "loading": "جاري التحميل…",
+    "mark_all_read": "تعليم الكل كمقروء",
+    "tab": {
+      "notifications": "الإشعارات",
+      "tasks": "المهام"
+    },
+    "filter": {
+      "all": "الكل",
+      "unread": "غير مقروء"
+    },
+    "columns": {
+      "reference": "المرجع",
+      "details": "التفاصيل",
+      "status_time": "الحالة / الوقت"
+    },
+    "empty": {
+      "notifications": "لا إشعارات بعد.",
+      "unread": "لا إشعارات غير مقروءة.",
+      "tasks": "لا مهام مفتوحة.",
+      "completed_tasks": "لا مهام مكتملة."
+    },
+    "severity": {
+      "INFO": "معلومات",
+      "SUCCESS": "نجاح",
+      "WARNING": "تحذير",
+      "ERROR": "خطأ"
+    },
+    "priority": {
+      "CRITICAL": "حرجة",
+      "HIGH": "عالية",
+      "MEDIUM": "متوسطة",
+      "LOW": "منخفضة"
+    },
+    "banner": {
+      "dismiss": "تجاهل",
+      "action": "اتخذ إجراءً"
+    },
+    "resume_link": "استئناف الدفع",
+    "widget": {
+      "action_center": "مركز الإجراءات",
+      "recent": "الإشعارات الأخيرة",
+      "summary": "{openTasks} مهمة/مهام مفتوحة · {overdue} متأخرة"
+    },
+    "counts": {
+      "unread": "إشعارات غير مقروءة",
+      "open_tasks": "مهام مفتوحة"
+    },
+    "task": {
+      "action": "معالجة",
+      "review_action": "مراجعة",
+      "due": "مستحق {time}",
+      "overdue": "متأخر · {time}"
+    },
+    "tasks": {
+      "open": "مهام مفتوحة",
+      "completed": "مكتملة"
+    },
+    "status": {
+      "read": "مقروء",
+      "unread": "غير مقروء"
+    },
+    "actions": {
+      "view_details": "عرض التفاصيل"
+    },
+    "showing_count": "عرض {shown} من {total}"
+  },
+  "AuditLogs": {
+    "title": "سجلات التدقيق",
+    "subtitle": "سجل تدقيق للقراءة فقط للإجراءات الحساسة أمنيًا في حساب التاجر.",
+    "empty": "لا سجلات تدقيق.",
+    "table_total": "الإجمالي {count} سجلًا",
+    "view_link": "عرض",
+    "timeline_hint": "عرض الجدول الزمني في تفاصيل الطلب ذي الصلة",
+    "metadata_truncated": "تم اقتطاع البيانات الوصفية",
+    "columns": {
+      "time": "الوقت",
+      "actor": "الفاعل",
+      "action": "الإجراء",
+      "resource": "المورد",
+      "result": "النتيجة",
+      "link": "الرابط"
+    },
+    "filter": {
+      "date_range": "نطاق التاريخ",
+      "date_range_start": "وقت البدء",
+      "date_range_end": "وقت الانتهاء",
+      "action": "نوع الإجراء",
+      "result": "النتيجة"
+    },
+    "result": {
+      "SUCCESS": "نجاح",
+      "FAILURE": "فشل",
+      "DENIED": "مرفوض"
+    },
+    "actor_type": {
+      "MERCHANT_USER": "مستخدم تاجر",
+      "OPERATOR": "مشغّل",
+      "SYSTEM": "النظام",
+      "API": "API",
+      "WEBHOOK": "Webhook"
+    },
+    "detail": {
+      "reason": "السبب",
+      "event_id": "معرّف الحدث",
+      "request_id": "معرّف الطلب",
+      "trace_id": "معرّف التتبع",
+      "metadata": "البيانات الوصفية"
+    }
+  },
+  "audit": {
+    "action": {
+      "auth.login": "تسجيل الدخول",
+      "auth.logout": "تسجيل الخروج",
+      "auth.password.change": "تغيير كلمة مرور الدفع",
+      "auth.mfa.enable": "تفعيل MFA",
+      "auth.mfa.disable": "تعطيل MFA",
+      "auth.access.denied": "تم رفض الوصول",
+      "apikey.create": "إنشاء مفتاح API",
+      "apikey.rotate": "تدوير مفتاح API",
+      "apikey.delete": "حذف مفتاح API",
+      "webhook.create": "إنشاء webhook",
+      "webhook.update": "تحديث webhook",
+      "webhook.delete": "حذف webhook",
+      "webhook.replay": "إعادة تشغيل webhook",
+      "merchant.config.update": "تحديث إعدادات التاجر",
+      "coverage.enable": "تفعيل التغطية",
+      "coverage.disable": "تعطيل التغطية",
+      "coverage.update": "تحديث إعدادات التغطية",
+      "risk.review.approve": "تمت الموافقة على المراجعة",
+      "risk.review.reject": "رُفضت المراجعة",
+      "risk.review.assign": "أُسندت المراجعة",
+      "role.grant": "منح دور",
+      "role.revoke": "سحب دور",
+      "permission.update": "تحديث صلاحية",
+      "operator.create": "إنشاء مشغّل",
+      "operator.update": "تحديث مشغّل",
+      "operator.disable": "تعطيل مشغّل"
+    }
+  },
+  "RiskReviews": {
+    "title": "قائمة مراجعة المخاطر",
+    "subtitle": "قائمة للقراءة فقط للطلبات والمدفوعات المشبوهة المعلّمة للمراجعة اليدوية.",
+    "empty": "لا عناصر مراجعة مخاطر.",
+    "table_total": "الإجمالي {count} مراجعة",
+    "filters": {
+      "keyword": "البحث في المراجعات",
+      "status": "الحالة",
+      "priority": "الأولوية",
+      "review_type": "نوع المراجعة"
+    },
+    "detail": {
+      "title": "تفاصيل المراجعة",
+      "back_to_list": "العودة إلى المراجعات",
+      "not_found": "لم يتم العثور على المراجعة.",
+      "review_type": "نوع المراجعة",
+      "reason_code": "رمز السبب",
+      "queued_at": "وقت الإدراج في القائمة",
+      "decided_at": "وقت القرار",
+      "decision_note": "ملاحظة القرار",
+      "linked_fraud": "حدث احتيال مرتبط",
+      "resume_link": "رابط الاستئناف"
+    },
+    "resume_link": "استئناف الدفع",
+    "headers": {
+      "resource": "المورد",
+      "reason": "السبب",
+      "priority": "الأولوية",
+      "status": "الحالة",
+      "created_at": "وقت التعليم"
+    },
+    "resource_type": {
+      "ORDER": "طلب",
+      "PAYOUT": "دفعة صادرة"
+    },
+    "status": {
+      "PENDING": "قيد الانتظار",
+      "APPROVED": "موافق عليها",
+      "REJECTED": "مرفوضة"
+    }
+  }
+}

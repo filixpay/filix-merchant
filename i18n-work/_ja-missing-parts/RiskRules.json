@@ -1,0 +1,34 @@
+{
+  "RiskRules": {
+    "title": "Risk Rules",
+    "subtitle": "View platform and merchant PRE_AUTH rules (read-only).",
+    "empty": "No risk rules found.",
+    "headers": {
+      "name": "Name",
+      "rule_type": "Type",
+      "severity": "Severity",
+      "enforcement": "Enforcement",
+      "scope": "Scope",
+      "enabled": "Enabled",
+      "priority": "Priority",
+      "config": "Configuration"
+    },
+    "rule_type": {
+      "VELOCITY": "Velocity",
+      "AMOUNT": "Amount"
+    },
+    "enforcement": {
+      "BLOCK": "Block",
+      "REVIEW_BEFORE_AUTH": "Review before payment"
+    },
+    "scope": {
+      "platform": "Platform",
+      "merchant": "Merchant"
+    },
+    "config": {
+      "schema": "Schema",
+      "velocity": "Max {maxCount} attempts within {windowMinutes} minutes",
+      "amount": "Threshold: {threshold}"
+    }
+  }
+}

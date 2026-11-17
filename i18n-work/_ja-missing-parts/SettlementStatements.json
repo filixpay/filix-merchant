@@ -1,0 +1,96 @@
+{
+  "SettlementStatements": {
+    "title": "Settlement records",
+    "subtitle": "View day/week/month settlement periods and the settlement amount for the current period.",
+    "empty": "No settlement statements found.",
+    "loadError": "Failed to load settlement statements.",
+    "noAssets": "No available balance assets to query settlement statements.",
+    "periodNotStarted": "This period has not started yet, so the statement is unavailable.",
+    "downloadError": "Failed to download the settlement statement.",
+    "openHint": "This period is still open; amounts are live as of now.",
+    "openBanner": "This period is still open; amounts are live as of now.",
+    "filters": {
+      "asset": "Asset",
+      "assetPlaceholder": "Select asset",
+      "allAssets": "All currencies",
+      "periodKind": "Period"
+    },
+    "periodKind": {
+      "DAY": "Day",
+      "WEEK": "Week",
+      "MONTH": "Month"
+    },
+    "periodState": {
+      "OPEN": "Open",
+      "CLOSED": "Closed"
+    },
+    "coverageState": {
+      "OK": "OK",
+      "PARTIAL_COVERAGE": "Partial coverage",
+      "INCONSISTENT": "Inconsistent"
+    },
+    "columns": {
+      "periodKey": "Statement period",
+      "asset": "Asset",
+      "settlementNet": "Settlement Net",
+      "gross": "Gross",
+      "fee": "Fee",
+      "adjustment": "Adjustment",
+      "released": "Released",
+      "payout": "Payout",
+      "state": "State",
+      "timezone": "Timezone",
+      "periodState": "Status",
+      "coverage": "Data coverage",
+      "actions": "Actions"
+    },
+    "detail": {
+      "title": "Settlement statement detail",
+      "back": "Back to list",
+      "notFound": "Settlement statement not found.",
+      "download": "Download XLSX",
+      "summaryTitle": "Summary",
+      "asOf": "As of",
+      "window": "Window",
+      "effectiveAt": "Effective at",
+      "payoutProgress": "Payout & release progress",
+      "pendingPayout": "Pending payout",
+      "payoutStatusNone": "Status: not paid out",
+      "payoutStatusPartial": "Status: partially paid out"
+    },
+    "events": {
+      "title": "Business events",
+      "empty": "No events.",
+      "businessRef": "Business ref",
+      "gross": "Gross",
+      "fee": "Fee",
+      "adjustment": "Adjustment",
+      "noJournals": "No linked journals.",
+      "count": "{count} events",
+      "eventType": "Event type",
+      "effectiveAt": "Effective at",
+      "copy": "Copy business ref",
+      "copy_success": "Copied",
+      "copy_failed": "Copy failed"
+    },
+    "diagnostics": {
+      "title": "Diagnostics",
+      "conflicts": "Conflicts",
+      "unclassified": "Unclassified",
+      "journalId": "Journal ID",
+      "kind": "Kind",
+      "businessType": "Business type",
+      "reason": "Reason"
+    },
+    "actions": {
+      "view_detail": "Details"
+    },
+    "pagination": {
+      "total": "Total {count} statements"
+    },
+    "timezoneChip": {
+      "label": "{timezone}",
+      "fallback": "Asia/Shanghai"
+    }
+  }
+}

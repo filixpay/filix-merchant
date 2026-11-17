@@ -1,0 +1,49 @@
+{
+  "Configs": {
+    "edit_config": "Edit Configuration",
+    "edit_activation_hint": "For channels without credentials, choose open or close and submit.",
+    "edit_params_hint": "Use the list switch to open or close; edit here only updates channel parameters.",
+    "edit_success": "Configuration updated",
+    "status_toggle_open_success": "Channel opened",
+    "status_toggle_close_success": "Channel closed",
+    "status_open": "Open",
+    "status_close": "Close",
+    "status_applying": "Applying",
+    "status_rejected": "Rejected",
+    "status_forbidden": "Disabled",
+    "status_required": "Please choose open or close",
+    "headers": {
+      "sub_merchant": "Sub-Merchant"
+    },
+    "routing_hint": "Payment routing automatically selects enabled channels",
+    "scenario_unavailable": "No enabled channels in this scenario",
+    "scenario_applying": "Channel is applying and not yet live. Edit and confirm Open to enable payments",
+    "add_channel": "Add channel",
+    "channels_section": "Payment channels",
+    "channel_route_active": "Routing active",
+    "channel_route_stopped": "Channel stopped",
+    "availability_badge": "{available}/{total} available",
+    "prefill_summary": "Adding channel for \"{brand} · {scenario} · {subMerchant}\"",
+    "duplicate_channel": "This channel already exists",
+    "pagination_summary": "{total} configs · {scenarios} scenarios",
+    "edit_security_title": "Encrypted in transit",
+    "save_config": "Save configuration",
+    "secret_status": {
+      "configured": "Configured",
+      "missing": "Not set"
+    },
+    "env": {
+      "live": "Live mode",
+      "test": "Test mode"
+    },
+    "credential_help": {
+      "prompt": "Need help finding API keys?",
+      "open_console": "Open provider console"
+    },
+    "validation": {
+      "stripe_secret_prefix": "Secret Key must match the selected environment (sk_live_ / sk_test_)",
+      "stripe_publishable_prefix": "Publishable Key must match the selected environment (pk_live_ / pk_test_)",
+      "stripe_webhook_prefix": "Webhook Secret should start with whsec_"
+    }
+  }
+}

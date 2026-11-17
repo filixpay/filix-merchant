@@ -1,0 +1,473 @@
+{
+  "Payouts": {
+    "title": "Registros de saque",
+    "subtitle": "Veja o histórico e o status das suas solicitações de saque de fundos.",
+    "headers": {
+      "withdrawal_no": "Nº do saque",
+      "amount": "Valor",
+      "status": "Status",
+      "approval_status": "Status de aprovação",
+      "payee_name": "Nome do beneficiário",
+      "payee_account": "Conta do beneficiário",
+      "applicant": "Solicitante",
+      "created_at": "Criado em",
+      "updated_at": "Atualizado em"
+    },
+    "empty": "Nenhum registro de saque encontrado.",
+    "details": {
+      "title": "Detalhes do saque",
+      "withdrawal_no": "Nº do saque",
+      "amount": "Valor",
+      "currency": "Moeda",
+      "withdrawal_status": "Status",
+      "approval_status": "Status de aprovação",
+      "payee_name": "Nome do beneficiário",
+      "payee_account": "Conta do beneficiário",
+      "applicant": "Solicitante",
+      "created_at": "Criado em",
+      "updated_at": "Atualizado em"
+    }
+  },
+  "TransferRecords": {
+    "title": "Registros de transferência",
+    "subtitle": "Veja o histórico de transferências de fundos entre comerciantes.",
+    "headers": {
+      "transfer_no": "Nº da transferência",
+      "amount": "Valor",
+      "status": "Status",
+      "created_at": "Horário da transferência"
+    },
+    "empty": "Nenhum registro de transferência encontrado.",
+    "item_details": {
+      "title": "Detalhes da transferência",
+      "headers": {
+        "payee_name": "Nome do beneficiário",
+        "payee_account": "Número da conta",
+        "bank": "Nome do banco",
+        "amount": "Valor",
+        "status": "Status",
+        "created_at": "Criado em"
+      }
+    }
+  },
+  "PayoutRecords": {
+    "title": "Registros de pagamento de saída",
+    "subtitle": "Veja e gerencie o histórico de pedidos de pagamento de saída.",
+    "headers": {
+      "payout_no": "Nº do pagamento de saída",
+      "amount": "Valor do pagamento de saída",
+      "status": "Status",
+      "created_at": "Horário do pagamento de saída"
+    },
+    "empty": "Nenhum registro de pagamento de saída encontrado.",
+    "item_details": {
+      "title": "Detalhes do pagamento de saída",
+      "headers": {
+        "payee_name": "Nome do beneficiário",
+        "payee_account": "Número da conta",
+        "bank": "Nome do banco",
+        "amount": "Valor do pagamento de saída",
+        "status": "Status",
+        "created_at": "Criado em"
+      }
+    },
+    "create_modal": {
+      "title": "Criar solicitação de pagamento de saída",
+      "available_balance": "Saldo disponível",
+      "add_item": "Adicionar beneficiário",
+      "payee_code": "Código do cliente beneficiário",
+      "amount": "Valor do pagamento de saída",
+      "memo": "Observação",
+      "submit": "Enviar pagamento de saída",
+      "cancel": "Cancelar",
+      "success": "Solicitação de pagamento de saída enviada com sucesso",
+      "insufficient_balance": "O valor total do pagamento de saída não pode exceder o saldo disponível",
+      "invalid_amount": "Informe um valor de pagamento de saída válido",
+      "payee_required": "Informe o código do cliente beneficiário",
+      "at_least_one": "Adicione pelo menos um item de pagamento de saída"
+    }
+  },
+  "PaymentSplits": {
+    "title": "Divisões de pagamento",
+    "subtitle": "Veja e gerencie os detalhes da divisão do pedido e o status dos recebedores.",
+    "headers": {
+      "order_id": "ID do pedido",
+      "trade_no": "Nº da transação",
+      "amount": "Valor do pedido",
+      "order_amount": "Valor total",
+      "split_amount": "Valor da divisão",
+      "receivers": "Recebedores",
+      "status": "Status",
+      "type": "Tipo de divisão",
+      "created_at": "Criado em"
+    },
+    "filters": {
+      "order_id": "ID do pedido",
+      "status": "Status",
+      "all_status": "Todos os status"
+    },
+    "statuses": {
+      "PENDING": "Pendente",
+      "PROCESSING": "Em processamento",
+      "SUCCESS": "Sucesso",
+      "FAILED": "Falhou",
+      "PARTIAL_SUCCESS": "Sucesso parcial",
+      "CLOSED": "Fechado"
+    },
+    "types": {
+      "IMMEDIATE": "Imediata",
+      "DELAYED": "Adiada"
+    },
+    "details": {
+      "title": "Detalhes da divisão",
+      "base_info": "Informações básicas",
+      "receivers": "Detalhes do recebedor",
+      "receiver_id": "Recebedor",
+      "receiver_name": "Nome",
+      "amount": "Valor",
+      "proportion": "Proporção",
+      "status": "Status",
+      "progress": "Progresso da divisão",
+      "view_details": "Ver detalhes",
+      "serial_no": "Nº de série"
+    },
+    "empty": "Nenhum registro de divisão de pagamento encontrado."
+  },
+  "SettlementReleases": {
+    "title": "Processamento de liquidação",
+    "subtitle": "Acompanhe quando os fundos se tornam saldo disponível.",
+    "empty": "Nenhum registro de processamento de liquidação encontrado.",
+    "loadError": "Falha ao carregar o processamento de liquidação.",
+    "filters": {
+      "status": "Status",
+      "paymentId": "Buscar ID do pagamento",
+      "search": "Buscar candidato ou ID do pagamento"
+    },
+    "columns": {
+      "id": "ID do candidato",
+      "paymentId": "ID do pagamento",
+      "businessRef": "Ref. comercial",
+      "amount": "Valor",
+      "status": "Status",
+      "eligibleAt": "Horário esperado de processamento",
+      "nextEvaluationAt": "Próxima avaliação",
+      "releasedAt": "Disponível em",
+      "createdAt": "Criado em",
+      "reasonCode": "Motivo",
+      "ids": "Candidato / pagamento",
+      "paymentShort": "Pag.",
+      "statusReason": "Status e motivo",
+      "actions": "Ações"
+    },
+    "status": {
+      "PENDING": "Pendente",
+      "EVALUATING": "Em avaliação",
+      "AVAILABLE": "Disponível",
+      "BLOCKED": "Bloqueado",
+      "FAILED": "Falhou",
+      "SKIPPED": "Ignorado"
+    },
+    "detail": {
+      "title": "Detalhe do processamento de liquidação",
+      "back": "Voltar à lista",
+      "notFound": "Registro de processamento de liquidação não encontrado.",
+      "journalId": "ID do diário",
+      "releaseJournalId": "ID do diário de liberação",
+      "retryCount": "Contagem de tentativas",
+      "lastTriggeredAt": "Último acionamento em",
+      "paymentTitle": "Pagamento",
+      "paymentSucceededAt": "Pagamento concluído em",
+      "journalUnavailableTitle": "Diário de disponibilidade indisponível",
+      "journalUnavailableBody": "Este candidato referencia um diário que não pôde ser resolvido. O horário de disponibilidade fica oculto até que o fato do livro-razão esteja disponível.",
+      "bannerTitle": "A tarefa está {status}",
+      "retryChip": "{count} tentativas",
+      "reasonLabel": "Motivo:",
+      "noReason": "Nenhum código de motivo informado.",
+      "basicsTitle": "Básicos e valor",
+      "journalsTitle": "Diários do livro-razão",
+      "timelineTitle": "Cronograma",
+      "paymentAmount": "Valor do pagamento",
+      "lastTriggeredWithRetry": "Último acionamento (tentativa {count})",
+      "releasedPending": "Não liberado"
+    },
+    "actions": {
+      "view_detail": "Detalhes"
+    },
+    "pagination": {
+      "total": "Total de {count} tarefas de liquidação"
+    },
+    "amount_pending": "Avaliação pendente",
+    "copy_id": "Copiar ID do candidato",
+    "copy_payment_id": "Copiar ID do pagamento",
+    "copy_success": "Copiado",
+    "copy_failed": "Falha ao copiar",
+    "copy_business_ref": "Copiar ref. comercial",
+    "copy_journal_id": "Copiar ID do diário",
+    "copy_release_journal_id": "Copiar ID do diário de liberação",
+    "reasonGuidance": {
+      "CAPABILITY_DISABLED": "A capacidade do comerciante está desativada, então a avaliação automática de liquidação está pausada.",
+      "NOT_PRODUCTIZED": "Este produto de dinheiro ainda não está disponível para este comerciante.",
+      "OWNER_NOT_SUPPORTED": "Este tipo de titular não é suportado para esta ação de liquidação.",
+      "fallback": "O sistema retornou este código de motivo. Verifique as configurações de capacidade do comerciante."
+    },
+    "next_eval_hint": "Próxima avaliação automática",
+    "reasonShort": {
+      "CAPABILITY_DISABLED": "Capacidade desativada",
+      "CONTEXT_RESOLVE_FAILED": "Falha ao resolver o contexto",
+      "NOT_PRODUCTIZED": "Não produtizado",
+      "OWNER_NOT_SUPPORTED": "Titular não suportado"
+    }
+  },
+  "TransactionReconciliation": {
+    "title": "Conciliação de transações",
+    "subtitle": "Faturas de transações do provedor confrontadas com seus pedidos (escopo de conciliação: Pedido).",
+    "empty": "Nenhum item de conciliação neste intervalo.",
+    "emptyNoReconData": "Nenhum dado de conciliação do provedor para este canal e intervalo de datas.",
+    "emptyCoverageNoRows": "Existem faturas de transações do provedor neste intervalo, mas nenhum pedido está visível para o seu comerciante (verifique a autorização do canal, a titularidade do pedido e o mapeamento de channelOrderId).",
+    "emptyHint": "Tente outro intervalo de datas ou canal e depois Consulte — ou redefina os filtros.",
+    "query": "Consultar",
+    "reset": "Redefinir",
+    "loadError": "Falha ao carregar a conciliação de transações.",
+    "export": "Exportar CSV",
+    "exportFailed": "Falha na exportação.",
+    "noReconDataTitle": "Nenhum dado de conciliação do provedor",
+    "noReconDataDescription": "A FilixPay não recebeu um lote de conciliação do provedor para o canal e o intervalo de bizDate selecionados. Isso é diferente de não haver pedidos correspondentes.",
+    "reconciliationLevelOrder": "Pedido",
+    "filters": {
+      "channelCode": "Canal",
+      "channel_all": "Todos os canais",
+      "scope": "Escopo"
+    },
+    "channels": {
+      "ALL": "Todos os canais",
+      "STRIPE": "STRIPE",
+      "PAYPAL": "PAYPAL"
+    },
+    "scope": {
+      "default": "Somente conciliados",
+      "allTransactions": "Todas as transações"
+    },
+    "columns": {
+      "payment": "Pagamento",
+      "order": "Pedido",
+      "reconciliationLevel": "Nível de conciliação",
+      "channelCode": "Canal",
+      "reconciliationStatus": "Status da conciliação",
+      "bizDate": "Data comercial",
+      "actions": "Ações"
+    },
+    "reconStatus": {
+      "MATCHED": "Correspondente",
+      "MISMATCH": "Divergência",
+      "RECONCILIATION_PENDING": "Pendente",
+      "NOT_RECONCILED": "Não conciliado"
+    },
+    "sections": {
+      "association": "Associação pagamento / pedido",
+      "comparison": "Provedor vs FilixPay",
+      "provider": "Provedor",
+      "filixpay": "FilixPay"
+    },
+    "fields": {
+      "paymentId": "ID do pagamento",
+      "orderId": "ID do pedido",
+      "reconciliationLevel": "Nível de conciliação",
+      "channelCode": "Canal",
+      "bizDate": "Data comercial",
+      "reconciliationStatus": "Status da conciliação",
+      "mismatchType": "Tipo de divergência",
+      "providerTransactionId": "ID da transação do provedor",
+      "providerOrderId": "ID do pedido do provedor",
+      "providerAmount": "Valor do provedor",
+      "providerStatus": "Status do provedor",
+      "localAmount": "Valor FilixPay",
+      "localStatus": "Status FilixPay"
+    },
+    "detail": {
+      "title": "Detalhe da conciliação de transações",
+      "reconScopeOrder": "Escopo da conciliação: Pedido",
+      "back": "Voltar à lista",
+      "notFound": "Registro de conciliação não encontrado."
+    },
+    "actions": {
+      "view_detail": "Detalhes"
+    },
+    "copy_payment_id": "Copiar ID do pagamento",
+    "copy_order_id": "Copiar ID do pedido",
+    "copy_success": "Copiado",
+    "copy_failed": "Falha ao copiar"
+  },
+  "Settlements": {
+    "title": "Faturas de liquidação",
+    "subtitle": "Fatos de liquidação liberados com status de conciliação do provedor.",
+    "empty": "Nenhuma liquidação encontrada.",
+    "loadError": "Falha ao carregar as liquidações.",
+    "filters": {
+      "reconStatus": "Status da conciliação",
+      "asset": "Ativo",
+      "paymentId": "ID do pagamento"
+    },
+    "columns": {
+      "settlementId": "ID da liquidação",
+      "moneyInRef": "Ref. de entrada de dinheiro",
+      "asset": "Ativo",
+      "gross": "Bruto",
+      "fee": "Taxa",
+      "net": "Líquido",
+      "releasedAt": "Liberado em",
+      "reconStatus": "Conciliação",
+      "provider": "Provedor",
+      "actions": "Ações"
+    },
+    "reconStatus": {
+      "PENDING": "Pendente",
+      "MATCHED": "Correspondente",
+      "EXCEPTION": "Exceção"
+    },
+    "sections": {
+      "settlement": "Básicos da liquidação",
+      "providerSettlement": "Liquidação do provedor",
+      "reconciliation": "Conciliação",
+      "timeline": "Linha do tempo da liquidação"
+    },
+    "fields": {
+      "moneyInRef": "Ref. de entrada de dinheiro",
+      "releaseRef": "Ref. de liberação",
+      "releasedAt": "Liberado em",
+      "gross": "Bruto",
+      "fee": "Taxa",
+      "net": "Líquido",
+      "provider": "Provedor",
+      "providerReference": "Referência do provedor",
+      "settlementDate": "Data da liquidação",
+      "expectedNet": "Líquido esperado",
+      "actualNet": "Líquido real",
+      "reconStatus": "Status da conciliação",
+      "difference": "Diferença"
+    },
+    "timeline": {
+      "CANDIDATE_CREATED": "Candidato criado",
+      "RELEASED": "Liberado",
+      "LEDGER_POSTED": "Lançado no livro-razão",
+      "PROVIDER_STATEMENT_INGESTED": "Extrato do provedor ingerido",
+      "RECON_MATCHED": "Conciliação correspondente",
+      "RECON_EXCEPTION": "Exceção de conciliação"
+    },
+    "timelineEmpty": "Nenhum evento na linha do tempo ainda.",
+    "detail": {
+      "title": "Detalhe da liquidação",
+      "back": "Voltar à lista",
+      "notFound": "Liquidação não encontrada."
+    },
+    "actions": {
+      "view": "Ver",
+      "view_detail": "Ver detalhe"
+    },
+    "copy_settlement_id": "Copiar ID da liquidação",
+    "copy_success": "Copiado",
+    "copy_failed": "Falha ao copiar",
+    "copy_money_in_ref": "Copiar ref. de entrada de dinheiro",
+    "copy_release_ref": "Copiar ref. de liberação",
+    "summary": {
+      "net": "Líquido da liquidação",
+      "gross": "Bruto",
+      "fee": "Taxa",
+      "reconStatus": "Conciliação"
+    },
+    "providerEmptyNotice": "Nenhum documento de liquidação do provedor disponível ainda."
+  },
+  "SettlementStatements": {
+    "title": "Registros de liquidação",
+    "subtitle": "Veja os períodos de liquidação diário/semanal/mensal e o valor de liquidação do período atual.",
+    "empty": "Nenhum extrato de liquidação encontrado.",
+    "loadError": "Falha ao carregar os extratos de liquidação.",
+    "noAssets": "Nenhum ativo de saldo disponível para consultar extratos de liquidação.",
+    "periodNotStarted": "Este período ainda não começou, portanto o extrato está indisponível.",
+    "downloadError": "Falha ao baixar o extrato de liquidação.",
+    "openHint": "Este período ainda está aberto; os valores estão atualizados agora.",
+    "openBanner": "Este período ainda está aberto; os valores estão atualizados agora.",
+    "filters": {
+      "asset": "Ativo",
+      "assetPlaceholder": "Selecionar ativo",
+      "allAssets": "Todas as moedas",
+      "periodKind": "Período"
+    },
+    "periodKind": {
+      "DAY": "Dia",
+      "WEEK": "Semana",
+      "MONTH": "Mês"
+    },
+    "periodState": {
+      "OPEN": "Aberto",
+      "CLOSED": "Fechado"
+    },
+    "coverageState": {
+      "OK": "OK",
+      "PARTIAL_COVERAGE": "Cobertura parcial",
+      "INCONSISTENT": "Inconsistente"
+    },
+    "columns": {
+      "periodKey": "Período do extrato",
+      "asset": "Ativo",
+      "settlementNet": "Líquido da liquidação",
+      "gross": "Bruto",
+      "fee": "Taxa",
+      "adjustment": "Ajuste",
+      "released": "Liberado",
+      "payout": "Pagamento de saída",
+      "state": "Estado",
+      "timezone": "Fuso horário",
+      "periodState": "Status",
+      "coverage": "Cobertura de dados",
+      "actions": "Ações"
+    },
+    "detail": {
+      "title": "Detalhe do extrato de liquidação",
+      "back": "Voltar à lista",
+      "notFound": "Extrato de liquidação não encontrado.",
+      "download": "Baixar XLSX",
+      "summaryTitle": "Resumo",
+      "asOf": "Em",
+      "window": "Janela",
+      "effectiveAt": "Vigente em",
+      "payoutProgress": "Progresso de pagamento de saída e liberação",
+      "pendingPayout": "Pagamento de saída pendente",
+      "payoutStatusNone": "Status: não pago",
+      "payoutStatusPartial": "Status: parcialmente pago"
+    },
+    "events": {
+      "title": "Eventos comerciais",
+      "empty": "Nenhum evento.",
+      "businessRef": "Ref. comercial",
+      "gross": "Bruto",
+      "fee": "Taxa",
+      "adjustment": "Ajuste",
+      "noJournals": "Nenhum diário vinculado.",
+      "count": "{count} eventos",
+      "eventType": "Tipo de evento",
+      "effectiveAt": "Vigente em",
+      "copy": "Copiar ref. comercial",
+      "copy_success": "Copiado",
+      "copy_failed": "Falha ao copiar"
+    },
+    "diagnostics": {
+      "title": "Diagnósticos",
+      "conflicts": "Conflitos",
+      "unclassified": "Não classificados",
+      "journalId": "ID do diário",
+      "kind": "Tipo",
+      "businessType": "Tipo comercial",
+      "reason": "Motivo"
+    },
+    "actions": {
+      "view_detail": "Detalhes"
+    },
+    "pagination": {
+      "total": "Total de {count} extratos"
+    },
+    "timezoneChip": {
+      "label": "{timezone}",
+      "fallback": "Asia/Shanghai"
+    }
+  }
+}

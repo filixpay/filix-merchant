@@ -1,0 +1,25 @@
+{
+  "MoneyActivity": {
+    "title": "Activity",
+    "subtitle": "Money movements from the product Activity feed.",
+    "empty": "No activity yet.",
+    "asset_filter_label": "Asset",
+    "asset_filter_all": "All",
+    "asset_filter_placeholder": "Select asset",
+    "no_assets": "No present balances yet — activity filter needs an asset.",
+    "columns": {
+      "time": "Time",
+      "source": "Source",
+      "movement": "Movement",
+      "amount": "Amount",
+      "asset": "Asset",
+      "status": "Status",
+      "reference": "Reference"
+    },
+    "movement_filter_label": "Type",
+    "movement_filter_all": "All",
+    "movement_filter_in": "In",
+    "movement_filter_out": "Out",
+    "movement_filter_transfer": "Transfer"
+  }
+}

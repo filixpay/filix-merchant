@@ -1,0 +1,161 @@
+{
+  "Pages": {
+    "identity": {
+      "title": "Identityと認証",
+      "hero_title": "エンタープライズIdentity：Keycloakで金融グレードのセキュリティ基盤を構築",
+      "hero_desc": "決済システムにおいて、本人認証はユーザー体験の最初の扉であると同時に、資金セキュリティとコンプライアントな運用の核心防衛線です。当社はRed Hat主導のオープンソースIdentity and Access Management（IAM）プラットフォームであるKeycloakを統一認証エンジンとして採用し、金融グレードのセキュリティ、グローバルコンプライアンス対応、数千万人規模のユーザー容量を決済ビジネスに提供します。",
+      "why_keycloak_title": "✅ なぜKeycloakか？ — 世界トップ機関に検証された実績",
+      "why_keycloak_desc": "Keycloakは金融、政府、通信、クラウドコンピューティングなど、高いセキュリティ要件を持つ多くの業界で深く採用されています：",
+      "cases": [
+        {
+          "name": "Hitachi",
+          "desc": "日本の銀行向けにFinancial-grade API（FAPI）基準を満たす認可サーバーを構築。700以上の整合性テストに合格し、最も厳格なオープンバンキングコンプライアンス要件に対応。"
+        },
+        {
+          "name": "Austrian Federal Computing Centre (BRZ)",
+          "desc": "オーストリア政府の技術パートナーとして、200万以上のユーザーと130以上の公共サービス向け統一認証を支え、長年安定運用。"
+        },
+        {
+          "name": "Infosys",
+          "desc": "大規模な日本の製薬グループ向けにIdentityプラットフォームを構築。200万以上のユーザーを管理し、750以上の薬局で毎日4000人以上の薬剤師の安全なログインをサポート。"
+        },
+        {
+          "name": "VMware (Broadcom)",
+          "desc": "Telco Cloud OperationsプラットフォームにKeycloakを深く統合し、ユーザー・ロール・権限の自動管理を実現。"
+        }
+      ],
+      "cases_conclusion": "これらの事例は、Keycloakが高同時実行と大規模ユーザー負荷を処理できるだけでなく、金融・政府など高度に規制された業界のコンプライアンス閾値も満たせることを示しています。",
+      "features_title": "🔐 決済シナリオ向けに調整されたセキュリティ機能",
+      "feature_1_title": "1. 金融グレードプロトコルサポート",
+      "feature_1_desc": "OpenID Connect、OAuth 2.0、SAML 2.0を完全実装。FAPI（Financial-grade API）セキュリティ仕様をネイティブサポートし、PSD2およびオープンバンキングコンプライアンスに対応。PKCE、MTLS、JWT署名検証などの高度なセキュリティ機構をサポート。",
+      "feature_2_title": "2. 強力な認証とアクセス制御",
+      "feature_2_desc": "多要素認証（MFA）：SMS、TOTP、WebAuthn（FIDO2）。ロールベースアクセス制御（RBAC）と細粒度権限ポリシー。セッション管理：自動タイムアウト、強制ログアウト、デバイスバインド。",
+      "feature_3_title": "3. コンプライアンス対応アーキテクチャ",
+      "feature_3_desc": "GDPR Ready：データ最小化、同意管理、データエクスポート／削除。PCI DSS Friendly：カード会員データ（PAN）に接触せず、認証レイヤーのみとして機能しコンプライアンス範囲を縮小。多層防御スキーム（MLPS）要件にも対応可能。",
+      "feature_4_title": "4. 高可用性とスケーラビリティ",
+      "feature_4_desc": "クラスターデプロイ、データベースシャーディング、キャッシュ最適化をサポート。複数の国家プラットフォームで数百万の日次アクティブユーザー処理実績。プライベートデプロイによりデータ主権とネットワーク分離を確保。",
+      "integration_title": "🛠️ 決済システムとシームレスに連携",
+      "integration_desc": "Keycloakは標準化されたインターフェースを提供し、以下との連携が容易です：",
+      "integration_items": [
+        "マーチャントバックエンド管理システム（SSO）",
+        "決済ゲートウェイオペレーター認証",
+        "パートナーAPIアクセス認可",
+        "社内スタッフ権限管理プラットフォーム"
+      ],
+      "integration_footer": "LDAP、Active Directory、ソーシャルアカウントなど既存Identityソースとのフェデレーションもサポートし、負担のないスムーズな移行が可能です。",
+      "choice_title": "💡 私たちの選択：オープンソース＋エンタープライズグレード保護",
+      "choice_desc": "KeycloakはRed Hatがサポートするオープンソースプロジェクトであり、次を提供します：",
+      "choice_item_1": "ライセンス費用ゼロのコスト優位性",
+      "choice_item_2": "活発なコミュニティと充実したドキュメントを持つ技術エコシステム",
+      "choice_item_3": "Red Hat Single Sign-On（商用版）によるエンタープライズSLAサポートオプション",
+      "cta_quote": "「Keycloakを選んだのは無料だからだけでなく、グローバルな金融・政府機関に検証され、決済システムのセキュリティを本当に担えるIdentityエンジンだからです。」",
+      "cta_desc": "今すぐ体験：当社の決済プラットフォームにはKeycloak認証システムが組み込まれており、既存IAMシステムへの迅速な接続をサポート。セキュリティと効率の最適なバランスを実現します。"
+    },
+    "private_deployment": {
+      "badge": "エンタープライズデプロイ",
+      "hero_title": "フルスタック制御 · エンタープライズグレード · データ主権",
+      "specs_title": "デプロイ仕様",
+      "specs_server_title": "サーバー要件",
+      "specs_stack_title": "テクノロジースタック",
+      "specs_col_item": "項目",
+      "specs_col_requirement": "要件",
+      "specs_items": {
+        "os": "OS",
+        "os_value": "Linux (Ubuntu 22.04+)",
+        "cpu": "CPU",
+        "cpu_value": "4コア",
+        "memory": "メモリ",
+        "memory_value": "≥ 8 GB",
+        "disk": "ディスク",
+        "disk_value": "≥ 20 GB",
+        "docker": "Docker",
+        "docker_value": "20.10+",
+        "compose": "Docker Compose",
+        "compose_value": "v2.0+"
+      },
+      "stack": {
+        "postgres": {
+          "name": "PostgreSQL 15–18",
+          "desc": "コアデータベース"
+        },
+        "redis": {
+          "name": "Redis 7.2",
+          "desc": "キャッシュサービス"
+        },
+        "keycloak": {
+          "name": "Keycloak 26.0",
+          "desc": "Identityと認証"
+        },
+        "compose": {
+          "name": "Docker Compose",
+          "desc": "オーケストレーション"
+        }
+      },
+      "architecture_label": "システムトポロジ",
+      "pricing_section_title": "投資と価格",
+      "pricing_intro": "透明な一括ライセンスと完全なシステム資産の納品 — 自信を持って自社所有の決済インフラを構築できます。",
+      "pricing_badge": "エンタープライズライセンス",
+      "pricing_onetime": "一括料金",
+      "pricing_included_title": "含まれるもの",
+      "pricing_included": [
+        "完全なソースコード（マーチャントセンター、決済ゲートウェイ、精算エンジン）",
+        "デプロイドキュメント、データベーススクリプト、API仕様",
+        "一回のデプロイサポートと技術引き渡し",
+        "1年間無料のプロフェッショナル保守"
+      ],
+      "pricing_maintenance_label": "年間保守（2年目以降）",
+      "pricing_maintenance_value": "ライセンス料の10%（2,800 USD/年）",
+      "pricing_cta": "詳細は営業にお問い合わせ",
+      "licensing_title": "ソースコードライセンス",
+      "final_cta_title": "自社の決済インフラをデプロイする準備はできましたか？",
+      "final_cta_desc": "カスタムデプロイ計画とライセンス詳細について、エンタープライズチームにお問い合わせください。",
+      "final_cta_primary": "営業に問い合わせる",
+      "final_cta_docs": "デプロイドキュメントを見る",
+      "final_cta_download": "ライセンス契約をダウンロード",
+      "view_deployment_docs": "デプロイドキュメントを見る",
+      "deployment_comparison": {
+        "title": "セルフホスト型チェックアウト vs. フルプライベートデプロイ",
+        "desc": "FilixPayは範囲と投資が異なる2つのデプロイパスを提供します。ブランド管理されたチェックアウトページのみか、完全なオンプレミス決済プラットフォームかが選択の基準です。",
+        "columns": {
+          "dimension": "観点",
+          "checkout": "セルフホスト型チェックアウト",
+          "full_stack": "フルプライベートデプロイ"
+        },
+        "rows": {
+          "scope": {
+            "label": "デプロイするもの",
+            "checkout": "オープンソースのチェックアウトフロントエンド + BFFプロキシ（filix-checkout）",
+            "full_stack": "完全なFilixPayスタック：マーチャントセンター、決済ゲートウェイ、精算エンジン"
+          },
+          "audience": {
+            "label": "最適な対象",
+            "checkout": "最小限の運用で自社ドメインにチェックアウトを置きたいマーチャント",
+            "full_stack": "完全なデータ主権を求める銀行、決済プロバイダー、エンタープライズ"
+          },
+          "infrastructure": {
+            "label": "インフラ",
+            "checkout": "単一Dockerコンテナ。任意でNginx/Caddyリバースプロキシ",
+            "full_stack": "PostgreSQL、Redis、Keycloak、Docker Composeクラスター"
+          },
+          "licensing": {
+            "label": "ライセンス",
+            "checkout": "Apache-2.0オープンソース。セルフホスト無料",
+            "full_stack": "一括料金と保守付きのエンタープライズソースライセンス"
+          },
+          "complexity": {
+            "label": "セットアップ工数",
+            "checkout": "数時間—環境ファイル + docker pull + HTTPSドメイン",
+            "full_stack": "数日〜数週間—フルスタックデプロイと引き渡し"
+          },
+          "when_to_choose": {
+            "label": "選ぶタイミング",
+            "checkout": "ブランド管理されたチェックアウトURL。その他はFilixPay SaaS",
+            "full_stack": "すべての決済データとシステムを自社ネットワーク内で運用する必要がある場合"
+          }
+        },
+        "checkout_cta": "チェックアウトデプロイガイドを見る",
+        "merchant_center_cta": "マーチャントセンター概要"
+      }
+    }
+  }
+}

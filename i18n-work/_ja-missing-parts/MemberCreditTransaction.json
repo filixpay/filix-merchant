@@ -1,0 +1,16 @@
+{
+  "MemberCreditTransaction": {
+    "title": "Credit Payment History",
+    "subtitle": "View details of payments, refunds, and repayments made using your credit line.",
+    "headers": {
+      "business_id": "Business ID",
+      "type": "Transaction Type",
+      "amount": "Amount",
+      "balance_before": "Before (Used)",
+      "balance_after": "After (Used)",
+      "created_at": "Time"
+    },
+    "loading": "Loading payment history...",
+    "empty": "No payment history found."
+  }
+}

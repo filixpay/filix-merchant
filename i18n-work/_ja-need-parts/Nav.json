@@ -1,0 +1,65 @@
+{
+  "Nav": {
+    "products": "Products",
+    "solutions": "Solutions",
+    "technology": "Technology",
+    "docs": "Whitepaper",
+    "resources": "Resources",
+    "login": "Sign In",
+    "dashboard": "Dashboard",
+    "menu": {
+      "products": {
+        "aggregated_payment": "Payment Platform",
+        "aggregated_payment_desc": "Enterprise payment infrastructure overview",
+        "credit_payment": "Credit Payment",
+        "credit_payment_desc": "Subscription & installment payment solutions",
+        "crypto_payment": "Crypto Payment",
+        "crypto_payment_desc": "Native TRON USDT collection with blockchain gateway",
+        "payment_splitting": "Payment Splitting",
+        "payment_splitting_desc": "Automated split payment and settlement for platforms",
+        "risk_control": "Risk Control",
+        "risk_control_desc": "Full-chain fraud prevention, manual review, and eligible chargeback protection",
+        "private_deployment": "Private Deployment",
+        "private_deployment_desc": "Full-stack control, on-premise deployment",
+        "merchant_center": "Merchant Center",
+        "merchant_center_desc": "Payment operations portal for merchants"
+      },
+      "solutions": {
+        "cross_border": "Cross-Border E-Commerce",
+        "cross_border_desc": "Shopify/WooCommerce integration solutions",
+        "web3": "Web3 E-Commerce",
+        "web3_desc": "NFT/GameFi payment scenarios",
+        "saas": "SaaS Providers",
+        "saas_desc": "Split payment & multi-tenant solutions",
+        "group_enterprise": "Group Enterprise",
+        "group_enterprise_desc": "Unified acquiring and settlement for group companies",
+        "enterprise": "Enterprise Global Expansion",
+        "enterprise_desc": "Low-cost crypto payment adoption"
+      },
+      "technology": {
+        "architecture": "Architecture Overview",
+        "architecture_desc": "Microservices / K8s / High-concurrency design",
+        "performance": "Performance Benchmark",
+        "performance_desc": "OpenAPI create-order load test report",
+        "identity": "Identity & Auth",
+        "identity_desc": "Keycloak + OIDC/SAML deep dive",
+        "blockchain": "Blockchain Integration",
+        "blockchain_desc": "Multi-chain adaption & cross-chain trust",
+        "api_docs": "API Documentation",
+        "api_docs_desc": "Developer center & API reference"
+      },
+      "resources": {
+        "case_studies": "Case Studies",
+        "case_studies_desc": "Customer success stories",
+        "compliance": "Compliance Guide",
+        "compliance_desc": "GDPR / PCI-DSS & more",
+        "blog": "Blog & Articles",
+        "blog_desc": "Technical insights & industry trends",
+        "downloads": "Download Center",
+        "downloads_desc": "Deployment docs & agreement samples",
+        "reconciliation_settlement": "Reconciliation & Settlement",
+        "reconciliation_settlement_desc": "How FilixPay manages reconciliation workflows and settlement controls"
+      }
+    }
+  }
+}

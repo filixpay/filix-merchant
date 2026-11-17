@@ -1,0 +1,328 @@
+{
+  "Pages": {
+    "developers": {
+      "badge": "DEVELOPER PLATFORM",
+      "hero_title": "Build payments with APIs",
+      "hero_desc": "Integrate FilixPay with REST APIs, SDKs, sandbox environments, and webhooks to connect checkout, orders, and settlement flows.",
+      "hero_desc_extra": "FilixPay Developer Platform gives engineering teams the tools to build, test, and operate enterprise payment integrations.",
+      "features_title": "Developer Capabilities",
+      "features": {
+        "api": {
+          "icon": "API",
+          "title": "Payment APIs",
+          "desc": "OpenAPI-first REST endpoints for order creation, refunds, payment status, and settlement queries.",
+          "detail_desc": "Integrate server-side payment flows with consistent request models across channels and environments.",
+          "points": {
+            "0": "Create orders, capture payments, and issue refunds through unified endpoints",
+            "1": "Query transaction status and settlement outcomes programmatically",
+            "2": "Sandbox and production environments with separate credentials"
+          }
+        },
+        "sdk": {
+          "icon": "SDK",
+          "title": "SDKs & Client Libraries",
+          "desc": "Language-specific helpers to accelerate integration with typed request builders and error handling.",
+          "detail_desc": "Reduce boilerplate with SDK patterns aligned to FilixPay OpenAPI specifications.",
+          "points": {
+            "0": "Client libraries for common server-side integration patterns",
+            "1": "Signature and authentication helpers for secure API calls",
+            "2": "Examples aligned with checkout and webhook workflows"
+          }
+        },
+        "sandbox": {
+          "icon": "SB",
+          "title": "Sandbox",
+          "desc": "Test payment flows end-to-end with sandbox credentials before going live in production.",
+          "detail_desc": "Developers validate integrations in an isolated environment with the same API surface as production.",
+          "points": {
+            "0": "Sandbox API keys separate from production credentials",
+            "1": "Simulate order and payment lifecycle events for integration testing",
+            "2": "Integration sandbox tools in the developer console"
+          }
+        },
+        "webhooks": {
+          "icon": "WH",
+          "title": "Webhooks",
+          "desc": "Receive real-time payment event notifications for orders, payments, refunds, and settlement updates.",
+          "detail_desc": "Keep downstream systems synchronized with payment lifecycle events through reliable webhook delivery.",
+          "points": {
+            "0": "Configure endpoints for order, payment, and refund notifications",
+            "1": "Delivery logs and retry visibility for integration troubleshooting",
+            "2": "Event-driven workflows for order fulfillment and reconciliation"
+          }
+        }
+      },
+      "quick_start": {
+        "title": "Quick Start",
+        "desc": "Get from credentials to your first sandbox payment in three steps.",
+        "steps": {
+          "0": "Sign in to the merchant portal and open the developer console to create sandbox API credentials.",
+          "1": "Create a test order via the Payment API or SDK using your sandbox key.",
+          "2": "Configure a webhook endpoint and verify event delivery in the developer console."
+        }
+      },
+      "checkout_deployment": {
+        "title": "Self-Hosted Checkout Deployment",
+        "desc": "Deploy the open-source filix-checkout frontend on your own domain with Docker. Use Developer Center credentials to connect—no frontend code changes required.",
+        "points": {
+          "0": "Create FILIXPAY_BACKEND_CLIENT_ID / CLIENT_SECRET in the developer console before deployment.",
+          "1": "Pull ghcr.io/filixpay/filix-checkout and configure via environment file—pin a version tag in production.",
+          "2": "Payment core logic stays on FilixPay; you host the checkout UI and BFF proxy on your infrastructure."
+        },
+        "cta_docs": "View Deployment Guide",
+        "cta_merchant_center": "Overview on Merchant Center"
+      },
+      "links": {
+        "title": "Explore Related Products",
+        "desc": "Developer integrations connect to FilixPay payment infrastructure and merchant operations.",
+        "payment_platform": {
+          "title": "Payment Platform",
+          "desc": "Enterprise payment infrastructure for APIs, transaction management, and settlement."
+        },
+        "merchant_center": {
+          "title": "Merchant Center",
+          "desc": "Payment operations platform for accounts, permissions, credentials, and transaction monitoring."
+        }
+      },
+      "cta": {
+        "title": "Start integrating with FilixPay",
+        "desc": "Follow the quick start guide or open the developer console to manage credentials, sandbox, and webhooks.",
+        "primary": "View Quick Start",
+        "secondary": "Open Developer Console"
+      }
+    },
+    "for_enterprise": {
+      "badge": "ENTERPRISE GOVERNANCE",
+      "hero_title": "Enterprise payment governance for groups and regulated businesses",
+      "hero_desc": "FilixPay For Enterprise helps headquarters govern multi-organization payment operations with multi-merchant management, RBAC, member governance, and organization-level isolation.",
+      "hero_desc_extra": "FilixPay Merchant Center covers single-merchant operations; For Enterprise adds organization governance for groups, conglomerates, and regulated enterprises.",
+      "features_title": "Governance Capabilities",
+      "features": {
+        "multi_org": {
+          "icon": "ORG",
+          "title": "Multi-Organization Governance",
+          "desc": "Centralize enterprise governance across legal entities while preserving independent operations at each organization.",
+          "detail_desc": "Headquarters creates and manages organizations without replacing day-to-day merchant operations.",
+          "points": {
+            "0": "Enterprise-level visibility across organizations and merchants",
+            "1": "Governance boundaries that stop at the organization layer",
+            "2": "Centralized policy with decentralized business execution"
+          }
+        },
+        "multi_merchant": {
+          "icon": "MM",
+          "title": "Multi-Merchant Management",
+          "desc": "Coordinate payment operations across subsidiaries, business units, and project teams under unified governance.",
+          "detail_desc": "Break fund silos with supervised accounts and transparent acquiring across group merchants.",
+          "points": {
+            "0": "Unified acquiring strategy with entity-level signing",
+            "1": "Sub-merchant and project-level payment workflows",
+            "2": "Transparent fund flows for headquarters oversight"
+          }
+        },
+        "rbac": {
+          "icon": "RBAC",
+          "title": "RBAC & Member Governance",
+          "desc": "Role-based access controls and member lifecycle governance for enterprise administrators and organization owners.",
+          "detail_desc": "Delegate governance responsibilities with auditable member permissions and approval workflows.",
+          "points": {
+            "0": "Enterprise ADMIN and Organization OWNER role separation",
+            "1": "Member invitations, role assignments, and access reviews",
+            "2": "Auditable governance actions across organizations"
+          }
+        },
+        "isolation": {
+          "icon": "ISO",
+          "title": "Organization Isolation",
+          "desc": "Strong isolation between organizations while maintaining enterprise-wide governance visibility.",
+          "detail_desc": "Each organization operates with scoped credentials, merchants, and authorization boundaries.",
+          "points": {
+            "0": "Scoped merchant and credential management per organization",
+            "1": "Authorization stays within organization boundaries",
+            "2": "Enterprise oversight without centralizing operations"
+          }
+        }
+      },
+      "private_deployment": {
+        "title": "Private Deployment Options",
+        "desc": "FilixPay can be deployed in your own environment for data sovereignty and regulated industries — contact sales to discuss deployment options."
+      },
+      "links": {
+        "title": "Explore Payment Infrastructure",
+        "desc": "Enterprise governance builds on FilixPay payment infrastructure for APIs, transactions, and settlement.",
+        "payment_platform": {
+          "title": "Payment Platform",
+          "desc": "Enterprise payment infrastructure for APIs, transaction management, and settlement."
+        }
+      },
+      "cta": {
+        "title": "Talk to our enterprise team",
+        "desc": "Contact sales to discuss multi-organization governance, RBAC requirements, and deployment options for your group.",
+        "primary": "Contact Sales",
+        "secondary": "Explore Payment Platform"
+      }
+    },
+    "credit_payment": {
+      "title": "Credit Payment",
+      "subtitle": "Flexible credit-based payment solutions for B2B and subscription businesses",
+      "hero_title": "Buy Now, Pay Later — Built for Business",
+      "hero_desc": "Enable credit lines, installment plans, and deferred payments with enterprise-grade risk management and real-time account tracking.",
+      "features": {
+        "credit_line": {
+          "title": "Credit Line Management",
+          "desc": "Set and manage credit limits for your business customers with flexible payment terms."
+        },
+        "installment": {
+          "title": "Installment Plans",
+          "desc": "Support multi-period payment plans with automated billing and collection."
+        },
+        "risk": {
+          "title": "Risk Control",
+          "desc": "Real-time credit scoring and risk assessment with configurable rules."
+        },
+        "reconciliation": {
+          "title": "Auto Reconciliation",
+          "desc": "Automated matching of payments to invoices with detailed reporting."
+        }
+      }
+    },
+    "crypto_payment": {
+      "title": "Crypto Payment",
+      "subtitle": "Native TRON USDT on-chain collection through FilixPay blockchain gateway",
+      "hero_title": "TRON USDT Payments, Built In",
+      "hero_desc": "Collect TRC20 USDT with merchant-managed deposit addresses, unique-amount matching, and blockchain gateway confirmation—unified in the same FilixPay checkout and order flow.",
+      "pipeline": {
+        "configure": {
+          "title": "Configure Wallets",
+          "desc": "Bind TRON USDT deposit addresses"
+        },
+        "checkout": {
+          "title": "Checkout Collection",
+          "desc": "Show address and pay amount"
+        },
+        "confirm": {
+          "title": "On-Chain Confirm",
+          "desc": "Gateway verifies deposit"
+        }
+      },
+      "what": {
+        "title": "What Is FilixPay Crypto Payment?",
+        "desc": "FilixPay is a payment orchestration layer—not a custodian or exchange. The native CRYPTO channel connects your checkout to TRON USDT deposits via the FilixPay blockchain gateway, with optional NowPayments extension for multi-coin invoices."
+      },
+      "native": {
+        "title": "Native TRON USDT Channel (Primary)",
+        "desc": "Production-ready on-chain collection for TRC20 USDT with merchant-controlled deposit wallets and automatic payment matching.",
+        "points": {
+          "0": "Chain and asset: TRON mainnet USDT (TRC20)",
+          "1": "Deposit modes: STATIC unique-amount matching or HD address allocation",
+          "2": "Checkout displays deposit address and exact pay amount for the customer"
+        }
+      },
+      "wallets": {
+        "title": "Deposit Wallet Management",
+        "desc": "Merchants configure receiving addresses in the merchant center before going live.",
+        "points": {
+          "0": "Fourth-party merchants manage their own TRON USDT deposit wallets",
+          "1": "Third-party sub-merchants use platform-managed wallets (read-only view)",
+          "2": "One active deposit wallet per chain/asset per merchant"
+        }
+      },
+      "extension": {
+        "title": "NowPayments Extension (Optional)",
+        "desc": "Need more digital assets beyond TRON USDT? Connect your own NowPayments account as an additional upstream channel.",
+        "points": {
+          "0": "Bring your NowPayments API Key and IPN Secret in payment configuration",
+          "1": "Redirect customers to NowPayments invoice checkout for supported coins",
+          "2": "FilixPay handles order linkage, IPN callbacks, and trade bill reconciliation"
+        },
+        "footnote": "Multi-coin scope depends on your NowPayments merchant account—not a native FilixPay guarantee."
+      },
+      "merchant_center": {
+        "title": "Merchant Center Capabilities",
+        "items": {
+          "configs": {
+            "title": "Payment Configuration",
+            "desc": "Bind CRYPTO gateway credentials or NowPayments API keys per payment scenario."
+          },
+          "wallets": {
+            "title": "Crypto Deposit Addresses",
+            "desc": "Create and maintain TRON USDT receiving addresses for the native channel."
+          },
+          "orders": {
+            "title": "Orders & Webhooks",
+            "desc": "Track payment status and receive merchant webhooks when deposits confirm."
+          }
+        }
+      },
+      "workflow": {
+        "title": "Collection Workflow",
+        "desc": "From checkout creation to on-chain confirmation.",
+        "steps": {
+          "order": {
+            "title": "Create Checkout",
+            "desc": "Merchant or API creates an order and selects the configured crypto payment channel."
+          },
+          "present": {
+            "title": "Present Payment",
+            "desc": "Native CRYPTO shows TRON address and unique pay amount; NowPayments redirects to invoice URL."
+          },
+          "pay": {
+            "title": "Customer Pays",
+            "desc": "Customer sends USDT on-chain or completes payment on the NowPayments invoice page."
+          },
+          "settle": {
+            "title": "Confirm & Notify",
+            "desc": "Gateway or IPN confirms payment; order status updates and merchant webhooks fire."
+          }
+        }
+      },
+      "scenarios": {
+        "cross_border": {
+          "title": "Cross-Border USDT Collection",
+          "desc": "Accept stablecoin payments from global customers without card rails."
+        },
+        "chargeback_free": {
+          "title": "Chargeback-Free Alternative",
+          "desc": "On-chain finality eliminates card chargeback exposure for eligible use cases."
+        },
+        "platform": {
+          "title": "Platform-Managed Crypto",
+          "desc": "Platform settlement merchants inherit platform crypto configuration without managing wallets."
+        }
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "items": {
+          "what_coins": {
+            "q": "Which cryptocurrencies does FilixPay support natively?",
+            "a": "The native CRYPTO channel currently supports TRON mainnet USDT (TRC20). For additional digital assets, connect your own NowPayments account as an optional upstream channel."
+          },
+          "wallet_required": {
+            "q": "Do I need to configure deposit wallets?",
+            "a": "Yes for the native TRON USDT channel. Fourth-party merchants add deposit addresses in Crypto Deposit Addresses. Third-party sub-merchants on platform-managed settlement use the platform merchant's configured wallets."
+          },
+          "deposit_modes": {
+            "q": "What are STATIC and HD deposit modes?",
+            "a": "STATIC mode reserves a unique pay amount against your deposit address for each order. HD mode allocates addresses through the blockchain gateway. The active mode is set in your CRYPTO channel configuration."
+          },
+          "nowpayments": {
+            "q": "How does the NowPayments extension work?",
+            "a": "You provide your NowPayments API credentials in payment configuration. FilixPay creates invoices, redirects customers to NowPayments checkout, and processes IPN callbacks into unified order status."
+          },
+          "chargebacks": {
+            "q": "Are crypto payments reversible?",
+            "a": "On-chain USDT transfers are final once confirmed. Card-style chargebacks do not apply to native crypto collection, though operational refunds must be handled according to your business policy."
+          },
+          "refunds": {
+            "q": "Does FilixPay support automatic crypto refunds?",
+            "a": "Automatic on-chain refunds through the native CRYPTO channel are not available in the current release. Plan manual refund workflows where needed."
+          }
+        }
+      },
+      "cta": {
+        "title": "Ready to collect TRON USDT through FilixPay?",
+        "desc": "Configure deposit wallets and payment channels in the merchant center, or contact us for platform-managed setup."
+      }
+    }
+  }
+}

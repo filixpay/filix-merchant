@@ -1,0 +1,41 @@
+{
+  "MoneyCommon": {
+    "statuses": {
+      "POSTED": "Posted",
+      "COMPLETED": "Completed",
+      "CLEARED": "Cleared",
+      "REQUESTED": "Requested",
+      "PENDING": "Pending",
+      "PROCESSING": "Processing",
+      "CONFIRMED": "Confirmed",
+      "FAILED": "Failed",
+      "REJECTED": "Rejected",
+      "CANCELLED": "Cancelled",
+      "CANCELED": "Cancelled",
+      "UNKNOWN": "Unknown"
+    },
+    "capStatuses": {
+      "ALLOW": "Allow",
+      "UNAVAILABLE": "Unavailable",
+      "UNKNOWN": "—"
+    },
+    "balanceTypes": {
+      "AVAILABLE": "Available",
+      "PENDING": "Pending",
+      "CLEARING": "Clearing"
+    },
+    "sources": {
+      "MONEY_IN_INTENT": "Money-In",
+      "MONEY_OUT_INTENT": "Money-Out",
+      "TRANSFER_RECORD": "Transfer record",
+      "UNKNOWN": "Unknown"
+    },
+    "movementTypes": {
+      "MONEY_IN": "Money-In",
+      "MONEY_OUT": "Money-Out",
+      "PAYOUT": "Payout",
+      "TRANSFER": "Transfer",
+      "UNKNOWN": "Unknown"
+    }
+  }
+}

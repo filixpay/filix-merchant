@@ -1,0 +1,48 @@
+{
+  "PaymentSplits": {
+    "title": "Payment Splits",
+    "subtitle": "View and manage order split details and receiver status.",
+    "headers": {
+      "order_id": "Order ID",
+      "trade_no": "Trade No",
+      "amount": "Order Amount",
+      "order_amount": "Total Amount",
+      "split_amount": "Split Amount",
+      "receivers": "Receivers",
+      "status": "Status",
+      "type": "Split Type",
+      "created_at": "Created At"
+    },
+    "filters": {
+      "order_id": "Order ID",
+      "status": "Status",
+      "all_status": "All Status"
+    },
+    "statuses": {
+      "PENDING": "Pending",
+      "PROCESSING": "Processing",
+      "SUCCESS": "Success",
+      "FAILED": "Failed",
+      "PARTIAL_SUCCESS": "Partial Success",
+      "CLOSED": "Closed"
+    },
+    "types": {
+      "IMMEDIATE": "Immediate",
+      "DELAYED": "Delayed"
+    },
+    "details": {
+      "title": "Split Details",
+      "base_info": "Basic Information",
+      "receivers": "Receiver Details",
+      "receiver_id": "Receiver",
+      "receiver_name": "Name",
+      "amount": "Amount",
+      "proportion": "Proportion",
+      "status": "Status",
+      "progress": "Split Progress",
+      "view_details": "View Details",
+      "serial_no": "Serial No"
+    },
+    "empty": "No split payment records found."
+  }
+}

@@ -1,0 +1,130 @@
+﻿"Team ID"                                                    CoverageConfig.config_fields.teamId
+"API Key"                                                    CoverageConfig.secret_fields.apiKey
+"Webhook Secret"                                             CoverageConfig.secret_fields.webhookSecret
+"App ID"                                                     Configs.fields.app_id
+"Partner ID"                                                 Configs.fields.partner_id
+"App Secret"                                                 Configs.fields.app_secret
+"V2 API Key"                                                 Configs.fields.v2_api_key
+"V3 API Key"                                                 Configs.fields.v3_api_key
+"Secret Key"                                                 Configs.fields.secret_key
+"Client ID"                                                  Configs.fields.client_id
+"Client Secret"                                              Configs.fields.client_secret
+"API Key"                                                    Configs.fields.api_key
+"Signifyd 路 Riskified 路 Forter"                              Home.risk_control_section.pipeline.coverage.desc
+"API"                                                        Home.merchant_center_section.items.api.title
+"RBAC"                                                       Home.enterprise_section.items.rbac.title
+"API"                                                        Home.developer_section.items.api.title
+"SDK"                                                        Home.developer_section.items.sdk.title
+"Sandbox"                                                    Home.developer_section.items.sandbox.title
+"Webhooks"                                                   Home.developer_section.items.webhooks.title
+"ID"                                                         Orders.details.merchant_id
+"WhatsApp"                                                   Orders.payment_modal.share_whatsapp
+"https://..."                                                Orders.fulfillment.placeholders.tracking_url
+"SKU"                                                        CommerceProducts.columns.sku
+"SKU"                                                        CommerceProducts.editor.sku
+"{oldStatus} 鈫?{newStatus}"                                  Disputes.timeline.descriptions.channel_status_transition
+"API"                                                        AuditLogs.actor_type.API
+"Webhook"                                                    AuditLogs.actor_type.WEBHOOK
+"Trace ID"                                                   AuditLogs.detail.trace_id
+"Schema"                                                     RiskRules.config.schema
+"Checkout Demo"                                              Developer.applications.field_name_placeholder
+"Client ID"                                                  Developer.applications.col_client_id
+"Client ID"                                                  Developer.client_id
+"Client Secret"                                              Developer.client_secret
+"Webhook URL"                                                Developer.webhook_url
+"https://your-domain.com/webhook"                            Developer.webhook_url_placeholder
+"Secret"                                                     Developer.webhook_col_secret
+"Webhook Secret"                                             Developer.webhook_secret_label
+"Webhook URL"                                                Developer.delivery_headers.url
+"cURL"                                                       Developer.sandbox.technical.lang_curl
+"Node.js"                                                    Developer.sandbox.technical.lang_node
+"Python"                                                     Developer.sandbox.technical.lang_python
+"Java"                                                       Developer.sandbox.technical.lang_java
+"URL"                                                        Developer.sandbox.technical.request_url
+"merchant-api-...-sandbox"                                   Developer.sandbox.client_id_placeholder
+"API Explorer"                                               Developer.explorer.tab
+"Sandbox API Explorer"                                       Developer.explorer.title
+"Trace ID"                                                   Developer.explorer.trace_id
+"Payment"                                                    Developer.webhook_event_groups.payment
+"Refund"                                                     Developer.webhook_event_groups.refund
+"T鈥?                                                         MoneyExternalAccounts.create.crypto_address_placeholder
+"6222 0000 0000 0000"                                        MoneyExternalAccounts.create.account_number_placeholder
+"Pay"                                                        SettlementReleases.columns.paymentShort
+"Journal ID"                                                 SettlementReleases.detail.journalId
+"Release Journal ID"                                         SettlementReleases.detail.releaseJournalId
+"STRIPE"                                                     TransactionReconciliation.channels.STRIPE
+"PAYPAL"                                                     TransactionReconciliation.channels.PAYPAL
+"FilixPay"                                                   TransactionReconciliation.sections.filixpay
+"OK"                                                         SettlementStatements.coverageState.OK
+"Journal ID"                                                 SettlementStatements.diagnostics.journalId
+"{timezone}"                                                 SettlementStatements.timezoneChip.label
+"Asia/Shanghai"                                              SettlementStatements.timezoneChip.fallback
+"123456"                                                     SecuritySettings.TransactionPassword.weak_pin_example_1
+"111111"                                                     SecuritySettings.TransactionPassword.weak_pin_example_2
+"{seconds}s"                                                 SecuritySettings.TransactionPassword.modal.countdown
+"Identity ID"                                                Enterprise.members.field_identity_id
+"Identity"                                                   Enterprise.members.col_identity
+"Webhook"                                                    Organization.roles.permission_domains.WEBHOOK
+"KYC"                                                        Organization.roles.permission_domains.KYC
+"Webhook"                                                    Organization.role_mgmt.permission_domains.WEBHOOK
+"KYC"                                                        Organization.role_mgmt.permission_domains.KYC
+"{count}"                                                    Organization.teams.member_count_value
+"Made in China Select"                                       SiteFooter.friendly_link_micselect
+"漏 2026 Filix.com. All rights reserved."                     SiteFooter.rights
+"API"                                                        Pages.payment_platform.features.connectivity.icon
+"TX"                                                         Pages.payment_platform.features.transactions.icon
+"ST"                                                         Pages.payment_platform.features.settlement.icon
+"MC"                                                         Pages.payment_platform.features.merchant_ops.icon
+"TX"                                                         Pages.merchant_center.features.transactions.icon
+"ST"                                                         Pages.merchant_center.features.settlement.icon
+"RP"                                                         Pages.merchant_center.features.reporting.icon
+"KEY"                                                        Pages.merchant_center.features.api_credentials.icon
+"WH"                                                         Pages.merchant_center.features.webhooks.icon
+"TM"                                                         Pages.merchant_center.features.team_permissions.icon
+"CK"                                                         Pages.merchant_center.features.self_hosted_checkout.icon
+"API"                                                        Pages.developers.features.api.icon
+"SDK"                                                        Pages.developers.features.sdk.icon
+"SB"                                                         Pages.developers.features.sandbox.icon
+"WH"                                                         Pages.developers.features.webhooks.icon
+"ORG"                                                        Pages.for_enterprise.features.multi_org.icon
+"MM"                                                         Pages.for_enterprise.features.multi_merchant.icon
+"RBAC"                                                       Pages.for_enterprise.features.rbac.icon
+"ISO"                                                        Pages.for_enterprise.features.isolation.icon
+"API"                                                        Pages.payment_splitting.features.webhook.icon
+"Signifyd 路 Riskified 路 Forter"                              Pages.risk_control.pipeline.coverage.desc
+"馃攽"                                                         Pages.risk_control.delivery_modes.items.self_config.icon
+"馃洝锔?                                                        Pages.risk_control.delivery_modes.items.platform_subscription.icon
+"Signifyd"                                                   Pages.risk_control.providers.items.signifyd.name
+"Riskified"                                                  Pages.risk_control.providers.items.riskified.name
+"Forter"                                                     Pages.risk_control.providers.items.forter.name
+"Identity"                                                   Pages.group_enterprise.architecture.layers.identity
+"Enterprise"                                                 Pages.group_enterprise.architecture.layers.enterprise
+"Organization"                                               Pages.group_enterprise.architecture.layers.organization
+"Merchant"                                                   Pages.group_enterprise.architecture.layers.merchant
+"ADMIN"                                                      Pages.group_enterprise.architecture.layers.admin
+"VIEWER"                                                     Pages.group_enterprise.architecture.layers.viewer
+"Saleor"                                                     Pages.case_studies.micselect.arch_saleor
+"FilixPay Payment App"                                       Pages.case_studies.micselect.arch_payment_app
+"FilixPay Gateway"                                           Pages.case_studies.micselect.arch_gateway
+"OS"                                                         Pages.private_deployment.specs_items.os
+"Linux (Ubuntu 22.04+)"                                      Pages.private_deployment.specs_items.os_value
+"CPU"                                                        Pages.private_deployment.specs_items.cpu
+"鈮?8 GB"                                                     Pages.private_deployment.specs_items.memory_value
+"鈮?20 GB"                                                    Pages.private_deployment.specs_items.disk_value
+"Docker"                                                     Pages.private_deployment.specs_items.docker
+"20.10+"                                                     Pages.private_deployment.specs_items.docker_value
+"Docker Compose"                                             Pages.private_deployment.specs_items.compose
+"v2.0+"                                                      Pages.private_deployment.specs_items.compose_value
+"PostgreSQL 15鈥?8"                                           Pages.private_deployment.stack.postgres.name
+"Redis 7.2"                                                  Pages.private_deployment.stack.redis.name
+"Keycloak 26.0"                                              Pages.private_deployment.stack.keycloak.name
+"Docker Compose"                                             Pages.private_deployment.stack.compose.name
+"EIN"                                                        Onboarding.fields.ein
+"Unique Entity Number (UEN)"                                 Onboarding.fields.uen
+"CNPJ"                                                       Onboarding.fields.cnpj
+"VAT ID"                                                     Onboarding.fields.vatId
+"ID"                                                         Maintenance.columns.id
+"EIN"                                                        Maintenance.fields.ein
+"Unique Entity Number (UEN)"                                 Maintenance.fields.uen
+"CNPJ"                                                       Maintenance.fields.cnpj
+"VAT ID"                                                     Maintenance.fields.vatId

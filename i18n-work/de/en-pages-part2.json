@@ -1,0 +1,659 @@
+{
+  "Pages": {
+    "crypto_payment": {
+      "title": "Crypto Payment",
+      "subtitle": "Native TRON USDT on-chain collection through FilixPay blockchain gateway",
+      "hero_title": "TRON USDT Payments, Built In",
+      "hero_desc": "Collect TRC20 USDT with merchant-managed deposit addresses, unique-amount matching, and blockchain gateway confirmation—unified in the same FilixPay checkout and order flow.",
+      "pipeline": {
+        "configure": {
+          "title": "Configure Wallets",
+          "desc": "Bind TRON USDT deposit addresses"
+        },
+        "checkout": {
+          "title": "Checkout Collection",
+          "desc": "Show address and pay amount"
+        },
+        "confirm": {
+          "title": "On-Chain Confirm",
+          "desc": "Gateway verifies deposit"
+        }
+      },
+      "what": {
+        "title": "What Is FilixPay Crypto Payment?",
+        "desc": "FilixPay is a payment orchestration layer—not a custodian or exchange. The native CRYPTO channel connects your checkout to TRON USDT deposits via the FilixPay blockchain gateway, with optional NowPayments extension for multi-coin invoices."
+      },
+      "native": {
+        "title": "Native TRON USDT Channel (Primary)",
+        "desc": "Production-ready on-chain collection for TRC20 USDT with merchant-controlled deposit wallets and automatic payment matching.",
+        "points": {
+          "0": "Chain and asset: TRON mainnet USDT (TRC20)",
+          "1": "Deposit modes: STATIC unique-amount matching or HD address allocation",
+          "2": "Checkout displays deposit address and exact pay amount for the customer"
+        }
+      },
+      "wallets": {
+        "title": "Deposit Wallet Management",
+        "desc": "Merchants configure receiving addresses in the merchant center before going live.",
+        "points": {
+          "0": "Fourth-party merchants manage their own TRON USDT deposit wallets",
+          "1": "Third-party sub-merchants use platform-managed wallets (read-only view)",
+          "2": "One active deposit wallet per chain/asset per merchant"
+        }
+      },
+      "extension": {
+        "title": "NowPayments Extension (Optional)",
+        "desc": "Need more digital assets beyond TRON USDT? Connect your own NowPayments account as an additional upstream channel.",
+        "points": {
+          "0": "Bring your NowPayments API Key and IPN Secret in payment configuration",
+          "1": "Redirect customers to NowPayments invoice checkout for supported coins",
+          "2": "FilixPay handles order linkage, IPN callbacks, and trade bill reconciliation"
+        },
+        "footnote": "Multi-coin scope depends on your NowPayments merchant account—not a native FilixPay guarantee."
+      },
+      "merchant_center": {
+        "title": "Merchant Center Capabilities",
+        "items": {
+          "configs": {
+            "title": "Payment Configuration",
+            "desc": "Bind CRYPTO gateway credentials or NowPayments API keys per payment scenario."
+          },
+          "wallets": {
+            "title": "Crypto Deposit Addresses",
+            "desc": "Create and maintain TRON USDT receiving addresses for the native channel."
+          },
+          "orders": {
+            "title": "Orders & Webhooks",
+            "desc": "Track payment status and receive merchant webhooks when deposits confirm."
+          }
+        }
+      },
+      "workflow": {
+        "title": "Collection Workflow",
+        "desc": "From checkout creation to on-chain confirmation.",
+        "steps": {
+          "order": {
+            "title": "Create Checkout",
+            "desc": "Merchant or API creates an order and selects the configured crypto payment channel."
+          },
+          "present": {
+            "title": "Present Payment",
+            "desc": "Native CRYPTO shows TRON address and unique pay amount; NowPayments redirects to invoice URL."
+          },
+          "pay": {
+            "title": "Customer Pays",
+            "desc": "Customer sends USDT on-chain or completes payment on the NowPayments invoice page."
+          },
+          "settle": {
+            "title": "Confirm & Notify",
+            "desc": "Gateway or IPN confirms payment; order status updates and merchant webhooks fire."
+          }
+        }
+      },
+      "scenarios": {
+        "cross_border": {
+          "title": "Cross-Border USDT Collection",
+          "desc": "Accept stablecoin payments from global customers without card rails."
+        },
+        "chargeback_free": {
+          "title": "Chargeback-Free Alternative",
+          "desc": "On-chain finality eliminates card chargeback exposure for eligible use cases."
+        },
+        "platform": {
+          "title": "Platform-Managed Crypto",
+          "desc": "Platform settlement merchants inherit platform crypto configuration without managing wallets."
+        }
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "items": {
+          "what_coins": {
+            "q": "Which cryptocurrencies does FilixPay support natively?",
+            "a": "The native CRYPTO channel currently supports TRON mainnet USDT (TRC20). For additional digital assets, connect your own NowPayments account as an optional upstream channel."
+          },
+          "wallet_required": {
+            "q": "Do I need to configure deposit wallets?",
+            "a": "Yes for the native TRON USDT channel. Fourth-party merchants add deposit addresses in Crypto Deposit Addresses. Third-party sub-merchants on platform-managed settlement use the platform merchant's configured wallets."
+          },
+          "deposit_modes": {
+            "q": "What are STATIC and HD deposit modes?",
+            "a": "STATIC mode reserves a unique pay amount against your deposit address for each order. HD mode allocates addresses through the blockchain gateway. The active mode is set in your CRYPTO channel configuration."
+          },
+          "nowpayments": {
+            "q": "How does the NowPayments extension work?",
+            "a": "You provide your NowPayments API credentials in payment configuration. FilixPay creates invoices, redirects customers to NowPayments checkout, and processes IPN callbacks into unified order status."
+          },
+          "chargebacks": {
+            "q": "Are crypto payments reversible?",
+            "a": "On-chain USDT transfers are final once confirmed. Card-style chargebacks do not apply to native crypto collection, though operational refunds must be handled according to your business policy."
+          },
+          "refunds": {
+            "q": "Does FilixPay support automatic crypto refunds?",
+            "a": "Automatic on-chain refunds through the native CRYPTO channel are not available in the current release. Plan manual refund workflows where needed."
+          }
+        }
+      },
+      "cta": {
+        "title": "Ready to collect TRON USDT through FilixPay?",
+        "desc": "Configure deposit wallets and payment channels in the merchant center, or contact us for platform-managed setup."
+      }
+    },
+    "payment_splitting": {
+      "title": "Payment Splitting",
+      "subtitle": "Automated split-payment and settlement capabilities for platform businesses",
+      "hero_title": "Payment Splitting for Platforms and Multi-Merchant Settlement",
+      "hero_desc": "Automate how one payment is allocated across platforms, merchants, sub-merchants, service fees, commissions, and settlement recipients.",
+      "what": {
+        "title": "What Is Payment Splitting?",
+        "desc": "Payment splitting connects payment collection, receiver allocation, settlement bills, and reconciliation records so platform businesses can reduce manual finance operations."
+      },
+      "features": {
+        "multi_receiver": {
+          "icon": "M",
+          "title": "Multiple Receivers",
+          "desc": "Split one customer payment across merchants, sub-merchants, platform accounts, and partners."
+        },
+        "commission": {
+          "icon": "%",
+          "title": "Platform Commission",
+          "desc": "Separate platform service fees and commissions before merchant settlement."
+        },
+        "settlement": {
+          "icon": "S",
+          "title": "Settlement Ready",
+          "desc": "Connect split records with settlement bills and finance reconciliation workflows."
+        },
+        "webhook": {
+          "icon": "API",
+          "title": "API And Webhooks",
+          "desc": "Use API and webhook callbacks to track payment, split, and settlement status."
+        }
+      },
+      "scenarios": {
+        "marketplace": {
+          "icon": "O",
+          "title": "Marketplace Orders",
+          "desc": "Allocate customer payments to platform merchants and settlement receivers."
+        },
+        "commission": {
+          "icon": "F",
+          "title": "Service Commission",
+          "desc": "Keep platform fees while sending the remaining receivable to merchants."
+        },
+        "saas": {
+          "icon": "S",
+          "title": "SaaS Platforms",
+          "desc": "Support multi-tenant merchants that collect through a shared payment platform."
+        },
+        "chain": {
+          "icon": "G",
+          "title": "Chains And Groups",
+          "desc": "Settle funds across stores, subsidiaries, or business units."
+        },
+        "cross_border": {
+          "icon": "X",
+          "title": "Cross-Border Settlement",
+          "desc": "Support multi-party settlement scenarios for global platform commerce."
+        },
+        "partner": {
+          "icon": "R",
+          "title": "Partner Revenue Sharing",
+          "desc": "Distribute revenue to partners, channels, or service providers."
+        }
+      },
+      "workflow": {
+        "title": "How The Split-Payment Flow Works",
+        "desc": "From customer payment to receiver settlement, each step is connected to records that finance teams can trace.",
+        "steps": {
+          "pay": {
+            "title": "Customer Pays",
+            "desc": "A customer completes payment through the platform checkout flow."
+          },
+          "receive": {
+            "title": "Platform Receives",
+            "desc": "The platform records the payment and prepares the split calculation."
+          },
+          "calculate": {
+            "title": "Rules Calculate Split",
+            "desc": "Business rules determine amounts, receivers, commissions, and fees."
+          },
+          "credit": {
+            "title": "Receivers Are Credited",
+            "desc": "Receivers get their allocated amounts according to the split result."
+          },
+          "settle": {
+            "title": "Settlement Bill Is Generated",
+            "desc": "Settlement records summarize split outcomes for finance operations."
+          },
+          "reconcile": {
+            "title": "Finance Reconciles",
+            "desc": "Finance teams compare orders, split records, and settlement bills."
+          }
+        }
+      },
+      "rules": {
+        "title": "Rules And Receiver Model",
+        "desc": "Define how revenue is distributed across merchants, platform accounts, service fees, and settlement receivers.",
+        "items": {
+          "fixed_amount": {
+            "icon": "#",
+            "title": "Fixed Amount",
+            "desc": "Allocate a fixed value to a receiver or platform fee."
+          },
+          "percentage": {
+            "icon": "%",
+            "title": "Percentage",
+            "desc": "Split by percentage for merchant revenue or partner sharing."
+          },
+          "commission": {
+            "icon": "C",
+            "title": "Commission",
+            "desc": "Keep platform commission before settlement."
+          },
+          "receiver": {
+            "icon": "R",
+            "title": "Receiver",
+            "desc": "Route amounts to merchants, sub-merchants, stores, or partners."
+          },
+          "currency": {
+            "icon": "$",
+            "title": "Currency",
+            "desc": "Support settlement logic by transaction and settlement currency."
+          },
+          "cycle": {
+            "icon": "D",
+            "title": "Settlement Cycle",
+            "desc": "Connect split results with daily, weekly, or custom settlement cycles."
+          }
+        }
+      },
+      "settlement": {
+        "title": "Settlement And Reconciliation",
+        "desc": "Payment splitting should not stop at allocation. Finance teams need settlement bills and reconciliation records that explain every amount.",
+        "records": {
+          "title": "Split Records",
+          "desc": "Track order amount, split amount, receiver count, success count, failure count, and split status."
+        },
+        "bills": {
+          "title": "Settlement Bills",
+          "desc": "Connect split results to settlement bill items for finance exports and period-end reconciliation."
+        }
+      },
+      "exceptions": {
+        "title": "Exception Handling",
+        "desc": "Payment splitting needs clear states when business rules, receiver accounts, refunds, or settlement timing create exceptions.",
+        "items": {
+          "receiver_unavailable": {
+            "title": "Receiver Unavailable",
+            "desc": "Identify receiver account issues before settlement is completed."
+          },
+          "rule_mismatch": {
+            "title": "Rule Mismatch",
+            "desc": "Surface rule conflicts or missing receiver information for operations review."
+          },
+          "refund_after_split": {
+            "title": "Refund After Split",
+            "desc": "Trace how refunds affect split records and settlement results."
+          },
+          "partial_failure": {
+            "title": "Partial Split Failure",
+            "desc": "Separate successful and failed receiver allocations for follow-up."
+          },
+          "settlement_pending": {
+            "title": "Settlement Pending",
+            "desc": "Make pending settlement states visible to finance teams."
+          },
+          "reconciliation_difference": {
+            "title": "Reconciliation Difference",
+            "desc": "Help finance teams investigate order, split, and settlement differences."
+          }
+        }
+      },
+      "developer": {
+        "title": "API And Webhook Integration",
+        "desc": "Developers can integrate split-payment records, settlement queries, and webhook callbacks into their platform operations.",
+        "cta": "Explore Developer Center"
+      },
+      "faq": {
+        "title": "Payment Splitting FAQ",
+        "items": {
+          "what_is": {
+            "q": "What is payment splitting?",
+            "a": "Payment splitting allocates one payment across multiple receivers such as merchants, sub-merchants, platform accounts, and partners."
+          },
+          "difference_from_payout": {
+            "q": "How is payment splitting different from payout?",
+            "a": "Payment splitting defines how payment revenue is allocated, while payout is the later movement of settled funds to a bank or account."
+          },
+          "multiple_receivers": {
+            "q": "Can one order be split to multiple receivers?",
+            "a": "Yes. A platform can allocate one order to multiple receivers according to business rules."
+          },
+          "platform_commission": {
+            "q": "Can the platform keep a commission?",
+            "a": "Yes. Platform fees or commissions can be separated before merchant settlement."
+          },
+          "refunds": {
+            "q": "How are refunds handled after splitting?",
+            "a": "Refunds should be traceable against the original order, split records, and settlement result."
+          },
+          "reconciliation": {
+            "q": "Can finance reconcile split records with settlement bills?",
+            "a": "Yes. Split records and settlement bill items should provide a traceable finance workflow."
+          },
+          "api_webhook": {
+            "q": "Does FilixPay support API and webhook integration?",
+            "a": "FilixPay provides developer capabilities for payment status, settlement records, and webhook-driven integration workflows."
+          }
+        }
+      },
+      "channel_rules": {
+        "title": "Channel Rules for Payment Splitting",
+        "items": [
+          {
+            "id": "wechat",
+            "title": "1. WeChat Pay: Fund Freezing & Unfreezing Model",
+            "desc": "WeChat's splitting mechanism centers on 'Freeze First, Split Later,' ideal for scenarios requiring delayed splitting or with refund risks.",
+            "flow": {
+              "title": "Core Workflow:",
+              "steps": [
+                "Transaction & Freezing: Upon successful payment, funds are frozen in the merchant's account (Pending Split state) instead of entering available balance.",
+                "Initiate Split: When split conditions are met (e.g., delivery confirmed), the split API is called. WeChat unfreezes and allocates funds to specified receivers.",
+                "Complete Split: If no further splitting is needed, the completion API unfreezes remaining funds to the merchant's available balance."
+              ]
+            },
+            "compliance": {
+              "title": "Key Compliance Points:",
+              "items": [
+                "Split Ratio Limit: Default maximum is usually 30% of the order amount (adjustable with authorization).",
+                "Split Duration: Funds can be frozen for up to 180 days (some docs mention 30 days; auto-unfreeze occurs if no split is initiated).",
+                "Split Frequency: Supports multiple splits (up to 50 times) to multiple parties (up to 50 receivers per split)."
+              ]
+            }
+          },
+          {
+            "id": "alipay",
+            "title": "2. Alipay: Settlement Confirmation & Asynchronous Splitting",
+            "desc": "Alipay emphasizes 'Settlement Confirmation' and offers strong synch/asynch capabilities for high-concurrency scenarios.",
+            "flow": {
+              "title": "Core Workflow:",
+              "steps": [
+                "Transaction & Freezing: Funds enter a pending settlement state. The platform initiates 'Confirm Settlement' to freeze funds for splitting.",
+                "Initiate Split: Calling the settlement API (alipay.trade.order.settle) supports both synchronous (real-time) and asynchronous (high-frequency) modes.",
+                "Reverse Split: Supports original-path reversal of split funds in case of refunds."
+              ]
+            },
+            "compliance": {
+              "title": "Key Compliance Points:",
+              "items": [
+                "Split Ratio Limit: Maximum amount cannot exceed 100% of the order total plus supplements (policy dependent).",
+                "Split Validity: Splitting is typically valid for up to 365 days after the transaction.",
+                "Receiver Binding: Receivers must be real-name verified and added to the platform's 'Split Relation Set' via API.",
+                "Performance: Sync mode is limited (30 QPS), while async mode supports up to 500 QPS for high-traffic platforms."
+              ]
+            }
+          },
+          {
+            "id": "stripe",
+            "title": "3. Stripe: Separate Charges and Transfers (Connect)",
+            "desc": "Stripe Connect is highly flexible, using the 'Separate Charges and Transfers' model for complex global or multi-party marketplaces.",
+            "flow": {
+              "title": "Core Workflow:",
+              "steps": [
+                "Platform Collection: A PaymentIntent is created on the platform's Stripe account; funds initially belong to the platform.",
+                "Trigger Transfer: Upon success, the platform calls the Transfers API (often triggered by payment_intent.succeeded webhooks).",
+                "Fund Allocation: Transfers are linked to origin charges via source_transaction, allowing funds to flow automatically to Connected Accounts during settlement."
+              ]
+            },
+            "compliance": {
+              "title": "Key Compliance Points:",
+              "items": [
+                "Insufficient Balance: source_transaction linking avoids transfer failures due to lack of platform balance by processing via internal fund flows.",
+                "Application Fees: Platforms can deduct service fees (application_fee_amount) at collection before distributing the remainder.",
+                "Flexibility: Supports splitting to multiple receivers (sellers, affiliates, logistics) without fixed ratio constraints (subject to platform agreement)."
+              ]
+            }
+          }
+        ],
+        "comparison": {
+          "title": "📊 Multi-Platform Comparison Summary",
+          "headers": [
+            "Dimension",
+            "WeChat Pay",
+            "Alipay",
+            "Stripe (Connect)"
+          ],
+          "rows": [
+            [
+              "Core Mechanism",
+              "Freeze -> Unfreeze Split",
+              "Confirm -> Freeze Split",
+              "Platform Collect -> Transfer"
+            ],
+            [
+              "Split Ratio",
+              "Default max 30%",
+              "Up to 100% (policy dependent)",
+              "Flexible (Platform Config)"
+            ],
+            [
+              "Duration",
+              "Max 180 days frozen",
+              "Max 365 days valid",
+              "Standard Payout Cycle"
+            ],
+            [
+              "Receiver Req.",
+              "Merchant ID or WalletID",
+              "Real-name verified & Bound",
+              "Connected Account Required"
+            ],
+            [
+              "Best Scenarios",
+              "Retail, Dining, Delayed Settlement",
+              "Commission, High-Volume Platforms",
+              "Global Marketplace, Complex Payouts"
+            ]
+          ]
+        }
+      },
+      "cta": {
+        "title": "Build split-payment workflows with FilixPay",
+        "desc": "Support platform revenue sharing, merchant settlement, and finance reconciliation from one payment infrastructure."
+      }
+    },
+    "risk_control": {
+      "title": "Payment Risk Control",
+      "subtitle": "Secure every transaction from authorization to settlement",
+      "hero_title": "Payment Risk Control",
+      "hero_desc": "Secure every transaction with real-time rules, expert review, and integrated chargeback insurance—connect Signifyd, Riskified, or Forter with your own credentials, or subscribe to FilixPay platform-hosted coverage.",
+      "pipeline": {
+        "rules": {
+          "title": "Rules Engine",
+          "desc": "Real-time fraud prevention"
+        },
+        "monitor": {
+          "title": "Event Monitor",
+          "desc": "Fraud events and expert review"
+        },
+        "coverage": {
+          "title": "Insurance Partners",
+          "desc": "Signifyd · Riskified · Forter"
+        }
+      },
+      "modules": {
+        "rules": {
+          "title": "Real-Time Rule Engine & Fraud Prevention",
+          "desc": "Millisecond risk decisions during authorization with configurable merchant rules and pre/post-authorization checks.",
+          "points": {
+            "0": "Concurrent compliance and fraud checks at authorization",
+            "1": "Configurable thresholds by geography, behavior, and velocity",
+            "2": "Transaction-level protection distinct from credit-line risk"
+          }
+        },
+        "monitor": {
+          "title": "Fraud Event Monitoring & Expert Manual Review",
+          "desc": "Dual-Layer Verification combines intelligent screening with expert manual review to minimize false declines.",
+          "points": {
+            "0": "Automated fraud event detection and tracking",
+            "1": "Expert manual review queue for anomalous transactions",
+            "2": "Operator alerts for time-sensitive decisions"
+          }
+        },
+        "coverage": {
+          "title": "Integrated Chargeback Insurance Partners",
+          "desc": "FilixPay natively integrates leading chargeback insurance and fraud-guarantee providers. Merchants choose how to consume coverage—bring your own provider contract or subscribe to platform-hosted service.",
+          "disclaimer": "* Subject to service terms, eligibility, and coverage limits.",
+          "points": {
+            "0": "One integration layer for Signifyd, Riskified, and Forter",
+            "1": "Self-configure provider credentials in the merchant center",
+            "2": "Or subscribe to platform-hosted coverage without managing API keys"
+          }
+        }
+      },
+      "delivery_modes": {
+        "title": "Two Ways to Activate Coverage",
+        "desc": "FilixPay supports both merchant-managed provider configuration and platform-hosted subscription—matching independent merchants and marketplace sub-merchants.",
+        "items": {
+          "self_config": {
+            "icon": "🔑",
+            "title": "Bring Your Own Provider (BYOK)",
+            "desc": "Connect your existing Signifyd, Riskified, or Forter account. Configure API keys, webhook secrets, and environment in the merchant center—FilixPay routes assessments and claims to your chosen partner.",
+            "points": {
+              "0": "Full control of provider contract and credentials",
+              "1": "Ideal for independent merchants with direct insurer relationships",
+              "2": "Switch providers with a guided configuration workflow"
+            }
+          },
+          "platform_subscription": {
+            "icon": "🛡️",
+            "title": "Platform-Hosted Coverage Subscription",
+            "desc": "Third-party merchants on the Filix platform can subscribe to coverage insurance powered by the platform merchant's provider configuration—no separate insurer signup required.",
+            "points": {
+              "0": "One-click subscription in the merchant center",
+              "1": "Eligibility tied to pre-auth security rule compliance",
+              "2": "Platform operates provider relationship on your behalf"
+            }
+          }
+        }
+      },
+      "providers": {
+        "title": "Supported Insurance & Fraud-Guarantee Partners",
+        "desc": "FilixPay's core differentiator is deep, production-ready integration with industry-leading chargeback protection providers—not a generic fraud score, but real insurer-backed coverage workflows.",
+        "items": {
+          "signifyd": {
+            "name": "Signifyd",
+            "tagline": "Commerce protection with chargeback guarantee",
+            "desc": "Signifyd combines real-time fraud decisioning with guaranteed chargeback coverage for approved e-commerce orders. FilixPay forwards transaction context, receives coverage decisions, and automates claim workflows via webhooks."
+          },
+          "riskified": {
+            "name": "Riskified",
+            "tagline": "Enterprise fraud intelligence & chargeback guarantee",
+            "desc": "Riskified delivers AI-driven fraud prevention trusted by global retailers. Merchants on FilixPay can route orders for policy decisions and leverage chargeback guarantee programs where eligible."
+          },
+          "forter": {
+            "name": "Forter",
+            "tagline": "Real-time fraud prevention for digital commerce",
+            "desc": "Forter provides identity-centric fraud decisioning and chargeback abuse protection at scale. FilixPay integrates assessment, webhook updates, and claim submission for Forter-backed merchants."
+          }
+        },
+        "footnote": "Provider availability and feature scope depend on your merchant type, configuration mode, and partner contract terms."
+      },
+      "audience": {
+        "title": "Built for High-Stakes Commerce",
+        "desc": "FilixPay risk control supports cross-border merchants, marketplace operators, and businesses that need audit-ready fraud workflows.",
+        "items": {
+          "cross_border": {
+            "title": "Cross-Border E-Commerce",
+            "desc": "Protect international card-not-present revenue."
+          },
+          "marketplace": {
+            "title": "Platform & Marketplace",
+            "desc": "Third-party merchant ecosystems with shared risk oversight."
+          },
+          "high_risk": {
+            "title": "Elevated Dispute Exposure",
+            "desc": "Verticals where chargeback anxiety slows growth."
+          }
+        }
+      },
+      "workflow": {
+        "title": "Full-Chain Workflow",
+        "desc": "A single linear path from checkout to eligible protection.",
+        "steps": {
+          "checkout": {
+            "title": "Customer Checkout",
+            "desc": "The merchant initiates payment and FilixPay captures transaction context such as metadata and device signals."
+          },
+          "rules": {
+            "title": "Rule Evaluation",
+            "desc": "The risk engine matches merchant rules and global policies within milliseconds to approve, block, or route to review."
+          },
+          "review": {
+            "title": "Fraud Monitoring & Review",
+            "desc": "High-risk events trigger automated tracking. Dual-Layer Verification routes cases to expert manual review to recover legitimate sales."
+          },
+          "coverage": {
+            "title": "Provider-Backed Chargeback Protection",
+            "desc": "FilixPay submits eligible fraud-related chargebacks to your configured Signifyd, Riskified, or Forter partner—or to platform-hosted coverage for subscribed merchants."
+          }
+        }
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "items": {
+          "what_is": {
+            "q": "What is payment risk control?",
+            "a": "Payment risk control is a multi-layered security framework designed to detect, evaluate, and mitigate fraudulent activities throughout the transaction life cycle—protecting your legitimate revenue without degrading user experience."
+          },
+          "vs_chargeback": {
+            "q": "How is risk control different from chargeback protection?",
+            "a": "Risk control acts as the proactive defense mechanism (pre-authorization and post-authorization rules to prevent fraud from happening), while chargeback protection provides reactive security (financial coverage for qualified transactions if an unforeseen dispute occurs)."
+          },
+          "rule_engine": {
+            "q": "How does the rule engine work?",
+            "a": "Our engine runs concurrent compliance and fraud checks within milliseconds during authorization. Merchants can configure granular thresholds based on geographical location, behavioral heuristics, and velocity limits via the merchant dashboard."
+          },
+          "flagged_review": {
+            "q": "What happens when a transaction is flagged for review?",
+            "a": "When a transaction exhibits anomalous patterns, it triggers an internal fraud event. To prevent false declines, our platform employs a Dual-Layer Verification model, routes it to an expert manual review queue, and alerts operators immediately."
+          },
+          "coverage_eligibility": {
+            "q": "Who is eligible for chargeback coverage?",
+            "a": "Independent merchants can activate coverage by configuring Signifyd, Riskified, or Forter in the merchant center. Third-party platform merchants may subscribe to platform-hosted coverage plans. Individual transaction eligibility depends on provider rules and compliance with localized pre-auth security requirements."
+          },
+          "coverage_providers": {
+            "q": "Which chargeback insurance providers does FilixPay support?",
+            "a": "FilixPay integrates Signifyd, Riskified, and Forter with unified assessment, webhook handling, and claim submission. Merchants either connect their own provider credentials (BYOK) or subscribe to platform-hosted coverage powered by the platform merchant configuration."
+          },
+          "crypto_relation": {
+            "q": "How does this relate to crypto payments (zero chargebacks)?",
+            "a": "While digital assets natively feature transactional finality (meaning zero chargebacks can be technically initiated), our risk engine still enforces pre-authorization rules for crypto payments to detect wallet anomaly patterns and address blocking list compliance."
+          }
+        }
+      },
+      "cta": {
+        "title": "Ready to connect your chargeback insurance partner?",
+        "desc": "Configure Signifyd, Riskified, or Forter—or subscribe to platform-hosted coverage from the merchant center."
+      }
+    },
+    "cross_border": {
+      "title": "Cross-Border E-Commerce",
+      "subtitle": "End-to-end payment solutions for global online sellers",
+      "hero_title": "Sell Globally, Collect Locally",
+      "hero_desc": "Integrate with Shopify, WooCommerce and custom stores. Accept local payment methods in 50+ countries with automatic currency conversion."
+    },
+    "web3_ecommerce": {
+      "title": "Web3 E-Commerce",
+      "subtitle": "Payment infrastructure for the decentralized economy",
+      "hero_title": "The Payment Layer for Web3 Commerce",
+      "hero_desc": "From NFT marketplaces to GameFi ecosystems, power your Web3 commerce with seamless crypto payment rails."
+    },
+    "saas_provider": {
+      "title": "SaaS Provider Solutions",
+      "subtitle": "Multi-tenant payment infrastructure for platform businesses",
+      "hero_title": "Build Your Payment Platform",
+      "hero_desc": "White-label payment capabilities with split payments, sub-merchant management, and automated settlement for your SaaS platform."
+    }
+  }
+}

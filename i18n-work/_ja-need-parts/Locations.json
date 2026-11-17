@@ -1,0 +1,16 @@
+{
+  "Locations": {
+    "edit_location": "Edit Location",
+    "qrcode": "QR Code",
+    "anti_fraud_code": "Anti-Fraud Code",
+    "form": {
+      "status": "Status",
+      "default": "Set as Default",
+      "status_required": "Please select a status",
+      "edit_success": "Location updated successfully"
+    },
+    "status_active": "Active",
+    "status_inactive": "Inactive",
+    "confirm_delete": "Are you sure you want to delete this location?"
+  }
+}

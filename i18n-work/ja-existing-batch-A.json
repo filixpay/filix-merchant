@@ -1,0 +1,119 @@
+{
+  "Layout": {
+    "title": "FilixPay - 国際決済と企業のグローバル展開における選ばれるパートナー",
+    "sidebar_title": "マーチャントプラットフォーム",
+    "identity": {
+      "current_identity": "現在の身元",
+      "independent": {
+        "title": "マイ・インディペンデント・マーチャント",
+        "desc": "四者間モデル（銀行直接決済）"
+      },
+      "sub_merchant": {
+        "title": "プラットフォーム加盟店",
+        "desc": "三者間モデル（プラットフォーム代行集金）"
+      },
+      "open_platform_service": "➕ プラットフォーム集金サービスを開通する",
+      "modal": {
+        "title": "プラットフォーム集金サービスを開通する",
+        "bank_holder": "決済銀行口座名義",
+        "bank_account": "決済口座番号",
+        "holder_hint": "名称は会社名と一致している必要があります",
+        "submit": "今すぐ開通",
+        "cancel": "キャンセル",
+        "success": "サービスの開通に成功しました"
+      }
+    },
+    "workspace": {
+      "workspace": "Workspace",
+      "switch_business_account": "Switch business account",
+      "no_business_accounts": "No business accounts in this organization",
+      "affiliated_organization": "Organization",
+      "add_organization": "Add organization",
+      "add_business_account": "New business account",
+      "manage_organization": "Manage organization"
+    },
+    "logout": "サインアウト",
+    "nav": {
+      "overview": "概要",
+      "payment_configs": "決済設定",
+      "checkout_counters": "決済カウンター設定",
+      "orders": "注文",
+      "refunds": "返金",
+      "service_plan": "サービスプラン",
+      "customers": "顧客",
+      "locations": "店舗",
+      "bank_accounts": "受取口座",
+      "transfers": "振込審査",
+      "reviews": "振込確認",
+      "sub_merchants": "サブマーチャント",
+      "acquiring_management": "アクワイアリング管理",
+      "developer": "開発者センター",
+      "refund_settings": "Refund settings",
+      "refund_approvals": "Refund approvals"
+    }
+  },
+  "Login": {
+    "title": "FilixPay Management Center",
+    "subtitle": "Manage merchants, organizations, payments, and developer resources in one place",
+    "button": "Sign In",
+    "connecting": "Connecting...",
+    "back_to_home": "← Back to Home",
+    "merchant_title": "Merchant Operations Center",
+    "merchant_body": "Manage payments, settlement, APIs, and applications",
+    "merchant_cta": "Enter Merchant Center",
+    "enterprise_title": "Enterprise Center",
+    "enterprise_body": "Manage organizations, members, permissions, and multi-merchant relationships",
+    "enterprise_cta": "Enter Enterprise Center"
+  },
+  "Dashboard": {
+    "title": "ダッシュボード",
+    "overview": "概要",
+    "stats": {
+      "revenue": "本日の総収益",
+      "orders": "本日の総注文件数",
+      "channels": "アクティブなチャネル",
+      "available_funds": "Available funds",
+      "today_funds_revenue": "Today's funds revenue",
+      "asset_count": "{count} assets",
+      "other_assets": "+ {count} other assets",
+      "no_available_funds": "No available funds",
+      "view_balance": "View balance",
+      "view_activity": "View activity",
+      "view_orders": "View orders",
+      "settlement_cycle_label": "Settlement cycle",
+      "settlement_cycle_title": "T+1 automatic settlement",
+      "settlement_cycle_desc": "Funds settle directly from the upstream channel to your designated corporate bank account. Available balance follows bank statement reconciliation."
+    },
+    "recent_transactions": "最近の取引",
+    "no_transactions": "現在、最近の取引はありません。"
+  },
+  "Common": {
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました",
+    "success": "成功",
+    "confirm_delete": "この項目を削除してもよろしいですか？",
+    "cancel": "キャンセル",
+    "submit": "送信",
+    "reset": "リセット",
+    "previous": "前へ",
+    "next": "次へ",
+    "page_of": "ページ {current} / {total}",
+    "close": "閉じる",
+    "add": "追加",
+    "delete": "削除",
+    "actions": "アクション"
+  },
+  "ServicePlan": {
+    "title": "サービスプラン",
+    "subtitle": "ビジネス成長に合わせたプランを選択し、支払い履歴を確認します。",
+    "choose_plan": "プランを選択",
+    "payment_records": "支払い履歴",
+    "plans": {
+      "weekly": "週払いプラン",
+      "monthly": "月払いプラン",
+      "half_year": "半年プラン",
+      "yearly": "年払いプラン"
+    },
+    "pay": "支払う"
+  }
+}

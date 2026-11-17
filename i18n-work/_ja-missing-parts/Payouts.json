@@ -1,0 +1,31 @@
+{
+  "Payouts": {
+    "title": "Withdrawal Records",
+    "subtitle": "View your fund withdrawal request history and status.",
+    "headers": {
+      "withdrawal_no": "Withdrawal No",
+      "amount": "Amount",
+      "status": "Status",
+      "approval_status": "Approval Status",
+      "payee_name": "Payee Name",
+      "payee_account": "Payee Account",
+      "applicant": "Applicant",
+      "created_at": "Created At",
+      "updated_at": "Updated At"
+    },
+    "empty": "No withdrawal records found.",
+    "details": {
+      "title": "Withdrawal Details",
+      "withdrawal_no": "Withdrawal No",
+      "amount": "Amount",
+      "currency": "Currency",
+      "withdrawal_status": "Status",
+      "approval_status": "Approval Status",
+      "payee_name": "Payee Name",
+      "payee_account": "Payee Account",
+      "applicant": "Applicant",
+      "created_at": "Created At",
+      "updated_at": "Updated At"
+    }
+  }
+}

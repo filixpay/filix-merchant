@@ -1,0 +1,66 @@
+{
+  "CreditTransaction": {
+    "title": "Credit Transaction History",
+    "subtitle": "View detailed history of credit limit usage, repayments, and adjustments.",
+    "headers": {
+      "business_id": "Business ID",
+      "type": "Type",
+      "amount": "Amount",
+      "balance_before": "Used Before",
+      "balance_after": "Used After",
+      "customer": "Customer",
+      "created_at": "Transaction Time"
+    },
+    "types": {
+      "USE": "Usage",
+      "REPAY": "Repayment",
+      "ADJUST": "Adjustment",
+      "REFUND": "Refund"
+    },
+    "loading": "Loading transaction history...",
+    "empty": "No credit transaction history found."
+  },
+  "MemberCreditLimit": {
+    "title": "My Available Credit",
+    "subtitle": "View your current credit line information, including total limit, used amount, and available balance.",
+    "view_adjustments": "Adjustment Logs",
+    "view_transactions": "Credit Transactions",
+    "headers": {
+      "creditor": "Creditor",
+      "credit_limit": "Total Limit",
+      "used_amount": "Used Amount",
+      "available_amount": "Available Amount",
+      "payment_term": "Payment Term",
+      "status": "Status"
+    },
+    "loading": "Loading credit lines...",
+    "empty": "No credit lines have been assigned to you yet."
+  },
+  "MemberCreditAdjustment": {
+    "title": "Credit Adjustment History",
+    "subtitle": "View history of adjustments made to your credit limit.",
+    "headers": {
+      "operator": "Operator",
+      "old_limit": "Previous Limit",
+      "new_limit": "New Limit",
+      "amount": "Amount",
+      "created_at": "Time"
+    },
+    "loading": "Loading adjustment history...",
+    "empty": "No adjustment history found."
+  },
+  "MemberCreditTransaction": {
+    "title": "Credit Payment History",
+    "subtitle": "View details of payments, refunds, and repayments made using your credit line.",
+    "headers": {
+      "business_id": "Business ID",
+      "type": "Transaction Type",
+      "amount": "Amount",
+      "balance_before": "Before (Used)",
+      "balance_after": "After (Used)",
+      "created_at": "Time"
+    },
+    "loading": "Loading payment history...",
+    "empty": "No payment history found."
+  }
+}

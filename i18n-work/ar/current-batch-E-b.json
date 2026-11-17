@@ -1,0 +1,316 @@
+{
+  "Reporting": {
+    "widgets": {
+      "availableBalance": "Available Balance",
+      "todayVolume": "Today's Volume",
+      "successRate": "Success Rate",
+      "pendingSettlement": "Pending Settlement"
+    },
+    "no_data": "No data available",
+    "forbidden": "You do not have permission to view this",
+    "failed": "Failed to load",
+    "retry": "Retry",
+    "transactions": {
+      "title": "Transaction Report",
+      "subtitle": "Discover and export transactions under your authorized scope.",
+      "empty": "No transactions found.",
+      "table_total": "Total {count} transactions",
+      "export": "Export CSV",
+      "export_failed": "Export failed",
+      "filters": {
+        "merchant_order_id": "Merchant order ID",
+        "status": "Status",
+        "channel": "Channel",
+        "amount_min": "Min amount",
+        "amount_max": "Max amount",
+        "created_from": "Created from",
+        "created_to": "Created to"
+      },
+      "columns": {
+        "merchant_order_id": "Merchant order ID",
+        "trade_no": "Trade no.",
+        "order_type": "Order type",
+        "status": "Status",
+        "amount": "Amount",
+        "channel": "Channel",
+        "created_at": "Created at"
+      },
+      "statuses": {
+        "PENDING": "Pending",
+        "PROCESSING": "Processing",
+        "PARTIAL_SUCCESS": "Partial success",
+        "SUCCESS": "Success",
+        "CLOSED": "Closed",
+        "FAILED": "Failed",
+        "REQUIRES_CAPTURE": "Requires capture",
+        "DISPUTED": "Disputed"
+      },
+      "orderTypes": {
+        "TRADE": "Trade order",
+        "DEPOSIT": "Deposit",
+        "TRANSFER": "Transfer",
+        "PAYOUT": "Payout",
+        "WITHDRAWAL": "Withdrawal",
+        "REFUND": "Refund",
+        "DIRECT_DEBIT": "Direct debit",
+        "PLATFORM_SERVICE_FEE": "Platform service fee"
+      },
+      "detail": {
+        "title": "Transaction detail",
+        "back_to_list": "Back to transactions",
+        "resource_unavailable": "Resource unavailable",
+        "view_business_detail": "View business detail",
+        "fields": {
+          "merchant_order_id": "Merchant order ID",
+          "trade_no": "Trade no.",
+          "status": "Status",
+          "order_type": "Order type",
+          "amount": "Amount",
+          "paid_amount": "Paid amount",
+          "refunded_amount": "Refunded amount",
+          "currency": "Currency",
+          "channel": "Channel",
+          "subject": "Subject",
+          "created_at": "Created at",
+          "paid_at": "Paid at",
+          "updated_at": "Updated at"
+        },
+        "timeline": {
+          "title": "Timeline",
+          "empty": "No timeline events."
+        }
+      }
+    }
+  },
+  "Risk": {
+    "related_risk": {
+      "title": "Related Risk",
+      "fraud_events": "Fraud Events",
+      "reviews": "Reviews"
+    },
+    "payment_timeline": {
+      "title": "Payment Risk Timeline",
+      "entity": {
+        "FRAUD": "Fraud",
+        "REVIEW": "Review",
+        "DISPUTE": "Dispute",
+        "PAYMENT": "Payment"
+      }
+    },
+    "dashboard": {
+      "title": "Risk Overview",
+      "view_fraud": "View fraud events",
+      "pending_reviews": "Pending Reviews",
+      "open_disputes": "Open Disputes",
+      "high_fraud_today": "High Fraud Today",
+      "blocked_amount": "Blocked Amount",
+      "blocked_unsupported": "Not supported yet",
+      "review_sla_hours": "Review SLA (hrs)",
+      "chargeback_ratio": "Chargeback Ratio",
+      "rejected_today": "Rejected Today",
+      "pending_review_attempts": "Pending Review Payments",
+      "pending_events": "Pending risk actions",
+      "monitoring_metrics": "Ongoing monitoring"
+    }
+  },
+  "RiskRules": {
+    "title": "Risk Rules",
+    "subtitle": "View platform and merchant PRE_AUTH rules (read-only).",
+    "empty": "No risk rules found.",
+    "headers": {
+      "name": "Name",
+      "rule_type": "Type",
+      "severity": "Severity",
+      "enforcement": "Enforcement",
+      "scope": "Scope",
+      "enabled": "Enabled",
+      "priority": "Priority",
+      "config": "Configuration"
+    },
+    "rule_type": {
+      "VELOCITY": "Velocity",
+      "AMOUNT": "Amount"
+    },
+    "enforcement": {
+      "BLOCK": "Block",
+      "REVIEW_BEFORE_AUTH": "Review before payment"
+    },
+    "scope": {
+      "platform": "Platform",
+      "merchant": "Merchant"
+    },
+    "config": {
+      "schema": "Schema",
+      "velocity": "Max {maxCount} attempts within {windowMinutes} minutes",
+      "amount": "Threshold: {threshold}"
+    }
+  },
+  "Fraud": {
+    "title": "Fraud Events",
+    "subtitle": "Monitor detected fraud signals and investigation status.",
+    "empty": "No fraud events found.",
+    "table_total": "Total {count} events",
+    "filters": {
+      "keyword": "Search events",
+      "status": "Status",
+      "severity": "Severity"
+    },
+    "detail": {
+      "title": "Fraud Event Detail",
+      "back_to_list": "Back to fraud events",
+      "not_found": "Fraud event not found.",
+      "payment_id": "Payment ID",
+      "provider": "Provider",
+      "score": "Risk Score",
+      "metadata": {
+        "title": "Metadata",
+        "v1": {
+          "deviceId": "Device ID",
+          "ipAddress": "IP Address",
+          "velocityCount": "Velocity Count",
+          "amountThreshold": "Amount Threshold",
+          "countryCode": "Country",
+          "cardFingerprint": "Card Fingerprint"
+        }
+      }
+    },
+    "headers": {
+      "event_type": "Event Type",
+      "risk_type": "Risk Type",
+      "description": "Description",
+      "severity": "Severity",
+      "order_id": "Related Order",
+      "status": "Status",
+      "detected_at": "Detected At"
+    },
+    "status": {
+      "OPEN": "Open",
+      "INVESTIGATING": "Investigating",
+      "CLOSED": "Closed"
+    },
+    "risk_type": {
+      "DEVICE": "Device anomaly",
+      "VELOCITY": "Velocity anomaly",
+      "GEO": "Geographic anomaly",
+      "BIN": "BIN anomaly",
+      "AMOUNT": "Amount anomaly",
+      "IP_MISMATCH": "IP mismatch",
+      "COMBINED": "Combined risk",
+      "FRAUD": "Fraud risk"
+    },
+    "summary": {
+      "DEVICE": "Device fingerprint does not match billing profile",
+      "VELOCITY": "Transaction velocity exceeded the threshold",
+      "GEO": "Transaction geography differs from expected behavior",
+      "BIN": "Card BIN shows elevated risk characteristics",
+      "AMOUNT": "Transaction amount is outside the normal range",
+      "IP_MISMATCH": "IP address does not match billing information",
+      "COMBINED": "Multiple risk signals triggered together",
+      "FRAUD": "Suspicious fraud activity detected"
+    }
+  },
+  "CoverageInsurance": {
+    "title": "Coverage Insurance",
+    "subtitle": "Subscribe to platform-hosted chargeback coverage for new orders.",
+    "product_title": "Platform Chargeback Coverage",
+    "product_description": "Filix Pay provides integrated dispute coverage through our platform insurance partners.",
+    "unavailable_title": "Service not available yet",
+    "unavailable_body": "Platform coverage is being prepared. Please check back later or contact support.",
+    "agreement_body": "By subscribing, you authorize Filix Pay to apply platform-hosted chargeback coverage to eligible new orders under the current service agreement.",
+    "agreement_checkbox": "I have read and agree to the coverage service agreement (v1).",
+    "unsubscribed_banner": "Coverage is turned off for new orders. Existing claims will continue to be processed.",
+    "status": {
+      "subscribed": "Active",
+      "not_subscribed": "Not subscribed",
+      "unsubscribed": "Unsubscribed"
+    },
+    "fields": {
+      "provider": "Provider",
+      "subscribed_at": "Subscribed at",
+      "agreement_version": "Agreement version"
+    },
+    "actions": {
+      "subscribe": "Activate coverage",
+      "unsubscribe": "Turn off coverage"
+    },
+    "unsubscribe_modal": {
+      "title": "Turn off coverage?",
+      "warning": "After you turn off coverage, new orders will no longer be covered by platform chargeback insurance. Existing claims will continue to be processed without interruption.",
+      "confirm": "Turn off",
+      "cancel": "Cancel"
+    },
+    "messages": {
+      "load_failed": "Failed to load coverage subscription",
+      "subscribed": "Coverage activated",
+      "subscribe_failed": "Failed to activate coverage",
+      "unsubscribed": "Coverage turned off",
+      "unsubscribe_failed": "Failed to turn off coverage"
+    }
+  },
+  "CoverageConfig": {
+    "title": "Chargeback Coverage",
+    "subtitle": "Configure dispute coverage providers for new chargeback cases.",
+    "empty": "No coverage configurations yet.",
+    "provider_switch_warning": "Switching provider only affects new chargeback cases.",
+    "active_banner": "Active provider: {provider} ({id})",
+    "no_active_banner": "No active coverage provider. New disputes will skip coverage claims.",
+    "platform_hosted_banner": "This configuration powers platform-hosted coverage for subscribed Platform settlement merchants.",
+    "maintenance_banner": "Maintenance mode: new assessments are paused; in-flight claim webhooks continue.",
+    "columns": {
+      "provider": "Provider",
+      "status": "Status",
+      "version": "Version",
+      "updated_at": "Updated"
+    },
+    "status": {
+      "active": "Active",
+      "disabled": "Disabled",
+      "maintenance": "Maintenance"
+    },
+    "fields": {
+      "provider": "Provider",
+      "provider_placeholder": "Select a provider"
+    },
+    "config_fields": {
+      "teamId": "Team ID",
+      "shopDomain": "Shop Domain",
+      "environment": "Environment",
+      "coverageLimit": "Coverage Limit",
+      "currency": "Currency",
+      "mode": "Mode"
+    },
+    "secret_fields": {
+      "apiKey": "API Key",
+      "webhookSecret": "Webhook Secret"
+    },
+    "secret_keep_hint": "Current value: {masked}. Leave blank to keep unchanged.",
+    "secret_placeholder_edit": "Leave blank to keep current value",
+    "validation": {
+      "provider_required": "Please select a provider",
+      "field_required": "{field} is required"
+    },
+    "actions": {
+      "create": "Add Configuration",
+      "edit": "Edit",
+      "activate": "Activate",
+      "deactivate": "Deactivate",
+      "enter_maintenance": "Enter maintenance",
+      "resume": "Resume service",
+      "test_connection": "Test Connection"
+    },
+    "modal": {
+      "create_title": "Add Coverage Configuration",
+      "edit_title": "Edit Coverage Configuration"
+    },
+    "messages": {
+      "created": "Coverage configuration created",
+      "updated": "Coverage configuration updated",
+      "activated": "Coverage configuration activated",
+      "deactivated": "Coverage configuration deactivated",
+      "maintenance_entered": "Coverage entered maintenance mode",
+      "resumed": "Coverage resumed",
+      "test_ok": "Connection OK ({latencyMs} ms, {providerVersion})",
+      "test_failed": "Connection test failed: {status}"
+    }
+  }
+}

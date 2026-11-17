@@ -1,0 +1,759 @@
+{
+  "Disputes": {
+    "title": "Disputes & Chargebacks",
+    "subtitle": "Monitor chargeback cases, response deadlines, and required merchant actions.",
+    "empty": "No dispute cases found.",
+    "back_to_list": "Back to disputes",
+    "kpis": {
+      "action_required": "Cases Require Action",
+      "due_soon": "Due Soon (<3 days)",
+      "overdue": "Overdue"
+    },
+    "headers": {
+      "case_number": "Case No.",
+      "order_id": "Order ID",
+      "channel": "Channel",
+      "created_at": "Created At",
+      "amount": "Amount",
+      "reason": "Reason",
+      "priority": "Priority",
+      "status": "Status",
+      "response_due": "Response Due"
+    },
+    "filters": {
+      "keyword": "Case No. / Order ID",
+      "status": "Status",
+      "channel": "Channel",
+      "all_status": "All statuses"
+    },
+    "table_total": "Total {count}",
+    "priority": {
+      "CRITICAL": "Critical",
+      "HIGH": "High",
+      "MEDIUM": "Medium",
+      "LOW": "Low"
+    },
+    "status": {
+      "DRAFT": "Draft",
+      "SUBMITTED": "Submitted",
+      "UNDER_REVIEW": "Under Review",
+      "WON": "Won",
+      "LOST": "Lost",
+      "ACCEPTED": "Accepted"
+    },
+    "evidence_category": {
+      "RECEIPT": "Receipt",
+      "SHIPPING": "Shipping",
+      "COMMUNICATION": "Communication",
+      "OTHER": "Other"
+    },
+    "action_center": {
+      "title": "Merchant Action Center",
+      "locked": "This case is locked. Evidence can no longer be edited.",
+      "upload_hint": "Click or drag files to upload evidence",
+      "file": "File",
+      "category": "Category",
+      "upload_types": "Supports PDF, JPG, PNG, WEBP. Max {size}MB per file.",
+      "file_size": "Size",
+      "file_too_large": "File too large. Max {size}MB per file."
+    },
+    "actions": {
+      "save_draft": "Save Draft",
+      "submit": "Submit Evidence",
+      "accept_liability": "Accept Liability",
+      "accept_liability_confirm_title": "Accept chargeback liability?",
+      "accept_liability_confirm_body": "You will not be able to submit evidence after accepting liability.",
+      "submit_confirm_title": "Submit evidence?",
+      "submit_confirm_body": "Submission cannot be undone. Evidence will be sent to the payment channel for review."
+    },
+    "messages": {
+      "draft_saved": "Evidence draft saved",
+      "submitted": "Evidence submitted for review",
+      "liability_accepted": "Liability accepted",
+      "evidence_uploaded": "Evidence file uploaded",
+      "evidence_required": "Please upload at least one evidence file"
+    },
+    "reason_codes": {
+      "fraudulent": "Fraudulent",
+      "duplicate": "Duplicate charge",
+      "product_not_received": "Product not received",
+      "unrecognized": "Unrecognized charge",
+      "credit_not_processed": "Credit not processed",
+      "general": "General dispute",
+      "incorrect_account_details": "Incorrect account details",
+      "insufficient_funds": "Insufficient funds",
+      "bank_cannot_process": "Bank cannot process",
+      "debit_not_authorized": "Debit not authorized",
+      "customer_initiated": "Customer initiated",
+      "merchandise_or_service_not_received": "Merchandise or service not received",
+      "unauthorized": "Unauthorized",
+      "merchandise_or_service_not_as_described": "Merchandise or service not as described",
+      "cancelled_recurring_billing": "Cancelled recurring billing",
+      "non_receipt": "Non-receipt",
+      "not_as_described": "Not as described",
+      "duplicate_transaction": "Duplicate transaction",
+      "credit_not_received": "Credit not received"
+    },
+    "timeline": {
+      "title": "Case Timeline",
+      "actor": "By {actor}",
+      "actors": {
+        "system": "System auto-trigger",
+        "merchant": "Merchant action"
+      },
+      "events": {
+        "CASE_OPENED": "Dispute opened",
+        "EVIDENCE_DRAFT_SAVED": "Evidence draft saved",
+        "EVIDENCE_SUBMITTED": "Evidence submitted",
+        "REVIEW_STARTED": "Under bank review",
+        "CHANNEL_STATUS_CHANGED": "Channel status updated",
+        "CASE_RESOLVED": "Dispute resolved",
+        "LIABILITY_ACCEPTED": "Liability accepted",
+        "EVIDENCE_FORWARDED_TO_CHANNEL": "Evidence forwarded to channel",
+        "CHANNEL_EVIDENCE_SUBMIT_FAILED": "Channel evidence submit failed"
+      },
+      "titles": {
+        "dispute_opened": "Dispute opened",
+        "dispute_resolved": "Dispute resolved",
+        "evidence_draft_saved": "Evidence draft saved",
+        "evidence_submitted": "Evidence submitted",
+        "under_bank_review": "Under bank review",
+        "liability_accepted": "Liability accepted",
+        "channel_status_updated": "Channel status updated",
+        "evidence_forwarded_to_channel": "Evidence forwarded to channel",
+        "channel_evidence_submit_failed": "Channel evidence submit failed"
+      },
+      "descriptions": {
+        "charge_dispute_created": "Stripe: dispute created",
+        "charge_dispute_updated": "Stripe: dispute updated",
+        "charge_dispute_closed": "Stripe: dispute closed",
+        "charge_dispute_funds_withdrawn": "Stripe: dispute funds withdrawn",
+        "charge_dispute_funds_reinstated": "Stripe: dispute funds reinstated",
+        "customer_dispute_created": "PayPal: dispute created",
+        "customer_dispute_updated": "PayPal: dispute updated",
+        "customer_dispute_resolved": "PayPal: dispute resolved",
+        "submitted_files_to_channel": "Submitted {count} file(s) to {channel}",
+        "files_attached": "{count} file(s) attached",
+        "channel_status_transition": "{oldStatus} → {newStatus}",
+        "case_locked_for_review": "Case locked for review",
+        "merchant_accepted_chargeback_liability": "Merchant accepted chargeback liability"
+      },
+      "channel_statuses": {
+        "needs_response": "Needs response",
+        "under_review": "Under review",
+        "won": "Won",
+        "lost": "Lost",
+        "charge_refunded": "Charge refunded",
+        "warning_needs_response": "Warning needs response",
+        "warning_under_review": "Warning under review",
+        "warning_closed": "Warning closed"
+      },
+      "resolutions": {
+        "MERCHANT_WON": "Merchant won",
+        "BUYER_WON": "Buyer won",
+        "MERCHANT_ACCEPTED": "Merchant accepted",
+        "PARTIAL": "Partial win"
+      }
+    },
+    "detail": {
+      "title": "Dispute Case",
+      "reason_code": "Reason Code",
+      "not_found": "Dispute case not found."
+    },
+    "coverage_assessment": {
+      "title": "Coverage Assessment",
+      "headers": {
+        "status": "Coverage Status",
+        "provider": "Provider",
+        "stage": "Evaluation Stage",
+        "limit": "Coverage Limit",
+        "reference": "Reference",
+        "assessment_id": "Assessment ID"
+      },
+      "status": {
+        "COVERED": "Covered",
+        "NOT_COVERED": "Not Covered",
+        "PARTIAL": "Partially Covered"
+      },
+      "stage": {
+        "PRE_AUTH": "Pre-auth",
+        "POST_AUTH": "Post-auth",
+        "MANUAL": "Manual",
+        "ASYNC_UPDATE": "Async update"
+      },
+      "timeline": {
+        "title": "Assessment Timeline"
+      }
+    },
+    "coverage": {
+      "title": "Chargeback Protection",
+      "headers": {
+        "status": "Claim Status",
+        "provider": "Provider",
+        "amount": "Claim Amount",
+        "provider_claim_id": "Provider Claim ID"
+      },
+      "status": {
+        "CREATED": "Created",
+        "UNDER_REVIEW": "Under Review",
+        "APPROVED": "Approved",
+        "REJECTED": "Declined",
+        "PAID": "Paid",
+        "CLOSED": "Closed"
+      },
+      "event_type": {
+        "CREATED": "Claim created",
+        "SUBMITTED": "Submitted to provider",
+        "UNDER_REVIEW": "Under review",
+        "APPROVED": "Approved",
+        "REJECTED": "Declined",
+        "PAID": "Paid",
+        "CLOSED": "Closed"
+      },
+      "timeline": {
+        "title": "Coverage Timeline"
+      }
+    },
+    "response_due": {
+      "overdue": "⚠️ Overdue",
+      "hours_left": "⚠️ {hours}h left",
+      "days_left": "{days} days left"
+    }
+  },
+  "Support": {
+    "entry_label": "Support Center",
+    "entry_label_with_unread": "Support Center, {count} new replies",
+    "entry_collapse": "Minimize support entry",
+    "entry_expand": "Expand support entry",
+    "title": "Support",
+    "create_title": "Ask a question",
+    "new_question": "New question",
+    "back_to_list": "Back to list",
+    "refresh": "Refresh",
+    "question_label": "Question",
+    "question_placeholder": "Describe your issue…",
+    "submit_question": "Submit",
+    "create_success": "Question submitted",
+    "ticket_title": "Ticket {number}",
+    "subject_label": "Subject: ",
+    "view_detail": "View details",
+    "answered_hint": "This ticket has been answered. To ask a follow-up, ",
+    "create_new_ticket": "create a new ticket",
+    "status": {
+      "open": "Open",
+      "answered": "Answered"
+    },
+    "sender": {
+      "merchant": "Me",
+      "operator": "Support"
+    },
+    "empty": {
+      "list": "No support conversations yet",
+      "messages": "No messages yet"
+    },
+    "errors": {
+      "load_list": "Failed to load conversations",
+      "load_detail": "Failed to load conversation",
+      "create": "Failed to submit question",
+      "blank_content": "Please enter your question"
+    }
+  },
+  "Notifications": {
+    "title": "Notifications & Tasks",
+    "subtitle": "Stay on top of platform messages and items that need your action.",
+    "view_all": "View all",
+    "loading": "Loading…",
+    "mark_all_read": "Mark all as read",
+    "tab": {
+      "notifications": "Notifications",
+      "tasks": "Tasks"
+    },
+    "filter": {
+      "all": "All",
+      "unread": "Unread"
+    },
+    "columns": {
+      "reference": "Reference",
+      "details": "Details",
+      "status_time": "Status / Time"
+    },
+    "empty": {
+      "notifications": "No notifications yet.",
+      "unread": "No unread notifications.",
+      "tasks": "No open tasks.",
+      "completed_tasks": "No completed tasks."
+    },
+    "severity": {
+      "INFO": "Info",
+      "SUCCESS": "Success",
+      "WARNING": "Warning",
+      "ERROR": "Error"
+    },
+    "priority": {
+      "CRITICAL": "Critical",
+      "HIGH": "High",
+      "MEDIUM": "Medium",
+      "LOW": "Low"
+    },
+    "banner": {
+      "dismiss": "Dismiss",
+      "action": "Take action"
+    },
+    "resume_link": "Resume payment",
+    "widget": {
+      "action_center": "Action Center",
+      "recent": "Recent Notifications",
+      "summary": "{openTasks} open task(s) · {overdue} overdue"
+    },
+    "counts": {
+      "unread": "Unread notifications",
+      "open_tasks": "Open tasks"
+    },
+    "task": {
+      "action": "Process",
+      "review_action": "Review",
+      "due": "Due {time}",
+      "overdue": "Overdue · {time}"
+    },
+    "tasks": {
+      "open": "Open tasks",
+      "completed": "Completed"
+    },
+    "status": {
+      "read": "Read",
+      "unread": "Unread"
+    },
+    "actions": {
+      "view_details": "View details"
+    },
+    "showing_count": "Showing {shown} of {total}"
+  },
+  "AuditLogs": {
+    "title": "Audit Logs",
+    "subtitle": "Read-only audit trail for security-sensitive actions in your merchant account.",
+    "empty": "No audit records found.",
+    "table_total": "Total {count} records",
+    "view_link": "View",
+    "timeline_hint": "View Timeline in the related order detail",
+    "metadata_truncated": "Metadata was truncated",
+    "columns": {
+      "time": "Time",
+      "actor": "Actor",
+      "action": "Action",
+      "resource": "Resource",
+      "result": "Result",
+      "link": "Link"
+    },
+    "filter": {
+      "date_range": "Date range",
+      "date_range_start": "Start time",
+      "date_range_end": "End time",
+      "action": "Action type",
+      "result": "Result"
+    },
+    "result": {
+      "SUCCESS": "Success",
+      "FAILURE": "Failure",
+      "DENIED": "Denied"
+    },
+    "actor_type": {
+      "MERCHANT_USER": "Merchant user",
+      "OPERATOR": "Operator",
+      "SYSTEM": "System",
+      "API": "API",
+      "WEBHOOK": "Webhook"
+    },
+    "detail": {
+      "reason": "Reason",
+      "event_id": "Event ID",
+      "request_id": "Request ID",
+      "trace_id": "Trace ID",
+      "metadata": "Metadata"
+    }
+  },
+  "audit": {
+    "action": {
+      "auth.login": "Login",
+      "auth.logout": "Logout",
+      "auth.password.change": "Change payment password",
+      "auth.mfa.enable": "Enable MFA",
+      "auth.mfa.disable": "Disable MFA",
+      "auth.access.denied": "Access denied",
+      "apikey.create": "Create API key",
+      "apikey.rotate": "Rotate API key",
+      "apikey.delete": "Delete API key",
+      "webhook.create": "Create webhook",
+      "webhook.update": "Update webhook",
+      "webhook.delete": "Delete webhook",
+      "webhook.replay": "Replay webhook",
+      "merchant.config.update": "Update merchant config",
+      "coverage.enable": "Enable coverage",
+      "coverage.disable": "Disable coverage",
+      "coverage.update": "Update coverage config",
+      "risk.review.approve": "Review approved",
+      "risk.review.reject": "Review rejected",
+      "risk.review.assign": "Review assigned",
+      "role.grant": "Grant role",
+      "role.revoke": "Revoke role",
+      "permission.update": "Update permission",
+      "operator.create": "Create operator",
+      "operator.update": "Update operator",
+      "operator.disable": "Disable operator"
+    }
+  },
+  "RiskReviews": {
+    "title": "Risk Review Queue",
+    "subtitle": "Read-only queue of suspicious orders and payouts flagged for manual review.",
+    "empty": "No risk review items found.",
+    "table_total": "Total {count} reviews",
+    "filters": {
+      "keyword": "Search reviews",
+      "status": "Status",
+      "priority": "Priority",
+      "review_type": "Review type"
+    },
+    "detail": {
+      "title": "Review Detail",
+      "back_to_list": "Back to reviews",
+      "not_found": "Review not found.",
+      "review_type": "Review Type",
+      "reason_code": "Reason Code",
+      "queued_at": "Queued At",
+      "decided_at": "Decided At",
+      "decision_note": "Decision Note",
+      "linked_fraud": "Linked Fraud Event",
+      "resume_link": "Resume Link"
+    },
+    "resume_link": "Resume payment",
+    "headers": {
+      "resource": "Resource",
+      "reason": "Reason",
+      "priority": "Priority",
+      "status": "Status",
+      "created_at": "Flagged At"
+    },
+    "resource_type": {
+      "ORDER": "Order",
+      "PAYOUT": "Payout"
+    },
+    "status": {
+      "PENDING": "Pending",
+      "APPROVED": "Approved",
+      "REJECTED": "Rejected"
+    }
+  },
+  "Reporting": {
+    "widgets": {
+      "availableBalance": "Available Balance",
+      "todayVolume": "Today's Volume",
+      "successRate": "Success Rate",
+      "pendingSettlement": "Pending Settlement"
+    },
+    "no_data": "No data available",
+    "forbidden": "You do not have permission to view this",
+    "failed": "Failed to load",
+    "retry": "Retry",
+    "transactions": {
+      "title": "Transaction Report",
+      "subtitle": "Discover and export transactions under your authorized scope.",
+      "empty": "No transactions found.",
+      "table_total": "Total {count} transactions",
+      "export": "Export CSV",
+      "export_failed": "Export failed",
+      "filters": {
+        "merchant_order_id": "Merchant order ID",
+        "status": "Status",
+        "channel": "Channel",
+        "amount_min": "Min amount",
+        "amount_max": "Max amount",
+        "created_from": "Created from",
+        "created_to": "Created to"
+      },
+      "columns": {
+        "merchant_order_id": "Merchant order ID",
+        "trade_no": "Trade no.",
+        "order_type": "Order type",
+        "status": "Status",
+        "amount": "Amount",
+        "channel": "Channel",
+        "created_at": "Created at"
+      },
+      "statuses": {
+        "PENDING": "Pending",
+        "PROCESSING": "Processing",
+        "PARTIAL_SUCCESS": "Partial success",
+        "SUCCESS": "Success",
+        "CLOSED": "Closed",
+        "FAILED": "Failed",
+        "REQUIRES_CAPTURE": "Requires capture",
+        "DISPUTED": "Disputed"
+      },
+      "orderTypes": {
+        "TRADE": "Trade order",
+        "DEPOSIT": "Deposit",
+        "TRANSFER": "Transfer",
+        "PAYOUT": "Payout",
+        "WITHDRAWAL": "Withdrawal",
+        "REFUND": "Refund",
+        "DIRECT_DEBIT": "Direct debit",
+        "PLATFORM_SERVICE_FEE": "Platform service fee"
+      },
+      "detail": {
+        "title": "Transaction detail",
+        "back_to_list": "Back to transactions",
+        "resource_unavailable": "Resource unavailable",
+        "view_business_detail": "View business detail",
+        "fields": {
+          "merchant_order_id": "Merchant order ID",
+          "trade_no": "Trade no.",
+          "status": "Status",
+          "order_type": "Order type",
+          "amount": "Amount",
+          "paid_amount": "Paid amount",
+          "refunded_amount": "Refunded amount",
+          "currency": "Currency",
+          "channel": "Channel",
+          "subject": "Subject",
+          "created_at": "Created at",
+          "paid_at": "Paid at",
+          "updated_at": "Updated at"
+        },
+        "timeline": {
+          "title": "Timeline",
+          "empty": "No timeline events."
+        }
+      }
+    }
+  },
+  "Risk": {
+    "related_risk": {
+      "title": "Related Risk",
+      "fraud_events": "Fraud Events",
+      "reviews": "Reviews"
+    },
+    "payment_timeline": {
+      "title": "Payment Risk Timeline",
+      "entity": {
+        "FRAUD": "Fraud",
+        "REVIEW": "Review",
+        "DISPUTE": "Dispute",
+        "PAYMENT": "Payment"
+      }
+    },
+    "dashboard": {
+      "title": "Risk Overview",
+      "view_fraud": "View fraud events",
+      "pending_reviews": "Pending Reviews",
+      "open_disputes": "Open Disputes",
+      "high_fraud_today": "High Fraud Today",
+      "blocked_amount": "Blocked Amount",
+      "blocked_unsupported": "Not supported yet",
+      "review_sla_hours": "Review SLA (hrs)",
+      "chargeback_ratio": "Chargeback Ratio",
+      "rejected_today": "Rejected Today",
+      "pending_review_attempts": "Pending Review Payments",
+      "pending_events": "Pending risk actions",
+      "monitoring_metrics": "Ongoing monitoring"
+    }
+  },
+  "RiskRules": {
+    "title": "Risk Rules",
+    "subtitle": "View platform and merchant PRE_AUTH rules (read-only).",
+    "empty": "No risk rules found.",
+    "headers": {
+      "name": "Name",
+      "rule_type": "Type",
+      "severity": "Severity",
+      "enforcement": "Enforcement",
+      "scope": "Scope",
+      "enabled": "Enabled",
+      "priority": "Priority",
+      "config": "Configuration"
+    },
+    "rule_type": {
+      "VELOCITY": "Velocity",
+      "AMOUNT": "Amount"
+    },
+    "enforcement": {
+      "BLOCK": "Block",
+      "REVIEW_BEFORE_AUTH": "Review before payment"
+    },
+    "scope": {
+      "platform": "Platform",
+      "merchant": "Merchant"
+    },
+    "config": {
+      "schema": "Schema",
+      "velocity": "Max {maxCount} attempts within {windowMinutes} minutes",
+      "amount": "Threshold: {threshold}"
+    }
+  },
+  "Fraud": {
+    "title": "Fraud Events",
+    "subtitle": "Monitor detected fraud signals and investigation status.",
+    "empty": "No fraud events found.",
+    "table_total": "Total {count} events",
+    "filters": {
+      "keyword": "Search events",
+      "status": "Status",
+      "severity": "Severity"
+    },
+    "detail": {
+      "title": "Fraud Event Detail",
+      "back_to_list": "Back to fraud events",
+      "not_found": "Fraud event not found.",
+      "payment_id": "Payment ID",
+      "provider": "Provider",
+      "score": "Risk Score",
+      "metadata": {
+        "title": "Metadata",
+        "v1": {
+          "deviceId": "Device ID",
+          "ipAddress": "IP Address",
+          "velocityCount": "Velocity Count",
+          "amountThreshold": "Amount Threshold",
+          "countryCode": "Country",
+          "cardFingerprint": "Card Fingerprint"
+        }
+      }
+    },
+    "headers": {
+      "event_type": "Event Type",
+      "risk_type": "Risk Type",
+      "description": "Description",
+      "severity": "Severity",
+      "order_id": "Related Order",
+      "status": "Status",
+      "detected_at": "Detected At"
+    },
+    "status": {
+      "OPEN": "Open",
+      "INVESTIGATING": "Investigating",
+      "CLOSED": "Closed"
+    },
+    "risk_type": {
+      "DEVICE": "Device anomaly",
+      "VELOCITY": "Velocity anomaly",
+      "GEO": "Geographic anomaly",
+      "BIN": "BIN anomaly",
+      "AMOUNT": "Amount anomaly",
+      "IP_MISMATCH": "IP mismatch",
+      "COMBINED": "Combined risk",
+      "FRAUD": "Fraud risk"
+    },
+    "summary": {
+      "DEVICE": "Device fingerprint does not match billing profile",
+      "VELOCITY": "Transaction velocity exceeded the threshold",
+      "GEO": "Transaction geography differs from expected behavior",
+      "BIN": "Card BIN shows elevated risk characteristics",
+      "AMOUNT": "Transaction amount is outside the normal range",
+      "IP_MISMATCH": "IP address does not match billing information",
+      "COMBINED": "Multiple risk signals triggered together",
+      "FRAUD": "Suspicious fraud activity detected"
+    }
+  },
+  "CoverageInsurance": {
+    "title": "Coverage Insurance",
+    "subtitle": "Subscribe to platform-hosted chargeback coverage for new orders.",
+    "product_title": "Platform Chargeback Coverage",
+    "product_description": "Filix Pay provides integrated dispute coverage through our platform insurance partners.",
+    "unavailable_title": "Service not available yet",
+    "unavailable_body": "Platform coverage is being prepared. Please check back later or contact support.",
+    "agreement_body": "By subscribing, you authorize Filix Pay to apply platform-hosted chargeback coverage to eligible new orders under the current service agreement.",
+    "agreement_checkbox": "I have read and agree to the coverage service agreement (v1).",
+    "unsubscribed_banner": "Coverage is turned off for new orders. Existing claims will continue to be processed.",
+    "status": {
+      "subscribed": "Active",
+      "not_subscribed": "Not subscribed",
+      "unsubscribed": "Unsubscribed"
+    },
+    "fields": {
+      "provider": "Provider",
+      "subscribed_at": "Subscribed at",
+      "agreement_version": "Agreement version"
+    },
+    "actions": {
+      "subscribe": "Activate coverage",
+      "unsubscribe": "Turn off coverage"
+    },
+    "unsubscribe_modal": {
+      "title": "Turn off coverage?",
+      "warning": "After you turn off coverage, new orders will no longer be covered by platform chargeback insurance. Existing claims will continue to be processed without interruption.",
+      "confirm": "Turn off",
+      "cancel": "Cancel"
+    },
+    "messages": {
+      "load_failed": "Failed to load coverage subscription",
+      "subscribed": "Coverage activated",
+      "subscribe_failed": "Failed to activate coverage",
+      "unsubscribed": "Coverage turned off",
+      "unsubscribe_failed": "Failed to turn off coverage"
+    }
+  },
+  "CoverageConfig": {
+    "title": "Chargeback Coverage",
+    "subtitle": "Configure dispute coverage providers for new chargeback cases.",
+    "empty": "No coverage configurations yet.",
+    "provider_switch_warning": "Switching provider only affects new chargeback cases.",
+    "active_banner": "Active provider: {provider} ({id})",
+    "no_active_banner": "No active coverage provider. New disputes will skip coverage claims.",
+    "platform_hosted_banner": "This configuration powers platform-hosted coverage for subscribed Platform settlement merchants.",
+    "maintenance_banner": "Maintenance mode: new assessments are paused; in-flight claim webhooks continue.",
+    "columns": {
+      "provider": "Provider",
+      "status": "Status",
+      "version": "Version",
+      "updated_at": "Updated"
+    },
+    "status": {
+      "active": "Active",
+      "disabled": "Disabled",
+      "maintenance": "Maintenance"
+    },
+    "fields": {
+      "provider": "Provider",
+      "provider_placeholder": "Select a provider"
+    },
+    "config_fields": {
+      "teamId": "Team ID",
+      "shopDomain": "Shop Domain",
+      "environment": "Environment",
+      "coverageLimit": "Coverage Limit",
+      "currency": "Currency",
+      "mode": "Mode"
+    },
+    "secret_fields": {
+      "apiKey": "API Key",
+      "webhookSecret": "Webhook Secret"
+    },
+    "secret_keep_hint": "Current value: {masked}. Leave blank to keep unchanged.",
+    "secret_placeholder_edit": "Leave blank to keep current value",
+    "validation": {
+      "provider_required": "Please select a provider",
+      "field_required": "{field} is required"
+    },
+    "actions": {
+      "create": "Add Configuration",
+      "edit": "Edit",
+      "activate": "Activate",
+      "deactivate": "Deactivate",
+      "enter_maintenance": "Enter maintenance",
+      "resume": "Resume service",
+      "test_connection": "Test Connection"
+    },
+    "modal": {
+      "create_title": "Add Coverage Configuration",
+      "edit_title": "Edit Coverage Configuration"
+    },
+    "messages": {
+      "created": "Coverage configuration created",
+      "updated": "Coverage configuration updated",
+      "activated": "Coverage configuration activated",
+      "deactivated": "Coverage configuration deactivated",
+      "maintenance_entered": "Coverage entered maintenance mode",
+      "resumed": "Coverage resumed",
+      "test_ok": "Connection OK ({latencyMs} ms, {providerVersion})",
+      "test_failed": "Connection test failed: {status}"
+    }
+  }
+}

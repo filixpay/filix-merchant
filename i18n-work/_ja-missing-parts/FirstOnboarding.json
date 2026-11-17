@@ -1,0 +1,65 @@
+{
+  "FirstOnboarding": {
+    "title": "Welcome to FilixPay",
+    "subtitle": "Complete a few business details to activate Merchant Center and start your trial.",
+    "eyebrow": "Merchant Onboarding",
+    "fields": {
+      "name": "Merchant name",
+      "namePlaceholder": "e.g. Filix Global Technology Limited",
+      "mobile": "Contact phone",
+      "mobilePlaceholder": "Enter phone number (spaces or dashes OK)",
+      "phonePrefixOther": "Other",
+      "phonePrefixCustomPlaceholder": "+code",
+      "officialIdNumber": "Official ID number",
+      "officialIdPlaceholder": "Business registration / national ID",
+      "officialIdHelpLabel": "Format help",
+      "officialIdHelp": "Enter your Unified Social Credit Code / company registration number, or a personal ID / passport number (15–18 characters).",
+      "email": "Account email",
+      "currentAccount": "Signed-in account",
+      "emailUnavailable": "Email unavailable",
+      "verified": "Verified",
+      "settlementMode": "Settlement mode",
+      "settlementModeShort": "Determines how funds are settled and your merchant account type.",
+      "settlementModeNote": "To use a different settlement mode, add a business account in Merchant Center.",
+      "settlementCurrency": "Settlement currency",
+      "settlementCurrencyShort": "Used for payouts and cross-currency conversion.",
+      "settlementCurrencyHint": "Settlement currency is used for payouts and cross-currency payment conversion. It cannot be changed after registration. Choose carefully.",
+      "settlementImmutable": "Cannot change later"
+    },
+    "modes": {
+      "platform": "Platform settlement",
+      "direct": "Direct settlement",
+      "flowLabel": "Fund flow",
+      "channelLabel": "Payment channels",
+      "platformFlow": "Customer payment → Platform collects → Platform clears & settles → Credited to your merchant account",
+      "platformChannel": "Uses the platform's unified payment channel configuration",
+      "directFlow": "Customer payment → Direct payment channel → Funds settled directly to your merchant account",
+      "directChannel": "Uses your merchant-owned payment channel configuration"
+    },
+    "currency": {
+      "USD": "USD — US Dollar",
+      "CNY": "CNY — Chinese Yuan"
+    },
+    "submit": "Create merchant and enter Merchant Center",
+    "submitting": "Creating…",
+    "errors": {
+      "nameRequired": "Enter a merchant name",
+      "mobileInvalid": "Enter a valid phone number (5–20 digits)",
+      "mobileInvalidIntl": "Enter a valid phone number (6–15 digits)",
+      "phonePrefixInvalid": "Enter a valid country code (e.g. +33)",
+      "officialIdInvalid": "Enter a 15–18 character official ID number",
+      "settlementCurrencyRequired": "Please select a settlement currency",
+      "settlementModeRequired": "Please select a settlement mode",
+      "duplicateName": "This merchant name is already taken",
+      "registrationTaken": "This ID is already registered to an organization. Use another ID or join with an existing account.",
+      "alreadyHasMerchant": "This account already has a merchant",
+      "unauthorized": "Please sign in again to continue",
+      "portalAuthRejected": "You are signed in, but the merchant API rejected your access token. After rebuilding Keycloak, verify the merchant-center client secret matches WildFly/Next.js, restart the Java service, then sign in again.",
+      "createFailed": "Could not create merchant. Please try again.",
+      "membershipNotReady": "Merchant was created but access is not ready yet. Refresh or sign in again.",
+      "orgsLoadFailed": "Could not load your account context. Retry."
+    },
+    "retry": "Retry",
+    "relogin": "Sign in again"
+  }
+}

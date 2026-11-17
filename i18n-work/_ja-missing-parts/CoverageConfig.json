@@ -1,0 +1,68 @@
+{
+  "CoverageConfig": {
+    "title": "Chargeback Coverage",
+    "subtitle": "Configure dispute coverage providers for new chargeback cases.",
+    "empty": "No coverage configurations yet.",
+    "provider_switch_warning": "Switching provider only affects new chargeback cases.",
+    "active_banner": "Active provider: {provider} ({id})",
+    "no_active_banner": "No active coverage provider. New disputes will skip coverage claims.",
+    "platform_hosted_banner": "This configuration powers platform-hosted coverage for subscribed Platform settlement merchants.",
+    "maintenance_banner": "Maintenance mode: new assessments are paused; in-flight claim webhooks continue.",
+    "columns": {
+      "provider": "Provider",
+      "status": "Status",
+      "version": "Version",
+      "updated_at": "Updated"
+    },
+    "status": {
+      "active": "Active",
+      "disabled": "Disabled",
+      "maintenance": "Maintenance"
+    },
+    "fields": {
+      "provider": "Provider",
+      "provider_placeholder": "Select a provider"
+    },
+    "config_fields": {
+      "teamId": "Team ID",
+      "shopDomain": "Shop Domain",
+      "environment": "Environment",
+      "coverageLimit": "Coverage Limit",
+      "currency": "Currency",
+      "mode": "Mode"
+    },
+    "secret_fields": {
+      "apiKey": "API Key",
+      "webhookSecret": "Webhook Secret"
+    },
+    "secret_keep_hint": "Current value: {masked}. Leave blank to keep unchanged.",
+    "secret_placeholder_edit": "Leave blank to keep current value",
+    "validation": {
+      "provider_required": "Please select a provider",
+      "field_required": "{field} is required"
+    },
+    "actions": {
+      "create": "Add Configuration",
+      "edit": "Edit",
+      "activate": "Activate",
+      "deactivate": "Deactivate",
+      "enter_maintenance": "Enter maintenance",
+      "resume": "Resume service",
+      "test_connection": "Test Connection"
+    },
+    "modal": {
+      "create_title": "Add Coverage Configuration",
+      "edit_title": "Edit Coverage Configuration"
+    },
+    "messages": {
+      "created": "Coverage configuration created",
+      "updated": "Coverage configuration updated",
+      "activated": "Coverage configuration activated",
+      "deactivated": "Coverage configuration deactivated",
+      "maintenance_entered": "Coverage entered maintenance mode",
+      "resumed": "Coverage resumed",
+      "test_ok": "Connection OK ({latencyMs} ms, {providerVersion})",
+      "test_failed": "Connection test failed: {status}"
+    }
+  }
+}

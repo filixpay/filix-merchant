@@ -1,0 +1,473 @@
+{
+  "Payouts": {
+    "title": "سجلات السحب",
+    "subtitle": "اعرض سجل طلبات سحب الأموال وحالتها.",
+    "headers": {
+      "withdrawal_no": "رقم السحب",
+      "amount": "المبلغ",
+      "status": "الحالة",
+      "approval_status": "حالة الموافقة",
+      "payee_name": "اسم المستفيد",
+      "payee_account": "حساب المستفيد",
+      "applicant": "مقدّم الطلب",
+      "created_at": "تاريخ الإنشاء",
+      "updated_at": "تاريخ التحديث"
+    },
+    "empty": "لا توجد سجلات سحب.",
+    "details": {
+      "title": "تفاصيل السحب",
+      "withdrawal_no": "رقم السحب",
+      "amount": "المبلغ",
+      "currency": "العملة",
+      "withdrawal_status": "الحالة",
+      "approval_status": "حالة الموافقة",
+      "payee_name": "اسم المستفيد",
+      "payee_account": "حساب المستفيد",
+      "applicant": "مقدّم الطلب",
+      "created_at": "تاريخ الإنشاء",
+      "updated_at": "تاريخ التحديث"
+    }
+  },
+  "TransferRecords": {
+    "title": "سجلات التحويل",
+    "subtitle": "اعرض سجل تحويل الأموال بين التجار.",
+    "headers": {
+      "transfer_no": "رقم التحويل",
+      "amount": "المبلغ",
+      "status": "الحالة",
+      "created_at": "وقت التحويل"
+    },
+    "empty": "لا توجد سجلات تحويل.",
+    "item_details": {
+      "title": "تفاصيل التحويل",
+      "headers": {
+        "payee_name": "اسم المستفيد",
+        "payee_account": "رقم الحساب",
+        "bank": "اسم البنك",
+        "amount": "المبلغ",
+        "status": "الحالة",
+        "created_at": "تاريخ الإنشاء"
+      }
+    }
+  },
+  "PayoutRecords": {
+    "title": "سجلات المدفوعات",
+    "subtitle": "اعرض وأدر سجل طلبات أعمال المدفوعات.",
+    "headers": {
+      "payout_no": "رقم المدفوعة",
+      "amount": "مبلغ المدفوعة",
+      "status": "الحالة",
+      "created_at": "وقت المدفوعة"
+    },
+    "empty": "لا توجد سجلات مدفوعات.",
+    "item_details": {
+      "title": "تفاصيل المدفوعة",
+      "headers": {
+        "payee_name": "اسم المستفيد",
+        "payee_account": "رقم الحساب",
+        "bank": "اسم البنك",
+        "amount": "مبلغ المدفوعة",
+        "status": "الحالة",
+        "created_at": "تاريخ الإنشاء"
+      }
+    },
+    "create_modal": {
+      "title": "إنشاء طلب مدفوعة",
+      "available_balance": "الرصيد المتاح",
+      "add_item": "إضافة مستفيد",
+      "payee_code": "رمز عميل المستفيد",
+      "amount": "مبلغ المدفوعة",
+      "memo": "مذكرة",
+      "submit": "إرسال المدفوعة",
+      "cancel": "إلغاء",
+      "success": "تم إرسال طلب المدفوعة بنجاح",
+      "insufficient_balance": "لا يمكن أن يتجاوز إجمالي مبلغ المدفوعات الرصيد المتاح",
+      "invalid_amount": "يرجى إدخال مبلغ مدفوعة صالح",
+      "payee_required": "يرجى إدخال رمز عميل المستفيد",
+      "at_least_one": "يرجى إضافة عنصر مدفوعة واحد على الأقل"
+    }
+  },
+  "PaymentSplits": {
+    "title": "تقسيمات الدفع",
+    "subtitle": "اعرض وأدر تفاصيل تقسيم الطلب وحالة المستلمين.",
+    "headers": {
+      "order_id": "معرّف الطلب",
+      "trade_no": "رقم الصفقة",
+      "amount": "مبلغ الطلب",
+      "order_amount": "المبلغ الإجمالي",
+      "split_amount": "مبلغ التقسيم",
+      "receivers": "المستلمون",
+      "status": "الحالة",
+      "type": "نوع التقسيم",
+      "created_at": "تاريخ الإنشاء"
+    },
+    "filters": {
+      "order_id": "معرّف الطلب",
+      "status": "الحالة",
+      "all_status": "جميع الحالات"
+    },
+    "statuses": {
+      "PENDING": "قيد الانتظار",
+      "PROCESSING": "قيد المعالجة",
+      "SUCCESS": "نجاح",
+      "FAILED": "فشل",
+      "PARTIAL_SUCCESS": "نجاح جزئي",
+      "CLOSED": "مغلق"
+    },
+    "types": {
+      "IMMEDIATE": "فوري",
+      "DELAYED": "مؤجّل"
+    },
+    "details": {
+      "title": "تفاصيل التقسيم",
+      "base_info": "المعلومات الأساسية",
+      "receivers": "تفاصيل المستلم",
+      "receiver_id": "المستلم",
+      "receiver_name": "الاسم",
+      "amount": "المبلغ",
+      "proportion": "النسبة",
+      "status": "الحالة",
+      "progress": "تقدم التقسيم",
+      "view_details": "عرض التفاصيل",
+      "serial_no": "الرقم التسلسلي"
+    },
+    "empty": "لا توجد سجلات تقسيم دفع."
+  },
+  "SettlementReleases": {
+    "title": "معالجة التسوية",
+    "subtitle": "تتبّع متى تصبح الأموال رصيدًا متاحًا.",
+    "empty": "لا توجد سجلات معالجة تسوية.",
+    "loadError": "فشل تحميل معالجة التسوية.",
+    "filters": {
+      "status": "الحالة",
+      "paymentId": "البحث بمعرّف الدفع",
+      "search": "البحث بمعرّف المرشّح أو الدفع"
+    },
+    "columns": {
+      "id": "معرّف المرشّح",
+      "paymentId": "معرّف الدفع",
+      "businessRef": "المرجع التجاري",
+      "amount": "المبلغ",
+      "status": "الحالة",
+      "eligibleAt": "وقت المعالجة المتوقع",
+      "nextEvaluationAt": "التقييم التالي",
+      "releasedAt": "متاح في",
+      "createdAt": "تاريخ الإنشاء",
+      "reasonCode": "السبب",
+      "ids": "المرشّح / الدفع",
+      "paymentShort": "دفع",
+      "statusReason": "الحالة والسبب",
+      "actions": "إجراءات"
+    },
+    "status": {
+      "PENDING": "قيد الانتظار",
+      "EVALUATING": "قيد التقييم",
+      "AVAILABLE": "متاح",
+      "BLOCKED": "محظور",
+      "FAILED": "فشل",
+      "SKIPPED": "تم التخطي"
+    },
+    "detail": {
+      "title": "تفاصيل معالجة التسوية",
+      "back": "العودة إلى القائمة",
+      "notFound": "لم يُعثر على سجل معالجة التسوية.",
+      "journalId": "معرّف القيد",
+      "releaseJournalId": "معرّف قيد التحرير",
+      "retryCount": "عدد إعادة المحاولة",
+      "lastTriggeredAt": "آخر تشغيل في",
+      "paymentTitle": "الدفع",
+      "paymentSucceededAt": "نجاح الدفع في",
+      "journalUnavailableTitle": "قيد التوافر غير متاح",
+      "journalUnavailableBody": "يشير هذا المرشّح إلى قيد تعذّر حله. يُخفى وقت التوافر حتى تتوفر حقيقة دفتر الأستاذ.",
+      "bannerTitle": "المهمة بحالة {status}",
+      "retryChip": "{count} إعادة محاولة",
+      "reasonLabel": "السبب:",
+      "noReason": "لم يُقدَّم رمز سبب.",
+      "basicsTitle": "الأساسيات والمبلغ",
+      "journalsTitle": "قيود دفتر الأستاذ",
+      "timelineTitle": "الجدول الزمني",
+      "paymentAmount": "مبلغ الدفع",
+      "lastTriggeredWithRetry": "آخر تشغيل (إعادة المحاولة {count})",
+      "releasedPending": "لم يُحرَّر"
+    },
+    "actions": {
+      "view_detail": "التفاصيل"
+    },
+    "pagination": {
+      "total": "إجمالي {count} مهمة تسوية"
+    },
+    "amount_pending": "بانتظار التقييم",
+    "copy_id": "نسخ معرّف المرشّح",
+    "copy_payment_id": "نسخ معرّف الدفع",
+    "copy_success": "تم النسخ",
+    "copy_failed": "فشل النسخ",
+    "copy_business_ref": "نسخ المرجع التجاري",
+    "copy_journal_id": "نسخ معرّف القيد",
+    "copy_release_journal_id": "نسخ معرّف قيد التحرير",
+    "reasonGuidance": {
+      "CAPABILITY_DISABLED": "قدرة التاجر معطّلة، لذا توقّف التقييم التلقائي للتسوية.",
+      "NOT_PRODUCTIZED": "منتج الأموال هذا غير متاح لهذا التاجر بعد.",
+      "OWNER_NOT_SUPPORTED": "نوع المالك هذا غير مدعوم لإجراء التسوية هذا.",
+      "fallback": "أعاد النظام رمز السبب هذا. راجع إعدادات قدرة التاجر."
+    },
+    "next_eval_hint": "التقييم التلقائي التالي",
+    "reasonShort": {
+      "CAPABILITY_DISABLED": "القدرة معطّلة",
+      "CONTEXT_RESOLVE_FAILED": "فشل حل السياق",
+      "NOT_PRODUCTIZED": "غير منتج",
+      "OWNER_NOT_SUPPORTED": "المالك غير مدعوم"
+    }
+  },
+  "TransactionReconciliation": {
+    "title": "مطابقة المعاملات",
+    "subtitle": "فواتير معاملات المزود مطابقة لطلباتك (نطاق المطابقة: الطلب).",
+    "empty": "لا عناصر مطابقة في هذا النطاق.",
+    "emptyNoReconData": "لا بيانات مطابقة من المزود لهذه القناة ونطاق التاريخ.",
+    "emptyCoverageNoRows": "توجد فواتير صفقات للمزود في هذا النطاق، لكن لا توجد طلبات مرئية لتاجرك (تحقق من تفويض القناة وملكية الطلب وربط channelOrderId).",
+    "emptyHint": "جرّب نطاق تاريخ أو قناة مختلفة، ثم استعلم — أو أعد ضبط عوامل التصفية.",
+    "query": "استعلام",
+    "reset": "إعادة ضبط",
+    "loadError": "فشل تحميل مطابقة المعاملات.",
+    "export": "تصدير CSV",
+    "exportFailed": "فشل التصدير.",
+    "noReconDataTitle": "لا بيانات مطابقة من المزود",
+    "noReconDataDescription": "لم تستلم FilixPay دفعة مطابقة من المزود للقناة ونطاق bizDate المحددين. هذا يختلف عن عدم وجود طلبات مطابقة.",
+    "reconciliationLevelOrder": "الطلب",
+    "filters": {
+      "channelCode": "القناة",
+      "channel_all": "جميع القنوات",
+      "scope": "النطاق"
+    },
+    "channels": {
+      "ALL": "جميع القنوات",
+      "STRIPE": "STRIPE",
+      "PAYPAL": "PAYPAL"
+    },
+    "scope": {
+      "default": "المطابقة فقط",
+      "allTransactions": "جميع المعاملات"
+    },
+    "columns": {
+      "payment": "الدفع",
+      "order": "الطلب",
+      "reconciliationLevel": "مستوى المطابقة",
+      "channelCode": "القناة",
+      "reconciliationStatus": "حالة المطابقة",
+      "bizDate": "تاريخ العمل",
+      "actions": "إجراءات"
+    },
+    "reconStatus": {
+      "MATCHED": "متطابق",
+      "MISMATCH": "عدم تطابق",
+      "RECONCILIATION_PENDING": "قيد الانتظار",
+      "NOT_RECONCILED": "غير مطابق"
+    },
+    "sections": {
+      "association": "ارتباط الدفع / الطلب",
+      "comparison": "المزود مقابل FilixPay",
+      "provider": "المزود",
+      "filixpay": "FilixPay"
+    },
+    "fields": {
+      "paymentId": "معرّف الدفع",
+      "orderId": "معرّف الطلب",
+      "reconciliationLevel": "مستوى المطابقة",
+      "channelCode": "القناة",
+      "bizDate": "تاريخ العمل",
+      "reconciliationStatus": "حالة المطابقة",
+      "mismatchType": "نوع عدم التطابق",
+      "providerTransactionId": "معرّف معاملة المزود",
+      "providerOrderId": "معرّف طلب المزود",
+      "providerAmount": "مبلغ المزود",
+      "providerStatus": "حالة المزود",
+      "localAmount": "مبلغ FilixPay",
+      "localStatus": "حالة FilixPay"
+    },
+    "detail": {
+      "title": "تفاصيل مطابقة المعاملات",
+      "reconScopeOrder": "نطاق المطابقة: الطلب",
+      "back": "العودة إلى القائمة",
+      "notFound": "لم يُعثر على سجل المطابقة."
+    },
+    "actions": {
+      "view_detail": "التفاصيل"
+    },
+    "copy_payment_id": "نسخ معرّف الدفع",
+    "copy_order_id": "نسخ معرّف الطلب",
+    "copy_success": "تم النسخ",
+    "copy_failed": "فشل النسخ"
+  },
+  "Settlements": {
+    "title": "فواتير التسوية",
+    "subtitle": "حقائق التسوية المحرَّرة مع حالة مطابقة المزود.",
+    "empty": "لا توجد تسويات.",
+    "loadError": "فشل تحميل التسويات.",
+    "filters": {
+      "reconStatus": "حالة المطابقة",
+      "asset": "الأصل",
+      "paymentId": "معرّف الدفع"
+    },
+    "columns": {
+      "settlementId": "معرّف التسوية",
+      "moneyInRef": "مرجع الأموال الواردة",
+      "asset": "الأصل",
+      "gross": "الإجمالي",
+      "fee": "الرسوم",
+      "net": "الصافي",
+      "releasedAt": "تاريخ التحرير",
+      "reconStatus": "المطابقة",
+      "provider": "المزود",
+      "actions": "إجراءات"
+    },
+    "reconStatus": {
+      "PENDING": "قيد الانتظار",
+      "MATCHED": "متطابق",
+      "EXCEPTION": "استثناء"
+    },
+    "sections": {
+      "settlement": "أساسيات التسوية",
+      "providerSettlement": "تسوية المزود",
+      "reconciliation": "المطابقة",
+      "timeline": "الجدول الزمني للتسوية"
+    },
+    "fields": {
+      "moneyInRef": "مرجع الأموال الواردة",
+      "releaseRef": "مرجع التحرير",
+      "releasedAt": "تاريخ التحرير",
+      "gross": "الإجمالي",
+      "fee": "الرسوم",
+      "net": "الصافي",
+      "provider": "المزود",
+      "providerReference": "مرجع المزود",
+      "settlementDate": "تاريخ التسوية",
+      "expectedNet": "الصافي المتوقع",
+      "actualNet": "الصافي الفعلي",
+      "reconStatus": "حالة المطابقة",
+      "difference": "الفرق"
+    },
+    "timeline": {
+      "CANDIDATE_CREATED": "إنشاء المرشّح",
+      "RELEASED": "تم التحرير",
+      "LEDGER_POSTED": "ترحيل دفتر الأستاذ",
+      "PROVIDER_STATEMENT_INGESTED": "استيعاب كشف المزود",
+      "RECON_MATCHED": "تطابق المطابقة",
+      "RECON_EXCEPTION": "استثناء المطابقة"
+    },
+    "timelineEmpty": "لا أحداث في الجدول الزمني بعد.",
+    "detail": {
+      "title": "تفاصيل التسوية",
+      "back": "العودة إلى القائمة",
+      "notFound": "لم يُعثر على التسوية."
+    },
+    "actions": {
+      "view": "عرض",
+      "view_detail": "عرض التفاصيل"
+    },
+    "copy_settlement_id": "نسخ معرّف التسوية",
+    "copy_success": "تم النسخ",
+    "copy_failed": "فشل النسخ",
+    "copy_money_in_ref": "نسخ مرجع الأموال الواردة",
+    "copy_release_ref": "نسخ مرجع التحرير",
+    "summary": {
+      "net": "صافي التسوية",
+      "gross": "الإجمالي",
+      "fee": "الرسوم",
+      "reconStatus": "المطابقة"
+    },
+    "providerEmptyNotice": "لا مستند تسوية من المزود متاحًا بعد."
+  },
+  "SettlementStatements": {
+    "title": "سجلات التسوية",
+    "subtitle": "اعرض فترات التسوية اليومية/الأسبوعية/الشهرية ومبلغ التسوية للفترة الحالية.",
+    "empty": "لا توجد كشوف تسوية.",
+    "loadError": "فشل تحميل كشوف التسوية.",
+    "noAssets": "لا أصول رصيد متاح للاستعلام عن كشوف التسوية.",
+    "periodNotStarted": "لم تبدأ هذه الفترة بعد، لذا الكشف غير متاح.",
+    "downloadError": "فشل تنزيل كشف التسوية.",
+    "openHint": "هذه الفترة ما زالت مفتوحة؛ المبالغ محدَّثة حتى الآن.",
+    "openBanner": "هذه الفترة ما زالت مفتوحة؛ المبالغ محدَّثة حتى الآن.",
+    "filters": {
+      "asset": "الأصل",
+      "assetPlaceholder": "اختر الأصل",
+      "allAssets": "جميع العملات",
+      "periodKind": "الفترة"
+    },
+    "periodKind": {
+      "DAY": "يوم",
+      "WEEK": "أسبوع",
+      "MONTH": "شهر"
+    },
+    "periodState": {
+      "OPEN": "مفتوحة",
+      "CLOSED": "مغلقة"
+    },
+    "coverageState": {
+      "OK": "سليم",
+      "PARTIAL_COVERAGE": "تغطية جزئية",
+      "INCONSISTENT": "غير متسق"
+    },
+    "columns": {
+      "periodKey": "فترة الكشف",
+      "asset": "الأصل",
+      "settlementNet": "صافي التسوية",
+      "gross": "الإجمالي",
+      "fee": "الرسوم",
+      "adjustment": "التعديل",
+      "released": "محرَّر",
+      "payout": "مدفوعة",
+      "state": "الحالة",
+      "timezone": "المنطقة الزمنية",
+      "periodState": "الحالة",
+      "coverage": "تغطية البيانات",
+      "actions": "إجراءات"
+    },
+    "detail": {
+      "title": "تفاصيل كشف التسوية",
+      "back": "العودة إلى القائمة",
+      "notFound": "لم يُعثر على كشف التسوية.",
+      "download": "تنزيل XLSX",
+      "summaryTitle": "الملخص",
+      "asOf": "حتى تاريخ",
+      "window": "النافذة",
+      "effectiveAt": "ساري في",
+      "payoutProgress": "تقدم المدفوعات والتحرير",
+      "pendingPayout": "مدفوعة معلّقة",
+      "payoutStatusNone": "الحالة: لم تُدفع",
+      "payoutStatusPartial": "الحالة: مدفوعة جزئيًا"
+    },
+    "events": {
+      "title": "أحداث الأعمال",
+      "empty": "لا أحداث.",
+      "businessRef": "المرجع التجاري",
+      "gross": "الإجمالي",
+      "fee": "الرسوم",
+      "adjustment": "التعديل",
+      "noJournals": "لا قيود مرتبطة.",
+      "count": "{count} أحداث",
+      "eventType": "نوع الحدث",
+      "effectiveAt": "ساري في",
+      "copy": "نسخ المرجع التجاري",
+      "copy_success": "تم النسخ",
+      "copy_failed": "فشل النسخ"
+    },
+    "diagnostics": {
+      "title": "التشخيص",
+      "conflicts": "التعارضات",
+      "unclassified": "غير مصنّف",
+      "journalId": "معرّف القيد",
+      "kind": "النوع",
+      "businessType": "نوع العمل",
+      "reason": "السبب"
+    },
+    "actions": {
+      "view_detail": "التفاصيل"
+    },
+    "pagination": {
+      "total": "إجمالي {count} كشف"
+    },
+    "timezoneChip": {
+      "label": "{timezone}",
+      "fallback": "Asia/Shanghai"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "Settlements": {
+    "title": "Settlement bills",
+    "subtitle": "Released settlement facts with provider reconciliation status.",
+    "empty": "No settlements found.",
+    "loadError": "Failed to load settlements.",
+    "filters": {
+      "reconStatus": "Reconciliation status",
+      "asset": "Asset",
+      "paymentId": "Payment ID"
+    },
+    "columns": {
+      "settlementId": "Settlement ID",
+      "moneyInRef": "Money-In ref",
+      "asset": "Asset",
+      "gross": "Gross",
+      "fee": "Fee",
+      "net": "Net",
+      "releasedAt": "Released at",
+      "reconStatus": "Reconciliation",
+      "provider": "Provider",
+      "actions": "Actions"
+    },
+    "reconStatus": {
+      "PENDING": "Pending",
+      "MATCHED": "Matched",
+      "EXCEPTION": "Exception"
+    },
+    "sections": {
+      "settlement": "Settlement basics",
+      "providerSettlement": "Provider settlement",
+      "reconciliation": "Reconciliation",
+      "timeline": "Settlement timeline"
+    },
+    "fields": {
+      "moneyInRef": "Money-In ref",
+      "releaseRef": "Release ref",
+      "releasedAt": "Released at",
+      "gross": "Gross",
+      "fee": "Fee",
+      "net": "Net",
+      "provider": "Provider",
+      "providerReference": "Provider reference",
+      "settlementDate": "Settlement date",
+      "expectedNet": "Expected net",
+      "actualNet": "Actual net",
+      "reconStatus": "Reconciliation status",
+      "difference": "Difference"
+    },
+    "timeline": {
+      "CANDIDATE_CREATED": "Candidate created",
+      "RELEASED": "Released",
+      "LEDGER_POSTED": "Ledger posted",
+      "PROVIDER_STATEMENT_INGESTED": "Provider statement ingested",
+      "RECON_MATCHED": "Reconciliation matched",
+      "RECON_EXCEPTION": "Reconciliation exception"
+    },
+    "timelineEmpty": "No timeline events yet.",
+    "detail": {
+      "title": "Settlement detail",
+      "back": "Back to list",
+      "notFound": "Settlement not found."
+    },
+    "actions": {
+      "view": "View",
+      "view_detail": "View detail"
+    },
+    "copy_settlement_id": "Copy settlement ID",
+    "copy_success": "Copied",
+    "copy_failed": "Copy failed",
+    "copy_money_in_ref": "Copy money-in ref",
+    "copy_release_ref": "Copy release ref",
+    "summary": {
+      "net": "Settlement net",
+      "gross": "Gross",
+      "fee": "Fee",
+      "reconStatus": "Reconciliation"
+    },
+    "providerEmptyNotice": "No provider settlement document available yet."
+  }
+}

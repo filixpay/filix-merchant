@@ -1,0 +1,8 @@
+{
+  "SubMerchants": {
+    "edit_sub_merchant": "Edit Sub-Merchant",
+    "form": {
+      "edit_success": "Sub-merchant updated successfully"
+    }
+  }
+}

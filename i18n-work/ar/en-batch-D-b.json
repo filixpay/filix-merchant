@@ -1,0 +1,105 @@
+{
+  "CommerceActivation": {
+    "title": "Start running your store",
+    "subtitle": "A few steps to get your products selling globally",
+    "trust": "As a FilixPay merchant, you can create and publish products in Merchant Center directly — no platform catalog review required.",
+    "steps": {
+      "profile": "Complete store profile",
+      "profile_link": "Update profile (optional)",
+      "publish": "Publish your first product",
+      "orders": "Start receiving orders"
+    },
+    "cta": {
+      "publish_first": "Publish first product",
+      "continue_publish": "Continue publishing",
+      "syncing": "Syncing to storefront…",
+      "retry_publish": "Retry publish"
+    },
+    "timeout": {
+      "message": "Your product is still being processed. Refresh later to check the result.",
+      "refresh": "Refresh status"
+    },
+    "failed": {
+      "fallback": "Publish did not complete. Please retry."
+    },
+    "celebration": {
+      "title": "Product published",
+      "visibility": "After publishing, the product enters storefront display processing and becomes visible to shoppers once sync completes.",
+      "view_storefront": "View on storefront",
+      "continue_publish": "Continue publishing"
+    }
+  },
+  "Customers": {
+    "title": "Customer Management",
+    "subtitle": "View and manage your customer information.",
+    "search": "Search",
+    "headers": {
+      "name": "Name",
+      "code": "Customer Code",
+      "email": "Email",
+      "mobile": "Mobile",
+      "phone": "Phone",
+      "status": "Status",
+      "created_at": "Created At"
+    },
+    "loading": "Loading customers...",
+    "empty": "No customer data found."
+  },
+  "Locations": {
+    "title": "Operating Locations",
+    "subtitle": "Manage your business location information.",
+    "create_location": "Add Location",
+    "edit_location": "Edit Location",
+    "qrcode": "QR Code",
+    "anti_fraud_code": "Anti-Fraud Code",
+    "headers": {
+      "name": "Name",
+      "address": "Address",
+      "contact": "Contact",
+      "status": "Status",
+      "default": "Default",
+      "created_at": "Created At"
+    },
+    "form": {
+      "name": "Location Name",
+      "sub_merchant": "Sub-Merchant",
+      "address": "Address",
+      "country": "Country",
+      "mobile_phone": "Mobile Phone",
+      "email": "Contact Email",
+      "service_phone": "Service Phone",
+      "status": "Status",
+      "default": "Set as Default",
+      "status_required": "Please select a status",
+      "submit": "Submit",
+      "cancel": "Cancel",
+      "success": "Location created successfully",
+      "edit_success": "Location updated successfully"
+    },
+    "empty": "No location data found.",
+    "status_active": "Active",
+    "status_inactive": "Inactive",
+    "confirm_delete": "Are you sure you want to delete this location?"
+  },
+  "SubMerchants": {
+    "title": "Sub-Merchant Management",
+    "subtitle": "View and manage your sub-merchant information.",
+    "create_sub_merchant": "Add Sub-Merchant",
+    "edit_sub_merchant": "Edit Sub-Merchant",
+    "form": {
+      "name": "Merchant Name",
+      "alias": "Settlement Alias",
+      "success": "Sub-merchant created successfully",
+      "edit_success": "Sub-merchant updated successfully"
+    },
+    "headers": {
+      "name": "Merchant Name",
+      "alias": "Alias",
+      "code": "Merchant Code",
+      "merchant_id": "Merchant ID",
+      "status": "Status",
+      "created_at": "Created At"
+    },
+    "empty": "No sub-merchant data found."
+  }
+}

@@ -1,0 +1,1116 @@
+{
+  "MoneyCommon": {
+    "statuses": {
+      "POSTED": "計上済み",
+      "COMPLETED": "完了",
+      "CLEARED": "清算済み",
+      "REQUESTED": "申請済み",
+      "PENDING": "処理待ち",
+      "PROCESSING": "処理中",
+      "CONFIRMED": "確認済み",
+      "FAILED": "失敗",
+      "REJECTED": "拒否済み",
+      "CANCELLED": "キャンセル済み",
+      "CANCELED": "キャンセル済み",
+      "UNKNOWN": "不明"
+    },
+    "capStatuses": {
+      "ALLOW": "許可",
+      "UNAVAILABLE": "利用不可",
+      "UNKNOWN": "—"
+    },
+    "balanceTypes": {
+      "AVAILABLE": "利用可能",
+      "PENDING": "精算待ち",
+      "CLEARING": "清算中"
+    },
+    "sources": {
+      "MONEY_IN_INTENT": "入金",
+      "MONEY_OUT_INTENT": "出金",
+      "TRANSFER_RECORD": "振替記録",
+      "UNKNOWN": "不明"
+    },
+    "movementTypes": {
+      "MONEY_IN": "入金",
+      "MONEY_OUT": "出金",
+      "PAYOUT": "出金",
+      "TRANSFER": "送金",
+      "UNKNOWN": "不明"
+    }
+  },
+  "MoneyBalance": {
+    "title": "残高",
+    "subtitle": "複数資産の残高を一元表示。能力が有効な場合は入金・送金・出金が可能です。",
+    "available": "利用可能",
+    "balance_type": "残高種別",
+    "amount": "金額",
+    "actions": "操作",
+    "view_details": "明細を表示",
+    "money_in_status": "入金",
+    "payout_status": "出金",
+    "deposit_cta": "入金",
+    "withdraw_cta": "出金",
+    "transfer_cta": "送金",
+    "status_healthy": "有効",
+    "status_restricted": "制限あり",
+    "restriction_item": "{operation}は有効になっていません",
+    "restriction_ops": {
+      "moneyIn": "入金",
+      "payout": "出金",
+      "transfer": "送金"
+    },
+    "asset_account": "{asset} 口座",
+    "updated_at": "{time} 更新",
+    "as_of": "{time} 時点",
+    "empty": "資産残高はまだありません。",
+    "empty_title": "資産残高はまだありません",
+    "empty_desc": "この口座への資金流入はまだありません。初回入金後、通貨別に残高が表示されます。",
+    "empty_deposit_cta": "初回入金する",
+    "refresh": "更新",
+    "assets_section_title": "通貨別残高",
+    "retry": "再試行",
+    "movements": {
+      "title": "残高変動",
+      "empty": "この残高の台帳変動はまだありません。",
+      "headers": {
+        "time": "日時",
+        "type": "種別",
+        "journal": "仕訳",
+        "reference": "参照番号",
+        "amount": "金額",
+        "asset": "資産",
+        "balanceAfter": "変動後残高"
+      },
+      "related_reference": "関連: {id}",
+      "total_count": "{count} 件の変動",
+      "buckets": {
+        "AVAILABLE": "利用可能",
+        "PENDING": "精算待ち"
+      },
+      "businessTypes": {
+        "PAYMENT": "決済",
+        "PAYMENT_REVERSAL": "決済取消",
+        "REFUND": "返金",
+        "REFUND_REVERSAL": "返金取消",
+        "SETTLEMENT": "精算",
+        "SETTLEMENT_REVERSAL": "精算取消",
+        "FEE": "手数料",
+        "PAYOUT": "出金",
+        "TRANSFER": "送金",
+        "MONEY_IN": "入金",
+        "ADJUSTMENT": "調整",
+        "OTHER": "その他"
+      }
+    }
+  },
+  "MoneyActivity": {
+    "title": "アクティビティ",
+    "subtitle": "Money プロダクトの Activity フィードに基づく資金移動です。",
+    "empty": "アクティビティはまだありません。",
+    "asset_filter_label": "資産",
+    "asset_filter_all": "すべて",
+    "asset_filter_placeholder": "資産を選択",
+    "no_assets": "表示可能な残高がありません — アクティビティの絞り込みには資産が必要です。",
+    "columns": {
+      "time": "日時",
+      "source": "ソース",
+      "movement": "移動種別",
+      "amount": "金額",
+      "asset": "資産",
+      "status": "ステータス",
+      "reference": "参照番号"
+    },
+    "movement_filter_label": "種別",
+    "movement_filter_all": "すべて",
+    "movement_filter_in": "入金",
+    "movement_filter_out": "出金",
+    "movement_filter_transfer": "送金"
+  },
+  "MoneyIn": {
+    "title": "入金",
+    "subtitle": "Money プロダクト API 経由で資金を追加します。",
+    "methods_title": "入金方法",
+    "methods_subtitle": "資金受取に使用する入金アドレスを設定します。",
+    "tabs": {
+      "records": "入金記録",
+      "methods": "入金方法"
+    },
+    "empty": "入金記録はまだありません。",
+    "retry": "再試行",
+    "create_cta": "入金を作成",
+    "unavailable_title": "入金の作成は利用できません",
+    "asset_filter_label": "資産",
+    "asset_filter_all": "すべて",
+    "asset_filter_placeholder": "資産を選択",
+    "no_assets": "表示可能な残高がありません — 入金の絞り込みには資産が必要です。",
+    "columns": {
+      "time": "日時",
+      "amount": "金額",
+      "asset": "資産",
+      "status": "ステータス",
+      "id": "入金 ID"
+    },
+    "create": {
+      "title": "資金を追加",
+      "subtitle": "マルチ資産ウォレットへ入金します",
+      "asset": "入金先資産",
+      "asset_account": "{asset} 口座",
+      "asset_required": "資産は必須です",
+      "amount": "入金金額",
+      "amount_required": "金額は必須です",
+      "amount_invalid": "有効な小数金額を入力してください",
+      "settlement_hint": "資金は通常、決済チャネルにより 1〜3 営業日で着金します。",
+      "quick_amounts_label": "クイック金額",
+      "submit": "入金を確定",
+      "cancel": "キャンセル",
+      "checkout_unavailable": "入金は作成されましたが、Checkout を開けませんでした。詳細を確認して再試行してください。詳細: {detail}"
+    },
+    "detail": {
+      "title": "入金詳細",
+      "subtitle": "この入金の金額・ステータス・タイミングを確認します。",
+      "back": "入金一覧に戻る",
+      "empty": "入金が見つかりません。",
+      "failure_reason": "失敗理由",
+      "pay_cta": "今すぐ支払う",
+      "pay_unavailable": "支払い",
+      "pay_unavailable_hint": "Checkout トークンが利用できません（Intent が PROCESSING ではないか、FundingSession が失われた可能性があります）。入金を再作成するか、サポートにお問い合わせください。",
+      "hero_amount_label": "入金金額",
+      "hero_time": "計上日時: {time}",
+      "status_badge_success": "入金成功 · {status}",
+      "status_badge_processing": "入金処理中 · {status}",
+      "status_badge_failed": "入金失敗 · {status}",
+      "section_basic": "取引詳細",
+      "copy_id": "入金 ID をコピー",
+      "copy_funding_session": "ファンディングセッション ID をコピー",
+      "copied": "コピーしました",
+      "copy_failed": "コピーに失敗しました",
+      "funding_session": "ファンディングセッション ID",
+      "updated_at": "更新日時",
+      "footer_hint": "金額とステータスは Money プロダクトのリアルタイム結果を反映します。照合用に入金 ID をコピーしてください。"
+    }
+  },
+  "MoneyExternalAccounts": {
+    "title": "外部口座",
+    "subtitle": "Money 出金に使用する BANK および CRYPTO の送金先を管理します。保存後は完全な口座番号・アドレスは表示されません。",
+    "create_account": "口座を追加",
+    "retry": "再試行",
+    "disable": "無効化",
+    "disable_confirm": "この外部口座を無効化しますか？",
+    "disable_confirm_desc": "無効化した口座は出金や支払い送金に使用できません。この口座に依存する自動出金がある場合は、先に影響を確認してください。",
+    "disable_success": "口座を無効化しました",
+    "disable_failed": "口座の無効化に失敗しました",
+    "copy_masked": "マスク済み口座番号をコピー",
+    "copy_masked_address": "マスク済みアドレスをコピー",
+    "copy_success": "コピーしました",
+    "copy_failed": "コピーに失敗しました",
+    "status_active": "有効",
+    "status_disabled": "無効",
+    "type_bank": "銀行",
+    "type_crypto": "暗号資産",
+    "memo_present": "メモあり",
+    "columns": {
+      "type": "種別",
+      "account": "口座 / アドレス",
+      "holder": "名義人 / ネットワーク",
+      "bank": "銀行",
+      "currency": "通貨",
+      "country": "国 / 地域",
+      "status": "ステータス",
+      "actions": "操作"
+    },
+    "create": {
+      "title": "外部口座を追加",
+      "submit": "口座を保存",
+      "cancel": "キャンセル",
+      "type": "口座種別",
+      "type_required": "口座種別を選択してください",
+      "type_bank": "銀行口座",
+      "type_crypto": "暗号資産アドレス（USDT / TRON）",
+      "network": "ネットワーク",
+      "network_required": "ネットワークを選択してください",
+      "crypto_address": "ウォレットアドレス",
+      "crypto_address_required": "アドレスは必須です",
+      "crypto_address_placeholder": "T…",
+      "crypto_address_too_short": "アドレスが短すぎるようです",
+      "memo_tag": "Memo / タグ（任意）",
+      "memo_tag_placeholder": "送金先がメモを要求する場合のみ入力",
+      "country": "国 / 地域",
+      "country_required": "国/地域を選択してください",
+      "currency": "精算通貨",
+      "currency_required": "通貨を選択してください",
+      "holder": "口座名義人",
+      "holder_required": "口座名義人は必須です",
+      "holder_hint": "銀行口座の正式名称と一致させてください",
+      "holder_placeholder": "法人の正式名称または個人の氏名",
+      "holder_not_email": "口座名義人にメールアドレスは使用できません — 正式名称を入力してください",
+      "account_number": "口座番号 / IBAN",
+      "account_number_required": "口座番号は必須です",
+      "account_number_hint": "出金前に再確認してください",
+      "account_number_placeholder": "6222 0000 0000 0000",
+      "account_number_too_short": "口座番号が短すぎるようです",
+      "show_account_number": "口座番号を表示",
+      "hide_account_number": "口座番号を非表示",
+      "bank_name": "銀行名",
+      "bank_name_placeholder": "例: HSBC / Chase",
+      "bank_code": "ルーティング / SWIFT",
+      "bank_code_placeholder": "CNAPS / BIC コード",
+      "bank_code_help": "中国本土では 12 桁の CNAPS コード、クロスボーダーでは 8〜11 文字の SWIFT/BIC を使用してください。",
+      "countries": {
+        "CN": "中国本土 (CN)",
+        "HK": "香港 (HK)",
+        "US": "アメリカ合衆国 (US)",
+        "GB": "イギリス (GB)",
+        "SG": "シンガポール (SG)",
+        "JP": "日本 (JP)"
+      }
+    }
+  },
+  "MoneyPayouts": {
+    "title": "出金",
+    "subtitle": "Money プロダクト API 経由で資金を送金します。",
+    "empty": "出金記録はまだありません。",
+    "retry": "再試行",
+    "create_cta": "出金",
+    "unavailable_title": "出金は利用できません",
+    "asset_filter_label": "資産",
+    "asset_filter_all": "すべて",
+    "asset_filter_placeholder": "資産を選択",
+    "no_assets": "表示可能な残高がありません — 出金の絞り込みには資産が必要です。",
+    "columns": {
+      "time": "日時",
+      "amount": "金額",
+      "asset": "資産",
+      "status": "ステータス",
+      "id": "出金 ID"
+    },
+    "create": {
+      "title": "出金を申請",
+      "subtitle": "利用可能残高を紐付け済み銀行口座へ出金します",
+      "confirm_title": "出金の確認",
+      "confirm_subtitle": "以下の内容を確認し、取引パスワードを入力してください",
+      "asset": "資産",
+      "asset_required": "資産は必須です",
+      "amount": "出金金額",
+      "amount_required": "金額は必須です",
+      "amount_invalid": "有効な小数金額を入力してください",
+      "amount_exceeds_hint": "金額は利用可能残高を超えられません",
+      "available_hint": "利用可能: {available}",
+      "max_amount": "全額出金",
+      "destination_account": "外部口座",
+      "account_required": "外部口座を選択してください",
+      "no_accounts": "外部口座がまだありません。出金申請の前に作成してください。",
+      "go_create_account": "外部口座を作成",
+      "loading_accounts": "外部口座を読み込み中…",
+      "account_holder": "口座名義人",
+      "account_holder_required": "口座名義人は必須です",
+      "account_number": "銀行口座番号",
+      "account_number_required": "銀行口座番号は必須です",
+      "bank_name": "銀行名",
+      "bank_name_required": "銀行名は必須です",
+      "bank_branch": "支店（任意）",
+      "country": "国",
+      "country_required": "国は必須です",
+      "currency": "通貨",
+      "bank_code": "銀行コード",
+      "apply_amount": "申請金額",
+      "fee_settlement_note": "手数料は清算時に確定します。実際の着金情報は精算後に出金詳細に表示されます。",
+      "payment_pin": "取引パスワード",
+      "forgot_pin": "パスワードをお忘れですか？",
+      "go_set_pin": "取引パスワードを設定",
+      "validation": {
+        "pinRequired": "6 桁の取引パスワードを入力してください",
+        "pinFormat": "取引パスワードは 6 桁の数字である必要があります"
+      },
+      "errors": {
+        "pinNotSet": "取引パスワードが設定されていません。先に設定してください。",
+        "pinIncorrect": "取引パスワードが正しくありません"
+      },
+      "runtime_continue_warning": "出金は作成されました。レール開始には続行が必要です（{reasonCode}）。詳細を開きます。",
+      "success": "出金申請を送信しました",
+      "next": "次へ",
+      "back": "戻る",
+      "submit": "出金を確定",
+      "cancel": "キャンセル"
+    },
+    "detail": {
+      "title": "出金詳細",
+      "subtitle": "出金金額、処理進捗、送金先銀行口座を確認します。",
+      "back": "出金一覧に戻る",
+      "empty": "出金が見つかりません。",
+      "heroAmountLabel": "出金金額",
+      "statusBadgeProcessing": "出金を受付済み · {status}",
+      "statusBadgeSuccess": "出金完了 · {status}",
+      "statusBadgeFailed": "出金失敗 · {status}",
+      "timelineTitle": "進捗",
+      "timeline": {
+        "submitted": "申請済み",
+        "processing": "銀行処理中",
+        "processingDone": "清算確認済み",
+        "processingHint": "資金を振替中です",
+        "failed": "失敗",
+        "failedHint": "失敗理由を確認してください",
+        "confirmed": "レール確認済み",
+        "confirmedDone": "プロバイダーが出金を確認しました",
+        "confirmedHint": "台帳計上を待機中",
+        "confirmedUpcoming": "銀行確認待ち",
+        "posted": "計上済み",
+        "postedDone": "台帳クローズ済み — 銀行明細をご確認ください",
+        "postedHint": "計上はまだ完了していません"
+      },
+      "voucherSection": "出金参照",
+      "bankSection": "送金先銀行口座",
+      "settlementAsset": "精算資産",
+      "createdAt": "申請日時",
+      "bankEmpty": "送金先銀行情報がありません",
+      "copyId": "出金 ID をコピー",
+      "copied": "コピーしました",
+      "copyFailed": "コピーに失敗しました",
+      "footerProcessing": "出金申請は清算レールに送信されました。着金時期は銀行の処理状況によります — 銀行明細をご確認ください。",
+      "footerConfirmed": "レールはこの出金を確認しました。会計計上はまだクローズ中です — 最終の計上済み状態ではありません。",
+      "footerSuccess": "この出金は計上済みです。資金が届かない場合は、銀行口座情報を確認するかサポートにお問い合わせください。",
+      "footerFailed": "この出金を完了できませんでした。失敗理由を確認して再試行するか、サポートにお問い合わせください。",
+      "failure_reason": "失敗理由",
+      "failureReasons": {
+        "PAYOUT_FAILED": "出金を完了できませんでした。後でもう一度試すか、サポートにお問い合わせください。",
+        "RAIL_NOT_CONFIGURED": "清算レールは一時的に利用できません。後でもう一度試すか、サポートにお問い合わせください。",
+        "PLATFORM_DISABLED": "プラットフォームで出金が一時的に無効になっています。",
+        "CAPABILITY_DISABLED": "このマーチャントでは出金能力が有効になっていません。",
+        "OWNER_NOT_SUPPORTED": "この口座種別は出金に対応していません。",
+        "OWNER_INVALID": "出金用の口座情報が無効です。",
+        "ASSET_UNSUPPORTED": "この資産は出金に対応していません。",
+        "UNDER_REVIEW": "口座は審査中のため、出金は一時的に利用できません。",
+        "LIMIT_REACHED": "出金限度額に達しました。",
+        "POLICY_CONFIG_ERROR": "出金ポリシーの設定に誤りがあります。サポートにお問い合わせください。",
+        "RESTRICTED": "口座が制限されているため、出金は利用できません。",
+        "INSUFFICIENT_FUNDS": "利用可能残高が不足しています。"
+      },
+      "account_holder": "口座名義人",
+      "account_number": "口座番号",
+      "bank_name": "銀行",
+      "bank_branch": "支店"
+    }
+  },
+  "MoneyTransfers": {
+    "title": "送金",
+    "subtitle": "マーチャント間の資金送金",
+    "detailTitle": "送金詳細",
+    "detailSubtitle": "この送金の金額・ステータス・相手方",
+    "detailHint": "送金結果はシステム清算に従います。この取引についてご質問がある場合は管理者にお問い合わせください。",
+    "detailHintCleared": "この送金は完全に清算済みで取り消しできません。この取引についてご質問がある場合は管理者にお問い合わせください。",
+    "detailSectionTitle": "送金詳細",
+    "heroAmountLabel": "送金額 ({asset})",
+    "statusBadgeSuccess": "送金成功（{status}）",
+    "copied": "コピーしました",
+    "copyFailed": "コピーに失敗しました。手動でコピーしてください。",
+    "copyId": "送金 ID をコピー",
+    "copyCounterparty": "相手方をコピー",
+    "reasonNone": "なし（通常精算）",
+    "ownerType": {
+      "MERCHANT": "マーチャント口座",
+      "CUSTOMER": "個人口座",
+      "UNKNOWN": "相手方口座"
+    },
+    "backToList": "送金一覧に戻る",
+    "createTitle": "送金を作成",
+    "createSubtitle": "Filix 上のマーチャント間で資金を即時移動します",
+    "confirmTitle": "送金の確認",
+    "confirmSubtitle": "以下の内容を確認し、取引パスワードを入力してください",
+    "confirmTotalLabel": "送金合計",
+    "confirmFromLabel": "出金口座",
+    "confirmToLabel": "受取人",
+    "confirmPayeeMerchant": "受取マーチャント",
+    "confirmRemainingBalance": "送金後の残額",
+    "forgotPin": "パスワードをお忘れですか？",
+    "create_cta": "送金を作成",
+    "createSuccess": "送金を送信しました",
+    "submit": "送信",
+    "next": "次へ",
+    "back": "戻る",
+    "confirmTransfer": "送金を確定",
+    "confirmAvailableLabel": "利用可能残高",
+    "availableShort": "利用可能",
+    "useMaxAmount": "最大",
+    "assetAccount": "{asset} 口座",
+    "targetMerchantPlaceholder": "受取マーチャントコードを入力",
+    "payeeVerified": "✓ 口座を確認済み",
+    "payeeVerifiedWithAlias": "✓ 口座を確認済み · {alias}",
+    "payeeLookupHint": "受取人の身元を確認中",
+    "payeeNotFoundTitle": "マーチャントが見つかりません",
+    "goSetPin": "取引パスワードを設定",
+    "cancel": "キャンセル",
+    "empty": "送金はまだありません",
+    "no_assets": "送金可能な資産がありません",
+    "unavailable_title": "送金は利用できません",
+    "asset_filter_label": "資産",
+    "asset_filter_all": "すべて",
+    "asset_filter_placeholder": "資産を選択",
+    "availableHint": "利用可能: {available}（参考）",
+    "amountExceedsAvailableHint": "送金額が利用可能残高を超えています",
+    "fields": {
+      "asset": "出金資産",
+      "amount": "送金額",
+      "targetMerchantCode": "受取マーチャントコード",
+      "payeeName": "マーチャント名",
+      "payeeAlias": "エイリアス",
+      "paymentPin": "取引パスワード",
+      "reasonCode": "理由コード",
+      "transferId": "送金 ID",
+      "counterparty": "受取人",
+      "settlementAsset": "精算資産",
+      "completedAt": "完了日時"
+    },
+    "lookupLoading": "受取人を照会中…",
+    "validation": {
+      "amountRequired": "金額は必須です",
+      "amountInvalid": "有効な金額を入力してください",
+      "assetRequired": "出金資産を選択してください",
+      "targetRequired": "受取マーチャントコードは必須です",
+      "pinRequired": "6 桁の取引パスワードを入力してください",
+      "pinFormat": "取引パスワードは 6 桁の数字である必要があります",
+      "payeeLookupFailed": "受取マーチャントコードが無効または利用できません"
+    },
+    "errors": {
+      "pinNotSet": "取引パスワードが設定されていません。先に設定してください。",
+      "pinIncorrect": "取引パスワードが正しくありません"
+    },
+    "columns": {
+      "time": "日時",
+      "asset": "資産",
+      "amount": "金額",
+      "counterparty": "相手方",
+      "status": "ステータス",
+      "id": "送金 ID"
+    }
+  },
+  "Balance": {
+    "title": "口座残高",
+    "subtitle": "利用可能・精算待ち、および（対応時）凍結されたウォレット残高を表示します。",
+    "available": "利用可能残高",
+    "frozen": "凍結残高",
+    "total": "合計残高",
+    "withdraw": "出金",
+    "withdrawing": "出金中...",
+    "recharge": "チャージ",
+    "recharging": "チャージ中...",
+    "transfer": "送金",
+    "view_details": "明細を表示",
+    "transactions": {
+      "title": "取引明細",
+      "headers": {
+        "time": "日時",
+        "type": "種別",
+        "amount": "金額",
+        "before": "変動前残高",
+        "after": "変動後残高",
+        "currency": "通貨",
+        "order_id": "注文 ID",
+        "tally_status": "業務種別"
+      }
+    },
+    "history": "出金履歴",
+    "withdraw_modal": {
+      "title": "出金",
+      "amount": "出金金額",
+      "amount_hint": "利用可能残高: ¥{balance}",
+      "payment_pin": "取引パスワード",
+      "payment_pin_hint": "6 桁の PIN を入力",
+      "submit": "出金を確定",
+      "cancel": "キャンセル",
+      "success": "出金申請を送信しました",
+      "insufficient_balance": "出金金額は利用可能残高を超えられません",
+      "invalid_amount": "有効な金額を入力してください",
+      "select_account": "受取口座を選択",
+      "manual_input": "手動入力",
+      "bank_name": "銀行名",
+      "bank_branch": "支店の正式名称",
+      "account_holder": "口座名義人",
+      "account_number": "銀行口座番号"
+    },
+    "transfer_modal": {
+      "title": "内部残高送金",
+      "available_balance": "利用可能残高",
+      "add_item": "受取人を追加",
+      "payee_code": "受取人口座コード",
+      "amount": "送金額",
+      "memo": "メモ",
+      "submit": "今すぐ送金",
+      "cancel": "キャンセル",
+      "success": "送金に成功しました",
+      "insufficient_balance": "送金合計は利用可能残高を超えられません",
+      "invalid_amount": "有効な金額を入力してください",
+      "payee_required": "受取人口座コードは必須です",
+      "at_least_one": "送金項目を少なくとも 1 件追加してください",
+      "payee_looking_up": "照会中...",
+      "payee_name_label": "マーチャント名",
+      "payee_not_found": "顧客コードが見つかりません",
+      "payee_inactive": "このマーチャントは有効ではありません",
+      "payee_self_transfer": "自分自身へは送金できません",
+      "payee_invalid_code": "顧客コードの形式が無効です",
+      "payee_lookup_failed": "受取人の照会に失敗しました"
+    },
+    "pending": "精算待ち残高",
+    "movements": {
+      "title": "ウォレット変動",
+      "headers": {
+        "time": "日時",
+        "type": "種別",
+        "direction": "方向",
+        "reference": "参照番号",
+        "status": "ステータス",
+        "amount": "金額",
+        "asset": "資産"
+      }
+    },
+    "capability": {
+      "view_denied": "このウォレットを表示する権限がありません。",
+      "permission_denied": "実行権限がありません",
+      "temporarily_unavailable": "一時的に利用できません",
+      "requires_review": "審査が必要です",
+      "disabled": "利用不可",
+      "available": "利用可能",
+      "not_available": "利用不可",
+      "unknown": "不明",
+      "informational_only": "ウォレット能力ステータス（参考情報）",
+      "deposit": "入金",
+      "transfer": "送金",
+      "withdraw": "出金",
+      "payment": "決済",
+      "reason": {
+        "OK": "",
+        "NOT_SUPPORTED": "非対応",
+        "PERMISSION_DENIED": "権限がありません",
+        "OWNER_STATE_OR_COMPLIANCE": "口座が制限されています",
+        "CONFIG_DISABLED": "設定により無効",
+        "TEMPORARILY_UNAVAILABLE": "一時的に利用できません",
+        "CAPABILITY_DISABLED": "能力が無効です",
+        "UNDER_REVIEW": "審査中",
+        "LIMIT_REACHED": "上限に達しました"
+      }
+    },
+    "identity": {
+      "title": "ネットワークとアドレス",
+      "expand": "ID を表示",
+      "collapse": "ID を非表示",
+      "hint": "展開するとこの資産のネットワークを読み込みます（遅延読み込み）。",
+      "not_provisioned": "ID が未開通です",
+      "footprint": "ID フットプリント",
+      "networks_count": "{count} ネットワーク",
+      "addresses_count": "{count} アドレス",
+      "status": {
+        "INITIALIZING": "初期化中",
+        "ACTIVE": "有効",
+        "SUSPENDED": "一時停止",
+        "DISABLED": "無効",
+        "CLOSED": "閉鎖"
+      }
+    },
+    "businessTypes": {
+      "PAYMENT": "決済",
+      "PAYMENT_REVERSAL": "決済取消",
+      "REFUND": "返金",
+      "REFUND_REVERSAL": "返金取消",
+      "SETTLEMENT": "精算",
+      "SETTLEMENT_REVERSAL": "精算取消",
+      "FEE": "手数料",
+      "PAYOUT": "出金",
+      "TRANSFER": "送金",
+      "ADJUSTMENT": "調整",
+      "OTHER": "その他"
+    },
+    "accounts_by_currency": "通貨別口座",
+    "asset": "資産"
+  },
+  "Deposits": {
+    "title": "入金記録",
+    "subtitle": "口座への入金履歴を表示・検索します。",
+    "create_deposit": "チャージ",
+    "headers": {
+      "order_id": "入金注文 ID",
+      "trade_no": "取引番号",
+      "amount": "金額",
+      "status": "ステータス",
+      "created_at": "作成日時",
+      "paid_at": "支払日時"
+    },
+    "create_modal": {
+      "title": "チャージを開始",
+      "amount": "金額",
+      "currency": "通貨",
+      "submit": "今すぐチャージ",
+      "cancel": "キャンセル",
+      "success": "チャージ申請を送信しました"
+    },
+    "empty": "入金記録が見つかりません。"
+  },
+  "Payouts": {
+    "title": "出金記録",
+    "subtitle": "資金出金申請の履歴とステータスを表示します。",
+    "headers": {
+      "withdrawal_no": "出金番号",
+      "amount": "金額",
+      "status": "ステータス",
+      "approval_status": "承認ステータス",
+      "payee_name": "受取人名",
+      "payee_account": "受取人口座",
+      "applicant": "申請者",
+      "created_at": "作成日時",
+      "updated_at": "更新日時"
+    },
+    "empty": "出金記録が見つかりません。",
+    "details": {
+      "title": "出金詳細",
+      "withdrawal_no": "出金番号",
+      "amount": "金額",
+      "currency": "通貨",
+      "withdrawal_status": "ステータス",
+      "approval_status": "承認ステータス",
+      "payee_name": "受取人名",
+      "payee_account": "受取人口座",
+      "applicant": "申請者",
+      "created_at": "作成日時",
+      "updated_at": "更新日時"
+    }
+  },
+  "TransferRecords": {
+    "title": "送金記録",
+    "subtitle": "マーチャント間の資金送金履歴を表示します。",
+    "headers": {
+      "transfer_no": "送金番号",
+      "amount": "金額",
+      "status": "ステータス",
+      "created_at": "送金日時"
+    },
+    "empty": "送金記録が見つかりません。",
+    "item_details": {
+      "title": "送金詳細",
+      "headers": {
+        "payee_name": "受取人名",
+        "payee_account": "口座番号",
+        "bank": "銀行名",
+        "amount": "金額",
+        "status": "ステータス",
+        "created_at": "作成日時"
+      }
+    }
+  },
+  "PayoutRecords": {
+    "title": "代付記録",
+    "subtitle": "代付業務注文の履歴を表示・管理します。",
+    "headers": {
+      "payout_no": "代付番号",
+      "amount": "代付金額",
+      "status": "ステータス",
+      "created_at": "代付日時"
+    },
+    "empty": "代付記録が見つかりません。",
+    "item_details": {
+      "title": "代付詳細",
+      "headers": {
+        "payee_name": "受取人名",
+        "payee_account": "口座番号",
+        "bank": "銀行名",
+        "amount": "代付金額",
+        "status": "ステータス",
+        "created_at": "作成日時"
+      }
+    },
+    "create_modal": {
+      "title": "代付申請を作成",
+      "available_balance": "利用可能残高",
+      "add_item": "受取人を追加",
+      "payee_code": "受取人顧客コード",
+      "amount": "代付金額",
+      "memo": "メモ",
+      "submit": "代付を送信",
+      "cancel": "キャンセル",
+      "success": "代付申請を送信しました",
+      "insufficient_balance": "代付合計は利用可能残高を超えられません",
+      "invalid_amount": "有効な代付金額を入力してください",
+      "payee_required": "受取人顧客コードを入力してください",
+      "at_least_one": "代付項目を少なくとも 1 件追加してください"
+    }
+  },
+  "PaymentSplits": {
+    "title": "分帳",
+    "subtitle": "注文の分帳明細と受取側ステータスを表示・管理します。",
+    "headers": {
+      "order_id": "注文 ID",
+      "trade_no": "取引番号",
+      "amount": "注文金額",
+      "order_amount": "合計金額",
+      "split_amount": "分帳金額",
+      "receivers": "受取側",
+      "status": "ステータス",
+      "type": "分帳種別",
+      "created_at": "作成日時"
+    },
+    "filters": {
+      "order_id": "注文 ID",
+      "status": "ステータス",
+      "all_status": "すべてのステータス"
+    },
+    "statuses": {
+      "PENDING": "処理待ち",
+      "PROCESSING": "処理中",
+      "SUCCESS": "成功",
+      "FAILED": "失敗",
+      "PARTIAL_SUCCESS": "一部成功",
+      "CLOSED": "クローズ"
+    },
+    "types": {
+      "IMMEDIATE": "即時",
+      "DELAYED": "遅延"
+    },
+    "details": {
+      "title": "分帳詳細",
+      "base_info": "基本情報",
+      "receivers": "受取側詳細",
+      "receiver_id": "受取側",
+      "receiver_name": "名称",
+      "amount": "金額",
+      "proportion": "割合",
+      "status": "ステータス",
+      "progress": "分帳進捗",
+      "view_details": "詳細を表示",
+      "serial_no": "通し番号"
+    },
+    "empty": "分帳記録が見つかりません。"
+  },
+  "SettlementReleases": {
+    "title": "精算処理",
+    "subtitle": "資金が利用可能残高になるタイミングを追跡します。",
+    "empty": "精算処理記録が見つかりません。",
+    "loadError": "精算処理の読み込みに失敗しました。",
+    "filters": {
+      "status": "ステータス",
+      "paymentId": "決済 ID を検索",
+      "search": "候補または決済 ID を検索"
+    },
+    "columns": {
+      "id": "候補 ID",
+      "paymentId": "決済 ID",
+      "businessRef": "業務参照",
+      "amount": "金額",
+      "status": "ステータス",
+      "eligibleAt": "予定処理時刻",
+      "nextEvaluationAt": "次回評価",
+      "releasedAt": "利用可能になった日時",
+      "createdAt": "作成日時",
+      "reasonCode": "理由",
+      "ids": "候補 / 決済",
+      "paymentShort": "Pay",
+      "statusReason": "ステータスと理由",
+      "actions": "操作"
+    },
+    "status": {
+      "PENDING": "処理待ち",
+      "EVALUATING": "評価中",
+      "AVAILABLE": "利用可能",
+      "BLOCKED": "ブロック中",
+      "FAILED": "失敗",
+      "SKIPPED": "スキップ"
+    },
+    "detail": {
+      "title": "精算処理詳細",
+      "back": "一覧に戻る",
+      "notFound": "精算処理記録が見つかりません。",
+      "journalId": "Journal ID",
+      "releaseJournalId": "Release Journal ID",
+      "retryCount": "再試行回数",
+      "lastTriggeredAt": "最終トリガー日時",
+      "paymentTitle": "決済",
+      "paymentSucceededAt": "決済成功日時",
+      "journalUnavailableTitle": "利用可能化 Journal が利用できません",
+      "journalUnavailableBody": "この候補が参照する Journal を解決できませんでした。台帳事実が利用可能になるまで、利用可能日時は非表示です。",
+      "bannerTitle": "タスクは {status} です",
+      "retryChip": "{count} 回再試行",
+      "reasonLabel": "理由:",
+      "noReason": "理由コードはありません。",
+      "basicsTitle": "基本情報と金額",
+      "journalsTitle": "台帳 Journal",
+      "timelineTitle": "スケジュールタイムライン",
+      "paymentAmount": "決済金額",
+      "lastTriggeredWithRetry": "最終トリガー（再試行 {count}）",
+      "releasedPending": "未解放"
+    },
+    "actions": {
+      "view_detail": "詳細"
+    },
+    "pagination": {
+      "total": "精算ジョブ合計 {count} 件"
+    },
+    "amount_pending": "評価待ち",
+    "copy_id": "候補 ID をコピー",
+    "copy_payment_id": "決済 ID をコピー",
+    "copy_success": "コピーしました",
+    "copy_failed": "コピーに失敗しました",
+    "copy_business_ref": "業務参照をコピー",
+    "copy_journal_id": "Journal ID をコピー",
+    "copy_release_journal_id": "Release Journal ID をコピー",
+    "reasonGuidance": {
+      "CAPABILITY_DISABLED": "マーチャント能力が無効のため、自動精算評価は一時停止しています。",
+      "NOT_PRODUCTIZED": "この資金プロダクトは、まだこのマーチャントでは利用できません。",
+      "OWNER_NOT_SUPPORTED": "この所有者種別はこの精算アクションに対応していません。",
+      "fallback": "システムがこの理由コードを返しました。マーチャント能力の設定を確認してください。"
+    },
+    "next_eval_hint": "次回の自動評価",
+    "reasonShort": {
+      "CAPABILITY_DISABLED": "能力が無効",
+      "CONTEXT_RESOLVE_FAILED": "コンテキスト解決に失敗",
+      "NOT_PRODUCTIZED": "未プロダクト化",
+      "OWNER_NOT_SUPPORTED": "所有者非対応"
+    }
+  },
+  "TransactionReconciliation": {
+    "title": "取引照合",
+    "subtitle": "プロバイダー取引明細と注文の突合（照合範囲: 注文）。",
+    "empty": "この範囲に照合項目はありません。",
+    "emptyNoReconData": "このチャネルと日付範囲にプロバイダー照合データがありません。",
+    "emptyCoverageNoRows": "この範囲のプロバイダー取引明細は存在しますが、マーチャント向けに表示可能な注文がありません（チャネル認可、注文の所有権、channelOrderId マッピングを確認してください）。",
+    "emptyHint": "別の日付範囲またはチャネルを試してから照会するか、フィルターをリセットしてください。",
+    "query": "照会",
+    "reset": "リセット",
+    "loadError": "取引照合の読み込みに失敗しました。",
+    "export": "CSV をエクスポート",
+    "exportFailed": "エクスポートに失敗しました。",
+    "noReconDataTitle": "プロバイダー照合データなし",
+    "noReconDataDescription": "FilixPay は、選択したチャネルと bizDate 範囲のプロバイダー照合バッチを受け取っていません。これは一致する注文がない場合とは異なります。",
+    "reconciliationLevelOrder": "注文",
+    "filters": {
+      "channelCode": "チャネル",
+      "channel_all": "すべてのチャネル",
+      "scope": "範囲"
+    },
+    "channels": {
+      "ALL": "すべてのチャネル",
+      "STRIPE": "STRIPE",
+      "PAYPAL": "PAYPAL"
+    },
+    "scope": {
+      "default": "照合済みのみ",
+      "allTransactions": "すべての取引"
+    },
+    "columns": {
+      "payment": "決済",
+      "order": "注文",
+      "reconciliationLevel": "照合粒度",
+      "channelCode": "チャネル",
+      "reconciliationStatus": "照合ステータス",
+      "bizDate": "業務日",
+      "actions": "操作"
+    },
+    "reconStatus": {
+      "MATCHED": "一致",
+      "MISMATCH": "不一致",
+      "RECONCILIATION_PENDING": "処理待ち",
+      "NOT_RECONCILED": "未照合"
+    },
+    "sections": {
+      "association": "決済 / 注文の関連",
+      "comparison": "プロバイダー vs FilixPay",
+      "provider": "プロバイダー",
+      "filixpay": "FilixPay"
+    },
+    "fields": {
+      "paymentId": "決済 ID",
+      "orderId": "注文 ID",
+      "reconciliationLevel": "照合粒度",
+      "channelCode": "チャネル",
+      "bizDate": "業務日",
+      "reconciliationStatus": "照合ステータス",
+      "mismatchType": "不一致種別",
+      "providerTransactionId": "プロバイダー取引 ID",
+      "providerOrderId": "プロバイダー注文 ID",
+      "providerAmount": "プロバイダー金額",
+      "providerStatus": "プロバイダーステータス",
+      "localAmount": "FilixPay 金額",
+      "localStatus": "FilixPay ステータス"
+    },
+    "detail": {
+      "title": "取引照合詳細",
+      "reconScopeOrder": "照合範囲: 注文",
+      "back": "一覧に戻る",
+      "notFound": "照合記録が見つかりません。"
+    },
+    "actions": {
+      "view_detail": "詳細"
+    },
+    "copy_payment_id": "決済 ID をコピー",
+    "copy_order_id": "注文 ID をコピー",
+    "copy_success": "コピーしました",
+    "copy_failed": "コピーに失敗しました"
+  },
+  "Settlements": {
+    "title": "精算明細",
+    "subtitle": "解放済みの精算事実とプロバイダー照合ステータス。",
+    "empty": "精算が見つかりません。",
+    "loadError": "精算の読み込みに失敗しました。",
+    "filters": {
+      "reconStatus": "照合ステータス",
+      "asset": "資産",
+      "paymentId": "決済 ID"
+    },
+    "columns": {
+      "settlementId": "精算 ID",
+      "moneyInRef": "入金参照",
+      "asset": "資産",
+      "gross": "総額",
+      "fee": "手数料",
+      "net": "純額",
+      "releasedAt": "解放日時",
+      "reconStatus": "照合",
+      "provider": "プロバイダー",
+      "actions": "操作"
+    },
+    "reconStatus": {
+      "PENDING": "処理待ち",
+      "MATCHED": "一致",
+      "EXCEPTION": "例外"
+    },
+    "sections": {
+      "settlement": "精算の基本情報",
+      "providerSettlement": "プロバイダー精算",
+      "reconciliation": "照合",
+      "timeline": "精算タイムライン"
+    },
+    "fields": {
+      "moneyInRef": "入金参照",
+      "releaseRef": "解放参照",
+      "releasedAt": "解放日時",
+      "gross": "総額",
+      "fee": "手数料",
+      "net": "純額",
+      "provider": "プロバイダー",
+      "providerReference": "プロバイダー参照",
+      "settlementDate": "精算日",
+      "expectedNet": "予定純額",
+      "actualNet": "実績純額",
+      "reconStatus": "照合ステータス",
+      "difference": "差額"
+    },
+    "timeline": {
+      "CANDIDATE_CREATED": "候補作成",
+      "RELEASED": "解放済み",
+      "LEDGER_POSTED": "台帳計上",
+      "PROVIDER_STATEMENT_INGESTED": "プロバイダー明細取込",
+      "RECON_MATCHED": "照合一致",
+      "RECON_EXCEPTION": "照合例外"
+    },
+    "timelineEmpty": "タイムラインイベントはまだありません。",
+    "detail": {
+      "title": "精算詳細",
+      "back": "一覧に戻る",
+      "notFound": "精算が見つかりません。"
+    },
+    "actions": {
+      "view": "表示",
+      "view_detail": "詳細を表示"
+    },
+    "copy_settlement_id": "精算 ID をコピー",
+    "copy_success": "コピーしました",
+    "copy_failed": "コピーに失敗しました",
+    "copy_money_in_ref": "入金参照をコピー",
+    "copy_release_ref": "解放参照をコピー",
+    "summary": {
+      "net": "精算純額",
+      "gross": "総額",
+      "fee": "手数料",
+      "reconStatus": "照合"
+    },
+    "providerEmptyNotice": "プロバイダー精算書類はまだありません。"
+  },
+  "SettlementStatements": {
+    "title": "精算記録",
+    "subtitle": "日次・週次・月次の精算期間と、当期の精算金額を表示します。",
+    "empty": "精算明細書が見つかりません。",
+    "loadError": "精算明細書の読み込みに失敗しました。",
+    "noAssets": "精算明細書を照会できる利用可能残高資産がありません。",
+    "periodNotStarted": "この期間はまだ開始していないため、明細書は利用できません。",
+    "downloadError": "精算明細書のダウンロードに失敗しました。",
+    "openHint": "この期間はまだオープン中です。金額は現時点のライブ値です。",
+    "openBanner": "この期間はまだオープン中です。金額は現時点のライブ値です。",
+    "filters": {
+      "asset": "資産",
+      "assetPlaceholder": "資産を選択",
+      "allAssets": "すべての通貨",
+      "periodKind": "期間"
+    },
+    "periodKind": {
+      "DAY": "日",
+      "WEEK": "週",
+      "MONTH": "月"
+    },
+    "periodState": {
+      "OPEN": "オープン",
+      "CLOSED": "クローズ"
+    },
+    "coverageState": {
+      "OK": "OK",
+      "PARTIAL_COVERAGE": "部分カバー",
+      "INCONSISTENT": "不整合"
+    },
+    "columns": {
+      "periodKey": "明細書期間",
+      "asset": "資産",
+      "settlementNet": "精算純額",
+      "gross": "総額",
+      "fee": "手数料",
+      "adjustment": "調整",
+      "released": "解放済み",
+      "payout": "出金",
+      "state": "状態",
+      "timezone": "タイムゾーン",
+      "periodState": "ステータス",
+      "coverage": "データカバー",
+      "actions": "操作"
+    },
+    "detail": {
+      "title": "精算明細書詳細",
+      "back": "一覧に戻る",
+      "notFound": "精算明細書が見つかりません。",
+      "download": "XLSX をダウンロード",
+      "summaryTitle": "サマリー",
+      "asOf": "時点",
+      "window": "ウィンドウ",
+      "effectiveAt": "有効日時",
+      "payoutProgress": "出金と解放の進捗",
+      "pendingPayout": "出金待ち",
+      "payoutStatusNone": "ステータス: 未出金",
+      "payoutStatusPartial": "ステータス: 一部出金済み"
+    },
+    "events": {
+      "title": "業務イベント",
+      "empty": "イベントはありません。",
+      "businessRef": "業務参照",
+      "gross": "総額",
+      "fee": "手数料",
+      "adjustment": "調整",
+      "noJournals": "関連 Journal はありません。",
+      "count": "{count} 件のイベント",
+      "eventType": "イベント種別",
+      "effectiveAt": "有効日時",
+      "copy": "業務参照をコピー",
+      "copy_success": "コピーしました",
+      "copy_failed": "コピーに失敗しました"
+    },
+    "diagnostics": {
+      "title": "診断",
+      "conflicts": "競合",
+      "unclassified": "未分類",
+      "journalId": "Journal ID",
+      "kind": "種別",
+      "businessType": "業務種別",
+      "reason": "理由"
+    },
+    "actions": {
+      "view_detail": "詳細"
+    },
+    "pagination": {
+      "total": "明細書合計 {count} 件"
+    },
+    "timezoneChip": {
+      "label": "{timezone}",
+      "fallback": "Asia/Shanghai"
+    }
+  }
+}

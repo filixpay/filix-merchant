@@ -1,0 +1,659 @@
+{
+  "Pages": {
+    "crypto_payment": {
+      "title": "Krypto-Zahlung",
+      "subtitle": "Nativer On-Chain-Einzug von TRON USDT über das FilixPay-Blockchain-Gateway",
+      "hero_title": "TRON-USDT-Zahlungen, integriert",
+      "hero_desc": "Nehmen Sie TRC20-USDT entgegen mit händlerverwalteten Einzahlungsadressen, Matching über eindeutige Beträge und Bestätigung über das Blockchain-Gateway — vereinheitlicht im selben FilixPay-Checkout- und Auftragsfluss.",
+      "pipeline": {
+        "configure": {
+          "title": "Wallets konfigurieren",
+          "desc": "TRON-USDT-Einzahlungsadressen hinterlegen"
+        },
+        "checkout": {
+          "title": "Checkout-Einzug",
+          "desc": "Adresse und Zahlungsbetrag anzeigen"
+        },
+        "confirm": {
+          "title": "On-Chain-Bestätigung",
+          "desc": "Gateway prüft die Einzahlung"
+        }
+      },
+      "what": {
+        "title": "Was ist FilixPay Krypto-Zahlung?",
+        "desc": "FilixPay ist eine Orchestrierungsschicht für Zahlungen — kein Verwahrer und keine Börse. Der native CRYPTO-Kanal verbindet Ihren Checkout mit TRON-USDT-Einzahlungen über das FilixPay-Blockchain-Gateway, optional erweiterbar um NowPayments für Multi-Coin-Rechnungen."
+      },
+      "native": {
+        "title": "Nativer TRON-USDT-Kanal (Primär)",
+        "desc": "Produktionsreifer On-Chain-Einzug für TRC20-USDT mit händlerkontrollierten Einzahlungswallets und automatischem Zahlungs-Matching.",
+        "points": {
+          "0": "Chain und Asset: TRON-Mainnet USDT (TRC20)",
+          "1": "Einzahlungsmodi: STATIC mit Matching über eindeutige Beträge oder HD-Adresszuweisung",
+          "2": "Checkout zeigt dem Kunden die Einzahlungsadresse und den genauen Zahlungsbetrag"
+        }
+      },
+      "wallets": {
+        "title": "Verwaltung der Einzahlungswallets",
+        "desc": "Händler konfigurieren Empfangsadressen im Händlerzentrum, bevor sie live gehen.",
+        "points": {
+          "0": "Fourth-Party-Händler verwalten ihre eigenen TRON-USDT-Einzahlungswallets",
+          "1": "Third-Party-Unterhändler nutzen plattformverwaltete Wallets (nur Leseansicht)",
+          "2": "Ein aktives Einzahlungswallet pro Chain/Asset und Händler"
+        }
+      },
+      "extension": {
+        "title": "NowPayments-Erweiterung (optional)",
+        "desc": "Benötigen Sie weitere digitale Assets neben TRON USDT? Verbinden Sie Ihr eigenes NowPayments-Konto als zusätzlichen Upstream-Kanal.",
+        "points": {
+          "0": "Hinterlegen Sie Ihren NowPayments-API-Key und das IPN-Secret in der Zahlungskonfiguration",
+          "1": "Leiten Sie Kunden für unterstützte Coins zum NowPayments-Invoice-Checkout weiter",
+          "2": "FilixPay übernimmt Auftragsverknüpfung, IPN-Callbacks und den Abgleich der Handelsbelege"
+        },
+        "footnote": "Der Multi-Coin-Umfang hängt von Ihrem NowPayments-Händlerkonto ab — keine native FilixPay-Garantie."
+      },
+      "merchant_center": {
+        "title": "Funktionen im Händlerzentrum",
+        "items": {
+          "configs": {
+            "title": "Zahlungskonfiguration",
+            "desc": "CRYPTO-Gateway-Zugangsdaten oder NowPayments-API-Keys je Zahlungsszenario hinterlegen."
+          },
+          "wallets": {
+            "title": "Krypto-Einzahlungsadressen",
+            "desc": "TRON-USDT-Empfangsadressen für den nativen Kanal anlegen und pflegen."
+          },
+          "orders": {
+            "title": "Aufträge & Webhooks",
+            "desc": "Zahlungsstatus verfolgen und Händler-Webhooks empfangen, wenn Einzahlungen bestätigt werden."
+          }
+        }
+      },
+      "workflow": {
+        "title": "Einzugsablauf",
+        "desc": "Von der Checkout-Erstellung bis zur On-Chain-Bestätigung.",
+        "steps": {
+          "order": {
+            "title": "Checkout erstellen",
+            "desc": "Händler oder API erstellt einen Auftrag und wählt den konfigurierten Krypto-Zahlungskanal."
+          },
+          "present": {
+            "title": "Zahlung anzeigen",
+            "desc": "Nativer CRYPTO zeigt TRON-Adresse und eindeutigen Zahlungsbetrag; NowPayments leitet zur Invoice-URL weiter."
+          },
+          "pay": {
+            "title": "Kunde zahlt",
+            "desc": "Der Kunde sendet USDT on-chain oder schließt die Zahlung auf der NowPayments-Invoice-Seite ab."
+          },
+          "settle": {
+            "title": "Bestätigen & benachrichtigen",
+            "desc": "Gateway oder IPN bestätigt die Zahlung; Auftragsstatus wird aktualisiert und Händler-Webhooks werden ausgelöst."
+          }
+        }
+      },
+      "scenarios": {
+        "cross_border": {
+          "title": "Grenzüberschreitender USDT-Einzug",
+          "desc": "Akzeptieren Sie Stablecoin-Zahlungen von globalen Kunden ohne Kartenrails."
+        },
+        "chargeback_free": {
+          "title": "Chargeback-freie Alternative",
+          "desc": "On-Chain-Finalität beseitigt das Chargeback-Risiko von Kartenzahlungen für geeignete Anwendungsfälle."
+        },
+        "platform": {
+          "title": "Plattformverwaltete Krypto",
+          "desc": "Händler mit Plattformabrechnung übernehmen die Krypto-Konfiguration der Plattform, ohne Wallets selbst zu verwalten."
+        }
+      },
+      "faq": {
+        "title": "Häufig gestellte Fragen",
+        "items": {
+          "what_coins": {
+            "q": "Welche Kryptowährungen unterstützt FilixPay nativ?",
+            "a": "Der native CRYPTO-Kanal unterstützt derzeit TRON-Mainnet USDT (TRC20). Für weitere digitale Assets verbinden Sie Ihr eigenes NowPayments-Konto als optionalen Upstream-Kanal."
+          },
+          "wallet_required": {
+            "q": "Muss ich Einzahlungswallets konfigurieren?",
+            "a": "Ja für den nativen TRON-USDT-Kanal. Fourth-Party-Händler hinterlegen Einzahlungsadressen unter Krypto-Einzahlungsadressen. Third-Party-Unterhändler mit plattformverwalteter Abrechnung nutzen die konfigurierten Wallets des Plattformhändlers."
+          },
+          "deposit_modes": {
+            "q": "Was sind die Einzahlungsmodi STATIC und HD?",
+            "a": "Im STATIC-Modus wird für jeden Auftrag ein eindeutiger Zahlungsbetrag gegen Ihre Einzahlungsadresse reserviert. Im HD-Modus weist das Blockchain-Gateway Adressen zu. Der aktive Modus wird in Ihrer CRYPTO-Kanalkonfiguration festgelegt."
+          },
+          "nowpayments": {
+            "q": "Wie funktioniert die NowPayments-Erweiterung?",
+            "a": "Sie hinterlegen Ihre NowPayments-API-Zugangsdaten in der Zahlungskonfiguration. FilixPay erstellt Rechnungen, leitet Kunden zum NowPayments-Checkout weiter und verarbeitet IPN-Callbacks in einen einheitlichen Auftragsstatus."
+          },
+          "chargebacks": {
+            "q": "Sind Krypto-Zahlungen rückgängig machbar?",
+            "a": "On-Chain-USDT-Transfers sind nach Bestätigung endgültig. Chargebacks nach Kartenmuster gelten nicht für den nativen Krypto-Einzug; operative Rückerstattungen müssen gemäß Ihrer Geschäftspolitik erfolgen."
+          },
+          "refunds": {
+            "q": "Unterstützt FilixPay automatische Krypto-Rückerstattungen?",
+            "a": "Automatische On-Chain-Rückerstattungen über den nativen CRYPTO-Kanal sind in der aktuellen Version nicht verfügbar. Planen Sie bei Bedarf manuelle Rückerstattungsabläufe."
+          }
+        }
+      },
+      "cta": {
+        "title": "Bereit, TRON USDT über FilixPay einzuziehen?",
+        "desc": "Konfigurieren Sie Einzahlungswallets und Zahlungskanäle im Händlerzentrum, oder kontaktieren Sie uns für ein plattformverwaltetes Setup."
+      }
+    },
+    "payment_splitting": {
+      "title": "Zahlungssplitting",
+      "subtitle": "Automatisierte Split-Payment- und Abrechnungsfunktionen für Plattformgeschäfte",
+      "hero_title": "Zahlungssplitting für Plattformen und Multi-Händler-Abrechnung",
+      "hero_desc": "Automatisieren Sie, wie eine Zahlung auf Plattformen, Händler, Unterhändler, Servicegebühren, Provisionen und Abrechnungsempfänger verteilt wird.",
+      "what": {
+        "title": "Was ist Zahlungssplitting?",
+        "desc": "Zahlungssplitting verbindet Zahlungseinzug, Empfängerzuweisung, Abrechnungsbelege und Abgleichsdatensätze, damit Plattformgeschäfte manuelle Finanzprozesse reduzieren können."
+      },
+      "features": {
+        "multi_receiver": {
+          "icon": "M",
+          "title": "Mehrere Empfänger",
+          "desc": "Teilen Sie eine Kundenzahlung auf Händler, Unterhändler, Plattformkonten und Partner auf."
+        },
+        "commission": {
+          "icon": "%",
+          "title": "Plattformprovision",
+          "desc": "Trennen Sie Plattform-Servicegebühren und Provisionen vor der Händlerabrechnung."
+        },
+        "settlement": {
+          "icon": "S",
+          "title": "Abrechnungsbereit",
+          "desc": "Verbinden Sie Split-Datensätze mit Abrechnungsbelegen und Finanzabgleichsprozessen."
+        },
+        "webhook": {
+          "icon": "API",
+          "title": "API und Webhooks",
+          "desc": "Nutzen Sie API- und Webhook-Callbacks, um Zahlungs-, Split- und Abrechnungsstatus zu verfolgen."
+        }
+      },
+      "scenarios": {
+        "marketplace": {
+          "icon": "O",
+          "title": "Marketplace-Aufträge",
+          "desc": "Weisen Sie Kundenzahlungen Plattformhändlern und Abrechnungsempfängern zu."
+        },
+        "commission": {
+          "icon": "F",
+          "title": "Serviceprovision",
+          "desc": "Behalten Sie Plattformgebühren und senden Sie den verbleibenden Anspruch an Händler."
+        },
+        "saas": {
+          "icon": "S",
+          "title": "SaaS-Plattformen",
+          "desc": "Unterstützen Sie Multi-Tenant-Händler, die über eine gemeinsame Zahlungsplattform einziehen."
+        },
+        "chain": {
+          "icon": "G",
+          "title": "Ketten und Gruppen",
+          "desc": "Rechnen Sie Mittel über Filialen, Tochtergesellschaften oder Geschäftseinheiten ab."
+        },
+        "cross_border": {
+          "icon": "X",
+          "title": "Grenzüberschreitende Abrechnung",
+          "desc": "Unterstützen Sie Mehrparteien-Abrechnungsszenarien für den globalen Plattformhandel."
+        },
+        "partner": {
+          "icon": "R",
+          "title": "Partner-Umsatzbeteiligung",
+          "desc": "Verteilen Sie Umsätze an Partner, Kanäle oder Dienstleister."
+        }
+      },
+      "workflow": {
+        "title": "So funktioniert der Split-Payment-Ablauf",
+        "desc": "Von der Kundenzahlung bis zur Empfängerabrechnung ist jeder Schritt mit Datensätzen verknüpft, die Finanzteams nachverfolgen können.",
+        "steps": {
+          "pay": {
+            "title": "Kunde zahlt",
+            "desc": "Ein Kunde schließt die Zahlung über den Plattform-Checkout ab."
+          },
+          "receive": {
+            "title": "Plattform empfängt",
+            "desc": "Die Plattform erfasst die Zahlung und bereitet die Split-Berechnung vor."
+          },
+          "calculate": {
+            "title": "Regeln berechnen den Split",
+            "desc": "Geschäftsregeln bestimmen Beträge, Empfänger, Provisionen und Gebühren."
+          },
+          "credit": {
+            "title": "Empfänger werden gutgeschrieben",
+            "desc": "Empfänger erhalten ihre zugewiesenen Beträge gemäß dem Split-Ergebnis."
+          },
+          "settle": {
+            "title": "Abrechnungsbeleg wird erzeugt",
+            "desc": "Abrechnungsdatensätze fassen Split-Ergebnisse für den Finanzbetrieb zusammen."
+          },
+          "reconcile": {
+            "title": "Finanzabgleich",
+            "desc": "Finanzteams vergleichen Aufträge, Split-Datensätze und Abrechnungsbelege."
+          }
+        }
+      },
+      "rules": {
+        "title": "Regeln und Empfängermodell",
+        "desc": "Definieren Sie, wie Umsätze auf Händler, Plattformkonten, Servicegebühren und Abrechnungsempfänger verteilt werden.",
+        "items": {
+          "fixed_amount": {
+            "icon": "#",
+            "title": "Festbetrag",
+            "desc": "Weisen Sie einem Empfänger oder einer Plattformgebühr einen festen Wert zu."
+          },
+          "percentage": {
+            "icon": "%",
+            "title": "Prozentsatz",
+            "desc": "Teilen Sie nach Prozentsatz für Händlerumsatz oder Partnerbeteiligung auf."
+          },
+          "commission": {
+            "icon": "C",
+            "title": "Provision",
+            "desc": "Behalten Sie die Plattformprovision vor der Abrechnung."
+          },
+          "receiver": {
+            "icon": "R",
+            "title": "Empfänger",
+            "desc": "Leiten Sie Beträge an Händler, Unterhändler, Filialen oder Partner."
+          },
+          "currency": {
+            "icon": "$",
+            "title": "Währung",
+            "desc": "Unterstützen Sie Abrechnungslogik nach Transaktions- und Abrechnungswährung."
+          },
+          "cycle": {
+            "icon": "D",
+            "title": "Abrechnungszyklus",
+            "desc": "Verbinden Sie Split-Ergebnisse mit täglichen, wöchentlichen oder individuellen Abrechnungszyklen."
+          }
+        }
+      },
+      "settlement": {
+        "title": "Abrechnung und Abgleich",
+        "desc": "Zahlungssplitting sollte nicht bei der Zuweisung enden. Finanzteams benötigen Abrechnungsbelege und Abgleichsdatensätze, die jeden Betrag erklären.",
+        "records": {
+          "title": "Split-Datensätze",
+          "desc": "Verfolgen Sie Auftragsbetrag, Split-Betrag, Empfängeranzahl, Erfolgsanzahl, Fehleranzahl und Split-Status."
+        },
+        "bills": {
+          "title": "Abrechnungsbelege",
+          "desc": "Verbinden Sie Split-Ergebnisse mit Abrechnungspositionen für Finanzexporte und Periodenabschluss-Abgleich."
+        }
+      },
+      "exceptions": {
+        "title": "Ausnahmebehandlung",
+        "desc": "Zahlungssplitting braucht klare Zustände, wenn Geschäftsregeln, Empfängerkonten, Rückerstattungen oder Abrechnungszeitpunkte Ausnahmen erzeugen.",
+        "items": {
+          "receiver_unavailable": {
+            "title": "Empfänger nicht verfügbar",
+            "desc": "Erkennen Sie Probleme mit Empfängerkonten, bevor die Abrechnung abgeschlossen ist."
+          },
+          "rule_mismatch": {
+            "title": "Regelkonflikt",
+            "desc": "Machen Sie Regelkonflikte oder fehlende Empfängerinformationen für die Betriebsprüfung sichtbar."
+          },
+          "refund_after_split": {
+            "title": "Rückerstattung nach Split",
+            "desc": "Nachverfolgen, wie Rückerstattungen Split-Datensätze und Abrechnungsergebnisse beeinflussen."
+          },
+          "partial_failure": {
+            "title": "Teilweiser Split-Fehler",
+            "desc": "Trennen Sie erfolgreiche und fehlgeschlagene Empfängerzuweisungen für die Nachbearbeitung."
+          },
+          "settlement_pending": {
+            "title": "Abrechnung ausstehend",
+            "desc": "Machen Sie ausstehende Abrechnungszustände für Finanzteams sichtbar."
+          },
+          "reconciliation_difference": {
+            "title": "Abweichung im Abgleich",
+            "desc": "Helfen Sie Finanzteams, Abweichungen zwischen Auftrag, Split und Abrechnung zu untersuchen."
+          }
+        }
+      },
+      "developer": {
+        "title": "API- und Webhook-Integration",
+        "desc": "Entwickler können Split-Payment-Datensätze, Abfrage der Abrechnung und Webhook-Callbacks in ihre Plattformprozesse integrieren.",
+        "cta": "Developer Center erkunden"
+      },
+      "faq": {
+        "title": "FAQ zum Zahlungssplitting",
+        "items": {
+          "what_is": {
+            "q": "Was ist Zahlungssplitting?",
+            "a": "Zahlungssplitting verteilt eine Zahlung auf mehrere Empfänger wie Händler, Unterhändler, Plattformkonten und Partner."
+          },
+          "difference_from_payout": {
+            "q": "Worin unterscheidet sich Zahlungssplitting von einer Auszahlung (Payout)?",
+            "a": "Zahlungssplitting definiert, wie Zahlungserlöse zugewiesen werden, während die Auszahlung die spätere Bewegung abgerechneter Mittel auf ein Bank- oder Konto ist."
+          },
+          "multiple_receivers": {
+            "q": "Kann ein Auftrag auf mehrere Empfänger aufgeteilt werden?",
+            "a": "Ja. Eine Plattform kann einen Auftrag gemäß Geschäftsregeln mehreren Empfängern zuweisen."
+          },
+          "platform_commission": {
+            "q": "Kann die Plattform eine Provision behalten?",
+            "a": "Ja. Plattformgebühren oder Provisionen können vor der Händlerabrechnung abgetrennt werden."
+          },
+          "refunds": {
+            "q": "Wie werden Rückerstattungen nach dem Splitting behandelt?",
+            "a": "Rückerstattungen sollten gegen den ursprünglichen Auftrag, die Split-Datensätze und das Abrechnungsergebnis nachvollziehbar sein."
+          },
+          "reconciliation": {
+            "q": "Können Finanzteams Split-Datensätze mit Abrechnungsbelegen abgleichen?",
+            "a": "Ja. Split-Datensätze und Abrechnungspositionen sollten einen nachvollziehbaren Finanzprozess ermöglichen."
+          },
+          "api_webhook": {
+            "q": "Unterstützt FilixPay API- und Webhook-Integration?",
+            "a": "FilixPay bietet Entwicklerfunktionen für Zahlungsstatus, Abrechnungsdatensätze und webhookgesteuerte Integrationsabläufe."
+          }
+        }
+      },
+      "channel_rules": {
+        "title": "Kanalregeln für Zahlungssplitting",
+        "items": [
+          {
+            "id": "wechat",
+            "title": "1. WeChat Pay: Modell Einfrieren & Freigeben von Mitteln",
+            "desc": "Der Splitting-Mechanismus von WeChat basiert auf „Zuerst einfrieren, später splitten“ und eignet sich für Szenarien mit verzögertem Splitting oder Rückerstattungsrisiken.",
+            "flow": {
+              "title": "Kernablauf:",
+              "steps": [
+                "Transaktion & Einfrieren: Nach erfolgreicher Zahlung werden Mittel auf dem Händlerkonto eingefroren (Status Ausstehender Split) statt in den verfügbaren Saldo zu fließen.",
+                "Split starten: Wenn Split-Bedingungen erfüllt sind (z. B. Lieferung bestätigt), wird die Split-API aufgerufen. WeChat gibt Mittel frei und weist sie den angegebenen Empfängern zu.",
+                "Split abschließen: Ist kein weiteres Splitting nötig, gibt die Abschluss-API verbleibende Mittel in den verfügbaren Saldo des Händlers frei."
+              ]
+            },
+            "compliance": {
+              "title": "Wichtige Compliance-Punkte:",
+              "items": [
+                "Split-Verhältnisgrenze: Das Standardmaximum liegt üblicherweise bei 30 % des Auftragsbetrags (mit Autorisierung anpassbar).",
+                "Split-Dauer: Mittel können bis zu 180 Tage eingefroren bleiben (manche Dokumentationen nennen 30 Tage; ohne eingeleiteten Split erfolgt automatische Freigabe).",
+                "Split-Häufigkeit: Unterstützt mehrere Splits (bis zu 50 Mal) an mehrere Parteien (bis zu 50 Empfänger pro Split)."
+              ]
+            }
+          },
+          {
+            "id": "alipay",
+            "title": "2. Alipay: Abrechnungsbestätigung & asynchrones Splitting",
+            "desc": "Alipay betont die „Abrechnungsbestätigung“ und bietet starke synchrone/asynchrone Fähigkeiten für Szenarien mit hoher Parallelität.",
+            "flow": {
+              "title": "Kernablauf:",
+              "steps": [
+                "Transaktion & Einfrieren: Mittel gelangen in einen ausstehenden Abrechnungsstatus. Die Plattform startet „Abrechnung bestätigen“, um Mittel für das Splitting einzufrieren.",
+                "Split starten: Der Aufruf der Settlement-API (alipay.trade.order.settle) unterstützt synchrone (Echtzeit) und asynchrone (hohe Frequenz) Modi.",
+                "Split rückgängig machen: Unterstützt die Umkehrung gesplitteter Mittel auf dem Originalweg bei Rückerstattungen."
+              ]
+            },
+            "compliance": {
+              "title": "Wichtige Compliance-Punkte:",
+              "items": [
+                "Split-Verhältnisgrenze: Der Höchstbetrag darf 100 % der Auftragssumme zuzüglich Zuschläge nicht überschreiten (richtlinienabhängig).",
+                "Split-Gültigkeit: Splitting ist typischerweise bis zu 365 Tage nach der Transaktion gültig.",
+                "Empfängerbindung: Empfänger müssen realnamensverifiziert und über API zum „Split Relation Set“ der Plattform hinzugefügt werden.",
+                "Leistung: Der Sync-Modus ist begrenzt (30 QPS), der Async-Modus unterstützt bis zu 500 QPS für Plattformen mit hohem Traffic."
+              ]
+            }
+          },
+          {
+            "id": "stripe",
+            "title": "3. Stripe: Separate Charges and Transfers (Connect)",
+            "desc": "Stripe Connect ist sehr flexibel und nutzt das Modell „Separate Charges and Transfers“ für komplexe globale oder Mehrparteien-Marketplaces.",
+            "flow": {
+              "title": "Kernablauf:",
+              "steps": [
+                "Plattform-Einzug: Ein PaymentIntent wird auf dem Stripe-Konto der Plattform erstellt; Mittel gehören zunächst der Plattform.",
+                "Transfer auslösen: Bei Erfolg ruft die Plattform die Transfers-API auf (häufig ausgelöst durch payment_intent.succeeded-Webhooks).",
+                "Mittelzuweisung: Transfers werden über source_transaction mit Ursprungsbelastungen verknüpft, sodass Mittel bei der Abrechnung automatisch an Connected Accounts fließen."
+              ]
+            },
+            "compliance": {
+              "title": "Wichtige Compliance-Punkte:",
+              "items": [
+                "Unzureichender Saldo: Die Verknüpfung über source_transaction vermeidet Transferfehler wegen fehlendem Plattformsaldo durch Verarbeitung über interne Mittelströme.",
+                "Application Fees: Plattformen können Servicegebühren (application_fee_amount) beim Einzug abziehen, bevor der Rest verteilt wird.",
+                "Flexibilität: Unterstützt Splitting an mehrere Empfänger (Verkäufer, Affiliates, Logistik) ohne feste Verhältnisgrenzen (vorbehaltlich der Plattformvereinbarung)."
+              ]
+            }
+          }
+        ],
+        "comparison": {
+          "title": "📊 Mehrplattform-Vergleichsübersicht",
+          "headers": [
+            "Dimension",
+            "WeChat Pay",
+            "Alipay",
+            "Stripe (Connect)"
+          ],
+          "rows": [
+            [
+              "Kernmechanismus",
+              "Einfrieren -> Freigabe-Split",
+              "Bestätigen -> Einfrier-Split",
+              "Plattform-Einzug -> Transfer"
+            ],
+            [
+              "Split-Verhältnis",
+              "Standard max. 30 %",
+              "Bis 100 % (richtlinienabhängig)",
+              "Flexibel (Plattformkonfiguration)"
+            ],
+            [
+              "Dauer",
+              "Max. 180 Tage eingefroren",
+              "Max. 365 Tage gültig",
+              "Standard-Auszahlungszyklus"
+            ],
+            [
+              "Empfängeranforderung",
+              "Merchant ID oder WalletID",
+              "Realnamensverifiziert & gebunden",
+              "Connected Account erforderlich"
+            ],
+            [
+              "Beste Szenarien",
+              "Einzelhandel, Gastronomie, verzögerte Abrechnung",
+              "Provision, Hochvolumen-Plattformen",
+              "Globaler Marketplace, komplexe Auszahlungen"
+            ]
+          ]
+        }
+      },
+      "cta": {
+        "title": "Split-Payment-Abläufe mit FilixPay aufbauen",
+        "desc": "Unterstützen Sie Plattform-Umsatzbeteiligung, Händlerabrechnung und Finanzabgleich aus einer Zahlungsinfrastruktur."
+      }
+    },
+    "risk_control": {
+      "title": "Zahlungs-Risikokontrolle",
+      "subtitle": "Sichern Sie jede Transaktion von der Autorisierung bis zur Abrechnung",
+      "hero_title": "Zahlungs-Risikokontrolle",
+      "hero_desc": "Sichern Sie jede Transaktion mit Echtzeitregeln, Expertenprüfung und integrierter Chargeback-Versicherung — verbinden Sie Signifyd, Riskified oder Forter mit Ihren eigenen Zugangsdaten, oder abonnieren Sie die plattformgehostete Absicherung von FilixPay.",
+      "pipeline": {
+        "rules": {
+          "title": "Regel-Engine",
+          "desc": "Echtzeit-Betrugsprävention"
+        },
+        "monitor": {
+          "title": "Ereignismonitor",
+          "desc": "Betrugsereignisse und Expertenprüfung"
+        },
+        "coverage": {
+          "title": "Versicherungspartner",
+          "desc": "Signifyd · Riskified · Forter"
+        }
+      },
+      "modules": {
+        "rules": {
+          "title": "Echtzeit-Regel-Engine & Betrugsprävention",
+          "desc": "Risikoentscheidungen in Millisekunden während der Autorisierung mit konfigurierbaren Händlerregeln sowie Prüfungen vor und nach der Autorisierung.",
+          "points": {
+            "0": "Gleichzeitige Compliance- und Betrugsprüfungen bei der Autorisierung",
+            "1": "Konfigurierbare Schwellenwerte nach Geografie, Verhalten und Velocity",
+            "2": "Schutz auf Transaktionsebene, getrennt vom Kreditlinienrisiko"
+          }
+        },
+        "monitor": {
+          "title": "Überwachung von Betrugsereignissen & manuelle Expertenprüfung",
+          "desc": "Dual-Layer Verification kombiniert intelligente Vorprüfung mit manueller Expertenprüfung, um Fehlablehnungen zu minimieren.",
+          "points": {
+            "0": "Automatisierte Erkennung und Nachverfolgung von Betrugsereignissen",
+            "1": "Warteschlange für manuelle Expertenprüfung anomaler Transaktionen",
+            "2": "Operator-Benachrichtigungen für zeitkritische Entscheidungen"
+          }
+        },
+        "coverage": {
+          "title": "Integrierte Chargeback-Versicherungspartner",
+          "desc": "FilixPay integriert führende Anbieter für Chargeback-Versicherung und Betrugsgarantien nativ. Händler wählen, wie sie Absicherung nutzen — eigenen Anbietervertrag mitbringen oder plattformgehosteten Service abonnieren.",
+          "disclaimer": "* Vorbehaltlich der Servicebedingungen, der Berechtigung und der Deckungslimits.",
+          "points": {
+            "0": "Eine Integrationsebene für Signifyd, Riskified und Forter",
+            "1": "Anbieter-Zugangsdaten selbst im Händlerzentrum konfigurieren",
+            "2": "Oder plattformgehostete Absicherung abonnieren, ohne API-Keys zu verwalten"
+          }
+        }
+      },
+      "delivery_modes": {
+        "title": "Zwei Wege zur Aktivierung der Absicherung",
+        "desc": "FilixPay unterstützt sowohl händlerverwaltete Anbieterkonfiguration als auch plattformgehostetes Abonnement — passend für unabhängige Händler und Marketplace-Unterhändler.",
+        "items": {
+          "self_config": {
+            "icon": "🔑",
+            "title": "Eigenen Anbieter mitbringen (BYOK)",
+            "desc": "Verbinden Sie Ihr bestehendes Signifyd-, Riskified- oder Forter-Konto. Konfigurieren Sie API-Keys, Webhook-Secrets und Umgebung im Händlerzentrum — FilixPay leitet Bewertungen und Claims an Ihren gewählten Partner.",
+            "points": {
+              "0": "Volle Kontrolle über Anbietervertrag und Zugangsdaten",
+              "1": "Ideal für unabhängige Händler mit direkter Versichererbeziehung",
+              "2": "Anbieterwechsel über einen geführten Konfigurationsablauf"
+            }
+          },
+          "platform_subscription": {
+            "icon": "🛡️",
+            "title": "Plattformgehostetes Absicherungsabonnement",
+            "desc": "Third-Party-Händler auf der Filix-Plattform können Absicherungsversicherung abonnieren, die über die Anbieterkonfiguration des Plattformhändlers läuft — ohne separate Versicherer-Registrierung.",
+            "points": {
+              "0": "Ein-Klick-Abonnement im Händlerzentrum",
+              "1": "Berechtigung an die Einhaltung von Pre-Auth-Sicherheitsregeln gebunden",
+              "2": "Die Plattform betreibt die Anbieterbeziehung in Ihrem Namen"
+            }
+          }
+        }
+      },
+      "providers": {
+        "title": "Unterstützte Versicherungs- und BetrugsGarantie-Partner",
+        "desc": "Der zentrale Vorteil von FilixPay ist die tiefe, produktionsreife Integration mit branchenführenden Chargeback-Schutzanbietern — kein generischer Fraud-Score, sondern echte, versicherergestützte Absicherungsabläufe.",
+        "items": {
+          "signifyd": {
+            "name": "Signifyd",
+            "tagline": "Commerce-Schutz mit Chargeback-Garantie",
+            "desc": "Signifyd kombiniert Echtzeit-Betrugsentscheidungen mit garantierter Chargeback-Absicherung für freigegebene E-Commerce-Aufträge. FilixPay leitet Transaktionskontext weiter, empfängt Deckungsentscheidungen und automatisiert Claim-Abläufe über Webhooks."
+          },
+          "riskified": {
+            "name": "Riskified",
+            "tagline": "Enterprise-Betrugsintelligenz & Chargeback-Garantie",
+            "desc": "Riskified liefert KI-gestützte Betrugsprävention, der globale Händler vertrauen. Händler auf FilixPay können Aufträge für Policy-Entscheidungen weiterleiten und — sofern berechtigt — Chargeback-Garantieprogramme nutzen."
+          },
+          "forter": {
+            "name": "Forter",
+            "tagline": "Echtzeit-Betrugsprävention für digitalen Commerce",
+            "desc": "Forter bietet identitätszentrierte Betrugsentscheidungen und Schutz vor Chargeback-Missbrauch in großem Maßstab. FilixPay integriert Bewertung, Webhook-Updates und Claim-Einreichung für Forter-gestützte Händler."
+          }
+        },
+        "footnote": "Verfügbarkeit und Funktionsumfang der Anbieter hängen von Ihrem Händlertyp, dem Konfigurationsmodus und den Partnervertragsbedingungen ab."
+      },
+      "audience": {
+        "title": "Für Commerce mit hohen Anforderungen",
+        "desc": "Die FilixPay-Risikokontrolle unterstützt grenzüberschreitende Händler, Marketplace-Betreiber und Unternehmen, die auditfähige Betrugsabläufe benötigen.",
+        "items": {
+          "cross_border": {
+            "title": "Grenzüberschreitender E-Commerce",
+            "desc": "Schützen Sie internationale Card-not-present-Umsätze."
+          },
+          "marketplace": {
+            "title": "Plattform & Marketplace",
+            "desc": "Third-Party-Händlerökosysteme mit gemeinsamer Risikoaufsicht."
+          },
+          "high_risk": {
+            "title": "Erhöhte Streitexposition",
+            "desc": "Branchen, in denen Chargeback-Sorgen das Wachstum bremsen."
+          }
+        }
+      },
+      "workflow": {
+        "title": "Durchgängiger Ablauf",
+        "desc": "Ein linearer Pfad vom Checkout bis zur berechtigten Absicherung.",
+        "steps": {
+          "checkout": {
+            "title": "Kunden-Checkout",
+            "desc": "Der Händler startet die Zahlung und FilixPay erfasst Transaktionskontext wie Metadaten und Gerätesignale."
+          },
+          "rules": {
+            "title": "Regelbewertung",
+            "desc": "Die Risiko-Engine gleicht Händlerregeln und globale Policies in Millisekunden ab, um freizugeben, zu blockieren oder zur Prüfung zu leiten."
+          },
+          "review": {
+            "title": "Betrugsüberwachung & Prüfung",
+            "desc": "Hochrisiko-Ereignisse lösen automatisierte Nachverfolgung aus. Dual-Layer Verification leitet Fälle zur manuellen Expertenprüfung, um legitime Verkäufe zu retten."
+          },
+          "coverage": {
+            "title": "Anbieterbasierter Chargeback-Schutz",
+            "desc": "FilixPay übermittelt berechtigte betrugsbezogene Chargebacks an Ihren konfigurierten Signifyd-, Riskified- oder Forter-Partner — oder an die plattformgehostete Absicherung für abonnierende Händler."
+          }
+        }
+      },
+      "faq": {
+        "title": "Häufig gestellte Fragen",
+        "items": {
+          "what_is": {
+            "q": "Was ist Zahlungs-Risikokontrolle?",
+            "a": "Zahlungs-Risikokontrolle ist ein mehrschichtiges Sicherheitsframework zur Erkennung, Bewertung und Minderung betrügerischer Aktivitäten über den gesamten Transaktionslebenszyklus — zum Schutz Ihrer legitimen Umsätze ohne Beeinträchtigung der Nutzererfahrung."
+          },
+          "vs_chargeback": {
+            "q": "Worin unterscheidet sich Risikokontrolle vom Chargeback-Schutz?",
+            "a": "Risikokontrolle wirkt als proaktive Verteidigung (Regeln vor und nach der Autorisierung, um Betrug zu verhindern), während Chargeback-Schutz reaktive Sicherheit bietet (finanzielle Absicherung qualifizierter Transaktionen bei unerwarteten Streitfällen)."
+          },
+          "rule_engine": {
+            "q": "Wie funktioniert die Regel-Engine?",
+            "a": "Unsere Engine führt gleichzeitige Compliance- und Betrugsprüfungen innerhalb von Millisekunden während der Autorisierung aus. Händler können granulare Schwellenwerte nach geografischer Lage, Verhaltensheuristiken und Velocity-Limits über das Händler-Dashboard konfigurieren."
+          },
+          "flagged_review": {
+            "q": "Was geschieht, wenn eine Transaktion zur Prüfung markiert wird?",
+            "a": "Zeigt eine Transaktion anomale Muster, wird ein internes Betrugsereignis ausgelöst. Um Fehlablehnungen zu vermeiden, setzt unsere Plattform Dual-Layer Verification ein, leitet den Fall in eine Warteschlange für manuelle Expertenprüfung und benachrichtigt Operatoren sofort."
+          },
+          "coverage_eligibility": {
+            "q": "Wer ist für Chargeback-Absicherung berechtigt?",
+            "a": "Unabhängige Händler können Absicherung aktivieren, indem sie Signifyd, Riskified oder Forter im Händlerzentrum konfigurieren. Third-Party-Plattformhändler können plattformgehostete Absicherungspläne abonnieren. Die Berechtigung einzelner Transaktionen hängt von Anbieterregeln und der Einhaltung lokaler Pre-Auth-Sicherheitsanforderungen ab."
+          },
+          "coverage_providers": {
+            "q": "Welche Chargeback-Versicherungsanbieter unterstützt FilixPay?",
+            "a": "FilixPay integriert Signifyd, Riskified und Forter mit einheitlicher Bewertung, Webhook-Verarbeitung und Claim-Einreichung. Händler verbinden entweder eigene Anbieter-Zugangsdaten (BYOK) oder abonnieren plattformgehostete Absicherung über die Konfiguration des Plattformhändlers."
+          },
+          "crypto_relation": {
+            "q": "Wie hängt das mit Krypto-Zahlungen zusammen (keine Chargebacks)?",
+            "a": "Digitale Assets haben nativ transaktionale Finalität (technisch können keine Chargebacks eingeleitet werden); unsere Risiko-Engine wendet dennoch Pre-Auth-Regeln auf Krypto-Zahlungen an, um anomale Wallet-Muster und die Einhaltung von Adress-Sperrlisten zu erkennen."
+          }
+        }
+      },
+      "cta": {
+        "title": "Bereit, Ihren Chargeback-Versicherungspartner zu verbinden?",
+        "desc": "Konfigurieren Sie Signifyd, Riskified oder Forter — oder abonnieren Sie die plattformgehostete Absicherung im Händlerzentrum."
+      }
+    },
+    "cross_border": {
+      "title": "Grenzüberschreitender E-Commerce",
+      "subtitle": "End-to-End-Zahlungslösungen für globale Online-Händler",
+      "hero_title": "Global verkaufen, lokal einziehen",
+      "hero_desc": "Integrieren Sie Shopify, WooCommerce und individuelle Shops. Akzeptieren Sie lokale Zahlungsmethoden in über 50 Ländern mit automatischer Währungsumrechnung."
+    },
+    "web3_ecommerce": {
+      "title": "Web3-E-Commerce",
+      "subtitle": "Zahlungsinfrastruktur für die dezentrale Wirtschaft",
+      "hero_title": "Die Zahlungsschicht für Web3-Commerce",
+      "hero_desc": "Von NFT-Marketplaces bis GameFi-Ökosystemen: Betreiben Sie Ihren Web3-Commerce mit nahtlosen Krypto-Zahlungsrails."
+    },
+    "saas_provider": {
+      "title": "Lösungen für SaaS-Anbieter",
+      "subtitle": "Multi-Tenant-Zahlungsinfrastruktur für Plattformgeschäfte",
+      "hero_title": "Bauen Sie Ihre Zahlungsplattform",
+      "hero_desc": "White-Label-Zahlungsfunktionen mit Split Payments, Unterhändlerverwaltung und automatisierter Abrechnung für Ihre SaaS-Plattform."
+    }
+  }
+}

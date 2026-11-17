@@ -1,0 +1,824 @@
+{
+  "Orders": {
+    "title": "Gestão de Pedidos",
+    "subtitle": "Visualize e pesquise todas as suas transações.",
+    "search_placeholder": "Pesquise por número de pedido do comerciante ou produto...",
+    "filter": "Filtrar",
+    "create_order": "Criar Pedido",
+    "create_modal": {
+      "title": "Criar Pedido de Pagamento Manualmente",
+      "merchant_order_id": "Número do Pedido do Comerciante",
+      "subject": "Título do Pedido",
+      "return_url": "URL de Retorno (opcional)",
+      "buyer_id": "ID do Comprador (opcional)",
+      "customer_name": "Nome do Cliente",
+      "customer_email": "E-mail do Cliente",
+      "customer_mobile": "Celular do Cliente",
+      "currency": "Moeda",
+      "amount": "Valor Total",
+      "expiry": "Data de Expiração",
+      "items": "Detalhes dos Itens",
+      "add_item": "Adicionar Item",
+      "product_id": "ID do Produto",
+      "desc": "Descrição",
+      "qty": "Quantidade",
+      "price": "Preço Unitário",
+      "submit": "Enviar e Criar",
+      "cancel": "Cancelar",
+      "bank_account": "Receiving account",
+      "bank_account_hint": "(routed by merchant mode; locked after create)",
+      "select_bank_account": "Select receiving account",
+      "offline_transfer": "Offline transfer",
+      "destinations_load_failed": "Failed to load receiving accounts",
+      "destinations_empty": "No receiving accounts available. Configure one and try again.",
+      "location": "Location",
+      "select_location": "Select Location",
+      "buyer_information": "Buyer Information",
+      "buyer_optional": "(optional)",
+      "remove_item": "Remove Item",
+      "create_success": "Order created successfully",
+      "create_failed": "Failed to create order"
+    },
+    "headers": {
+      "order_id": "Número do Pedido do Comerciante",
+      "order_type": "Tipo de pedido",
+      "merchant_order_id": "Merchant Order ID",
+      "trade_no": "Trade No",
+      "buyer_code": "Customer Code",
+      "buyer_code_trade_no": "Nº Trans. / Cód. Cliente",
+      "sub_merchant_location": "Subcomerciante / Loja",
+      "payment_channel": "Payment Channel",
+      "amount": "Valor",
+      "status": "Status",
+      "created_at": "Data de Criação",
+      "paid_at": "Paid At"
+    },
+    "filters": {
+      "merchant_order_id": "Merchant Order ID",
+      "sub_merchant": "Sub-Merchant",
+      "location": "Location",
+      "payment_channel": "Payment Channel",
+      "min_amount": "Min Amount",
+      "max_amount": "Max Amount",
+      "status": "Status",
+      "created_start": "Created From",
+      "created_end": "Created To",
+      "paid_start": "Paid From",
+      "paid_end": "Paid To"
+    },
+    "empty": "Nenhum dado de pedido no momento.",
+    "initiate_payment": "Iniciar Recebimento",
+    "initiate_refund": "Iniciar Reembolso",
+    "missing_deal": "Missing Order Handling",
+    "patch_order": "Patch Order",
+    "details": {
+      "title": "Detalhes do Pedido",
+      "subject": "Nome do Produto",
+      "order_type": "Tipo de pedido",
+      "merchant_order_id": "Número do Pedido do Comerciante",
+      "trade_no": "Número da Transação",
+      "amount": "Valor do Pedido",
+      "paid_amount": "Valor Pago",
+      "refunded_amount": "Valor reembolsado",
+      "refundable_amount": "Valor reembolsável",
+      "status": "Status da Transação",
+      "payment_expiry": "Expiração do Pagamento",
+      "channel": "Canal de Pagamento",
+      "created_at": "Data de Criação",
+      "seller_info": "Informações do Vendedor",
+      "buyer_info": "Informações do Comprador",
+      "name": "Nome",
+      "merchant_id": "ID do Comerciante",
+      "buyer_code": "Código do Cliente",
+      "close": "Fechar",
+      "order_items": "Order Items",
+      "item_description": "Description",
+      "item_quantity": "Quantity",
+      "item_unit_price": "Unit Price",
+      "item_total": "Item Total",
+      "no_order_items": "No line items",
+      "grand_total": "Total geral"
+    },
+    "orderTypes": {
+      "TRADE": "Pedido comercial",
+      "DEPOSIT": "Depósito",
+      "TRANSFER": "Transferência",
+      "PAYOUT": "Pagamento",
+      "WITHDRAWAL": "Saque",
+      "REFUND": "Reembolso",
+      "DIRECT_DEBIT": "Débito automático",
+      "PLATFORM_SERVICE_FEE": "Taxa de serviço da plataforma"
+    },
+    "lifecycle_timeline": {
+      "title": "Order Lifecycle",
+      "empty": "No lifecycle events recorded yet.",
+      "unknown_event": "Unknown event",
+      "attempt": "Payment attempt #{id}",
+      "categories": {
+        "payment": "Payment",
+        "risk": "Risk",
+        "review": "Review",
+        "system": "System"
+      },
+      "meta": {
+        "channel": "Channel",
+        "provider": "Provider",
+        "error": "Error",
+        "review": "Review",
+        "fraud": "Fraud event",
+        "rule": "Rule",
+        "action": "Action"
+      },
+      "filters": {
+        "all": "All",
+        "payment": "Payment",
+        "risk": "Risk",
+        "review": "Review",
+        "system": "System",
+        "hide_webhook_retries": "Hide webhook retries",
+        "hidden_retries": "{count} retries hidden",
+        "empty_filtered": "No events match the current filters."
+      },
+      "replay": {
+        "view_details": "View details",
+        "hide_details": "Hide details",
+        "event_id": "Event ID",
+        "event_code": "Event code",
+        "payload": "Full payload"
+      },
+      "events": {
+        "payment_created": "Payment created",
+        "payment_auth_started": "Authorization started",
+        "payment_authorized": "Payment authorized",
+        "payment_captured": "Payment captured",
+        "payment_failed": "Payment failed",
+        "payment_completed": "Payment completed",
+        "risk_preauth_started": "Pre-auth risk check started",
+        "risk_preauth_passed": "Pre-auth risk passed",
+        "risk_preauth_blocked": "Pre-auth risk blocked",
+        "risk_preauth_review_required": "Pre-auth review required",
+        "risk_postauth_started": "Post-auth risk check started",
+        "risk_postauth_passed": "Post-auth risk passed",
+        "risk_postauth_blocked": "Post-auth risk blocked",
+        "risk_postauth_action": "Post-auth risk action",
+        "review_created": "Review created",
+        "review_approved": "Review approved",
+        "review_rejected": "Review rejected",
+        "system_webhook_received": "Webhook received",
+        "system_webhook_retry": "Webhook retry",
+        "system_async_callback": "Async callback",
+        "system_state_changed": "State changed"
+      }
+    },
+    "payment_modal": {
+      "title": "Pagamento Seguro - FilixPay.com",
+      "amount_to_pay": "Valor a Pagar",
+      "expires_at": "Link válido até: {time}",
+      "expires_countdown": "Payment link expires in {time}",
+      "expires_long_lived": "Link does not expire",
+      "expires_expired": "Payment link expired",
+      "copy_link_primary": "Copy Payment Link",
+      "quick_send_label": "Quick send to customer",
+      "share_whatsapp": "WhatsApp",
+      "share_email": "Enviar por E-mail",
+      "share_more": "More sharing",
+      "share_text": "Please use this link to pay",
+      "preview_checkout": "Open checkout in browser",
+      "go_to_pay": "Ir para o Checkout para Pagar",
+      "copy_link": "Copiar Link",
+      "share_link": "Compartilhar Link",
+      "copy_success": "Link copiado"
+    },
+    "action_feedback": {
+      "payment_failed": "Failed to initiate payment",
+      "details_failed": "Failed to fetch order details",
+      "missing_failed": "Failed to check missing order",
+      "refund_success": "Refund order created successfully",
+      "copy_load_failed": "Failed to load order for copy"
+    },
+    "missing_modal": {
+      "merchant_order_id": "Merchant Order ID",
+      "mismatch_type": "Mismatch Type",
+      "internal_id": "Internal ID",
+      "deal_type": "Deal Type",
+      "amount": "Amount",
+      "channel": "Channel",
+      "channel_transaction_id": "Channel Transaction ID",
+      "local_status": "Local Status",
+      "upstream_status": "Upstream Status",
+      "created_at": "Created At",
+      "patch_available_title": "Patch Available",
+      "patch_available_desc": "This order can be patched to synchronize the status.",
+      "confirm_patch_title": "Patch this order?",
+      "confirm_patch_content": "This will patch the missing-order record and synchronize local and upstream payment status.",
+      "patch_success": "Order patched successfully",
+      "patch_failed": "Failed to patch order",
+      "no_data_title": "No Missing Order Found",
+      "no_data_desc": "No abnormal payment synchronization records were found for this order.",
+      "mismatch_types": {
+        "LOCAL_NOT_EXIST": "Missing locally",
+        "UPSTREAM_NOT_EXIST": "Missing upstream",
+        "AMOUNT_MISMATCH": "Amount mismatch",
+        "STATUS_MISMATCH": "Status mismatch",
+        "DUPLICATE_RECORD": "Duplicate record",
+        "UNEXPECTED_TRANSACTION": "Unexpected transaction"
+      },
+      "deal_types": {
+        "NONEED": "No action needed",
+        "MANUAL": "Manual handling",
+        "REPEAT": "Duplicate payment",
+        "PATCH": "Patch",
+        "DRAWBACK": "Drawback",
+        "ADJUST": "Adjustment"
+      },
+      "statuses": {
+        "PENDING": "Pending",
+        "PROCESSING": "Processing",
+        "SUCCESS": "Success",
+        "FAILED": "Failed",
+        "CLOSED": "Closed",
+        "PARTIAL_SUCCESS": "Partial success",
+        "DONE": "Done",
+        "IGNORED": "Ignored"
+      }
+    },
+    "stats": {
+      "total_orders": "Total Orders",
+      "page_amount": "Page Amount",
+      "success_rate": "Success Rate",
+      "pending_orders": "Pending",
+      "orders_unit": "orders",
+      "no_data": "-",
+      "more_currencies": "+{count} more"
+    },
+    "toolbar": {
+      "export_csv": "Export CSV",
+      "total_results": "Total {count} results",
+      "advanced_filters": "Advanced Filters",
+      "collapse_filters": "Collapse"
+    },
+    "detail_tabs": {
+      "summary": "Summary",
+      "fulfillment": "Fulfillment",
+      "timeline": "Timeline",
+      "risk": "Risk Assessment"
+    },
+    "fulfillment": {
+      "loading": "Loading fulfillment details…",
+      "load_failed": "Failed to load fulfillment details",
+      "retry": "Retry",
+      "not_paid_title": "Fulfillment not available yet",
+      "not_paid_body": "This commerce order must be paid before you can submit shipment details.",
+      "summary_status": "Fulfillment status",
+      "summary": {
+        "unfulfilled": "Unfulfilled",
+        "fulfilled": "Fulfilled"
+      },
+      "in_progress": "A fulfillment request is in progress. Please wait for platform confirmation before submitting again.",
+      "history_title": "Fulfillment history",
+      "history_empty": "No fulfillment records yet",
+      "form_title": "Ship entire order",
+      "form_hint": "This creates a fulfillment in Saleor. HTTP 201 means the request was accepted, not that delivery is complete.",
+      "fields": {
+        "carrier": "Carrier",
+        "tracking_number": "Tracking number",
+        "tracking_url": "Tracking URL (optional)"
+      },
+      "placeholders": {
+        "carrier": "e.g. DHL, FedEx",
+        "tracking_number": "Enter tracking number",
+        "tracking_url": "https://..."
+      },
+      "validation": {
+        "carrier_required": "Carrier is required",
+        "tracking_required": "Tracking number is required"
+      },
+      "submit": "Submit fulfillment",
+      "submit_success": "Fulfillment request submitted",
+      "submit_failed": "Failed to submit fulfillment",
+      "columns": {
+        "status": "Status",
+        "carrier": "Carrier",
+        "tracking_number": "Tracking number",
+        "requested_at": "Submitted at"
+      },
+      "row_status": {
+        "requested": "Awaiting confirmation",
+        "fulfilled": "Fulfilled",
+        "failed": "Failed"
+      }
+    },
+    "copy_order": "Copy Order",
+    "trade_status": {
+      "PENDING": "Pending",
+      "PROCESSING": "Processing",
+      "PARTIAL_SUCCESS": "Partial success",
+      "SUCCESS": "Success",
+      "CLOSED": "Closed",
+      "FAILED": "Failed",
+      "REQUIRES_CAPTURE": "Requires capture",
+      "DISPUTED": "Disputed"
+    },
+    "actions": {
+      "view_details": "View details"
+    }
+  },
+  "Refunds": {
+    "title": "Gestão de Reembolsos",
+    "subtitle": "Visualize e pesquise seus registros de pedidos de reembolso.",
+    "search_placeholder": "Pesquise por número de reembolso ou número de pedido do comerciante...",
+    "filter": "Filtrar",
+    "headers": {
+      "refund_id": "Número do Reembolso",
+      "order_id": "Número do Pedido do Comerciante",
+      "amount": "Valor do Reembolso",
+      "status": "Status",
+      "created_at": "Data de Envio"
+    },
+    "empty": "Nenhum dado de reembolso no momento.",
+    "create_refund": "Criar Reembolso",
+    "create_modal": {
+      "title": "Criar Pedido de Reembolso",
+      "trade_no": "Número da Transação (tradeNo)",
+      "merchant_refund_id": "Número do Reembolso do Comerciante",
+      "reason": "Motivo do Reembolso",
+      "currency": "Moeda",
+      "amount": "Valor do Reembolso",
+      "default_reason": "Reembolso iniciado pelo comerciante",
+      "submit": "Enviar Agora",
+      "cancel": "Cancelar",
+      "create_success": "Refund order created successfully",
+      "create_failed": "Failed to create refund order"
+    },
+    "details": {
+      "title": "Detalhes do Reembolso",
+      "view": "Detalhes",
+      "refund_no": "Número da Transação de Reembolso",
+      "merchant_refund_id": "Número do Reembolso do Comerciante",
+      "amount": "Valor do Reembolso",
+      "merchant_amount": "Valor Real do Reembolso pelo Comerciante",
+      "status": "Status do Reembolso",
+      "reason": "Motivo do Reembolso",
+      "applicant": "Solicitante",
+      "created_at": "Data de Criação",
+      "updated_at": "Última Atualização",
+      "service_fee": "Taxa de Serviço Devolvida",
+      "order_info": "Informações do Pedido Original",
+      "order_id": "Número do Pedido do Comerciante",
+      "trade_no": "Número da Transação",
+      "order_amount": "Valor Total do Pedido",
+      "order_status": "Status da Transação",
+      "close": "Fechar"
+    },
+    "status": {
+      "REQUESTED": "Requested",
+      "EXECUTING": "Processing",
+      "SUCCEEDED": "Succeeded",
+      "FAILED": "Failed",
+      "CANCELLED": "Cancelled"
+    },
+    "timeline": {
+      "title": "Refund progress",
+      "progress_title": "Status",
+      "empty": "No timeline events yet.",
+      "awaiting_approval_title": "Awaiting approval",
+      "awaiting_approval_desc": "Amount exceeds the auto-execute threshold ({threshold}). The refund is accepted but will not hit the channel until approved.",
+      "steps": {
+        "requested": "Requested",
+        "approval": "Approval",
+        "executing": "Processing",
+        "terminal": "Done"
+      },
+      "events": {
+        "REQUESTED": "Refund requested",
+        "AWAITING_APPROVAL": "Awaiting approval",
+        "EXECUTING": "Execution started",
+        "ATTEMPT_CREATED": "Channel attempt created",
+        "ATTEMPT_SUBMITTING": "Submitting to channel",
+        "ATTEMPT_SUBMITTED": "Submitted to channel",
+        "ATTEMPT_FAILED_SUBMIT": "Channel submit failed",
+        "ATTEMPT_SUCCEEDED": "Channel refund succeeded",
+        "ATTEMPT_FAILED": "Channel refund failed",
+        "SUCCEEDED": "Refund succeeded",
+        "FAILED": "Refund failed",
+        "CANCELLED": "Refund cancelled"
+      }
+    },
+    "settings": {
+      "title": "Refund settings",
+      "subtitle": "Configure when refunds execute automatically versus requiring merchant approval.",
+      "settlement_currency": "Settlement currency",
+      "threshold": "Auto-execute threshold",
+      "threshold_help": "Refunds at or below this amount (in settlement currency) execute automatically. Larger amounts stay pending until approved.",
+      "threshold_required": "Enter a threshold",
+      "threshold_min": "Threshold cannot be negative",
+      "unlimited": "Skip amount-based approval",
+      "unlimited_help": "When enabled, amount alone never triggers approval. FX conversion failures can still require approval.",
+      "fx_help": "Cross-currency refunds are converted to settlement currency via FX before comparison. If no quote is available, the refund still creates but awaits approval.",
+      "using_platform_default": "Using platform default threshold: {threshold}",
+      "save": "Save settings",
+      "save_success": "Refund settings saved",
+      "save_failed": "Failed to save refund settings",
+      "load_failed": "Failed to load refund settings"
+    },
+    "approvals": {
+      "title": "Refund approvals",
+      "subtitle": "Review refunds that exceeded the auto-execute threshold and are waiting for approval.",
+      "empty": "No refunds awaiting approval.",
+      "approve": "Approve",
+      "reject": "Reject",
+      "approve_confirm": "Approve this refund?",
+      "approve_confirm_desc": "Approval will execute the refund through the payment channel.",
+      "reject_confirm": "Reject this refund?",
+      "reject_confirm_desc": "Rejection cancels the refund request. It will not hit the channel.",
+      "approve_success": "Refund approved and execution started",
+      "reject_success": "Refund rejected and cancelled",
+      "approve_failed": "Failed to approve refund",
+      "reject_failed": "Failed to reject refund",
+      "detail_failed": "Failed to load refund details"
+    }
+  },
+  "Checkouts": {
+    "title": "Configuração do Checkout",
+    "subtitle": "Gerencie e configure seu checkout agregado multilíngue.",
+    "create_counter": "Adicionar Configuração",
+    "edit_counter": "Editar Configuração",
+    "loading": "Carregando checkouts...",
+    "empty": "Nenhum checkout no momento. Crie um para começar a receber pagamentos.",
+    "prompt_name": "Por favor, digite o nome do checkout:",
+    "headers": {
+      "name": "Nome do Checkout",
+      "code": "Código",
+      "status": "Status"
+    },
+    "form": {
+      "checkout_code": "Código do Checkout (identificador único)",
+      "checkout_name": "Nome de Exibição Padrão",
+      "status_active": "Ativado",
+      "status_inactive": "Desativado",
+      "tabs": "Configuração de Abas",
+      "add_tab": "Adicionar Aba",
+      "tab_key": "ID Único da Aba (ex: cartão, cripto)",
+      "tab_title": "Título da Aba",
+      "display_order": "Ordem de Exibição",
+      "enabled": "Habilitar",
+      "gateways": "Gateways de Pagamento Incluídos",
+      "add_gateway": "Adicionar Gateway",
+      "gateway_code": "Código do Gateway",
+      "recommended": "Recomendado",
+      "logo": "Link do Logo",
+      "color": "Cor da Marca",
+      "currencies": "Moedas Suportadas (separadas por vírgula, * significa todas)",
+      "countries": "Região do Comprador (separadas por vírgula, * significa todas)",
+      "config_list": "Lista de Configurações de Pagamento",
+      "priority": "Prioridade",
+      "save": "Salvar Checkout",
+      "cancel": "Cancelar"
+    },
+    "delete_confirm": "Tem certeza de que deseja excluir este checkout?"
+  },
+  "Configs": {
+    "title": "Configurações de Pagamento",
+    "subtitle": "Gerencie seus canais de pagamento conectados e credenciais.",
+    "add_config": "Adicionar Configuração",
+    "edit_config": "Edit Configuration",
+    "edit_activation_hint": "For channels without credentials, choose open or close and submit.",
+    "edit_params_hint": "Use the list switch to open or close; edit here only updates channel parameters.",
+    "edit_success": "Configuration updated",
+    "status_toggle_open_success": "Channel opened",
+    "status_toggle_close_success": "Channel closed",
+    "status_open": "Open",
+    "status_close": "Close",
+    "status_applying": "Applying",
+    "status_rejected": "Rejected",
+    "status_forbidden": "Disabled",
+    "status_required": "Please choose open or close",
+    "headers": {
+      "payment_brand": "Marca de Pagamento",
+      "payment_channel": "Canal de Pagamento",
+      "payment_scenario": "Cenário de Pagamento",
+      "sub_merchant": "Sub-Merchant",
+      "status": "Status"
+    },
+    "loading": "Carregando configurações...",
+    "empty": "Nenhuma configuração no momento. Adicione uma para começar a receber pagamentos.",
+    "confirm_delete": "Tem certeza de que deseja excluir esta configuração?",
+    "routing_hint": "Payment routing automatically selects enabled channels",
+    "scenario_unavailable": "No enabled channels in this scenario",
+    "scenario_applying": "Channel is applying and not yet live. Edit and confirm Open to enable payments",
+    "add_channel": "Add channel",
+    "channels_section": "Payment channels",
+    "channel_route_active": "Routing active",
+    "channel_route_stopped": "Channel stopped",
+    "availability_badge": "{available}/{total} available",
+    "prefill_summary": "Adding channel for \"{brand} · {scenario} · {subMerchant}\"",
+    "duplicate_channel": "This channel already exists",
+    "pagination_summary": "{total} configs · {scenarios} scenarios",
+    "edit_secret_hint": "Secrets are never shown. Leave a secret blank to keep the current value.",
+    "edit_security_title": "Encrypted in transit",
+    "save_config": "Save configuration",
+    "secret_status": {
+      "configured": "Configured",
+      "missing": "Not set"
+    },
+    "env": {
+      "live": "Live mode",
+      "test": "Test mode"
+    },
+    "credential_help": {
+      "prompt": "Need help finding API keys?",
+      "open_console": "Open provider console"
+    },
+    "validation": {
+      "stripe_secret_prefix": "Secret Key must match the selected environment (sk_live_ / sk_test_)",
+      "stripe_publishable_prefix": "Publishable Key must match the selected environment (pk_live_ / pk_test_)",
+      "stripe_webhook_prefix": "Webhook Secret should start with whsec_"
+    },
+    "sections": {
+      "alipay": "Alipay Configuration",
+      "wechat": "WeChat Configuration",
+      "stripe": "Stripe Configuration",
+      "paypal": "PayPal Configuration",
+      "nowpayments": "NowPayments Configuration"
+    },
+    "fields": {
+      "required": "This field is required",
+      "secret_keep_placeholder": "Leave blank to keep current secret",
+      "app_id": "App ID",
+      "partner_id": "Partner ID",
+      "sandbox_mode": "Sandbox Mode",
+      "alipay_public_key": "Alipay Public Key",
+      "app_private_key": "App Private Key",
+      "app_secret": "App Secret",
+      "mch_id": "Merchant ID",
+      "v2_api_key": "V2 API Key",
+      "v3_api_key": "V3 API Key",
+      "v3_serial_no": "V3 Serial No",
+      "v3_private_key": "V3 Private Key",
+      "v3_public_key": "V3 Public Key",
+      "secret_key": "Secret Key",
+      "publishable_key": "Publishable Key (Optional)",
+      "webhook_secret": "Webhook Secret (Optional)",
+      "client_id": "Client ID",
+      "client_secret": "Client Secret",
+      "webhook_id": "Webhook ID (Optional)",
+      "api_key": "API Key",
+      "ipn_secret": "IPN Secret (Optional)",
+      "default_currency": "Default Currency (Optional)"
+    }
+  },
+  "CommerceProducts": {
+    "list": {
+      "title": "Commerce products",
+      "subtitle": "Create and publish products to your storefront.",
+      "create": "Create product"
+    },
+    "create": {
+      "title": "Create product",
+      "back": "Back to products",
+      "submit": "Create product",
+      "save_draft": "Save draft",
+      "publish": "Publish product"
+    },
+    "detail": {
+      "title": "Product detail",
+      "back": "Back to products",
+      "status": "Status",
+      "external_id": "Saleor product ID",
+      "store": "Store",
+      "purchase_link": "Purchase link",
+      "view_purchase_page": "View purchase page",
+      "last_error": "Last sync error",
+      "not_found": "Product not found.",
+      "read_only_hint": "Published or suspended products can only be published or unpublished — edit is available in draft with ready or failed integration."
+    },
+    "columns": {
+      "thumbnail": "Image",
+      "title": "Product",
+      "sku": "SKU",
+      "price": "Price",
+      "stock": "Stock",
+      "status": "Status",
+      "store": "Store",
+      "updated": "Updated",
+      "actions": "Actions"
+    },
+    "filters": {
+      "search_placeholder": "Search product name / SKU…",
+      "category_all": "All categories",
+      "status_all": "All statuses",
+      "status_published": "Live",
+      "status_suspended": "Unpublished",
+      "status_draft": "Draft",
+      "status_syncing": "Syncing",
+      "search": "Search",
+      "reset": "Reset"
+    },
+    "listStatus": {
+      "live": "Live",
+      "suspended": "Unpublished",
+      "draft": "Draft",
+      "syncing": "Syncing",
+      "sync_failed": "Sync failed",
+      "needs_attention": "Needs attention"
+    },
+    "stock": {
+      "out_of_stock": "Out of stock",
+      "low": "Low stock"
+    },
+    "bulk": {
+      "selected": "{count} selected",
+      "unpublish": "Bulk unpublish",
+      "delete": "Bulk delete",
+      "unpublish_title": "Unpublish selected products?",
+      "unpublish_body": "This will unpublish {count} live product(s).",
+      "unpublish_done": "Unpublished {count} product(s)",
+      "delete_title": "Delete selected products?",
+      "delete_body": "This permanently deletes {count} product(s). This cannot be undone.",
+      "delete_done": "Deleted {count} product(s)",
+      "no_unpublishable": "No selected products can be unpublished"
+    },
+    "empty": "No products yet. Create your first product.",
+    "actions": {
+      "edit": "Edit",
+      "more": "More actions",
+      "view_storefront": "View product",
+      "publish": "Publish",
+      "unpublish": "Unpublish",
+      "retry_sync": "Sync",
+      "delete": "Delete",
+      "save": "Save changes",
+      "cancel": "Cancel"
+    },
+    "business": {
+      "DRAFT": "Draft",
+      "PUBLISHED": "Published",
+      "SUSPENDED": "Suspended",
+      "legacy": "Needs attention"
+    },
+    "integration": {
+      "CREATING": "Creating",
+      "SYNCING": "Syncing",
+      "READY": "Ready",
+      "FAILED": "Failed",
+      "UNKNOWN": "Unknown"
+    },
+    "editor": {
+      "title": "Title",
+      "title_required": "Title is required",
+      "description": "Description",
+      "category": "Category",
+      "category_required": "Category is required",
+      "product_type": "Product type",
+      "product_type_required": "Product type is required",
+      "sku": "SKU",
+      "sku_required": "SKU is required",
+      "price": "Price",
+      "price_required": "Price is required",
+      "stock": "Stock",
+      "stock_required": "Stock is required",
+      "images": "Images",
+      "upload_hint": "Click or drag images to upload",
+      "upload_types": "JPEG, PNG, or WebP up to {size} MB",
+      "image_uploaded": "Image uploaded",
+      "image_upload_failed": "Image upload failed",
+      "image_too_large": "Image must be {size} MB or smaller",
+      "remove_image": "Remove",
+      "primary_image": "Primary",
+      "set_primary": "Set primary",
+      "section_basic": "Basic information",
+      "section_media": "Product images",
+      "section_pricing": "Pricing & inventory",
+      "section_organization": "Organization",
+      "section_publish": "Publish settings",
+      "publish_hint": "Save as draft to keep editing on the detail page. Publish now makes the product live on your storefront.",
+      "publish_mode": "Publish mode",
+      "publish_mode_draft": "Save as draft",
+      "publish_mode_live": "Publish now"
+    },
+    "publish": {
+      "confirm_title": "Publish product?",
+      "confirm_body": "This makes the product visible on your storefront channel."
+    },
+    "unpublish": {
+      "confirm_title": "Unpublish product?",
+      "confirm_body": "This hides the product from your storefront channel."
+    },
+    "delete": {
+      "confirm_title": "Delete product permanently?",
+      "confirm_body": "If published, it will be unpublished first. Then the product is permanently removed from FilixPay and Saleor. This cannot be undone."
+    },
+    "messages": {
+      "created": "Product created",
+      "saved": "Product saved",
+      "published": "Product published",
+      "publishing": "Publishing in progress…",
+      "unpublished": "Product unpublished",
+      "synced": "Sync completed",
+      "deleted": "Product deleted"
+    }
+  },
+  "CommerceActivation": {
+    "title": "Start running your store",
+    "subtitle": "A few steps to get your products selling globally",
+    "trust": "As a FilixPay merchant, you can create and publish products in Merchant Center directly — no platform catalog review required.",
+    "steps": {
+      "profile": "Complete store profile",
+      "profile_link": "Update profile (optional)",
+      "publish": "Publish your first product",
+      "orders": "Start receiving orders"
+    },
+    "cta": {
+      "publish_first": "Publish first product",
+      "continue_publish": "Continue publishing",
+      "syncing": "Syncing to storefront…",
+      "retry_publish": "Retry publish"
+    },
+    "timeout": {
+      "message": "Your product is still being processed. Refresh later to check the result.",
+      "refresh": "Refresh status"
+    },
+    "failed": {
+      "fallback": "Publish did not complete. Please retry."
+    },
+    "celebration": {
+      "title": "Product published",
+      "visibility": "After publishing, the product enters storefront display processing and becomes visible to shoppers once sync completes.",
+      "view_storefront": "View on storefront",
+      "continue_publish": "Continue publishing"
+    }
+  },
+  "Customers": {
+    "title": "Gestão de Clientes",
+    "subtitle": "Visualize e gerencie as informações dos seus clientes.",
+    "search": "Pesquisar",
+    "headers": {
+      "name": "Nome",
+      "code": "Código do Cliente",
+      "email": "E-mail",
+      "mobile": "Celular",
+      "phone": "Telefone",
+      "status": "Status do Cliente",
+      "created_at": "Data de Criação"
+    },
+    "loading": "Carregando clientes...",
+    "empty": "Nenhum dado de cliente no momento."
+  },
+  "Locations": {
+    "title": "Lojas",
+    "subtitle": "Gerencie as informações das suas lojas.",
+    "create_location": "Adicionar Loja",
+    "edit_location": "Edit Location",
+    "qrcode": "QR Code",
+    "anti_fraud_code": "Anti-Fraud Code",
+    "headers": {
+      "name": "Nome",
+      "address": "Endereço",
+      "contact": "Informações de Contato",
+      "status": "Status",
+      "default": "Padrão",
+      "created_at": "Data de Criação"
+    },
+    "form": {
+      "name": "Nome da Loja",
+      "sub_merchant": "Sub-Merchant",
+      "address": "Endereço Detalhado",
+      "country": "País/Região",
+      "mobile_phone": "Número de Celular",
+      "email": "E-mail de Contato",
+      "service_phone": "Telefone de Atendimento",
+      "status": "Status",
+      "default": "Set as Default",
+      "status_required": "Please select a status",
+      "submit": "Enviar",
+      "cancel": "Cancelar",
+      "success": "Loja criada com sucesso",
+      "edit_success": "Location updated successfully"
+    },
+    "empty": "Nenhum dado de loja no momento.",
+    "status_active": "Active",
+    "status_inactive": "Inactive",
+    "confirm_delete": "Are you sure you want to delete this location?"
+  },
+  "SubMerchants": {
+    "title": "Gestão de Subcomerciantes",
+    "subtitle": "Visualize e gerencie informações de subcomerciantes.",
+    "create_sub_merchant": "Adicionar Subcomerciante",
+    "edit_sub_merchant": "Edit Sub-Merchant",
+    "form": {
+      "name": "Nome do Comerciante",
+      "alias": "Alias de Liquidação",
+      "success": "Subcomerciante criado com sucesso",
+      "edit_success": "Sub-merchant updated successfully"
+    },
+    "headers": {
+      "name": "Nome do Comerciante",
+      "alias": "Alias",
+      "code": "Código do Comerciante",
+      "merchant_id": "ID do Comerciante",
+      "status": "Status",
+      "created_at": "Data de Criação"
+    },
+    "empty": "Nenhum dado de subcomerciante encontrado."
+  }
+}

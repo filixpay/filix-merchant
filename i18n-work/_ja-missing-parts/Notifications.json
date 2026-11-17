@@ -1,0 +1,72 @@
+{
+  "Notifications": {
+    "title": "Notifications & Tasks",
+    "subtitle": "Stay on top of platform messages and items that need your action.",
+    "view_all": "View all",
+    "loading": "Loading…",
+    "mark_all_read": "Mark all as read",
+    "tab": {
+      "notifications": "Notifications",
+      "tasks": "Tasks"
+    },
+    "filter": {
+      "all": "All",
+      "unread": "Unread"
+    },
+    "columns": {
+      "reference": "Reference",
+      "details": "Details",
+      "status_time": "Status / Time"
+    },
+    "empty": {
+      "notifications": "No notifications yet.",
+      "unread": "No unread notifications.",
+      "tasks": "No open tasks.",
+      "completed_tasks": "No completed tasks."
+    },
+    "severity": {
+      "INFO": "Info",
+      "SUCCESS": "Success",
+      "WARNING": "Warning",
+      "ERROR": "Error"
+    },
+    "priority": {
+      "CRITICAL": "Critical",
+      "HIGH": "High",
+      "MEDIUM": "Medium",
+      "LOW": "Low"
+    },
+    "banner": {
+      "dismiss": "Dismiss",
+      "action": "Take action"
+    },
+    "resume_link": "Resume payment",
+    "widget": {
+      "action_center": "Action Center",
+      "recent": "Recent Notifications",
+      "summary": "{openTasks} open task(s) · {overdue} overdue"
+    },
+    "counts": {
+      "unread": "Unread notifications",
+      "open_tasks": "Open tasks"
+    },
+    "task": {
+      "action": "Process",
+      "review_action": "Review",
+      "due": "Due {time}",
+      "overdue": "Overdue · {time}"
+    },
+    "tasks": {
+      "open": "Open tasks",
+      "completed": "Completed"
+    },
+    "status": {
+      "read": "Read",
+      "unread": "Unread"
+    },
+    "actions": {
+      "view_details": "View details"
+    },
+    "showing_count": "Showing {shown} of {total}"
+  }
+}

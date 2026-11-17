@@ -1,0 +1,326 @@
+{
+  "Pages": {
+    "group_enterprise": {
+      "title": "グループエンタープライズ",
+      "subtitle": "大規模グループ向けの統合決済・資金ガバナンスプラットフォーム",
+      "hero_title": "大規模グループ向けの統合決済・資金ガバナンスプラットフォームを構築",
+      "hero_desc": "エンタープライズガバナンス、統一集金、スマート精算、フルチェーン監査まで — 大規模グループの本社集中ガバナンス、法人独立運用、透明で制御可能な資金を実現します。",
+      "hero_ending": "集中ガバナンス。独立運用。透明な資金。",
+      "pain_points": {
+        "title": "グループ運用における資金管理のギャップ",
+        "items": [
+          {
+            "title": "個人QRコード集金",
+            "desc": "店舗やプロジェクトチームが個人のWeChatまたはAlipay口座で支払いを受け、グループ口座を迂回するため、本社が流入をリアルタイムで追跡できません。",
+            "consequences": "帳簿外資金ループ、照合の負担、歪んだ運営データ。"
+          },
+          {
+            "title": "第三者口座への資金迂回",
+            "desc": "事業収入がグループ管理外の第三者プラットフォームや個人口座へ流れ、帳簿外プールを生み、集中的な資金スケジューリングを弱めます。",
+            "consequences": "資金の分断、コンプライアンスリスク、信頼できるデータなしの意思決定。"
+          },
+          {
+            "title": "分断された決済チャネル",
+            "desc": "各法人が異なるレートと精算サイクルで独立して決済プロバイダーに接続し、照合がエラーを起こしやすくコストも高くなります。",
+            "consequences": "信頼性の低いレポート、高い保守コスト、複雑な連携。"
+          },
+          {
+            "title": "帳簿外資金プール",
+            "desc": "一部の収益が管理口座に到達せず、非公式チャネルを通るため、グループは真の運営・資金ポジションを把握できません。",
+            "consequences": "弱い内部統制、高コストな監査、低い資金透明性。"
+          }
+        ]
+      },
+      "architecture": {
+        "title": "エンタープライズガバナンスアーキテクチャ",
+        "lead": "本社で集中ガバナンス。各法人で独立運用。",
+        "lead_en": "ガバナンスはOrganizationレベルで止まり、各法人の運用独立性を保ちます。",
+        "reinforcing": "ガバナンスは運用を集中させずに、管理を集中します。",
+        "not_org_chart": "この図はガバナンス関係のみを示します — 実際の組織数や階層の深さではありません。",
+        "example_footnote": "例：多角化グループでは、Enterpriseをグループ本社、Organizationを事業単位の法人、Merchantを店舗またはプロジェクト運営者に対応させられます（例示のみ — 特定の企業やパートナーシップではありません）。",
+        "layers": {
+          "identity": "Identity",
+          "enterprise": "Enterprise",
+          "organization": "Organization",
+          "merchant": "Merchant",
+          "admin": "ADMIN",
+          "viewer": "VIEWER"
+        }
+      },
+      "capabilities": {
+        "title": "プラットフォーム機能",
+        "items": [
+          {
+            "icon": "🏛️",
+            "title": "エンタープライズガバナンス",
+            "desc": "本社が法人を集中的に作成・管理。ガバナンスはOrganizationレベルで止まり — 日々の運用や認可を置き換えません。"
+          },
+          {
+            "icon": "💳",
+            "title": "統一集金",
+            "desc": "グループ全体のアクワイアリング戦略とチャネル調整。各法人は自エンティティで契約・運用しつつ、資金は透明で制御可能です。"
+          },
+          {
+            "icon": "⚡",
+            "title": "スマート精算",
+            "desc": "ライセンス取得済み分割決済APIがクリアリングを自動化し、手動中継を減らし、複数エンティティ・複数シナリオの精算をサポートします。"
+          },
+          {
+            "icon": "🔍",
+            "title": "フルチェーン監査",
+            "desc": "ガバナンスアクション、認可変更、資金フローが完全に追跡可能で、本社監督とコンプライアンス監査に対応します。"
+          }
+        ]
+      },
+      "governance_model": {
+        "title": "ガバナンスモデル",
+        "intro": "FilixPayはガバナンス責任と日々の事業運用を分離し、本社が各法人の運用権限を置き換えることなく可視性と統制を維持できるようにします。",
+        "headers": [
+          "管理レイヤー",
+          "主な責任"
+        ],
+        "items": [
+          [
+            "Enterprise",
+            "ガバナンス"
+          ],
+          [
+            "Organization",
+            "認可と運用"
+          ],
+          [
+            "Merchant",
+            "事業実行"
+          ]
+        ],
+        "admin_not_owner": "エンタープライズADMIN ≠ 組織OWNER"
+      },
+      "rules": {
+        "title": "コアビジネスルール",
+        "headers": [
+          "観点",
+          "ルール"
+        ],
+        "items": [
+          [
+            "ガバナンス境界",
+            "Enterpriseはグループレベルでガバナンスします（Organizationの作成・管理）。Merchantを直接所有・制御・停止しません — 認可は各Organization内に留まります。"
+          ],
+          [
+            "統一集金",
+            "グループは統一アクワイアリングポリシーを設定でき、各Organizationは自法人のもとで契約・運用します。"
+          ],
+          [
+            "資金集金",
+            "顧客支払いは監督口座へ流入 — 外部集金チャネルと個人QRコードは禁止です。"
+          ],
+          [
+            "分割精算",
+            "ライセンス取得済み分割APIがクリアリングを自動化し、手動資金中継リスクを低減します。"
+          ],
+          [
+            "承認ワークフロー",
+            "組織横断の資金移動は、実行前にグループ承認が必要です。"
+          ]
+        ]
+      },
+      "scenarios": {
+        "title": "ビジネスシナリオ",
+        "scenario_0": {
+          "title": "エンタープライズセットアップ",
+          "process": "Example Enterprise作成 → Example Organization作成 → Organization Owner招待 → Example Merchant 01作成 → 運用開始",
+          "value": "グループガバナンスを迅速に立ち上げ — 法人独立運用と本社横断の可視性。"
+        },
+        "scenario_1": {
+          "title": "シナリオ1：子会社がグループ商品を販売",
+          "process": "顧客支払い → グループ口座（統一集金） → グループが売上認識 → システムが子会社コミッションを配分",
+          "value": "自動精算によりグループの資金主権を保護します。"
+        },
+        "scenario_2": {
+          "title": "シナリオ2：共同販売の分割",
+          "process": "1件の注文にグループ商品と子会社サービスを含む → 支払時に分割API → 比率に従い複数口座へ直接ルーティング",
+          "value": "二次振替なし — コンプライアントかつタイムリー。"
+        },
+        "scenario_3": {
+          "title": "シナリオ3：エンティティ間内部振替",
+          "process": "Organizationが申請 → グループが承認 → 監督グループ口座内で資金移動 → 対象Organization",
+          "value": "資金が管理境界を出ることなく、完全に追跡可能な内部連携。"
+        }
+      },
+      "compliance": {
+        "title": "コンプライアンスとリスク制御",
+        "headers": [
+          "リスク",
+          "FilixPayのソリューション"
+        ],
+        "items": [
+          [
+            "資金管理のギャップ",
+            "統一集金と監督口座への集約 — 個人QRコードや帳簿外プールなし"
+          ],
+          [
+            "違法な資金プーリング",
+            "ライセンス機関の分割API — グループは顧客残高を中継保有しない"
+          ],
+          [
+            "税務コンプライアンス違反",
+            "アクワイアリング、契約、請求エンティティを自動チェックで整合"
+          ],
+          [
+            "弱い内部統制",
+            "完全な操作証跡、ルール変更の多段階承認、監査可能なガバナンスアクション"
+          ],
+          [
+            "為替リスク",
+            "越境分割を貿易サービスFX申告に接続し、取引証跡を保持"
+          ]
+        ]
+      },
+      "portal": {
+        "title": "エンタープライズ管理ポータル",
+        "shots": {
+          "directory": {
+            "title": "エンタープライズディレクトリ",
+            "alt": "Example Organizationエントリを一覧するExample Enterprise管理ビュー",
+            "caption": "ひとつのエンタープライズ配下の全組織を集中管理"
+          },
+          "switch": {
+            "title": "組織切り替え",
+            "alt": "Example EnterpriseポータルからExample Organization運用ワークスペースへの切り替え",
+            "caption": "組織の運用ワークスペースへシームレスに切り替え"
+          },
+          "audit": {
+            "title": "ガバナンス監査",
+            "alt": "Organization作成と関連アクションを示すExample Enterpriseガバナンス監査ログ",
+            "caption": "完全な監査履歴でガバナンスアクションを追跡"
+          }
+        }
+      }
+    },
+    "performance": {
+      "badge": "パフォーマンスベンチマーク",
+      "hero_title": "注文作成APIロードテスト",
+      "hero_desc": "本番OpenAPIの注文作成エンドポイントに対する段階的k6ロードテストで、同時書き込み負荷下の安定性とレイテンシを検証します。",
+      "metrics_title": "主要指標",
+      "metrics_subtitle": "同時ユーザー1〜50の段階負荷で、エラー率0%を維持。",
+      "metrics": {
+        "tps": "注文スループット（TPS）",
+        "success_rate": "成功率",
+        "p95": "P95レイテンシ",
+        "p99": "P99レイテンシ"
+      },
+      "recommended_limit": "推奨本番レート制限：約100 TPS（安定容量×70%）。",
+      "capacity": {
+        "title": "日間注文容量の見積もり",
+        "subtitle": "ピーク4時間を含む8時間営業日を前提。",
+        "intro": "本ロードテストの安定スループットを用い、典型的な営業日に注文作成APIが処理できる注文数を見積もります。",
+        "assumption_hours": "営業前提：1日あたり注文作成の稼働8時間。",
+        "assumption_peak": "ピーク前提：推奨制限100 TPSでピーク4時間。",
+        "assumption_off_peak": "オフピーク前提：残り4時間はピークの30%、すなわち30 TPSと見積もり。8時間すべて100 TPSのフルレート参照も提示します。",
+        "formula": "計算式：注文数 = TPS × 3,600秒 × 時間。",
+        "highlight_daily": "推奨日間容量（ピーク／オフピークモデル）",
+        "highlight_daily_desc": "ピーク4時間を100 TPS + オフピーク4時間を {offPeak} TPS",
+        "highlight_daily_flat": "フルレート日間参照",
+        "highlight_daily_flat_desc": "8時間すべてを100 TPS（オフピークも100 TPS）",
+        "highlight_peak": "4時間ピーク容量",
+        "highlight_peak_desc": "推奨制限100 TPS時",
+        "tps_mixed": "ピーク {peak} / オフピーク {offPeak} TPS",
+        "table": {
+          "scenario": "シナリオ",
+          "tps": "参照TPS",
+          "orders": "作成注文数"
+        },
+        "rows": {
+          "peak_limit": "ピーク4時間（推奨制限）",
+          "daily_mixed": "営業8時間（ピーク／オフピークモデル、推奨）",
+          "daily_flat": "営業8時間（オフピークも100 TPS）",
+          "peak_stable": "ピーク4時間（安定ロードテスト値）",
+          "daily_full": "営業8時間（フルロードテストスループット、理論最大）"
+        },
+        "disclaimer": "これらの数値は、単一のテスト対象デプロイにおける注文作成API容量を反映します。決済、返金、照会、その他APIは含まれません。本番計画ではピーク係数、冗長性、監視も考慮してください。"
+      },
+      "methodology_title": "テスト手法",
+      "methodology": {
+        "item1": "エンドポイント：Client Credentials認証による POST /openapi/v1/orders",
+        "item2": "シナリオ：必須フィールドのみの最小注文ペイロード。決済チャネル呼び出しなし",
+        "item3": "ツール：Grafana k6 段階負荷、最大50 VU、19分30秒",
+        "item4": "データ：識別とクリーンアップのため LOADTEST- 接頭辞のテスト注文"
+      },
+      "meta": {
+        "interface": "エンドポイント",
+        "tool": "ロードテストツール",
+        "duration": "所要時間",
+        "orders": "作成注文数"
+      },
+      "evidence_title": "テスト証跡",
+      "evidence_subtitle": "ロードテスト中に取得したk6サマリー出力とシステムリソース監視。",
+      "screenshot_summary_alt": "最終k6ロードテストサマリー",
+      "screenshot_summary_caption": "図1：k6サマリー — 165,229件の注文を141 TPSで作成、P95 353 ms、P99 404 ms、エラー0%。",
+      "screenshot_50vu_alt": "同時ユーザー50時のシステム監視",
+      "screenshot_50vu_caption": "図2：50 VUピーク — JavaとMySQLが主なCPU消費。全体CPU約61%、サービスは利用可能を維持。",
+      "screenshot_20vu_alt": "同時ユーザー20時のシステム監視",
+      "screenshot_20vu_caption": "図3：20 VU段階 — 負荷が段階的に増加し、アプリケーションとデータベースが共有圧力下。",
+      "conclusion_title": "結論",
+      "conclusion_body": "FilixPay OpenAPIの注文作成エンドポイントは、同時ユーザー50で安定し、成功率100%、P99レイテンシ404 msを維持。容量計画と連携期待値の信頼できるベースラインを提供します。",
+      "cta_title": "より高い同時実行やプライベートベンチマークが必要ですか？",
+      "cta_desc": "カスタムパフォーマンス評価とデプロイオプションについてお問い合わせください。"
+    },
+    "case_studies": {
+      "title": "導入事例",
+      "subtitle": "世界中のビジネスがFilixPayで成功する様子をご覧ください",
+      "items": [
+        {
+          "title": "MicSelect - グローバル越境eコマース決済連携",
+          "desc": "Saleor + FilixPayで構築された次世代グローバルeコマース決済システム",
+          "link": "/resources/case-studies/micselect"
+        }
+      ],
+      "micselect": {
+        "badge": "導入事例",
+        "title": "MicSelect - グローバル越境eコマース決済連携",
+        "subtitle": "Saleor + FilixPayで構築された次世代グローバルeコマース決済システム",
+        "background_eyebrow": "クライアント背景",
+        "background_text": "MicSelectは、中国製の高品質商品を扱うキュレーション型越境eコマースプラットフォームで、プレミアムサプライチェーンと国際的なショッピング体験に注力しています。SaleorオープンソースeコマースフレームワークとNext.js上に構築され、グローバル消費者にシームレスなオンライン体験で高品質な中国製商品を届けます。",
+        "background_link_text": "MicSelectを訪問 →",
+        "background_solutions_link_text": "MicSelectソリューションを見る →",
+        "challenges_eyebrow": "課題",
+        "challenges_items": [
+          "複数決済チャネルの統一連携",
+          "グローバルユーザー向けの決済成功率最適化",
+          "複雑な越境注文照合",
+          "eコマースプラットフォームの決済拡張性不足",
+          "Webhookと非同期決済ステータス同期"
+        ],
+        "solution_eyebrow": "ソリューション",
+        "solution_intro": "FilixPayはMicSelectに完全な決済インフラを提供しました：",
+        "solution_items": [
+          "StripeやPayPalを含む国際決済チャネルの集約",
+          "統一チェックアウトと決済ルーティング",
+          "Webhookによる非同期決済通知",
+          "自動決済照合と精算",
+          "OpenAPIマーチャントプラットフォーム",
+          "マルチ環境決済サンドボックス機能",
+          "Saleorとの深い連携"
+        ],
+        "architecture_eyebrow": "アーキテクチャ",
+        "arch_saleor": "Saleor",
+        "arch_saleor_label": "eコマースプラットフォーム",
+        "arch_payment_app": "FilixPay Payment App",
+        "arch_payment_app_label": "決済アプリケーション",
+        "arch_gateway": "FilixPay Gateway",
+        "arch_gateway_label": "決済ゲートウェイ",
+        "arch_channels_label": "決済チャネル",
+        "results_eyebrow": "成果",
+        "results_items": [
+          "グローバル決済のクローズドループを実現",
+          "決済システムの拡張性を向上",
+          "決済チャネル連携の複雑さを低減",
+          "注文ステータスの自動同期を実現",
+          "統一された決済運用能力を提供"
+        ],
+        "cta_title": "FilixPay連携を始める",
+        "cta_desc": "MicSelectのようにグローバル決済能力を構築。今日からFilixPayとの連携を始めましょう。"
+      }
+    }
+  }
+}

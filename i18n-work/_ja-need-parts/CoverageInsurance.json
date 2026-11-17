@@ -1,0 +1,40 @@
+{
+  "CoverageInsurance": {
+    "title": "Coverage Insurance",
+    "subtitle": "Subscribe to platform-hosted chargeback coverage for new orders.",
+    "product_title": "Platform Chargeback Coverage",
+    "product_description": "Filix Pay provides integrated dispute coverage through our platform insurance partners.",
+    "unavailable_title": "Service not available yet",
+    "unavailable_body": "Platform coverage is being prepared. Please check back later or contact support.",
+    "agreement_body": "By subscribing, you authorize Filix Pay to apply platform-hosted chargeback coverage to eligible new orders under the current service agreement.",
+    "agreement_checkbox": "I have read and agree to the coverage service agreement (v1).",
+    "unsubscribed_banner": "Coverage is turned off for new orders. Existing claims will continue to be processed.",
+    "status": {
+      "subscribed": "Active",
+      "not_subscribed": "Not subscribed",
+      "unsubscribed": "Unsubscribed"
+    },
+    "fields": {
+      "provider": "Provider",
+      "subscribed_at": "Subscribed at",
+      "agreement_version": "Agreement version"
+    },
+    "actions": {
+      "subscribe": "Activate coverage",
+      "unsubscribe": "Turn off coverage"
+    },
+    "unsubscribe_modal": {
+      "title": "Turn off coverage?",
+      "warning": "After you turn off coverage, new orders will no longer be covered by platform chargeback insurance. Existing claims will continue to be processed without interruption.",
+      "confirm": "Turn off",
+      "cancel": "Cancel"
+    },
+    "messages": {
+      "load_failed": "Failed to load coverage subscription",
+      "subscribed": "Coverage activated",
+      "subscribe_failed": "Failed to activate coverage",
+      "unsubscribed": "Coverage turned off",
+      "unsubscribe_failed": "Failed to turn off coverage"
+    }
+  }
+}

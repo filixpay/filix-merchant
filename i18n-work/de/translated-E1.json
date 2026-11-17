@@ -1,0 +1,404 @@
+{
+  "Disputes": {
+    "title": "Streitfälle & Chargebacks",
+    "subtitle": "Überwachen Sie Chargeback-Fälle, Antwortfristen und erforderliche Händlermaßnahmen.",
+    "empty": "Keine Streitfälle gefunden.",
+    "back_to_list": "Zurück zu Streitfällen",
+    "kpis": {
+      "action_required": "Fälle mit Handlungsbedarf",
+      "due_soon": "Bald fällig (<3 Tage)",
+      "overdue": "Überfällig"
+    },
+    "headers": {
+      "case_number": "Fall-Nr.",
+      "order_id": "Bestell-ID",
+      "channel": "Kanal",
+      "created_at": "Erstellt am",
+      "amount": "Betrag",
+      "reason": "Grund",
+      "priority": "Priorität",
+      "status": "Status",
+      "response_due": "Antwortfrist"
+    },
+    "filters": {
+      "keyword": "Fall-Nr. / Bestell-ID",
+      "status": "Status",
+      "channel": "Kanal",
+      "all_status": "Alle Status"
+    },
+    "table_total": "Gesamt {count}",
+    "priority": {
+      "CRITICAL": "Kritisch",
+      "HIGH": "Hoch",
+      "MEDIUM": "Mittel",
+      "LOW": "Niedrig"
+    },
+    "status": {
+      "DRAFT": "Entwurf",
+      "SUBMITTED": "Eingereicht",
+      "UNDER_REVIEW": "In Prüfung",
+      "WON": "Gewonnen",
+      "LOST": "Verloren",
+      "ACCEPTED": "Akzeptiert"
+    },
+    "evidence_category": {
+      "RECEIPT": "Beleg",
+      "SHIPPING": "Versand",
+      "COMMUNICATION": "Kommunikation",
+      "OTHER": "Sonstiges"
+    },
+    "action_center": {
+      "title": "Händler-Aktionscenter",
+      "locked": "Dieser Fall ist gesperrt. Nachweise können nicht mehr bearbeitet werden.",
+      "upload_hint": "Klicken oder Dateien hierher ziehen, um Nachweise hochzuladen",
+      "file": "Datei",
+      "category": "Kategorie",
+      "upload_types": "Unterstützt PDF, JPG, PNG, WEBP. Max. {size} MB pro Datei.",
+      "file_size": "Größe",
+      "file_too_large": "Datei zu groß. Max. {size} MB pro Datei."
+    },
+    "actions": {
+      "save_draft": "Entwurf speichern",
+      "submit": "Nachweise einreichen",
+      "accept_liability": "Haftung akzeptieren",
+      "accept_liability_confirm_title": "Chargeback-Haftung akzeptieren?",
+      "accept_liability_confirm_body": "Nach Annahme der Haftung können Sie keine Nachweise mehr einreichen.",
+      "submit_confirm_title": "Nachweise einreichen?",
+      "submit_confirm_body": "Die Einreichung kann nicht rückgängig gemacht werden. Die Nachweise werden zur Prüfung an den Zahlungskanal gesendet."
+    },
+    "messages": {
+      "draft_saved": "Nachweis-Entwurf gespeichert",
+      "submitted": "Nachweise zur Prüfung eingereicht",
+      "liability_accepted": "Haftung akzeptiert",
+      "evidence_uploaded": "Nachweisdatei hochgeladen",
+      "evidence_required": "Bitte laden Sie mindestens eine Nachweisdatei hoch"
+    },
+    "reason_codes": {
+      "fraudulent": "Betrügerisch",
+      "duplicate": "Doppelte Belastung",
+      "product_not_received": "Produkt nicht erhalten",
+      "unrecognized": "Unbekannte Belastung",
+      "credit_not_processed": "Gutschrift nicht verarbeitet",
+      "general": "Allgemeiner Streitfall",
+      "incorrect_account_details": "Falsche Kontodaten",
+      "insufficient_funds": "Unzureichende Decmittel",
+      "bank_cannot_process": "Bank kann nicht verarbeiten",
+      "debit_not_authorized": "Abbuchung nicht autorisiert",
+      "customer_initiated": "Vom Kunden initiiert",
+      "merchandise_or_service_not_received": "Ware oder Dienstleistung nicht erhalten",
+      "unauthorized": "Nicht autorisiert",
+      "merchandise_or_service_not_as_described": "Ware oder Dienstleistung nicht wie beschrieben",
+      "cancelled_recurring_billing": "Wiederkehrende Zahlung storniert",
+      "non_receipt": "Nicht erhalten",
+      "not_as_described": "Nicht wie beschrieben",
+      "duplicate_transaction": "Doppelte Transaktion",
+      "credit_not_received": "Gutschrift nicht erhalten"
+    },
+    "timeline": {
+      "title": "Fallverlauf",
+      "actor": "Von {actor}",
+      "actors": {
+        "system": "System-Autostart",
+        "merchant": "Händleraktion"
+      },
+      "events": {
+        "CASE_OPENED": "Streitfall eröffnet",
+        "EVIDENCE_DRAFT_SAVED": "Nachweis-Entwurf gespeichert",
+        "EVIDENCE_SUBMITTED": "Nachweise eingereicht",
+        "REVIEW_STARTED": "In Bankprüfung",
+        "CHANNEL_STATUS_CHANGED": "Kanalstatus aktualisiert",
+        "CASE_RESOLVED": "Streitfall abgeschlossen",
+        "LIABILITY_ACCEPTED": "Haftung akzeptiert",
+        "EVIDENCE_FORWARDED_TO_CHANNEL": "Nachweise an Kanal weitergeleitet",
+        "CHANNEL_EVIDENCE_SUBMIT_FAILED": "Einreichung der Nachweise beim Kanal fehlgeschlagen"
+      },
+      "titles": {
+        "dispute_opened": "Streitfall eröffnet",
+        "dispute_resolved": "Streitfall abgeschlossen",
+        "evidence_draft_saved": "Nachweis-Entwurf gespeichert",
+        "evidence_submitted": "Nachweise eingereicht",
+        "under_bank_review": "In Bankprüfung",
+        "liability_accepted": "Haftung akzeptiert",
+        "channel_status_updated": "Kanalstatus aktualisiert",
+        "evidence_forwarded_to_channel": "Nachweise an Kanal weitergeleitet",
+        "channel_evidence_submit_failed": "Einreichung der Nachweise beim Kanal fehlgeschlagen"
+      },
+      "descriptions": {
+        "charge_dispute_created": "Stripe: Streitfall erstellt",
+        "charge_dispute_updated": "Stripe: Streitfall aktualisiert",
+        "charge_dispute_closed": "Stripe: Streitfall geschlossen",
+        "charge_dispute_funds_withdrawn": "Stripe: Streitfall-Mittel abgezogen",
+        "charge_dispute_funds_reinstated": "Stripe: Streitfall-Mittel wiederhergestellt",
+        "customer_dispute_created": "PayPal: Streitfall erstellt",
+        "customer_dispute_updated": "PayPal: Streitfall aktualisiert",
+        "customer_dispute_resolved": "PayPal: Streitfall gelöst",
+        "submitted_files_to_channel": "{count} Datei(en) an {channel} eingereicht",
+        "files_attached": "{count} Datei(en) angehängt",
+        "channel_status_transition": "{oldStatus} → {newStatus}",
+        "case_locked_for_review": "Fall für Prüfung gesperrt",
+        "merchant_accepted_chargeback_liability": "Händler hat Chargeback-Haftung akzeptiert"
+      },
+      "channel_statuses": {
+        "needs_response": "Antwort erforderlich",
+        "under_review": "In Prüfung",
+        "won": "Gewonnen",
+        "lost": "Verloren",
+        "charge_refunded": "Belastung erstattet",
+        "warning_needs_response": "Warnung – Antwort erforderlich",
+        "warning_under_review": "Warnung – in Prüfung",
+        "warning_closed": "Warnung geschlossen"
+      },
+      "resolutions": {
+        "MERCHANT_WON": "Händler gewonnen",
+        "BUYER_WON": "Käufer gewonnen",
+        "MERCHANT_ACCEPTED": "Händler akzeptiert",
+        "PARTIAL": "Teilweise gewonnen"
+      }
+    },
+    "detail": {
+      "title": "Streitfall",
+      "reason_code": "Ursachencode",
+      "not_found": "Streitfall nicht gefunden."
+    },
+    "coverage_assessment": {
+      "title": "Absicherungsbewertung",
+      "headers": {
+        "status": "Absicherungsstatus",
+        "provider": "Anbieter",
+        "stage": "Bewertungsstufe",
+        "limit": "Absicherungsgrenze",
+        "reference": "Referenz",
+        "assessment_id": "Bewertungs-ID"
+      },
+      "status": {
+        "COVERED": "Abgesichert",
+        "NOT_COVERED": "Nicht abgesichert",
+        "PARTIAL": "Teilweise abgesichert"
+      },
+      "stage": {
+        "PRE_AUTH": "Vor Autorisierung",
+        "POST_AUTH": "Nach Autorisierung",
+        "MANUAL": "Manuell",
+        "ASYNC_UPDATE": "Asynchrone Aktualisierung"
+      },
+      "timeline": {
+        "title": "Bewertungsverlauf"
+      }
+    },
+    "coverage": {
+      "title": "Chargeback-Schutz",
+      "headers": {
+        "status": "Anspruchsstatus",
+        "provider": "Anbieter",
+        "amount": "Anspruchsbetrag",
+        "provider_claim_id": "Anbieter-Anspruchs-ID"
+      },
+      "status": {
+        "CREATED": "Erstellt",
+        "UNDER_REVIEW": "In Prüfung",
+        "APPROVED": "Genehmigt",
+        "REJECTED": "Abgelehnt",
+        "PAID": "Ausgezahlt",
+        "CLOSED": "Geschlossen"
+      },
+      "event_type": {
+        "CREATED": "Anspruch erstellt",
+        "SUBMITTED": "Beim Anbieter eingereicht",
+        "UNDER_REVIEW": "In Prüfung",
+        "APPROVED": "Genehmigt",
+        "REJECTED": "Abgelehnt",
+        "PAID": "Ausgezahlt",
+        "CLOSED": "Geschlossen"
+      },
+      "timeline": {
+        "title": "Absicherungsverlauf"
+      }
+    },
+    "response_due": {
+      "overdue": "⚠️ Überfällig",
+      "hours_left": "⚠️ Noch {hours} Std.",
+      "days_left": "Noch {days} Tage"
+    }
+  },
+  "Support": {
+    "entry_label": "Support-Center",
+    "entry_label_with_unread": "Support-Center, {count} neue Antworten",
+    "entry_collapse": "Support-Eintrag minimieren",
+    "entry_expand": "Support-Eintrag erweitern",
+    "title": "Support",
+    "create_title": "Frage stellen",
+    "new_question": "Neue Frage",
+    "back_to_list": "Zurück zur Liste",
+    "refresh": "Aktualisieren",
+    "question_label": "Frage",
+    "question_placeholder": "Beschreiben Sie Ihr Anliegen…",
+    "submit_question": "Absenden",
+    "create_success": "Frage eingereicht",
+    "ticket_title": "Ticket {number}",
+    "subject_label": "Betreff: ",
+    "view_detail": "Details anzeigen",
+    "answered_hint": "Dieses Ticket wurde beantwortet. Für eine Nachfrage ",
+    "create_new_ticket": "ein neues Ticket erstellen",
+    "status": {
+      "open": "Offen",
+      "answered": "Beantwortet"
+    },
+    "sender": {
+      "merchant": "Ich",
+      "operator": "Support"
+    },
+    "empty": {
+      "list": "Noch keine Support-Gespräche",
+      "messages": "Noch keine Nachrichten"
+    },
+    "errors": {
+      "load_list": "Gespräche konnten nicht geladen werden",
+      "load_detail": "Gespräch konnte nicht geladen werden",
+      "create": "Frage konnte nicht eingereicht werden",
+      "blank_content": "Bitte geben Sie Ihre Frage ein"
+    }
+  },
+  "Notifications": {
+    "title": "Benachrichtigungen & Aufgaben",
+    "subtitle": "Behalten Sie Plattformnachrichten und handlungsbedürftige Punkte im Blick.",
+    "view_all": "Alle anzeigen",
+    "loading": "Wird geladen…",
+    "mark_all_read": "Alle als gelesen markieren",
+    "tab": {
+      "notifications": "Benachrichtigungen",
+      "tasks": "Aufgaben"
+    },
+    "filter": {
+      "all": "Alle",
+      "unread": "Ungelesen"
+    },
+    "columns": {
+      "reference": "Referenz",
+      "details": "Details",
+      "status_time": "Status / Zeit"
+    },
+    "empty": {
+      "notifications": "Noch keine Benachrichtigungen.",
+      "unread": "Keine ungelesenen Benachrichtigungen.",
+      "tasks": "Keine offenen Aufgaben.",
+      "completed_tasks": "Keine abgeschlossenen Aufgaben."
+    },
+    "severity": {
+      "INFO": "Info",
+      "SUCCESS": "Erfolg",
+      "WARNING": "Warnung",
+      "ERROR": "Fehler"
+    },
+    "priority": {
+      "CRITICAL": "Kritisch",
+      "HIGH": "Hoch",
+      "MEDIUM": "Mittel",
+      "LOW": "Niedrig"
+    },
+    "banner": {
+      "dismiss": "Schließen",
+      "action": "Handeln"
+    },
+    "resume_link": "Zahlung fortsetzen",
+    "widget": {
+      "action_center": "Aktionscenter",
+      "recent": "Aktuelle Benachrichtigungen",
+      "summary": "{openTasks} offene Aufgabe(n) · {overdue} überfällig"
+    },
+    "counts": {
+      "unread": "Ungelesene Benachrichtigungen",
+      "open_tasks": "Offene Aufgaben"
+    },
+    "task": {
+      "action": "Bearbeiten",
+      "review_action": "Prüfen",
+      "due": "Fällig {time}",
+      "overdue": "Überfällig · {time}"
+    },
+    "tasks": {
+      "open": "Offene Aufgaben",
+      "completed": "Abgeschlossen"
+    },
+    "status": {
+      "read": "Gelesen",
+      "unread": "Ungelesen"
+    },
+    "actions": {
+      "view_details": "Details anzeigen"
+    },
+    "showing_count": "{shown} von {total} angezeigt"
+  },
+  "AuditLogs": {
+    "title": "Audit-Protokolle",
+    "subtitle": "Schreibgeschützter Audit-Trail für sicherheitsrelevante Aktionen in Ihrem Händlerkonto.",
+    "empty": "Keine Audit-Einträge gefunden.",
+    "table_total": "Gesamt {count} Einträge",
+    "view_link": "Anzeigen",
+    "timeline_hint": "Verlauf in den zugehörigen Bestelldetails anzeigen",
+    "metadata_truncated": "Metadaten wurden gekürzt",
+    "columns": {
+      "time": "Zeit",
+      "actor": "Akteur",
+      "action": "Aktion",
+      "resource": "Ressource",
+      "result": "Ergebnis",
+      "link": "Link"
+    },
+    "filter": {
+      "date_range": "Zeitraum",
+      "date_range_start": "Startzeit",
+      "date_range_end": "Endzeit",
+      "action": "Aktionstyp",
+      "result": "Ergebnis"
+    },
+    "result": {
+      "SUCCESS": "Erfolgreich",
+      "FAILURE": "Fehlgeschlagen",
+      "DENIED": "Verweigert"
+    },
+    "actor_type": {
+      "MERCHANT_USER": "Händlerbenutzer",
+      "OPERATOR": "Operator",
+      "SYSTEM": "System",
+      "API": "API",
+      "WEBHOOK": "Webhook"
+    },
+    "detail": {
+      "reason": "Grund",
+      "event_id": "Ereignis-ID",
+      "request_id": "Anfrage-ID",
+      "trace_id": "Trace-ID",
+      "metadata": "Metadaten"
+    }
+  },
+  "audit": {
+    "action": {
+      "auth.login": "Anmeldung",
+      "auth.logout": "Abmeldung",
+      "auth.password.change": "Zahlungspasswort ändern",
+      "auth.mfa.enable": "MFA aktivieren",
+      "auth.mfa.disable": "MFA deaktivieren",
+      "auth.access.denied": "Zugriff verweigert",
+      "apikey.create": "API-Schlüssel erstellen",
+      "apikey.rotate": "API-Schlüssel rotieren",
+      "apikey.delete": "API-Schlüssel löschen",
+      "webhook.create": "Webhook erstellen",
+      "webhook.update": "Webhook aktualisieren",
+      "webhook.delete": "Webhook löschen",
+      "webhook.replay": "Webhook erneut senden",
+      "merchant.config.update": "Händlerkonfiguration aktualisieren",
+      "coverage.enable": "Absicherung aktivieren",
+      "coverage.disable": "Absicherung deaktivieren",
+      "coverage.update": "Absicherungskonfiguration aktualisieren",
+      "risk.review.approve": "Prüfung genehmigt",
+      "risk.review.reject": "Prüfung abgelehnt",
+      "risk.review.assign": "Prüfung zugewiesen",
+      "role.grant": "Rolle vergeben",
+      "role.revoke": "Rolle entziehen",
+      "permission.update": "Berechtigung aktualisieren",
+      "operator.create": "Operator erstellen",
+      "operator.update": "Operator aktualisieren",
+      "operator.disable": "Operator deaktivieren"
+    }
+  }
+}

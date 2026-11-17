@@ -1,0 +1,15 @@
+{
+  "Reviews": {
+    "headers": {
+      "status": "Status",
+      "review_status": "Confirmation Status",
+      "approval_operator": "Maker"
+    },
+    "confirm_received": "Confirm received",
+    "confirm_not_received": "Confirm not received",
+    "return_audit": "Return to audit",
+    "checker_ack": "I independently logged into the bank account and completed this check",
+    "checker_ack_required": "Tick the acknowledgement before confirming",
+    "approval_operator": "Maker"
+  }
+}

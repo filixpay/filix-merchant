@@ -1,0 +1,57 @@
+{
+  "CreditLimit": {
+    "title": "Credit Limit Management",
+    "subtitle": "Manage your credit limit information, including availability, usage, and payment terms.",
+    "create": "Create Credit Line",
+    "adjust": "Adjust Limit",
+    "view_adjustments": "Adjustment Logs",
+    "view_transactions": "Credit Transactions",
+    "adjust_modal": {
+      "title": "Adjust Credit Limit",
+      "amount": "Adjustment Amount",
+      "amount_hint": "Positive to increase, negative to decrease",
+      "submit": "Submit Adjustment",
+      "success": "Limit adjusted successfully",
+      "error": "Failed to adjust limit"
+    },
+    "form": {
+      "debitor_code": "Debitor Customer Code",
+      "credit_limit": "Credit Limit",
+      "payment_term_type": "Payment Term",
+      "payment_term_days": "Payment Term Days",
+      "submit": "Submit",
+      "cancel": "Cancel",
+      "success": "Credit line created successfully",
+      "error": "Failed to create credit line"
+    },
+    "headers": {
+      "source": "Source",
+      "creditor": "Creditor",
+      "debitor": "Debitor",
+      "credit_limit": "Limit",
+      "used_amount": "Used",
+      "available_amount": "Available",
+      "payment_term": "Terms",
+      "status": "Status"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "sources": {
+      "merchant": "Platform Credit",
+      "bank": "Bank Credit"
+    },
+    "payment_terms": {
+      "IMMEDIATE": "Immediate",
+      "NET_DAYS": "Net Days",
+      "END_OF_MONTH": "End of Month",
+      "ON_DELIVERY": "On Delivery",
+      "STAGE_BASED": "Stage Based",
+      "net_days": "Net {days} days",
+      "immediate": "Immediate Payment"
+    },
+    "loading": "Loading credit lines...",
+    "empty": "No credit lines found."
+  }
+}

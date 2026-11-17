@@ -1,0 +1,12 @@
+{
+  "Common": {
+    "yes": "Yes",
+    "no": "No",
+    "initiate_payment": "Initiate Payment",
+    "refresh": "Refresh",
+    "download": "Download",
+    "back": "Back",
+    "view": "View",
+    "total": "Total"
+  }
+}

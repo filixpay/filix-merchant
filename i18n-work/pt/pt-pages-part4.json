@@ -1,0 +1,218 @@
+{
+  "Pages": {
+    "case_studies": {
+      "title": "Estudos de Caso",
+      "subtitle": "Veja como empresas ao redor do mundo estão tendo sucesso com a FilixPay",
+      "items": [
+        {
+          "title": "MicSelect - Integração de Pagamentos Globais de E-Commerce Transfronteiriço",
+          "desc": "Um sistema de pagamentos de e-commerce global de nova geração construído com Saleor + FilixPay",
+          "link": "/resources/case-studies/micselect"
+        }
+      ],
+      "micselect": {
+        "badge": "Estudo de Caso",
+        "title": "MicSelect - Integração de Pagamentos Globais de E-Commerce Transfronteiriço",
+        "subtitle": "Um sistema de pagamentos de e-commerce global de nova geração construído com Saleor + FilixPay",
+        "background_eyebrow": "Contexto do Cliente",
+        "background_text": "A MicSelect é uma plataforma de e-commerce transfronteiriço com curadoria de produtos de qualidade fabricados na China, focada em cadeias de suprimento premium e em uma experiência de compra internacional. Construída sobre o framework de e-commerce open-source Saleor e Next.js, a MicSelect dedica-se a entregar produtos chineses de qualidade com uma experiência de compra online fluida para consumidores globais.",
+        "background_link_text": "Visitar MicSelect →",
+        "background_solutions_link_text": "Ver Soluções MicSelect →",
+        "challenges_eyebrow": "Desafios",
+        "challenges_items": [
+          "Integração unificada de múltiplos canais de pagamento",
+          "Otimização das taxas de sucesso de pagamento para usuários globais",
+          "Reconciliação complexa de pedidos transfronteiriços",
+          "Extensibilidade insuficiente de pagamentos da plataforma de e-commerce",
+          "Sincronização de Webhooks e status de pagamento assíncrono"
+        ],
+        "solution_eyebrow": "Solução",
+        "solution_intro": "A FilixPay forneceu à MicSelect uma infraestrutura completa de pagamentos:",
+        "solution_items": [
+          "Canais de pagamento internacionais agregados, incluindo Stripe e PayPal",
+          "Checkout unificado e roteamento de pagamentos",
+          "Notificações assíncronas de pagamento via Webhooks",
+          "Reconciliação e liquidação automatizadas de pagamentos",
+          "Plataforma merchant OpenAPI",
+          "Capacidades de sandbox de pagamento em múltiplos ambientes",
+          "Integração profunda com Saleor"
+        ],
+        "architecture_eyebrow": "Arquitetura",
+        "arch_saleor": "Saleor",
+        "arch_saleor_label": "Plataforma de E-Commerce",
+        "arch_payment_app": "FilixPay Payment App",
+        "arch_payment_app_label": "Aplicação de Pagamento",
+        "arch_gateway": "FilixPay Gateway",
+        "arch_gateway_label": "Gateway de Pagamento",
+        "arch_channels_label": "Canais de Pagamento",
+        "results_eyebrow": "Resultados",
+        "results_items": [
+          "Ciclo fechado de pagamentos globais alcançado com sucesso",
+          "Escalabilidade do sistema de pagamentos aprimorada",
+          "Complexidade de integração de canais de pagamento reduzida",
+          "Sincronização automatizada de status de pedidos habilitada",
+          "Capacidade unificada de operações de pagamento entregue"
+        ],
+        "cta_title": "Comece a Integrar a FilixPay",
+        "cta_desc": "Construa capacidades de pagamento global como a MicSelect. Comece a integrar com a FilixPay hoje."
+      }
+    },
+    "compliance": {
+      "title": "Guia de Conformidade",
+      "subtitle": "Navegue pelas regulamentações globais de pagamento com confiança",
+      "hero_title": "Conformidade Simplificada",
+      "hero_desc": "Guias abrangentes cobrindo GDPR, PCI-DSS, FATF Travel Rule e regulamentações regionais de pagamento para manter seu negócio em conformidade."
+    },
+    "blog": {
+      "title": "Blog e Artigos",
+      "subtitle": "Insights técnicos, análises do setor e atualizações de produto",
+      "posts": [
+        {
+          "title": "FilixPay Checkout - Implantação em Domínio Independente (Demo)",
+          "desc": "Interface de checkout independente baseada em React, com suporte a adaptação multi-chain e implantação em domínio próprio.",
+          "link": "https://github.com/filixpay/filix-checkout"
+        },
+        {
+          "title": "FilixPay Merchant Center - Painel Moderno para Merchants",
+          "desc": "Sistema de gestão de merchants construído com Next.js e Shadcn UI, com gestão multi-merchant, contas de fundos, saques e controle de acesso.",
+          "link": "https://github.com/filixpay/filix-merchant"
+        }
+      ]
+    },
+    "downloads": {
+      "title": "Central de Downloads",
+      "subtitle": "Documentação de implantação, modelos de contrato e recursos técnicos",
+      "items": {
+        "deploy_doc": {
+          "title": "Guia de Implantação",
+          "desc": "Guia completo para configuração de implantação privada"
+        },
+        "license_sample": {
+          "title": "Modelo de Contrato de Licença",
+          "desc": "Modelo de contrato de licença de código-fonte"
+        },
+        "api_spec": {
+          "title": "Especificação da API",
+          "desc": "Arquivo de especificação OpenAPI/Swagger"
+        }
+      }
+    },
+    "common": {
+      "learn_more": "Saiba Mais",
+      "get_started": "Começar",
+      "contact_sales": "Falar com Vendas",
+      "coming_soon": "Em Breve",
+      "back_home": "Voltar ao Início",
+      "key_features": "Principais Recursos",
+      "why_choose": "Por Que Escolher Esta Solução",
+      "use_cases": "Casos de Uso",
+      "consequences": "Consequências"
+    },
+    "private_deployment": {
+      "badge": "IMPLANTAÇÃO ENTERPRISE",
+      "hero_title": "Controle Full Stack · Nível Enterprise · Soberania de Dados",
+      "specs_title": "Especificações de Implantação",
+      "specs_server_title": "Requisitos do Servidor",
+      "specs_stack_title": "Stack Tecnológica",
+      "specs_col_item": "Item",
+      "specs_col_requirement": "Requisito",
+      "specs_items": {
+        "os": "SO",
+        "os_value": "Linux (Ubuntu 22.04+)",
+        "cpu": "CPU",
+        "cpu_value": "4 Núcleos",
+        "memory": "Memória",
+        "memory_value": "≥ 8 GB",
+        "disk": "Disco",
+        "disk_value": "≥ 20 GB",
+        "docker": "Docker",
+        "docker_value": "20.10+",
+        "compose": "Docker Compose",
+        "compose_value": "v2.0+"
+      },
+      "stack": {
+        "postgres": {
+          "name": "PostgreSQL 15–18",
+          "desc": "Banco de Dados Principal"
+        },
+        "redis": {
+          "name": "Redis 7.2",
+          "desc": "Serviço de Cache"
+        },
+        "keycloak": {
+          "name": "Keycloak 26.0",
+          "desc": "Identidade e Autenticação"
+        },
+        "compose": {
+          "name": "Docker Compose",
+          "desc": "Orquestração"
+        }
+      },
+      "architecture_label": "Topologia do Sistema",
+      "pricing_section_title": "Investimento e Preços",
+      "pricing_intro": "Licenciamento transparente com taxa única e entrega completa dos ativos do sistema — construa infraestrutura de pagamento própria com confiança.",
+      "pricing_badge": "Licença Enterprise",
+      "pricing_onetime": "Taxa Única",
+      "pricing_included_title": "O Que Está Incluído",
+      "pricing_included": [
+        "Código-fonte completo (merchant center, payment gateway, settlement engine)",
+        "Documentação de implantação, scripts de banco de dados, especificações de API",
+        "Suporte único de implantação e transferência técnica",
+        "Um ano de manutenção profissional gratuita"
+      ],
+      "pricing_maintenance_label": "Manutenção Anual (a partir do 2º ano)",
+      "pricing_maintenance_value": "10% da taxa de licença (2.800 USD/ano)",
+      "pricing_cta": "Fale com Vendas para Detalhes",
+      "licensing_title": "Licenciamento de Código-Fonte",
+      "final_cta_title": "Pronto para implantar sua própria infraestrutura de pagamento?",
+      "final_cta_desc": "Entre em contato com nossa equipe enterprise para planejamento de implantação personalizado e detalhes de licenciamento.",
+      "final_cta_primary": "Falar com Vendas",
+      "final_cta_docs": "Ver Docs de Implantação",
+      "final_cta_download": "Baixar Contrato de Licença",
+      "view_deployment_docs": "Ver Docs de Implantação",
+      "deployment_comparison": {
+        "title": "Checkout Self-Hosted vs. Implantação Privada Completa",
+        "desc": "A FilixPay oferece dois caminhos de implantação com escopos e investimentos diferentes. Escolha com base em precisar apenas de uma página de checkout com a sua marca ou de uma plataforma de pagamento on-premise completa.",
+        "columns": {
+          "dimension": "Dimensão",
+          "checkout": "Checkout Self-Hosted",
+          "full_stack": "Implantação Privada Completa"
+        },
+        "rows": {
+          "scope": {
+            "label": "O que você implanta",
+            "checkout": "Frontend de checkout open-source + proxy BFF (filix-checkout)",
+            "full_stack": "Stack completa FilixPay: merchant center, payment gateway, settlement engine"
+          },
+          "audience": {
+            "label": "Ideal para",
+            "checkout": "Merchants que querem checkout no próprio domínio com operação mínima",
+            "full_stack": "Bancos, provedores de pagamento e empresas que exigem soberania total de dados"
+          },
+          "infrastructure": {
+            "label": "Infraestrutura",
+            "checkout": "Container Docker único; proxy reverso Nginx/Caddy opcional",
+            "full_stack": "Cluster PostgreSQL, Redis, Keycloak e Docker Compose"
+          },
+          "licensing": {
+            "label": "Licenciamento",
+            "checkout": "Open source Apache-2.0; self-host gratuito",
+            "full_stack": "Licença enterprise de código-fonte com taxa única e manutenção"
+          },
+          "complexity": {
+            "label": "Esforço de configuração",
+            "checkout": "Horas—arquivo env + docker pull + domínio HTTPS",
+            "full_stack": "Dias a semanas—implantação full stack e transferência"
+          },
+          "when_to_choose": {
+            "label": "Quando escolher",
+            "checkout": "URL de checkout controlada pela marca; FilixPay SaaS para todo o restante",
+            "full_stack": "Todos os dados e sistemas de pagamento devem rodar na sua rede"
+          }
+        },
+        "checkout_cta": "Ver Guia de Implantação do Checkout",
+        "merchant_center_cta": "Visão Geral do Merchant Center"
+      }
+    }
+  }
+}

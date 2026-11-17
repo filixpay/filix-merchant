@@ -1,0 +1,87 @@
+{
+  "SettlementReleases": {
+    "title": "Settlement processing",
+    "subtitle": "Track when funds become available balance.",
+    "empty": "No settlement processing records found.",
+    "loadError": "Failed to load settlement processing.",
+    "filters": {
+      "status": "Status",
+      "paymentId": "Search payment ID",
+      "search": "Search candidate or payment ID"
+    },
+    "columns": {
+      "id": "Candidate ID",
+      "paymentId": "Payment ID",
+      "businessRef": "Business Ref",
+      "amount": "Amount",
+      "status": "Status",
+      "eligibleAt": "Expected processing time",
+      "nextEvaluationAt": "Next evaluation",
+      "releasedAt": "Available at",
+      "createdAt": "Created at",
+      "reasonCode": "Reason",
+      "ids": "Candidate / payment",
+      "paymentShort": "Pay",
+      "statusReason": "Status & reason",
+      "actions": "Actions"
+    },
+    "status": {
+      "PENDING": "Pending",
+      "EVALUATING": "Evaluating",
+      "AVAILABLE": "Available",
+      "BLOCKED": "Blocked",
+      "FAILED": "Failed",
+      "SKIPPED": "Skipped"
+    },
+    "detail": {
+      "title": "Settlement processing detail",
+      "back": "Back to list",
+      "notFound": "Settlement processing record not found.",
+      "journalId": "Journal ID",
+      "releaseJournalId": "Release Journal ID",
+      "retryCount": "Retry count",
+      "lastTriggeredAt": "Last triggered at",
+      "paymentTitle": "Payment",
+      "paymentSucceededAt": "Payment succeeded at",
+      "journalUnavailableTitle": "Availability journal unavailable",
+      "journalUnavailableBody": "This candidate references a journal that could not be resolved. Available-at time is hidden until the ledger fact is available.",
+      "bannerTitle": "Task is {status}",
+      "retryChip": "{count} retries",
+      "reasonLabel": "Reason:",
+      "noReason": "No reason code provided.",
+      "basicsTitle": "Basics & amount",
+      "journalsTitle": "Ledger journals",
+      "timelineTitle": "Schedule timeline",
+      "paymentAmount": "Payment amount",
+      "lastTriggeredWithRetry": "Last trigger (retry {count})",
+      "releasedPending": "Not released"
+    },
+    "actions": {
+      "view_detail": "Details"
+    },
+    "pagination": {
+      "total": "Total {count} settlement jobs"
+    },
+    "amount_pending": "Pending eval",
+    "copy_id": "Copy candidate ID",
+    "copy_payment_id": "Copy payment ID",
+    "copy_success": "Copied",
+    "copy_failed": "Copy failed",
+    "copy_business_ref": "Copy business ref",
+    "copy_journal_id": "Copy journal ID",
+    "copy_release_journal_id": "Copy release journal ID",
+    "reasonGuidance": {
+      "CAPABILITY_DISABLED": "The merchant capability is disabled, so automatic settlement evaluation is paused.",
+      "NOT_PRODUCTIZED": "This money product is not available for this merchant yet.",
+      "OWNER_NOT_SUPPORTED": "This owner type is not supported for this settlement action.",
+      "fallback": "The system returned this reason code. Check merchant capability settings."
+    },
+    "next_eval_hint": "Next auto evaluation",
+    "reasonShort": {
+      "CAPABILITY_DISABLED": "Capability disabled",
+      "CONTEXT_RESOLVE_FAILED": "Context resolve failed",
+      "NOT_PRODUCTIZED": "Not productized",
+      "OWNER_NOT_SUPPORTED": "Owner not supported"
+    }
+  }
+}

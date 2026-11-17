@@ -1,0 +1,197 @@
+{
+  "Pages": {
+    "risk_control": {
+      "title": "Payment Risk Control",
+      "subtitle": "Secure every transaction from authorization to settlement",
+      "hero_title": "Payment Risk Control",
+      "hero_desc": "Secure every transaction with real-time rules, expert review, and integrated chargeback insurance—connect Signifyd, Riskified, or Forter with your own credentials, or subscribe to FilixPay platform-hosted coverage.",
+      "pipeline": {
+        "rules": {
+          "title": "Rules Engine",
+          "desc": "Real-time fraud prevention"
+        },
+        "monitor": {
+          "title": "Event Monitor",
+          "desc": "Fraud events and expert review"
+        },
+        "coverage": {
+          "title": "Insurance Partners",
+          "desc": "Signifyd · Riskified · Forter"
+        }
+      },
+      "modules": {
+        "rules": {
+          "title": "Real-Time Rule Engine & Fraud Prevention",
+          "desc": "Millisecond risk decisions during authorization with configurable merchant rules and pre/post-authorization checks.",
+          "points": {
+            "0": "Concurrent compliance and fraud checks at authorization",
+            "1": "Configurable thresholds by geography, behavior, and velocity",
+            "2": "Transaction-level protection distinct from credit-line risk"
+          }
+        },
+        "monitor": {
+          "title": "Fraud Event Monitoring & Expert Manual Review",
+          "desc": "Dual-Layer Verification combines intelligent screening with expert manual review to minimize false declines.",
+          "points": {
+            "0": "Automated fraud event detection and tracking",
+            "1": "Expert manual review queue for anomalous transactions",
+            "2": "Operator alerts for time-sensitive decisions"
+          }
+        },
+        "coverage": {
+          "title": "Integrated Chargeback Insurance Partners",
+          "desc": "FilixPay natively integrates leading chargeback insurance and fraud-guarantee providers. Merchants choose how to consume coverage—bring your own provider contract or subscribe to platform-hosted service.",
+          "disclaimer": "* Subject to service terms, eligibility, and coverage limits.",
+          "points": {
+            "0": "One integration layer for Signifyd, Riskified, and Forter",
+            "1": "Self-configure provider credentials in the merchant center",
+            "2": "Or subscribe to platform-hosted coverage without managing API keys"
+          }
+        }
+      },
+      "delivery_modes": {
+        "title": "Two Ways to Activate Coverage",
+        "desc": "FilixPay supports both merchant-managed provider configuration and platform-hosted subscription—matching independent merchants and marketplace sub-merchants.",
+        "items": {
+          "self_config": {
+            "icon": "🔑",
+            "title": "Bring Your Own Provider (BYOK)",
+            "desc": "Connect your existing Signifyd, Riskified, or Forter account. Configure API keys, webhook secrets, and environment in the merchant center—FilixPay routes assessments and claims to your chosen partner.",
+            "points": {
+              "0": "Full control of provider contract and credentials",
+              "1": "Ideal for independent merchants with direct insurer relationships",
+              "2": "Switch providers with a guided configuration workflow"
+            }
+          },
+          "platform_subscription": {
+            "icon": "🛡️",
+            "title": "Platform-Hosted Coverage Subscription",
+            "desc": "Third-party merchants on the Filix platform can subscribe to coverage insurance powered by the platform merchant's provider configuration—no separate insurer signup required.",
+            "points": {
+              "0": "One-click subscription in the merchant center",
+              "1": "Eligibility tied to pre-auth security rule compliance",
+              "2": "Platform operates provider relationship on your behalf"
+            }
+          }
+        }
+      },
+      "providers": {
+        "title": "Supported Insurance & Fraud-Guarantee Partners",
+        "desc": "FilixPay's core differentiator is deep, production-ready integration with industry-leading chargeback protection providers—not a generic fraud score, but real insurer-backed coverage workflows.",
+        "items": {
+          "signifyd": {
+            "name": "Signifyd",
+            "tagline": "Commerce protection with chargeback guarantee",
+            "desc": "Signifyd combines real-time fraud decisioning with guaranteed chargeback coverage for approved e-commerce orders. FilixPay forwards transaction context, receives coverage decisions, and automates claim workflows via webhooks."
+          },
+          "riskified": {
+            "name": "Riskified",
+            "tagline": "Enterprise fraud intelligence & chargeback guarantee",
+            "desc": "Riskified delivers AI-driven fraud prevention trusted by global retailers. Merchants on FilixPay can route orders for policy decisions and leverage chargeback guarantee programs where eligible."
+          },
+          "forter": {
+            "name": "Forter",
+            "tagline": "Real-time fraud prevention for digital commerce",
+            "desc": "Forter provides identity-centric fraud decisioning and chargeback abuse protection at scale. FilixPay integrates assessment, webhook updates, and claim submission for Forter-backed merchants."
+          }
+        },
+        "footnote": "Provider availability and feature scope depend on your merchant type, configuration mode, and partner contract terms."
+      },
+      "audience": {
+        "title": "Built for High-Stakes Commerce",
+        "desc": "FilixPay risk control supports cross-border merchants, marketplace operators, and businesses that need audit-ready fraud workflows.",
+        "items": {
+          "cross_border": {
+            "title": "Cross-Border E-Commerce",
+            "desc": "Protect international card-not-present revenue."
+          },
+          "marketplace": {
+            "title": "Platform & Marketplace",
+            "desc": "Third-party merchant ecosystems with shared risk oversight."
+          },
+          "high_risk": {
+            "title": "Elevated Dispute Exposure",
+            "desc": "Verticals where chargeback anxiety slows growth."
+          }
+        }
+      },
+      "workflow": {
+        "title": "Full-Chain Workflow",
+        "desc": "A single linear path from checkout to eligible protection.",
+        "steps": {
+          "checkout": {
+            "title": "Customer Checkout",
+            "desc": "The merchant initiates payment and FilixPay captures transaction context such as metadata and device signals."
+          },
+          "rules": {
+            "title": "Rule Evaluation",
+            "desc": "The risk engine matches merchant rules and global policies within milliseconds to approve, block, or route to review."
+          },
+          "review": {
+            "title": "Fraud Monitoring & Review",
+            "desc": "High-risk events trigger automated tracking. Dual-Layer Verification routes cases to expert manual review to recover legitimate sales."
+          },
+          "coverage": {
+            "title": "Provider-Backed Chargeback Protection",
+            "desc": "FilixPay submits eligible fraud-related chargebacks to your configured Signifyd, Riskified, or Forter partner—or to platform-hosted coverage for subscribed merchants."
+          }
+        }
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "items": {
+          "what_is": {
+            "q": "What is payment risk control?",
+            "a": "Payment risk control is a multi-layered security framework designed to detect, evaluate, and mitigate fraudulent activities throughout the transaction life cycle—protecting your legitimate revenue without degrading user experience."
+          },
+          "vs_chargeback": {
+            "q": "How is risk control different from chargeback protection?",
+            "a": "Risk control acts as the proactive defense mechanism (pre-authorization and post-authorization rules to prevent fraud from happening), while chargeback protection provides reactive security (financial coverage for qualified transactions if an unforeseen dispute occurs)."
+          },
+          "rule_engine": {
+            "q": "How does the rule engine work?",
+            "a": "Our engine runs concurrent compliance and fraud checks within milliseconds during authorization. Merchants can configure granular thresholds based on geographical location, behavioral heuristics, and velocity limits via the merchant dashboard."
+          },
+          "flagged_review": {
+            "q": "What happens when a transaction is flagged for review?",
+            "a": "When a transaction exhibits anomalous patterns, it triggers an internal fraud event. To prevent false declines, our platform employs a Dual-Layer Verification model, routes it to an expert manual review queue, and alerts operators immediately."
+          },
+          "coverage_eligibility": {
+            "q": "Who is eligible for chargeback coverage?",
+            "a": "Independent merchants can activate coverage by configuring Signifyd, Riskified, or Forter in the merchant center. Third-party platform merchants may subscribe to platform-hosted coverage plans. Individual transaction eligibility depends on provider rules and compliance with localized pre-auth security requirements."
+          },
+          "coverage_providers": {
+            "q": "Which chargeback insurance providers does FilixPay support?",
+            "a": "FilixPay integrates Signifyd, Riskified, and Forter with unified assessment, webhook handling, and claim submission. Merchants either connect their own provider credentials (BYOK) or subscribe to platform-hosted coverage powered by the platform merchant configuration."
+          },
+          "crypto_relation": {
+            "q": "How does this relate to crypto payments (zero chargebacks)?",
+            "a": "While digital assets natively feature transactional finality (meaning zero chargebacks can be technically initiated), our risk engine still enforces pre-authorization rules for crypto payments to detect wallet anomaly patterns and address blocking list compliance."
+          }
+        }
+      },
+      "cta": {
+        "title": "Ready to connect your chargeback insurance partner?",
+        "desc": "Configure Signifyd, Riskified, or Forter—or subscribe to platform-hosted coverage from the merchant center."
+      }
+    },
+    "cross_border": {
+      "title": "Cross-Border E-Commerce",
+      "subtitle": "End-to-end payment solutions for global online sellers",
+      "hero_title": "Sell Globally, Collect Locally",
+      "hero_desc": "Integrate with Shopify, WooCommerce and custom stores. Accept local payment methods in 50+ countries with automatic currency conversion."
+    },
+    "web3_ecommerce": {
+      "title": "Web3 E-Commerce",
+      "subtitle": "Payment infrastructure for the decentralized economy",
+      "hero_title": "The Payment Layer for Web3 Commerce",
+      "hero_desc": "From NFT marketplaces to GameFi ecosystems, power your Web3 commerce with seamless crypto payment rails."
+    },
+    "saas_provider": {
+      "title": "SaaS Provider Solutions",
+      "subtitle": "Multi-tenant payment infrastructure for platform businesses",
+      "hero_title": "Build Your Payment Platform",
+      "hero_desc": "White-label payment capabilities with split payments, sub-merchant management, and automated settlement for your SaaS platform."
+    }
+  }
+}

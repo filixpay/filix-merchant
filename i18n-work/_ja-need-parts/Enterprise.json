@@ -1,0 +1,116 @@
+{
+  "Enterprise": {
+    "pick": {
+      "title": "Select Enterprise",
+      "subtitle": "Choose an enterprise to manage governance.",
+      "empty": "No enterprises available for your identity.",
+      "open": "Open",
+      "code": "Code"
+    },
+    "dashboard": {
+      "title": "Enterprise Dashboard",
+      "subtitle": "Governance aggregates across organizations in this enterprise.",
+      "active_organizations": "Active Organizations",
+      "suspended_organizations": "Suspended Organizations",
+      "merchants": "Merchants",
+      "read_model_note": "Counts reflect governance metadata only — not wallet, payment, or settlement data.",
+      "enterprise_required": "Select an enterprise using the sidebar switcher or pick page.",
+      "export_csv": "Export CSV",
+      "export_success": "Export downloaded",
+      "org_created_trend": "Organizations created (recent)",
+      "merchant_created_trend": "Merchants created (recent)",
+      "trend_empty": "No creations in the recent window.",
+      "top_organizations": "Top organizations by merchant count",
+      "top_empty": "No organizations yet.",
+      "col_name": "Name",
+      "col_code": "Code",
+      "col_status": "Status",
+      "col_merchant_count": "Merchants"
+    },
+    "organizations": {
+      "title": "Organization Directory",
+      "subtitle": "Organizations attached to this enterprise. Directory access does not grant merchant operations.",
+      "directory_note": "Switch opens the Merchant Portal when you have organization membership. No login is recorded on switch.",
+      "empty_admin_hint": "No organizations under this enterprise yet. Create one (for example a legal entity).",
+      "empty_viewer_hint": "No organizations under this enterprise yet. Creating organizations requires Enterprise ADMIN.",
+      "create": "Create Organization",
+      "create_title": "Create Organization",
+      "create_success": "Organization created",
+      "field_name": "Name",
+      "field_name_required": "Name is required",
+      "field_legal_name": "Legal name",
+      "field_owner_email": "Initial OWNER email",
+      "field_owner_email_extra": "Optional. User must have signed in to the merchant portal at least once.",
+      "field_owner_email_invalid": "Enter a valid email",
+      "col_name": "Name",
+      "col_code": "Code",
+      "col_status": "Status",
+      "col_actions": "Actions",
+      "switch": "Switch to Merchant Portal",
+      "switch_success": "Opening {name} in Merchant Portal",
+      "switch_membership_required": "You need active organization membership to open this organization in the Merchant Portal.",
+      "switch_suspended": "This organization is suspended. Activate it before switching to the Merchant Portal.",
+      "suspend": "Suspend",
+      "activate": "Activate",
+      "suspend_title": "Suspend {name}",
+      "activate_title": "Activate {name}",
+      "suspend_success": "Organization suspended",
+      "activate_success": "Organization activated",
+      "field_reason": "Reason",
+      "field_reason_required": "Reason is required to suspend",
+      "field_reason_placeholder": "Compliance hold, operational review, …"
+    },
+    "audit": {
+      "title": "Enterprise Audit",
+      "subtitle": "Governance events for this enterprise. Ops platform audits are not shown here.",
+      "search": "Search",
+      "reset": "Reset",
+      "filter_organization_code": "Organization code",
+      "filter_action": "Action",
+      "filter_action_all": "All actions",
+      "col_time": "Time",
+      "col_action": "Action",
+      "col_actor": "Actor",
+      "col_resource": "Resource",
+      "col_result": "Result",
+      "col_reason": "Reason",
+      "actions": {
+        "enterprise": {
+          "organization": {
+            "created": "Organization created",
+            "suspended": "Organization suspended",
+            "activated": "Organization activated"
+          },
+          "member": {
+            "added": "Member added",
+            "suspended": "Member suspended",
+            "removed": "Member removed",
+            "kind_changed": "Member kind changed"
+          }
+        }
+      }
+    },
+    "members": {
+      "title": "Enterprise Members",
+      "subtitle": "Manage enterprise governance membership (not organization RBAC).",
+      "add": "Add Member",
+      "add_title": "Add Enterprise Member",
+      "add_success": "Member added",
+      "field_identity_id": "Identity ID",
+      "field_identity_required": "Identity ID is required",
+      "field_kind": "Kind",
+      "col_email": "Email",
+      "col_identity": "Identity",
+      "col_kind": "Kind",
+      "col_status": "Status",
+      "col_actions": "Actions",
+      "suspend": "Suspend",
+      "remove": "Remove",
+      "remove_confirm": "Remove this enterprise member?",
+      "kind_updated": "Member kind updated",
+      "suspended": "Member suspended",
+      "removed": "Member removed",
+      "last_admin_required": "Cannot remove or demote the last active enterprise admin."
+    }
+  }
+}

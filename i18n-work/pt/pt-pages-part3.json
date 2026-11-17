@@ -1,0 +1,349 @@
+{
+  "Pages": {
+    "group_enterprise": {
+      "title": "Group Enterprise",
+      "subtitle": "Plataforma unificada de pagamento e governança de fundos para grandes grupos",
+      "hero_title": "Construa uma plataforma unificada de pagamento e governança de fundos para grandes grupos",
+      "hero_desc": "Da governança empresarial e cobrança unificada ao settlement inteligente e auditoria de ponta a ponta — ajude grandes grupos a alcançar governança centralizada na matriz, operações independentes por pessoa jurídica e fundos transparentes e controláveis.",
+      "hero_ending": "Governança centralizada. Operações independentes. Fundos transparentes.",
+      "pain_points": {
+        "title": "Lacunas de controle de fundos nas operações do grupo",
+        "items": [
+          {
+            "title": "Cobrança por QR Code pessoal",
+            "desc": "Lojas e equipes de projeto aceitam pagamentos via contas pessoais WeChat ou Alipay, contornando as contas do grupo para que a matriz não consiga acompanhar as entradas em tempo real.",
+            "consequences": "Circuitos de fundos fora dos livros, dor na reconciliação, dados operacionais distorcidos."
+          },
+          {
+            "title": "Desvio para contas de terceiros",
+            "desc": "Recebimentos do negócio fluem para plataformas de terceiros ou contas pessoais fora do controle do grupo, criando pools off-book e enfraquecendo o agendamento centralizado de fundos.",
+            "consequences": "Fundos fragmentados, exposição de compliance, decisões sem dados confiáveis."
+          },
+          {
+            "title": "Canais de pagamento fragmentados",
+            "desc": "Cada pessoa jurídica se conecta a provedores de pagamento de forma independente, com taxas e ciclos de settlement diferentes, tornando a reconciliação propensa a erros e cara.",
+            "consequences": "Relatórios não confiáveis, alta manutenção, integrações complexas."
+          },
+          {
+            "title": "Pools de fundos off-book",
+            "desc": "Parte da receita nunca chega a contas governadas ou se move por canais informais, então o grupo não consegue ver a posição real de operação e de fundos.",
+            "consequences": "Controles internos fracos, auditorias caras, baixa transparência de fundos."
+          }
+        ]
+      },
+      "architecture": {
+        "title": "Arquitetura de governança empresarial",
+        "lead": "Governança centralizada na matriz. Operações independentes em cada pessoa jurídica.",
+        "lead_en": "A governança para no nível Organization, preservando a independência operacional de cada pessoa jurídica.",
+        "reinforcing": "A governança centraliza a gestão sem centralizar as operações.",
+        "not_org_chart": "Este diagrama ilustra apenas relações de governança — não contagens reais de organizações nem profundidade hierárquica.",
+        "example_footnote": "Exemplo: um grupo diversificado pode mapear Enterprise para a matriz do grupo, Organization para a pessoa jurídica de uma unidade de negócio e Merchant para uma loja ou operador de projeto (somente exemplo — não se refere a nenhuma empresa ou parceria específica).",
+        "layers": {
+          "identity": "Identity",
+          "enterprise": "Enterprise",
+          "organization": "Organization",
+          "merchant": "Merchant",
+          "admin": "ADMIN",
+          "viewer": "VIEWER"
+        }
+      },
+      "capabilities": {
+        "title": "Capacidades da plataforma",
+        "items": [
+          {
+            "icon": "🏛️",
+            "title": "Governança empresarial",
+            "desc": "A matriz cria e gerencia pessoas jurídicas de forma centralizada. A governança para no nível Organization — não substitui as operações do dia a dia nem a autorização."
+          },
+          {
+            "icon": "💳",
+            "title": "Cobrança unificada",
+            "desc": "Estratégia de acquiring e coordenação de canais em todo o grupo, com cada pessoa jurídica contratando e operando sob a própria entidade, enquanto os fundos permanecem transparentes e controláveis."
+          },
+          {
+            "icon": "⚡",
+            "title": "Settlement inteligente",
+            "desc": "APIs licenciadas de split payment automatizam o clearing, reduzem trânsito manual e suportam settlement multi-entidade e multi-cenário."
+          },
+          {
+            "icon": "🔍",
+            "title": "Auditoria de ponta a ponta",
+            "desc": "Ações de governança, mudanças de autorização e fluxos de fundos são totalmente rastreáveis para supervisão da matriz e auditoria de compliance."
+          }
+        ]
+      },
+      "governance_model": {
+        "title": "Modelo de governança",
+        "intro": "A FilixPay separa as responsabilidades de governança das operações de negócio do dia a dia, permitindo que a matriz mantenha visibilidade e controle sem substituir a autoridade operacional de cada pessoa jurídica.",
+        "headers": [
+          "Camada de gestão",
+          "Responsabilidade principal"
+        ],
+        "items": [
+          [
+            "Enterprise",
+            "Governança"
+          ],
+          [
+            "Organization",
+            "Autorização e operações"
+          ],
+          [
+            "Merchant",
+            "Execução do negócio"
+          ]
+        ],
+        "admin_not_owner": "Enterprise ADMIN ≠ Organization OWNER"
+      },
+      "rules": {
+        "title": "Regras de negócio principais",
+        "headers": [
+          "Dimensão",
+          "Regra"
+        ],
+        "items": [
+          [
+            "Limite de governança",
+            "A Enterprise governa no nível do grupo (criando e gerenciando Organizations). Ela não possui, controla ou suspende Merchants diretamente — a autorização permanece em cada Organization."
+          ],
+          [
+            "Cobrança unificada",
+            "O grupo pode definir políticas unificadas de acquiring; cada Organization contrata e opera sob a sua pessoa jurídica."
+          ],
+          [
+            "Coleta de fundos",
+            "Pagamentos de clientes fluem para contas supervisionadas — canais externos de cobrança e QR Codes pessoais são proibidos."
+          ],
+          [
+            "Settlement com split",
+            "APIs licenciadas de split automatizam o clearing e reduzem o risco de trânsito manual de fundos."
+          ],
+          [
+            "Fluxo de aprovação",
+            "Movimentações de fundos entre Organizations exigem aprovação do grupo antes da execução."
+          ]
+        ]
+      },
+      "scenarios": {
+        "title": "Cenários de negócio",
+        "scenario_0": {
+          "title": "Configuração da Enterprise",
+          "process": "Criar Example Enterprise → Criar Example Organization → Convidar Organization Owner → Criar Example Merchant 01 → Iniciar operações",
+          "value": "Estabeleça a governança do grupo rapidamente — operações independentes por entidade com visibilidade em toda a matriz."
+        },
+        "scenario_1": {
+          "title": "Cenário 1: Subsidiária vende produtos do grupo",
+          "process": "Cliente paga → Conta do grupo (cobrança unificada) → Grupo reconhece a receita → Sistema aloca a comissão da subsidiária",
+          "value": "Protege a soberania de fundos do grupo com settlement automatizado."
+        },
+        "scenario_2": {
+          "title": "Cenário 2: Split em venda conjunta",
+          "process": "Pedido único inclui produtos do grupo e serviços da subsidiária → API de split no pagamento → Fundos seguem diretamente para múltiplas contas por proporção",
+          "value": "Sem segunda transferência — em conformidade e no prazo."
+        },
+        "scenario_3": {
+          "title": "Cenário 3: Transferência interna entre entidades",
+          "process": "Organization inicia a solicitação → Grupo aprova → Fundos se movem dentro da conta supervisionada do grupo → Organization de destino",
+          "value": "Colaboração interna totalmente rastreável sem que os fundos saiam do perímetro governado."
+        }
+      },
+      "compliance": {
+        "title": "Compliance e controle de risco",
+        "headers": [
+          "Risco",
+          "Solução FilixPay"
+        ],
+        "items": [
+          [
+            "Lacunas de controle de fundos",
+            "Cobrança unificada e pooling em contas supervisionadas — sem QR Codes pessoais ou pools off-book"
+          ],
+          [
+            "Pooling ilegal de fundos",
+            "APIs de split de instituição licenciada — o grupo não retém saldos de clientes em trânsito"
+          ],
+          [
+            "Não conformidade tributária",
+            "Entidades de acquiring, contrato e faturamento permanecem alinhadas com checagens automatizadas"
+          ],
+          [
+            "Controles internos fracos",
+            "Trilhas completas de operação, aprovação multinível para mudanças de regras, ações de governança auditáveis"
+          ],
+          [
+            "Risco cambial (FX)",
+            "Splits cross-border conectam-se ao registro cambial de serviços de comércio com evidências de transação retidas"
+          ]
+        ]
+      },
+      "portal": {
+        "title": "Portal de gestão Enterprise",
+        "shots": {
+          "directory": {
+            "title": "Diretório Enterprise",
+            "alt": "Visão de gestão da Example Enterprise listando entradas da Example Organization",
+            "caption": "Gerencie de forma centralizada todas as organizations sob uma enterprise"
+          },
+          "switch": {
+            "title": "Troca de Organization",
+            "alt": "Alternando do portal da Example Enterprise para o workspace operacional da Example Organization",
+            "caption": "Alterne sem atrito para o workspace operacional de uma organization"
+          },
+          "audit": {
+            "title": "Auditoria de governança",
+            "alt": "Log de auditoria de governança da Example Enterprise mostrando criação de Organization e ações relacionadas",
+            "caption": "Acompanhe ações de governança com histórico completo de auditoria"
+          }
+        }
+      }
+    },
+    "enterprise": {
+      "title": "Expansão global empresarial",
+      "subtitle": "Entrada de baixo custo em pagamentos digitais globais",
+      "hero_title": "Expanda globalmente com confiança",
+      "hero_desc": "Empresas tradicionais agora podem aceitar pagamentos em cripto e expandir globalmente — sem a complexidade de construir a infraestrutura de pagamento do zero."
+    },
+    "architecture": {
+      "title": "Visão geral da arquitetura",
+      "subtitle": "Arquitetura de sistema de pagamento distribuído de nível empresarial",
+      "hero_title": "Feito para escala, projetado para confiabilidade",
+      "hero_desc": "Arquitetura de microsserviços no Kubernetes com processamento orientado a eventos, garantindo 99,99% de uptime e escalabilidade horizontal."
+    },
+    "performance": {
+      "badge": "Benchmark de performance",
+      "hero_title": "Teste de carga da API Create Order",
+      "hero_desc": "Um teste de carga escalonado com k6 no endpoint OpenAPI de create-order em produção, validando estabilidade e latência sob cargas concorrentes de escrita.",
+      "metrics_title": "Métricas principais",
+      "metrics_subtitle": "Carga escalonada de 1 a 50 usuários concorrentes com 0% de taxa de erro do início ao fim.",
+      "metrics": {
+        "tps": "Throughput de pedidos (TPS)",
+        "success_rate": "Taxa de sucesso",
+        "p95": "Latência P95",
+        "p99": "Latência P99"
+      },
+      "recommended_limit": "Limite de taxa recomendado em produção: ~100 TPS (capacidade estável × 70%).",
+      "capacity": {
+        "title": "Estimativa de capacidade diária de pedidos",
+        "subtitle": "Com base em um dia útil de 8 horas, com janela de pico de 4 horas.",
+        "intro": "Usando o throughput estável deste teste de carga, estimamos quantos pedidos a API create-order consegue processar em um dia útil típico.",
+        "assumption_hours": "Premissa de negócio: 8 horas ativas por dia para criação de pedidos.",
+        "assumption_peak": "Premissa de pico: 4 horas de pico no limite recomendado de 100 TPS.",
+        "assumption_off_peak": "Premissa fora de pico: as outras 4 horas são estimadas em 30% do pico, ou seja, 30 TPS; também fornecemos 100 TPS constantes nas 8 horas como referência de taxa plena.",
+        "formula": "Fórmula: pedidos = TPS × 3.600 segundos × horas.",
+        "highlight_daily": "Capacidade diária recomendada (modelo pico/fora de pico)",
+        "highlight_daily_desc": "4 horas de pico a 100 TPS + 4 horas fora de pico a {offPeak} TPS",
+        "highlight_daily_flat": "Referência diária à taxa plena",
+        "highlight_daily_flat_desc": "Todas as 8 horas a 100 TPS (fora de pico também a 100 TPS)",
+        "highlight_peak": "Capacidade de pico de 4 horas",
+        "highlight_peak_desc": "No limite recomendado de 100 TPS",
+        "tps_mixed": "Pico {peak} / Fora de pico {offPeak} TPS",
+        "table": {
+          "scenario": "Cenário",
+          "tps": "TPS de referência",
+          "orders": "Pedidos criados"
+        },
+        "rows": {
+          "peak_limit": "4 horas de pico (limite recomendado)",
+          "daily_mixed": "8 horas úteis (modelo pico/fora de pico, recomendado)",
+          "daily_flat": "8 horas úteis (fora de pico também a 100 TPS)",
+          "peak_stable": "4 horas de pico (valor estável do teste de carga)",
+          "daily_full": "8 horas úteis (throughput completo do teste de carga, máximo teórico)"
+        },
+        "disclaimer": "Esses números refletem a capacidade da API create-order em um único deployment testado. APIs de pagamento, reembolso, consulta e outras estão excluídas. O planejamento de produção também deve considerar fatores de pico, redundância e monitoramento."
+      },
+      "methodology_title": "Metodologia do teste",
+      "methodology": {
+        "item1": "Endpoint: POST /openapi/v1/orders com autenticação Client Credentials",
+        "item2": "Cenário: payload mínimo de pedido apenas com campos obrigatórios; sem chamadas a canais de pagamento",
+        "item3": "Ferramenta: Grafana k6 com carga escalonada até 50 VUs por 19 minutos e 30 segundos",
+        "item4": "Dados: pedidos de teste com prefixo LOADTEST- para identificação e limpeza"
+      },
+      "meta": {
+        "interface": "Endpoint",
+        "tool": "Ferramenta de teste de carga",
+        "duration": "Duração",
+        "orders": "Pedidos criados"
+      },
+      "evidence_title": "Evidências do teste",
+      "evidence_subtitle": "Saída de resumo do k6 e monitoramento de recursos do sistema capturados durante o teste de carga.",
+      "screenshot_summary_alt": "Resumo final do teste de carga k6",
+      "screenshot_summary_caption": "Figura 1: resumo k6 — 165.229 pedidos criados a 141 TPS, P95 353 ms, P99 404 ms, 0% de erros.",
+      "screenshot_50vu_alt": "Monitoramento do sistema com 50 usuários concorrentes",
+      "screenshot_50vu_caption": "Figura 2: pico de 50 VU — Java e MySQL são os principais consumidores de CPU; CPU geral ~61%, serviço permaneceu disponível.",
+      "screenshot_20vu_alt": "Monitoramento do sistema com 20 usuários concorrentes",
+      "screenshot_20vu_caption": "Figura 3: estágio de 20 VU — a carga aumenta progressivamente com aplicação e banco de dados sob pressão compartilhada.",
+      "conclusion_title": "Conclusão",
+      "conclusion_body": "O endpoint OpenAPI create-order da FilixPay permaneceu estável com 50 usuários concorrentes, 100% de taxa de sucesso e latência P99 de 404 ms, fornecendo uma linha de base crível para planejamento de capacidade e expectativas de integração.",
+      "cta_title": "Precisa de maior concorrência ou benchmarking privado?",
+      "cta_desc": "Fale conosco para avaliação de performance sob medida e opções de deployment."
+    },
+    "identity": {
+      "title": "Identity e autenticação",
+      "hero_title": "Identity empresarial: construindo uma base de segurança de nível financeiro com Keycloak",
+      "hero_desc": "Em sistemas de pagamento, a autenticação de identidade não é apenas a primeira porta da experiência do usuário, mas também a linha de defesa central para a segurança dos fundos e operações em conformidade. Adotamos o Keycloak — uma plataforma open-source de Identity and Access Management (IAM) liderada pela Red Hat — como motor unificado de autenticação de identidade, oferecendo segurança de nível financeiro, suporte a compliance global e capacidade para dezenas de milhões de usuários no seu negócio de pagamento.",
+      "why_keycloak_title": "✅ Por que Keycloak? — Validado por instituições globais de referência",
+      "why_keycloak_desc": "O Keycloak foi adotado em profundidade por inúmeros setores com altos requisitos de segurança, incluindo finanças, governo, telecomunicações e cloud computing:",
+      "cases": [
+        {
+          "name": "Hitachi",
+          "desc": "Construiu um servidor de autorização para bancos japoneses que atende aos padrões Financial-grade API (FAPI), passando em mais de 700 testes de consistência para cumprir os requisitos mais rigorosos de compliance de open banking."
+        },
+        {
+          "name": "Austrian Federal Computing Centre (BRZ)",
+          "desc": "Como parceiro tecnológico do governo austríaco, oferece autenticação unificada para mais de 2 milhões de usuários e mais de 130 serviços públicos, operando de forma estável há muitos anos."
+        },
+        {
+          "name": "Infosys",
+          "desc": "Construiu uma plataforma de identidade para um grande grupo farmacêutico japonês, gerenciando mais de 2 milhões de usuários e suportando o login seguro diário de mais de 4.000 farmacêuticos em mais de 750 farmácias."
+        },
+        {
+          "name": "VMware (Broadcom)",
+          "desc": "Integraram profundamente o Keycloak à plataforma Telco Cloud Operations para alcançar a gestão automatizada de usuários, papéis e permissões."
+        }
+      ],
+      "cases_conclusion": "Esses casos comprovam: o Keycloak não apenas lida com alta concorrência e pressão de usuários em larga escala, como também atende aos limiares de compliance de setores altamente regulados, como finanças e governo.",
+      "features_title": "🔐 Capacidades de segurança sob medida para cenários de pagamento",
+      "feature_1_title": "1. Suporte a protocolos de nível financeiro",
+      "feature_1_desc": "Implementação completa de OpenID Connect, OAuth 2.0 e SAML 2.0; suporte nativo às especificações de segurança FAPI (Financial-grade API) para atender ao compliance de PSD2 e open banking; suporte a PKCE, MTLS, verificação de assinatura JWT e outros mecanismos avançados de segurança.",
+      "feature_2_title": "2. Autenticação forte e controle de acesso",
+      "feature_2_desc": "Multi-Factor Authentication (MFA): SMS, TOTP, WebAuthn (FIDO2); Role-Based Access Control (RBAC) e políticas de permissão granulares; gestão de sessão: timeout automático, logout forçado e vinculação de dispositivo.",
+      "feature_3_title": "3. Arquitetura pronta para compliance",
+      "feature_3_desc": "GDPR Ready: minimização de dados, gestão de consentimento, exportação/exclusão de dados; PCI DSS Friendly: sem contato com dados do portador do cartão (PAN), atua apenas como camada de autenticação, reduzindo o escopo de compliance; compatível com requisitos de esquema de proteção multinível (MLPS).",
+      "feature_4_title": "4. Alta disponibilidade e escalabilidade",
+      "feature_4_desc": "Suporta deployment em cluster, sharding de banco de dados e otimização de cache; comprovado em múltiplas plataformas nacionais para lidar com milhões de usuários ativos diários; deployment privado garante soberania de dados e isolamento de rede.",
+      "integration_title": "🛠️ Integre-se sem atrito ao seu sistema de pagamento",
+      "integration_desc": "O Keycloak oferece interfaces padronizadas para fácil integração com:",
+      "integration_items": [
+        "Sistema de gestão do backend do merchant (SSO)",
+        "Autenticação de operadores do gateway de pagamento",
+        "Autorização de acesso a APIs de parceiros",
+        "Plataforma de gestão de permissões de colaboradores internos"
+      ],
+      "integration_footer": "Também oferece suporte a federação com fontes de identidade existentes como LDAP, Active Directory e contas sociais, para uma migração suave e sem sobrecarga.",
+      "choice_title": "💡 Nossa escolha: open source + proteção de nível empresarial",
+      "choice_desc": "O Keycloak é um projeto open-source apoiado pela Red Hat, oferecendo a você:",
+      "choice_item_1": "Vantagem de custo com zero taxas de licenciamento",
+      "choice_item_2": "Ecossistema técnico com comunidade ativa e documentação abrangente",
+      "choice_item_3": "Opções de suporte SLA empresarial com Red Hat Single Sign-On (versão comercial)",
+      "cta_quote": "\"Escolhemos o Keycloak não apenas porque é gratuito, mas porque foi validado por instituições financeiras e governamentais globais — é um motor de identidade verdadeiramente capaz de carregar a segurança de sistemas de pagamento.\"",
+      "cta_desc": "Experimente agora: nossa plataforma de pagamento tem um sistema de autenticação Keycloak integrado, com suporte a conexão rápida ao seu IAM existente, ajudando você a alcançar o equilíbrio ideal entre segurança e eficiência."
+    },
+    "blockchain": {
+      "title": "Integração blockchain",
+      "subtitle": "Adaptação multi-chain e interoperabilidade cross-chain",
+      "hero_title": "Conecte cada chain, confie em cada transação",
+      "hero_desc": "Suporte nativo às principais blockchains consortium, com verificação cross-chain e trilhas de auditoria prontas para compliance.",
+      "deprecated": {
+        "badge": "Descontinuado",
+        "title": "Esta direção tecnológica não é mais o posicionamento de produto da FilixPay",
+        "desc": "A FilixPay foca em infraestrutura de pagamento empresarial — conectividade de pagamento, gestão de transações, settlement e operações de merchants.",
+        "extra": "Esta página é mantida apenas como referência histórica e não é mais indexada como capacidade central da FilixPay.",
+        "notice_title": "Próximo passo recomendado",
+        "notice_body": "Saiba como a FilixPay ajuda empresas a construir e operar infraestrutura de pagamento.",
+        "cta": "Explorar plataforma de pagamento",
+        "cta_title": "Continue com infraestrutura de pagamento",
+        "cta_desc": "Veja as capacidades da plataforma de pagamento empresarial da FilixPay."
+      }
+    }
+  }
+}

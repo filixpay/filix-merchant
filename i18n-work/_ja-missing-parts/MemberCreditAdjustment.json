@@ -1,0 +1,15 @@
+{
+  "MemberCreditAdjustment": {
+    "title": "Credit Adjustment History",
+    "subtitle": "View history of adjustments made to your credit limit.",
+    "headers": {
+      "operator": "Operator",
+      "old_limit": "Previous Limit",
+      "new_limit": "New Limit",
+      "amount": "Amount",
+      "created_at": "Time"
+    },
+    "loading": "Loading adjustment history...",
+    "empty": "No adjustment history found."
+  }
+}

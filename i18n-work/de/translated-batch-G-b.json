@@ -1,0 +1,473 @@
+{
+  "Payouts": {
+    "title": "Abhebungsdatensätze",
+    "subtitle": "Historie und Status Ihrer Abhebungsanträge anzeigen.",
+    "headers": {
+      "withdrawal_no": "Abhebungsnr.",
+      "amount": "Betrag",
+      "status": "Status",
+      "approval_status": "Freigabestatus",
+      "payee_name": "Empfängername",
+      "payee_account": "Empfängerkonto",
+      "applicant": "Antragsteller",
+      "created_at": "Erstellt am",
+      "updated_at": "Aktualisiert am"
+    },
+    "empty": "Keine Abhebungsdatensätze gefunden.",
+    "details": {
+      "title": "Abhebungsdetails",
+      "withdrawal_no": "Abhebungsnr.",
+      "amount": "Betrag",
+      "currency": "Währung",
+      "withdrawal_status": "Status",
+      "approval_status": "Freigabestatus",
+      "payee_name": "Empfängername",
+      "payee_account": "Empfängerkonto",
+      "applicant": "Antragsteller",
+      "created_at": "Erstellt am",
+      "updated_at": "Aktualisiert am"
+    }
+  },
+  "TransferRecords": {
+    "title": "Überweisungsdatensätze",
+    "subtitle": "Historie der Guthabenüberweisungen zwischen Händlern anzeigen.",
+    "headers": {
+      "transfer_no": "Überweisungsnr.",
+      "amount": "Betrag",
+      "status": "Status",
+      "created_at": "Überweisungszeit"
+    },
+    "empty": "Keine Überweisungsdatensätze gefunden.",
+    "item_details": {
+      "title": "Überweisungsdetails",
+      "headers": {
+        "payee_name": "Empfängername",
+        "payee_account": "Kontonummer",
+        "bank": "Bankname",
+        "amount": "Betrag",
+        "status": "Status",
+        "created_at": "Erstellt am"
+      }
+    }
+  },
+  "PayoutRecords": {
+    "title": "Auszahlungsdatensätze",
+    "subtitle": "Historie der geschäftlichen Auszahlungsaufträge anzeigen und verwalten.",
+    "headers": {
+      "payout_no": "Auszahlungsnr.",
+      "amount": "Auszahlungsbetrag",
+      "status": "Status",
+      "created_at": "Auszahlungszeit"
+    },
+    "empty": "Keine Auszahlungsdatensätze gefunden.",
+    "item_details": {
+      "title": "Auszahlungsdetails",
+      "headers": {
+        "payee_name": "Empfängername",
+        "payee_account": "Kontonummer",
+        "bank": "Bankname",
+        "amount": "Auszahlungsbetrag",
+        "status": "Status",
+        "created_at": "Erstellt am"
+      }
+    },
+    "create_modal": {
+      "title": "Auszahlungsantrag erstellen",
+      "available_balance": "Verfügbares Guthaben",
+      "add_item": "Empfänger hinzufügen",
+      "payee_code": "Empfänger-Kundencode",
+      "amount": "Auszahlungsbetrag",
+      "memo": "Vermerk",
+      "submit": "Auszahlung absenden",
+      "cancel": "Abbrechen",
+      "success": "Auszahlungsantrag erfolgreich übermittelt",
+      "insufficient_balance": "Der Gesamtauszahlungsbetrag darf das verfügbare Guthaben nicht überschreiten",
+      "invalid_amount": "Bitte geben Sie einen gültigen Auszahlungsbetrag ein",
+      "payee_required": "Bitte geben Sie den Empfänger-Kundencode ein",
+      "at_least_one": "Bitte fügen Sie mindestens eine Auszahlungsposition hinzu"
+    }
+  },
+  "PaymentSplits": {
+    "title": "Zahlungssplits",
+    "subtitle": "Split-Details und Empfängerstatus von Aufträgen anzeigen und verwalten.",
+    "headers": {
+      "order_id": "Bestell-ID",
+      "trade_no": "Handelsnr.",
+      "amount": "Auftragsbetrag",
+      "order_amount": "Gesamtbetrag",
+      "split_amount": "Split-Betrag",
+      "receivers": "Empfänger",
+      "status": "Status",
+      "type": "Split-Typ",
+      "created_at": "Erstellt am"
+    },
+    "filters": {
+      "order_id": "Bestell-ID",
+      "status": "Status",
+      "all_status": "Alle Status"
+    },
+    "statuses": {
+      "PENDING": "Ausstehend",
+      "PROCESSING": "In Bearbeitung",
+      "SUCCESS": "Erfolgreich",
+      "FAILED": "Fehlgeschlagen",
+      "PARTIAL_SUCCESS": "Teilweise erfolgreich",
+      "CLOSED": "Geschlossen"
+    },
+    "types": {
+      "IMMEDIATE": "Sofort",
+      "DELAYED": "Verzögert"
+    },
+    "details": {
+      "title": "Split-Details",
+      "base_info": "Grundinformationen",
+      "receivers": "Empfängerdetails",
+      "receiver_id": "Empfänger",
+      "receiver_name": "Name",
+      "amount": "Betrag",
+      "proportion": "Anteil",
+      "status": "Status",
+      "progress": "Split-Fortschritt",
+      "view_details": "Details anzeigen",
+      "serial_no": "Laufnr."
+    },
+    "empty": "Keine Split-Zahlungsdatensätze gefunden."
+  },
+  "SettlementReleases": {
+    "title": "Abrechnungsverarbeitung",
+    "subtitle": "Nachverfolgen, wann Mittel als verfügbares Guthaben freigegeben werden.",
+    "empty": "Keine Datensätze zur Abrechnungsverarbeitung gefunden.",
+    "loadError": "Abrechnungsverarbeitung konnte nicht geladen werden.",
+    "filters": {
+      "status": "Status",
+      "paymentId": "Zahlungs-ID suchen",
+      "search": "Kandidaten- oder Zahlungs-ID suchen"
+    },
+    "columns": {
+      "id": "Kandidaten-ID",
+      "paymentId": "Zahlungs-ID",
+      "businessRef": "Geschäftsreferenz",
+      "amount": "Betrag",
+      "status": "Status",
+      "eligibleAt": "Erwartete Verarbeitungszeit",
+      "nextEvaluationAt": "Nächste Bewertung",
+      "releasedAt": "Verfügbar ab",
+      "createdAt": "Erstellt am",
+      "reasonCode": "Grund",
+      "ids": "Kandidat / Zahlung",
+      "paymentShort": "Zhl.",
+      "statusReason": "Status & Grund",
+      "actions": "Aktionen"
+    },
+    "status": {
+      "PENDING": "Ausstehend",
+      "EVALUATING": "Wird bewertet",
+      "AVAILABLE": "Verfügbar",
+      "BLOCKED": "Blockiert",
+      "FAILED": "Fehlgeschlagen",
+      "SKIPPED": "Übersprungen"
+    },
+    "detail": {
+      "title": "Details zur Abrechnungsverarbeitung",
+      "back": "Zurück zur Liste",
+      "notFound": "Datensatz zur Abrechnungsverarbeitung nicht gefunden.",
+      "journalId": "Journal-ID",
+      "releaseJournalId": "Freigabe-Journal-ID",
+      "retryCount": "Anzahl Wiederholungen",
+      "lastTriggeredAt": "Zuletzt ausgelöst am",
+      "paymentTitle": "Zahlung",
+      "paymentSucceededAt": "Zahlung erfolgreich am",
+      "journalUnavailableTitle": "Verfügbarkeitsjournal nicht verfügbar",
+      "journalUnavailableBody": "Dieser Kandidat verweist auf ein Journal, das nicht aufgelöst werden konnte. Der Zeitpunkt „Verfügbar ab“ bleibt ausgeblendet, bis der Ledger-Eintrag vorliegt.",
+      "bannerTitle": "Aufgabe ist {status}",
+      "retryChip": "{count} Wiederholungen",
+      "reasonLabel": "Grund:",
+      "noReason": "Kein Grundcode angegeben.",
+      "basicsTitle": "Grundlagen & Betrag",
+      "journalsTitle": "Ledger-Journale",
+      "timelineTitle": "Zeitplan",
+      "paymentAmount": "Zahlungsbetrag",
+      "lastTriggeredWithRetry": "Letzter Auslöser (Wiederholung {count})",
+      "releasedPending": "Nicht freigegeben"
+    },
+    "actions": {
+      "view_detail": "Details"
+    },
+    "pagination": {
+      "total": "Gesamt {count} Abrechnungsaufträge"
+    },
+    "amount_pending": "Bewertung ausstehend",
+    "copy_id": "Kandidaten-ID kopieren",
+    "copy_payment_id": "Zahlungs-ID kopieren",
+    "copy_success": "Kopiert",
+    "copy_failed": "Kopieren fehlgeschlagen",
+    "copy_business_ref": "Geschäftsreferenz kopieren",
+    "copy_journal_id": "Journal-ID kopieren",
+    "copy_release_journal_id": "Freigabe-Journal-ID kopieren",
+    "reasonGuidance": {
+      "CAPABILITY_DISABLED": "Die Händlerfähigkeit ist deaktiviert; die automatische Abrechnungsbewertung ist daher pausiert.",
+      "NOT_PRODUCTIZED": "Dieses Geldprodukt ist für diesen Händler noch nicht verfügbar.",
+      "OWNER_NOT_SUPPORTED": "Dieser Eigentümertyp wird für diese Abrechnungsaktion nicht unterstützt.",
+      "fallback": "Das System hat diesen Grundcode zurückgegeben. Prüfen Sie die Einstellungen der Händlerfähigkeiten."
+    },
+    "next_eval_hint": "Nächste automatische Bewertung",
+    "reasonShort": {
+      "CAPABILITY_DISABLED": "Fähigkeit deaktiviert",
+      "CONTEXT_RESOLVE_FAILED": "Kontextauflösung fehlgeschlagen",
+      "NOT_PRODUCTIZED": "Nicht produktisiert",
+      "OWNER_NOT_SUPPORTED": "Eigentümer nicht unterstützt"
+    }
+  },
+  "TransactionReconciliation": {
+    "title": "Transaktionsabgleich",
+    "subtitle": "Anbieter-Transaktionsbelege abgeglichen mit Ihren Aufträgen (Abgleichsumfang: Auftrag).",
+    "empty": "Keine Abgleichseinträge in diesem Zeitraum.",
+    "emptyNoReconData": "Keine Anbieter-Abgleichsdaten für diesen Kanal und Datumsbereich.",
+    "emptyCoverageNoRows": "Für diesen Zeitraum liegen Anbieter-Handelsbelege vor, aber für Ihren Händler sind keine Aufträge sichtbar (Kanalberechtigung, Auftragszugehörigkeit und channelOrderId-Zuordnung prüfen).",
+    "emptyHint": "Versuchen Sie einen anderen Datumsbereich oder Kanal und dann Abfragen — oder setzen Sie die Filter zurück.",
+    "query": "Abfragen",
+    "reset": "Zurücksetzen",
+    "loadError": "Transaktionsabgleich konnte nicht geladen werden.",
+    "export": "CSV exportieren",
+    "exportFailed": "Export fehlgeschlagen.",
+    "noReconDataTitle": "Keine Anbieter-Abgleichsdaten",
+    "noReconDataDescription": "FilixPay hat für den ausgewählten Kanal und bizDate-Bereich keinen Anbieter-Abgleichsbatch erhalten. Das unterscheidet sich davon, dass keine passenden Aufträge vorhanden sind.",
+    "reconciliationLevelOrder": "Auftrag",
+    "filters": {
+      "channelCode": "Kanal",
+      "channel_all": "Alle Kanäle",
+      "scope": "Umfang"
+    },
+    "channels": {
+      "ALL": "Alle Kanäle",
+      "STRIPE": "STRIPE",
+      "PAYPAL": "PAYPAL"
+    },
+    "scope": {
+      "default": "Nur abgeglichen",
+      "allTransactions": "Alle Transaktionen"
+    },
+    "columns": {
+      "payment": "Zahlung",
+      "order": "Auftrag",
+      "reconciliationLevel": "Abgleichsebene",
+      "channelCode": "Kanal",
+      "reconciliationStatus": "Abgleichsstatus",
+      "bizDate": "Geschäftstag",
+      "actions": "Aktionen"
+    },
+    "reconStatus": {
+      "MATCHED": "Übereinstimmend",
+      "MISMATCH": "Abweichung",
+      "RECONCILIATION_PENDING": "Ausstehend",
+      "NOT_RECONCILED": "Nicht abgeglichen"
+    },
+    "sections": {
+      "association": "Zuordnung Zahlung / Auftrag",
+      "comparison": "Anbieter vs. FilixPay",
+      "provider": "Anbieter",
+      "filixpay": "FilixPay"
+    },
+    "fields": {
+      "paymentId": "Zahlungs-ID",
+      "orderId": "Auftrags-ID",
+      "reconciliationLevel": "Abgleichsebene",
+      "channelCode": "Kanal",
+      "bizDate": "Geschäftstag",
+      "reconciliationStatus": "Abgleichsstatus",
+      "mismatchType": "Abweichungstyp",
+      "providerTransactionId": "Anbieter-Transaktions-ID",
+      "providerOrderId": "Anbieter-Auftrags-ID",
+      "providerAmount": "Anbieterbetrag",
+      "providerStatus": "Anbieterstatus",
+      "localAmount": "FilixPay-Betrag",
+      "localStatus": "FilixPay-Status"
+    },
+    "detail": {
+      "title": "Details zum Transaktionsabgleich",
+      "reconScopeOrder": "Abgleichsumfang: Auftrag",
+      "back": "Zurück zur Liste",
+      "notFound": "Abgleichsdatensatz nicht gefunden."
+    },
+    "actions": {
+      "view_detail": "Details"
+    },
+    "copy_payment_id": "Zahlungs-ID kopieren",
+    "copy_order_id": "Auftrags-ID kopieren",
+    "copy_success": "Kopiert",
+    "copy_failed": "Kopieren fehlgeschlagen"
+  },
+  "Settlements": {
+    "title": "Abrechnungsbelege",
+    "subtitle": "Freigegebene Abrechnungsfakten mit Anbieter-Abgleichsstatus.",
+    "empty": "Keine Abrechnungen gefunden.",
+    "loadError": "Abrechnungen konnten nicht geladen werden.",
+    "filters": {
+      "reconStatus": "Abgleichsstatus",
+      "asset": "Asset",
+      "paymentId": "Zahlungs-ID"
+    },
+    "columns": {
+      "settlementId": "Abrechnungs-ID",
+      "moneyInRef": "Money-In-Ref.",
+      "asset": "Asset",
+      "gross": "Brutto",
+      "fee": "Gebühr",
+      "net": "Netto",
+      "releasedAt": "Freigegeben am",
+      "reconStatus": "Abgleich",
+      "provider": "Anbieter",
+      "actions": "Aktionen"
+    },
+    "reconStatus": {
+      "PENDING": "Ausstehend",
+      "MATCHED": "Übereinstimmend",
+      "EXCEPTION": "Ausnahme"
+    },
+    "sections": {
+      "settlement": "Abrechnungsgrundlagen",
+      "providerSettlement": "Anbieterabrechnung",
+      "reconciliation": "Abgleich",
+      "timeline": "Abrechnungszeitachse"
+    },
+    "fields": {
+      "moneyInRef": "Money-In-Ref.",
+      "releaseRef": "Freigabe-Ref.",
+      "releasedAt": "Freigegeben am",
+      "gross": "Brutto",
+      "fee": "Gebühr",
+      "net": "Netto",
+      "provider": "Anbieter",
+      "providerReference": "Anbieterreferenz",
+      "settlementDate": "Abrechnungsdatum",
+      "expectedNet": "Erwartetes Netto",
+      "actualNet": "Tatsächliches Netto",
+      "reconStatus": "Abgleichsstatus",
+      "difference": "Differenz"
+    },
+    "timeline": {
+      "CANDIDATE_CREATED": "Kandidat erstellt",
+      "RELEASED": "Freigegeben",
+      "LEDGER_POSTED": "Im Ledger gebucht",
+      "PROVIDER_STATEMENT_INGESTED": "Anbieterauszug übernommen",
+      "RECON_MATCHED": "Abgleich übereinstimmend",
+      "RECON_EXCEPTION": "Abgleichsausnahme"
+    },
+    "timelineEmpty": "Noch keine Zeitachsenereignisse.",
+    "detail": {
+      "title": "Abrechnungsdetails",
+      "back": "Zurück zur Liste",
+      "notFound": "Abrechnung nicht gefunden."
+    },
+    "actions": {
+      "view": "Anzeigen",
+      "view_detail": "Details anzeigen"
+    },
+    "copy_settlement_id": "Abrechnungs-ID kopieren",
+    "copy_success": "Kopiert",
+    "copy_failed": "Kopieren fehlgeschlagen",
+    "copy_money_in_ref": "Money-In-Ref. kopieren",
+    "copy_release_ref": "Freigabe-Ref. kopieren",
+    "summary": {
+      "net": "Abrechnungsnetto",
+      "gross": "Brutto",
+      "fee": "Gebühr",
+      "reconStatus": "Abgleich"
+    },
+    "providerEmptyNotice": "Noch kein Anbieter-Abrechnungsdokument verfügbar."
+  },
+  "SettlementStatements": {
+    "title": "Abrechnungsaufzeichnungen",
+    "subtitle": "Tages-/Wochen-/Monatsabrechnungszeiträume und den Abrechnungsbetrag der aktuellen Periode anzeigen.",
+    "empty": "Keine Abrechnungsauszüge gefunden.",
+    "loadError": "Abrechnungsauszüge konnten nicht geladen werden.",
+    "noAssets": "Keine verfügbaren Guthaben-Assets zum Abfragen von Abrechnungsauszügen.",
+    "periodNotStarted": "Dieser Zeitraum hat noch nicht begonnen; der Auszug ist daher nicht verfügbar.",
+    "downloadError": "Abrechnungsauszug konnte nicht heruntergeladen werden.",
+    "openHint": "Dieser Zeitraum ist noch offen; Beträge sind aktuell zum jetzigen Zeitpunkt.",
+    "openBanner": "Dieser Zeitraum ist noch offen; Beträge sind aktuell zum jetzigen Zeitpunkt.",
+    "filters": {
+      "asset": "Asset",
+      "assetPlaceholder": "Asset auswählen",
+      "allAssets": "Alle Währungen",
+      "periodKind": "Periode"
+    },
+    "periodKind": {
+      "DAY": "Tag",
+      "WEEK": "Woche",
+      "MONTH": "Monat"
+    },
+    "periodState": {
+      "OPEN": "Offen",
+      "CLOSED": "Geschlossen"
+    },
+    "coverageState": {
+      "OK": "OK",
+      "PARTIAL_COVERAGE": "Teilweise Abdeckung",
+      "INCONSISTENT": "Inkonsistent"
+    },
+    "columns": {
+      "periodKey": "Auszugsperiode",
+      "asset": "Asset",
+      "settlementNet": "Abrechnungsnetto",
+      "gross": "Brutto",
+      "fee": "Gebühr",
+      "adjustment": "Anpassung",
+      "released": "Freigegeben",
+      "payout": "Auszahlung",
+      "state": "Zustand",
+      "timezone": "Zeitzone",
+      "periodState": "Status",
+      "coverage": "Datenabdeckung",
+      "actions": "Aktionen"
+    },
+    "detail": {
+      "title": "Details zum Abrechnungsauszug",
+      "back": "Zurück zur Liste",
+      "notFound": "Abrechnungsauszug nicht gefunden.",
+      "download": "XLSX herunterladen",
+      "summaryTitle": "Zusammenfassung",
+      "asOf": "Stand",
+      "window": "Zeitfenster",
+      "effectiveAt": "Wirksam am",
+      "payoutProgress": "Fortschritt Auszahlung & Freigabe",
+      "pendingPayout": "Ausstehende Auszahlung",
+      "payoutStatusNone": "Status: nicht ausgezahlt",
+      "payoutStatusPartial": "Status: teilweise ausgezahlt"
+    },
+    "events": {
+      "title": "Geschäftsereignisse",
+      "empty": "Keine Ereignisse.",
+      "businessRef": "Geschäftsreferenz",
+      "gross": "Brutto",
+      "fee": "Gebühr",
+      "adjustment": "Anpassung",
+      "noJournals": "Keine verknüpften Journale.",
+      "count": "{count} Ereignisse",
+      "eventType": "Ereignistyp",
+      "effectiveAt": "Wirksam am",
+      "copy": "Geschäftsreferenz kopieren",
+      "copy_success": "Kopiert",
+      "copy_failed": "Kopieren fehlgeschlagen"
+    },
+    "diagnostics": {
+      "title": "Diagnose",
+      "conflicts": "Konflikte",
+      "unclassified": "Nicht klassifiziert",
+      "journalId": "Journal-ID",
+      "kind": "Art",
+      "businessType": "Geschäftstyp",
+      "reason": "Grund"
+    },
+    "actions": {
+      "view_detail": "Details"
+    },
+    "pagination": {
+      "total": "Gesamt {count} Auszüge"
+    },
+    "timezoneChip": {
+      "label": "{timezone}",
+      "fallback": "Asia/Shanghai"
+    }
+  }
+}

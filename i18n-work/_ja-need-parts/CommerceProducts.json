@@ -1,0 +1,148 @@
+{
+  "CommerceProducts": {
+    "list": {
+      "title": "Commerce products",
+      "subtitle": "Create and publish products to your storefront.",
+      "create": "Create product"
+    },
+    "create": {
+      "title": "Create product",
+      "back": "Back to products",
+      "submit": "Create product",
+      "save_draft": "Save draft",
+      "publish": "Publish product"
+    },
+    "detail": {
+      "title": "Product detail",
+      "back": "Back to products",
+      "status": "Status",
+      "external_id": "Saleor product ID",
+      "last_error": "Last sync error",
+      "not_found": "Product not found.",
+      "read_only_hint": "Published or suspended products can only be published or unpublished — edit is available in draft with ready or failed integration."
+    },
+    "columns": {
+      "thumbnail": "Image",
+      "title": "Product",
+      "sku": "SKU",
+      "price": "Price",
+      "stock": "Stock",
+      "status": "Status",
+      "updated": "Updated",
+      "actions": "Actions"
+    },
+    "filters": {
+      "search_placeholder": "Search product name / SKU…",
+      "category_all": "All categories",
+      "status_all": "All statuses",
+      "status_published": "Live",
+      "status_suspended": "Unpublished",
+      "status_draft": "Draft",
+      "status_syncing": "Syncing",
+      "search": "Search",
+      "reset": "Reset"
+    },
+    "listStatus": {
+      "live": "Live",
+      "suspended": "Unpublished",
+      "draft": "Draft",
+      "syncing": "Syncing",
+      "sync_failed": "Sync failed",
+      "needs_attention": "Needs attention"
+    },
+    "stock": {
+      "out_of_stock": "Out of stock",
+      "low": "Low stock"
+    },
+    "bulk": {
+      "selected": "{count} selected",
+      "unpublish": "Bulk unpublish",
+      "delete": "Bulk delete",
+      "unpublish_title": "Unpublish selected products?",
+      "unpublish_body": "This will unpublish {count} live product(s).",
+      "unpublish_done": "Unpublished {count} product(s)",
+      "delete_title": "Delete selected products?",
+      "delete_body": "This permanently deletes {count} product(s). This cannot be undone.",
+      "delete_done": "Deleted {count} product(s)",
+      "no_unpublishable": "No selected products can be unpublished"
+    },
+    "empty": "No products yet. Create your first product.",
+    "actions": {
+      "edit": "Edit",
+      "more": "More actions",
+      "publish": "Publish",
+      "unpublish": "Unpublish",
+      "retry_sync": "Sync",
+      "delete": "Delete",
+      "save": "Save changes",
+      "cancel": "Cancel"
+    },
+    "business": {
+      "DRAFT": "Draft",
+      "PUBLISHED": "Published",
+      "SUSPENDED": "Suspended",
+      "legacy": "Needs attention"
+    },
+    "integration": {
+      "CREATING": "Creating",
+      "SYNCING": "Syncing",
+      "READY": "Ready",
+      "FAILED": "Failed",
+      "UNKNOWN": "Unknown"
+    },
+    "editor": {
+      "title": "Title",
+      "title_required": "Title is required",
+      "description": "Description",
+      "category": "Category",
+      "category_required": "Category is required",
+      "product_type": "Product type",
+      "product_type_required": "Product type is required",
+      "sku": "SKU",
+      "sku_required": "SKU is required",
+      "price": "Price",
+      "price_required": "Price is required",
+      "stock": "Stock",
+      "stock_required": "Stock is required",
+      "images": "Images",
+      "upload_hint": "Click or drag images to upload",
+      "upload_types": "JPEG, PNG, or WebP up to {size} MB",
+      "image_uploaded": "Image uploaded",
+      "image_upload_failed": "Image upload failed",
+      "image_too_large": "Image must be {size} MB or smaller",
+      "remove_image": "Remove",
+      "primary_image": "Primary",
+      "set_primary": "Set primary",
+      "section_basic": "Basic information",
+      "section_media": "Product images",
+      "section_pricing": "Pricing & inventory",
+      "section_organization": "Organization",
+      "section_publish": "Publish settings",
+      "publish_hint": "Save as draft to keep editing on the detail page. Publish now makes the product live on your storefront.",
+      "publish_mode": "Publish mode",
+      "publish_mode_draft": "Save as draft",
+      "publish_mode_live": "Publish now"
+    },
+    "publish": {
+      "confirm_title": "Publish product?",
+      "confirm_body": "This makes the product visible on your storefront channel."
+    },
+    "unpublish": {
+      "confirm_title": "Unpublish product?",
+      "confirm_body": "This hides the product from your storefront channel."
+    },
+    "delete": {
+      "confirm_title": "Delete product permanently?",
+      "confirm_body": "If published, it will be unpublished first. Then the product is permanently removed from FilixPay and Saleor. This cannot be undone."
+    },
+    "messages": {
+      "created": "Product created",
+      "saved": "Product saved",
+      "published": "Product published",
+      "publishing": "Publishing in progress…",
+      "unpublished": "Product unpublished",
+      "synced": "Sync completed",
+      "deleted": "Product deleted"
+    }
+  }
+}

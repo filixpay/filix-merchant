@@ -1,0 +1,65 @@
+{
+  "CryptoDepositWallets": {
+    "title": "Digital currency",
+    "section_title": "Digital currency",
+    "subtitle": "Configure blockchain addresses for receiving crypto deposits.",
+    "add_wallet": "Add deposit address",
+    "empty": "No deposit addresses configured.",
+    "empty_title": "No crypto deposit addresses yet",
+    "empty_desc": "After you add an on-chain address, the system will monitor deposits and settle matching assets automatically.",
+    "empty_cta": "Configure now",
+    "copy_address": "Copy address",
+    "copied": "Address copied",
+    "copy_failed": "Copy failed. Select the address manually.",
+    "security_notice_title": "Security & custody notice",
+    "security_notice_desc": "FilixPay only listens for on-chain deposits and never custodians your private keys or seed phrases. Confirm every address is correct and under your control before saving.",
+    "platform_managed_title": "Platform-managed addresses",
+    "platform_managed_desc": "Deposit addresses for your account are managed by the platform. Contact support if you need changes.",
+    "read_only_title": "Read-only",
+    "read_only_desc": "You do not have permission to manage deposit addresses.",
+    "headers": {
+      "network": "Blockchain network",
+      "asset": "Settlement asset",
+      "address": "Deposit address",
+      "label": "Label",
+      "status": "Status",
+      "updated_at": "Updated"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "form": {
+      "create_title": "Configure deposit address",
+      "edit_title": "Edit deposit address",
+      "subtitle": "Bind an on-chain address for automated deposit monitoring",
+      "chain": "Blockchain network",
+      "asset": "Settlement asset",
+      "deposit_address": "Deposit address",
+      "label": "Label (optional)",
+      "chain_placeholder": "Select blockchain",
+      "asset_placeholder": "Select asset",
+      "address_placeholder": "Paste or type the on-chain address",
+      "label_placeholder": "e.g. TronLink primary wallet",
+      "chain_required": "Please select a blockchain",
+      "asset_required": "Please select an asset",
+      "address_required": "Please enter a deposit address",
+      "address_valid": "Address format is valid",
+      "address_invalid": "Address does not match the selected network rules",
+      "tron_hint": "TRON addresses are 34 characters and start with T.",
+      "cancel": "Cancel",
+      "submit": "Save and activate",
+      "success": "Saved successfully",
+      "confirm_warning": "An incorrect on-chain address can make deposits unrecoverable. Confirm you fully control this address before saving.",
+      "confirm_private_key": "I confirm that I control the private key for this address",
+      "confirm_required": "Please confirm that you control the private key"
+    },
+    "errors": {
+      "PLATFORM_MANAGED": "Deposit addresses are managed by the platform for your account type.",
+      "ACTIVE_RESERVATIONS": "There are active deposit orders. The address cannot be changed right now.",
+      "INVALID_ADDRESS": "The deposit address format is invalid.",
+      "WALLET_EXISTS": "A deposit address for this blockchain and asset already exists.",
+      "unknown": "Something went wrong. Please try again."
+    }
+  }
+}

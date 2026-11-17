@@ -1,0 +1,140 @@
+{
+  "Balance": {
+    "title": "Account Balance",
+    "subtitle": "View available, pending, and (when supported) frozen wallet balances.",
+    "available": "Available Balance",
+    "frozen": "Frozen Balance",
+    "total": "Total Balance",
+    "withdraw": "Withdraw",
+    "withdrawing": "Withdrawing...",
+    "recharge": "Recharge",
+    "recharging": "Recharging...",
+    "transfer": "Transfer",
+    "view_details": "View Details",
+    "transactions": {
+      "title": "Transaction Details",
+      "headers": {
+        "time": "Time",
+        "type": "Type",
+        "amount": "Amount",
+        "before": "Before Balance",
+        "after": "After Balance",
+        "currency": "Currency",
+        "order_id": "Order ID",
+        "tally_status": "Business Type"
+      }
+    },
+    "history": "Withdrawal History",
+    "withdraw_modal": {
+      "title": "Withdraw Funds",
+      "amount": "Withdrawal Amount",
+      "amount_hint": "Available balance: ¥{balance}",
+      "payment_pin": "Transaction Password",
+      "payment_pin_hint": "Enter 6-digit PIN",
+      "submit": "Confirm Withdrawal",
+      "cancel": "Cancel",
+      "success": "Withdrawal request submitted",
+      "insufficient_balance": "Withdrawal amount cannot exceed available balance",
+      "invalid_amount": "Please enter a valid amount",
+      "select_account": "Select Receiving Account",
+      "manual_input": "Manual Input",
+      "bank_name": "Bank Name",
+      "bank_branch": "Bank Branch Full Name",
+      "account_holder": "Account Holder",
+      "account_number": "Bank Account Number"
+    },
+    "transfer_modal": {
+      "title": "Internal Balance Transfer",
+      "available_balance": "Available Balance",
+      "add_item": "Add Payee",
+      "payee_code": "Payee Account Code",
+      "amount": "Transfer Amount",
+      "memo": "Memo",
+      "submit": "Transfer Now",
+      "cancel": "Cancel",
+      "success": "Transfer successful",
+      "insufficient_balance": "Total transfer amount cannot exceed available balance",
+      "invalid_amount": "Please enter a valid amount",
+      "payee_required": "Payee account code is required",
+      "at_least_one": "Please add at least one transfer item",
+      "payee_looking_up": "Looking up...",
+      "payee_name_label": "Merchant name",
+      "payee_not_found": "Customer code not found",
+      "payee_inactive": "This merchant is not active",
+      "payee_self_transfer": "Cannot transfer to yourself",
+      "payee_invalid_code": "Invalid customer code format",
+      "payee_lookup_failed": "Failed to look up payee"
+    },
+    "pending": "Pending Balance",
+    "movements": {
+      "title": "Wallet Movements",
+      "headers": {
+        "time": "Time",
+        "type": "Type",
+        "direction": "Direction",
+        "reference": "Reference",
+        "status": "Status",
+        "amount": "Amount",
+        "asset": "Asset"
+      }
+    },
+    "capability": {
+      "view_denied": "You do not have permission to view this wallet.",
+      "permission_denied": "Missing execute permission",
+      "temporarily_unavailable": "Temporarily unavailable",
+      "requires_review": "Requires review",
+      "disabled": "Not available",
+      "available": "Available",
+      "not_available": "Not available",
+      "unknown": "Unknown",
+      "informational_only": "Wallet capability status (informational only)",
+      "deposit": "Deposit",
+      "transfer": "Transfer",
+      "withdraw": "Withdraw",
+      "payment": "Payment",
+      "reason": {
+        "OK": "",
+        "NOT_SUPPORTED": "Not supported",
+        "PERMISSION_DENIED": "Missing permission",
+        "OWNER_STATE_OR_COMPLIANCE": "Account restricted",
+        "CONFIG_DISABLED": "Disabled by configuration",
+        "TEMPORARILY_UNAVAILABLE": "Temporarily unavailable",
+        "CAPABILITY_DISABLED": "Capability disabled",
+        "UNDER_REVIEW": "Under review",
+        "LIMIT_REACHED": "Limit reached"
+      }
+    },
+    "identity": {
+      "title": "Networks & addresses",
+      "expand": "Show identity",
+      "collapse": "Hide identity",
+      "hint": "Expand to load networks for this asset (lazy).",
+      "not_provisioned": "Identity not provisioned",
+      "footprint": "Identity footprint",
+      "networks_count": "{count} networks",
+      "addresses_count": "{count} addresses",
+      "status": {
+        "INITIALIZING": "Initializing",
+        "ACTIVE": "Active",
+        "SUSPENDED": "Suspended",
+        "DISABLED": "Disabled",
+        "CLOSED": "Closed"
+      }
+    },
+    "businessTypes": {
+      "PAYMENT": "Payment",
+      "PAYMENT_REVERSAL": "Payment reversal",
+      "REFUND": "Refund",
+      "REFUND_REVERSAL": "Refund reversal",
+      "SETTLEMENT": "Settlement",
+      "SETTLEMENT_REVERSAL": "Settlement reversal",
+      "FEE": "Fee",
+      "PAYOUT": "Payout",
+      "TRANSFER": "Transfer",
+      "ADJUSTMENT": "Adjustment",
+      "OTHER": "Other"
+    },
+    "accounts_by_currency": "Accounts by currency",
+    "asset": "Asset"
+  }
+}

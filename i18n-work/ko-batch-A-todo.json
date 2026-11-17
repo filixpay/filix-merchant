@@ -1,0 +1,949 @@
+[
+  {
+    "path": "Layout.description",
+    "en": "FilixPay offers aggregated payments, hosted checkout, OpenAPI, and 3/4-party settlement for global commerce."
+  },
+  {
+    "path": "Layout.identity.customer_code",
+    "en": "Customer No."
+  },
+  {
+    "path": "Layout.identity.modal.intro_title",
+    "en": "What this service is"
+  },
+  {
+    "path": "Layout.identity.modal.intro",
+    "en": "Platform collection (Platform settlement mode) creates a separate platform-contracted merchant identity. FilixPay collects transaction funds on your behalf and settles them to your designated account on the agreed schedule."
+  },
+  {
+    "path": "Layout.identity.modal.reason_title",
+    "en": "When to activate"
+  },
+  {
+    "path": "Layout.identity.modal.reason",
+    "en": "Activate when you need platform-hosted collection, unified settlement, or to work within a group/platform sub-merchant setup. After activation you can switch between independent (Direct settlement) and platform-contracted (Platform settlement) identities in the sidebar."
+  },
+  {
+    "path": "Layout.identity.modal.merchant_label",
+    "en": "Current merchant"
+  },
+  {
+    "path": "Layout.identity.modal.notice",
+    "en": "After activation, sign out and sign in again to load platform-contracted merchant permissions."
+  },
+  {
+    "path": "Layout.organization.current_organization",
+    "en": "Current Organization"
+  },
+  {
+    "path": "Layout.organization.org_code",
+    "en": "Org Code"
+  },
+  {
+    "path": "Layout.organization.no_roles",
+    "en": "No roles"
+  },
+  {
+    "path": "Layout.enterprise.sidebar_title",
+    "en": "Enterprise Portal"
+  },
+  {
+    "path": "Layout.enterprise.current_enterprise",
+    "en": "Current Enterprise"
+  },
+  {
+    "path": "Layout.enterprise.enterprise_code",
+    "en": "Enterprise Code"
+  },
+  {
+    "path": "Layout.enterprise.no_enterprises_title",
+    "en": "No enterprise memberships"
+  },
+  {
+    "path": "Layout.enterprise.no_enterprises_desc",
+    "en": "Your identity has no active enterprise memberships. Contact platform operations."
+  },
+  {
+    "path": "Layout.enterprise.nav.dashboard",
+    "en": "Dashboard"
+  },
+  {
+    "path": "Layout.enterprise.nav.organizations",
+    "en": "Organizations"
+  },
+  {
+    "path": "Layout.enterprise.nav.members",
+    "en": "Members"
+  },
+  {
+    "path": "Layout.enterprise.nav.audit",
+    "en": "Audit"
+  },
+  {
+    "path": "Layout.business_account.current_account",
+    "en": "Business Account"
+  },
+  {
+    "path": "Layout.business_account.account_code",
+    "en": "Account No."
+  },
+  {
+    "path": "Layout.business_account.mode.platform",
+    "en": "Platform settlement"
+  },
+  {
+    "path": "Layout.business_account.mode.direct",
+    "en": "Direct settlement"
+  },
+  {
+    "path": "Layout.workspace.workspace",
+    "en": "Workspace",
+    "cur": "Workspace"
+  },
+  {
+    "path": "Layout.workspace.switch_business_account",
+    "en": "Switch business account",
+    "cur": "Switch business account"
+  },
+  {
+    "path": "Layout.workspace.switch_organization",
+    "en": "Switch organization"
+  },
+  {
+    "path": "Layout.workspace.no_business_accounts",
+    "en": "No business accounts in this organization",
+    "cur": "No business accounts in this organization"
+  },
+  {
+    "path": "Layout.workspace.loading_business_accounts",
+    "en": "Loading business accounts…"
+  },
+  {
+    "path": "Layout.workspace.affiliated_organization",
+    "en": "Organization",
+    "cur": "Organization"
+  },
+  {
+    "path": "Layout.workspace.add_organization",
+    "en": "Add organization",
+    "cur": "Add organization"
+  },
+  {
+    "path": "Layout.workspace.add_business_account",
+    "en": "New business account",
+    "cur": "New business account"
+  },
+  {
+    "path": "Layout.workspace.manage_organization",
+    "en": "Manage organization",
+    "cur": "Manage organization"
+  },
+  {
+    "path": "Layout.workspace.copy_code",
+    "en": "Copy ID"
+  },
+  {
+    "path": "Layout.workspace.copy_success",
+    "en": "ID copied"
+  },
+  {
+    "path": "Layout.sidebar_collapse",
+    "en": "Collapse"
+  },
+  {
+    "path": "Layout.sidebar_expand",
+    "en": "Expand"
+  },
+  {
+    "path": "Layout.nav.refund_settings",
+    "en": "Refund settings",
+    "cur": "Refund settings"
+  },
+  {
+    "path": "Layout.nav.refund_approvals",
+    "en": "Refund approvals",
+    "cur": "Refund approvals"
+  },
+  {
+    "path": "Layout.nav.offline_collection",
+    "en": "Offline collection"
+  },
+  {
+    "path": "Layout.nav.payout_management",
+    "en": "Payout Management"
+  },
+  {
+    "path": "Layout.nav.payout_ops",
+    "en": "Payouts"
+  },
+  {
+    "path": "Layout.nav.payout_audit",
+    "en": "Pending Audit"
+  },
+  {
+    "path": "Layout.nav.payout_review",
+    "en": "Pending Review"
+  },
+  {
+    "path": "Layout.nav.acquiring_settings",
+    "en": "Acquiring Settings"
+  },
+  {
+    "path": "Layout.nav.funds_management",
+    "en": "Funds Management"
+  },
+  {
+    "path": "Layout.nav.money",
+    "en": "Money"
+  },
+  {
+    "path": "Layout.nav.money_balance",
+    "en": "Balance"
+  },
+  {
+    "path": "Layout.nav.money_activity",
+    "en": "Activity"
+  },
+  {
+    "path": "Layout.nav.money_in",
+    "en": "Money-In"
+  },
+  {
+    "path": "Layout.nav.money_in_records",
+    "en": "Money-In records"
+  },
+  {
+    "path": "Layout.nav.money_payouts",
+    "en": "Payouts"
+  },
+  {
+    "path": "Layout.nav.money_payouts_records",
+    "en": "Payout records"
+  },
+  {
+    "path": "Layout.nav.money_external_accounts",
+    "en": "External accounts"
+  },
+  {
+    "path": "Layout.nav.account_balance",
+    "en": "Balance"
+  },
+  {
+    "path": "Layout.nav.deposit_records",
+    "en": "Deposit Records"
+  },
+  {
+    "path": "Layout.nav.withdrawal_records",
+    "en": "Withdrawal Records"
+  },
+  {
+    "path": "Layout.nav.transfer_records",
+    "en": "Transfer Records"
+  },
+  {
+    "path": "Layout.nav.payout_records",
+    "en": "Payout Records"
+  },
+  {
+    "path": "Layout.nav.settlement",
+    "en": "Settlement"
+  },
+  {
+    "path": "Layout.nav.settlements",
+    "en": "Settlement bills"
+  },
+  {
+    "path": "Layout.nav.transaction_reconciliation",
+    "en": "Transaction Reconciliation"
+  },
+  {
+    "path": "Layout.nav.settlement_releases",
+    "en": "Settlement processing"
+  },
+  {
+    "path": "Layout.nav.settlement_statements",
+    "en": "Settlement records"
+  },
+  {
+    "path": "Layout.nav.split_payment_records",
+    "en": "Split Payment Records"
+  },
+  {
+    "path": "Layout.nav.credit_risk_management",
+    "en": "Credit Management"
+  },
+  {
+    "path": "Layout.nav.credit_center",
+    "en": "Credit Center"
+  },
+  {
+    "path": "Layout.nav.credit_granting",
+    "en": "Credit Granting"
+  },
+  {
+    "path": "Layout.nav.credit_usage",
+    "en": "Credit Usage"
+  },
+  {
+    "path": "Layout.nav.credit_limit_management",
+    "en": "Credit Limit"
+  },
+  {
+    "path": "Layout.nav.limit_adjustment_records",
+    "en": "Adjustment Logs"
+  },
+  {
+    "path": "Layout.nav.credit_transaction_records",
+    "en": "Credit Transactions"
+  },
+  {
+    "path": "Layout.nav.my_credit",
+    "en": "My Credit"
+  },
+  {
+    "path": "Layout.nav.available_credit",
+    "en": "My Limit"
+  },
+  {
+    "path": "Layout.nav.adjustment_history",
+    "en": "Adjustment History"
+  },
+  {
+    "path": "Layout.nav.payment_history",
+    "en": "Credit Payments"
+  },
+  {
+    "path": "Layout.nav.security_settings",
+    "en": "Security Settings"
+  },
+  {
+    "path": "Layout.nav.transaction_password",
+    "en": "Transaction Password"
+  },
+  {
+    "path": "Layout.nav.audit_logs",
+    "en": "Audit Logs"
+  },
+  {
+    "path": "Layout.nav.crypto_deposit_wallets",
+    "en": "Digital currency"
+  },
+  {
+    "path": "Layout.nav.digital_currency",
+    "en": "Digital currency"
+  },
+  {
+    "path": "Layout.nav.formal_onboarding",
+    "en": "Formal Onboarding"
+  },
+  {
+    "path": "Layout.nav.organization",
+    "en": "Organization"
+  },
+  {
+    "path": "Layout.nav.organization_affiliation",
+    "en": "Organization"
+  },
+  {
+    "path": "Layout.nav.account_management",
+    "en": "Account & Settings"
+  },
+  {
+    "path": "Layout.nav.close_account",
+    "en": "Close Account"
+  },
+  {
+    "path": "Layout.nav.payments_management",
+    "en": "Payments"
+  },
+  {
+    "path": "Layout.nav.transactions_management",
+    "en": "Transactions"
+  },
+  {
+    "path": "Layout.nav.reporting",
+    "en": "Reporting"
+  },
+  {
+    "path": "Layout.nav.reporting_transactions",
+    "en": "Transaction Reports"
+  },
+  {
+    "path": "Layout.nav.risk_management",
+    "en": "Risk Management"
+  },
+  {
+    "path": "Layout.nav.disputes",
+    "en": "Disputes & Chargebacks"
+  },
+  {
+    "path": "Layout.nav.commerce",
+    "en": "Commerce"
+  },
+  {
+    "path": "Layout.nav.commerce_products",
+    "en": "Products"
+  },
+  {
+    "path": "Layout.nav.notifications",
+    "en": "Notifications & Tasks"
+  },
+  {
+    "path": "Layout.nav.risk_reviews",
+    "en": "Risk Reviews"
+  },
+  {
+    "path": "Layout.nav.fraud",
+    "en": "Fraud"
+  },
+  {
+    "path": "Layout.nav.risk_rules",
+    "en": "Risk Rules"
+  },
+  {
+    "path": "Layout.nav.coverage_services",
+    "en": "Coverage Services"
+  },
+  {
+    "path": "Layout.nav.coverage_config",
+    "en": "Chargeback Coverage"
+  },
+  {
+    "path": "Layout.nav.coverage_insurance",
+    "en": "Coverage Insurance"
+  },
+  {
+    "path": "Layout.nav.maintenance",
+    "en": "Profile Maintenance"
+  },
+  {
+    "path": "Layout.nav.maintenance_profile",
+    "en": "Merchant Profile"
+  },
+  {
+    "path": "Layout.nav.maintenance_changes",
+    "en": "Profile Changes"
+  },
+  {
+    "path": "Layout.nav.maintenance_contact",
+    "en": "Contact Info"
+  },
+  {
+    "path": "Layout.nav.money_transfers",
+    "en": "Transfers"
+  },
+  {
+    "path": "Login.title",
+    "en": "FilixPay Management Center",
+    "cur": "FilixPay Management Center"
+  },
+  {
+    "path": "Login.subtitle",
+    "en": "Manage merchants, organizations, payments, and developer resources in one place",
+    "cur": "Manage merchants, organizations, payments, and developer resources in one place"
+  },
+  {
+    "path": "Login.button",
+    "en": "Sign In",
+    "cur": "Sign In"
+  },
+  {
+    "path": "Login.connecting",
+    "en": "Connecting...",
+    "cur": "Connecting..."
+  },
+  {
+    "path": "Login.back_to_home",
+    "en": "← Back to Home",
+    "cur": "← Back to Home"
+  },
+  {
+    "path": "Login.merchant_title",
+    "en": "Merchant Operations Center",
+    "cur": "Merchant Operations Center"
+  },
+  {
+    "path": "Login.merchant_body",
+    "en": "Manage payments, settlement, APIs, and applications",
+    "cur": "Manage payments, settlement, APIs, and applications"
+  },
+  {
+    "path": "Login.merchant_cta",
+    "en": "Enter Merchant Center",
+    "cur": "Enter Merchant Center"
+  },
+  {
+    "path": "Login.enterprise_title",
+    "en": "Enterprise Center",
+    "cur": "Enterprise Center"
+  },
+  {
+    "path": "Login.enterprise_body",
+    "en": "Manage organizations, members, permissions, and multi-merchant relationships",
+    "cur": "Manage organizations, members, permissions, and multi-merchant relationships"
+  },
+  {
+    "path": "Login.enterprise_cta",
+    "en": "Enter Enterprise Center",
+    "cur": "Enter Enterprise Center"
+  },
+  {
+    "path": "Dashboard.subtitle",
+    "en": "Monitor your business performance and key metrics in real-time."
+  },
+  {
+    "path": "Dashboard.quick_actions.recharge",
+    "en": "Recharge"
+  },
+  {
+    "path": "Dashboard.quick_actions.payout",
+    "en": "Payout"
+  },
+  {
+    "path": "Dashboard.quick_actions.export",
+    "en": "Export Data"
+  },
+  {
+    "path": "Dashboard.stats.available_balance",
+    "en": "Available Balance"
+  },
+  {
+    "path": "Dashboard.stats.frozen_balance",
+    "en": "Frozen Amount"
+  },
+  {
+    "path": "Dashboard.stats.total_balance",
+    "en": "Total Balance"
+  },
+  {
+    "path": "Dashboard.stats.available_funds",
+    "en": "Available funds",
+    "cur": "Available funds"
+  },
+  {
+    "path": "Dashboard.stats.today_funds_revenue",
+    "en": "Today's funds revenue",
+    "cur": "Today's funds revenue"
+  },
+  {
+    "path": "Dashboard.stats.asset_count",
+    "en": "{count} assets",
+    "cur": "{count} assets"
+  },
+  {
+    "path": "Dashboard.stats.other_assets",
+    "en": "+ {count} other assets",
+    "cur": "+ {count} other assets"
+  },
+  {
+    "path": "Dashboard.stats.no_available_funds",
+    "en": "No available funds",
+    "cur": "No available funds"
+  },
+  {
+    "path": "Dashboard.stats.view_balance",
+    "en": "View balance",
+    "cur": "View balance"
+  },
+  {
+    "path": "Dashboard.stats.view_activity",
+    "en": "View activity",
+    "cur": "View activity"
+  },
+  {
+    "path": "Dashboard.stats.view_orders",
+    "en": "View orders",
+    "cur": "View orders"
+  },
+  {
+    "path": "Dashboard.stats.view_risk",
+    "en": "View risk"
+  },
+  {
+    "path": "Dashboard.stats.risk_pending",
+    "en": "Pending risk/tasks"
+  },
+  {
+    "path": "Dashboard.stats.risk_healthy",
+    "en": "Healthy"
+  },
+  {
+    "path": "Dashboard.stats.risk_attention",
+    "en": "Needs attention"
+  },
+  {
+    "path": "Dashboard.stats.settlement_cycle_label",
+    "en": "Settlement cycle",
+    "cur": "Settlement cycle"
+  },
+  {
+    "path": "Dashboard.stats.settlement_cycle_title",
+    "en": "T+1 automatic settlement",
+    "cur": "T+1 automatic settlement"
+  },
+  {
+    "path": "Dashboard.stats.settlement_cycle_desc",
+    "en": "Funds settle directly from the upstream channel to your designated corporate bank account. Available balance follows bank statement reconciliation.",
+    "cur": "Funds settle directly from the upstream channel to your designated corporate bank account. Available balance follows bank statement reconciliation."
+  },
+  {
+    "path": "Dashboard.trend.title",
+    "en": "Transaction Trend"
+  },
+  {
+    "path": "Dashboard.trend.subtitle",
+    "en": "Money-in trend over recent periods"
+  },
+  {
+    "path": "Dashboard.trend.last_7_days",
+    "en": "Last 7 days"
+  },
+  {
+    "path": "Dashboard.trend.last_30_days",
+    "en": "Last 30 days"
+  },
+  {
+    "path": "Dashboard.trend.vs_previous",
+    "en": "vs previous period"
+  },
+  {
+    "path": "Dashboard.risk_health.title",
+    "en": "Risk & Health"
+  },
+  {
+    "path": "Dashboard.risk_health.pending_reviews",
+    "en": "Pending reviews"
+  },
+  {
+    "path": "Dashboard.risk_health.open_disputes",
+    "en": "Open disputes"
+  },
+  {
+    "path": "Dashboard.risk_health.chargeback_rate",
+    "en": "Chargeback rate"
+  },
+  {
+    "path": "Dashboard.risk_health.review_sla_hours",
+    "en": "Review SLA (hours)"
+  },
+  {
+    "path": "Dashboard.recent_activity.title",
+    "en": "Recent Transactions"
+  },
+  {
+    "path": "Dashboard.recent_activity.empty",
+    "en": "No recent activity."
+  },
+  {
+    "path": "Dashboard.trial_upgrade_banner",
+    "en": "Upgrade to a formal merchant account to unlock full payment capabilities."
+  },
+  {
+    "path": "Dashboard.trial_upgrade_action",
+    "en": "Upgrade Now"
+  },
+  {
+    "path": "Common.yes",
+    "en": "Yes"
+  },
+  {
+    "path": "Common.no",
+    "en": "No"
+  },
+  {
+    "path": "Common.initiate_payment",
+    "en": "Initiate Payment"
+  },
+  {
+    "path": "Common.refresh",
+    "en": "Refresh"
+  },
+  {
+    "path": "Common.download",
+    "en": "Download"
+  },
+  {
+    "path": "Common.back",
+    "en": "Back"
+  },
+  {
+    "path": "Common.view",
+    "en": "View"
+  },
+  {
+    "path": "Common.total",
+    "en": "Total"
+  },
+  {
+    "path": "Nav.products",
+    "en": "Products"
+  },
+  {
+    "path": "Nav.solutions",
+    "en": "Solutions"
+  },
+  {
+    "path": "Nav.technology",
+    "en": "Technology"
+  },
+  {
+    "path": "Nav.docs",
+    "en": "Whitepaper"
+  },
+  {
+    "path": "Nav.resources",
+    "en": "Resources"
+  },
+  {
+    "path": "Nav.login",
+    "en": "Sign In"
+  },
+  {
+    "path": "Nav.dashboard",
+    "en": "Dashboard"
+  },
+  {
+    "path": "Nav.menu.products.aggregated_payment",
+    "en": "Payment Platform"
+  },
+  {
+    "path": "Nav.menu.products.aggregated_payment_desc",
+    "en": "Enterprise payment infrastructure overview"
+  },
+  {
+    "path": "Nav.menu.products.credit_payment",
+    "en": "Credit Payment"
+  },
+  {
+    "path": "Nav.menu.products.credit_payment_desc",
+    "en": "Subscription & installment payment solutions"
+  },
+  {
+    "path": "Nav.menu.products.crypto_payment",
+    "en": "Crypto Payment"
+  },
+  {
+    "path": "Nav.menu.products.crypto_payment_desc",
+    "en": "Native TRON USDT collection with blockchain gateway"
+  },
+  {
+    "path": "Nav.menu.products.payment_splitting",
+    "en": "Payment Splitting"
+  },
+  {
+    "path": "Nav.menu.products.payment_splitting_desc",
+    "en": "Automated split payment and settlement for platforms"
+  },
+  {
+    "path": "Nav.menu.products.risk_control",
+    "en": "Risk Control"
+  },
+  {
+    "path": "Nav.menu.products.risk_control_desc",
+    "en": "Full-chain fraud prevention, manual review, and eligible chargeback protection"
+  },
+  {
+    "path": "Nav.menu.products.private_deployment",
+    "en": "Private Deployment"
+  },
+  {
+    "path": "Nav.menu.products.private_deployment_desc",
+    "en": "Full-stack control, on-premise deployment"
+  },
+  {
+    "path": "Nav.menu.products.merchant_center",
+    "en": "Merchant Center"
+  },
+  {
+    "path": "Nav.menu.products.merchant_center_desc",
+    "en": "Payment operations portal for merchants"
+  },
+  {
+    "path": "Nav.menu.solutions.cross_border",
+    "en": "Cross-Border E-Commerce"
+  },
+  {
+    "path": "Nav.menu.solutions.cross_border_desc",
+    "en": "Shopify/WooCommerce integration solutions"
+  },
+  {
+    "path": "Nav.menu.solutions.web3",
+    "en": "Web3 E-Commerce"
+  },
+  {
+    "path": "Nav.menu.solutions.web3_desc",
+    "en": "NFT/GameFi payment scenarios"
+  },
+  {
+    "path": "Nav.menu.solutions.saas",
+    "en": "SaaS Providers"
+  },
+  {
+    "path": "Nav.menu.solutions.saas_desc",
+    "en": "Split payment & multi-tenant solutions"
+  },
+  {
+    "path": "Nav.menu.solutions.group_enterprise",
+    "en": "Group Enterprise"
+  },
+  {
+    "path": "Nav.menu.solutions.group_enterprise_desc",
+    "en": "Unified acquiring and settlement for group companies"
+  },
+  {
+    "path": "Nav.menu.solutions.enterprise",
+    "en": "Enterprise Global Expansion"
+  },
+  {
+    "path": "Nav.menu.solutions.enterprise_desc",
+    "en": "Low-cost crypto payment adoption"
+  },
+  {
+    "path": "Nav.menu.technology.architecture",
+    "en": "Architecture Overview"
+  },
+  {
+    "path": "Nav.menu.technology.architecture_desc",
+    "en": "Microservices / K8s / High-concurrency design"
+  },
+  {
+    "path": "Nav.menu.technology.performance",
+    "en": "Performance Benchmark"
+  },
+  {
+    "path": "Nav.menu.technology.performance_desc",
+    "en": "OpenAPI create-order load test report"
+  },
+  {
+    "path": "Nav.menu.technology.identity",
+    "en": "Identity & Auth"
+  },
+  {
+    "path": "Nav.menu.technology.identity_desc",
+    "en": "Keycloak + OIDC/SAML deep dive"
+  },
+  {
+    "path": "Nav.menu.technology.blockchain",
+    "en": "Blockchain Integration"
+  },
+  {
+    "path": "Nav.menu.technology.blockchain_desc",
+    "en": "Multi-chain adaption & cross-chain trust"
+  },
+  {
+    "path": "Nav.menu.technology.api_docs",
+    "en": "API Documentation"
+  },
+  {
+    "path": "Nav.menu.technology.api_docs_desc",
+    "en": "Developer center & API reference"
+  },
+  {
+    "path": "Nav.menu.resources.case_studies",
+    "en": "Case Studies"
+  },
+  {
+    "path": "Nav.menu.resources.case_studies_desc",
+    "en": "Customer success stories"
+  },
+  {
+    "path": "Nav.menu.resources.compliance",
+    "en": "Compliance Guide"
+  },
+  {
+    "path": "Nav.menu.resources.compliance_desc",
+    "en": "GDPR / PCI-DSS & more"
+  },
+  {
+    "path": "Nav.menu.resources.blog",
+    "en": "Blog & Articles"
+  },
+  {
+    "path": "Nav.menu.resources.blog_desc",
+    "en": "Technical insights & industry trends"
+  },
+  {
+    "path": "Nav.menu.resources.downloads",
+    "en": "Download Center"
+  },
+  {
+    "path": "Nav.menu.resources.downloads_desc",
+    "en": "Deployment docs & agreement samples"
+  },
+  {
+    "path": "Nav.menu.resources.reconciliation_settlement",
+    "en": "Reconciliation & Settlement"
+  },
+  {
+    "path": "Nav.menu.resources.reconciliation_settlement_desc",
+    "en": "How FilixPay manages reconciliation workflows and settlement controls"
+  },
+  {
+    "path": "SiteFooter.slogan",
+    "en": "Making Payments Simpler, Making Business Global"
+  },
+  {
+    "path": "SiteFooter.friendly_links_title",
+    "en": "Official Partners"
+  },
+  {
+    "path": "SiteFooter.friendly_link_micselect",
+    "en": "Made in China Select"
+  },
+  {
+    "path": "SiteFooter.friendly_link_micselect_title",
+    "en": "Made in China Select — Curated cross-border e-commerce for quality Chinese manufacturing"
+  },
+  {
+    "path": "SiteFooter.products_title",
+    "en": "Products"
+  },
+  {
+    "path": "SiteFooter.solutions_title",
+    "en": "Solutions"
+  },
+  {
+    "path": "SiteFooter.technology_title",
+    "en": "Technology"
+  },
+  {
+    "path": "SiteFooter.resources_title",
+    "en": "Resources"
+  },
+  {
+    "path": "SiteFooter.company_title",
+    "en": "Company"
+  },
+  {
+    "path": "SiteFooter.contact_us",
+    "en": "Contact Us"
+  },
+  {
+    "path": "SiteFooter.about",
+    "en": "About FilixPay"
+  },
+  {
+    "path": "SiteFooter.rights",
+    "en": "© 2026 Filix.com. All rights reserved."
+  },
+  {
+    "path": "Seo.home.title",
+    "en": "FilixPay - Enterprise Payment Infrastructure Platform"
+  },
+  {
+    "path": "Seo.home.description",
+    "en": "FilixPay provides enterprise payment infrastructure for global businesses with payment APIs, transaction management, merchant operations and settlement capabilities."
+  },
+  {
+    "path": "Seo.home.keywords",
+    "en": [
+      "enterprise payment platform",
+      "payment infrastructure",
+      "payment API",
+      "transaction management",
+      "merchant operations",
+      "settlement",
+      "FilixPay"
+    ]
+  }
+]

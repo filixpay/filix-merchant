@@ -1,8 +1,9 @@
 "use client";
 
-import { Alert, Button } from "antd";
-import type { TableProps } from "antd/es/table";
-import { useMemo } from "react";
+import React, { useMemo } from "react";
+import Box from "@mui/material/Box";
+import Alert from "@mui/material/Alert";
+import Button from "@mui/material/Button";
 import { useTranslations } from "next-intl";
 import DashboardTableEmpty from "@/components/layout/DashboardTableEmpty";
 import DashboardTableError from "@/components/layout/DashboardTableError";
@@ -38,36 +39,42 @@ export function useDashboardTableFeedback({
     const tableLoading = loading || isRefreshing;
     const resolvedErrorDescription = errorDescription ?? tCommon("error");
 
-    const locale: TableProps["locale"] = useMemo(
+    const emptyOverlay = useMemo(() => {
+        if (tableState === "error") {
+            return (
+                <DashboardTableError
+                    description={resolvedErrorDescription}
+                    onRetry={onRetry}
+                />
+            );
+        }
+        return <DashboardTableEmpty description={emptyDescription} />;
+    }, [tableState, resolvedErrorDescription, emptyDescription, onRetry]);
+
+    // Backwards compatibility for antd Table locale
+    const locale = useMemo(
         () => ({
-            emptyText:
-                tableState === "error" ? (
-                    <DashboardTableError
-                        description={resolvedErrorDescription}
-                        onRetry={onRetry}
-                    />
-                ) : (
-                    <DashboardTableEmpty description={emptyDescription} />
-                ),
+            emptyText: emptyOverlay,
         }),
-        [tableState, resolvedErrorDescription, emptyDescription, onRetry],
+        [emptyOverlay],
     );
 
     const refreshBanner =
         tableState === "refresh-error" ? (
             <Alert
-                type="warning"
-                showIcon
-                message={tCommon("error")}
+                severity="warning"
                 action={
                     onRetry ? (
-                        <Button size="small" onClick={onRetry}>
+                        <Button size="small" color="inherit" onClick={onRetry}>
                             {tCommon("refresh")}
                         </Button>
-                    ) : null
+                    ) : undefined
                 }
-            />
+                sx={{ mb: 1.5 }}
+            >
+                {tCommon("error")}
+            </Alert>
         ) : null;
 
-    return { tableState, tableLoading, locale, refreshBanner };
+    return { tableState, tableLoading, locale, emptyOverlay, refreshBanner };
 }

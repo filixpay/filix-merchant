@@ -1,0 +1,42 @@
+{
+  "Refunds": {
+    "create_modal": {
+      "create_success": "Refund order created successfully",
+      "create_failed": "Failed to create refund order"
+    },
+    "status": {
+      "REQUESTED": "Requested",
+      "EXECUTING": "Processing",
+      "SUCCEEDED": "Succeeded",
+      "FAILED": "Failed",
+      "CANCELLED": "Cancelled"
+    },
+    "timeline": {
+      "title": "Refund progress",
+      "progress_title": "Status",
+      "empty": "No timeline events yet.",
+      "awaiting_approval_title": "Awaiting approval",
+      "awaiting_approval_desc": "Amount exceeds the auto-execute threshold ({threshold}). The refund is accepted but will not hit the channel until approved.",
+      "steps": {
+        "requested": "Requested",
+        "approval": "Approval",
+        "executing": "Processing",
+        "terminal": "Done"
+      },
+      "events": {
+        "REQUESTED": "Refund requested",
+        "AWAITING_APPROVAL": "Awaiting approval",
+        "EXECUTING": "Execution started",
+        "ATTEMPT_CREATED": "Channel attempt created",
+        "ATTEMPT_SUBMITTING": "Submitting to channel",
+        "ATTEMPT_SUBMITTED": "Submitted to channel",
+        "ATTEMPT_FAILED_SUBMIT": "Channel submit failed",
+        "ATTEMPT_SUCCEEDED": "Channel refund succeeded",
+        "ATTEMPT_FAILED": "Channel refund failed",
+        "SUCCEEDED": "Refund succeeded",
+        "FAILED": "Refund failed",
+        "CANCELLED": "Refund cancelled"
+      }
+    }
+  }
+}

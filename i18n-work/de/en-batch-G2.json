@@ -1,0 +1,342 @@
+{
+  "MoneyTransfers": {
+    "title": "Transfers",
+    "subtitle": "Merchant-to-merchant funds transfer",
+    "detailTitle": "Transfer detail",
+    "detailSubtitle": "Amount, status, and counterparty for this transfer",
+    "detailHint": "Transfer results follow system clearing. Contact an administrator if you have questions about this transaction.",
+    "detailHintCleared": "This transfer has been fully cleared and cannot be reversed. Contact an administrator if you have questions about this transaction.",
+    "detailSectionTitle": "Transfer details",
+    "heroAmountLabel": "Transfer amount ({asset})",
+    "statusBadgeSuccess": "Transfer successful ({status})",
+    "copied": "Copied",
+    "copyFailed": "Copy failed. Please copy it manually.",
+    "copyId": "Copy transfer ID",
+    "copyCounterparty": "Copy counterparty",
+    "reasonNone": "None (settled normally)",
+    "ownerType": {
+      "MERCHANT": "Merchant account",
+      "CUSTOMER": "Personal account",
+      "UNKNOWN": "Counterparty account"
+    },
+    "backToList": "Back to transfers",
+    "createTitle": "Create transfer",
+    "createSubtitle": "Instantly move funds between merchants on Filix",
+    "confirmTitle": "Confirm transfer",
+    "confirmSubtitle": "Review the details below, then enter your transaction password",
+    "confirmTotalLabel": "Transfer total",
+    "confirmFromLabel": "Debit account",
+    "confirmToLabel": "Payee",
+    "confirmPayeeMerchant": "Payee merchant",
+    "confirmRemainingBalance": "Remaining after transfer",
+    "forgotPin": "Forgot password?",
+    "create_cta": "Create transfer",
+    "createSuccess": "Transfer submitted",
+    "submit": "Submit",
+    "next": "Next",
+    "back": "Back",
+    "confirmTransfer": "Confirm transfer",
+    "confirmAvailableLabel": "Available balance",
+    "availableShort": "Available",
+    "useMaxAmount": "Max",
+    "assetAccount": "{asset} account",
+    "targetMerchantPlaceholder": "Enter payee merchant code",
+    "payeeVerified": "✓ Account verified",
+    "payeeVerifiedWithAlias": "✓ Account verified · {alias}",
+    "payeeLookupHint": "Verifying payee identity",
+    "payeeNotFoundTitle": "Merchant not found",
+    "goSetPin": "Set transaction password",
+    "cancel": "Cancel",
+    "empty": "No transfers yet",
+    "no_assets": "No present assets to transfer",
+    "unavailable_title": "Transfer not available",
+    "asset_filter_label": "Asset",
+    "asset_filter_all": "All",
+    "asset_filter_placeholder": "Select asset",
+    "availableHint": "Available: {available} (hint only)",
+    "amountExceedsAvailableHint": "Transfer amount exceeds available balance",
+    "fields": {
+      "asset": "Debit asset",
+      "amount": "Transfer amount",
+      "targetMerchantCode": "Payee merchant code",
+      "payeeName": "Merchant name",
+      "payeeAlias": "Alias",
+      "paymentPin": "Transaction password",
+      "reasonCode": "Reason code",
+      "transferId": "Transfer ID",
+      "counterparty": "Payee",
+      "settlementAsset": "Settlement asset",
+      "completedAt": "Completed at"
+    },
+    "lookupLoading": "Looking up payee…",
+    "validation": {
+      "amountRequired": "Amount is required",
+      "amountInvalid": "Enter a valid amount",
+      "assetRequired": "Select a debit asset",
+      "targetRequired": "Payee merchant code is required",
+      "pinRequired": "Enter your 6-digit transaction password",
+      "pinFormat": "Transaction password must be 6 digits",
+      "payeeLookupFailed": "Payee merchant code is invalid or unavailable"
+    },
+    "errors": {
+      "pinNotSet": "Transaction password is not set. Please set it first.",
+      "pinIncorrect": "Incorrect transaction password"
+    },
+    "columns": {
+      "time": "Time",
+      "asset": "Asset",
+      "amount": "Amount",
+      "counterparty": "Counterparty",
+      "status": "Status",
+      "id": "Transfer ID"
+    }
+  },
+  "Balance": {
+    "title": "Account Balance",
+    "subtitle": "View available, pending, and (when supported) frozen wallet balances.",
+    "available": "Available Balance",
+    "frozen": "Frozen Balance",
+    "total": "Total Balance",
+    "withdraw": "Withdraw",
+    "withdrawing": "Withdrawing...",
+    "recharge": "Recharge",
+    "recharging": "Recharging...",
+    "transfer": "Transfer",
+    "view_details": "View Details",
+    "transactions": {
+      "title": "Transaction Details",
+      "headers": {
+        "time": "Time",
+        "type": "Type",
+        "amount": "Amount",
+        "before": "Before Balance",
+        "after": "After Balance",
+        "currency": "Currency",
+        "order_id": "Order ID",
+        "tally_status": "Business Type"
+      }
+    },
+    "history": "Withdrawal History",
+    "withdraw_modal": {
+      "title": "Withdraw Funds",
+      "amount": "Withdrawal Amount",
+      "amount_hint": "Available balance: ¥{balance}",
+      "payment_pin": "Transaction Password",
+      "payment_pin_hint": "Enter 6-digit PIN",
+      "submit": "Confirm Withdrawal",
+      "cancel": "Cancel",
+      "success": "Withdrawal request submitted",
+      "insufficient_balance": "Withdrawal amount cannot exceed available balance",
+      "invalid_amount": "Please enter a valid amount",
+      "select_account": "Select Receiving Account",
+      "manual_input": "Manual Input",
+      "bank_name": "Bank Name",
+      "bank_branch": "Bank Branch Full Name",
+      "account_holder": "Account Holder",
+      "account_number": "Bank Account Number"
+    },
+    "transfer_modal": {
+      "title": "Internal Balance Transfer",
+      "available_balance": "Available Balance",
+      "add_item": "Add Payee",
+      "payee_code": "Payee Account Code",
+      "amount": "Transfer Amount",
+      "memo": "Memo",
+      "submit": "Transfer Now",
+      "cancel": "Cancel",
+      "success": "Transfer successful",
+      "insufficient_balance": "Total transfer amount cannot exceed available balance",
+      "invalid_amount": "Please enter a valid amount",
+      "payee_required": "Payee account code is required",
+      "at_least_one": "Please add at least one transfer item",
+      "payee_looking_up": "Looking up...",
+      "payee_name_label": "Merchant name",
+      "payee_not_found": "Customer code not found",
+      "payee_inactive": "This merchant is not active",
+      "payee_self_transfer": "Cannot transfer to yourself",
+      "payee_invalid_code": "Invalid customer code format",
+      "payee_lookup_failed": "Failed to look up payee"
+    },
+    "pending": "Pending Balance",
+    "movements": {
+      "title": "Wallet Movements",
+      "headers": {
+        "time": "Time",
+        "type": "Type",
+        "direction": "Direction",
+        "reference": "Reference",
+        "status": "Status",
+        "amount": "Amount",
+        "asset": "Asset"
+      }
+    },
+    "capability": {
+      "view_denied": "You do not have permission to view this wallet.",
+      "permission_denied": "Missing execute permission",
+      "temporarily_unavailable": "Temporarily unavailable",
+      "requires_review": "Requires review",
+      "disabled": "Not available",
+      "available": "Available",
+      "not_available": "Not available",
+      "unknown": "Unknown",
+      "informational_only": "Wallet capability status (informational only)",
+      "deposit": "Deposit",
+      "transfer": "Transfer",
+      "withdraw": "Withdraw",
+      "payment": "Payment",
+      "reason": {
+        "OK": "",
+        "NOT_SUPPORTED": "Not supported",
+        "PERMISSION_DENIED": "Missing permission",
+        "OWNER_STATE_OR_COMPLIANCE": "Account restricted",
+        "CONFIG_DISABLED": "Disabled by configuration",
+        "TEMPORARILY_UNAVAILABLE": "Temporarily unavailable",
+        "CAPABILITY_DISABLED": "Capability disabled",
+        "UNDER_REVIEW": "Under review",
+        "LIMIT_REACHED": "Limit reached"
+      }
+    },
+    "identity": {
+      "title": "Networks & addresses",
+      "expand": "Show identity",
+      "collapse": "Hide identity",
+      "hint": "Expand to load networks for this asset (lazy).",
+      "not_provisioned": "Identity not provisioned",
+      "footprint": "Identity footprint",
+      "networks_count": "{count} networks",
+      "addresses_count": "{count} addresses",
+      "status": {
+        "INITIALIZING": "Initializing",
+        "ACTIVE": "Active",
+        "SUSPENDED": "Suspended",
+        "DISABLED": "Disabled",
+        "CLOSED": "Closed"
+      }
+    },
+    "businessTypes": {
+      "PAYMENT": "Payment",
+      "PAYMENT_REVERSAL": "Payment reversal",
+      "REFUND": "Refund",
+      "REFUND_REVERSAL": "Refund reversal",
+      "SETTLEMENT": "Settlement",
+      "SETTLEMENT_REVERSAL": "Settlement reversal",
+      "FEE": "Fee",
+      "PAYOUT": "Payout",
+      "TRANSFER": "Transfer",
+      "ADJUSTMENT": "Adjustment",
+      "OTHER": "Other"
+    },
+    "accounts_by_currency": "Accounts by currency",
+    "asset": "Asset"
+  },
+  "Deposits": {
+    "title": "Deposit Records",
+    "subtitle": "View and search your account deposit history.",
+    "create_deposit": "Recharge",
+    "headers": {
+      "order_id": "Deposit Order ID",
+      "trade_no": "Trade No",
+      "amount": "Amount",
+      "status": "Status",
+      "created_at": "Created At",
+      "paid_at": "Paid At"
+    },
+    "create_modal": {
+      "title": "Initiate Recharge",
+      "amount": "Amount",
+      "currency": "Currency",
+      "submit": "Recharge Now",
+      "cancel": "Cancel",
+      "success": "Recharge request submitted"
+    },
+    "empty": "No deposit records found."
+  },
+  "Payouts": {
+    "title": "Withdrawal Records",
+    "subtitle": "View your fund withdrawal request history and status.",
+    "headers": {
+      "withdrawal_no": "Withdrawal No",
+      "amount": "Amount",
+      "status": "Status",
+      "approval_status": "Approval Status",
+      "payee_name": "Payee Name",
+      "payee_account": "Payee Account",
+      "applicant": "Applicant",
+      "created_at": "Created At",
+      "updated_at": "Updated At"
+    },
+    "empty": "No withdrawal records found.",
+    "details": {
+      "title": "Withdrawal Details",
+      "withdrawal_no": "Withdrawal No",
+      "amount": "Amount",
+      "currency": "Currency",
+      "withdrawal_status": "Status",
+      "approval_status": "Approval Status",
+      "payee_name": "Payee Name",
+      "payee_account": "Payee Account",
+      "applicant": "Applicant",
+      "created_at": "Created At",
+      "updated_at": "Updated At"
+    }
+  },
+  "TransferRecords": {
+    "title": "Transfer Records",
+    "subtitle": "View fund transfer history between merchants.",
+    "headers": {
+      "transfer_no": "Transfer No",
+      "amount": "Amount",
+      "status": "Status",
+      "created_at": "Transfer Time"
+    },
+    "empty": "No transfer records found.",
+    "item_details": {
+      "title": "Transfer Details",
+      "headers": {
+        "payee_name": "Payee Name",
+        "payee_account": "Account Number",
+        "bank": "Bank Name",
+        "amount": "Amount",
+        "status": "Status",
+        "created_at": "Created At"
+      }
+    }
+  },
+  "PayoutRecords": {
+    "title": "Payout Records",
+    "subtitle": "View and manage payout business order history.",
+    "headers": {
+      "payout_no": "Payout No",
+      "amount": "Payout Amount",
+      "status": "Status",
+      "created_at": "Payout Time"
+    },
+    "empty": "No payout records found.",
+    "item_details": {
+      "title": "Payout Details",
+      "headers": {
+        "payee_name": "Payee Name",
+        "payee_account": "Account Number",
+        "bank": "Bank Name",
+        "amount": "Payout Amount",
+        "status": "Status",
+        "created_at": "Created At"
+      }
+    },
+    "create_modal": {
+      "title": "Create Payout Request",
+      "available_balance": "Available Balance",
+      "add_item": "Add Payee",
+      "payee_code": "Payee Customer Code",
+      "amount": "Payout Amount",
+      "memo": "Memo",
+      "submit": "Submit Payout",
+      "cancel": "Cancel",
+      "success": "Payout request submitted successfully",
+      "insufficient_balance": "Total payout amount cannot exceed available balance",
+      "invalid_amount": "Please enter a valid payout amount",
+      "payee_required": "Please enter payee customer code",
+      "at_least_one": "Please add at least one payout item"
+    }
+  }
+}

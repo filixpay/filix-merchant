@@ -1,0 +1,1673 @@
+{
+  "Pages": {
+    "products": {
+      "title": "产品",
+      "subtitle": "覆盖每一个业务场景的综合支付解决方案",
+      "hero_title": "一个平台，无限支付可能",
+      "hero_desc": "从法币到加密货币，从国内到跨境，FilixPay 提供统一的支付基础设施，随您的业务一同扩展。"
+    },
+    "payment_platform": {
+      "badge": "核心产品",
+      "hero_title": "企业级支付基础设施平台",
+      "hero_desc": "统一连接全球支付渠道，通过 API、交易管理、结算和企业账户体系，帮助企业构建可靠、可扩展的支付能力。",
+      "hero_desc_extra": "FilixPay 面向全球企业提供支付接入、交易管理、资金结算、商户管理和开发者 API 的一体化基础设施。",
+      "features_title": "核心能力",
+      "features": {
+        "connectivity": {
+          "icon": "API",
+          "title": "支付接入",
+          "desc": "通过统一 API 接入全球支付渠道——Stripe、钱包、银行转账与数字资产，一套集成层覆盖多种收款方式。",
+          "detail_desc": "以单一编排层降低集成成本，支持收银台、托管支付页与服务端 API 等多种接入形态。",
+          "points": {
+            "0": "统一 OpenAPI 支持创建订单、退款与状态查询",
+            "1": "国内与跨境支付方式的多通道路由",
+            "2": "可选数字资产支付能力，无需改变核心订单流程"
+          }
+        },
+        "transactions": {
+          "icon": "TX",
+          "title": "交易管理",
+          "desc": "管理订单、退款、支付状态与审计追踪，全渠道交易生命周期一目了然。",
+          "detail_desc": "运营团队与开发者共享从授权到可结算状态的一致数据源。",
+          "points": {
+            "0": "订单、退款与争议记录关联至支付尝试",
+            "1": "实时状态追踪，Webhook 驱动商户通知",
+            "2": "面向财务与合规审查的可审计交易历史"
+          }
+        },
+        "settlement": {
+          "icon": "ST",
+          "title": "结算与资金",
+          "desc": "余额视图、结算账单、分账支付、提现与资金流水对账，服务财务团队日常运营。",
+          "detail_desc": "支持直连结算与平台结算模式，自动化账单与可追溯的资金流转。",
+          "points": {
+            "0": "结算账单与余额视图，服务商户财务团队",
+            "1": "面向平台与多商户场景的分账能力",
+            "2": "提现、入金与转账记录关联结算结果"
+          }
+        },
+        "merchant_ops": {
+          "icon": "MC",
+          "title": "商户运营",
+          "desc": "账户管理、权限控制、API 凭证、Webhook 与交易监控，一体化商户运营平台。",
+          "detail_desc": "为商户管理员提供所需控制能力，组织级企业治理见 For Enterprise 方案。",
+          "points": {
+            "0": "商户资料、凭证与支付配置集中管理",
+            "1": "面向财务、运营与开发团队的角色权限",
+            "2": "Webhook 与 API Key 管理，附带审计可见性"
+          }
+        }
+      },
+      "business_models": {
+        "title": "业务模式概览",
+        "desc": "FilixPay 支持独立商户、平台运营商与企业集团，提供灵活的结算模式。",
+        "items": {
+          "direct": {
+            "title": "直连结算",
+            "desc": "独立商户直连支付渠道，清算与结算流程透明可控。"
+          },
+          "platform": {
+            "title": "平台结算",
+            "desc": "平台代子商户收单，按业务规则配置分账与结算。"
+          },
+          "enterprise": {
+            "title": "企业与集团运营",
+            "desc": "多业务单元在治理策略下协同支付运营。"
+          }
+        }
+      },
+      "links": {
+        "title": "探索 FilixPay 平台",
+        "desc": "继续了解商户运营、开发者、分账结算与企业治理等相关产品面。",
+        "merchant_center": {
+          "title": "商户中心",
+          "desc": "面向支付运营的商户管理平台：账户、权限、凭证与交易监控。"
+        },
+        "developers": {
+          "title": "开发者平台",
+          "desc": "支付 API、SDK、Webhook、沙箱与集成文档。"
+        },
+        "payment_splitting": {
+          "title": "分账支付",
+          "desc": "面向平台与多商户场景的自动分账与结算能力。"
+        },
+        "for_enterprise": {
+          "title": "企业方案",
+          "desc": "多商户治理、RBAC、组织隔离与部署选项。"
+        }
+      },
+      "cta": {
+        "title": "从 FilixPay 支付基础设施开始",
+        "desc": "了解商户运营能力，或登录商户门户配置支付渠道。",
+        "primary": "了解商户中心",
+        "secondary": "登录商户门户"
+      }
+    },
+    "merchant_center": {
+      "badge": "商户运营",
+      "hero_title": "FilixPay 商户中心",
+      "hero_desc": "在一个控制台管理支付运营——交易、结算、报表、凭证、Webhook 与团队权限。",
+      "hero_desc_extra": "FilixPay 商户中心面向商户、平台与企业业务单元，支撑日常支付运营工作流。",
+      "features_title": "平台能力",
+      "features": {
+        "transactions": {
+          "icon": "TX",
+          "title": "交易管理",
+          "desc": "在统一运营视图中查询、筛选与监控订单、退款及跨渠道支付状态。",
+          "detail_desc": "运营团队从授权到可结算状态获得全生命周期可见性，无需切换多个工具。",
+          "points": {
+            "0": "订单与退款记录关联支付尝试与渠道响应",
+            "1": "实时状态追踪，支持导出交易历史",
+            "2": "面向财务与支持团队的审计友好视图"
+          }
+        },
+        "settlement": {
+          "icon": "ST",
+          "title": "结算与资金",
+          "desc": "追踪余额、结算账单、提现及与支付活动关联的资金流水。",
+          "detail_desc": "财务团队在与日常交易监控相同的平台上完成对账与结算核对。",
+          "points": {
+            "0": "面向商户财务流程的余额与结算账单视图",
+            "1": "提现、充值与转账记录关联结算状态",
+            "2": "支持直连结算与平台结算模式"
+          }
+        },
+        "reporting": {
+          "icon": "RP",
+          "title": "报表与分析",
+          "desc": "运营与财务报表，了解支付量、成功率与结算趋势。",
+          "detail_desc": "将交易与结算数据转化为运营与财务可行动的报表。",
+          "points": {
+            "0": "按渠道与周期汇总支付量与成功率",
+            "1": "结算与资金流报表支持对账流程",
+            "2": "可导出数据视图，便于财务与业务复盘"
+          }
+        },
+        "api_credentials": {
+          "icon": "KEY",
+          "title": "API 凭证",
+          "desc": "创建与轮换 API Key，管理沙箱与生产凭证，控制开发者访问。",
+          "detail_desc": "开发者与管理员管理集成凭证，清晰掌握活跃密钥与环境。",
+          "points": {
+            "0": "沙箱与生产 API Key 分开管理",
+            "1": "凭证轮换不影响现有集成运行",
+            "2": "访问控制与商户团队角色对齐"
+          }
+        },
+        "webhooks": {
+          "icon": "WH",
+          "title": "Webhook",
+          "desc": "配置 Webhook 端点，接收支付事件、重试投递与集成自动化。",
+          "detail_desc": "通过可靠的 Webhook 投递，让下游系统与支付生命周期保持同步。",
+          "points": {
+            "0": "订单、支付与退款通知的端点配置",
+            "1": "投递可见性，便于集成排障",
+            "2": "事件驱动的工作流对接订单与履约系统"
+          }
+        },
+        "team_permissions": {
+          "icon": "TM",
+          "title": "团队权限",
+          "desc": "面向财务、运营与开发团队的商户账户内角色权限。",
+          "detail_desc": "将日常支付运营委派给合适角色，无需共享完整账户访问。",
+          "points": {
+            "0": "财务、运营与开发角色的 RBAC 权限",
+            "1": "对凭证、交易与配置的受控访问",
+            "2": "团队工作流限定在单个商户账户范围"
+          }
+        },
+        "self_hosted_checkout": {
+          "icon": "CK",
+          "title": "独立部署收银台",
+          "desc": "通过 Docker 将开源收银台前端部署至自有域名，无需修改前端代码。",
+          "detail_desc": "付款页面运行在 checkout.您的域名.com，而非第三方地址。FilixPay 处理支付逻辑；您掌控品牌、托管环境与访问日志。",
+          "points": {
+            "0": "拉取官方 GHCR 镜像，仅通过环境变量完成配置",
+            "1": "使用开发者中心的 Client ID / Secret 对接 FilixPay API",
+            "2": "Apache-2.0 开源，前端可审计；核心风控与渠道逻辑仍由 FilixPay 后端处理"
+          }
+        }
+      },
+      "checkout_deployment": {
+        "title": "独立收银台部署",
+        "desc": "面向希望将付款页面部署在自己域名与服务器上的商户——而非使用 FilixPay 官方托管页面。通过 Docker 部署开源 filix-checkout 前端，全程无需改动业务代码。",
+        "benefits": {
+          "brand": {
+            "title": "自有域名与品牌",
+            "desc": "收银台运行在 checkout.您的域名.com，用户在支付环节看到的是您的品牌与地址栏，有助于降低流失、提升信任。"
+          },
+          "compliance": {
+            "title": "数据边界清晰",
+            "desc": "收银台前端代码、访问日志与部署环境完全在您自己的服务器上，便于满足内部合规审计与数据归属要求。"
+          },
+          "open_source": {
+            "title": "开源可审计",
+            "desc": "Apache-2.0 协议的 Next.js 收银台，代码透明可自行审查；支付核心逻辑仍由 FilixPay 后端处理，安全边界不变。"
+          },
+          "low_cost": {
+            "title": "对接成本低",
+            "desc": "无需改动业务逻辑，配置 API 凭证与 URL 环境变量、拉取 Docker 镜像即可上线。"
+          }
+        },
+        "steps": {
+          "credentials": {
+            "title": "1. 获取 API 凭证",
+            "desc": "在 FilixPay 开发者中心创建 FILIXPAY_BACKEND_CLIENT_ID 与 FILIXPAY_BACKEND_CLIENT_SECRET。"
+          },
+          "docker": {
+            "title": "2. Docker 部署",
+            "desc": "拉取 ghcr.io/filixpay/filix-checkout，挂载环境文件并在 3001 端口运行。生产环境建议固定版本 tag。"
+          },
+          "domain": {
+            "title": "3. 绑定自有域名",
+            "desc": "通过 Nginx 或 Caddy 以 HTTPS 暴露 checkout.example.com，并将 NEXTAUTH_URL 设为对外完整 URL。"
+          }
+        },
+        "note": "这是轻量级的收银台前端自托管方案，不同于 FilixPay 全栈私有化部署（PostgreSQL、Redis、Keycloak 等）。详细对比请参阅「私有化部署」产品页。",
+        "cta_docs": "查看部署指南",
+        "cta_developers": "前往开发者中心",
+        "cta_compare": "对比全栈私有化部署"
+      },
+      "audience": {
+        "title": "适用对象",
+        "desc": "FilixPay 商户中心面向需要专用支付运营控制台的业务——组织级企业治理见 For Enterprise 方案。",
+        "items": {
+          "merchants": {
+            "title": "独立商户",
+            "desc": "为单一业务账户运行支付运营、监控交易并管理凭证。"
+          },
+          "platforms": {
+            "title": "平台与市场",
+            "desc": "在一个控制台运营子商户支付流程、分账结算与平台级报表。"
+          },
+          "enterprises": {
+            "title": "企业业务单元",
+            "desc": "为业务单元提供商户运营工作区，覆盖交易、结算与团队访问。"
+          }
+        }
+      },
+      "links": {
+        "title": "相关产品",
+        "desc": "商户中心与 FilixPay 支付基础设施、开发者平台及结算能力紧密衔接。",
+        "payment_platform": {
+          "title": "支付平台",
+          "desc": "企业支付基础设施：API、交易管理与结算能力。"
+        },
+        "developers": {
+          "title": "开发者平台",
+          "desc": "支付 API、SDK、Webhook、沙箱与集成文档。"
+        },
+        "payment_splitting": {
+          "title": "分账支付",
+          "desc": "面向平台与多商户场景的自动分账与结算能力。"
+        }
+      },
+      "cta": {
+        "title": "登录商户中心",
+        "desc": "进入商户门户配置支付渠道、管理交易并运行日常支付运营。",
+        "primary": "登录商户门户",
+        "secondary": "查看开发文档"
+      }
+    },
+    "developers": {
+      "badge": "开发者平台",
+      "hero_title": "用 API 构建支付能力",
+      "hero_desc": "通过 REST API、SDK、沙箱环境与 Webhook 集成 FilixPay，连接收银、订单与结算流程。",
+      "hero_desc_extra": "FilixPay 开发者平台为工程团队提供构建、测试与运维企业支付集成所需的工具。",
+      "features_title": "开发者能力",
+      "features": {
+        "api": {
+          "icon": "API",
+          "title": "支付 API",
+          "desc": "OpenAPI 优先的 REST 接口，支持创建订单、退款、支付状态与结算查询。",
+          "detail_desc": "以一致的请求模型集成服务端支付流程，覆盖多渠道与多环境。",
+          "points": {
+            "0": "通过统一接口创建订单、发起支付与退款",
+            "1": "程序化查询交易状态与结算结果",
+            "2": "沙箱与生产环境使用独立凭证"
+          }
+        },
+        "sdk": {
+          "icon": "SDK",
+          "title": "SDK 与客户端库",
+          "desc": "面向常见语言的辅助库，加速集成并提供类型化请求与错误处理。",
+          "detail_desc": "基于 FilixPay OpenAPI 规范减少样板代码，提升集成效率。",
+          "points": {
+            "0": "面向常见服务端集成模式的客户端库",
+            "1": "签名与鉴权辅助，保障 API 调用安全",
+            "2": "与收银与 Webhook 工作流对齐的示例"
+          }
+        },
+        "sandbox": {
+          "icon": "SB",
+          "title": "沙箱",
+          "desc": "使用沙箱凭证在生产上线前端到端测试支付流程。",
+          "detail_desc": "开发者在隔离环境中验证集成，API 面与生产保持一致。",
+          "points": {
+            "0": "沙箱 API Key 与生产凭证分离管理",
+            "1": "模拟订单与支付生命周期事件，便于集成测试",
+            "2": "开发者控制台提供集成沙箱工具"
+          }
+        },
+        "webhooks": {
+          "icon": "WH",
+          "title": "Webhook",
+          "desc": "接收订单、支付、退款与结算更新的实时事件通知。",
+          "detail_desc": "通过可靠的 Webhook 投递，让下游系统与支付生命周期保持同步。",
+          "points": {
+            "0": "配置订单、支付与退款通知端点",
+            "1": "投递日志与重试可见性，便于集成排障",
+            "2": "事件驱动的工作流对接订单履约与对账"
+          }
+        }
+      },
+      "quick_start": {
+        "title": "快速开始",
+        "desc": "三步完成从凭证到首笔沙箱支付。",
+        "steps": {
+          "0": "登录商户门户并打开开发者控制台，创建沙箱 API 凭证。",
+          "1": "使用沙箱 Key 通过 Payment API 或 SDK 创建测试订单。",
+          "2": "配置 Webhook 端点，并在开发者控制台验证事件投递。"
+        }
+      },
+      "checkout_deployment": {
+        "title": "独立收银台部署",
+        "desc": "通过 Docker 将开源 filix-checkout 收银台前端部署至自有域名。使用开发者中心凭证完成对接，无需修改前端代码。",
+        "points": {
+          "0": "部署前在开发者控制台创建 FILIXPAY_BACKEND_CLIENT_ID / CLIENT_SECRET。",
+          "1": "拉取 ghcr.io/filixpay/filix-checkout 并通过环境文件配置；生产环境建议固定版本 tag。",
+          "2": "支付核心逻辑仍由 FilixPay 处理；您自行托管收银台 UI 与 BFF 代理层。"
+        },
+        "cta_docs": "查看部署指南",
+        "cta_merchant_center": "商户中心功能概览"
+      },
+      "links": {
+        "title": "探索相关产品",
+        "desc": "开发者集成连接 FilixPay 支付基础设施与商户运营能力。",
+        "payment_platform": {
+          "title": "支付平台",
+          "desc": "企业支付基础设施：API、交易管理与结算。"
+        },
+        "merchant_center": {
+          "title": "商户中心",
+          "desc": "面向支付运营的商户管理平台：账户、权限、凭证与交易监控。"
+        }
+      },
+      "cta": {
+        "title": "开始集成 FilixPay",
+        "desc": "跟随快速开始指南，或打开开发者控制台管理凭证、沙箱与 Webhook。",
+        "primary": "查看快速开始",
+        "secondary": "打开开发者控制台"
+      }
+    },
+    "for_enterprise": {
+      "badge": "企业治理",
+      "hero_title": "面向集团与监管企业的支付治理方案",
+      "hero_desc": "FilixPay 企业方案帮助总部治理多组织支付运营，涵盖多商户管理、RBAC 权限、成员治理与组织级隔离。",
+      "hero_desc_extra": "FilixPay 商户中心面向单商户运营；企业方案为集团、控股公司与监管型企业提供组织级治理能力。",
+      "features_title": "治理能力",
+      "features": {
+        "multi_org": {
+          "icon": "ORG",
+          "title": "多组织治理",
+          "desc": "在总部集中治理多个法人实体，同时保留各组织的独立运营能力。",
+          "detail_desc": "总部创建与管理组织，不替代日常商户运营与授权。",
+          "points": {
+            "0": "企业级视角纵览组织与商户",
+            "1": "治理边界止于组织层，不侵入业务执行",
+            "2": "集中策略与分散执行并行"
+          }
+        },
+        "multi_merchant": {
+          "icon": "MM",
+          "title": "多商户管理",
+          "desc": "在统一治理下协调子公司、业务单元与项目团队的支付运营。",
+          "detail_desc": "通过受监管账户与透明收单，打破集团内资金孤岛。",
+          "points": {
+            "0": "统一收单策略，各组织以法人主体独立签约运营",
+            "1": "子商户与项目级支付工作流",
+            "2": "总部可追踪的资金流向与运营可见性"
+          }
+        },
+        "rbac": {
+          "icon": "RBAC",
+          "title": "RBAC 与成员治理",
+          "desc": "面向企业管理员与组织 Owner 的角色权限与成员生命周期治理。",
+          "detail_desc": "在可审计的成员权限与审批流程下，委派治理职责。",
+          "points": {
+            "0": "Enterprise ADMIN 与 Organization OWNER 角色分离",
+            "1": "成员邀请、角色分配与权限审查",
+            "2": "跨组织的治理操作可审计"
+          }
+        },
+        "isolation": {
+          "icon": "ISO",
+          "title": "组织隔离",
+          "desc": "组织间强隔离，同时保持企业级治理可见性。",
+          "detail_desc": "各组织在独立的凭证、商户与授权边界内运营。",
+          "points": {
+            "0": "按组织隔离商户与凭证管理",
+            "1": "授权限定在组织边界内",
+            "2": "总部监督不替代分散运营"
+          }
+        }
+      },
+      "private_deployment": {
+        "title": "私有化部署选项",
+        "desc": "FilixPay 可部署在您的自有环境中，满足数据主权与监管行业要求——联系销售了解部署方案。"
+      },
+      "links": {
+        "title": "探索支付基础设施",
+        "desc": "企业治理建立在 FilixPay 支付基础设施之上，覆盖 API、交易与结算。",
+        "payment_platform": {
+          "title": "支付平台",
+          "desc": "企业支付基础设施：API、交易管理与结算。"
+        }
+      },
+      "cta": {
+        "title": "联系企业团队",
+        "desc": "联系销售，讨论多组织治理、RBAC 需求与集团部署方案。",
+        "primary": "联系销售",
+        "secondary": "了解支付平台"
+      }
+    },
+    "credit_payment": {
+      "title": "信用支付",
+      "subtitle": "面向B2B和订阅制业务的灵活信用支付解决方案",
+      "hero_title": "先用后付 — 专为企业打造",
+      "hero_desc": "支持信用额度、分期付款与延期支付，配备企业级风控管理和实时账务追踪。",
+      "features": {
+        "credit_line": {
+          "title": "信用额度管理",
+          "desc": "为企业客户设置和管理信用额度，支持灵活的账期条款。"
+        },
+        "installment": {
+          "title": "分期付款",
+          "desc": "支持多周期分期付款计划，自动开票和催收。"
+        },
+        "risk": {
+          "title": "风控管理",
+          "desc": "实时信用评分和风险评估，支持自定义规则配置。"
+        },
+        "reconciliation": {
+          "title": "自动对账",
+          "desc": "自动匹配付款与发票，生成详细报表。"
+        }
+      }
+    },
+    "crypto_payment": {
+      "title": "加密货币支付",
+      "subtitle": "FilixPay 区块链网关原生 TRON USDT 链上收款",
+      "hero_title": "原生 TRON USDT 收款",
+      "hero_desc": "通过商户中心配置 TRC20 USDT 收款地址，结合唯一金额匹配与区块链网关到账确认，统一纳入 FilixPay 收银台与订单流程。",
+      "pipeline": {
+        "configure": {
+          "title": "配置收款地址",
+          "desc": "绑定 TRON USDT 充值钱包"
+        },
+        "checkout": {
+          "title": "收银台收款",
+          "desc": "展示地址与应付金额"
+        },
+        "confirm": {
+          "title": "链上确认",
+          "desc": "网关验证到账"
+        }
+      },
+      "what": {
+        "title": "FilixPay 加密货币支付是什么？",
+        "desc": "FilixPay 是支付编排层，而非交易所或托管机构。原生 CRYPTO 通道通过区块链网关连接 Checkout 与 TRON USDT 链上充值；如需更多数字资产，可可选接入 NowPayments 扩展通道。"
+      },
+      "native": {
+        "title": "原生 TRON USDT 通道（主能力）",
+        "desc": "面向 TRC20 USDT 的可投产链上收款：商户自控收款地址，系统自动匹配支付。",
+        "points": {
+          "0": "链与资产：TRON 主网 USDT（TRC20）",
+          "1": "充值模式：STATIC 唯一金额匹配，或 HD 地址分配",
+          "2": "Checkout 向买家展示收款地址与精确应付 USDT 金额"
+        }
+      },
+      "wallets": {
+        "title": "收款地址管理",
+        "desc": "上线前在商户中心配置 TRON USDT 收款地址。",
+        "points": {
+          "0": "直连结算商户自行管理数字货币收款地址",
+          "1": "平台结算子商户使用平台托管地址（只读查看）",
+          "2": "每个商户每条链/资产仅维护一个有效充值钱包"
+        }
+      },
+      "extension": {
+        "title": "NowPayments 扩展（可选）",
+        "desc": "除 TRON USDT 外还需更多数字资产？可接入自有 NowPayments 账户作为补充上游通道。",
+        "points": {
+          "0": "在支付配置中填写 NowPayments API Key 与 IPN Secret",
+          "1": "买家跳转 NowPayments Invoice 页面完成多币种支付",
+          "2": "FilixPay 统一关联订单、处理 IPN 回调与交易账单对账"
+        },
+        "footnote": "多币种范围取决于您的 NowPayments 商户账户，非 FilixPay 原生承诺。"
+      },
+      "merchant_center": {
+        "title": "商户中心能力",
+        "items": {
+          "configs": {
+            "title": "支付配置",
+            "desc": "按场景绑定 CRYPTO 网关凭证或 NowPayments API 密钥。"
+          },
+          "wallets": {
+            "title": "数字货币收款地址",
+            "desc": "为原生通道创建并维护 TRON USDT 收款地址。"
+          },
+          "orders": {
+            "title": "订单与 Webhook",
+            "desc": "跟踪支付状态，到账后接收商户 Webhook 通知。"
+          }
+        }
+      },
+      "workflow": {
+        "title": "收款流程",
+        "desc": "从创建 Checkout 到链上确认。",
+        "steps": {
+          "order": {
+            "title": "创建 Checkout",
+            "desc": "商户或 API 创建订单并选择已配置的加密支付通道。"
+          },
+          "present": {
+            "title": "展示收款方式",
+            "desc": "原生 CRYPTO 展示 TRON 地址与唯一金额；NowPayments 跳转 Invoice 页面。"
+          },
+          "pay": {
+            "title": "买家支付",
+            "desc": "买家链上转账 USDT，或在 NowPayments 页面完成支付。"
+          },
+          "settle": {
+            "title": "确认与通知",
+            "desc": "网关或 IPN 确认到账，更新订单状态并触发商户 Webhook。"
+          }
+        }
+      },
+      "scenarios": {
+        "cross_border": {
+          "title": "跨境 USDT 收款",
+          "desc": "面向全球买家的稳定币收款，无需卡组织通道。"
+        },
+        "chargeback_free": {
+          "title": "无拒付替代方案",
+          "desc": "链上终局性，适用于希望降低卡拒付暴露的场景。"
+        },
+        "platform": {
+          "title": "平台托管加密收款",
+          "desc": "平台结算子商户继承平台加密配置，无需自行管理钱包。"
+        }
+      },
+      "faq": {
+        "title": "常见问题",
+        "items": {
+          "what_coins": {
+            "q": "FilixPay 原生支持哪些加密货币？",
+            "a": "原生 CRYPTO 通道当前支持 TRON 主网 USDT（TRC20）。如需更多数字资产，可可选接入自有 NowPayments 账户作为补充上游。"
+          },
+          "wallet_required": {
+            "q": "是否必须配置收款地址？",
+            "a": "使用原生 TRON USDT 通道时必须配置。直连结算商户在「数字货币收款地址」页面添加地址；平台结算子商户在平台托管模式下使用平台商户配置的地址。"
+          },
+          "deposit_modes": {
+            "q": "STATIC 与 HD 充值模式有何区别？",
+            "a": "STATIC 模式为每笔订单在收款地址上预留唯一应付金额；HD 模式通过区块链网关分配地址。具体模式由 CRYPTO 通道配置决定。"
+          },
+          "nowpayments": {
+            "q": "NowPayments 扩展如何工作？",
+            "a": "在支付配置中提供 NowPayments API 凭证。FilixPay 创建 Invoice、跳转 NowPayments 收银，并将 IPN 回调同步为统一订单状态。"
+          },
+          "chargebacks": {
+            "q": "加密支付可以拒付吗？",
+            "a": "链上 USDT 转账确认后不可撤销，不适用卡组织拒付机制；运营退款需按商户业务政策另行处理。"
+          },
+          "refunds": {
+            "q": "FilixPay 是否支持自动加密退款？",
+            "a": "当前版本原生 CRYPTO 通道暂不支持自动链上退款，如有需要请规划人工退款流程。"
+          }
+        }
+      },
+      "cta": {
+        "title": "准备通过 FilixPay 收取 TRON USDT？",
+        "desc": "在商户中心配置收款地址与支付通道，或联系我们了解平台托管方案。"
+      }
+    },
+    "payment_splitting": {
+      "title": "分账支付",
+      "subtitle": "面向平台业务的自动分账与结算能力",
+      "hero_title": "面向平台与多商户场景的分账支付",
+      "hero_desc": "将一笔支付自动分配给平台、商户、子商户、服务费、佣金和结算接收方，减少人工财务处理。",
+      "what": {
+        "title": "什么是分账支付？",
+        "desc": "分账支付把收款、接收方分配、结算账单和对账记录连接起来，帮助平台型业务降低人工财务处理成本。"
+      },
+      "features": {
+        "multi_receiver": {
+          "icon": "M",
+          "title": "多接收方分账",
+          "desc": "将一笔客户支付分配给商户、子商户、平台账户和合作伙伴。"
+        },
+        "commission": {
+          "icon": "%",
+          "title": "平台佣金",
+          "desc": "在商户结算前自动拆分平台服务费和佣金。"
+        },
+        "settlement": {
+          "icon": "S",
+          "title": "结算对账",
+          "desc": "把分账记录连接到结算账单和财务对账流程。"
+        },
+        "webhook": {
+          "icon": "API",
+          "title": "API 与 Webhook",
+          "desc": "通过 API 和 Webhook 回调跟踪支付、分账和结算状态。"
+        }
+      },
+      "scenarios": {
+        "marketplace": {
+          "icon": "O",
+          "title": "平台订单结算",
+          "desc": "将客户支付分配给平台商户和结算接收方。"
+        },
+        "commission": {
+          "icon": "F",
+          "title": "服务佣金",
+          "desc": "平台保留服务费后，将剩余应收金额结算给商户。"
+        },
+        "saas": {
+          "icon": "S",
+          "title": "SaaS 平台",
+          "desc": "支持多租户商户通过统一支付平台完成收款和分账。"
+        },
+        "chain": {
+          "icon": "G",
+          "title": "连锁与集团",
+          "desc": "在门店、子公司或业务单元之间完成资金结算。"
+        },
+        "cross_border": {
+          "icon": "X",
+          "title": "跨境多方结算",
+          "desc": "支持全球平台业务下的多参与方结算场景。"
+        },
+        "partner": {
+          "icon": "R",
+          "title": "合作伙伴分润",
+          "desc": "向合作伙伴、渠道或服务商分配收入。"
+        }
+      },
+      "workflow": {
+        "title": "分账支付流程",
+        "desc": "从客户支付到接收方结算，每一步都有可追踪的业务记录。",
+        "steps": {
+          "pay": {
+            "title": "客户支付",
+            "desc": "客户通过平台收银台完成支付。"
+          },
+          "receive": {
+            "title": "平台收款",
+            "desc": "平台记录支付结果并准备分账计算。"
+          },
+          "calculate": {
+            "title": "规则计算分账",
+            "desc": "业务规则决定金额、接收方、佣金和服务费。"
+          },
+          "credit": {
+            "title": "接收方入账",
+            "desc": "接收方根据分账结果获得对应金额。"
+          },
+          "settle": {
+            "title": "生成结算账单",
+            "desc": "结算记录汇总分账结果，服务财务处理。"
+          },
+          "reconcile": {
+            "title": "财务对账",
+            "desc": "财务团队对比订单、分账记录和结算账单。"
+          }
+        }
+      },
+      "rules": {
+        "title": "分账规则与接收方模型",
+        "desc": "定义收入如何分配到商户、平台账户、服务费和结算接收方。",
+        "items": {
+          "fixed_amount": {
+            "icon": "#",
+            "title": "固定金额",
+            "desc": "向接收方或平台费用分配固定金额。"
+          },
+          "percentage": {
+            "icon": "%",
+            "title": "比例分账",
+            "desc": "按比例分配商户收入或合作伙伴分润。"
+          },
+          "commission": {
+            "icon": "C",
+            "title": "平台佣金",
+            "desc": "在结算前保留平台佣金。"
+          },
+          "receiver": {
+            "icon": "R",
+            "title": "接收方",
+            "desc": "将金额路由到商户、子商户、门店或合作伙伴。"
+          },
+          "currency": {
+            "icon": "$",
+            "title": "币种",
+            "desc": "按交易币种和结算币种处理结算逻辑。"
+          },
+          "cycle": {
+            "icon": "D",
+            "title": "结算周期",
+            "desc": "把分账结果连接到日结、周结或自定义结算周期。"
+          }
+        }
+      },
+      "settlement": {
+        "title": "结算与对账",
+        "desc": "分账不应只停留在金额分配，财务团队还需要解释每一笔金额的结算账单和对账记录。",
+        "records": {
+          "title": "分账记录",
+          "desc": "跟踪订单金额、分账金额、接收方数量、成功数量、失败数量和分账状态。"
+        },
+        "bills": {
+          "title": "结算账单",
+          "desc": "把分账结果连接到结算账单明细，支持财务导出和周期对账。"
+        }
+      },
+      "exceptions": {
+        "title": "异常处理",
+        "desc": "当业务规则、接收方账户、退款或结算时间产生异常时，分账业务需要清晰状态。",
+        "items": {
+          "receiver_unavailable": {
+            "title": "接收方不可用",
+            "desc": "在结算完成前识别接收方账户问题。"
+          },
+          "rule_mismatch": {
+            "title": "规则不匹配",
+            "desc": "暴露规则冲突或接收方信息缺失，便于运营复核。"
+          },
+          "refund_after_split": {
+            "title": "分账后退款",
+            "desc": "追踪退款如何影响原订单、分账记录和结算结果。"
+          },
+          "partial_failure": {
+            "title": "部分分账失败",
+            "desc": "区分成功和失败的接收方分配，方便后续处理。"
+          },
+          "settlement_pending": {
+            "title": "结算处理中",
+            "desc": "让财务团队看到待结算状态。"
+          },
+          "reconciliation_difference": {
+            "title": "对账差异",
+            "desc": "帮助财务团队排查订单、分账和结算之间的差异。"
+          }
+        }
+      },
+      "developer": {
+        "title": "API 与 Webhook 集成",
+        "desc": "开发者可以把分账记录、结算查询和 Webhook 回调接入自己的平台运营流程。",
+        "cta": "查看开发者中心"
+      },
+      "faq": {
+        "title": "分账支付常见问题",
+        "items": {
+          "what_is": {
+            "q": "什么是分账支付？",
+            "a": "分账支付是将一笔支付分配给多个接收方，例如商户、子商户、平台账户或合作伙伴。"
+          },
+          "difference_from_payout": {
+            "q": "分账和代付有什么区别？",
+            "a": "分账定义支付收入如何分配，代付通常是结算后将资金打款到银行或账户。"
+          },
+          "multiple_receivers": {
+            "q": "一笔订单可以分给多个接收方吗？",
+            "a": "可以，平台可以根据业务规则把一笔订单分配给多个接收方。"
+          },
+          "platform_commission": {
+            "q": "平台可以先扣佣金吗？",
+            "a": "可以，平台服务费或佣金可以在商户结算前自动拆分。"
+          },
+          "refunds": {
+            "q": "分账后发生退款如何处理？",
+            "a": "退款需要能够关联原订单、分账记录和结算结果，方便追踪影响。"
+          },
+          "reconciliation": {
+            "q": "财务可以用结算账单对账吗？",
+            "a": "可以，分账记录和结算账单明细应形成可追踪的财务链路。"
+          },
+          "api_webhook": {
+            "q": "FilixPay 支持 API 和 Webhook 吗？",
+            "a": "FilixPay 提供支付状态、结算记录和 Webhook 回调等开发者能力。"
+          }
+        }
+      },
+      "channel_rules": {
+        "title": "分账支付各渠道规则",
+        "items": [
+          {
+            "id": "wechat",
+            "title": "1. 微信支付（WeChat Pay）：资金冻结与解冻模式",
+            "desc": "微信的分账机制核心在于“先冻结，后分账”，非常适合处理需要延时分账或有退款风险的交易场景。",
+            "flow": {
+              "title": "核心流程：",
+              "steps": [
+                "交易与冻结：用户支付成功后，资金并不会直接进入商户的可用余额，而是被冻结在特约商户的账户中（等待分账状态）。",
+                "发起分账：服务商或商户在满足分账条件时（如用户确认收货、服务完成），调用分账接口。微信会根据指令，将冻结的资金解冻并划拨给指定的分账接收方（可以是其他商户或个人零钱）。",
+                "完结分账：如果不需要继续分账，可以调用完结接口，将剩余冻结资金解冻到商户的可用余额中。"
+              ]
+            },
+            "compliance": {
+              "title": "关键点：",
+              "items": [
+                "分账比例限制：默认情况下，最大分账比例通常不能超过订单金额的 30%（商户可授权调整，但有上限）。",
+                "分账时效：交易成功后，资金最长可冻结 180天（部分文档提及30天内需调接口，超时自动解冻，建议以最新官方文档为准），超时未分账的资金会自动解冻给商户。",
+                "分账频次：支持多次分账（最多50次），每次可分给多方（最多50个接收方）。"
+              ]
+            }
+          },
+          {
+            "id": "alipay",
+            "title": "2. 支付宝（Alipay）：结算确认与异步分账模式",
+            "desc": "支付宝的分账逻辑强调“确认结算”，并且提供了强大的同步/异步处理能力，适合高并发场景。",
+            "flow": {
+              "title": "核心流程：",
+              "steps": [
+                "交易与冻结：买家付款后，资金进入待结算户。平台商需要先调用“确认结算”接口，此时资金会被冻结，准备用于分账。",
+                "发起分账：调用分账接口（alipay.trade.order.settle）。支付宝支持同步分账（实时返回结果，适合低频）和异步分账（适合高频，通过回调或查询获取结果）。",
+                "退分账：如果发生退款，支持将已分账的资金原路退回。"
+              ]
+            },
+            "compliance": {
+              "title": "关键点：",
+              "items": [
+                "分账比例限制：最高分账金额不能超过订单总金额的 30% + 已补差金额。",
+                "分账有效期：分账有效期最长可达 365天。",
+                "分账关系绑定：分账接收方必须实名，且通常需要提前通过接口将接收方添加到平台的“分账关系集”中，否则分账会被拦截。",
+                "性能保障：同步模式有频率限制（30 QPS），异步模式可支持高达 500 QPS，适合大流量平台。"
+              ]
+            }
+          },
+          {
+            "id": "stripe",
+            "title": "3. Stripe：独立扣款与转账（Connect 模式）",
+            "desc": "Stripe 的分账逻辑（Stripe Connect）非常灵活，主要采用“独立扣款与转账（Separate Charges and Transfers）”的模式，适合复杂的跨国或多方市场平台。",
+            "flow": {
+              "title": "核心流程：",
+              "steps": [
+                "平台收款：首先在平台（Platform）的 Stripe 账户上创建 PaymentIntent（收款意图），此时资金归属于平台。",
+                "触发转账：支付成功后（通过 Webhook 监听 payment_intent.succeeded 事件），平台调用转账接口（Transfers API）。",
+                "资金划拨：通过指定 source_transaction 参数，将这笔转账与原始的客户支付关联起来。Stripe 允许平台在资金尚未完全结算到平台余额时，就提前创建转账指令，资金会在结算周期内自动流转至关联账户（Connected Account）。"
+              ]
+            },
+            "compliance": {
+              "title": "关键点：",
+              "items": [
+                "余额不足处理：通过 source_transaction 关联，可以有效避免因平台账户余额不足导致的转账失败，Stripe 会在内部处理资金的实际流动。",
+                "平台服务费：平台可以在收款时直接扣除服务费（application_fee_amount），剩余资金再进行分配。",
+                "灵活性：支持将一笔支付拆分给多个接收方（如卖家、推广员、物流商等），且不受固定比例限制（取决于平台与 Stripe 的协议）。"
+              ]
+            }
+          }
+        ],
+        "comparison": {
+          "title": "📊 三大平台分账逻辑对比总结",
+          "headers": [
+            "维度",
+            "微信支付",
+            "支付宝",
+            "Stripe (Connect)"
+          ],
+          "rows": [
+            [
+              "核心机制",
+              "资金冻结 -> 解冻分账",
+              "确认结算 -> 冻结分账",
+              "平台收款 -> 独立转账"
+            ],
+            [
+              "分账比例",
+              "默认最高 30%",
+              "最高 30% (+补差)",
+              "灵活（取决于平台配置）"
+            ],
+            [
+              "资金时效",
+              "最长冻结 180 天",
+              "有效期最长 365 天",
+              "遵循标准结算周期"
+            ],
+            [
+              "接收方要求",
+              "商户号或个人零钱",
+              "需实名并绑定分账关系",
+              "需创建关联账户 (Connected Account)"
+            ],
+            [
+              "适用场景",
+              "零售、餐饮、酒店等需账期管理的场景",
+              "平台抽佣、高频交易场景（支持异步）",
+              "跨国平台、复杂多方分润（如网约车、外卖）"
+            ]
+          ]
+        }
+      },
+      "cta": {
+        "title": "用 FilixPay 构建分账支付流程",
+        "desc": "用统一支付基础设施支持平台分润、商户结算和财务对账。"
+      }
+    },
+    "risk_control": {
+      "title": "支付风控",
+      "subtitle": "从授权到结算，保障每一笔交易安全",
+      "hero_title": "支付风控",
+      "hero_desc": "从授权到结算全程护航——实时规则、专家复核，并原生接入 Signifyd、Riskified、Forter 等拒付保障服务商；商户可自行配置，也可订阅平台托管保障服务。",
+      "pipeline": {
+        "rules": {
+          "title": "规则引擎",
+          "desc": "实时反欺诈拦截"
+        },
+        "monitor": {
+          "title": "事件监控",
+          "desc": "欺诈事件与专家复核"
+        },
+        "coverage": {
+          "title": "保险服务商",
+          "desc": "Signifyd · Riskified · Forter"
+        }
+      },
+      "modules": {
+        "rules": {
+          "title": "实时规则引擎与反欺诈",
+          "desc": "授权环节毫秒级风险决策，支持商户自定义规则与授权前/后校验。",
+          "points": {
+            "0": "授权时并发执行合规与欺诈检测",
+            "1": "可按地域、行为模式与交易频率配置阈值",
+            "2": "独立于授信风险的交易级防护"
+          }
+        },
+        "monitor": {
+          "title": "欺诈事件监控与专家人工复核",
+          "desc": "双轨复核机制结合智能筛查与专家人工复核，降低误拒率。",
+          "points": {
+            "0": "自动检测并追踪欺诈事件",
+            "1": "异常交易进入专家人工复核队列",
+            "2": "时效敏感决策向运营人员实时告警"
+          }
+        },
+        "coverage": {
+          "title": "接入保险风控服务商",
+          "desc": "FilixPay 原生集成主流拒付保障与欺诈承保服务商。商户可按需选择：自行配置服务商凭证，或订阅平台托管保障服务。",
+          "disclaimer": "* 受服务条款、资格要求与承保限额约束。",
+          "points": {
+            "0": "统一接入 Signifyd、Riskified、Forter",
+            "1": "商户中心自助配置服务商 API 与 Webhook",
+            "2": "平台结算商户亦可订阅平台托管保障，无需单独签约"
+          }
+        }
+      },
+      "delivery_modes": {
+        "title": "两种保障开通方式",
+        "desc": "FilixPay 同时支持商户自配服务商与平台托管订阅，分别适配独立商户与平台平台结算子商户。",
+        "items": {
+          "self_config": {
+            "icon": "🔑",
+            "title": "商户自配服务商（BYOK）",
+            "desc": "绑定您已有的 Signifyd、Riskified 或 Forter 账户，在商户中心配置 API 密钥、Webhook 与环境参数，FilixPay 自动路由评估与理赔流程。",
+            "points": {
+              "0": "服务商合同与凭证完全由商户掌控",
+              "1": "适合已与承保方直接签约的独立商户",
+              "2": "支持在已接入服务商之间切换配置"
+            }
+          },
+          "platform_subscription": {
+            "icon": "🛡️",
+            "title": "平台托管保障订阅",
+            "desc": "平台平台结算子商户可在商户中心一键订阅保险风控服务，由平台商户统一对接服务商，子商户无需单独申请 API 或签约。",
+            "points": {
+              "0": "商户中心一键开通/关闭保障订阅",
+              "1": "单笔资格与授权前安全规则合规挂钩",
+              "2": "平台代为运营服务商关系与配置"
+            }
+          }
+        }
+      },
+      "providers": {
+        "title": "已接入的保险与拒付保障服务商",
+        "desc": "FilixPay 的核心亮点是深度、可投产的服务商集成能力——不仅是欺诈评分，而是可产生真实承保与理赔结果的端到端工作流。",
+        "items": {
+          "signifyd": {
+            "name": "Signifyd",
+            "tagline": "电商拒付保障与欺诈决策",
+            "desc": "Signifyd 将实时欺诈决策与订单拒付保障相结合。FilixPay 转发交易上下文、接收承保结论，并通过 Webhook 自动化理赔流程。"
+          },
+          "riskified": {
+            "name": "Riskified",
+            "tagline": "企业级欺诈智能与拒付保障",
+            "desc": "Riskified 为全球化零售商提供 AI 驱动的欺诈防控。FilixPay 商户可将订单路由至 Riskified 策略决策，并在符合条件时启用拒付保障计划。"
+          },
+          "forter": {
+            "name": "Forter",
+            "tagline": "数字商业实时反欺诈",
+            "desc": "Forter 以身份为中心提供大规模欺诈决策与拒付滥用防护。FilixPay 支持 Forter 商户的评估、Webhook 更新与理赔提交全链路。"
+          }
+        },
+        "footnote": "具体可用服务商、功能范围取决于商户类型、配置模式与合作伙伴合同条款。"
+      },
+      "audience": {
+        "title": "为高价值商业场景而生",
+        "desc": "FilixPay 支付风控面向跨境商户、平台运营方及需要可审计欺诈工作流的企业。",
+        "items": {
+          "cross_border": {
+            "title": "跨境电子商务",
+            "desc": "保护国际卡不在场交易收入。"
+          },
+          "marketplace": {
+            "title": "平台与 Marketplace",
+            "desc": "第平台结算商户生态，共享统一风险管控。"
+          },
+          "high_risk": {
+            "title": "争议风险较高行业",
+            "desc": "拒付顾虑制约增长的垂直领域。"
+          }
+        }
+      },
+      "workflow": {
+        "title": "全链路工作流",
+        "desc": "从收银到符合条件的保障，一条清晰的线性路径。",
+        "steps": {
+          "checkout": {
+            "title": "交易发起",
+            "desc": "商户发起支付，FilixPay 采集交易元数据与设备信号等上下文信息。"
+          },
+          "rules": {
+            "title": "规则判定",
+            "desc": "风控引擎在毫秒级内匹配商户规则与全局策略，决定放行、拦截或转入复核。"
+          },
+          "review": {
+            "title": "双轨审计",
+            "desc": "高风险事件触发自动追踪。双轨复核机制将案件路由至专家人工复核，挽回合法交易。"
+          },
+          "coverage": {
+            "title": "服务商承保与拒付保障",
+            "desc": "符合条件的欺诈类拒付将提交至您配置的 Signifyd、Riskified 或 Forter 伙伴，或由已订阅的平台托管保障服务处理。"
+          }
+        }
+      },
+      "faq": {
+        "title": "常见问题",
+        "items": {
+          "what_is": {
+            "q": "什么是支付风控？",
+            "a": "支付风控是一套多层安全防护体系，旨在交易全生命周期中检测、评估并缓解欺诈行为——在保护合法收入的同时，不损害用户体验。"
+          },
+          "vs_chargeback": {
+            "q": "支付风控与拒付保障有何区别？",
+            "a": "支付风控是主动防御机制（通过授权前/后规则预防欺诈发生），拒付保障则是被动保障（为符合条件的交易在发生意外争议时提供财务覆盖）。"
+          },
+          "rule_engine": {
+            "q": "规则引擎如何工作？",
+            "a": "引擎在授权环节毫秒级并发执行合规与欺诈检测。商户可通过商户后台，按地域、行为特征与交易频率等维度配置精细化阈值。"
+          },
+          "flagged_review": {
+            "q": "交易被标记复核后会怎样？",
+            "a": "当交易呈现异常模式时，系统将触发内部欺诈事件。为降低误拒率，平台采用双轨复核机制，将案件路由至专家人工复核队列，并立即向运营人员告警。"
+          },
+          "coverage_eligibility": {
+            "q": "谁有资格获得拒付保障？",
+            "a": "独立商户可在商户中心配置 Signifyd、Riskified 或 Forter 开通保障。平台平台结算子商户可订阅平台托管保障计划。单笔交易资格取决于服务商规则及授权前安全合规要求。"
+          },
+          "coverage_providers": {
+            "q": "FilixPay 支持哪些拒付保险服务商？",
+            "a": "FilixPay 集成 Signifyd、Riskified、Forter，提供统一的评估、Webhook 处理与理赔提交能力。商户可自行配置服务商凭证（BYOK），或订阅由平台商户配置驱动的平台托管保障服务。"
+          },
+          "crypto_relation": {
+            "q": "这与加密货币支付（零拒付）有何关系？",
+            "a": "数字资产天然具备交易终局性（技术上无法发起拒付），但我们的风控引擎仍对加密支付执行授权前规则，以检测钱包异常模式并满足地址黑名单合规要求。"
+          }
+        }
+      },
+      "cta": {
+        "title": "准备接入您的拒付保障服务商？",
+        "desc": "在商户中心配置 Signifyd、Riskified 或 Forter，或订阅平台托管保障服务。"
+      }
+    },
+    "cross_border": {
+      "title": "跨境电商",
+      "subtitle": "面向全球在线卖家的端到端支付解决方案",
+      "hero_title": "全球销售，本地收款",
+      "hero_desc": "集成 Shopify、WooCommerce 和自建商城。在50+个国家接受本地支付方式，自动货币转换。"
+    },
+    "web3_ecommerce": {
+      "title": "Web3电商",
+      "subtitle": "去中心化经济时代的支付基础设施",
+      "hero_title": "Web3商业的支付层",
+      "hero_desc": "从NFT市场到GameFi生态，以无缝的加密支付通道驱动您的Web3商业。"
+    },
+    "saas_provider": {
+      "title": "SaaS服务商方案",
+      "subtitle": "面向平台型业务的多租户支付基础设施",
+      "hero_title": "构建您的支付平台",
+      "hero_desc": "白标支付能力，支持分账、子商户管理和自动结算，为您的SaaS平台赋能。"
+    },
+    "group_enterprise": {
+      "title": "企业集团",
+      "subtitle": "大型集团统一支付与资金治理平台",
+      "hero_title": "构建大型集团统一支付与资金治理平台",
+      "hero_desc": "从集团治理、统一收单、智能分账到全链路审计，帮助大型集团实现总部集中治理、法人独立经营、资金透明可控。",
+      "hero_ending": "让总部统一治理，让法人独立经营，让资金全程可追溯。",
+      "pain_points": {
+        "title": "集团化运营中的资金脱管风险",
+        "items": [
+          {
+            "title": "个人收款码泛滥",
+            "desc": "门店、项目团队使用个人微信/支付宝收款，资金绕过集团账户，总部无法实时掌握入账情况。",
+            "consequences": "资金体外循环、对账困难、经营数据失真。"
+          },
+          {
+            "title": "第三方账户分流",
+            "desc": "业务款项进入非集团管控的第三方平台或个人账户，形成账外资金池，集团失去统一调度能力。",
+            "consequences": "资金分散、合规风险、总部决策缺乏数据支撑。"
+          },
+          {
+            "title": "通道碎片化",
+            "desc": "各法人独立对接支付机构，费率与结算周期不一，财务对账工作量大且极易出错。",
+            "consequences": "报表失真、运维成本高、系统集成复杂。"
+          },
+          {
+            "title": "账外资金池",
+            "desc": "部分收入未及时入账或经非规范渠道流转，集团难以穿透掌握真实经营与资金状况。",
+            "consequences": "内控薄弱、审计成本高、资金透明度不足。"
+          }
+        ]
+      },
+      "architecture": {
+        "title": "集团治理架构",
+        "lead": "总部统一治理，法人独立经营。",
+        "lead_en": "Governance stops at the Organization level, preserving each legal entity's operational independence.",
+        "reinforcing": "总部统一治理，不替代法人经营。",
+        "not_org_chart": "示意图仅表达治理关系，不代表实际组织数量或层级。",
+        "example_footnote": "示例：多元化集团可将 Enterprise 对应集团总部、Organization 对应业务板块法人、Merchant 对应门店或项目经营主体（Example only，不代表任何具体企业或合作关系）。",
+        "layers": {
+          "identity": "身份",
+          "enterprise": "企业集团",
+          "organization": "法人组织",
+          "merchant": "经营商户",
+          "admin": "管理员",
+          "viewer": "查看者"
+        }
+      },
+      "capabilities": {
+        "title": "平台核心能力",
+        "items": [
+          {
+            "icon": "🏛️",
+            "title": "集团治理",
+            "desc": "总部统一创建与管理法人组织，治理边界止于 Organization，不替代法人日常经营与授权。"
+          },
+          {
+            "icon": "💳",
+            "title": "统一收单",
+            "desc": "集团级收单策略与通道统筹，各法人独立签约经营，资金归集透明可控。"
+          },
+          {
+            "icon": "⚡",
+            "title": "智能分账",
+            "desc": "持牌分账接口自动清分，减少人工中转，满足多法人、多场景结算需求。"
+          },
+          {
+            "icon": "🔍",
+            "title": "全链路审计",
+            "desc": "治理操作、授权变更与资金流转全程留痕，支持总部穿透查看与合规审计。"
+          }
+        ]
+      },
+      "governance_model": {
+        "title": "治理模型",
+        "intro": "FilixPay 将集团治理与日常经营分离，让总部获得统一治理能力，同时保留各法人的独立经营权限。",
+        "headers": [
+          "管理层级",
+          "主要职责"
+        ],
+        "items": [
+          [
+            "Enterprise",
+            "治理"
+          ],
+          [
+            "Organization",
+            "授权与经营"
+          ],
+          [
+            "Merchant",
+            "业务执行"
+          ]
+        ],
+        "admin_not_owner": "Enterprise ADMIN ≠ Organization OWNER"
+      },
+      "rules": {
+        "title": "核心业务规则",
+        "headers": [
+          "维度",
+          "规则说明"
+        ],
+        "items": [
+          [
+            "治理边界",
+            "Enterprise 负责集团级治理（创建与管理 Organization），不直接拥有、控制或暂停 Merchant；经营授权由 Organization 在其边界内完成"
+          ],
+          [
+            "统一收单",
+            "集团可制定统一收单策略，各 Organization 在其法人主体下独立签约与经营"
+          ],
+          [
+            "资金归集",
+            "客户付款进入受监管账户，禁止私设外部收款渠道与个人收款码"
+          ],
+          [
+            "分账结算",
+            "通过持牌分账接口自动清分，减少资金过手中转风险"
+          ],
+          [
+            "审批机制",
+            "跨组织资金流动须经集团统一审批流程方可执行"
+          ]
+        ]
+      },
+      "scenarios": {
+        "title": "典型业务场景",
+        "scenario_0": {
+          "title": "Enterprise Setup",
+          "process": "创建 Example Enterprise → 创建 Example Organization → 邀请 Organization Owner → 创建 Example Merchant 01 → 开始经营",
+          "value": "快速搭建集团治理骨架，各法人独立经营、总部统一可见。"
+        },
+        "scenario_1": {
+          "title": "场景一：子公司代理销售集团产品",
+          "process": "客户付款 → 集团账户（统一收款）→ 集团确认收入 → 系统自动划拨子公司佣金",
+          "value": "保障集团资金主权，实现结算自动化。"
+        },
+        "scenario_2": {
+          "title": "场景二：联合销售分账",
+          "process": "单笔订单包含集团产品与子公司服务 → 支付时调用分账接口 → 资金按比例直入多方账户",
+          "value": "无需二次转账，合规性与时效性兼备。"
+        },
+        "scenario_3": {
+          "title": "场景三：子公司间内部转账",
+          "process": "Organization 发起申请 → 集团审批 → 资金在集团监管账户内划拨 → 目标 Organization",
+          "value": "全程留痕，满足业务协同且资金不出体。"
+        }
+      },
+      "compliance": {
+        "title": "合规与风控要求",
+        "headers": [
+          "风险点",
+          "FilixPay 解决方案"
+        ],
+        "items": [
+          [
+            "资金脱管",
+            "统一收单与监管账户归集，杜绝个人收款码与账外资金池"
+          ],
+          [
+            "“二清”违规",
+            "使用银行/持牌机构原生分账接口，避免集团经手存量资金"
+          ],
+          [
+            "税务不合规",
+            "确保收单主体、合同主体、开票主体三流一致，系统自动校验"
+          ],
+          [
+            "内控薄弱",
+            "操作留痕，规则变更需多级审批，治理操作全程可审计"
+          ],
+          [
+            "外汇风险",
+            "跨境分账自动对接服务贸易付汇备案，保留交易背景证据"
+          ]
+        ]
+      },
+      "portal": {
+        "title": "Enterprise Management Portal",
+        "shots": {
+          "directory": {
+            "title": "企业目录",
+            "alt": "Example Enterprise 管理界面，展示下属 Example Organization 列表",
+            "caption": "在一个 Enterprise 下集中管理全部 Organization"
+          },
+          "switch": {
+            "title": "组织切换",
+            "alt": "从 Enterprise 管理门户切换进入 Example Organization 经营工作区",
+            "caption": "无缝切换至 Organization 经营工作区，开展日常业务"
+          },
+          "audit": {
+            "title": "治理审计",
+            "alt": "Example Enterprise 治理操作审计记录，含创建 Organization 等操作历史",
+            "caption": "完整记录治理操作，支持合规审计追溯"
+          }
+        }
+      }
+    },
+    "enterprise": {
+      "title": "传统企业出海",
+      "subtitle": "低成本进入全球数字支付市场",
+      "hero_title": "自信走向全球",
+      "hero_desc": "传统企业也能轻松接受加密支付、拓展全球市场 — 无需从零构建复杂的支付基础设施。"
+    },
+    "architecture": {
+      "title": "架构概览",
+      "subtitle": "企业级分布式支付系统架构",
+      "hero_title": "为扩展而生，为可靠而设计",
+      "hero_desc": "基于 Kubernetes 的微服务架构，事件驱动处理，确保 99.99% 可用性和水平可扩展。"
+    },
+    "performance": {
+      "badge": "性能基准",
+      "hero_title": "创建订单接口性能测试",
+      "hero_desc": "在正式环境对 OpenAPI 创建订单接口进行 k6 阶梯压测，验证 FilixPay 在高并发写库场景下的稳定性与响应能力。",
+      "metrics_title": "核心指标",
+      "metrics_subtitle": "阶梯加压 1 → 5 → 10 → 20 → 50 并发，全程错误率 0%。",
+      "metrics": {
+        "tps": "订单吞吐 (TPS)",
+        "success_rate": "成功率",
+        "p95": "P95 延迟",
+        "p99": "P99 延迟"
+      },
+      "recommended_limit": "建议生产限流参考值：约 100 TPS（稳定容量 × 70%）。",
+      "capacity": {
+        "title": "日订单容量估算",
+        "subtitle": "按「每日 8 小时业务时段、其中 4 小时为峰值」进行测算。",
+        "intro": "基于本次压测得到的稳定吞吐，可按典型业务的时间分布，估算单日在创建订单接口上的可承载订单量。",
+        "assumption_hours": "业务假设：每日有效创建订单时段为 8 小时。",
+        "assumption_peak": "峰值假设：其中 4 小时为业务高峰，按建议限流 100 TPS 持续处理。",
+        "assumption_off_peak": "平峰假设：其余 4 小时按非峰值的 30% 估算，即 30 TPS；另提供「平峰也按 100 TPS」的全天满限流参考值。",
+        "formula": "计算公式：订单量 = TPS × 3,600 秒 × 小时数。",
+        "highlight_daily": "推荐日承载量（峰谷模型）",
+        "highlight_daily_desc": "4 小时峰值 100 TPS + 4 小时平峰 {offPeak} TPS",
+        "highlight_daily_flat": "全天满限流参考",
+        "highlight_daily_flat_desc": "8 小时均按建议限流 100 TPS（平峰也按 100 TPS）",
+        "highlight_peak": "峰值 4 小时承载量",
+        "highlight_peak_desc": "按建议限流 100 TPS 满负载运行",
+        "tps_mixed": "峰值 {peak} / 平峰 {offPeak} TPS",
+        "table": {
+          "scenario": "测算场景",
+          "tps": "参考 TPS",
+          "orders": "可创建订单数"
+        },
+        "rows": {
+          "peak_limit": "峰值 4 小时（建议限流）",
+          "daily_mixed": "全天 8 小时（峰谷模型，推荐）",
+          "daily_flat": "全天 8 小时（平峰也按 100 TPS）",
+          "peak_stable": "峰值 4 小时（压测稳定值）",
+          "daily_full": "全天 8 小时（压测满负载，理论上限）"
+        },
+        "disclaimer": "以上为创建订单接口的单节点容量参考，未计入支付、退款、查询等其他接口占用；实际上线请结合业务峰值系数、冗余集群与监控告警综合评估。"
+      },
+      "methodology_title": "测试方法",
+      "methodology": {
+        "item1": "接口：POST /openapi/v1/orders（开放平台 Client Credentials 认证）",
+        "item2": "场景：最简订单请求，仅包含必填字段，不涉及支付通道",
+        "item3": "工具：Grafana k6，阶梯加压最高 50 并发，总时长 19 分 30 秒",
+        "item4": "数据：测试订单使用 LOADTEST- 前缀，便于识别与清理"
+      },
+      "meta": {
+        "interface": "测试接口",
+        "tool": "压测工具",
+        "duration": "测试时长",
+        "orders": "创建订单数"
+      },
+      "evidence_title": "测试截图",
+      "evidence_subtitle": "以下为 k6 汇总结果与压测过程中的系统资源监控。",
+      "screenshot_summary_alt": "k6 压测最终汇总结果",
+      "screenshot_summary_caption": "图 1：k6 压测完成汇总 — 165,229 次创建订单，141 TPS，P95 353 ms，P99 404 ms，错误率 0%。",
+      "screenshot_50vu_alt": "50 并发峰值时的系统资源监控",
+      "screenshot_50vu_caption": "图 2：50 并发峰值 — Java 与 MySQL 为主要 CPU 消耗，整体 CPU 约 61%，服务持续可用。",
+      "screenshot_20vu_alt": "20 并发阶段的系统资源监控",
+      "screenshot_20vu_caption": "图 3：20 并发阶段 — 系统负载逐步上升，应用与数据库同步承压。",
+      "conclusion_title": "结论",
+      "conclusion_body": "FilixPay 开放平台创建订单接口在 50 并发下运行稳定，成功率 100%，P99 延迟 404 ms，满足高并发订单创建场景。该结果可作为容量规划与 API 集成性能预期的参考基线。",
+      "cta_title": "需要更高并发或私有化压测？",
+      "cta_desc": "联系我们获取定制化性能评估与部署方案。"
+    },
+    "identity": {
+      "title": "身份认证",
+      "hero_title": "企业级身份认证：基于 Keycloak 构建金融级安全底座",
+      "hero_desc": "在支付系统中，身份认证不仅是用户体验的第一道门，更是资金安全与合规运营的核心防线。我们采用 Keycloak ——由 Red Hat 主导的开源身份与访问管理（IAM）平台，作为统一身份认证引擎，为您的支付业务提供金融级安全、全球合规支持与千万级用户承载能力。",
+      "why_keycloak_title": "✅ 为什么选择 Keycloak？——来自全球顶尖机构的验证",
+      "why_keycloak_desc": "Keycloak 已被众多对安全性要求极高的行业深度采用，包括金融、政府、电信和云计算领域：",
+      "cases": [
+        {
+          "name": "日立（Hitachi）",
+          "desc": "为日本银行构建符合 金融级 API（FAPI）标准 的授权服务器，通过 700+ 项一致性测试，满足最严苛的开放银行合规要求。"
+        },
+        {
+          "name": "奥地利联邦计算中心（BRZ）",
+          "desc": "作为奥地利政府技术合作伙伴，支撑 200万+ 用户 和 130+ 公共服务 的统一认证，系统稳定运行多年。"
+        },
+        {
+          "name": "Infosys",
+          "desc": "为日本大型制药集团搭建身份平台，管理 超200万用户，每日支持 4000+ 药剂师 安全登录，服务 750+ 药店。"
+        },
+        {
+          "name": "VMware（Broadcom）",
+          "desc": "在其 电信云运维平台（Telco Cloud Operations） 中深度集成 Keycloak，实现用户、角色与权限的自动化管理。"
+        }
+      ],
+      "cases_conclusion": "这些案例证明：Keycloak 不仅能扛住高并发、大规模用户压力，更能满足金融、政务等强监管行业的合规门槛。",
+      "features_title": "🔐 为支付场景量身打造的安全能力",
+      "feature_1_title": "1. 金融级协议支持",
+      "feature_1_desc": "完整实现 OpenID Connect、OAuth 2.0、SAML 2.0；原生支持 FAPI（Financial-grade API） 安全规范，满足 PSD2、开放银行等合规要求；支持 PKCE、MTLS、JWT 签名验证 等高级安全机制。",
+      "feature_2_title": "2. 强身份验证与访问控制",
+      "feature_2_desc": "多因素认证（MFA）：短信、TOTP、WebAuthn（FIDO2）；基于角色的访问控制（RBAC）与细粒度权限策略；会话管理：自动超时、强制登出、设备绑定。",
+      "feature_3_title": "3. 合规就绪架构",
+      "feature_3_desc": "GDPR 就绪：用户数据最小化、同意管理、数据导出/删除；PCI DSS 友好：不接触持卡人数据（PAN），仅作为认证层，降低合规范围；等保三级兼容：支持审计日志、身份鉴别、访问控制等核心要求（需配合整体系统设计）。",
+      "feature_4_title": "4. 高可用与可扩展",
+      "feature_4_desc": "支持集群部署、数据库分片、缓存优化；可承载 百万级日活用户，已在多个国家级平台验证；私有化部署，保障数据主权与网络隔离。",
+      "integration_title": "🛠️ 无缝集成您的支付系统",
+      "integration_desc": "Keycloak 提供标准化接口，轻松对接：",
+      "integration_items": [
+        "商户后台管理系统（SSO 单点登录）",
+        "支付网关操作员身份认证",
+        "合作伙伴 API 访问授权",
+        "内部员工权限管理平台"
+      ],
+      "integration_footer": "同时支持与 LDAP、Active Directory、社交账号 等现有身份源联邦，平滑迁移无负担。",
+      "choice_title": "💡 我们的选择：开源 + 企业级保障",
+      "choice_desc": "Keycloak 是 Red Hat 官方支持的开源项目，您既享有：",
+      "choice_item_1": "零许可费用的成本优势",
+      "choice_item_2": "社区活跃、文档完善的技术生态",
+      "choice_item_3": "Red Hat Single Sign-On（商业版）的企业级 SLA 支持选项",
+      "cta_quote": "“我们选择 Keycloak，不仅因为它免费，更因为它已被全球金融与政府机构验证——它是真正能扛起支付系统安全大梁的身份引擎。”",
+      "cta_desc": "立即体验：我们的支付平台已内置 Keycloak 认证体系，支持快速对接您的现有 IAM 系统，助您在安全与效率之间取得完美平衡。"
+    },
+    "blockchain": {
+      "title": "区块链集成",
+      "subtitle": "多链适配与跨链互操作",
+      "hero_title": "连接每一条链，信任每一笔交易",
+      "hero_desc": "原生支持主流联盟链，提供跨链验证和合规审计追踪能力。",
+      "deprecated": {
+        "badge": "已停用",
+        "title": "该技术方向已不再作为 FilixPay 当前产品定位",
+        "desc": "FilixPay 当前专注于企业支付基础设施，包括支付接入、交易管理、资金结算和企业级支付运营。",
+        "extra": "本页仅作历史参考保留，不再作为 FilixPay 核心能力被索引。",
+        "notice_title": "建议下一步",
+        "notice_body": "了解 FilixPay 如何帮助企业构建与运营支付基础设施。",
+        "cta": "了解支付基础设施",
+        "cta_title": "继续了解支付基础设施",
+        "cta_desc": "查看 FilixPay 企业支付平台能力。"
+      }
+    },
+    "case_studies": {
+      "title": "客户案例",
+      "subtitle": "看看全球企业如何借助 FilixPay 取得成功",
+      "items": [
+        {
+          "title": "MicSelect - 全球跨境电商支付集成案例",
+          "desc": "基于 Saleor + FilixPay 构建的新一代全球化电商支付体系",
+          "link": "/resources/case-studies/micselect"
+        }
+      ],
+      "micselect": {
+        "badge": "客户案例",
+        "title": "MicSelect - 全球跨境电商支付集成案例",
+        "subtitle": "基于 Saleor + FilixPay 构建的新一代全球化电商支付体系",
+        "background_eyebrow": "客户背景",
+        "background_text": "MicSelect 是面向全球市场的精选中国制造跨境电商平台，专注于高质量供应链与国际化购物体验。平台基于 Saleor 开源电商框架与 Next.js 构建，致力于为全球消费者提供优质的中国制造商品与流畅的在线购物体验。",
+        "background_link_text": "访问 MicSelect →",
+        "background_solutions_link_text": "查看 MicSelect 解决方案 →",
+        "challenges_eyebrow": "面临挑战",
+        "challenges_items": [
+          "多支付渠道统一接入",
+          "全球用户支付成功率优化",
+          "跨境订单对账复杂",
+          "电商平台支付扩展能力不足",
+          "Webhook 与异步支付状态同步"
+        ],
+        "solution_eyebrow": "解决方案",
+        "solution_intro": "FilixPay 为 MicSelect 提供了完整的支付基础设施能力：",
+        "solution_items": [
+          "聚合 Stripe / PayPal 等国际支付渠道",
+          "提供统一收银台与支付路由",
+          "基于 Webhook 的异步支付通知",
+          "自动化支付对账与结算",
+          "OpenAPI 商户开放平台",
+          "多环境支付沙箱能力",
+          "与 Saleor 深度集成"
+        ],
+        "architecture_eyebrow": "技术架构",
+        "arch_saleor": "Saleor",
+        "arch_saleor_label": "电商平台层",
+        "arch_payment_app": "FilixPay Payment App",
+        "arch_payment_app_label": "支付应用层",
+        "arch_gateway": "FilixPay Gateway",
+        "arch_gateway_label": "支付网关层",
+        "arch_channels_label": "支付渠道层",
+        "results_eyebrow": "成果",
+        "results_items": [
+          "成功实现全球化支付闭环",
+          "提升支付系统扩展能力",
+          "降低支付渠道接入复杂度",
+          "支持自动化订单状态同步",
+          "提供统一支付运营能力"
+        ],
+        "cta_title": "开始集成 FilixPay",
+        "cta_desc": "像 MicSelect 一样，快速构建全球化支付能力。立即开始接入 FilixPay。"
+      }
+    },
+    "compliance": {
+      "title": "合规指南",
+      "subtitle": "自信地应对全球支付法规",
+      "hero_title": "合规变简单",
+      "hero_desc": "涵盖 GDPR、PCI-DSS、FATF 旅行规则和各地区支付法规的全面指南，助力业务合规。"
+    },
+    "blog": {
+      "title": "博客/技术文章",
+      "subtitle": "技术洞察、行业分析与产品动态",
+      "posts": [
+        {
+          "title": "FilixPay Checkout - 独立域名部署收银台 (演示版)",
+          "desc": "基于 React 构建的独立收银台，支持多链适配与独立域名私有化部署。一次接入，全球覆盖。",
+          "link": "https://github.com/filixpay/filix-checkout"
+        },
+        {
+          "title": "FilixPay Merchant Center - 现代化商户管理后台",
+          "desc": "基于 Next.js 与 Shadcn UI 构建的商户管理系统，提供多商户管理、资金账户、提现转账及权限控制等核心功能。",
+          "link": "https://github.com/filixpay/filix-merchant"
+        }
+      ]
+    },
+    "downloads": {
+      "title": "下载中心",
+      "subtitle": "部署文档、协议样本和技术资源",
+      "items": {
+        "deploy_doc": {
+          "title": "部署指南",
+          "desc": "私有化部署完整安装手册"
+        },
+        "license_sample": {
+          "title": "源码授权协议样本",
+          "desc": "源码授权使用协议模板"
+        },
+        "api_spec": {
+          "title": "API 规范文件",
+          "desc": "OpenAPI/Swagger 接口规范文档"
+        }
+      }
+    },
+    "common": {
+      "learn_more": "了解更多",
+      "get_started": "立即开始",
+      "contact_sales": "联系销售",
+      "coming_soon": "即将上线",
+      "back_home": "返回首页",
+      "key_features": "核心特性",
+      "why_choose": "为什么选择此方案",
+      "use_cases": "使用场景",
+      "consequences": "后果"
+    },
+    "private_deployment": {
+      "badge": "ENTERPRISE DEPLOYMENT",
+      "hero_title": "全栈掌控 · 金融级可靠 · 数据自主",
+      "specs_title": "部署规格",
+      "specs_server_title": "服务器要求",
+      "specs_stack_title": "技术栈",
+      "specs_col_item": "配置项",
+      "specs_col_requirement": "要求",
+      "specs_items": {
+        "os": "操作系统",
+        "os_value": "Linux (Ubuntu 22.04+)",
+        "cpu": "CPU",
+        "cpu_value": "4 核",
+        "memory": "内存",
+        "memory_value": "≥ 8 GB",
+        "disk": "磁盘",
+        "disk_value": "≥ 20 GB",
+        "docker": "Docker",
+        "docker_value": "20.10+",
+        "compose": "Docker Compose",
+        "compose_value": "v2.0+"
+      },
+      "stack": {
+        "postgres": {
+          "name": "PostgreSQL 15–18",
+          "desc": "核心业务数据库"
+        },
+        "redis": {
+          "name": "Redis 7.2",
+          "desc": "缓存服务"
+        },
+        "keycloak": {
+          "name": "Keycloak 26.0",
+          "desc": "身份认证与授权"
+        },
+        "compose": {
+          "name": "Docker Compose",
+          "desc": "容器编排"
+        }
+      },
+      "architecture_label": "系统拓扑",
+      "pricing_section_title": "投资与定价",
+      "pricing_intro": "透明合理的商业模式，一次性授权费用，全透明系统资产交付，助力企业快速建立自研级技术优势。",
+      "pricing_badge": "企业授权许可",
+      "pricing_onetime": "一次性费用",
+      "pricing_included_title": "包含内容",
+      "pricing_included": [
+        "完整源码（商户中心、支付网关、结算引擎）",
+        "部署文档、数据库脚本、API 规范",
+        "一次性部署支持与技术交接",
+        "一年免费专业技术维护"
+      ],
+      "pricing_maintenance_label": "年度维护（次年起）",
+      "pricing_maintenance_value": "授权费的 10%（2,800 USD/年）",
+      "pricing_cta": "联系销售获取方案",
+      "licensing_title": "源码授权",
+      "final_cta_title": "准备部署您的专属支付基础设施？",
+      "final_cta_desc": "联系我们的企业团队，获取定制部署规划与授权详情。",
+      "final_cta_primary": "联系销售",
+      "final_cta_docs": "查看部署文档",
+      "final_cta_download": "下载授权协议",
+      "view_deployment_docs": "查看部署文档",
+      "deployment_comparison": {
+        "title": "收银台自托管 vs. 全栈私有化部署",
+        "desc": "FilixPay 提供两种不同范围与投入的部署路径。根据您是需要品牌化收银台页面，还是完整本地化支付平台来选择。",
+        "columns": {
+          "dimension": "对比维度",
+          "checkout": "收银台自托管",
+          "full_stack": "全栈私有化部署"
+        },
+        "rows": {
+          "scope": {
+            "label": "部署范围",
+            "checkout": "开源收银台前端 + BFF 代理（filix-checkout）",
+            "full_stack": "完整 FilixPay 栈：商户中心、支付网关、结算引擎"
+          },
+          "audience": {
+            "label": "适用对象",
+            "checkout": "希望收银台运行在自有域名、运维成本低的商户",
+            "full_stack": "银行、支付服务商及对数据主权有严格要求的大型企业"
+          },
+          "infrastructure": {
+            "label": "基础设施",
+            "checkout": "单个 Docker 容器；可选 Nginx/Caddy 反向代理",
+            "full_stack": "PostgreSQL、Redis、Keycloak、Docker Compose 集群"
+          },
+          "licensing": {
+            "label": "授权方式",
+            "checkout": "Apache-2.0 开源，可免费自托管",
+            "full_stack": "企业源码授权，一次性费用 + 年度维护"
+          },
+          "complexity": {
+            "label": "部署复杂度",
+            "checkout": "数小时——环境文件 + docker pull + HTTPS 域名",
+            "full_stack": "数天至数周——全栈部署与技术交接"
+          },
+          "when_to_choose": {
+            "label": "选择建议",
+            "checkout": "需要品牌化收银台 URL；其余能力继续使用 FilixPay SaaS",
+            "full_stack": "全部支付数据与系统必须运行在企业内网"
+          }
+        },
+        "checkout_cta": "查看收银台部署指南",
+        "merchant_center_cta": "商户中心功能概览"
+      }
+    }
+  }
+}

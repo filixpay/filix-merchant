@@ -1,0 +1,39 @@
+{
+  "Dashboard": {
+    "subtitle": "Monitor your business performance and key metrics in real-time.",
+    "quick_actions": {
+      "recharge": "Recharge",
+      "payout": "Payout",
+      "export": "Export Data"
+    },
+    "stats": {
+      "available_balance": "Available Balance",
+      "frozen_balance": "Frozen Amount",
+      "total_balance": "Total Balance",
+      "view_risk": "View risk",
+      "risk_pending": "Pending risk/tasks",
+      "risk_healthy": "Healthy",
+      "risk_attention": "Needs attention"
+    },
+    "trend": {
+      "title": "Transaction Trend",
+      "subtitle": "Money-in trend over recent periods",
+      "last_7_days": "Last 7 days",
+      "last_30_days": "Last 30 days",
+      "vs_previous": "vs previous period"
+    },
+    "risk_health": {
+      "title": "Risk & Health",
+      "pending_reviews": "Pending reviews",
+      "open_disputes": "Open disputes",
+      "chargeback_rate": "Chargeback rate",
+      "review_sla_hours": "Review SLA (hours)"
+    },
+    "recent_activity": {
+      "title": "Recent Transactions",
+      "empty": "No recent activity."
+    },
+    "trial_upgrade_banner": "Upgrade to a formal merchant account to unlock full payment capabilities.",
+    "trial_upgrade_action": "Upgrade Now"
+  }
+}

@@ -1,0 +1,347 @@
+{
+  "group_enterprise": {
+    "title": "Group Enterprise",
+    "subtitle": "Unified payment and fund governance platform for large groups",
+    "hero_title": "Build a Unified Payment and Fund Governance Platform for Large Groups",
+    "hero_desc": "From enterprise governance and unified collection to smart settlement and full-chain audit — help large groups achieve centralized headquarters governance, independent legal-entity operations, and transparent, controllable funds.",
+    "hero_ending": "Centralized governance. Independent operations. Transparent funds.",
+    "pain_points": {
+      "title": "Fund Control Gaps in Group Operations",
+      "items": [
+        {
+          "title": "Personal QR Code Collection",
+          "desc": "Stores and project teams accept payments via personal WeChat or Alipay accounts, bypassing group accounts so headquarters cannot track inflows in real time.",
+          "consequences": "Off-book fund loops, reconciliation pain, distorted operating data."
+        },
+        {
+          "title": "Third-Party Account Diversion",
+          "desc": "Business receipts flow into third-party platforms or personal accounts outside group control, creating off-book pools and weakening centralized fund scheduling.",
+          "consequences": "Fragmented funds, compliance exposure, decisions without reliable data."
+        },
+        {
+          "title": "Fragmented Payment Channels",
+          "desc": "Each legal entity connects to payment providers independently with different rates and settlement cycles, making reconciliation error-prone and costly.",
+          "consequences": "Unreliable reporting, high maintenance, complex integrations."
+        },
+        {
+          "title": "Off-Book Fund Pools",
+          "desc": "Some revenue never reaches governed accounts or moves through informal channels, so the group cannot see true operating and fund positions.",
+          "consequences": "Weak internal controls, costly audits, low fund transparency."
+        }
+      ]
+    },
+    "architecture": {
+      "title": "Enterprise Governance Architecture",
+      "lead": "Centralized governance at headquarters. Independent operations at each legal entity.",
+      "lead_en": "Governance stops at the Organization level, preserving each legal entity's operational independence.",
+      "reinforcing": "Governance centralizes management without centralizing operations.",
+      "not_org_chart": "This diagram illustrates governance relationships only — not actual org counts or hierarchy depth.",
+      "example_footnote": "Example: a diversified group may map Enterprise to group headquarters, Organization to a business-unit legal entity, and Merchant to a store or project operator (Example only — not any specific company or partnership).",
+      "layers": {
+        "identity": "Identity",
+        "enterprise": "Enterprise",
+        "organization": "Organization",
+        "merchant": "Merchant",
+        "admin": "ADMIN",
+        "viewer": "VIEWER"
+      }
+    },
+    "capabilities": {
+      "title": "Platform Capabilities",
+      "items": [
+        {
+          "icon": "🏛️",
+          "title": "Enterprise Governance",
+          "desc": "Headquarters creates and manages legal entities centrally. Governance stops at the Organization level — it does not replace day-to-day operations or authorization."
+        },
+        {
+          "icon": "💳",
+          "title": "Unified Collection",
+          "desc": "Group-wide acquiring strategy and channel coordination, with each legal entity signing and operating under its own entity while funds stay transparent and controllable."
+        },
+        {
+          "icon": "⚡",
+          "title": "Smart Settlement",
+          "desc": "Licensed split-payment APIs automate clearing, reducing manual transit and supporting multi-entity, multi-scenario settlement."
+        },
+        {
+          "icon": "🔍",
+          "title": "Full-chain Audit",
+          "desc": "Governance actions, authorization changes, and fund flows are fully traceable for headquarters oversight and compliance audit."
+        }
+      ]
+    },
+    "governance_model": {
+      "title": "Governance Model",
+      "intro": "FilixPay separates governance responsibilities from day-to-day business operations, allowing headquarters to maintain visibility and control without replacing each legal entity's operational authority.",
+      "headers": [
+        "Management Layer",
+        "Primary Responsibility"
+      ],
+      "items": [
+        [
+          "Enterprise",
+          "Governance"
+        ],
+        [
+          "Organization",
+          "Authorization & Operations"
+        ],
+        [
+          "Merchant",
+          "Business Execution"
+        ]
+      ],
+      "admin_not_owner": "Enterprise ADMIN ≠ Organization OWNER"
+    },
+    "rules": {
+      "title": "Core Business Rules",
+      "headers": [
+        "Dimension",
+        "Rule"
+      ],
+      "items": [
+        [
+          "Governance Boundary",
+          "Enterprise governs at the group level (creating and managing Organizations). It does not directly own, control, or suspend Merchants — authorization stays within each Organization."
+        ],
+        [
+          "Unified Collection",
+          "The group may set unified acquiring policies; each Organization signs and operates under its legal entity."
+        ],
+        [
+          "Fund Collection",
+          "Customer payments flow into supervised accounts — external collection channels and personal QR codes are prohibited."
+        ],
+        [
+          "Split Settlement",
+          "Licensed split APIs automate clearing and reduce manual fund transit risk."
+        ],
+        [
+          "Approval Workflow",
+          "Cross-organization fund movements require group approval before execution."
+        ]
+      ]
+    },
+    "scenarios": {
+      "title": "Business Scenarios",
+      "scenario_0": {
+        "title": "Enterprise Setup",
+        "process": "Create Example Enterprise → Create Example Organization → Invite Organization Owner → Create Example Merchant 01 → Start Operations",
+        "value": "Stand up group governance quickly — independent entity operations with headquarters-wide visibility."
+      },
+      "scenario_1": {
+        "title": "Scenario 1: Subsidiary Sells Group Products",
+        "process": "Customer pays → Group account (unified collection) → Group recognizes revenue → System allocates subsidiary commission",
+        "value": "Protects group fund sovereignty with automated settlement."
+      },
+      "scenario_2": {
+        "title": "Scenario 2: Joint Sale Split",
+        "process": "Single order includes group products and subsidiary services → Split API at payment → Funds route directly to multiple accounts by ratio",
+        "value": "No second transfer — compliant and timely."
+      },
+      "scenario_3": {
+        "title": "Scenario 3: Inter-Entity Internal Transfer",
+        "process": "Organization initiates request → Group approves → Funds move within supervised group account → Target Organization",
+        "value": "Fully traceable internal collaboration without funds leaving the governed perimeter."
+      }
+    },
+    "compliance": {
+      "title": "Compliance & Risk Control",
+      "headers": [
+        "Risk",
+        "FilixPay Solution"
+      ],
+      "items": [
+        [
+          "Fund control gaps",
+          "Unified collection and supervised account pooling — no personal QR codes or off-book pools"
+        ],
+        [
+          "Illegal fund pooling",
+          "Licensed institution split APIs — the group does not hold customer balances in transit"
+        ],
+        [
+          "Tax non-compliance",
+          "Acquiring, contract, and invoicing entities stay aligned with automated checks"
+        ],
+        [
+          "Weak internal controls",
+          "Full operation trails, multi-level approval for rule changes, auditable governance actions"
+        ],
+        [
+          "FX risk",
+          "Cross-border splits connect to trade-service FX filing with transaction evidence retained"
+        ]
+      ]
+    },
+    "portal": {
+      "title": "Enterprise Management Portal",
+      "shots": {
+        "directory": {
+          "title": "Enterprise Directory",
+          "alt": "Example Enterprise management view listing Example Organization entries",
+          "caption": "Centrally manage all organizations under one enterprise"
+        },
+        "switch": {
+          "title": "Organization Switch",
+          "alt": "Switching from Example Enterprise portal into Example Organization operational workspace",
+          "caption": "Seamlessly switch into an organization's operational workspace"
+        },
+        "audit": {
+          "title": "Governance Audit",
+          "alt": "Example Enterprise governance audit log showing Organization creation and related actions",
+          "caption": "Track governance actions with complete audit history"
+        }
+      }
+    }
+  },
+  "enterprise": {
+    "title": "Enterprise Global Expansion",
+    "subtitle": "Low-cost entry into global digital payments",
+    "hero_title": "Go Global with Confidence",
+    "hero_desc": "Traditional enterprises can now accept crypto payments and expand globally — without the complexity of building payment infrastructure from scratch."
+  },
+  "architecture": {
+    "title": "Architecture Overview",
+    "subtitle": "Enterprise-grade distributed payment system architecture",
+    "hero_title": "Built for Scale, Designed for Reliability",
+    "hero_desc": "Microservices architecture on Kubernetes with event-driven processing, ensuring 99.99% uptime and horizontal scalability."
+  },
+  "performance": {
+    "badge": "Performance Benchmark",
+    "hero_title": "Create Order API Load Test",
+    "hero_desc": "A stepped k6 load test on the production OpenAPI create-order endpoint, validating stability and latency under concurrent write workloads.",
+    "metrics_title": "Key Metrics",
+    "metrics_subtitle": "Stepped load from 1 to 50 concurrent users with 0% error rate throughout.",
+    "metrics": {
+      "tps": "Order Throughput (TPS)",
+      "success_rate": "Success Rate",
+      "p95": "P95 Latency",
+      "p99": "P99 Latency"
+    },
+    "recommended_limit": "Recommended production rate limit: ~100 TPS (stable capacity × 70%).",
+    "capacity": {
+      "title": "Daily Order Capacity Estimate",
+      "subtitle": "Based on an 8-hour business day with a 4-hour peak window.",
+      "intro": "Using the stable throughput from this load test, we estimate how many orders the create-order API can handle in a typical business day.",
+      "assumption_hours": "Business assumption: 8 active hours per day for order creation.",
+      "assumption_peak": "Peak assumption: 4 peak hours at the recommended limit of 100 TPS.",
+      "assumption_off_peak": "Off-peak assumption: the other 4 hours are estimated at 30% of peak, i.e. 30 TPS; a flat 100 TPS for all 8 hours is also provided as a full-rate reference.",
+      "formula": "Formula: orders = TPS × 3,600 seconds × hours.",
+      "highlight_daily": "Recommended Daily Capacity (Peak/Off-Peak Model)",
+      "highlight_daily_desc": "4 peak hours at 100 TPS + 4 off-peak hours at {offPeak} TPS",
+      "highlight_daily_flat": "Full-Rate Daily Reference",
+      "highlight_daily_flat_desc": "All 8 hours at 100 TPS (off-peak also at 100 TPS)",
+      "highlight_peak": "4-Hour Peak Capacity",
+      "highlight_peak_desc": "At the recommended limit of 100 TPS",
+      "tps_mixed": "Peak {peak} / Off-peak {offPeak} TPS",
+      "table": {
+        "scenario": "Scenario",
+        "tps": "Reference TPS",
+        "orders": "Orders Created"
+      },
+      "rows": {
+        "peak_limit": "4 peak hours (recommended limit)",
+        "daily_mixed": "8 business hours (peak/off-peak model, recommended)",
+        "daily_flat": "8 business hours (off-peak also at 100 TPS)",
+        "peak_stable": "4 peak hours (stable load-test value)",
+        "daily_full": "8 business hours (full load-test throughput, theoretical max)"
+      },
+      "disclaimer": "These figures reflect create-order API capacity on a single tested deployment. Payment, refund, query, and other APIs are excluded. Production planning should also consider peak factors, redundancy, and monitoring."
+    },
+    "methodology_title": "Test Methodology",
+    "methodology": {
+      "item1": "Endpoint: POST /openapi/v1/orders with Client Credentials authentication",
+      "item2": "Scenario: minimal order payload with required fields only; no payment channel calls",
+      "item3": "Tool: Grafana k6 stepped load up to 50 VUs for 19 minutes 30 seconds",
+      "item4": "Data: test orders prefixed with LOADTEST- for identification and cleanup"
+    },
+    "meta": {
+      "interface": "Endpoint",
+      "tool": "Load Test Tool",
+      "duration": "Duration",
+      "orders": "Orders Created"
+    },
+    "evidence_title": "Test Evidence",
+    "evidence_subtitle": "k6 summary output and system resource monitoring captured during the load test.",
+    "screenshot_summary_alt": "Final k6 load test summary",
+    "screenshot_summary_caption": "Figure 1: k6 summary — 165,229 orders created at 141 TPS, P95 353 ms, P99 404 ms, 0% errors.",
+    "screenshot_50vu_alt": "System monitoring at 50 concurrent users",
+    "screenshot_50vu_caption": "Figure 2: 50 VU peak — Java and MySQL are the main CPU consumers; overall CPU ~61%, service remained available.",
+    "screenshot_20vu_alt": "System monitoring at 20 concurrent users",
+    "screenshot_20vu_caption": "Figure 3: 20 VU stage — load increases progressively with application and database under shared pressure.",
+    "conclusion_title": "Conclusion",
+    "conclusion_body": "The FilixPay OpenAPI create-order endpoint remained stable at 50 concurrent users with 100% success rate and 404 ms P99 latency, providing a credible baseline for capacity planning and integration expectations.",
+    "cta_title": "Need higher concurrency or private benchmarking?",
+    "cta_desc": "Contact us for tailored performance assessment and deployment options."
+  },
+  "identity": {
+    "title": "Identity & Auth",
+    "hero_title": "Enterprise Identity: Building a Financial-Grade Security Foundation with Keycloak",
+    "hero_desc": "In payment systems, identity authentication is not only the first door of user experience but also the core defense line for fund security and compliant operations. We adopt Keycloak - an open-source Identity and Access Management (IAM) platform led by Red Hat - as a unified identity authentication engine, providing financial-grade security, global compliance support, and capacity for tens of millions of users for your payment business.",
+    "why_keycloak_title": "✅ Why Keycloak? — Verified by Top Global Institutions",
+    "why_keycloak_desc": "Keycloak has been deeply adopted by numerous industries with high security requirements, including finance, government, telecommunications, and cloud computing:",
+    "cases": [
+      {
+        "name": "Hitachi",
+        "desc": "Built an authorization server for Japanese banks that meets Financial-grade API (FAPI) standards, passing 700+ consistency tests to meet the most stringent open banking compliance requirements."
+      },
+      {
+        "name": "Austrian Federal Computing Centre (BRZ)",
+        "desc": "As a technology partner of the Austrian government, it supports unified authentication for 2 million+ users and 130+ public services, operating stably for many years."
+      },
+      {
+        "name": "Infosys",
+        "desc": "Built an identity platform for a large Japanese pharmaceutical group, managing over 2 million users and supporting 4000+ pharmacists logging in safely daily in 750+ pharmacies."
+      },
+      {
+        "name": "VMware (Broadcom)",
+        "desc": "Deeply integrated Keycloak into its Telco Cloud Operations platform to achieve automated management of users, roles, and permissions."
+      }
+    ],
+    "cases_conclusion": "These cases prove: Keycloak can not only handle high concurrency and large-scale user pressure but also meet the compliance thresholds of highly regulated industries such as finance and government.",
+    "features_title": "🔐 Security Capabilities Tailored for Payment Scenarios",
+    "feature_1_title": "1. Financial-Grade Protocol Support",
+    "feature_1_desc": "Full implementation of OpenID Connect, OAuth 2.0, SAML 2.0; native support for FAPI (Financial-grade API) security specifications to meet PSD2 and open banking compliance; support for PKCE, MTLS, JWT signature verification, and other advanced security mechanisms.",
+    "feature_2_title": "2. Strong Authentication & Access Control",
+    "feature_2_desc": "Multi-Factor Authentication (MFA): SMS, TOTP, WebAuthn (FIDO2); Role-Based Access Control (RBAC) and fine-grained permission policies; session management: automatic timeout, forced logout, and device binding.",
+    "feature_3_title": "3. Compliance-Ready Architecture",
+    "feature_3_desc": "GDPR Ready: Data minimization, consent management, data export/deletion; PCI DSS Friendly: No contact with cardholder data (PAN), serves only as an authentication layer, reducing compliance scope; compatible with multi-level protection scheme (MLPS) requirements.",
+    "feature_4_title": "4. High Availability & Scalability",
+    "feature_4_desc": "Supports cluster deployment, database sharding, and cache optimization; proven in multiple national platforms to handle millions of daily active users; private deployment ensures data sovereignty and network isolation.",
+    "integration_title": "🛠️ Seamlessly Integrate with Your Payment System",
+    "integration_desc": "Keycloak provides standardized interfaces for easy integration with:",
+    "integration_items": [
+      "Merchant Backend Management System (SSO)",
+      "Payment Gateway Operator Authentication",
+      "Partner API Access Authorization",
+      "Internal Staff Permission Management Platform"
+    ],
+    "integration_footer": "Also supports federation with existing identity sources like LDAP, Active Directory, and social accounts for a smooth migration without burden.",
+    "choice_title": "💡 Our Choice: Open Source + Enterprise-Grade Protection",
+    "choice_desc": "Keycloak is a Red Hat-supported open-source project, giving you:",
+    "choice_item_1": "Cost advantage with zero licensing fees",
+    "choice_item_2": "Technical ecosystem with active community and comprehensive documentation",
+    "choice_item_3": "Enterprise SLA support options with Red Hat Single Sign-On (Commercial version)",
+    "cta_quote": "\"We chose Keycloak not just because it's free, but because it's been verified by global financial and government institutions—it's an identity engine truly capable of carrying the security of payment systems.\"",
+    "cta_desc": "Experience now: Our payment platform has a built-in Keycloak authentication system, supporting rapid connection to your existing IAM system, helping you achieve a perfect balance between security and efficiency."
+  },
+  "blockchain": {
+    "title": "Blockchain Integration",
+    "subtitle": "Multi-chain adaption and cross-chain interoperability",
+    "hero_title": "Connect Every Chain, Trust Every Transaction",
+    "hero_desc": "Native support for major consortium blockchains with cross-chain verification and compliance-ready audit trails.",
+    "deprecated": {
+      "badge": "Deprecated",
+      "title": "This technology direction is no longer FilixPay's product positioning",
+      "desc": "FilixPay focuses on enterprise payment infrastructure — payment connectivity, transaction management, settlement, and merchant operations.",
+      "extra": "This page is retained for historical reference and is no longer indexed as a core FilixPay capability.",
+      "notice_title": "Recommended next step",
+      "notice_body": "Learn how FilixPay helps enterprises build and operate payment infrastructure.",
+      "cta": "Explore Payment Platform",
+      "cta_title": "Continue with payment infrastructure",
+      "cta_desc": "See FilixPay's enterprise payment platform capabilities."
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "Configs": {
+    "edit_config": "Edit Configuration",
+    "edit_activation_hint": "For channels without credentials, choose open or close and submit.",
+    "edit_params_hint": "Use the list switch to open or close; edit here only updates channel parameters.",
+    "edit_success": "Configuration updated",
+    "status_toggle_open_success": "Channel opened",
+    "status_toggle_close_success": "Channel closed",
+    "status_open": "Open",
+    "status_close": "Close",
+    "status_applying": "Applying",
+    "status_rejected": "Rejected",
+    "status_forbidden": "Disabled",
+    "status_required": "Please choose open or close",
+    "headers": {
+      "sub_merchant": "Sub-Merchant"
+    },
+    "routing_hint": "Payment routing automatically selects enabled channels",
+    "scenario_unavailable": "No enabled channels in this scenario",
+    "scenario_applying": "Channel is applying and not yet live. Edit and confirm Open to enable payments",
+    "add_channel": "Add channel",
+    "channels_section": "Payment channels",
+    "channel_route_active": "Routing active",
+    "channel_route_stopped": "Channel stopped",
+    "availability_badge": "{available}/{total} available",
+    "prefill_summary": "Adding channel for \"{brand} · {scenario} · {subMerchant}\"",
+    "duplicate_channel": "This channel already exists",
+    "pagination_summary": "{total} configs · {scenarios} scenarios",
+    "edit_security_title": "Encrypted in transit",
+    "save_config": "Save configuration",
+    "secret_status": {
+      "configured": "Configured",
+      "missing": "Not set"
+    },
+    "env": {
+      "live": "Live mode",
+      "test": "Test mode"
+    },
+    "credential_help": {
+      "prompt": "Need help finding API keys?",
+      "open_console": "Open provider console"
+    },
+    "validation": {
+      "stripe_secret_prefix": "Secret Key must match the selected environment (sk_live_ / sk_test_)",
+      "stripe_publishable_prefix": "Publishable Key must match the selected environment (pk_live_ / pk_test_)",
+      "stripe_webhook_prefix": "Webhook Secret should start with whsec_"
+    },
+    "sections": {
+      "alipay": "Alipay Configuration",
+      "wechat": "WeChat Configuration",
+      "stripe": "Stripe Configuration",
+      "paypal": "PayPal Configuration",
+      "nowpayments": "NowPayments Configuration"
+    },
+    "fields": {
+      "required": "This field is required",
+      "secret_keep_placeholder": "Leave blank to keep current secret",
+      "app_id": "App ID",
+      "partner_id": "Partner ID",
+      "sandbox_mode": "Sandbox Mode",
+      "alipay_public_key": "Alipay Public Key",
+      "app_private_key": "App Private Key",
+      "app_secret": "App Secret",
+      "mch_id": "Merchant ID",
+      "v2_api_key": "V2 API Key",
+      "v3_api_key": "V3 API Key",
+      "v3_serial_no": "V3 Serial No",
+      "v3_private_key": "V3 Private Key",
+      "v3_public_key": "V3 Public Key",
+      "secret_key": "Secret Key",
+      "publishable_key": "Publishable Key (Optional)",
+      "webhook_secret": "Webhook Secret (Optional)",
+      "client_id": "Client ID",
+      "client_secret": "Client Secret",
+      "webhook_id": "Webhook ID (Optional)",
+      "api_key": "API Key",
+      "ipn_secret": "IPN Secret (Optional)",
+      "default_currency": "Default Currency (Optional)"
+    }
+  }
+}

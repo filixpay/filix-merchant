@@ -1,0 +1,357 @@
+{
+  "RiskReviews": {
+    "title": "Risikoprüfungs-Warteschlange",
+    "subtitle": "Schreibgeschützte Warteschlange verdächtiger Bestellungen und Auszahlungen, die zur manuellen Prüfung markiert wurden.",
+    "empty": "Keine Risikoprüfungseinträge gefunden.",
+    "table_total": "Insgesamt {count} Prüfungen",
+    "filters": {
+      "keyword": "Prüfungen suchen",
+      "status": "Status",
+      "priority": "Priorität",
+      "review_type": "Prüfungstyp"
+    },
+    "detail": {
+      "title": "Prüfungsdetails",
+      "back_to_list": "Zurück zu den Prüfungen",
+      "not_found": "Prüfung nicht gefunden.",
+      "review_type": "Prüfungstyp",
+      "reason_code": "Ursachencode",
+      "queued_at": "Eingereiht am",
+      "decided_at": "Entscheidung am",
+      "decision_note": "Entscheidungsnotiz",
+      "linked_fraud": "Verknüpftes Betrugsereignis",
+      "resume_link": "Fortsetzungslink"
+    },
+    "resume_link": "Zahlung fortsetzen",
+    "headers": {
+      "resource": "Ressource",
+      "reason": "Grund",
+      "priority": "Priorität",
+      "status": "Status",
+      "created_at": "Markiert am"
+    },
+    "resource_type": {
+      "ORDER": "Bestellung",
+      "PAYOUT": "Auszahlung"
+    },
+    "status": {
+      "PENDING": "Ausstehend",
+      "APPROVED": "Genehmigt",
+      "REJECTED": "Abgelehnt"
+    }
+  },
+  "Reporting": {
+    "widgets": {
+      "availableBalance": "Verfügbares Guthaben",
+      "todayVolume": "Heutiges Volumen",
+      "successRate": "Erfolgsquote",
+      "pendingSettlement": "Ausstehende Abrechnung"
+    },
+    "no_data": "Keine Daten verfügbar",
+    "forbidden": "Sie haben keine Berechtigung, dies anzuzeigen",
+    "failed": "Laden fehlgeschlagen",
+    "retry": "Erneut versuchen",
+    "transactions": {
+      "title": "Transaktionsbericht",
+      "subtitle": "Transaktionen in Ihrem autorisierten Bereich finden und exportieren.",
+      "empty": "Keine Transaktionen gefunden.",
+      "table_total": "Insgesamt {count} Transaktionen",
+      "export": "CSV exportieren",
+      "export_failed": "Export fehlgeschlagen",
+      "filters": {
+        "merchant_order_id": "Händler-Bestell-ID",
+        "status": "Status",
+        "channel": "Kanal",
+        "amount_min": "Mindestbetrag",
+        "amount_max": "Höchstbetrag",
+        "created_from": "Erstellt von",
+        "created_to": "Erstellt bis"
+      },
+      "columns": {
+        "merchant_order_id": "Händler-Bestell-ID",
+        "trade_no": "Handelsnr.",
+        "order_type": "Auftragstyp",
+        "status": "Status",
+        "amount": "Betrag",
+        "channel": "Kanal",
+        "created_at": "Erstellt am"
+      },
+      "statuses": {
+        "PENDING": "Ausstehend",
+        "PROCESSING": "In Bearbeitung",
+        "PARTIAL_SUCCESS": "Teilweise erfolgreich",
+        "SUCCESS": "Erfolgreich",
+        "CLOSED": "Geschlossen",
+        "FAILED": "Fehlgeschlagen",
+        "REQUIRES_CAPTURE": "Capture erforderlich",
+        "DISPUTED": "Angefochten"
+      },
+      "orderTypes": {
+        "TRADE": "Handelsauftrag",
+        "DEPOSIT": "Einzahlung",
+        "TRANSFER": "Überweisung",
+        "PAYOUT": "Auszahlung",
+        "WITHDRAWAL": "Auszahlung",
+        "REFUND": "Erstattung",
+        "DIRECT_DEBIT": "Lastschrift",
+        "PLATFORM_SERVICE_FEE": "Plattform-Servicegebühr"
+      },
+      "detail": {
+        "title": "Transaktionsdetails",
+        "back_to_list": "Zurück zu den Transaktionen",
+        "resource_unavailable": "Ressource nicht verfügbar",
+        "view_business_detail": "Geschäftsdetails anzeigen",
+        "fields": {
+          "merchant_order_id": "Händler-Bestell-ID",
+          "trade_no": "Handelsnr.",
+          "status": "Status",
+          "order_type": "Auftragstyp",
+          "amount": "Betrag",
+          "paid_amount": "Bezahlter Betrag",
+          "refunded_amount": "Erstatteter Betrag",
+          "currency": "Währung",
+          "channel": "Kanal",
+          "subject": "Betreff",
+          "created_at": "Erstellt am",
+          "paid_at": "Bezahlt am",
+          "updated_at": "Aktualisiert am"
+        },
+        "timeline": {
+          "title": "Zeitachse",
+          "empty": "Keine Zeitachsenereignisse."
+        }
+      }
+    }
+  },
+  "Risk": {
+    "related_risk": {
+      "title": "Zugehöriges Risiko",
+      "fraud_events": "Betrugsereignisse",
+      "reviews": "Prüfungen"
+    },
+    "payment_timeline": {
+      "title": "Zahlungsrisiko-Zeitachse",
+      "entity": {
+        "FRAUD": "Betrug",
+        "REVIEW": "Prüfung",
+        "DISPUTE": "Streitfall",
+        "PAYMENT": "Zahlung"
+      }
+    },
+    "dashboard": {
+      "title": "Risikoübersicht",
+      "view_fraud": "Betrugsereignisse anzeigen",
+      "pending_reviews": "Ausstehende Prüfungen",
+      "open_disputes": "Offene Streitfälle",
+      "high_fraud_today": "Hoher Betrug heute",
+      "blocked_amount": "Blockierter Betrag",
+      "blocked_unsupported": "Noch nicht unterstützt",
+      "review_sla_hours": "Prüfungs-SLA (Std.)",
+      "chargeback_ratio": "Chargeback-Quote",
+      "rejected_today": "Heute abgelehnt",
+      "pending_review_attempts": "Zahlungen in Prüfung",
+      "pending_events": "Ausstehende Risikoaktionen",
+      "monitoring_metrics": "Laufende Überwachung"
+    }
+  },
+  "RiskRules": {
+    "title": "Risikoregeln",
+    "subtitle": "Plattform- und Händler-PRE_AUTH-Regeln anzeigen (schreibgeschützt).",
+    "empty": "Keine Risikoregeln gefunden.",
+    "headers": {
+      "name": "Name",
+      "rule_type": "Typ",
+      "severity": "Schweregrad",
+      "enforcement": "Durchsetzung",
+      "scope": "Geltungsbereich",
+      "enabled": "Aktiviert",
+      "priority": "Priorität",
+      "config": "Konfiguration"
+    },
+    "rule_type": {
+      "VELOCITY": "Velocity",
+      "AMOUNT": "Betrag"
+    },
+    "enforcement": {
+      "BLOCK": "Blockieren",
+      "REVIEW_BEFORE_AUTH": "Prüfung vor Zahlung"
+    },
+    "scope": {
+      "platform": "Plattform",
+      "merchant": "Händler"
+    },
+    "config": {
+      "schema": "Schema",
+      "velocity": "Max. {maxCount} Versuche innerhalb von {windowMinutes} Minuten",
+      "amount": "Schwellenwert: {threshold}"
+    }
+  },
+  "Fraud": {
+    "title": "Betrugsereignisse",
+    "subtitle": "Erkannte Betrugssignale und Untersuchungsstatus überwachen.",
+    "empty": "Keine Betrugsereignisse gefunden.",
+    "table_total": "Insgesamt {count} Ereignisse",
+    "filters": {
+      "keyword": "Ereignisse suchen",
+      "status": "Status",
+      "severity": "Schweregrad"
+    },
+    "detail": {
+      "title": "Details zum Betrugsereignis",
+      "back_to_list": "Zurück zu den Betrugsereignissen",
+      "not_found": "Betrugsereignis nicht gefunden.",
+      "payment_id": "Zahlungs-ID",
+      "provider": "Anbieter",
+      "score": "Risikobewertung",
+      "metadata": {
+        "title": "Metadaten",
+        "v1": {
+          "deviceId": "Geräte-ID",
+          "ipAddress": "IP-Adresse",
+          "velocityCount": "Velocity-Zähler",
+          "amountThreshold": "Betragsschwelle",
+          "countryCode": "Land",
+          "cardFingerprint": "Karten-Fingerprint"
+        }
+      }
+    },
+    "headers": {
+      "event_type": "Ereignistyp",
+      "risk_type": "Risikotyp",
+      "description": "Beschreibung",
+      "severity": "Schweregrad",
+      "order_id": "Zugehörige Bestellung",
+      "status": "Status",
+      "detected_at": "Erkannt am"
+    },
+    "status": {
+      "OPEN": "Offen",
+      "INVESTIGATING": "In Untersuchung",
+      "CLOSED": "Geschlossen"
+    },
+    "risk_type": {
+      "DEVICE": "Geräteanomalie",
+      "VELOCITY": "Velocity-Anomalie",
+      "GEO": "Geografische Anomalie",
+      "BIN": "BIN-Anomalie",
+      "AMOUNT": "Betragsanomalie",
+      "IP_MISMATCH": "IP-Abweichung",
+      "COMBINED": "Kombiniertes Risiko",
+      "FRAUD": "Betrugsrisiko"
+    },
+    "summary": {
+      "DEVICE": "Geräte-Fingerprint stimmt nicht mit dem Rechnungsprofil überein",
+      "VELOCITY": "Transaktionsgeschwindigkeit hat den Schwellenwert überschritten",
+      "GEO": "Transaktionsgeografie weicht vom erwarteten Verhalten ab",
+      "BIN": "Karten-BIN weist erhöhte Risikomerkmale auf",
+      "AMOUNT": "Transaktionsbetrag liegt außerhalb des normalen Bereichs",
+      "IP_MISMATCH": "IP-Adresse stimmt nicht mit den Rechnungsinformationen überein",
+      "COMBINED": "Mehrere Risikosignale wurden gemeinsam ausgelöst",
+      "FRAUD": "Verdächtige Betrugsaktivität erkannt"
+    }
+  },
+  "CoverageInsurance": {
+    "title": "Absicherungsversicherung",
+    "subtitle": "Abonnieren Sie die plattformgehostete Chargeback-Absicherung für neue Bestellungen.",
+    "product_title": "Plattform-Chargeback-Absicherung",
+    "product_description": "Filix Pay bietet integrierte Streitfall-Absicherung über unsere Plattform-Versicherungspartner.",
+    "unavailable_title": "Service noch nicht verfügbar",
+    "unavailable_body": "Die Plattform-Absicherung wird vorbereitet. Bitte schauen Sie später erneut vorbei oder kontaktieren Sie den Support.",
+    "agreement_body": "Mit dem Abonnement autorisieren Sie Filix Pay, die plattformgehostete Chargeback-Absicherung gemäß der aktuellen Servicevereinbarung auf berechtigte neue Bestellungen anzuwenden.",
+    "agreement_checkbox": "Ich habe die Absicherungs-Servicevereinbarung (v1) gelesen und stimme ihr zu.",
+    "unsubscribed_banner": "Die Absicherung ist für neue Bestellungen deaktiviert. Bestehende Ansprüche werden weiterhin bearbeitet.",
+    "status": {
+      "subscribed": "Aktiv",
+      "not_subscribed": "Nicht abonniert",
+      "unsubscribed": "Abonnement beendet"
+    },
+    "fields": {
+      "provider": "Anbieter",
+      "subscribed_at": "Abonniert am",
+      "agreement_version": "Vereinbarungsversion"
+    },
+    "actions": {
+      "subscribe": "Absicherung aktivieren",
+      "unsubscribe": "Absicherung deaktivieren"
+    },
+    "unsubscribe_modal": {
+      "title": "Absicherung deaktivieren?",
+      "warning": "Nachdem Sie die Absicherung deaktivieren, sind neue Bestellungen nicht mehr durch die Plattform-Chargeback-Versicherung abgedeckt. Bestehende Ansprüche werden ohne Unterbrechung weiter bearbeitet.",
+      "confirm": "Deaktivieren",
+      "cancel": "Abbrechen"
+    },
+    "messages": {
+      "load_failed": "Absicherungsabonnement konnte nicht geladen werden",
+      "subscribed": "Absicherung aktiviert",
+      "subscribe_failed": "Absicherung konnte nicht aktiviert werden",
+      "unsubscribed": "Absicherung deaktiviert",
+      "unsubscribe_failed": "Absicherung konnte nicht deaktiviert werden"
+    }
+  },
+  "CoverageConfig": {
+    "title": "Chargeback-Absicherung",
+    "subtitle": "Absicherungsanbieter für neue Chargeback-Fälle konfigurieren.",
+    "empty": "Noch keine Absicherungskonfigurationen.",
+    "provider_switch_warning": "Ein Anbieterwechsel wirkt sich nur auf neue Chargeback-Fälle aus.",
+    "active_banner": "Aktiver Anbieter: {provider} ({id})",
+    "no_active_banner": "Kein aktiver Absicherungsanbieter. Neue Streitfälle überspringen Absicherungsansprüche.",
+    "platform_hosted_banner": "Diese Konfiguration ermöglicht die plattformgehostete Absicherung für abonnierte Plattform-Abrechnungshändler.",
+    "maintenance_banner": "Wartungsmodus: neue Bewertungen sind pausiert; laufende Anspruchs-Webhooks werden fortgesetzt.",
+    "columns": {
+      "provider": "Anbieter",
+      "status": "Status",
+      "version": "Version",
+      "updated_at": "Aktualisiert"
+    },
+    "status": {
+      "active": "Aktiv",
+      "disabled": "Deaktiviert",
+      "maintenance": "Wartung"
+    },
+    "fields": {
+      "provider": "Anbieter",
+      "provider_placeholder": "Anbieter auswählen"
+    },
+    "config_fields": {
+      "teamId": "Team-ID",
+      "shopDomain": "Shop-Domain",
+      "environment": "Umgebung",
+      "coverageLimit": "Absicherungslimit",
+      "currency": "Währung",
+      "mode": "Modus"
+    },
+    "secret_fields": {
+      "apiKey": "API-Schlüssel",
+      "webhookSecret": "Webhook-Secret"
+    },
+    "secret_keep_hint": "Aktueller Wert: {masked}. Leer lassen, um unverändert zu belassen.",
+    "secret_placeholder_edit": "Leer lassen, um den aktuellen Wert beizubehalten",
+    "validation": {
+      "provider_required": "Bitte wählen Sie einen Anbieter",
+      "field_required": "{field} ist erforderlich"
+    },
+    "actions": {
+      "create": "Konfiguration hinzufügen",
+      "edit": "Bearbeiten",
+      "activate": "Aktivieren",
+      "deactivate": "Deaktivieren",
+      "enter_maintenance": "Wartung starten",
+      "resume": "Service fortsetzen",
+      "test_connection": "Verbindung testen"
+    },
+    "modal": {
+      "create_title": "Absicherungskonfiguration hinzufügen",
+      "edit_title": "Absicherungskonfiguration bearbeiten"
+    },
+    "messages": {
+      "created": "Absicherungskonfiguration erstellt",
+      "updated": "Absicherungskonfiguration aktualisiert",
+      "activated": "Absicherungskonfiguration aktiviert",
+      "deactivated": "Absicherungskonfiguration deaktiviert",
+      "maintenance_entered": "Absicherung in den Wartungsmodus versetzt",
+      "resumed": "Absicherung fortgesetzt",
+      "test_ok": "Verbindung OK ({latencyMs} ms, {providerVersion})",
+      "test_failed": "Verbindungstest fehlgeschlagen: {status}"
+    }
+  }
+}

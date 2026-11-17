@@ -1,0 +1,39 @@
+{
+  "PayoutRecords": {
+    "title": "Payout Records",
+    "subtitle": "View and manage payout business order history.",
+    "headers": {
+      "payout_no": "Payout No",
+      "amount": "Payout Amount",
+      "status": "Status",
+      "created_at": "Payout Time"
+    },
+    "empty": "No payout records found.",
+    "item_details": {
+      "title": "Payout Details",
+      "headers": {
+        "payee_name": "Payee Name",
+        "payee_account": "Account Number",
+        "bank": "Bank Name",
+        "amount": "Payout Amount",
+        "status": "Status",
+        "created_at": "Created At"
+      }
+    },
+    "create_modal": {
+      "title": "Create Payout Request",
+      "available_balance": "Available Balance",
+      "add_item": "Add Payee",
+      "payee_code": "Payee Customer Code",
+      "amount": "Payout Amount",
+      "memo": "Memo",
+      "submit": "Submit Payout",
+      "cancel": "Cancel",
+      "success": "Payout request submitted successfully",
+      "insufficient_balance": "Total payout amount cannot exceed available balance",
+      "invalid_amount": "Please enter a valid payout amount",
+      "payee_required": "Please enter payee customer code",
+      "at_least_one": "Please add at least one payout item"
+    }
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "Reporting": {
+    "widgets": {
+      "availableBalance": "الرصيد المتاح",
+      "todayVolume": "حجم اليوم",
+      "successRate": "معدل النجاح",
+      "pendingSettlement": "تسوية معلقة"
+    },
+    "no_data": "لا توجد بيانات متاحة",
+    "forbidden": "ليس لديك صلاحية لعرض هذا",
+    "failed": "فشل التحميل",
+    "retry": "إعادة المحاولة",
+    "transactions": {
+      "title": "تقرير المعاملات",
+      "subtitle": "استكشف المعاملات ضمن نطاق صلاحياتك وصدّرها.",
+      "empty": "لم يتم العثور على معاملات.",
+      "table_total": "إجمالي {count} معاملة",
+      "export": "تصدير CSV",
+      "export_failed": "فشل التصدير",
+      "filters": {
+        "merchant_order_id": "معرّف طلب التاجر",
+        "status": "الحالة",
+        "channel": "القناة",
+        "amount_min": "الحد الأدنى للمبلغ",
+        "amount_max": "الحد الأقصى للمبلغ",
+        "created_from": "تاريخ الإنشاء من",
+        "created_to": "تاريخ الإنشاء إلى"
+      },
+      "columns": {
+        "merchant_order_id": "معرّف طلب التاجر",
+        "trade_no": "رقم المعاملة",
+        "order_type": "نوع الطلب",
+        "status": "الحالة",
+        "amount": "المبلغ",
+        "channel": "القناة",
+        "created_at": "تاريخ الإنشاء"
+      },
+      "statuses": {
+        "PENDING": "معلق",
+        "PROCESSING": "قيد المعالجة",
+        "PARTIAL_SUCCESS": "نجاح جزئي",
+        "SUCCESS": "ناجح",
+        "CLOSED": "مغلق",
+        "FAILED": "فشل",
+        "REQUIRES_CAPTURE": "يتطلب التحصيل",
+        "DISPUTED": "متنازع عليه"
+      },
+      "orderTypes": {
+        "TRADE": "طلب تجارة",
+        "DEPOSIT": "إيداع",
+        "TRANSFER": "تحويل",
+        "PAYOUT": "صرف",
+        "WITHDRAWAL": "سحب",
+        "REFUND": "استرداد",
+        "DIRECT_DEBIT": "خصم مباشر",
+        "PLATFORM_SERVICE_FEE": "رسوم خدمة المنصة"
+      },
+      "detail": {
+        "title": "تفاصيل المعاملة",
+        "back_to_list": "العودة إلى المعاملات",
+        "resource_unavailable": "المورد غير متاح",
+        "view_business_detail": "عرض التفاصيل التجارية",
+        "fields": {
+          "merchant_order_id": "معرّف طلب التاجر",
+          "trade_no": "رقم المعاملة",
+          "status": "الحالة",
+          "order_type": "نوع الطلب",
+          "amount": "المبلغ",
+          "paid_amount": "المبلغ المدفوع",
+          "refunded_amount": "المبلغ المسترد",
+          "currency": "العملة",
+          "channel": "القناة",
+          "subject": "الموضوع",
+          "created_at": "تاريخ الإنشاء",
+          "paid_at": "تاريخ الدفع",
+          "updated_at": "تاريخ التحديث"
+        },
+        "timeline": {
+          "title": "الخط الزمني",
+          "empty": "لا توجد أحداث في الخط الزمني."
+        }
+      }
+    }
+  },
+  "Risk": {
+    "related_risk": {
+      "title": "المخاطر ذات الصلة",
+      "fraud_events": "أحداث الاحتيال",
+      "reviews": "المراجعات"
+    },
+    "payment_timeline": {
+      "title": "الخط الزمني لمخاطر الدفع",
+      "entity": {
+        "FRAUD": "احتيال",
+        "REVIEW": "مراجعة",
+        "DISPUTE": "نزاع",
+        "PAYMENT": "دفع"
+      }
+    },
+    "dashboard": {
+      "title": "نظرة عامة على المخاطر",
+      "view_fraud": "عرض أحداث الاحتيال",
+      "pending_reviews": "مراجعات معلقة",
+      "open_disputes": "نزاعات مفتوحة",
+      "high_fraud_today": "احتيال مرتفع اليوم",
+      "blocked_amount": "المبلغ المحظور",
+      "blocked_unsupported": "غير مدعوم بعد",
+      "review_sla_hours": "اتفاقية مستوى خدمة المراجعة (ساعات)",
+      "chargeback_ratio": "نسبة الاسترداد العكسي",
+      "rejected_today": "مرفوض اليوم",
+      "pending_review_attempts": "مدفوعات بانتظار المراجعة",
+      "pending_events": "إجراءات مخاطر معلقة",
+      "monitoring_metrics": "مراقبة مستمرة"
+    }
+  },
+  "RiskRules": {
+    "title": "قواعد المخاطر",
+    "subtitle": "عرض قواعد PRE_AUTH للمنصة والتجار (للقراءة فقط).",
+    "empty": "لم يتم العثور على قواعد مخاطر.",
+    "headers": {
+      "name": "الاسم",
+      "rule_type": "النوع",
+      "severity": "الخطورة",
+      "enforcement": "التنفيذ",
+      "scope": "النطاق",
+      "enabled": "مفعّل",
+      "priority": "الأولوية",
+      "config": "التكوين"
+    },
+    "rule_type": {
+      "VELOCITY": "السرعة",
+      "AMOUNT": "المبلغ"
+    },
+    "enforcement": {
+      "BLOCK": "حظر",
+      "REVIEW_BEFORE_AUTH": "مراجعة قبل الدفع"
+    },
+    "scope": {
+      "platform": "المنصة",
+      "merchant": "التاجر"
+    },
+    "config": {
+      "schema": "المخطط",
+      "velocity": "بحد أقصى {maxCount} محاولة خلال {windowMinutes} دقيقة",
+      "amount": "العتبة: {threshold}"
+    }
+  },
+  "Fraud": {
+    "title": "أحداث الاحتيال",
+    "subtitle": "مراقبة إشارات الاحتيال المكتشفة وحالة التحقيق.",
+    "empty": "لم يتم العثور على أحداث احتيال.",
+    "table_total": "إجمالي {count} حدث",
+    "filters": {
+      "keyword": "البحث في الأحداث",
+      "status": "الحالة",
+      "severity": "الخطورة"
+    },
+    "detail": {
+      "title": "تفاصيل حدث الاحتيال",
+      "back_to_list": "العودة إلى أحداث الاحتيال",
+      "not_found": "لم يتم العثور على حدث الاحتيال.",
+      "payment_id": "معرّف الدفع",
+      "provider": "المزوّد",
+      "score": "درجة المخاطر",
+      "metadata": {
+        "title": "البيانات الوصفية",
+        "v1": {
+          "deviceId": "معرّف الجهاز",
+          "ipAddress": "عنوان IP",
+          "velocityCount": "عدد السرعة",
+          "amountThreshold": "عتبة المبلغ",
+          "countryCode": "البلد",
+          "cardFingerprint": "بصمة البطاقة"
+        }
+      }
+    },
+    "headers": {
+      "event_type": "نوع الحدث",
+      "risk_type": "نوع المخاطر",
+      "description": "الوصف",
+      "severity": "الخطورة",
+      "order_id": "الطلب ذو الصلة",
+      "status": "الحالة",
+      "detected_at": "تاريخ الاكتشاف"
+    },
+    "status": {
+      "OPEN": "مفتوح",
+      "INVESTIGATING": "قيد التحقيق",
+      "CLOSED": "مغلق"
+    },
+    "risk_type": {
+      "DEVICE": "شذوذ في الجهاز",
+      "VELOCITY": "شذوذ في السرعة",
+      "GEO": "شذوذ جغرافي",
+      "BIN": "شذوذ في BIN",
+      "AMOUNT": "شذوذ في المبلغ",
+      "IP_MISMATCH": "عدم تطابق عنوان IP",
+      "COMBINED": "مخاطر مجمّعة",
+      "FRAUD": "مخاطر احتيال"
+    },
+    "summary": {
+      "DEVICE": "بصمة الجهاز لا تتطابق مع ملف الفوترة",
+      "VELOCITY": "تجاوزت سرعة المعاملات العتبة المحددة",
+      "GEO": "الموقع الجغرافي للمعاملة يختلف عن السلوك المتوقع",
+      "BIN": "يُظهر BIN البطاقة خصائص مخاطر مرتفعة",
+      "AMOUNT": "مبلغ المعاملة خارج النطاق الطبيعي",
+      "IP_MISMATCH": "عنوان IP لا يتطابق مع معلومات الفوترة",
+      "COMBINED": "تم تفعيل عدة إشارات مخاطر معًا",
+      "FRAUD": "تم اكتشاف نشاط احتيال مشبوه"
+    }
+  },
+  "CoverageInsurance": {
+    "title": "تأمين التغطية",
+    "subtitle": "اشترك في تغطية الاسترداد العكسي المستضافة على المنصة للطلبات الجديدة.",
+    "product_title": "تغطية الاسترداد العكسي للمنصة",
+    "product_description": "توفر Filix Pay تغطية نزاعات متكاملة عبر شركاء التأمين على المنصة.",
+    "unavailable_title": "الخدمة غير متاحة بعد",
+    "unavailable_body": "تُجهَّز تغطية المنصة حاليًا. يُرجى التحقق لاحقًا أو التواصل مع الدعم.",
+    "agreement_body": "بالاشتراك، تفوّض Filix Pay بتطبيق تغطية الاسترداد العكسي المستضافة على المنصة على الطلبات الجديدة المؤهلة بموجب اتفاقية الخدمة الحالية.",
+    "agreement_checkbox": "لقد قرأت ووافقت على اتفاقية خدمة التغطية (الإصدار 1).",
+    "unsubscribed_banner": "التغطية معطّلة للطلبات الجديدة. ستستمر معالجة المطالبات القائمة.",
+    "status": {
+      "subscribed": "نشط",
+      "not_subscribed": "غير مشترك",
+      "unsubscribed": "أُلغي الاشتراك"
+    },
+    "fields": {
+      "provider": "المزوّد",
+      "subscribed_at": "تاريخ الاشتراك",
+      "agreement_version": "إصدار الاتفاقية"
+    },
+    "actions": {
+      "subscribe": "تفعيل التغطية",
+      "unsubscribe": "إيقاف التغطية"
+    },
+    "unsubscribe_modal": {
+      "title": "إيقاف التغطية؟",
+      "warning": "بعد إيقاف التغطية، لن تكون الطلبات الجديدة مشمولة بتأمين الاسترداد العكسي للمنصة. ستستمر معالجة المطالبات القائمة دون انقطاع.",
+      "confirm": "إيقاف",
+      "cancel": "إلغاء"
+    },
+    "messages": {
+      "load_failed": "فشل تحميل اشتراك التغطية",
+      "subscribed": "تم تفعيل التغطية",
+      "subscribe_failed": "فشل تفعيل التغطية",
+      "unsubscribed": "تم إيقاف التغطية",
+      "unsubscribe_failed": "فشل إيقاف التغطية"
+    }
+  },
+  "CoverageConfig": {
+    "title": "تغطية الاسترداد العكسي",
+    "subtitle": "تكوين مزوّدي تغطية النزاعات لحالات الاسترداد العكسي الجديدة.",
+    "empty": "لا توجد تكوينات تغطية بعد.",
+    "provider_switch_warning": "تبديل المزوّد يؤثر فقط على حالات الاسترداد العكسي الجديدة.",
+    "active_banner": "المزوّد النشط: {provider} ({id})",
+    "no_active_banner": "لا يوجد مزوّد تغطية نشط. ستتخطى النزاعات الجديدة مطالبات التغطية.",
+    "platform_hosted_banner": "يشغّل هذا التكوين التغطية المستضافة على المنصة لتجار التسوية المشتركين في المنصة.",
+    "maintenance_banner": "وضع الصيانة: توقفت التقييمات الجديدة؛ وتستمر webhooks المطالبات الجارية.",
+    "columns": {
+      "provider": "المزوّد",
+      "status": "الحالة",
+      "version": "الإصدار",
+      "updated_at": "آخر تحديث"
+    },
+    "status": {
+      "active": "نشط",
+      "disabled": "معطّل",
+      "maintenance": "صيانة"
+    },
+    "fields": {
+      "provider": "المزوّد",
+      "provider_placeholder": "اختر مزوّدًا"
+    },
+    "config_fields": {
+      "teamId": "معرّف الفريق",
+      "shopDomain": "نطاق المتجر",
+      "environment": "البيئة",
+      "coverageLimit": "حد التغطية",
+      "currency": "العملة",
+      "mode": "الوضع"
+    },
+    "secret_fields": {
+      "apiKey": "مفتاح API",
+      "webhookSecret": "سر Webhook"
+    },
+    "secret_keep_hint": "القيمة الحالية: {masked}. اترك الحقل فارغًا للإبقاء عليها دون تغيير.",
+    "secret_placeholder_edit": "اتركه فارغًا للإبقاء على القيمة الحالية",
+    "validation": {
+      "provider_required": "يُرجى اختيار مزوّد",
+      "field_required": "{field} مطلوب"
+    },
+    "actions": {
+      "create": "إضافة تكوين",
+      "edit": "تعديل",
+      "activate": "تفعيل",
+      "deactivate": "إلغاء التفعيل",
+      "enter_maintenance": "الدخول في وضع الصيانة",
+      "resume": "استئناف الخدمة",
+      "test_connection": "اختبار الاتصال"
+    },
+    "modal": {
+      "create_title": "إضافة تكوين تغطية",
+      "edit_title": "تعديل تكوين التغطية"
+    },
+    "messages": {
+      "created": "تم إنشاء تكوين التغطية",
+      "updated": "تم تحديث تكوين التغطية",
+      "activated": "تم تفعيل تكوين التغطية",
+      "deactivated": "تم إلغاء تفعيل تكوين التغطية",
+      "maintenance_entered": "دخلت التغطية وضع الصيانة",
+      "resumed": "تم استئناف التغطية",
+      "test_ok": "الاتصال سليم ({latencyMs} مللي ثانية، {providerVersion})",
+      "test_failed": "فشل اختبار الاتصال: {status}"
+    }
+  }
+}

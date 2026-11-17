@@ -1,0 +1,16 @@
+{
+  "CreditAdjustment": {
+    "title": "Limit Adjustment Records",
+    "subtitle": "View historical adjustment records for credit limits, including modified amounts, operator, and time.",
+    "headers": {
+      "operator": "Operator",
+      "old_limit": "Old Limit",
+      "new_limit": "New Limit",
+      "amount": "Adj. Amount",
+      "debitor": "Debitor",
+      "created_at": "Time"
+    },
+    "loading": "Loading adjustment records...",
+    "empty": "No credit adjustment records found."
+  }
+}

@@ -1,0 +1,1116 @@
+{
+  "MoneyCommon": {
+    "statuses": {
+      "POSTED": "Posted",
+      "COMPLETED": "Completed",
+      "CLEARED": "Cleared",
+      "REQUESTED": "Requested",
+      "PENDING": "Pending",
+      "PROCESSING": "Processing",
+      "CONFIRMED": "Confirmed",
+      "FAILED": "Failed",
+      "REJECTED": "Rejected",
+      "CANCELLED": "Cancelled",
+      "CANCELED": "Cancelled",
+      "UNKNOWN": "Unknown"
+    },
+    "capStatuses": {
+      "ALLOW": "Allow",
+      "UNAVAILABLE": "Unavailable",
+      "UNKNOWN": "—"
+    },
+    "balanceTypes": {
+      "AVAILABLE": "Available",
+      "PENDING": "Pending",
+      "CLEARING": "Clearing"
+    },
+    "sources": {
+      "MONEY_IN_INTENT": "Money-In",
+      "MONEY_OUT_INTENT": "Money-Out",
+      "TRANSFER_RECORD": "Transfer record",
+      "UNKNOWN": "Unknown"
+    },
+    "movementTypes": {
+      "MONEY_IN": "Money-In",
+      "MONEY_OUT": "Money-Out",
+      "PAYOUT": "Payout",
+      "TRANSFER": "Transfer",
+      "UNKNOWN": "Unknown"
+    }
+  },
+  "MoneyBalance": {
+    "title": "Balance",
+    "subtitle": "Unified multi-asset balances; deposit, transfer, or withdraw when capability allows.",
+    "available": "Available",
+    "balance_type": "Balance type",
+    "amount": "Amount",
+    "actions": "Actions",
+    "view_details": "View details",
+    "money_in_status": "Money-In",
+    "payout_status": "Payout",
+    "deposit_cta": "Deposit",
+    "withdraw_cta": "Withdraw",
+    "transfer_cta": "Transfer",
+    "status_healthy": "Active",
+    "status_restricted": "Limited",
+    "restriction_item": "{operation} is not enabled",
+    "restriction_ops": {
+      "moneyIn": "Deposit",
+      "payout": "Withdraw",
+      "transfer": "Transfer"
+    },
+    "asset_account": "{asset} account",
+    "updated_at": "Updated {time}",
+    "as_of": "As of {time}",
+    "empty": "No asset balances yet.",
+    "empty_title": "No asset balances yet",
+    "empty_desc": "No funds have flowed into this account yet. After your first deposit, balances will appear here by currency.",
+    "empty_deposit_cta": "Make first deposit",
+    "refresh": "Refresh",
+    "assets_section_title": "Balances by currency",
+    "retry": "Retry",
+    "movements": {
+      "title": "Balance movements",
+      "empty": "No ledger movements for this balance yet.",
+      "headers": {
+        "time": "Time",
+        "type": "Type",
+        "journal": "Journal",
+        "reference": "Reference",
+        "amount": "Amount",
+        "asset": "Asset",
+        "balanceAfter": "Balance after"
+      },
+      "related_reference": "Related: {id}",
+      "total_count": "{count} movements",
+      "buckets": {
+        "AVAILABLE": "Available",
+        "PENDING": "Pending"
+      },
+      "businessTypes": {
+        "PAYMENT": "Payment",
+        "PAYMENT_REVERSAL": "Payment reversal",
+        "REFUND": "Refund",
+        "REFUND_REVERSAL": "Refund reversal",
+        "SETTLEMENT": "Settlement",
+        "SETTLEMENT_REVERSAL": "Settlement reversal",
+        "FEE": "Fee",
+        "PAYOUT": "Payout",
+        "TRANSFER": "Transfer",
+        "MONEY_IN": "Money-In",
+        "ADJUSTMENT": "Adjustment",
+        "OTHER": "Other"
+      }
+    }
+  },
+  "MoneyActivity": {
+    "title": "Activity",
+    "subtitle": "Money movements from the product Activity feed.",
+    "empty": "No activity yet.",
+    "asset_filter_label": "Asset",
+    "asset_filter_all": "All",
+    "asset_filter_placeholder": "Select asset",
+    "no_assets": "No present balances yet — activity filter needs an asset.",
+    "columns": {
+      "time": "Time",
+      "source": "Source",
+      "movement": "Movement",
+      "amount": "Amount",
+      "asset": "Asset",
+      "status": "Status",
+      "reference": "Reference"
+    },
+    "movement_filter_label": "Type",
+    "movement_filter_all": "All",
+    "movement_filter_in": "In",
+    "movement_filter_out": "Out",
+    "movement_filter_transfer": "Transfer"
+  },
+  "MoneyIn": {
+    "title": "Money-In",
+    "subtitle": "Add funds via the Money product API.",
+    "methods_title": "Funding Methods",
+    "methods_subtitle": "Configure deposit addresses used to receive funds.",
+    "tabs": {
+      "records": "Deposits",
+      "methods": "Funding Methods"
+    },
+    "empty": "No Money-In records yet.",
+    "retry": "Retry",
+    "create_cta": "Create Money-In",
+    "unavailable_title": "Money-In create unavailable",
+    "asset_filter_label": "Asset",
+    "asset_filter_all": "All",
+    "asset_filter_placeholder": "Select asset",
+    "no_assets": "No present balances yet — Money-In filter needs an asset.",
+    "columns": {
+      "time": "Time",
+      "amount": "Amount",
+      "asset": "Asset",
+      "status": "Status",
+      "id": "Money-In ID"
+    },
+    "create": {
+      "title": "Add funds",
+      "subtitle": "Deposit into your multi-asset wallet",
+      "asset": "Target asset",
+      "asset_account": "{asset} account",
+      "asset_required": "Asset is required",
+      "amount": "Deposit amount",
+      "amount_required": "Amount is required",
+      "amount_invalid": "Enter a valid decimal amount",
+      "settlement_hint": "Funds typically arrive within 1–3 business days, depending on the payment channel.",
+      "quick_amounts_label": "Quick amounts",
+      "submit": "Confirm deposit",
+      "cancel": "Cancel",
+      "checkout_unavailable": "Money-In created, but Checkout could not open. Check the detail and retry. Detail: {detail}"
+    },
+    "detail": {
+      "title": "Money-In detail",
+      "subtitle": "Review the amount, status, and timing for this deposit.",
+      "back": "Back to Money-In list",
+      "empty": "Money-In not found.",
+      "failure_reason": "Failure reason",
+      "pay_cta": "Pay now",
+      "pay_unavailable": "Payment",
+      "pay_unavailable_hint": "No Checkout token is available (Intent may not be PROCESSING, or FundingSession was lost). Recreate Money-In or contact support.",
+      "hero_amount_label": "Deposit amount",
+      "hero_time": "Posted at: {time}",
+      "status_badge_success": "Deposit successful · {status}",
+      "status_badge_processing": "Deposit in progress · {status}",
+      "status_badge_failed": "Deposit unsuccessful · {status}",
+      "section_basic": "Transaction details",
+      "copy_id": "Copy Money-In ID",
+      "copy_funding_session": "Copy funding session ID",
+      "copied": "Copied",
+      "copy_failed": "Copy failed",
+      "funding_session": "Funding session ID",
+      "updated_at": "Updated at",
+      "footer_hint": "Amount and status reflect the live Money product result. Copy the Money-In ID for reconciliation."
+    }
+  },
+  "MoneyExternalAccounts": {
+    "title": "External accounts",
+    "subtitle": "Manage BANK and CRYPTO destinations used for Money payouts. Full account numbers and addresses are never shown after save.",
+    "create_account": "Add account",
+    "retry": "Retry",
+    "disable": "Disable",
+    "disable_confirm": "Disable this external account?",
+    "disable_confirm_desc": "Disabled accounts cannot be used for withdrawals or payouts. Confirm any automated payouts that depend on this account first.",
+    "disable_success": "Account disabled",
+    "disable_failed": "Failed to disable account",
+    "copy_masked": "Copy masked account number",
+    "copy_masked_address": "Copy masked address",
+    "copy_success": "Copied",
+    "copy_failed": "Copy failed",
+    "status_active": "Active",
+    "status_disabled": "Disabled",
+    "type_bank": "Bank",
+    "type_crypto": "Crypto",
+    "memo_present": "memo",
+    "columns": {
+      "type": "Type",
+      "account": "Account / address",
+      "holder": "Holder / network",
+      "bank": "Bank",
+      "currency": "Currency",
+      "country": "Country / region",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "create": {
+      "title": "Add external account",
+      "submit": "Save account",
+      "cancel": "Cancel",
+      "type": "Account type",
+      "type_required": "Select an account type",
+      "type_bank": "Bank account",
+      "type_crypto": "Crypto address (USDT / TRON)",
+      "network": "Network",
+      "network_required": "Select a network",
+      "crypto_address": "Wallet address",
+      "crypto_address_required": "Address is required",
+      "crypto_address_placeholder": "T…",
+      "crypto_address_too_short": "Address looks too short",
+      "memo_tag": "Memo / tag (optional)",
+      "memo_tag_placeholder": "Only if the destination requires a memo",
+      "country": "Country / region",
+      "country_required": "Select a country/region",
+      "currency": "Settlement currency",
+      "currency_required": "Select a currency",
+      "holder": "Account holder name",
+      "holder_required": "Account holder is required",
+      "holder_hint": "Must match the bank account legal name",
+      "holder_placeholder": "Company legal name or personal full name",
+      "holder_not_email": "Account holder cannot be an email — enter a legal name",
+      "account_number": "Account number / IBAN",
+      "account_number_required": "Account number is required",
+      "account_number_hint": "Double-check before payouts",
+      "account_number_placeholder": "6222 0000 0000 0000",
+      "account_number_too_short": "Account number looks too short",
+      "show_account_number": "Show account number",
+      "hide_account_number": "Hide account number",
+      "bank_name": "Bank name",
+      "bank_name_placeholder": "e.g. HSBC / Chase",
+      "bank_code": "Routing / SWIFT",
+      "bank_code_placeholder": "CNAPS / BIC code",
+      "bank_code_help": "Use a 12-digit CNAPS code for mainland China, or an 8–11 character SWIFT/BIC for cross-border.",
+      "countries": {
+        "CN": "Mainland China (CN)",
+        "HK": "Hong Kong (HK)",
+        "US": "United States (US)",
+        "GB": "United Kingdom (GB)",
+        "SG": "Singapore (SG)",
+        "JP": "Japan (JP)"
+      }
+    }
+  },
+  "MoneyPayouts": {
+    "title": "Payouts",
+    "subtitle": "Send funds via the Money product API.",
+    "empty": "No Payout records yet.",
+    "retry": "Retry",
+    "create_cta": "Withdraw",
+    "unavailable_title": "Withdrawal unavailable",
+    "asset_filter_label": "Asset",
+    "asset_filter_all": "All",
+    "asset_filter_placeholder": "Select asset",
+    "no_assets": "No present balances yet — Payout filter needs an asset.",
+    "columns": {
+      "time": "Time",
+      "amount": "Amount",
+      "asset": "Asset",
+      "status": "Status",
+      "id": "Payout ID"
+    },
+    "create": {
+      "title": "Request withdrawal",
+      "subtitle": "Withdraw available balance to a linked bank account",
+      "confirm_title": "Confirm withdrawal",
+      "confirm_subtitle": "Review the details below, then enter your transaction password",
+      "asset": "Asset",
+      "asset_required": "Asset is required",
+      "amount": "Withdrawal amount",
+      "amount_required": "Amount is required",
+      "amount_invalid": "Enter a valid decimal amount",
+      "amount_exceeds_hint": "Amount cannot exceed available balance",
+      "available_hint": "Available: {available}",
+      "max_amount": "Withdraw all",
+      "destination_account": "External account",
+      "account_required": "Select an external account",
+      "no_accounts": "No external accounts yet. Create one before requesting a withdrawal.",
+      "go_create_account": "Create external account",
+      "loading_accounts": "Loading external accounts…",
+      "account_holder": "Account holder",
+      "account_holder_required": "Account holder is required",
+      "account_number": "Bank account number",
+      "account_number_required": "Bank account number is required",
+      "bank_name": "Bank name",
+      "bank_name_required": "Bank name is required",
+      "bank_branch": "Bank branch (optional)",
+      "country": "Country",
+      "country_required": "Country is required",
+      "currency": "Currency",
+      "bank_code": "Bank code",
+      "apply_amount": "Requested amount",
+      "fee_settlement_note": "Fees are determined at clearing. Actual credit details appear on the payout detail after settlement.",
+      "payment_pin": "Transaction password",
+      "forgot_pin": "Forgot password?",
+      "go_set_pin": "Set transaction password",
+      "validation": {
+        "pinRequired": "Enter your 6-digit transaction password",
+        "pinFormat": "Transaction password must be 6 digits"
+      },
+      "errors": {
+        "pinNotSet": "Transaction password is not set. Please set it first.",
+        "pinIncorrect": "Incorrect transaction password"
+      },
+      "runtime_continue_warning": "Payout created; rail initiate needs continue ({reasonCode}). Opening detail.",
+      "success": "Withdrawal request submitted",
+      "next": "Next",
+      "back": "Back",
+      "submit": "Confirm withdrawal",
+      "cancel": "Cancel"
+    },
+    "detail": {
+      "title": "Payout detail",
+      "subtitle": "Review the withdrawal amount, processing progress, and destination bank account.",
+      "back": "Back to payouts",
+      "empty": "Payout not found.",
+      "heroAmountLabel": "Withdrawal amount",
+      "statusBadgeProcessing": "Withdrawal accepted · {status}",
+      "statusBadgeSuccess": "Payout completed · {status}",
+      "statusBadgeFailed": "Payout unsuccessful · {status}",
+      "timelineTitle": "Progress",
+      "timeline": {
+        "submitted": "Submitted",
+        "processing": "Bank processing",
+        "processingDone": "Clearing confirmed",
+        "processingHint": "Funds are being transferred",
+        "failed": "Failed",
+        "failedHint": "See failure reason",
+        "confirmed": "Rail confirmed",
+        "confirmedDone": "Provider confirmed payout",
+        "confirmedHint": "Awaiting ledger posting",
+        "confirmedUpcoming": "Waiting for bank confirmation",
+        "posted": "Posted",
+        "postedDone": "Ledger closed — check your bank statement",
+        "postedHint": "Posting not yet closed"
+      },
+      "voucherSection": "Payout reference",
+      "bankSection": "Destination bank account",
+      "settlementAsset": "Settlement asset",
+      "createdAt": "Submitted at",
+      "bankEmpty": "No destination bank details",
+      "copyId": "Copy payout ID",
+      "copied": "Copied",
+      "copyFailed": "Copy failed",
+      "footerProcessing": "Your withdrawal has been submitted to the clearing rail. Arrival time depends on bank processing — please check your bank statement.",
+      "footerConfirmed": "The rail has confirmed this payout. Accounting posting is still closing — this is not the final posted state yet.",
+      "footerSuccess": "This withdrawal has been posted. If funds are missing, verify the bank account details or contact support.",
+      "footerFailed": "This withdrawal could not be completed. Review the failure reason and try again, or contact support.",
+      "failure_reason": "Failure reason",
+      "failureReasons": {
+        "PAYOUT_FAILED": "Withdrawal could not be completed. Try again later or contact support.",
+        "RAIL_NOT_CONFIGURED": "Clearing rail is temporarily unavailable. Try again later or contact support.",
+        "PLATFORM_DISABLED": "Payouts are temporarily disabled on the platform.",
+        "CAPABILITY_DISABLED": "Payout capability is not enabled for this merchant.",
+        "OWNER_NOT_SUPPORTED": "This account type does not support payouts.",
+        "OWNER_INVALID": "Account details are invalid for payout.",
+        "ASSET_UNSUPPORTED": "This asset does not support payouts.",
+        "UNDER_REVIEW": "Account is under review; payouts are temporarily unavailable.",
+        "LIMIT_REACHED": "Payout limit has been reached.",
+        "POLICY_CONFIG_ERROR": "Payout policy misconfiguration. Please contact support.",
+        "RESTRICTED": "Account is restricted; payouts are unavailable.",
+        "INSUFFICIENT_FUNDS": "Insufficient available balance."
+      },
+      "account_holder": "Account holder",
+      "account_number": "Account number",
+      "bank_name": "Bank",
+      "bank_branch": "Branch"
+    }
+  },
+  "MoneyTransfers": {
+    "title": "Transfers",
+    "subtitle": "Merchant-to-merchant funds transfer",
+    "detailTitle": "Transfer detail",
+    "detailSubtitle": "Amount, status, and counterparty for this transfer",
+    "detailHint": "Transfer results follow system clearing. Contact an administrator if you have questions about this transaction.",
+    "detailHintCleared": "This transfer has been fully cleared and cannot be reversed. Contact an administrator if you have questions about this transaction.",
+    "detailSectionTitle": "Transfer details",
+    "heroAmountLabel": "Transfer amount ({asset})",
+    "statusBadgeSuccess": "Transfer successful ({status})",
+    "copied": "Copied",
+    "copyFailed": "Copy failed. Please copy it manually.",
+    "copyId": "Copy transfer ID",
+    "copyCounterparty": "Copy counterparty",
+    "reasonNone": "None (settled normally)",
+    "ownerType": {
+      "MERCHANT": "Merchant account",
+      "CUSTOMER": "Personal account",
+      "UNKNOWN": "Counterparty account"
+    },
+    "backToList": "Back to transfers",
+    "createTitle": "Create transfer",
+    "createSubtitle": "Instantly move funds between merchants on Filix",
+    "confirmTitle": "Confirm transfer",
+    "confirmSubtitle": "Review the details below, then enter your transaction password",
+    "confirmTotalLabel": "Transfer total",
+    "confirmFromLabel": "Debit account",
+    "confirmToLabel": "Payee",
+    "confirmPayeeMerchant": "Payee merchant",
+    "confirmRemainingBalance": "Remaining after transfer",
+    "forgotPin": "Forgot password?",
+    "create_cta": "Create transfer",
+    "createSuccess": "Transfer submitted",
+    "submit": "Submit",
+    "next": "Next",
+    "back": "Back",
+    "confirmTransfer": "Confirm transfer",
+    "confirmAvailableLabel": "Available balance",
+    "availableShort": "Available",
+    "useMaxAmount": "Max",
+    "assetAccount": "{asset} account",
+    "targetMerchantPlaceholder": "Enter payee merchant code",
+    "payeeVerified": "✓ Account verified",
+    "payeeVerifiedWithAlias": "✓ Account verified · {alias}",
+    "payeeLookupHint": "Verifying payee identity",
+    "payeeNotFoundTitle": "Merchant not found",
+    "goSetPin": "Set transaction password",
+    "cancel": "Cancel",
+    "empty": "No transfers yet",
+    "no_assets": "No present assets to transfer",
+    "unavailable_title": "Transfer not available",
+    "asset_filter_label": "Asset",
+    "asset_filter_all": "All",
+    "asset_filter_placeholder": "Select asset",
+    "availableHint": "Available: {available} (hint only)",
+    "amountExceedsAvailableHint": "Transfer amount exceeds available balance",
+    "fields": {
+      "asset": "Debit asset",
+      "amount": "Transfer amount",
+      "targetMerchantCode": "Payee merchant code",
+      "payeeName": "Merchant name",
+      "payeeAlias": "Alias",
+      "paymentPin": "Transaction password",
+      "reasonCode": "Reason code",
+      "transferId": "Transfer ID",
+      "counterparty": "Payee",
+      "settlementAsset": "Settlement asset",
+      "completedAt": "Completed at"
+    },
+    "lookupLoading": "Looking up payee…",
+    "validation": {
+      "amountRequired": "Amount is required",
+      "amountInvalid": "Enter a valid amount",
+      "assetRequired": "Select a debit asset",
+      "targetRequired": "Payee merchant code is required",
+      "pinRequired": "Enter your 6-digit transaction password",
+      "pinFormat": "Transaction password must be 6 digits",
+      "payeeLookupFailed": "Payee merchant code is invalid or unavailable"
+    },
+    "errors": {
+      "pinNotSet": "Transaction password is not set. Please set it first.",
+      "pinIncorrect": "Incorrect transaction password"
+    },
+    "columns": {
+      "time": "Time",
+      "asset": "Asset",
+      "amount": "Amount",
+      "counterparty": "Counterparty",
+      "status": "Status",
+      "id": "Transfer ID"
+    }
+  },
+  "Balance": {
+    "title": "Account Balance",
+    "subtitle": "View available, pending, and (when supported) frozen wallet balances.",
+    "available": "Available Balance",
+    "frozen": "Frozen Balance",
+    "total": "Total Balance",
+    "withdraw": "Withdraw",
+    "withdrawing": "Withdrawing...",
+    "recharge": "Recharge",
+    "recharging": "Recharging...",
+    "transfer": "Transfer",
+    "view_details": "View Details",
+    "transactions": {
+      "title": "Transaction Details",
+      "headers": {
+        "time": "Time",
+        "type": "Type",
+        "amount": "Amount",
+        "before": "Before Balance",
+        "after": "After Balance",
+        "currency": "Currency",
+        "order_id": "Order ID",
+        "tally_status": "Business Type"
+      }
+    },
+    "history": "Withdrawal History",
+    "withdraw_modal": {
+      "title": "Withdraw Funds",
+      "amount": "Withdrawal Amount",
+      "amount_hint": "Available balance: ¥{balance}",
+      "payment_pin": "Transaction Password",
+      "payment_pin_hint": "Enter 6-digit PIN",
+      "submit": "Confirm Withdrawal",
+      "cancel": "Cancel",
+      "success": "Withdrawal request submitted",
+      "insufficient_balance": "Withdrawal amount cannot exceed available balance",
+      "invalid_amount": "Please enter a valid amount",
+      "select_account": "Select Receiving Account",
+      "manual_input": "Manual Input",
+      "bank_name": "Bank Name",
+      "bank_branch": "Bank Branch Full Name",
+      "account_holder": "Account Holder",
+      "account_number": "Bank Account Number"
+    },
+    "transfer_modal": {
+      "title": "Internal Balance Transfer",
+      "available_balance": "Available Balance",
+      "add_item": "Add Payee",
+      "payee_code": "Payee Account Code",
+      "amount": "Transfer Amount",
+      "memo": "Memo",
+      "submit": "Transfer Now",
+      "cancel": "Cancel",
+      "success": "Transfer successful",
+      "insufficient_balance": "Total transfer amount cannot exceed available balance",
+      "invalid_amount": "Please enter a valid amount",
+      "payee_required": "Payee account code is required",
+      "at_least_one": "Please add at least one transfer item",
+      "payee_looking_up": "Looking up...",
+      "payee_name_label": "Merchant name",
+      "payee_not_found": "Customer code not found",
+      "payee_inactive": "This merchant is not active",
+      "payee_self_transfer": "Cannot transfer to yourself",
+      "payee_invalid_code": "Invalid customer code format",
+      "payee_lookup_failed": "Failed to look up payee"
+    },
+    "pending": "Pending Balance",
+    "movements": {
+      "title": "Wallet Movements",
+      "headers": {
+        "time": "Time",
+        "type": "Type",
+        "direction": "Direction",
+        "reference": "Reference",
+        "status": "Status",
+        "amount": "Amount",
+        "asset": "Asset"
+      }
+    },
+    "capability": {
+      "view_denied": "You do not have permission to view this wallet.",
+      "permission_denied": "Missing execute permission",
+      "temporarily_unavailable": "Temporarily unavailable",
+      "requires_review": "Requires review",
+      "disabled": "Not available",
+      "available": "Available",
+      "not_available": "Not available",
+      "unknown": "Unknown",
+      "informational_only": "Wallet capability status (informational only)",
+      "deposit": "Deposit",
+      "transfer": "Transfer",
+      "withdraw": "Withdraw",
+      "payment": "Payment",
+      "reason": {
+        "OK": "",
+        "NOT_SUPPORTED": "Not supported",
+        "PERMISSION_DENIED": "Missing permission",
+        "OWNER_STATE_OR_COMPLIANCE": "Account restricted",
+        "CONFIG_DISABLED": "Disabled by configuration",
+        "TEMPORARILY_UNAVAILABLE": "Temporarily unavailable",
+        "CAPABILITY_DISABLED": "Capability disabled",
+        "UNDER_REVIEW": "Under review",
+        "LIMIT_REACHED": "Limit reached"
+      }
+    },
+    "identity": {
+      "title": "Networks & addresses",
+      "expand": "Show identity",
+      "collapse": "Hide identity",
+      "hint": "Expand to load networks for this asset (lazy).",
+      "not_provisioned": "Identity not provisioned",
+      "footprint": "Identity footprint",
+      "networks_count": "{count} networks",
+      "addresses_count": "{count} addresses",
+      "status": {
+        "INITIALIZING": "Initializing",
+        "ACTIVE": "Active",
+        "SUSPENDED": "Suspended",
+        "DISABLED": "Disabled",
+        "CLOSED": "Closed"
+      }
+    },
+    "businessTypes": {
+      "PAYMENT": "Payment",
+      "PAYMENT_REVERSAL": "Payment reversal",
+      "REFUND": "Refund",
+      "REFUND_REVERSAL": "Refund reversal",
+      "SETTLEMENT": "Settlement",
+      "SETTLEMENT_REVERSAL": "Settlement reversal",
+      "FEE": "Fee",
+      "PAYOUT": "Payout",
+      "TRANSFER": "Transfer",
+      "ADJUSTMENT": "Adjustment",
+      "OTHER": "Other"
+    },
+    "accounts_by_currency": "Accounts by currency",
+    "asset": "Asset"
+  },
+  "Deposits": {
+    "title": "Deposit Records",
+    "subtitle": "View and search your account deposit history.",
+    "create_deposit": "Recharge",
+    "headers": {
+      "order_id": "Deposit Order ID",
+      "trade_no": "Trade No",
+      "amount": "Amount",
+      "status": "Status",
+      "created_at": "Created At",
+      "paid_at": "Paid At"
+    },
+    "create_modal": {
+      "title": "Initiate Recharge",
+      "amount": "Amount",
+      "currency": "Currency",
+      "submit": "Recharge Now",
+      "cancel": "Cancel",
+      "success": "Recharge request submitted"
+    },
+    "empty": "No deposit records found."
+  },
+  "Payouts": {
+    "title": "Withdrawal Records",
+    "subtitle": "View your fund withdrawal request history and status.",
+    "headers": {
+      "withdrawal_no": "Withdrawal No",
+      "amount": "Amount",
+      "status": "Status",
+      "approval_status": "Approval Status",
+      "payee_name": "Payee Name",
+      "payee_account": "Payee Account",
+      "applicant": "Applicant",
+      "created_at": "Created At",
+      "updated_at": "Updated At"
+    },
+    "empty": "No withdrawal records found.",
+    "details": {
+      "title": "Withdrawal Details",
+      "withdrawal_no": "Withdrawal No",
+      "amount": "Amount",
+      "currency": "Currency",
+      "withdrawal_status": "Status",
+      "approval_status": "Approval Status",
+      "payee_name": "Payee Name",
+      "payee_account": "Payee Account",
+      "applicant": "Applicant",
+      "created_at": "Created At",
+      "updated_at": "Updated At"
+    }
+  },
+  "TransferRecords": {
+    "title": "Transfer Records",
+    "subtitle": "View fund transfer history between merchants.",
+    "headers": {
+      "transfer_no": "Transfer No",
+      "amount": "Amount",
+      "status": "Status",
+      "created_at": "Transfer Time"
+    },
+    "empty": "No transfer records found.",
+    "item_details": {
+      "title": "Transfer Details",
+      "headers": {
+        "payee_name": "Payee Name",
+        "payee_account": "Account Number",
+        "bank": "Bank Name",
+        "amount": "Amount",
+        "status": "Status",
+        "created_at": "Created At"
+      }
+    }
+  },
+  "PayoutRecords": {
+    "title": "Payout Records",
+    "subtitle": "View and manage payout business order history.",
+    "headers": {
+      "payout_no": "Payout No",
+      "amount": "Payout Amount",
+      "status": "Status",
+      "created_at": "Payout Time"
+    },
+    "empty": "No payout records found.",
+    "item_details": {
+      "title": "Payout Details",
+      "headers": {
+        "payee_name": "Payee Name",
+        "payee_account": "Account Number",
+        "bank": "Bank Name",
+        "amount": "Payout Amount",
+        "status": "Status",
+        "created_at": "Created At"
+      }
+    },
+    "create_modal": {
+      "title": "Create Payout Request",
+      "available_balance": "Available Balance",
+      "add_item": "Add Payee",
+      "payee_code": "Payee Customer Code",
+      "amount": "Payout Amount",
+      "memo": "Memo",
+      "submit": "Submit Payout",
+      "cancel": "Cancel",
+      "success": "Payout request submitted successfully",
+      "insufficient_balance": "Total payout amount cannot exceed available balance",
+      "invalid_amount": "Please enter a valid payout amount",
+      "payee_required": "Please enter payee customer code",
+      "at_least_one": "Please add at least one payout item"
+    }
+  },
+  "PaymentSplits": {
+    "title": "Payment Splits",
+    "subtitle": "View and manage order split details and receiver status.",
+    "headers": {
+      "order_id": "Order ID",
+      "trade_no": "Trade No",
+      "amount": "Order Amount",
+      "order_amount": "Total Amount",
+      "split_amount": "Split Amount",
+      "receivers": "Receivers",
+      "status": "Status",
+      "type": "Split Type",
+      "created_at": "Created At"
+    },
+    "filters": {
+      "order_id": "Order ID",
+      "status": "Status",
+      "all_status": "All Status"
+    },
+    "statuses": {
+      "PENDING": "Pending",
+      "PROCESSING": "Processing",
+      "SUCCESS": "Success",
+      "FAILED": "Failed",
+      "PARTIAL_SUCCESS": "Partial Success",
+      "CLOSED": "Closed"
+    },
+    "types": {
+      "IMMEDIATE": "Immediate",
+      "DELAYED": "Delayed"
+    },
+    "details": {
+      "title": "Split Details",
+      "base_info": "Basic Information",
+      "receivers": "Receiver Details",
+      "receiver_id": "Receiver",
+      "receiver_name": "Name",
+      "amount": "Amount",
+      "proportion": "Proportion",
+      "status": "Status",
+      "progress": "Split Progress",
+      "view_details": "View Details",
+      "serial_no": "Serial No"
+    },
+    "empty": "No split payment records found."
+  },
+  "SettlementReleases": {
+    "title": "Settlement processing",
+    "subtitle": "Track when funds become available balance.",
+    "empty": "No settlement processing records found.",
+    "loadError": "Failed to load settlement processing.",
+    "filters": {
+      "status": "Status",
+      "paymentId": "Search payment ID",
+      "search": "Search candidate or payment ID"
+    },
+    "columns": {
+      "id": "Candidate ID",
+      "paymentId": "Payment ID",
+      "businessRef": "Business Ref",
+      "amount": "Amount",
+      "status": "Status",
+      "eligibleAt": "Expected processing time",
+      "nextEvaluationAt": "Next evaluation",
+      "releasedAt": "Available at",
+      "createdAt": "Created at",
+      "reasonCode": "Reason",
+      "ids": "Candidate / payment",
+      "paymentShort": "Pay",
+      "statusReason": "Status & reason",
+      "actions": "Actions"
+    },
+    "status": {
+      "PENDING": "Pending",
+      "EVALUATING": "Evaluating",
+      "AVAILABLE": "Available",
+      "BLOCKED": "Blocked",
+      "FAILED": "Failed",
+      "SKIPPED": "Skipped"
+    },
+    "detail": {
+      "title": "Settlement processing detail",
+      "back": "Back to list",
+      "notFound": "Settlement processing record not found.",
+      "journalId": "Journal ID",
+      "releaseJournalId": "Release Journal ID",
+      "retryCount": "Retry count",
+      "lastTriggeredAt": "Last triggered at",
+      "paymentTitle": "Payment",
+      "paymentSucceededAt": "Payment succeeded at",
+      "journalUnavailableTitle": "Availability journal unavailable",
+      "journalUnavailableBody": "This candidate references a journal that could not be resolved. Available-at time is hidden until the ledger fact is available.",
+      "bannerTitle": "Task is {status}",
+      "retryChip": "{count} retries",
+      "reasonLabel": "Reason:",
+      "noReason": "No reason code provided.",
+      "basicsTitle": "Basics & amount",
+      "journalsTitle": "Ledger journals",
+      "timelineTitle": "Schedule timeline",
+      "paymentAmount": "Payment amount",
+      "lastTriggeredWithRetry": "Last trigger (retry {count})",
+      "releasedPending": "Not released"
+    },
+    "actions": {
+      "view_detail": "Details"
+    },
+    "pagination": {
+      "total": "Total {count} settlement jobs"
+    },
+    "amount_pending": "Pending eval",
+    "copy_id": "Copy candidate ID",
+    "copy_payment_id": "Copy payment ID",
+    "copy_success": "Copied",
+    "copy_failed": "Copy failed",
+    "copy_business_ref": "Copy business ref",
+    "copy_journal_id": "Copy journal ID",
+    "copy_release_journal_id": "Copy release journal ID",
+    "reasonGuidance": {
+      "CAPABILITY_DISABLED": "The merchant capability is disabled, so automatic settlement evaluation is paused.",
+      "NOT_PRODUCTIZED": "This money product is not available for this merchant yet.",
+      "OWNER_NOT_SUPPORTED": "This owner type is not supported for this settlement action.",
+      "fallback": "The system returned this reason code. Check merchant capability settings."
+    },
+    "next_eval_hint": "Next auto evaluation",
+    "reasonShort": {
+      "CAPABILITY_DISABLED": "Capability disabled",
+      "CONTEXT_RESOLVE_FAILED": "Context resolve failed",
+      "NOT_PRODUCTIZED": "Not productized",
+      "OWNER_NOT_SUPPORTED": "Owner not supported"
+    }
+  },
+  "TransactionReconciliation": {
+    "title": "Transaction Reconciliation",
+    "subtitle": "Provider transaction bills matched against your orders (reconciliation scope: Order).",
+    "empty": "No reconciliation items in this range.",
+    "emptyNoReconData": "No provider reconciliation data for this channel and date range.",
+    "emptyCoverageNoRows": "Provider trade bills exist for this range, but no orders are visible for your merchant (check channel authorization, order ownership, and channelOrderId mapping).",
+    "emptyHint": "Try a different date range or channel, then Query — or reset filters.",
+    "query": "Query",
+    "reset": "Reset",
+    "loadError": "Failed to load transaction reconciliation.",
+    "export": "Export CSV",
+    "exportFailed": "Export failed.",
+    "noReconDataTitle": "No provider reconciliation data",
+    "noReconDataDescription": "FilixPay has not received a provider reconciliation batch for the selected channel and bizDate range. This is different from having no matching orders.",
+    "reconciliationLevelOrder": "Order",
+    "filters": {
+      "channelCode": "Channel",
+      "channel_all": "All channels",
+      "scope": "Scope"
+    },
+    "channels": {
+      "ALL": "All channels",
+      "STRIPE": "STRIPE",
+      "PAYPAL": "PAYPAL"
+    },
+    "scope": {
+      "default": "Reconciled only",
+      "allTransactions": "All transactions"
+    },
+    "columns": {
+      "payment": "Payment",
+      "order": "Order",
+      "reconciliationLevel": "Reconciliation level",
+      "channelCode": "Channel",
+      "reconciliationStatus": "Reconciliation status",
+      "bizDate": "Biz date",
+      "actions": "Actions"
+    },
+    "reconStatus": {
+      "MATCHED": "Matched",
+      "MISMATCH": "Mismatch",
+      "RECONCILIATION_PENDING": "Pending",
+      "NOT_RECONCILED": "Not reconciled"
+    },
+    "sections": {
+      "association": "Payment / Order association",
+      "comparison": "Provider vs FilixPay",
+      "provider": "Provider",
+      "filixpay": "FilixPay"
+    },
+    "fields": {
+      "paymentId": "Payment ID",
+      "orderId": "Order ID",
+      "reconciliationLevel": "Reconciliation level",
+      "channelCode": "Channel",
+      "bizDate": "Biz date",
+      "reconciliationStatus": "Reconciliation status",
+      "mismatchType": "Mismatch type",
+      "providerTransactionId": "Provider transaction ID",
+      "providerOrderId": "Provider order ID",
+      "providerAmount": "Provider amount",
+      "providerStatus": "Provider status",
+      "localAmount": "FilixPay amount",
+      "localStatus": "FilixPay status"
+    },
+    "detail": {
+      "title": "Transaction reconciliation detail",
+      "reconScopeOrder": "Recon scope: Order",
+      "back": "Back to list",
+      "notFound": "Reconciliation record not found."
+    },
+    "actions": {
+      "view_detail": "Details"
+    },
+    "copy_payment_id": "Copy payment ID",
+    "copy_order_id": "Copy order ID",
+    "copy_success": "Copied",
+    "copy_failed": "Copy failed"
+  },
+  "Settlements": {
+    "title": "Settlement bills",
+    "subtitle": "Released settlement facts with provider reconciliation status.",
+    "empty": "No settlements found.",
+    "loadError": "Failed to load settlements.",
+    "filters": {
+      "reconStatus": "Reconciliation status",
+      "asset": "Asset",
+      "paymentId": "Payment ID"
+    },
+    "columns": {
+      "settlementId": "Settlement ID",
+      "moneyInRef": "Money-In ref",
+      "asset": "Asset",
+      "gross": "Gross",
+      "fee": "Fee",
+      "net": "Net",
+      "releasedAt": "Released at",
+      "reconStatus": "Reconciliation",
+      "provider": "Provider",
+      "actions": "Actions"
+    },
+    "reconStatus": {
+      "PENDING": "Pending",
+      "MATCHED": "Matched",
+      "EXCEPTION": "Exception"
+    },
+    "sections": {
+      "settlement": "Settlement basics",
+      "providerSettlement": "Provider settlement",
+      "reconciliation": "Reconciliation",
+      "timeline": "Settlement timeline"
+    },
+    "fields": {
+      "moneyInRef": "Money-In ref",
+      "releaseRef": "Release ref",
+      "releasedAt": "Released at",
+      "gross": "Gross",
+      "fee": "Fee",
+      "net": "Net",
+      "provider": "Provider",
+      "providerReference": "Provider reference",
+      "settlementDate": "Settlement date",
+      "expectedNet": "Expected net",
+      "actualNet": "Actual net",
+      "reconStatus": "Reconciliation status",
+      "difference": "Difference"
+    },
+    "timeline": {
+      "CANDIDATE_CREATED": "Candidate created",
+      "RELEASED": "Released",
+      "LEDGER_POSTED": "Ledger posted",
+      "PROVIDER_STATEMENT_INGESTED": "Provider statement ingested",
+      "RECON_MATCHED": "Reconciliation matched",
+      "RECON_EXCEPTION": "Reconciliation exception"
+    },
+    "timelineEmpty": "No timeline events yet.",
+    "detail": {
+      "title": "Settlement detail",
+      "back": "Back to list",
+      "notFound": "Settlement not found."
+    },
+    "actions": {
+      "view": "View",
+      "view_detail": "View detail"
+    },
+    "copy_settlement_id": "Copy settlement ID",
+    "copy_success": "Copied",
+    "copy_failed": "Copy failed",
+    "copy_money_in_ref": "Copy money-in ref",
+    "copy_release_ref": "Copy release ref",
+    "summary": {
+      "net": "Settlement net",
+      "gross": "Gross",
+      "fee": "Fee",
+      "reconStatus": "Reconciliation"
+    },
+    "providerEmptyNotice": "No provider settlement document available yet."
+  },
+  "SettlementStatements": {
+    "title": "Settlement records",
+    "subtitle": "View day/week/month settlement periods and the settlement amount for the current period.",
+    "empty": "No settlement statements found.",
+    "loadError": "Failed to load settlement statements.",
+    "noAssets": "No available balance assets to query settlement statements.",
+    "periodNotStarted": "This period has not started yet, so the statement is unavailable.",
+    "downloadError": "Failed to download the settlement statement.",
+    "openHint": "This period is still open; amounts are live as of now.",
+    "openBanner": "This period is still open; amounts are live as of now.",
+    "filters": {
+      "asset": "Asset",
+      "assetPlaceholder": "Select asset",
+      "allAssets": "All currencies",
+      "periodKind": "Period"
+    },
+    "periodKind": {
+      "DAY": "Day",
+      "WEEK": "Week",
+      "MONTH": "Month"
+    },
+    "periodState": {
+      "OPEN": "Open",
+      "CLOSED": "Closed"
+    },
+    "coverageState": {
+      "OK": "OK",
+      "PARTIAL_COVERAGE": "Partial coverage",
+      "INCONSISTENT": "Inconsistent"
+    },
+    "columns": {
+      "periodKey": "Statement period",
+      "asset": "Asset",
+      "settlementNet": "Settlement Net",
+      "gross": "Gross",
+      "fee": "Fee",
+      "adjustment": "Adjustment",
+      "released": "Released",
+      "payout": "Payout",
+      "state": "State",
+      "timezone": "Timezone",
+      "periodState": "Status",
+      "coverage": "Data coverage",
+      "actions": "Actions"
+    },
+    "detail": {
+      "title": "Settlement statement detail",
+      "back": "Back to list",
+      "notFound": "Settlement statement not found.",
+      "download": "Download XLSX",
+      "summaryTitle": "Summary",
+      "asOf": "As of",
+      "window": "Window",
+      "effectiveAt": "Effective at",
+      "payoutProgress": "Payout & release progress",
+      "pendingPayout": "Pending payout",
+      "payoutStatusNone": "Status: not paid out",
+      "payoutStatusPartial": "Status: partially paid out"
+    },
+    "events": {
+      "title": "Business events",
+      "empty": "No events.",
+      "businessRef": "Business ref",
+      "gross": "Gross",
+      "fee": "Fee",
+      "adjustment": "Adjustment",
+      "noJournals": "No linked journals.",
+      "count": "{count} events",
+      "eventType": "Event type",
+      "effectiveAt": "Effective at",
+      "copy": "Copy business ref",
+      "copy_success": "Copied",
+      "copy_failed": "Copy failed"
+    },
+    "diagnostics": {
+      "title": "Diagnostics",
+      "conflicts": "Conflicts",
+      "unclassified": "Unclassified",
+      "journalId": "Journal ID",
+      "kind": "Kind",
+      "businessType": "Business type",
+      "reason": "Reason"
+    },
+    "actions": {
+      "view_detail": "Details"
+    },
+    "pagination": {
+      "total": "Total {count} statements"
+    },
+    "timezoneChip": {
+      "label": "{timezone}",
+      "fallback": "Asia/Shanghai"
+    }
+  }
+}

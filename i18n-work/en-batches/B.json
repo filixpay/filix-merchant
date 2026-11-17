@@ -1,0 +1,526 @@
+{
+  "Home": {
+    "hero": {
+      "badge": "🔴 LIVE · Enterprise Transaction Gateway",
+      "title": "One API, Connecting Global Commerce",
+      "subtitle": "Seamlessly integrate Stripe, PayPal, WeChat Pay, Alipay, and major crypto assets. Build reliable payment operations with multi-merchant isolation, auto-settlements, and Sandbox simulation.",
+      "brand_line": "Support multi-currency transaction processing and flexible settlements configuration. Integrate in 30 minutes.",
+      "start": "Sign Up for Free",
+      "docs": "Get API Docs",
+      "contact": "Talk to Technical Advisory",
+      "showcase_zoom": "View full size"
+    },
+    "definition": {
+      "heading": "What is FilixPay?",
+      "body": "FilixPay is an enterprise payment infrastructure platform that helps businesses integrate global payment channels, manage merchants, and automate payment workflows through unified APIs."
+    },
+    "trial_experience": {
+      "title": "🌍 Global Payments, Instant Access",
+      "subtitle": "Experience FilixPay's Full Features for Free",
+      "features": [
+        "No company credentials required",
+        "No technical integration needed",
+        "Email registration, 30 seconds to real merchant dashboard"
+      ],
+      "cta": "Try FilixPay for Free"
+    },
+    "business_modes": {
+      "title": "FilixPay Merchant Center: One System, Two Modes, Fully Adapted to Your Business Architecture",
+      "subtitle": "At FilixPay, we support a flexible fund settlement architecture. Whether you prefer direct clearing or centralized collection with profit sharing, our merchant center intelligently matches your business identity and provides a tailored functional perspective.",
+      "modes": {
+        "independent": {
+          "title": "Independent Merchant (4th Party Mode)",
+          "slogan": "Funds cleared directly to your account by licensed acquirers",
+          "desc": "In the 4th party direct clearing mode, FilixPay acts as the payment gateway, routing transactions to partnered licensed acquirers for settlement. Funds go directly into your bank account without passing through intermediate accounts."
+        },
+        "sub_merchant": {
+          "title": "Sub-merchant (3rd Party Mode)",
+          "slogan": "Collected by FilixPay (or group instance), then settled to you",
+          "desc": "When joining FilixPay's 3rd party ecosystem as a sub-merchant (e.g., through a group-deployed payment hub), all transaction funds are collected by FilixPay or its authorized entity first, and then settled to your designated account based on agreed cycles."
+        }
+      }
+    },
+    "features": {
+      "title": "One-Stop Aggregated Payment, Seamless Integration of Global Mainstream Channels",
+      "subtitle": "Through the FilixPay Merchant Center, you can conveniently configure multiple upstream payment channels, including Alipay, WeChat Pay, PayPal, Stripe, NowPayments, and more. Whether facing local or international customers, you can achieve unified management of multiple payment methods with just one integration.",
+      "items": {
+        "unified": {
+          "title": "Independently Deployable Checkout",
+          "desc": "Empower merchants to deploy the checkout system to their own domains for full brand control and data sovereignty."
+        },
+        "sdk": {
+          "title": "Embedded SDK",
+          "desc": "Seamlessly deploy to your own website to boost brand trust and payment conversion rates."
+        },
+        "extension": {
+          "title": "Open Extension",
+          "desc": "If your business uses other payment channels not yet supported by FilixPay, contact us. We promise to complete technical integration within one week."
+        },
+        "mobile": {
+          "title": "Seamless Mobile Experience",
+          "desc": "Full responsive design empowers you to initiate payments, track transactions, and manage your business on the go, directly from your mobile device."
+        }
+      }
+    },
+    "pricing": {
+      "title": "Flexible Service Plans for Every Stage",
+      "subtitle": "We offer multiple payment plans for you to choose freely according to your business pace",
+      "choose": "Choose Plan",
+      "plans": {
+        "weekly": {
+          "name": "Weekly Plan",
+          "price": "50 USD/Week",
+          "desc": "Easy experience of core functions"
+        },
+        "monthly": {
+          "name": "Monthly Plan",
+          "price": "200 USD/Month",
+          "desc": "Stable support for daily operations"
+        },
+        "half_year": {
+          "name": "Half-Year Plan",
+          "price": "1100 USD/6 Months",
+          "desc": "Best value choice"
+        },
+        "yearly": {
+          "name": "Yearly Plan",
+          "price": "2000 USD/Year",
+          "desc": "Worry-free and cost-saving"
+        }
+      }
+    },
+    "deployment": {
+      "title": "🖥️ Independent Deployment: Full Stack Control · Enterprise Grade · Data Sovereignty",
+      "subtitle": "Ideal for banks, payment providers, large corporations, and enterprises with strict security requirements.",
+      "intro": "If you require complete control, data isolation within your network, and compliance audit readiness, FilixPay offers an enterprise independent deployment solution — no public cloud dependency, deploy once, run forever.",
+      "benefits_title": "✅ Why Choose FilixPay Independent Deployment?",
+      "features": [
+        {
+          "title": "True Data Sovereignty",
+          "desc": "All merchant data, transaction logs, and API keys are 100% stored on your private servers with zero external dependencies, meeting GDPR, PCI-DSS, and high-level security standards."
+        },
+        {
+          "title": "Out-of-the-Box Architecture",
+          "desc": "Containerized via Docker, pre-integrated with: Multi-tenant engine (profit-sharing), Unified Auth (OIDC/SAML), One-stop Developer Center, Crypto Adapters, and high-concurrency protocols."
+        },
+        {
+          "title": "Minimal Resource Usage",
+          "desc": "Requires just a single 4-core 8G Linux server. Run docker-compose up to start a full production environment within 30 minutes."
+        },
+        {
+          "title": "Cloud-Native Ready",
+          "desc": "Architecture natively supports horizontal scaling and seamless migration to Kubernetes to handle future traffic growth with ease."
+        }
+      ],
+      "price": "One-time Fee 28,000 USD",
+      "maintenance": "Includes one year of free professional technical maintenance; 10% annual fee thereafter for updates and support."
+    },
+    "source_licensing": {
+      "title": "FilixPay Source Code Licensing",
+      "subtitle": "To meet the high requirements for system controllability, security, and compliance of financial institutions, large groups, and ISV partners, FilixPay provides licensing for complete, runnable source code.",
+      "sections": {
+        "included": {
+          "title": "✅ You will get:",
+          "items": [
+            "Complete source code of FilixPay core system (including merchant center, payment gateway, settlement engine, etc.);",
+            "Deployment documentation, database scripts, and API specifications;",
+            "One-time deployment support and technical handover service."
+          ]
+        },
+        "scope": {
+          "title": "⚖️ Authorization Scope (Limited Commercial License):",
+          "items": [
+            "You may use, modify, and deploy the source code within your own business systems to support your own payment or fund management operations."
+          ]
+        },
+        "prohibited": {
+          "title": "🚫 Explicitly Prohibited Actions:",
+          "subtitle": "Under no circumstances shall you:",
+          "items": [
+            "Apply for copyrights, patents, trademarks, or other intellectual property rights for FilixPay source code or its derivative works;",
+            "Resell, rent, lend, sub-license, or provide the source code to any third party in any form;",
+            "Use this source code to develop and provide competing payment gateway, aggregated payment, or acquiring service products to the public;",
+            "Remove or modify the copyright markings (© FilixPay) in the source code."
+          ]
+        },
+        "ip_ownership": {
+          "title": "📜 Intellectual Property Ownership:",
+          "items": [
+            "All intellectual property rights of the source code and related documents always belong exclusively to FilixPay and its licensors;",
+            "This authorization does not constitute open source, nor does it grant any rights beyond the above scope;",
+            "The authorization is based on the 'FilixPay Source Code Licensing Agreement' (Commercial Limited Authorization Version), and specific terms are subject to the written agreement signed by both parties."
+          ]
+        }
+      },
+      "footer": {
+        "trust": "We believe that true technological trust stems from transparency and is established by boundaries.",
+        "slogan": "FilixPay opens its source code to give you peace of mind; explicit restrictions are set to safeguard the sustainability of innovation.",
+        "cta": "For private deployment solutions or source code licensing details, please contact us (Email: invest@filixpay.com)",
+        "download_sample": "Download License Agreement Sample"
+      }
+    },
+    "trusted_ledger": {
+      "badge": "NEXT PHASE",
+      "title": "Next Core Capability: Global Trusted Ledger Engine",
+      "subtitle": "We are launching an enterprise-grade Global Trusted Ledger Engine, designed to become the trust hub for cross-ecosystem and cross-chain collaboration. Beyond trusted bookkeeping, this capability seamlessly integrates with mainstream blockchain ecosystems, enabling interoperability across heterogeneous value networks and unlocking the fusion value of data and assets.",
+      "key_value": {
+        "title": "Key Value: Breaking Chain Silos, Building a Unified Trust Layer",
+        "items": [
+          {
+            "title": "Multi-Chain Adaptation, One-Click Connection to Mainstream Ecosystems",
+            "desc": "Native deep integration with leading consortium blockchain platforms such as ChainMaker, FISCO BCOS, and AntChain, providing standardized access kits. Through a unified abstraction layer, we reduce the complexity and technical barriers for enterprises to connect and manage multiple blockchain networks, achieving 'develop once, deploy across chains'."
+          },
+          {
+            "title": "Cross-Chain Trust, Activating Ecosystem Synergy Value",
+            "desc": "Given the reality that enterprises have established businesses on different blockchains, our engine enables secure and trusted circulation and verification of critical business data and asset credentials across heterogeneous chains within a compliance framework. Government approvals on administrative chains, credentials on financial chains, and orders on supply chains can anchor and reference each other, building a cross-domain, cross-institutional trusted collaboration network."
+          },
+          {
+            "title": "Compliant Interoperability, Meeting Regulatory and Autonomy Requirements",
+            "desc": "All cross-chain interaction designs strictly follow domestic data security and industry regulatory standards, ensuring the entire circulation process is auditable and traceable. Support integration with national and industry-level blockchain infrastructures (such as 'Spark Chain Network'), joining the broader trusted ecosystem of the digital economy."
+          }
+        ]
+      },
+      "scenarios": {
+        "title": "Empowering Scenarios: Connecting Scattered Trust Islands",
+        "items": [
+          {
+            "title": "Cross-Domain Supply Chain Finance",
+            "desc": "Connect the supply chain where core enterprises reside, the financial chain where banks operate, and the logistics chain at ports, enabling multi-chain synchronization and automatic clearing of property rights, claims, and cash flows."
+          },
+          {
+            "title": "Regional Government Services Integration",
+            "desc": "Bridge government systems built on different blockchains across provinces and departments, allowing businesses and citizens to enjoy the convenience of 'cross-provincial services on chain'."
+          },
+          {
+            "title": "Industry Alliance Ecosystem Collaboration",
+            "desc": "Help member enterprises within industry alliances using different technical routes to achieve trusted mutual recognition of key production data, carbon footprints, and quality traceability information without modifying their existing systems."
+          }
+        ]
+      },
+      "footer": {
+        "tagline": "What we're building is a 'connector' and 'translator' that respects existing ecosystems and provides unified dialogue capabilities for scattered trust networks.",
+        "slogan": "In today's deep digital economy development, the value of connection often exceeds disruption. The Global Trusted Ledger Engine is born for this purpose."
+      }
+    },
+    "investment": {
+      "title": "Investment Cooperation, Building the Global Payment Blueprint Together",
+      "subtitle": "As a fast-growing fintech startup, FilixPay shows strong development potential in the cross-border payment field with its innovative fourth-party payment architecture and flexible deployment solutions. We are now officially open for strategic investment and equity cooperation.",
+      "contact_btn": "Contact Us (Email: {email})"
+    },
+    "footer": {
+      "slogan": "Make Payment Simple, Make Business Global",
+      "rights": "© 2026 Filix.com All rights reserved."
+    },
+    "onboarding": {
+      "title": "Merchant Onboarding",
+      "subtitle": "Apply for a merchant account to start collecting payments. The merchant name must exactly match the name on the ID.",
+      "form": {
+        "mobile": "Mobile Number",
+        "email": "Email Address",
+        "name": "Official Merchant Name",
+        "officialId": "Official ID Number",
+        "submit": "Apply Now",
+        "success": "Application submitted successfully!",
+        "error": "Application failed, please try again.",
+        "login_required": "Please login to apply."
+      }
+    },
+    "core_capabilities": {
+      "title": "Core Capability Highlights",
+      "items": {
+        "multi_tenant": {
+          "title": "Enterprise Multi-tenant Architecture",
+          "desc": "Supports institutions, ISVs, and large corporate clients with full data isolation between parent and child merchants, supporting profit sharing, independent settlement, and operations."
+        },
+        "flexible_mode": {
+          "title": "Flexible 3rd & 4th Party Compatibility",
+          "desc": "Acts as both an aggregated payment gateway (4th party) connecting global channels and a unified acquiring interface (3rd party) for centralized collection and fund management."
+        },
+        "iam": {
+          "title": "Enterprise Unified Identity Authentication",
+          "desc": "Native support for OIDC/SAML, seamless integration with existing IAM systems, providing SSO and fine-grained RBAC for financial-grade security compliance."
+        },
+        "developer": {
+          "title": "One-Stop Developer Center",
+          "desc": "Interactive API docs, sandbox environments, key management, and webhook debugging tools for rapid 30-minute integration."
+        },
+        "concurrency": {
+          "title": "High Concurrency Core Link Protection",
+          "desc": "Uses asynchronous queue peak shaving and sequential writing for hotspot account booking, ensuring data consistency and system stability under heavy load."
+        },
+        "cloud_native": {
+          "title": "Cloud-Native Elastic Scaling",
+          "desc": "Kubernetes-based microservices architecture supporting second-level horizontal scaling to handle peak traffic during major sales events like Double 11 or Black Friday."
+        }
+      }
+    },
+    "risk_control_section": {
+      "title": "Intelligent Risk & Fraud Control",
+      "subtitle": "Integrated Signifyd, Riskified, and Forter—self-configure or subscribe to platform-hosted chargeback coverage.",
+      "cta": "Explore Risk Control",
+      "pipeline": {
+        "rules": {
+          "title": "Rules Engine",
+          "desc": "Millisecond fraud prevention"
+        },
+        "monitor": {
+          "title": "Event Monitor",
+          "desc": "Fraud events + expert review"
+        },
+        "coverage": {
+          "title": "Insurance Partners",
+          "desc": "Signifyd · Riskified · Forter"
+        }
+      }
+    },
+    "ecommerce_solution": {
+      "title": "Cross-border E-commerce Solution: Open and Collect",
+      "subtitle": "Dual-channel support for Fiat + Crypto —— Configure today, collect tomorrow!",
+      "fiat": {
+        "title": "Fiat Payments",
+        "desc": "After opening accounts in mainstream channels like Stripe, PayPal, and Alipay+, merchants bind API credentials in the FilixPay backend to immediately enable credit cards and local wallets."
+      },
+      "crypto": {
+        "title": "Cryptocurrency Payments",
+        "desc": "Configure TRON USDT deposit addresses in the merchant center and collect on-chain through the FilixPay blockchain gateway. Optionally connect your NowPayments account for additional digital assets."
+      },
+      "tagline": "FilixPay orchestrates checkout, routing, and notifications—you configure upstream channels and, for native USDT, your own deposit addresses.",
+      "processing": {
+        "title": "System automatically handles for you:",
+        "items": [
+          "Multi-currency fiat settlement (USD/EUR/GBP/CNY, etc.)",
+          "TRON USDT deposit matching and payment status synchronization",
+          "Unified transaction dashboard, Webhook notifications, and order tracking",
+          "Optional NowPayments invoice flow for additional digital assets"
+        ]
+      },
+      "advantages": {
+        "title": "Why Choose FilixPay's Crypto Payment Solution?",
+        "headers": {
+          "advantage": "Advantage",
+          "description": "Description"
+        },
+        "items": [
+          {
+            "label": "Native USDT Rail",
+            "value": "Built-in TRON USDT collection via blockchain gateway—not just a third-party redirect"
+          },
+          {
+            "label": "Merchant-Controlled Wallets",
+            "value": "Fourth-party merchants bind their own deposit addresses; platform merchants manage sub-merchant crypto centrally"
+          },
+          {
+            "label": "No Card Chargebacks",
+            "value": "On-chain USDT transfers are final once confirmed"
+          },
+          {
+            "label": "Unified Checkout",
+            "value": "Crypto and fiat channels share the same FilixPay order, webhook, and dashboard model"
+          },
+          {
+            "label": "NowPayments Optional",
+            "value": "Extend beyond TRON USDT by connecting your own NowPayments credentials when needed"
+          }
+        ]
+      },
+      "customers": {
+        "title": "Target Customers",
+        "items": [
+          "Shopify / WooCommerce independent store owners",
+          "Web3 E-commerce (NFTs, digital goods, GameFi)",
+          "Cross-border DTC brands, SaaS, and subscription services",
+          "Traditional enterprises wanting a low-cost entry into crypto payments"
+        ]
+      },
+      "footer_tagline": "FilixPay —— Don't reinvent the wheel, just build the connection.",
+      "footer_sub": "Empowering you to collect every kind of global payment in the most compliant and simplest way."
+    },
+    "core_capabilities_v2": {
+      "title": "Core Capabilities",
+      "subtitle": "Mature capability engine powering transaction cores, ledgers, and developer workspaces",
+      "items": {
+        "payment_infrastructure": {
+          "title": "Global Acquiring API",
+          "desc": "Unified interface for credit cards, local payment channels, and digital currencies with currency rules."
+        },
+        "merchant_platform": {
+          "title": "Unified Merchant Control",
+          "desc": "Consolidated dashboard with isolated credentials, Webhook policies, and detailed reporting structures."
+        },
+        "transaction_management": {
+          "title": "Transaction Core Engine",
+          "desc": "Enterprise-scale secure transaction processing protecting payment states and logs consistency."
+        },
+        "settlement": {
+          "title": "Enterprise Ledgers & Settlements",
+          "desc": "Flexible settlements with custom rules, automated reconciliation, and platform ledger routing."
+        },
+        "developer": {
+          "title": "Sandbox Test Environment",
+          "desc": "Staging sandbox simulation to test transaction events, callback operations, and webhook retries safely."
+        },
+        "risk_control": {
+          "title": "Integrated Chargeback Insurance Partners",
+          "desc": "FilixPay natively integrates leading chargeback insurance and fraud-guarantee providers. Merchants choose how to consume coverage—bring your own provider contract or subscribe to platform-hosted service."
+        },
+        "multilingual": {
+          "title": "Global Multilingual Experience",
+          "desc": "Merchant portal, hosted checkout, and developer docs in multiple languages so cross-border teams operate in their preferred locale."
+        }
+      }
+    },
+    "merchant_center_section": {
+      "title": "Merchant Operations Center",
+      "subtitle": "Manage your payment business in one portal",
+      "cta_primary": "Explore Merchant Center",
+      "cta_secondary": "Enter Merchant Center",
+      "items": {
+        "transactions": {
+          "title": "Transactions",
+          "desc": "Query and operate orders, refunds, and payment status."
+        },
+        "money": {
+          "title": "Money",
+          "desc": "Track balances, settlement bills, withdrawals, and fund movements connected to your payment activity."
+        },
+        "reporting": {
+          "title": "Reporting",
+          "desc": "Operational reporting and reconciliation support."
+        },
+        "customers": {
+          "title": "Customers",
+          "desc": "View and manage your customer information."
+        },
+        "risk": {
+          "title": "Risk Management",
+          "desc": "Full-chain fraud prevention, manual review, and eligible chargeback protection."
+        },
+        "credit": {
+          "title": "Credit Center",
+          "desc": "Manage your credit limit information, including availability, usage, and payment terms."
+        },
+        "account": {
+          "title": "Account & Settings",
+          "desc": "Merchant profile, organization, security settings, and service plan."
+        },
+        "api": {
+          "title": "API",
+          "desc": "Credentials, webhooks, and integration settings."
+        },
+        "settlement": {
+          "title": "Settlement",
+          "desc": "Balances, settlement cycles, and fund movements."
+        },
+        "permissions": {
+          "title": "Team permissions",
+          "desc": "Members and access control."
+        }
+      }
+    },
+    "solutions_section": {
+      "title": "Solutions by Business Type",
+      "subtitle": "Optimize conversion, settlement speed, and compliance rules according to your platform architecture",
+      "items": {
+        "cross_border": {
+          "title": "Cross-Border DTC",
+          "slogan": "Local payments globally, zero settlement delays",
+          "tag": "Retail & SaaS",
+          "desc": "Optimize checkout conversions with international card schemes and local wallet methods."
+        },
+        "platform": {
+          "title": "Platform Profits Split",
+          "slogan": "Automate marketplace disbursements, bypass escrow compliance",
+          "tag": "SaaS Platform",
+          "desc": "Distribute funds automatically to platforms and merchants. Sub-tenant ledger tracking with absolute isolation."
+        },
+        "enterprise": {
+          "title": "Enterprise payment governance",
+          "slogan": "Central administration, localized financial clearing",
+          "tag": "Corporate Use",
+          "desc": "Multi-tenant deployment structure. Robust RBAC authentication backed by Keycloak to satisfy regulatory audits."
+        },
+        "infrastructure_partner": {
+          "title": "Infrastructure Partner",
+          "slogan": "Embedded transaction routing for SaaS platforms",
+          "tag": "SaaS & ERP",
+          "desc": "White-label gateways, multi-merchant ledger wallets, and flexible split mapping for enterprise SaaS."
+        }
+      }
+    },
+    "enterprise_section": {
+      "title": "Enterprise capability",
+      "subtitle": "Organization-layer governance, separate from merchant operations",
+      "cta": "Explore For Enterprise",
+      "items": {
+        "multi_org": {
+          "title": "Multi-organization",
+          "desc": "Group multi-org and multi-merchant management."
+        },
+        "multi_merchant": {
+          "title": "Multi-Merchant Management",
+          "desc": "Coordinate payment operations across subsidiaries, business units, and project teams under unified governance."
+        },
+        "rbac": {
+          "title": "RBAC",
+          "desc": "Member governance and role-based access."
+        },
+        "isolation": {
+          "title": "Enterprise isolation",
+          "desc": "Scoped credentials and authorization boundaries."
+        },
+        "private": {
+          "title": "Private deployment",
+          "desc": "Supports private deployment and dedicated environments."
+        }
+      }
+    },
+    "developer_section": {
+      "title": "Developer platform",
+      "subtitle": "Build payments with APIs",
+      "cta": "Go to Developers",
+      "items": {
+        "api": {
+          "title": "API",
+          "desc": "Unified payment and transaction interfaces."
+        },
+        "sdk": {
+          "title": "SDK",
+          "desc": "Faster integration kits."
+        },
+        "sandbox": {
+          "title": "Sandbox",
+          "desc": "Safe testing and validation."
+        },
+        "webhooks": {
+          "title": "Webhooks",
+          "desc": "Event delivery and status sync."
+        }
+      }
+    },
+    "security_section": {
+      "title": "Security & compliance",
+      "subtitle": "Trust foundations for enterprise buyers",
+      "items": {
+        "compliance": {
+          "title": "Compliance-minded",
+          "desc": "Security and compliance practices for enterprise payments."
+        },
+        "controls": {
+          "title": "Access controls",
+          "desc": "Permissions, credentials, and operational boundaries."
+        },
+        "audit": {
+          "title": "Auditable",
+          "desc": "Traceable actions and payment trails."
+        }
+      }
+    },
+    "final_cta": {
+      "title": "Start building payment operations",
+      "subtitle": "Get started, contact sales, or explore developer docs",
+      "start": "Get started",
+      "docs": "Developer docs",
+      "contact": "Contact sales"
+    }
+  }
+}

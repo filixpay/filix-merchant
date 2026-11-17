@@ -1,0 +1,597 @@
+{
+  "Pages": {
+    "products": {
+      "title": "Productos",
+      "subtitle": "Soluciones de pago integrales para cada escenario de negocio",
+      "hero_title": "Una plataforma, infinitas posibilidades de pago",
+      "hero_desc": "Desde fiat hasta cripto, desde nacional hasta transfronterizo, FilixPay ofrece una infraestructura de pagos unificada que crece con su negocio."
+    },
+    "payment_platform": {
+      "badge": "PRODUCTO PRINCIPAL",
+      "hero_title": "Plataforma de infraestructura de pagos empresarial",
+      "hero_desc": "Construya, gestione y escale operaciones de pago con APIs unificadas, gestión de transacciones e infraestructura de liquidación.",
+      "hero_desc_extra": "FilixPay permite a las empresas globales conectar pagos, gestionar transacciones, liquidaciones y operaciones de comerciantes desde una sola plataforma.",
+      "features_title": "Capacidades principales",
+      "features": {
+        "connectivity": {
+          "icon": "API",
+          "title": "Conectividad de pagos",
+          "desc": "Conecte canales de pago globales mediante APIs unificadas: Stripe, billeteras, transferencias bancarias y activos digitales desde una sola capa de integración.",
+          "detail_desc": "Reduzca el coste de integración con una única capa de orquestación para checkout, páginas de pago alojadas y flujos de API en el servidor.",
+          "points": {
+            "0": "OpenAPI unificada para creación de pedidos, reembolsos y consultas de estado",
+            "1": "Enrutamiento multicanal entre métodos de pago nacionales y transfronterizos",
+            "2": "Soporte opcional de pagos con activos digitales sin cambiar los flujos de pedido principales"
+          }
+        },
+        "transactions": {
+          "icon": "TX",
+          "title": "Gestión de transacciones",
+          "desc": "Gestione pedidos, reembolsos, estados de pago y pistas de auditoría con visibilidad completa del ciclo de vida en todos los canales.",
+          "detail_desc": "Los equipos de operaciones y desarrollo comparten una única fuente de verdad desde la autorización hasta los estados listos para liquidación.",
+          "points": {
+            "0": "Registros de pedidos, reembolsos y disputas vinculados a intentos de pago",
+            "1": "Seguimiento de estado en tiempo real con notificaciones a comerciantes impulsadas por webhooks",
+            "2": "Historial de transacciones listo para auditoría para revisión financiera y de cumplimiento"
+          }
+        },
+        "settlement": {
+          "icon": "ST",
+          "title": "Liquidación y fondos",
+          "desc": "Seguimiento de saldos, facturas de liquidación, pagos fraccionados, retiros y conciliación de flujos de fondos para equipos financieros.",
+          "detail_desc": "Admite modelos de liquidación de plataforma y liquidación directa con facturación automatizada y movimiento de fondos trazable.",
+          "points": {
+            "0": "Facturas de liquidación y vistas de saldo para equipos financieros de comerciantes",
+            "1": "Asignación de pagos fraccionados para plataformas y negocios multi-comerciante",
+            "2": "Registros de retiros, depósitos y transferencias vinculados a resultados de liquidación"
+          }
+        },
+        "merchant_ops": {
+          "icon": "MC",
+          "title": "Operaciones de comerciantes",
+          "desc": "Gestión de cuentas, permisos, credenciales API, webhooks y monitorización de transacciones en una sola plataforma de operaciones.",
+          "detail_desc": "Ofrezca a los administradores de comerciantes los controles que necesitan sin exponer la gobernanza empresarial a nivel de organización.",
+          "points": {
+            "0": "Perfiles de comerciante, credenciales y configuración de pagos en una sola consola",
+            "1": "Acceso basado en roles para equipos de finanzas, operaciones y desarrollo",
+            "2": "Endpoints de webhook y claves API gestionados con visibilidad de auditoría"
+          }
+        }
+      },
+      "business_models": {
+        "title": "Resumen de modelos de negocio",
+        "desc": "FilixPay admite comerciantes independientes, operadores de plataforma y grupos empresariales con modos de liquidación flexibles.",
+        "items": {
+          "direct": {
+            "title": "Liquidación directa",
+            "desc": "Los comerciantes independientes conectan canales directamente con compensación y liquidación transparentes."
+          },
+          "platform": {
+            "title": "Liquidación de plataforma — modelo Platform",
+            "desc": "Las plataformas cobran en nombre de subcomerciantes con reglas configurables de reparto y liquidación."
+          },
+          "enterprise": {
+            "title": "Operaciones empresariales y de grupo",
+            "desc": "Las organizaciones con múltiples unidades de negocio coordinan las operaciones de pago bajo políticas de gobernanza."
+          }
+        }
+      },
+      "links": {
+        "title": "Explorar la plataforma FilixPay",
+        "desc": "Continúe hacia superficies de producto relacionadas en operaciones de comerciantes, desarrolladores, liquidación y gobernanza empresarial.",
+        "merchant_center": {
+          "title": "Centro de comerciantes",
+          "desc": "Plataforma de operaciones de pago para cuentas, permisos, credenciales y monitorización de transacciones."
+        },
+        "developers": {
+          "title": "Plataforma para desarrolladores",
+          "desc": "APIs de pago, SDKs, webhooks, sandbox y documentación de integración."
+        },
+        "payment_splitting": {
+          "title": "Reparto de pagos",
+          "desc": "Reparto y liquidación automatizados para marketplaces y plataformas multi-comerciante."
+        },
+        "for_enterprise": {
+          "title": "Para empresas",
+          "desc": "Gobernanza multi-comerciante, RBAC, aislamiento de organización y opciones de despliegue."
+        }
+      },
+      "cta": {
+        "title": "Empiece con la infraestructura de pagos FilixPay",
+        "desc": "Explore las capacidades de operaciones de comerciantes o inicie sesión en su portal de comerciantes para configurar canales de pago.",
+        "primary": "Explorar el Centro de comerciantes",
+        "secondary": "Iniciar sesión en el portal de comerciantes"
+      }
+    },
+    "merchant_center": {
+      "badge": "OPERACIONES DE COMERCIANTES",
+      "hero_title": "Centro de comerciantes FilixPay",
+      "hero_desc": "Gestione las operaciones de pago desde una sola consola: transacciones, liquidación, informes, credenciales, webhooks y acceso del equipo.",
+      "hero_desc_extra": "El Centro de comerciantes FilixPay es la plataforma de operaciones para que comerciantes, plataformas y unidades de negocio empresariales ejecuten flujos de pago cotidianos.",
+      "features_title": "Capacidades de la plataforma",
+      "features": {
+        "transactions": {
+          "icon": "TX",
+          "title": "Gestión de transacciones",
+          "desc": "Busque, filtre y supervise pedidos, reembolsos y estados de pago en todos los canales desde una vista de operaciones unificada.",
+          "detail_desc": "Los equipos de operaciones obtienen visibilidad completa del ciclo de vida desde la autorización hasta los estados listos para liquidación sin cambiar de herramienta.",
+          "points": {
+            "0": "Registros de pedidos y reembolsos vinculados a intentos de pago y respuestas del canal",
+            "1": "Seguimiento de estado en tiempo real con historial de transacciones listo para exportar",
+            "2": "Vistas aptas para auditoría para equipos de finanzas y soporte"
+          }
+        },
+        "settlement": {
+          "icon": "ST",
+          "title": "Liquidación y fondos",
+          "desc": "Siga saldos, facturas de liquidación, retiros y movimientos de fondos vinculados a su actividad de pago.",
+          "detail_desc": "Los equipos financieros concilian los resultados de liquidación con la misma plataforma usada para la monitorización diaria de transacciones.",
+          "points": {
+            "0": "Vistas de saldo y facturas de liquidación para flujos financieros de comerciantes",
+            "1": "Registros de retiros, depósitos y transferencias vinculados a estados de liquidación",
+            "2": "Soporte para modelos de liquidación de plataforma y liquidación directa"
+          }
+        },
+        "reporting": {
+          "icon": "RP",
+          "title": "Informes y analítica",
+          "desc": "Informes operativos y financieros para comprender el volumen de pagos, las tasas de éxito y las tendencias de liquidación.",
+          "detail_desc": "Convierta los datos de transacciones y liquidación en informes accionables para partes interesadas de operaciones y finanzas.",
+          "points": {
+            "0": "Resúmenes de volumen de pagos y tasa de éxito por canal y periodo",
+            "1": "Informes de liquidación y flujo de fondos para flujos de conciliación",
+            "2": "Vistas de datos listas para exportar para revisión financiera y de negocio"
+          }
+        },
+        "api_credentials": {
+          "icon": "KEY",
+          "title": "Credenciales API",
+          "desc": "Cree y rote claves API, gestione credenciales de sandbox y producción, y controle el acceso de desarrolladores.",
+          "detail_desc": "Desarrolladores y administradores gestionan credenciales de integración con visibilidad de claves activas y entornos.",
+          "points": {
+            "0": "Gestión separada de claves API de sandbox y producción",
+            "1": "Rotación de credenciales sin interrumpir integraciones activas",
+            "2": "Controles de acceso alineados con los roles del equipo del comerciante"
+          }
+        },
+        "webhooks": {
+          "icon": "WH",
+          "title": "Webhooks",
+          "desc": "Configure endpoints de webhook para eventos de pago, reintentos de entrega y automatización impulsada por la integración.",
+          "detail_desc": "Mantenga los sistemas posteriores sincronizados con los eventos del ciclo de vida del pago mediante una entrega fiable de webhooks.",
+          "points": {
+            "0": "Configuración de endpoints para notificaciones de pedidos, pagos y reembolsos",
+            "1": "Visibilidad de entrega para resolución de problemas de integración",
+            "2": "Flujos impulsados por eventos para sistemas de pedidos y fulfillment"
+          }
+        },
+        "team_permissions": {
+          "icon": "TM",
+          "title": "Permisos del equipo",
+          "desc": "Acceso basado en roles para equipos de finanzas, operaciones y desarrollo dentro de una cuenta de comerciante.",
+          "detail_desc": "Delegue las operaciones de pago cotidianas a las personas adecuadas sin compartir el acceso completo a la cuenta.",
+          "points": {
+            "0": "Permisos basados en roles para finanzas, operaciones y desarrollo",
+            "1": "Acceso controlado a credenciales, transacciones y configuración",
+            "2": "Flujos de equipo acotados a una sola cuenta de comerciante"
+          }
+        },
+        "self_hosted_checkout": {
+          "icon": "CK",
+          "title": "Checkout autoalojado",
+          "desc": "Despliegue el frontend de checkout de código abierto en su propio dominio con Docker, sin cambios de código.",
+          "detail_desc": "Ejecute la página de pago en checkout.yourdomain.com en lugar de una URL de terceros. FilixPay gestiona la lógica de pago; usted controla la marca, el alojamiento y los registros de acceso.",
+          "points": {
+            "0": "Descargue la imagen oficial de GHCR y configure solo mediante variables de entorno",
+            "1": "Use las credenciales del Centro de desarrolladores (Client ID / Secret) para conectar con las APIs de FilixPay",
+            "2": "Código abierto Apache-2.0: audite el frontend; la lógica central de riesgo y canales permanece en FilixPay"
+          }
+        }
+      },
+      "checkout_deployment": {
+        "title": "Despliegue de checkout autoalojado",
+        "desc": "Para comerciantes que quieren la página de pago en su propio dominio e infraestructura, no el Hosted Checkout de FilixPay. Despliegue el frontend de código abierto filix-checkout con Docker; no se necesitan cambios en el código frontend.",
+        "benefits": {
+          "brand": {
+            "title": "Su dominio, su marca",
+            "desc": "Sirva el checkout en checkout.yourdomain.com para que los clientes vean su marca en la barra de direcciones, lo que ayuda a reducir el abandono y generar confianza."
+          },
+          "compliance": {
+            "title": "Límites de datos claros",
+            "desc": "El código frontend del checkout, los registros de acceso y el entorno de despliegue permanecen en sus servidores, facilitando el cumplimiento interno y los requisitos de auditoría."
+          },
+          "open_source": {
+            "title": "Código abierto y auditable",
+            "desc": "Checkout Next.js con licencia Apache-2.0. Revise el código usted mismo; la lógica central de pago permanece en el backend de FilixPay con el mismo límite de seguridad."
+          },
+          "low_cost": {
+            "title": "Bajo coste de integración",
+            "desc": "Sin cambios de lógica de negocio: configure credenciales API y URLs mediante archivo de entorno, descargue la imagen Docker y ponga en marcha."
+          }
+        },
+        "steps": {
+          "credentials": {
+            "title": "1. Obtener credenciales API",
+            "desc": "Cree FILIXPAY_BACKEND_CLIENT_ID y FILIXPAY_BACKEND_CLIENT_SECRET en el Centro de desarrolladores de FilixPay."
+          },
+          "docker": {
+            "title": "2. Desplegar con Docker",
+            "desc": "Descargue ghcr.io/filixpay/filix-checkout, monte su archivo de entorno y ejecute en el puerto 3001. Fije una etiqueta de versión para producción."
+          },
+          "domain": {
+            "title": "3. Vincular su dominio",
+            "desc": "Exponga checkout.example.com mediante Nginx o Caddy con HTTPS. Configure NEXTAUTH_URL para que coincida con la URL pública."
+          }
+        },
+        "note": "Se trata de un frontend de checkout autoalojado ligero, no del despliegue privado completo de FilixPay (stack PostgreSQL, Redis, Keycloak). Consulte la comparación en la página de Despliegue privado.",
+        "cta_docs": "Ver guía de despliegue",
+        "cta_developers": "Ir al Centro de desarrolladores",
+        "cta_compare": "Comparar con el despliegue privado"
+      },
+      "audience": {
+        "title": "Quién usa el Centro de comerciantes",
+        "desc": "El Centro de comerciantes FilixPay sirve a negocios que necesitan una consola de operaciones dedicada para flujos de pago, no gobernanza empresarial a nivel de organización.",
+        "items": {
+          "merchants": {
+            "title": "Comerciantes independientes",
+            "desc": "Ejecute operaciones de pago, supervise transacciones y gestione credenciales para una sola cuenta comercial."
+          },
+          "platforms": {
+            "title": "Plataformas y marketplaces",
+            "desc": "Opere flujos de pago de subcomerciantes, liquidaciones fraccionadas e informes a nivel de plataforma desde una sola consola."
+          },
+          "enterprises": {
+            "title": "Unidades de negocio empresariales",
+            "desc": "Ofrezca a las unidades de negocio un espacio de trabajo de operaciones de comerciante para transacciones, liquidación y acceso del equipo."
+          }
+        }
+      },
+      "links": {
+        "title": "Explorar productos relacionados",
+        "desc": "El Centro de comerciantes se conecta a la infraestructura de pagos más amplia de FilixPay, la plataforma para desarrolladores y las capacidades de liquidación.",
+        "payment_platform": {
+          "title": "Plataforma de pagos",
+          "desc": "Infraestructura de pagos empresarial para APIs, gestión de transacciones y liquidación."
+        },
+        "developers": {
+          "title": "Plataforma para desarrolladores",
+          "desc": "APIs de pago, SDKs, webhooks, sandbox y documentación de integración."
+        },
+        "payment_splitting": {
+          "title": "Reparto de pagos",
+          "desc": "Reparto y liquidación automatizados para marketplaces y plataformas multi-comerciante."
+        }
+      },
+      "cta": {
+        "title": "Iniciar sesión en el Centro de comerciantes",
+        "desc": "Acceda a su portal de comerciantes para configurar canales de pago, gestionar transacciones y ejecutar operaciones de pago cotidianas.",
+        "primary": "Iniciar sesión en el portal de comerciantes",
+        "secondary": "Ver documentación para desarrolladores"
+      }
+    },
+    "developers": {
+      "badge": "PLATAFORMA PARA DESARROLLADORES",
+      "hero_title": "Construya pagos con APIs",
+      "hero_desc": "Integre FilixPay con APIs REST, SDKs, entornos sandbox y webhooks para conectar checkout, pedidos y flujos de liquidación.",
+      "hero_desc_extra": "La plataforma para desarrolladores de FilixPay ofrece a los equipos de ingeniería las herramientas para construir, probar y operar integraciones de pago empresariales.",
+      "features_title": "Capacidades para desarrolladores",
+      "features": {
+        "api": {
+          "icon": "API",
+          "title": "APIs de pago",
+          "desc": "Endpoints REST OpenAPI-first para creación de pedidos, reembolsos, estado de pago y consultas de liquidación.",
+          "detail_desc": "Integre flujos de pago en el servidor con modelos de solicitud coherentes entre canales y entornos.",
+          "points": {
+            "0": "Cree pedidos, capture pagos y emita reembolsos mediante endpoints unificados",
+            "1": "Consulte el estado de transacciones y los resultados de liquidación de forma programática",
+            "2": "Entornos sandbox y de producción con credenciales separadas"
+          }
+        },
+        "sdk": {
+          "icon": "SDK",
+          "title": "SDKs y bibliotecas cliente",
+          "desc": "Ayudas específicas por lenguaje para acelerar la integración con constructores de solicitudes tipados y manejo de errores.",
+          "detail_desc": "Reduzca el código repetitivo con patrones de SDK alineados a las especificaciones OpenAPI de FilixPay.",
+          "points": {
+            "0": "Bibliotecas cliente para patrones comunes de integración en el servidor",
+            "1": "Ayudas de firma y autenticación para llamadas API seguras",
+            "2": "Ejemplos alineados con flujos de checkout y webhooks"
+          }
+        },
+        "sandbox": {
+          "icon": "SB",
+          "title": "Sandbox",
+          "desc": "Pruebe flujos de pago de extremo a extremo con credenciales sandbox antes de pasar a producción.",
+          "detail_desc": "Los desarrolladores validan integraciones en un entorno aislado con la misma superficie de API que producción.",
+          "points": {
+            "0": "Claves API sandbox separadas de las credenciales de producción",
+            "1": "Simule eventos del ciclo de vida de pedidos y pagos para pruebas de integración",
+            "2": "Herramientas de sandbox de integración en la consola de desarrolladores"
+          }
+        },
+        "webhooks": {
+          "icon": "WH",
+          "title": "Webhooks",
+          "desc": "Reciba notificaciones de eventos de pago en tiempo real para pedidos, pagos, reembolsos y actualizaciones de liquidación.",
+          "detail_desc": "Mantenga los sistemas posteriores sincronizados con los eventos del ciclo de vida del pago mediante una entrega fiable de webhooks.",
+          "points": {
+            "0": "Configure endpoints para notificaciones de pedidos, pagos y reembolsos",
+            "1": "Registros de entrega y visibilidad de reintentos para resolución de problemas de integración",
+            "2": "Flujos impulsados por eventos para fulfillment de pedidos y conciliación"
+          }
+        }
+      },
+      "quick_start": {
+        "title": "Inicio rápido",
+        "desc": "Pase de las credenciales a su primer pago sandbox en tres pasos.",
+        "steps": {
+          "0": "Inicie sesión en el portal de comerciantes y abra la consola de desarrolladores para crear credenciales API sandbox.",
+          "1": "Cree un pedido de prueba mediante la API de pagos o el SDK usando su clave sandbox.",
+          "2": "Configure un endpoint de webhook y verifique la entrega de eventos en la consola de desarrolladores."
+        }
+      },
+      "checkout_deployment": {
+        "title": "Despliegue de checkout autoalojado",
+        "desc": "Despliegue el frontend de código abierto filix-checkout en su propio dominio con Docker. Use las credenciales del Centro de desarrolladores para conectar; no se requieren cambios en el código frontend.",
+        "points": {
+          "0": "Cree FILIXPAY_BACKEND_CLIENT_ID / CLIENT_SECRET en la consola de desarrolladores antes del despliegue.",
+          "1": "Descargue ghcr.io/filixpay/filix-checkout y configure mediante archivo de entorno; fije una etiqueta de versión en producción.",
+          "2": "La lógica central de pago permanece en FilixPay; usted aloja la UI de checkout y el proxy BFF en su infraestructura."
+        },
+        "cta_docs": "Ver guía de despliegue",
+        "cta_merchant_center": "Resumen en el Centro de comerciantes"
+      },
+      "links": {
+        "title": "Explorar productos relacionados",
+        "desc": "Las integraciones de desarrolladores se conectan a la infraestructura de pagos FilixPay y a las operaciones de comerciantes.",
+        "payment_platform": {
+          "title": "Plataforma de pagos",
+          "desc": "Infraestructura de pagos empresarial para APIs, gestión de transacciones y liquidación."
+        },
+        "merchant_center": {
+          "title": "Centro de comerciantes",
+          "desc": "Plataforma de operaciones de pago para cuentas, permisos, credenciales y monitorización de transacciones."
+        }
+      },
+      "cta": {
+        "title": "Empiece a integrar con FilixPay",
+        "desc": "Siga la guía de inicio rápido o abra la consola de desarrolladores para gestionar credenciales, sandbox y webhooks.",
+        "primary": "Ver inicio rápido",
+        "secondary": "Abrir consola de desarrolladores"
+      }
+    },
+    "for_enterprise": {
+      "badge": "GOBERNANZA EMPRESARIAL",
+      "hero_title": "Gobernanza de pagos empresariales para grupos y negocios regulados",
+      "hero_desc": "FilixPay For Enterprise ayuda a la sede a gobernar operaciones de pago multi-organización con gestión multi-comerciante, RBAC, gobernanza de miembros y aislamiento a nivel de organización.",
+      "hero_desc_extra": "El Centro de comerciantes FilixPay cubre operaciones de un solo comerciante; For Enterprise añade gobernanza de organización para grupos, conglomerados y empresas reguladas.",
+      "features_title": "Capacidades de gobernanza",
+      "features": {
+        "multi_org": {
+          "icon": "ORG",
+          "title": "Gobernanza multi-organización",
+          "desc": "Centralice la gobernanza empresarial entre entidades legales preservando operaciones independientes en cada organización.",
+          "detail_desc": "La sede crea y gestiona organizaciones sin reemplazar las operaciones cotidianas de comerciantes.",
+          "points": {
+            "0": "Visibilidad a nivel empresarial entre organizaciones y comerciantes",
+            "1": "Límites de gobernanza que se detienen en la capa de organización",
+            "2": "Política centralizada con ejecución de negocio descentralizada"
+          }
+        },
+        "multi_merchant": {
+          "icon": "MM",
+          "title": "Gestión multi-comerciante",
+          "desc": "Coordine operaciones de pago entre filiales, unidades de negocio y equipos de proyecto bajo gobernanza unificada.",
+          "detail_desc": "Rompa los silos de fondos con cuentas supervisadas y adquisición transparente entre comerciantes del grupo.",
+          "points": {
+            "0": "Estrategia de adquisición unificada con firma a nivel de entidad",
+            "1": "Flujos de pago a nivel de subcomerciante y proyecto",
+            "2": "Flujos de fondos transparentes para la supervisión de la sede"
+          }
+        },
+        "rbac": {
+          "icon": "RBAC",
+          "title": "RBAC y gobernanza de miembros",
+          "desc": "Controles de acceso basados en roles y gobernanza del ciclo de vida de miembros para administradores empresariales y propietarios de organización.",
+          "detail_desc": "Delegue responsabilidades de gobernanza con permisos de miembros auditables y flujos de aprobación.",
+          "points": {
+            "0": "Separación de roles Enterprise ADMIN y Organization OWNER",
+            "1": "Invitaciones de miembros, asignación de roles y revisiones de acceso",
+            "2": "Acciones de gobernanza auditables entre organizaciones"
+          }
+        },
+        "isolation": {
+          "icon": "ISO",
+          "title": "Aislamiento de organización",
+          "desc": "Aislamiento fuerte entre organizaciones manteniendo la visibilidad de gobernanza a nivel empresarial.",
+          "detail_desc": "Cada organización opera con credenciales, comerciantes y límites de autorización acotados.",
+          "points": {
+            "0": "Gestión acotada de comerciantes y credenciales por organización",
+            "1": "La autorización permanece dentro de los límites de la organización",
+            "2": "Supervisión empresarial sin centralizar las operaciones"
+          }
+        }
+      },
+      "private_deployment": {
+        "title": "Opciones de despliegue privado",
+        "desc": "FilixPay puede desplegarse en su propio entorno para soberanía de datos e industrias reguladas; contacte con ventas para analizar opciones de despliegue."
+      },
+      "links": {
+        "title": "Explorar la infraestructura de pagos",
+        "desc": "La gobernanza empresarial se apoya en la infraestructura de pagos FilixPay para APIs, transacciones y liquidación.",
+        "payment_platform": {
+          "title": "Plataforma de pagos",
+          "desc": "Infraestructura de pagos empresarial para APIs, gestión de transacciones y liquidación."
+        }
+      },
+      "cta": {
+        "title": "Hable con nuestro equipo empresarial",
+        "desc": "Contacte con ventas para analizar gobernanza multi-organización, requisitos de RBAC y opciones de despliegue para su grupo.",
+        "primary": "Contactar con ventas",
+        "secondary": "Explorar la plataforma de pagos"
+      }
+    },
+    "credit_payment": {
+      "title": "Pago a crédito",
+      "subtitle": "Soluciones de pago basadas en crédito flexibles para negocios B2B y de suscripción",
+      "hero_title": "Compre ahora, pague después — pensado para empresas",
+      "hero_desc": "Habilite líneas de crédito, planes de cuotas y pagos diferidos con gestión de riesgo de nivel empresarial y seguimiento de cuentas en tiempo real.",
+      "features": {
+        "credit_line": {
+          "title": "Gestión de líneas de crédito",
+          "desc": "Establezca y gestione límites de crédito para sus clientes empresariales con condiciones de pago flexibles."
+        },
+        "installment": {
+          "title": "Planes de cuotas",
+          "desc": "Admite planes de pago multiperiodo con facturación y cobro automatizados."
+        },
+        "risk": {
+          "title": "Control de riesgo",
+          "desc": "Puntuación de crédito y evaluación de riesgo en tiempo real con reglas configurables."
+        },
+        "reconciliation": {
+          "title": "Conciliación automática",
+          "desc": "Emparejamiento automatizado de pagos con facturas e informes detallados."
+        }
+      }
+    },
+    "crypto_payment": {
+      "title": "Pago con cripto",
+      "subtitle": "Cobro nativo on-chain de TRON USDT a través de la pasarela blockchain de FilixPay",
+      "hero_title": "Pagos TRON USDT, integrados",
+      "hero_desc": "Cobre USDT TRC20 con direcciones de depósito gestionadas por el comerciante, emparejamiento por importe único y confirmación de la pasarela blockchain, unificado en el mismo flujo de checkout y pedidos de FilixPay.",
+      "pipeline": {
+        "configure": {
+          "title": "Configurar billeteras",
+          "desc": "Vincule direcciones de depósito TRON USDT"
+        },
+        "checkout": {
+          "title": "Cobro en checkout",
+          "desc": "Muestre la dirección y el importe a pagar"
+        },
+        "confirm": {
+          "title": "Confirmación on-chain",
+          "desc": "La pasarela verifica el depósito"
+        }
+      },
+      "what": {
+        "title": "¿Qué es el pago con cripto de FilixPay?",
+        "desc": "FilixPay es una capa de orquestación de pagos, no un custodio ni un exchange. El canal nativo CRYPTO conecta su checkout a depósitos TRON USDT mediante la pasarela blockchain de FilixPay, con extensión opcional de NowPayments para facturas multicurrency."
+      },
+      "native": {
+        "title": "Canal nativo TRON USDT (principal)",
+        "desc": "Cobro on-chain listo para producción de USDT TRC20 con billeteras de depósito controladas por el comerciante y emparejamiento automático de pagos.",
+        "points": {
+          "0": "Cadena y activo: USDT de mainnet TRON (TRC20)",
+          "1": "Modos de depósito: emparejamiento STATIC por importe único o asignación de direcciones HD",
+          "2": "El checkout muestra la dirección de depósito y el importe exacto a pagar para el cliente"
+        }
+      },
+      "wallets": {
+        "title": "Gestión de billeteras de depósito",
+        "desc": "Los comerciantes configuran direcciones de recepción en el centro de comerciantes antes de poner en marcha.",
+        "points": {
+          "0": "Los comerciantes de cuarta parte gestionan sus propias billeteras de depósito TRON USDT",
+          "1": "Los subcomerciantes de tercera parte usan billeteras gestionadas por la plataforma (vista de solo lectura)",
+          "2": "Una billetera de depósito activa por cadena/activo y por comerciante"
+        }
+      },
+      "extension": {
+        "title": "Extensión NowPayments (opcional)",
+        "desc": "¿Necesita más activos digitales además de TRON USDT? Conecte su propia cuenta NowPayments como canal upstream adicional.",
+        "points": {
+          "0": "Aporte su API Key e IPN Secret de NowPayments en la configuración de pagos",
+          "1": "Redirija a los clientes al checkout de facturas NowPayments para monedas admitidas",
+          "2": "FilixPay gestiona el vínculo de pedidos, los callbacks IPN y la conciliación de facturas de comercio"
+        },
+        "footnote": "El alcance multicurrency depende de su cuenta de comerciante NowPayments; no es una garantía nativa de FilixPay."
+      },
+      "merchant_center": {
+        "title": "Capacidades del Centro de comerciantes",
+        "items": {
+          "configs": {
+            "title": "Configuración de pagos",
+            "desc": "Vincule credenciales de pasarela CRYPTO o claves API de NowPayments por escenario de pago."
+          },
+          "wallets": {
+            "title": "Direcciones de depósito cripto",
+            "desc": "Cree y mantenga direcciones de recepción TRON USDT para el canal nativo."
+          },
+          "orders": {
+            "title": "Pedidos y webhooks",
+            "desc": "Siga el estado de pago y reciba webhooks de comerciante cuando se confirmen los depósitos."
+          }
+        }
+      },
+      "workflow": {
+        "title": "Flujo de cobro",
+        "desc": "Desde la creación del checkout hasta la confirmación on-chain.",
+        "steps": {
+          "order": {
+            "title": "Crear checkout",
+            "desc": "El comerciante o la API crea un pedido y selecciona el canal de pago cripto configurado."
+          },
+          "present": {
+            "title": "Presentar el pago",
+            "desc": "CRYPTO nativo muestra la dirección TRON y el importe único a pagar; NowPayments redirige a la URL de la factura."
+          },
+          "pay": {
+            "title": "El cliente paga",
+            "desc": "El cliente envía USDT on-chain o completa el pago en la página de factura de NowPayments."
+          },
+          "settle": {
+            "title": "Confirmar y notificar",
+            "desc": "La pasarela o el IPN confirma el pago; se actualiza el estado del pedido y se disparan los webhooks del comerciante."
+          }
+        }
+      },
+      "scenarios": {
+        "cross_border": {
+          "title": "Cobro USDT transfronterizo",
+          "desc": "Acepte pagos en stablecoin de clientes globales sin raíles de tarjeta."
+        },
+        "chargeback_free": {
+          "title": "Alternativa sin chargebacks",
+          "desc": "La finalidad on-chain elimina la exposición a chargebacks de tarjeta en casos de uso elegibles."
+        },
+        "platform": {
+          "title": "Cripto gestionado por la plataforma",
+          "desc": "Los comerciantes de liquidación de plataforma heredan la configuración cripto de la plataforma sin gestionar billeteras."
+        }
+      },
+      "faq": {
+        "title": "Preguntas frecuentes",
+        "items": {
+          "what_coins": {
+            "q": "¿Qué criptomonedas admite FilixPay de forma nativa?",
+            "a": "El canal nativo CRYPTO admite actualmente USDT de mainnet TRON (TRC20). Para activos digitales adicionales, conecte su propia cuenta NowPayments como canal upstream opcional."
+          },
+          "wallet_required": {
+            "q": "¿Necesito configurar billeteras de depósito?",
+            "a": "Sí para el canal nativo TRON USDT. Los comerciantes de cuarta parte añaden direcciones de depósito en Direcciones de depósito cripto. Los subcomerciantes de tercera parte en liquidación gestionada por la plataforma usan las billeteras configuradas del comerciante de plataforma."
+          },
+          "deposit_modes": {
+            "q": "¿Qué son los modos de depósito STATIC y HD?",
+            "a": "El modo STATIC reserva un importe único a pagar contra su dirección de depósito para cada pedido. El modo HD asigna direcciones a través de la pasarela blockchain. El modo activo se define en la configuración de su canal CRYPTO."
+          },
+          "nowpayments": {
+            "q": "¿Cómo funciona la extensión NowPayments?",
+            "a": "Usted proporciona sus credenciales API de NowPayments en la configuración de pagos. FilixPay crea facturas, redirige a los clientes al checkout de NowPayments y procesa los callbacks IPN en un estado de pedido unificado."
+          },
+          "chargebacks": {
+            "q": "¿Los pagos cripto son reversibles?",
+            "a": "Las transferencias USDT on-chain son definitivas una vez confirmadas. Los chargebacks al estilo de tarjetas no se aplican al cobro cripto nativo, aunque los reembolsos operativos deben gestionarse según la política de su negocio."
+          },
+          "refunds": {
+            "q": "¿FilixPay admite reembolsos cripto automáticos?",
+            "a": "Los reembolsos on-chain automáticos a través del canal nativo CRYPTO no están disponibles en la versión actual. Planifique flujos de reembolso manual donde sea necesario."
+          }
+        }
+      },
+      "cta": {
+        "title": "¿Listo para cobrar TRON USDT a través de FilixPay?",
+        "desc": "Configure billeteras de depósito y canales de pago en el centro de comerciantes, o contáctenos para una configuración gestionada por la plataforma."
+      }
+    }
+  }
+}

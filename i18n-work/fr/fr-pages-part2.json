@@ -1,0 +1,657 @@
+{
+  "crypto_payment": {
+    "title": "Paiement crypto",
+    "subtitle": "Encaissement natif TRON USDT on-chain via la passerelle blockchain FilixPay",
+    "hero_title": "Paiements TRON USDT, intégrés nativement",
+    "hero_desc": "Encaissez l’USDT TRC20 avec des adresses de dépôt gérées par le commerçant, un rapprochement par montant unique et une confirmation via la passerelle blockchain — le tout unifié dans le même parcours checkout et commande FilixPay.",
+    "pipeline": {
+      "configure": {
+        "title": "Configurer les portefeuilles",
+        "desc": "Associer les adresses de dépôt TRON USDT"
+      },
+      "checkout": {
+        "title": "Encaissement au checkout",
+        "desc": "Afficher l’adresse et le montant à payer"
+      },
+      "confirm": {
+        "title": "Confirmation on-chain",
+        "desc": "La passerelle vérifie le dépôt"
+      }
+    },
+    "what": {
+      "title": "Qu’est-ce que le paiement crypto FilixPay ?",
+      "desc": "FilixPay est une couche d’orchestration des paiements — pas un dépositaire ni une plateforme d’échange. Le canal CRYPTO natif relie votre checkout aux dépôts TRON USDT via la passerelle blockchain FilixPay, avec une extension NowPayments optionnelle pour les factures multi-actifs."
+    },
+    "native": {
+      "title": "Canal natif TRON USDT (principal)",
+      "desc": "Encaissement on-chain prêt pour la production pour l’USDT TRC20, avec des portefeuilles de dépôt contrôlés par le commerçant et un rapprochement automatique des paiements.",
+      "points": {
+        "0": "Chaîne et actif : USDT sur le mainnet TRON (TRC20)",
+        "1": "Modes de dépôt : rapprochement par montant unique STATIC ou allocation d’adresses HD",
+        "2": "Le checkout affiche l’adresse de dépôt et le montant exact à payer pour le client"
+      }
+    },
+    "wallets": {
+      "title": "Gestion des portefeuilles de dépôt",
+      "desc": "Les commerçants configurent les adresses de réception dans le centre commerçant avant la mise en production.",
+      "points": {
+        "0": "Les commerçants fourth-party gèrent leurs propres portefeuilles de dépôt TRON USDT",
+        "1": "Les sous-commerçants third-party utilisent des portefeuilles gérés par la plateforme (vue en lecture seule)",
+        "2": "Un portefeuille de dépôt actif par chaîne/actif et par commerçant"
+      }
+    },
+    "extension": {
+      "title": "Extension NowPayments (optionnelle)",
+      "desc": "Besoin de plus d’actifs numériques que le TRON USDT ? Connectez votre propre compte NowPayments comme canal upstream supplémentaire.",
+      "points": {
+        "0": "Renseignez votre clé API NowPayments et votre secret IPN dans la configuration des paiements",
+        "1": "Redirigez les clients vers le checkout facture NowPayments pour les coins pris en charge",
+        "2": "FilixPay gère le lien avec la commande, les callbacks IPN et le rapprochement des factures commerciales"
+      },
+      "footnote": "La couverture multi-actifs dépend de votre compte commerçant NowPayments — ce n’est pas une garantie native FilixPay."
+    },
+    "merchant_center": {
+      "title": "Capacités du centre commerçant",
+      "items": {
+        "configs": {
+          "title": "Configuration des paiements",
+          "desc": "Associez les identifiants de la passerelle CRYPTO ou les clés API NowPayments par scénario de paiement."
+        },
+        "wallets": {
+          "title": "Adresses de dépôt crypto",
+          "desc": "Créez et gérez les adresses de réception TRON USDT pour le canal natif."
+        },
+        "orders": {
+          "title": "Commandes et webhooks",
+          "desc": "Suivez le statut des paiements et recevez des webhooks commerçant lorsque les dépôts sont confirmés."
+        }
+      }
+    },
+    "workflow": {
+      "title": "Flux d’encaissement",
+      "desc": "De la création du checkout à la confirmation on-chain.",
+      "steps": {
+        "order": {
+          "title": "Créer un checkout",
+          "desc": "Le commerçant ou l’API crée une commande et sélectionne le canal de paiement crypto configuré."
+        },
+        "present": {
+          "title": "Présenter le paiement",
+          "desc": "Le canal CRYPTO natif affiche l’adresse TRON et le montant unique à payer ; NowPayments redirige vers l’URL de facture."
+        },
+        "pay": {
+          "title": "Le client paie",
+          "desc": "Le client envoie de l’USDT on-chain ou finalise le paiement sur la page de facture NowPayments."
+        },
+        "settle": {
+          "title": "Confirmer et notifier",
+          "desc": "La passerelle ou l’IPN confirme le paiement ; le statut de la commande est mis à jour et les webhooks commerçant sont déclenchés."
+        }
+      }
+    },
+    "scenarios": {
+      "cross_border": {
+        "title": "Encaissement USDT transfrontalier",
+        "desc": "Acceptez les paiements en stablecoin de clients internationaux sans passer par les rails cartes."
+      },
+      "chargeback_free": {
+        "title": "Alternative sans chargeback",
+        "desc": "La finalité on-chain élimine l’exposition aux chargebacks carte pour les cas d’usage éligibles."
+      },
+      "platform": {
+        "title": "Crypto gérée par la plateforme",
+        "desc": "Les commerçants en règlement plateforme héritent de la configuration crypto de la plateforme sans gérer de portefeuilles."
+      }
+    },
+    "faq": {
+      "title": "Questions fréquemment posées",
+      "items": {
+        "what_coins": {
+          "q": "Quelles cryptomonnaies FilixPay prend-il en charge nativement ?",
+          "a": "Le canal CRYPTO natif prend actuellement en charge l’USDT sur le mainnet TRON (TRC20). Pour d’autres actifs numériques, connectez votre propre compte NowPayments comme canal upstream optionnel."
+        },
+        "wallet_required": {
+          "q": "Dois-je configurer des portefeuilles de dépôt ?",
+          "a": "Oui pour le canal natif TRON USDT. Les commerçants fourth-party ajoutent des adresses de dépôt dans Adresses de dépôt crypto. Les sous-commerçants third-party en règlement géré par la plateforme utilisent les portefeuilles configurés du commerçant plateforme."
+        },
+        "deposit_modes": {
+          "q": "Que sont les modes de dépôt STATIC et HD ?",
+          "a": "Le mode STATIC réserve un montant unique à payer sur votre adresse de dépôt pour chaque commande. Le mode HD alloue des adresses via la passerelle blockchain. Le mode actif est défini dans la configuration de votre canal CRYPTO."
+        },
+        "nowpayments": {
+          "q": "Comment fonctionne l’extension NowPayments ?",
+          "a": "Vous fournissez vos identifiants API NowPayments dans la configuration des paiements. FilixPay crée les factures, redirige les clients vers le checkout NowPayments et traite les callbacks IPN dans un statut de commande unifié."
+        },
+        "chargebacks": {
+          "q": "Les paiements crypto sont-ils réversibles ?",
+          "a": "Les transferts USDT on-chain sont définitifs une fois confirmés. Les chargebacks de type carte ne s’appliquent pas à l’encaissement crypto natif ; les remboursements opérationnels doivent toutefois être gérés selon votre politique métier."
+        },
+        "refunds": {
+          "q": "FilixPay prend-il en charge les remboursements crypto automatiques ?",
+          "a": "Les remboursements on-chain automatiques via le canal CRYPTO natif ne sont pas disponibles dans la version actuelle. Prévoyez des flux de remboursement manuels si nécessaire."
+        }
+      }
+    },
+    "cta": {
+      "title": "Prêt à encaisser l’USDT TRON via FilixPay ?",
+      "desc": "Configurez les portefeuilles de dépôt et les canaux de paiement dans le centre commerçant, ou contactez-nous pour une configuration gérée par la plateforme."
+    }
+  },
+  "payment_splitting": {
+    "title": "Répartition des paiements",
+    "subtitle": "Capacités automatisées de split-payment et de règlement pour les plateformes",
+    "hero_title": "Répartition des paiements pour plateformes et règlement multi-commerçants",
+    "hero_desc": "Automatisez l’allocation d’un paiement entre plateformes, commerçants, sous-commerçants, frais de service, commissions et destinataires de règlement.",
+    "what": {
+      "title": "Qu’est-ce que la répartition des paiements ?",
+      "desc": "La répartition des paiements relie l’encaissement, l’allocation aux destinataires, les factures de règlement et les enregistrements de rapprochement afin que les plateformes réduisent les opérations financières manuelles."
+    },
+    "features": {
+      "multi_receiver": {
+        "icon": "M",
+        "title": "Destinataires multiples",
+        "desc": "Répartissez un paiement client entre commerçants, sous-commerçants, comptes plateforme et partenaires."
+      },
+      "commission": {
+        "icon": "%",
+        "title": "Commission plateforme",
+        "desc": "Séparez les frais de service et commissions de la plateforme avant le règlement commerçant."
+      },
+      "settlement": {
+        "icon": "S",
+        "title": "Prêt pour le règlement",
+        "desc": "Reliez les enregistrements de répartition aux factures de règlement et aux flux de rapprochement financier."
+      },
+      "webhook": {
+        "icon": "API",
+        "title": "API et webhooks",
+        "desc": "Utilisez l’API et les callbacks webhook pour suivre le statut des paiements, répartitions et règlements."
+      }
+    },
+    "scenarios": {
+      "marketplace": {
+        "icon": "O",
+        "title": "Commandes marketplace",
+        "desc": "Allouez les paiements clients aux commerçants de la plateforme et aux destinataires de règlement."
+      },
+      "commission": {
+        "icon": "F",
+        "title": "Commission de service",
+        "desc": "Conservez les frais plateforme tout en envoyant le reste du montant dû aux commerçants."
+      },
+      "saas": {
+        "icon": "S",
+        "title": "Plateformes SaaS",
+        "desc": "Prenez en charge les commerçants multi-tenant qui encaissent via une plateforme de paiement partagée."
+      },
+      "chain": {
+        "icon": "G",
+        "title": "Chaînes et groupes",
+        "desc": "Réglez les fonds entre magasins, filiales ou unités métier."
+      },
+      "cross_border": {
+        "icon": "X",
+        "title": "Règlement transfrontalier",
+        "desc": "Prenez en charge les scénarios de règlement multipartite pour le commerce plateforme à l’international."
+      },
+      "partner": {
+        "icon": "R",
+        "title": "Partage de revenus partenaires",
+        "desc": "Distribuez les revenus aux partenaires, canaux ou prestataires de services."
+      }
+    },
+    "workflow": {
+      "title": "Comment fonctionne le flux de split-payment",
+      "desc": "Du paiement client au règlement des destinataires, chaque étape est liée à des enregistrements traçables par les équipes finance.",
+      "steps": {
+        "pay": {
+          "title": "Le client paie",
+          "desc": "Un client finalise le paiement via le parcours checkout de la plateforme."
+        },
+        "receive": {
+          "title": "La plateforme encaisse",
+          "desc": "La plateforme enregistre le paiement et prépare le calcul de la répartition."
+        },
+        "calculate": {
+          "title": "Les règles calculent la répartition",
+          "desc": "Les règles métier déterminent les montants, destinataires, commissions et frais."
+        },
+        "credit": {
+          "title": "Les destinataires sont crédités",
+          "desc": "Les destinataires reçoivent leurs montants alloués selon le résultat de la répartition."
+        },
+        "settle": {
+          "title": "La facture de règlement est générée",
+          "desc": "Les enregistrements de règlement synthétisent les résultats de répartition pour les opérations finance."
+        },
+        "reconcile": {
+          "title": "La finance rapproche",
+          "desc": "Les équipes finance comparent commandes, enregistrements de répartition et factures de règlement."
+        }
+      }
+    },
+    "rules": {
+      "title": "Règles et modèle de destinataires",
+      "desc": "Définissez comment les revenus sont distribués entre commerçants, comptes plateforme, frais de service et destinataires de règlement.",
+      "items": {
+        "fixed_amount": {
+          "icon": "#",
+          "title": "Montant fixe",
+          "desc": "Allouez une valeur fixe à un destinataire ou à un frais plateforme."
+        },
+        "percentage": {
+          "icon": "%",
+          "title": "Pourcentage",
+          "desc": "Répartissez par pourcentage pour le revenu commerçant ou le partage partenaires."
+        },
+        "commission": {
+          "icon": "C",
+          "title": "Commission",
+          "desc": "Conservez la commission plateforme avant le règlement."
+        },
+        "receiver": {
+          "icon": "R",
+          "title": "Destinataire",
+          "desc": "Acheminez les montants vers commerçants, sous-commerçants, magasins ou partenaires."
+        },
+        "currency": {
+          "icon": "$",
+          "title": "Devise",
+          "desc": "Prenez en charge la logique de règlement selon la devise de transaction et de règlement."
+        },
+        "cycle": {
+          "icon": "D",
+          "title": "Cycle de règlement",
+          "desc": "Reliez les résultats de répartition aux cycles de règlement quotidiens, hebdomadaires ou personnalisés."
+        }
+      }
+    },
+    "settlement": {
+      "title": "Règlement et rapprochement",
+      "desc": "La répartition des paiements ne doit pas s’arrêter à l’allocation. Les équipes finance ont besoin de factures de règlement et d’enregistrements de rapprochement qui expliquent chaque montant.",
+      "records": {
+        "title": "Enregistrements de répartition",
+        "desc": "Suivez le montant de commande, le montant réparti, le nombre de destinataires, le nombre de succès, le nombre d’échecs et le statut de la répartition."
+      },
+      "bills": {
+        "title": "Factures de règlement",
+        "desc": "Reliez les résultats de répartition aux lignes de facture de règlement pour les exports finance et le rapprochement de fin de période."
+      }
+    },
+    "exceptions": {
+      "title": "Gestion des exceptions",
+      "desc": "La répartition des paiements nécessite des états clairs lorsque les règles métier, les comptes destinataires, les remboursements ou le calendrier de règlement créent des exceptions.",
+      "items": {
+        "receiver_unavailable": {
+          "title": "Destinataire indisponible",
+          "desc": "Identifiez les problèmes de compte destinataire avant la finalisation du règlement."
+        },
+        "rule_mismatch": {
+          "title": "Incohérence de règles",
+          "desc": "Faites remonter les conflits de règles ou les informations destinataire manquantes pour revue opérationnelle."
+        },
+        "refund_after_split": {
+          "title": "Remboursement après répartition",
+          "desc": "Tracez l’impact des remboursements sur les enregistrements de répartition et les résultats de règlement."
+        },
+        "partial_failure": {
+          "title": "Échec partiel de répartition",
+          "desc": "Séparez les allocations destinataire réussies et échouées pour le suivi."
+        },
+        "settlement_pending": {
+          "title": "Règlement en attente",
+          "desc": "Rendez visibles les états de règlement en attente pour les équipes finance."
+        },
+        "reconciliation_difference": {
+          "title": "Écart de rapprochement",
+          "desc": "Aidez les équipes finance à investiguer les écarts entre commandes, répartitions et règlements."
+        }
+      }
+    },
+    "developer": {
+      "title": "Intégration API et webhook",
+      "desc": "Les développeurs peuvent intégrer les enregistrements de split-payment, les requêtes de règlement et les callbacks webhook dans les opérations de leur plateforme.",
+      "cta": "Explorer le centre développeur"
+    },
+    "faq": {
+      "title": "FAQ sur la répartition des paiements",
+      "items": {
+        "what_is": {
+          "q": "Qu’est-ce que la répartition des paiements ?",
+          "a": "La répartition des paiements alloue un paiement à plusieurs destinataires tels que commerçants, sous-commerçants, comptes plateforme et partenaires."
+        },
+        "difference_from_payout": {
+          "q": "En quoi la répartition des paiements diffère-t-elle du payout ?",
+          "a": "La répartition des paiements définit comment le revenu du paiement est alloué, tandis que le payout est le transfert ultérieur des fonds réglés vers une banque ou un compte."
+        },
+        "multiple_receivers": {
+          "q": "Une commande peut-elle être répartie vers plusieurs destinataires ?",
+          "a": "Oui. Une plateforme peut allouer une commande à plusieurs destinataires selon les règles métier."
+        },
+        "platform_commission": {
+          "q": "La plateforme peut-elle conserver une commission ?",
+          "a": "Oui. Les frais ou commissions plateforme peuvent être séparés avant le règlement commerçant."
+        },
+        "refunds": {
+          "q": "Comment les remboursements sont-ils gérés après la répartition ?",
+          "a": "Les remboursements doivent être traçables par rapport à la commande d’origine, aux enregistrements de répartition et au résultat de règlement."
+        },
+        "reconciliation": {
+          "q": "La finance peut-elle rapprocher les enregistrements de répartition avec les factures de règlement ?",
+          "a": "Oui. Les enregistrements de répartition et les lignes de facture de règlement doivent fournir un flux finance traçable."
+        },
+        "api_webhook": {
+          "q": "FilixPay prend-il en charge l’intégration API et webhook ?",
+          "a": "FilixPay fournit des capacités développeur pour le statut des paiements, les enregistrements de règlement et les flux d’intégration pilotés par webhook."
+        }
+      }
+    },
+    "channel_rules": {
+      "title": "Règles de canal pour la répartition des paiements",
+      "items": [
+        {
+          "id": "wechat",
+          "title": "1. WeChat Pay : modèle de gel et dégel des fonds",
+          "desc": "Le mécanisme de répartition WeChat repose sur « Geler d’abord, répartir ensuite », idéal pour les scénarios nécessitant une répartition différée ou présentant des risques de remboursement.",
+          "flow": {
+            "title": "Flux principal :",
+            "steps": [
+              "Transaction et gel : dès le paiement réussi, les fonds sont gelés sur le compte commerçant (état En attente de répartition) au lieu d’entrer dans le solde disponible.",
+              "Initier la répartition : lorsque les conditions de répartition sont remplies (p. ex. livraison confirmée), l’API de répartition est appelée. WeChat dégèle et alloue les fonds aux destinataires spécifiés.",
+              "Finaliser la répartition : si aucune répartition supplémentaire n’est nécessaire, l’API de finalisation dégèle les fonds restants vers le solde disponible du commerçant."
+            ]
+          },
+          "compliance": {
+            "title": "Points de conformité clés :",
+            "items": [
+              "Plafond de ratio de répartition : le maximum par défaut est généralement de 30 % du montant de la commande (ajustable avec autorisation).",
+              "Durée de répartition : les fonds peuvent rester gelés jusqu’à 180 jours (certains documents mentionnent 30 jours ; un dégel automatique survient si aucune répartition n’est initiée).",
+              "Fréquence de répartition : prend en charge plusieurs répartitions (jusqu’à 50 fois) vers plusieurs parties (jusqu’à 50 destinataires par répartition)."
+            ]
+          }
+        },
+        {
+          "id": "alipay",
+          "title": "2. Alipay : confirmation de règlement et répartition asynchrone",
+          "desc": "Alipay met l’accent sur la « confirmation de règlement » et offre de solides capacités synchrones/asynchrones pour les scénarios à forte concurrence.",
+          "flow": {
+            "title": "Flux principal :",
+            "steps": [
+              "Transaction et gel : les fonds entrent dans un état de règlement en attente. La plateforme initie « Confirmer le règlement » pour geler les fonds en vue de la répartition.",
+              "Initier la répartition : l’appel à l’API de règlement (alipay.trade.order.settle) prend en charge les modes synchrone (temps réel) et asynchrone (haute fréquence).",
+              "Répartition inverse : prend en charge l’annulation sur le chemin d’origine des fonds répartis en cas de remboursement."
+            ]
+          },
+          "compliance": {
+            "title": "Points de conformité clés :",
+            "items": [
+              "Plafond de ratio de répartition : le montant maximal ne peut pas dépasser 100 % du total de la commande plus les suppléments (selon la politique).",
+              "Validité de la répartition : la répartition est généralement valide jusqu’à 365 jours après la transaction.",
+              "Liaison des destinataires : les destinataires doivent être vérifiés en nom réel et ajoutés à l’« ensemble de relations de répartition » de la plateforme via API.",
+              "Performance : le mode sync est limité (30 QPS), tandis que le mode async prend en charge jusqu’à 500 QPS pour les plateformes à fort trafic."
+            ]
+          }
+        },
+        {
+          "id": "stripe",
+          "title": "3. Stripe : Separate Charges and Transfers (Connect)",
+          "desc": "Stripe Connect est très flexible et utilise le modèle « Separate Charges and Transfers » pour les marketplaces globales ou multipartites complexes.",
+          "flow": {
+            "title": "Flux principal :",
+            "steps": [
+              "Encaissement plateforme : un PaymentIntent est créé sur le compte Stripe de la plateforme ; les fonds appartiennent initialement à la plateforme.",
+              "Déclencher le Transfer : en cas de succès, la plateforme appelle l’API Transfers (souvent déclenchée par les webhooks payment_intent.succeeded).",
+              "Allocation des fonds : les Transfers sont liés aux charges d’origine via source_transaction, permettant aux fonds de circuler automatiquement vers les Connected Accounts lors du règlement."
+            ]
+          },
+          "compliance": {
+            "title": "Points de conformité clés :",
+            "items": [
+              "Solde insuffisant : la liaison source_transaction évite les échecs de transfer dus à un manque de solde plateforme en traitant via des flux de fonds internes.",
+              "Frais d’application : les plateformes peuvent déduire des frais de service (application_fee_amount) à l’encaissement avant de distribuer le reste.",
+              "Flexibilité : prend en charge la répartition vers plusieurs destinataires (vendeurs, affiliés, logistique) sans contraintes de ratio fixes (sous réserve de l’accord plateforme)."
+            ]
+          }
+        }
+      ],
+      "comparison": {
+        "title": "📊 Synthèse comparative multi-plateformes",
+        "headers": [
+          "Dimension",
+          "WeChat Pay",
+          "Alipay",
+          "Stripe (Connect)"
+        ],
+        "rows": [
+          [
+            "Mécanisme principal",
+            "Gel -> Dégel et répartition",
+            "Confirmation -> Gel et répartition",
+            "Encaissement plateforme -> Transfer"
+          ],
+          [
+            "Ratio de répartition",
+            "Max. par défaut 30 %",
+            "Jusqu’à 100 % (selon politique)",
+            "Flexible (config. plateforme)"
+          ],
+          [
+            "Durée",
+            "Gel max. 180 jours",
+            "Validité max. 365 jours",
+            "Cycle de payout standard"
+          ],
+          [
+            "Exigences destinataire",
+            "Merchant ID ou WalletID",
+            "Vérifié en nom réel et lié",
+            "Connected Account requis"
+          ],
+          [
+            "Meilleurs scénarios",
+            "Retail, restauration, règlement différé",
+            "Commission, plateformes à fort volume",
+            "Marketplace globale, payouts complexes"
+          ]
+        ]
+      }
+    },
+    "cta": {
+      "title": "Construisez des flux de split-payment avec FilixPay",
+      "desc": "Prenez en charge le partage de revenus plateforme, le règlement commerçant et le rapprochement finance depuis une seule infrastructure de paiement."
+    }
+  },
+  "risk_control": {
+    "title": "Contrôle des risques de paiement",
+    "subtitle": "Sécurisez chaque transaction de l’autorisation au règlement",
+    "hero_title": "Contrôle des risques de paiement",
+    "hero_desc": "Sécurisez chaque transaction avec des règles en temps réel, une revue experte et une assurance chargeback intégrée — connectez Signifyd, Riskified ou Forter avec vos propres identifiants, ou souscrivez à la couverture hébergée par la plateforme FilixPay.",
+    "pipeline": {
+      "rules": {
+        "title": "Moteur de règles",
+        "desc": "Prévention de la fraude en temps réel"
+      },
+      "monitor": {
+        "title": "Surveillance des événements",
+        "desc": "Événements de fraude et revue experte"
+      },
+      "coverage": {
+        "title": "Partenaires d’assurance",
+        "desc": "Signifyd · Riskified · Forter"
+      }
+    },
+    "modules": {
+      "rules": {
+        "title": "Moteur de règles temps réel et prévention de la fraude",
+        "desc": "Décisions de risque en millisecondes pendant l’autorisation, avec des règles commerçant configurables et des contrôles pré/post-autorisation.",
+        "points": {
+          "0": "Contrôles de conformité et de fraude simultanés à l’autorisation",
+          "1": "Seuils configurables par géographie, comportement et vélocité",
+          "2": "Protection au niveau transaction, distincte du risque de ligne de crédit"
+        }
+      },
+      "monitor": {
+        "title": "Surveillance des événements de fraude et revue manuelle experte",
+        "desc": "La vérification Dual-Layer combine un filtrage intelligent et une revue manuelle experte pour minimiser les refus à tort.",
+        "points": {
+          "0": "Détection et suivi automatisés des événements de fraude",
+          "1": "File de revue manuelle experte pour les transactions anormales",
+          "2": "Alertes opérateurs pour les décisions urgentes"
+        }
+      },
+      "coverage": {
+        "title": "Partenaires d’assurance chargeback intégrés",
+        "desc": "FilixPay intègre nativement les principaux fournisseurs d’assurance chargeback et de garantie anti-fraude. Les commerçants choisissent comment consommer la couverture — apportez votre propre contrat fournisseur ou souscrivez au service hébergé par la plateforme.",
+        "disclaimer": "* Sous réserve des conditions de service, de l’éligibilité et des plafonds de couverture.",
+        "points": {
+          "0": "Une seule couche d’intégration pour Signifyd, Riskified et Forter",
+          "1": "Configurez vous-même les identifiants fournisseur dans le centre commerçant",
+          "2": "Ou souscrivez à la couverture hébergée par la plateforme sans gérer de clés API"
+        }
+      }
+    },
+    "delivery_modes": {
+      "title": "Deux façons d’activer la couverture",
+      "desc": "FilixPay prend en charge à la fois la configuration fournisseur gérée par le commerçant et l’abonnement hébergé par la plateforme — adapté aux commerçants indépendants et aux sous-commerçants marketplace.",
+      "items": {
+        "self_config": {
+          "icon": "🔑",
+          "title": "Apportez votre propre fournisseur (BYOK)",
+          "desc": "Connectez votre compte Signifyd, Riskified ou Forter existant. Configurez les clés API, les secrets webhook et l’environnement dans le centre commerçant — FilixPay achemine les évaluations et les claims vers le partenaire choisi.",
+          "points": {
+            "0": "Contrôle total du contrat et des identifiants fournisseur",
+            "1": "Idéal pour les commerçants indépendants ayant une relation directe avec l’assureur",
+            "2": "Changez de fournisseur via un parcours de configuration guidé"
+          }
+        },
+        "platform_subscription": {
+          "icon": "🛡️",
+          "title": "Abonnement à la couverture hébergée par la plateforme",
+          "desc": "Les commerçants third-party sur la plateforme Filix peuvent souscrire à une assurance couverture alimentée par la configuration fournisseur du commerçant plateforme — sans inscription séparée auprès de l’assureur.",
+          "points": {
+            "0": "Souscription en un clic dans le centre commerçant",
+            "1": "Éligibilité liée au respect des règles de sécurité pré-autorisation",
+            "2": "La plateforme gère la relation fournisseur en votre nom"
+          }
+        }
+      }
+    },
+    "providers": {
+      "title": "Partenaires d’assurance et de garantie anti-fraude pris en charge",
+      "desc": "Le différenciateur clé de FilixPay est une intégration profonde, prête pour la production, avec les leaders de la protection contre les chargebacks — pas un simple score de fraude générique, mais de vrais flux de couverture adossés à des assureurs.",
+      "items": {
+        "signifyd": {
+          "name": "Signifyd",
+          "tagline": "Protection du commerce avec garantie chargeback",
+          "desc": "Signifyd combine décision de fraude en temps réel et couverture chargeback garantie pour les commandes e-commerce approuvées. FilixPay transmet le contexte transactionnel, reçoit les décisions de couverture et automatise les flux de claim via webhooks."
+        },
+        "riskified": {
+          "name": "Riskified",
+          "tagline": "Intelligence anti-fraude entreprise et garantie chargeback",
+          "desc": "Riskified fournit une prévention de la fraude pilotée par l’IA, de confiance auprès des retailers mondiaux. Les commerçants FilixPay peuvent acheminer les commandes pour décisions de politique et tirer parti des programmes de garantie chargeback lorsqu’ils sont éligibles."
+        },
+        "forter": {
+          "name": "Forter",
+          "tagline": "Prévention de la fraude en temps réel pour le commerce digital",
+          "desc": "Forter fournit une décision de fraude centrée sur l’identité et une protection contre l’abus de chargebacks à grande échelle. FilixPay intègre l’évaluation, les mises à jour webhook et la soumission des claims pour les commerçants adossés à Forter."
+        }
+      },
+      "footnote": "La disponibilité des fournisseurs et le périmètre des fonctionnalités dépendent de votre type de commerçant, du mode de configuration et des conditions du contrat partenaire."
+    },
+    "audience": {
+      "title": "Conçu pour le commerce à enjeux élevés",
+      "desc": "Le contrôle des risques FilixPay prend en charge les commerçants transfrontaliers, les opérateurs de marketplace et les entreprises qui ont besoin de flux anti-fraude prêts pour l’audit.",
+      "items": {
+        "cross_border": {
+          "title": "E-commerce transfrontalier",
+          "desc": "Protégez les revenus internationaux carte non présente."
+        },
+        "marketplace": {
+          "title": "Plateforme et marketplace",
+          "desc": "Écosystèmes de commerçants third-party avec supervision des risques partagée."
+        },
+        "high_risk": {
+          "title": "Exposition élevée aux litiges",
+          "desc": "Verticales où l’anxiété liée aux chargebacks freine la croissance."
+        }
+      }
+    },
+    "workflow": {
+      "title": "Flux de bout en bout",
+      "desc": "Un parcours linéaire unique du checkout à la protection éligible.",
+      "steps": {
+        "checkout": {
+          "title": "Checkout client",
+          "desc": "Le commerçant initie le paiement et FilixPay capture le contexte transactionnel, comme les métadonnées et les signaux appareil."
+        },
+        "rules": {
+          "title": "Évaluation des règles",
+          "desc": "Le moteur de risque confronte les règles commerçant et les politiques globales en millisecondes pour approuver, bloquer ou acheminer vers revue."
+        },
+        "review": {
+          "title": "Surveillance de la fraude et revue",
+          "desc": "Les événements à haut risque déclenchent un suivi automatisé. La vérification Dual-Layer achemine les cas vers une revue manuelle experte pour récupérer les ventes légitimes."
+        },
+        "coverage": {
+          "title": "Protection chargeback adossée au fournisseur",
+          "desc": "FilixPay soumet les chargebacks liés à la fraude éligibles à votre partenaire Signifyd, Riskified ou Forter configuré — ou à la couverture hébergée par la plateforme pour les commerçants abonnés."
+        }
+      }
+    },
+    "faq": {
+      "title": "Questions fréquemment posées",
+      "items": {
+        "what_is": {
+          "q": "Qu’est-ce que le contrôle des risques de paiement ?",
+          "a": "Le contrôle des risques de paiement est un cadre de sécurité multicouche conçu pour détecter, évaluer et atténuer les activités frauduleuses tout au long du cycle de vie de la transaction — en protégeant vos revenus légitimes sans dégrader l’expérience utilisateur."
+        },
+        "vs_chargeback": {
+          "q": "En quoi le contrôle des risques diffère-t-il de la protection contre les chargebacks ?",
+          "a": "Le contrôle des risques agit comme mécanisme de défense proactive (règles pré-autorisation et post-autorisation pour empêcher la fraude), tandis que la protection contre les chargebacks fournit une sécurité réactive (couverture financière pour les transactions qualifiées en cas de litige imprévu)."
+        },
+        "rule_engine": {
+          "q": "Comment fonctionne le moteur de règles ?",
+          "a": "Notre moteur exécute des contrôles de conformité et de fraude simultanés en millisecondes pendant l’autorisation. Les commerçants peuvent configurer des seuils granulaires selon la localisation géographique, les heuristiques comportementales et les limites de vélocité via le tableau de bord commerçant."
+        },
+        "flagged_review": {
+          "q": "Que se passe-t-il lorsqu’une transaction est signalée pour revue ?",
+          "a": "Lorsqu’une transaction présente des schémas anormaux, elle déclenche un événement de fraude interne. Pour éviter les refus à tort, notre plateforme applique un modèle Dual-Layer Verification, l’achemine vers une file de revue manuelle experte et alerte immédiatement les opérateurs."
+        },
+        "coverage_eligibility": {
+          "q": "Qui est éligible à la couverture chargeback ?",
+          "a": "Les commerçants indépendants peuvent activer la couverture en configurant Signifyd, Riskified ou Forter dans le centre commerçant. Les commerçants plateforme third-party peuvent souscrire aux plans de couverture hébergés par la plateforme. L’éligibilité de chaque transaction dépend des règles du fournisseur et du respect des exigences de sécurité pré-autorisation localisées."
+        },
+        "coverage_providers": {
+          "q": "Quels fournisseurs d’assurance chargeback FilixPay prend-il en charge ?",
+          "a": "FilixPay intègre Signifyd, Riskified et Forter avec évaluation unifiée, gestion des webhooks et soumission des claims. Les commerçants connectent leurs propres identifiants fournisseur (BYOK) ou souscrivent à la couverture hébergée par la plateforme, alimentée par la configuration du commerçant plateforme."
+        },
+        "crypto_relation": {
+          "q": "Quel est le lien avec les paiements crypto (zéro chargeback) ?",
+          "a": "Bien que les actifs numériques présentent nativement une finalité transactionnelle (aucun chargeback ne peut être initié techniquement), notre moteur de risque applique tout de même des règles pré-autorisation aux paiements crypto pour détecter les schémas d’anomalie de portefeuille et le respect des listes de blocage d’adresses."
+        }
+      }
+    },
+    "cta": {
+      "title": "Prêt à connecter votre partenaire d’assurance chargeback ?",
+      "desc": "Configurez Signifyd, Riskified ou Forter — ou souscrivez à la couverture hébergée par la plateforme depuis le centre commerçant."
+    }
+  },
+  "cross_border": {
+    "title": "E-commerce transfrontalier",
+    "subtitle": "Solutions de paiement de bout en bout pour les vendeurs en ligne mondiaux",
+    "hero_title": "Vendez à l’international, encaissez en local",
+    "hero_desc": "Intégrez Shopify, WooCommerce et les boutiques personnalisées. Acceptez les moyens de paiement locaux dans plus de 50 pays avec conversion de devises automatique."
+  },
+  "web3_ecommerce": {
+    "title": "E-commerce Web3",
+    "subtitle": "Infrastructure de paiement pour l’économie décentralisée",
+    "hero_title": "La couche de paiement pour le commerce Web3",
+    "hero_desc": "Des marketplaces NFT aux écosystèmes GameFi, propulsez votre commerce Web3 avec des rails de paiement crypto fluides."
+  },
+  "saas_provider": {
+    "title": "Solutions pour fournisseurs SaaS",
+    "subtitle": "Infrastructure de paiement multi-tenant pour les plateformes",
+    "hero_title": "Construisez votre plateforme de paiement",
+    "hero_desc": "Capacités de paiement en marque blanche avec split payments, gestion des sous-commerçants et règlement automatisé pour votre plateforme SaaS."
+  }
+}

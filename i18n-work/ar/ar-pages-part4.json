@@ -1,0 +1,218 @@
+{
+  "Pages": {
+    "case_studies": {
+      "title": "دراسات الحالة",
+      "subtitle": "اكتشف كيف تنجح الشركات حول العالم مع FilixPay",
+      "items": [
+        {
+          "title": "MicSelect - تكامل مدفوعات التجارة الإلكترونية العابرة للحدود عالميًا",
+          "desc": "نظام مدفوعات تجارة إلكترونية عالمي من الجيل التالي مبني على Saleor + FilixPay",
+          "link": "/resources/case-studies/micselect"
+        }
+      ],
+      "micselect": {
+        "badge": "دراسة حالة",
+        "title": "MicSelect - تكامل مدفوعات التجارة الإلكترونية العابرة للحدود عالميًا",
+        "subtitle": "نظام مدفوعات تجارة إلكترونية عالمي من الجيل التالي مبني على Saleor + FilixPay",
+        "background_eyebrow": "خلفية العميل",
+        "background_text": "MicSelect منصة تجارة إلكترونية عابرة للحدود منتقاة تعرض منتجات صينية عالية الجودة، وتركّز على سلاسل توريد متميزة وتجربة تسوق دولية. مبنية على إطار Saleor مفتوح المصدر للتجارة الإلكترونية وNext.js، وتسعى MicSelect لتقديم سلع مصنّعة صينية الجودة مع تجربة تسوق إلكتروني سلسة للمستهلكين حول العالم.",
+        "background_link_text": "زيارة MicSelect ←",
+        "background_solutions_link_text": "عرض حلول MicSelect ←",
+        "challenges_eyebrow": "التحديات",
+        "challenges_items": [
+          "تكامل موحّد لقنوات دفع متعددة",
+          "تحسين معدلات نجاح الدفع للمستخدمين العالميين",
+          "تسوية أوامر عابرة للحدود معقّدة",
+          "قابلية توسّع محدودة للدفع في منصة التجارة الإلكترونية",
+          "مزامنة حالة الدفع غير المتزامنة عبر Webhooks"
+        ],
+        "solution_eyebrow": "الحل",
+        "solution_intro": "قدّمت FilixPay لـ MicSelect بنية تحتية متكاملة للمدفوعات:",
+        "solution_items": [
+          "قنوات دفع دولية مجمّعة تشمل Stripe وPayPal",
+          "إتمام شراء موحّد وتوجيه للدفع",
+          "إشعارات دفع غير متزامنة عبر Webhooks",
+          "تسوية ومصالحة مدفوعات آلية",
+          "منصة تاجر OpenAPI",
+          "قدرات بيئة اختبار دفع متعددة البيئات",
+          "تكامل عميق مع Saleor"
+        ],
+        "architecture_eyebrow": "البنية المعمارية",
+        "arch_saleor": "Saleor",
+        "arch_saleor_label": "منصة التجارة الإلكترونية",
+        "arch_payment_app": "FilixPay Payment App",
+        "arch_payment_app_label": "تطبيق الدفع",
+        "arch_gateway": "FilixPay Gateway",
+        "arch_gateway_label": "بوابة الدفع",
+        "arch_channels_label": "قنوات الدفع",
+        "results_eyebrow": "النتائج",
+        "results_items": [
+          "تحقيق حلقة دفع عالمية مغلقة بنجاح",
+          "تعزيز قابلية توسّع نظام الدفع",
+          "تقليل تعقيد تكامل قنوات الدفع",
+          "تمكين مزامنة حالة الطلبات تلقائيًا",
+          "توفير قدرة تشغيل موحّدة للمدفوعات"
+        ],
+        "cta_title": "ابدأ التكامل مع FilixPay",
+        "cta_desc": "ابنِ قدرات دفع عالمية مثل MicSelect. ابدأ التكامل مع FilixPay اليوم."
+      }
+    },
+    "compliance": {
+      "title": "دليل الامتثال",
+      "subtitle": "تنقّل في لوائح المدفوعات العالمية بثقة",
+      "hero_title": "امتثال بسيط وواضح",
+      "hero_desc": "أدلة شاملة تغطي GDPR وPCI-DSS وقاعدة السفر لـ FATF ولوائح المدفوعات الإقليمية لإبقاء عملك ملتزمًا."
+    },
+    "blog": {
+      "title": "المدونة والمقالات",
+      "subtitle": "رؤى تقنية وتحليلات صناعية وتحديثات المنتج",
+      "posts": [
+        {
+          "title": "FilixPay Checkout - نشر على نطاق مستقل (عرض توضيحي)",
+          "desc": "واجهة إتمام شراء مستقلة مبنية بـ React تدعم التكيّف متعدد السلاسل والنشر على نطاق خاص.",
+          "link": "https://github.com/filixpay/filix-checkout"
+        },
+        {
+          "title": "FilixPay Merchant Center - لوحة تحكم تاجر حديثة",
+          "desc": "نظام إدارة تجار مبني بـ Next.js وShadcn UI، يوفّر إدارة متعددة التجار وحسابات الأموال والسحوبات والتحكم في الوصول.",
+          "link": "https://github.com/filixpay/filix-merchant"
+        }
+      ]
+    },
+    "downloads": {
+      "title": "مركز التنزيل",
+      "subtitle": "وثائق النشر ونماذج الاتفاقيات والموارد التقنية",
+      "items": {
+        "deploy_doc": {
+          "title": "دليل النشر",
+          "desc": "دليل كامل لإعداد النشر الخاص"
+        },
+        "license_sample": {
+          "title": "نموذج اتفاقية الترخيص",
+          "desc": "قالب اتفاقية ترخيص الشيفرة المصدرية"
+        },
+        "api_spec": {
+          "title": "مواصفات API",
+          "desc": "ملف مواصفات OpenAPI/Swagger"
+        }
+      }
+    },
+    "common": {
+      "learn_more": "اعرف المزيد",
+      "get_started": "ابدأ الآن",
+      "contact_sales": "تواصل مع المبيعات",
+      "coming_soon": "قريبًا",
+      "back_home": "العودة إلى الصفحة الرئيسية",
+      "key_features": "الميزات الرئيسية",
+      "why_choose": "لماذا تختار هذا الحل",
+      "use_cases": "حالات الاستخدام",
+      "consequences": "العواقب"
+    },
+    "private_deployment": {
+      "badge": "نشر للمؤسسات",
+      "hero_title": "تحكم كامل بالمكدس · مستوى مؤسسي · سيادة البيانات",
+      "specs_title": "مواصفات النشر",
+      "specs_server_title": "متطلبات الخادم",
+      "specs_stack_title": "المكدس التقني",
+      "specs_col_item": "البند",
+      "specs_col_requirement": "المتطلب",
+      "specs_items": {
+        "os": "نظام التشغيل",
+        "os_value": "Linux (Ubuntu 22.04+)",
+        "cpu": "CPU",
+        "cpu_value": "4 أنوية",
+        "memory": "الذاكرة",
+        "memory_value": "≥ 8 GB",
+        "disk": "القرص",
+        "disk_value": "≥ 20 GB",
+        "docker": "Docker",
+        "docker_value": "20.10+",
+        "compose": "Docker Compose",
+        "compose_value": "v2.0+"
+      },
+      "stack": {
+        "postgres": {
+          "name": "PostgreSQL 15–18",
+          "desc": "قاعدة البيانات الأساسية"
+        },
+        "redis": {
+          "name": "Redis 7.2",
+          "desc": "خدمة التخزين المؤقت"
+        },
+        "keycloak": {
+          "name": "Keycloak 26.0",
+          "desc": "الهوية والمصادقة"
+        },
+        "compose": {
+          "name": "Docker Compose",
+          "desc": "التنسيق"
+        }
+      },
+      "architecture_label": "طوبولوجيا النظام",
+      "pricing_section_title": "الاستثمار والتسعير",
+      "pricing_intro": "ترخيص لمرة واحدة شفاف مع تسليم كامل لأصول النظام — ابنِ بنية تحتية مملوكة للمدفوعات بثقة.",
+      "pricing_badge": "ترخيص المؤسسات",
+      "pricing_onetime": "رسوم لمرة واحدة",
+      "pricing_included_title": "ما يشمله العرض",
+      "pricing_included": [
+        "الشيفرة المصدرية الكاملة (مركز التاجر، بوابة الدفع، محرك التسوية)",
+        "وثائق النشر ونصوص قاعدة البيانات ومواصفات API",
+        "دعم نشر لمرة واحدة وتسليم تقني",
+        "سنة واحدة من الصيانة الاحترافية المجانية"
+      ],
+      "pricing_maintenance_label": "الصيانة السنوية (من السنة الثانية)",
+      "pricing_maintenance_value": "10% من رسوم الترخيص (2,800 دولار أمريكي/سنة)",
+      "pricing_cta": "تواصل مع المبيعات للتفاصيل",
+      "licensing_title": "ترخيص الشيفرة المصدرية",
+      "final_cta_title": "هل أنت مستعد لنشر بنية الدفع الخاصة بك؟",
+      "final_cta_desc": "تواصل مع فريق المؤسسات لدينا لتخطيط نشر مخصّص وتفاصيل الترخيص.",
+      "final_cta_primary": "تواصل مع المبيعات",
+      "final_cta_docs": "عرض وثائق النشر",
+      "final_cta_download": "تنزيل اتفاقية الترخيص",
+      "view_deployment_docs": "عرض وثائق النشر",
+      "deployment_comparison": {
+        "title": "إتمام الشراء المستضاف ذاتيًا مقابل النشر الخاص الكامل",
+        "desc": "توفّر FilixPay مساري نشر بنطاق واستثمار مختلفين. اختر وفق ما إذا كنت تحتاج صفحة إتمام شراء بعلامتك التجارية فقط أو منصة دفع كاملة داخل منشأتك.",
+        "columns": {
+          "dimension": "البُعد",
+          "checkout": "إتمام شراء مستضاف ذاتيًا",
+          "full_stack": "نشر خاص كامل"
+        },
+        "rows": {
+          "scope": {
+            "label": "ما الذي تنشره",
+            "checkout": "واجهة إتمام شراء مفتوحة المصدر + وكيل BFF (filix-checkout)",
+            "full_stack": "مكدس FilixPay الكامل: مركز التاجر، بوابة الدفع، محرك التسوية"
+          },
+          "audience": {
+            "label": "الأنسب لـ",
+            "checkout": "التجار الذين يريدون إتمام الشراء على نطاقهم الخاص بأقل عمليات تشغيل",
+            "full_stack": "البنوك ومقدّمو الدفع والمؤسسات التي تتطلب سيادة بيانات كاملة"
+          },
+          "infrastructure": {
+            "label": "البنية التحتية",
+            "checkout": "حاوية Docker واحدة؛ وكيل عكسي Nginx/Caddy اختياري",
+            "full_stack": "مجموعة PostgreSQL وRedis وKeycloak وDocker Compose"
+          },
+          "licensing": {
+            "label": "الترخيص",
+            "checkout": "مفتوح المصدر Apache-2.0؛ استضافة ذاتية مجانية",
+            "full_stack": "ترخيص مصدر للمؤسسات برسوم لمرة واحدة وصيانة"
+          },
+          "complexity": {
+            "label": "جهد الإعداد",
+            "checkout": "ساعات—ملف بيئة + docker pull + نطاق HTTPS",
+            "full_stack": "أيام إلى أسابيع—نشر المكدس الكامل والتسليم"
+          },
+          "when_to_choose": {
+            "label": "متى تختاره",
+            "checkout": "رابط إتمام شراء تحت سيطرة علامتك؛ FilixPay SaaS لكل ما عدا ذلك",
+            "full_stack": "يجب تشغيل جميع بيانات وأنظمة الدفع داخل شبكتك"
+          }
+        },
+        "checkout_cta": "عرض دليل نشر إتمام الشراء",
+        "merchant_center_cta": "نظرة عامة على مركز التاجر"
+      }
+    }
+  }
+}

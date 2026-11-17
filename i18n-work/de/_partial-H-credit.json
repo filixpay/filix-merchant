@@ -1,0 +1,66 @@
+{
+  "CreditTransaction": {
+    "title": "Kredittransaktionsverlauf",
+    "subtitle": "Detaillierten Verlauf der Kreditliniennutzung, Rückzahlungen und Anpassungen anzeigen.",
+    "headers": {
+      "business_id": "Geschäfts-ID",
+      "type": "Typ",
+      "amount": "Betrag",
+      "balance_before": "Genutzt vorher",
+      "balance_after": "Genutzt nachher",
+      "customer": "Kunde",
+      "created_at": "Transaktionszeit"
+    },
+    "types": {
+      "USE": "Nutzung",
+      "REPAY": "Rückzahlung",
+      "ADJUST": "Anpassung",
+      "REFUND": "Erstattung"
+    },
+    "loading": "Transaktionsverlauf wird geladen...",
+    "empty": "Kein Kredittransaktionsverlauf gefunden."
+  },
+  "MemberCreditLimit": {
+    "title": "Mein verfügbares Kreditlimit",
+    "subtitle": "Informationen zu Ihrer aktuellen Kreditlinie anzeigen, einschließlich Gesamtlmit, genutztem Betrag und verfügbarem Saldo.",
+    "view_adjustments": "Anpassungsprotokolle",
+    "view_transactions": "Kredittransaktionen",
+    "headers": {
+      "creditor": "Kreditgeber",
+      "credit_limit": "Gesamtlimit",
+      "used_amount": "Genutzter Betrag",
+      "available_amount": "Verfügbarer Betrag",
+      "payment_term": "Zahlungsziel",
+      "status": "Status"
+    },
+    "loading": "Kreditlinien werden geladen...",
+    "empty": "Ihnen wurden noch keine Kreditlinien zugewiesen."
+  },
+  "MemberCreditAdjustment": {
+    "title": "Kreditlimit-Anpassungsverlauf",
+    "subtitle": "Verlauf der Anpassungen Ihres Kreditlimits anzeigen.",
+    "headers": {
+      "operator": "Bearbeiter",
+      "old_limit": "Vorheriges Limit",
+      "new_limit": "Neues Limit",
+      "amount": "Betrag",
+      "created_at": "Zeit"
+    },
+    "loading": "Anpassungsverlauf wird geladen...",
+    "empty": "Kein Anpassungsverlauf gefunden."
+  },
+  "MemberCreditTransaction": {
+    "title": "Kreditzahlungsverlauf",
+    "subtitle": "Details zu Zahlungen, Erstattungen und Rückzahlungen über Ihre Kreditlinie anzeigen.",
+    "headers": {
+      "business_id": "Geschäfts-ID",
+      "type": "Transaktionstyp",
+      "amount": "Betrag",
+      "balance_before": "Vorher (genutzt)",
+      "balance_after": "Nachher (genutzt)",
+      "created_at": "Zeit"
+    },
+    "loading": "Zahlungsverlauf wird geladen...",
+    "empty": "Kein Zahlungsverlauf gefunden."
+  }
+}

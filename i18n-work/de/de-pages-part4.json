@@ -1,0 +1,218 @@
+{
+  "Pages": {
+    "case_studies": {
+      "title": "Fallstudien",
+      "subtitle": "Erfahren Sie, wie Unternehmen weltweit mit FilixPay erfolgreich sind",
+      "items": [
+        {
+          "title": "MicSelect – Globale grenzüberschreitende E-Commerce-Zahlungsintegration",
+          "desc": "Ein globales E-Commerce-Zahlungssystem der nächsten Generation auf Basis von Saleor + FilixPay",
+          "link": "/resources/case-studies/micselect"
+        }
+      ],
+      "micselect": {
+        "badge": "Fallstudie",
+        "title": "MicSelect – Globale grenzüberschreitende E-Commerce-Zahlungsintegration",
+        "subtitle": "Ein globales E-Commerce-Zahlungssystem der nächsten Generation auf Basis von Saleor + FilixPay",
+        "background_eyebrow": "Kundenhintergrund",
+        "background_text": "MicSelect ist eine kuratierte grenzüberschreitende E-Commerce-Plattform mit hochwertigen Produkten aus China, fokussiert auf Premium-Lieferketten und ein internationales Einkaufserlebnis. Aufgebaut auf dem Open-Source-E-Commerce-Framework Saleor und Next.js, widmet sich MicSelect der Bereitstellung hochwertiger chinesischer Fertigungswaren mit einem nahtlosen Online-Einkaufserlebnis für globale Verbraucher.",
+        "background_link_text": "MicSelect besuchen →",
+        "background_solutions_link_text": "MicSelect-Lösungen ansehen →",
+        "challenges_eyebrow": "Herausforderungen",
+        "challenges_items": [
+          "Einheitliche Integration mehrerer Zahlungskanäle",
+          "Optimierung der Zahlungserfolgsraten für globale Nutzer",
+          "Komplexe grenzüberschreitende Bestellabstimmung",
+          "Unzureichende Zahlungserweiterbarkeit der E-Commerce-Plattform",
+          "Webhook- und asynchrone Zahlungsstatus-Synchronisation"
+        ],
+        "solution_eyebrow": "Lösung",
+        "solution_intro": "FilixPay stellte MicSelect eine vollständige Zahlungsinfrastruktur bereit:",
+        "solution_items": [
+          "Aggregierte internationale Zahlungskanäle einschließlich Stripe und PayPal",
+          "Einheitlicher Checkout und Zahlungsrouting",
+          "Asynchrone Zahlungsbenachrichtigungen über Webhooks",
+          "Automatisierte Zahlungsabstimmung und Abrechnung",
+          "OpenAPI-Händlerplattform",
+          "Zahlungs-Sandbox-Funktionen für mehrere Umgebungen",
+          "Tiefe Integration mit Saleor"
+        ],
+        "architecture_eyebrow": "Architektur",
+        "arch_saleor": "Saleor",
+        "arch_saleor_label": "E-Commerce-Plattform",
+        "arch_payment_app": "FilixPay Payment App",
+        "arch_payment_app_label": "Zahlungsanwendung",
+        "arch_gateway": "FilixPay Gateway",
+        "arch_gateway_label": "Zahlungsgateway",
+        "arch_channels_label": "Zahlungskanäle",
+        "results_eyebrow": "Ergebnisse",
+        "results_items": [
+          "Erfolgreicher Aufbau eines globalen Zahlungsschlusskreises",
+          "Verbesserte Skalierbarkeit des Zahlungssystems",
+          "Reduzierte Komplexität der Zahlungskanal-Integration",
+          "Automatisierte Synchronisation des Bestellstatus ermöglicht",
+          "Einheitliche Zahlungsbetriebsfähigkeit bereitgestellt"
+        ],
+        "cta_title": "FilixPay-Integration starten",
+        "cta_desc": "Aufbau globaler Zahlungsfähigkeiten wie MicSelect. Starten Sie noch heute die Integration mit FilixPay."
+      }
+    },
+    "compliance": {
+      "title": "Compliance-Leitfaden",
+      "subtitle": "Navigieren Sie souverän durch globale Zahlungsvorschriften",
+      "hero_title": "Compliance leicht gemacht",
+      "hero_desc": "Umfassende Leitfäden zu GDPR, PCI-DSS, der FATF Travel Rule und regionalen Zahlungsvorschriften, damit Ihr Unternehmen compliant bleibt."
+    },
+    "blog": {
+      "title": "Blog & Artikel",
+      "subtitle": "Technische Einblicke, Branchenanalysen und Produktupdates",
+      "posts": [
+        {
+          "title": "FilixPay Checkout – Bereitstellung auf eigener Domain (Demo)",
+          "desc": "React-basierte eigenständige Checkout-Oberfläche mit Unterstützung für Multi-Chain-Anpassung und Private-Domain-Bereitstellung.",
+          "link": "https://github.com/filixpay/filix-checkout"
+        },
+        {
+          "title": "FilixPay Merchant Center – Modernes Händler-Dashboard",
+          "desc": "Ein Händlerverwaltungssystem auf Basis von Next.js und Shadcn UI mit Multi-Händler-Verwaltung, Geldkonten, Auszahlungen und Zugriffskontrolle.",
+          "link": "https://github.com/filixpay/filix-merchant"
+        }
+      ]
+    },
+    "downloads": {
+      "title": "Download-Center",
+      "subtitle": "Bereitstellungsdokumentation, Vertragsvorlagen und technische Ressourcen",
+      "items": {
+        "deploy_doc": {
+          "title": "Bereitstellungsleitfaden",
+          "desc": "Vollständiger Leitfaden für die Einrichtung der privaten Bereitstellung"
+        },
+        "license_sample": {
+          "title": "Lizenzvertragsvorlage",
+          "desc": "Vorlage für den Quellcode-Lizenzvertrag"
+        },
+        "api_spec": {
+          "title": "API-Spezifikation",
+          "desc": "OpenAPI/Swagger-Spezifikationsdatei"
+        }
+      }
+    },
+    "common": {
+      "learn_more": "Mehr erfahren",
+      "get_started": "Jetzt starten",
+      "contact_sales": "Vertrieb kontaktieren",
+      "coming_soon": "Demnächst verfügbar",
+      "back_home": "Zurück zur Startseite",
+      "key_features": "Wichtige Funktionen",
+      "why_choose": "Warum diese Lösung wählen",
+      "use_cases": "Anwendungsfälle",
+      "consequences": "Konsequenzen"
+    },
+    "private_deployment": {
+      "badge": "ENTERPRISE-BEREITSTELLUNG",
+      "hero_title": "Volle Stack-Kontrolle · Enterprise-Niveau · Datensouveränität",
+      "specs_title": "Bereitstellungsspezifikationen",
+      "specs_server_title": "Serveranforderungen",
+      "specs_stack_title": "Technologie-Stack",
+      "specs_col_item": "Position",
+      "specs_col_requirement": "Anforderung",
+      "specs_items": {
+        "os": "OS",
+        "os_value": "Linux (Ubuntu 22.04+)",
+        "cpu": "CPU",
+        "cpu_value": "4 Kerne",
+        "memory": "Arbeitsspeicher",
+        "memory_value": "≥ 8 GB",
+        "disk": "Festplatte",
+        "disk_value": "≥ 20 GB",
+        "docker": "Docker",
+        "docker_value": "20.10+",
+        "compose": "Docker Compose",
+        "compose_value": "v2.0+"
+      },
+      "stack": {
+        "postgres": {
+          "name": "PostgreSQL 15–18",
+          "desc": "Kerndatenbank"
+        },
+        "redis": {
+          "name": "Redis 7.2",
+          "desc": "Cache-Dienst"
+        },
+        "keycloak": {
+          "name": "Keycloak 26.0",
+          "desc": "Identität & Authentifizierung"
+        },
+        "compose": {
+          "name": "Docker Compose",
+          "desc": "Orchestrierung"
+        }
+      },
+      "architecture_label": "Systemtopologie",
+      "pricing_section_title": "Investition & Preise",
+      "pricing_intro": "Transparente einmalige Lizenzierung mit vollständiger Systemauslieferung — bauen Sie mit Zuversicht Ihre eigene Zahlungsinfrastruktur auf.",
+      "pricing_badge": "Enterprise-Lizenz",
+      "pricing_onetime": "Einmalgebühr",
+      "pricing_included_title": "Im Lieferumfang enthalten",
+      "pricing_included": [
+        "Vollständiger Quellcode (Händlercenter, Zahlungsgateway, Abrechnungs-Engine)",
+        "Bereitstellungsdokumentation, Datenbankskripte, API-Spezifikationen",
+        "Einmalige Bereitstellungsunterstützung und technische Übergabe",
+        "Ein Jahr kostenlose professionelle Wartung"
+      ],
+      "pricing_maintenance_label": "Jährliche Wartung (ab Jahr 2)",
+      "pricing_maintenance_value": "10 % der Lizenzgebühr (2.800 USD/Jahr)",
+      "pricing_cta": "Vertrieb für Details kontaktieren",
+      "licensing_title": "Quellcode-Lizenzierung",
+      "final_cta_title": "Bereit, Ihre eigene Zahlungsinfrastruktur bereitzustellen?",
+      "final_cta_desc": "Kontaktieren Sie unser Enterprise-Team für individuelle Bereitstellungsplanung und Lizenzdetails.",
+      "final_cta_primary": "Vertrieb kontaktieren",
+      "final_cta_docs": "Bereitstellungsdokumentation ansehen",
+      "final_cta_download": "Lizenzvertrag herunterladen",
+      "view_deployment_docs": "Bereitstellungsdokumentation ansehen",
+      "deployment_comparison": {
+        "title": "Self-Hosted Checkout vs. vollständige private Bereitstellung",
+        "desc": "FilixPay bietet zwei Bereitstellungspfade mit unterschiedlichem Umfang und Investitionsbedarf. Wählen Sie je nachdem, ob Sie nur eine gebrandete Checkout-Seite oder eine vollständige On-Premise-Zahlungsplattform benötigen.",
+        "columns": {
+          "dimension": "Dimension",
+          "checkout": "Self-Hosted Checkout",
+          "full_stack": "Vollständige private Bereitstellung"
+        },
+        "rows": {
+          "scope": {
+            "label": "Was Sie bereitstellen",
+            "checkout": "Open-Source-Checkout-Frontend + BFF-Proxy (filix-checkout)",
+            "full_stack": "Vollständiger FilixPay-Stack: Händlercenter, Zahlungsgateway, Abrechnungs-Engine"
+          },
+          "audience": {
+            "label": "Ideal für",
+            "checkout": "Händler, die Checkout auf der eigenen Domain mit minimalem Betriebsaufwand möchten",
+            "full_stack": "Banken, Zahlungsanbieter und Unternehmen mit vollständiger Datensouveränität"
+          },
+          "infrastructure": {
+            "label": "Infrastruktur",
+            "checkout": "Ein einzelner Docker-Container; optional Nginx/Caddy-Reverse-Proxy",
+            "full_stack": "PostgreSQL-, Redis-, Keycloak-, Docker-Compose-Cluster"
+          },
+          "licensing": {
+            "label": "Lizenzierung",
+            "checkout": "Apache-2.0 Open Source; kostenlos self-hostbar",
+            "full_stack": "Enterprise-Quellcodelizenz mit Einmalgebühr und Wartung"
+          },
+          "complexity": {
+            "label": "Einrichtungsaufwand",
+            "checkout": "Stunden — Env-Datei + docker pull + HTTPS-Domain",
+            "full_stack": "Tage bis Wochen — vollständige Stack-Bereitstellung und Übergabe"
+          },
+          "when_to_choose": {
+            "label": "Wann wählen",
+            "checkout": "Markengeführte Checkout-URL; FilixPay SaaS für alles Übrige",
+            "full_stack": "Alle Zahlungsdaten und Systeme müssen in Ihrem Netzwerk laufen"
+          }
+        },
+        "checkout_cta": "Checkout-Bereitstellungsleitfaden ansehen",
+        "merchant_center_cta": "Händlercenter-Übersicht"
+      }
+    }
+  }
+}

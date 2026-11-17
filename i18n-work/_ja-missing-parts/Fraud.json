@@ -1,0 +1,66 @@
+{
+  "Fraud": {
+    "title": "Fraud Events",
+    "subtitle": "Monitor detected fraud signals and investigation status.",
+    "empty": "No fraud events found.",
+    "table_total": "Total {count} events",
+    "filters": {
+      "keyword": "Search events",
+      "status": "Status",
+      "severity": "Severity"
+    },
+    "detail": {
+      "title": "Fraud Event Detail",
+      "back_to_list": "Back to fraud events",
+      "not_found": "Fraud event not found.",
+      "payment_id": "Payment ID",
+      "provider": "Provider",
+      "score": "Risk Score",
+      "metadata": {
+        "title": "Metadata",
+        "v1": {
+          "deviceId": "Device ID",
+          "ipAddress": "IP Address",
+          "velocityCount": "Velocity Count",
+          "amountThreshold": "Amount Threshold",
+          "countryCode": "Country",
+          "cardFingerprint": "Card Fingerprint"
+        }
+      }
+    },
+    "headers": {
+      "event_type": "Event Type",
+      "risk_type": "Risk Type",
+      "description": "Description",
+      "severity": "Severity",
+      "order_id": "Related Order",
+      "status": "Status",
+      "detected_at": "Detected At"
+    },
+    "status": {
+      "OPEN": "Open",
+      "INVESTIGATING": "Investigating",
+      "CLOSED": "Closed"
+    },
+    "risk_type": {
+      "DEVICE": "Device anomaly",
+      "VELOCITY": "Velocity anomaly",
+      "GEO": "Geographic anomaly",
+      "BIN": "BIN anomaly",
+      "AMOUNT": "Amount anomaly",
+      "IP_MISMATCH": "IP mismatch",
+      "COMBINED": "Combined risk",
+      "FRAUD": "Fraud risk"
+    },
+    "summary": {
+      "DEVICE": "Device fingerprint does not match billing profile",
+      "VELOCITY": "Transaction velocity exceeded the threshold",
+      "GEO": "Transaction geography differs from expected behavior",
+      "BIN": "Card BIN shows elevated risk characteristics",
+      "AMOUNT": "Transaction amount is outside the normal range",
+      "IP_MISMATCH": "IP address does not match billing information",
+      "COMBINED": "Multiple risk signals triggered together",
+      "FRAUD": "Suspicious fraud activity detected"
+    }
+  }
+}

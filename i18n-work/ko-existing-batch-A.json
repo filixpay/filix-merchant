@@ -1,0 +1,119 @@
+{
+  "Layout": {
+    "title": "FilixPay - 국제 결제 및 글로벌 기업 성장을 위한 선택받은 파트너",
+    "sidebar_title": "판매자 플랫폼",
+    "identity": {
+      "current_identity": "현재 신원",
+      "independent": {
+        "title": "독립 판매자",
+        "desc": "4자 모드 (은행 직접 정산)"
+      },
+      "sub_merchant": {
+        "title": "서브 판매자",
+        "desc": "3자 모드 (플랫폼 대행 수취)"
+      },
+      "open_platform_service": "➕ 플랫폼 수취 서비스 개통",
+      "modal": {
+        "title": "플랫폼 수취 서비스 개통",
+        "bank_holder": "정산 은행 예금주",
+        "bank_account": "정산 계좌 번호",
+        "holder_hint": "성함은 회사명과 일치해야 합니다",
+        "submit": "지금 개통",
+        "cancel": "취소",
+        "success": "서비스가 성공적으로 개통되었습니다"
+      }
+    },
+    "workspace": {
+      "workspace": "Workspace",
+      "switch_business_account": "Switch business account",
+      "no_business_accounts": "No business accounts in this organization",
+      "affiliated_organization": "Organization",
+      "add_organization": "Add organization",
+      "add_business_account": "New business account",
+      "manage_organization": "Manage organization"
+    },
+    "logout": "로그아웃",
+    "nav": {
+      "overview": "개요",
+      "payment_configs": "결제 설정",
+      "checkout_counters": "결제 카운터 설정",
+      "orders": "주문",
+      "refunds": "환불",
+      "service_plan": "서비스 플랜",
+      "customers": "고객",
+      "locations": "매장",
+      "bank_accounts": "수취 계좌",
+      "transfers": "송금 심사",
+      "reviews": "송금 확인",
+      "sub_merchants": "서브 판매자",
+      "acquiring_management": "아쿠아이어링 관리",
+      "developer": "개발자 센터",
+      "refund_settings": "Refund settings",
+      "refund_approvals": "Refund approvals"
+    }
+  },
+  "Login": {
+    "title": "FilixPay Management Center",
+    "subtitle": "Manage merchants, organizations, payments, and developer resources in one place",
+    "button": "Sign In",
+    "connecting": "Connecting...",
+    "back_to_home": "← Back to Home",
+    "merchant_title": "Merchant Operations Center",
+    "merchant_body": "Manage payments, settlement, APIs, and applications",
+    "merchant_cta": "Enter Merchant Center",
+    "enterprise_title": "Enterprise Center",
+    "enterprise_body": "Manage organizations, members, permissions, and multi-merchant relationships",
+    "enterprise_cta": "Enter Enterprise Center"
+  },
+  "Dashboard": {
+    "title": "대시보드",
+    "overview": "개요",
+    "stats": {
+      "revenue": "오늘 총 수익",
+      "orders": "오늘 총 주문",
+      "channels": "활성 채널",
+      "available_funds": "Available funds",
+      "today_funds_revenue": "Today's funds revenue",
+      "asset_count": "{count} assets",
+      "other_assets": "+ {count} other assets",
+      "no_available_funds": "No available funds",
+      "view_balance": "View balance",
+      "view_activity": "View activity",
+      "view_orders": "View orders",
+      "settlement_cycle_label": "Settlement cycle",
+      "settlement_cycle_title": "T+1 automatic settlement",
+      "settlement_cycle_desc": "Funds settle directly from the upstream channel to your designated corporate bank account. Available balance follows bank statement reconciliation."
+    },
+    "recent_transactions": "최근 거래",
+    "no_transactions": "현재 최근 거래 내역이 없습니다."
+  },
+  "Common": {
+    "loading": "로딩 중...",
+    "error": "오류가 발생했습니다",
+    "success": "성공",
+    "confirm_delete": "이 항목을 삭제하시겠습니까?",
+    "cancel": "취소",
+    "submit": "제출",
+    "reset": "초기화",
+    "previous": "이전",
+    "next": "다음",
+    "page_of": "페이지 {current} / {total}",
+    "close": "닫기",
+    "add": "추가",
+    "delete": "삭제",
+    "actions": "작업"
+  },
+  "ServicePlan": {
+    "title": "서비스 플랜",
+    "subtitle": "비즈니스 성장에 맞는 플랜을 선택하고 결제 기록을 확인하세요.",
+    "choose_plan": "플랜 선택",
+    "payment_records": "결제 기록",
+    "plans": {
+      "weekly": "주간 플랜",
+      "monthly": "월간 플랜",
+      "half_year": "반기 플랜",
+      "yearly": "연간 플랜"
+    },
+    "pay": "결제"
+  }
+}

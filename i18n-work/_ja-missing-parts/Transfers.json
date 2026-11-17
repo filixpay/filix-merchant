@@ -1,0 +1,35 @@
+{
+  "Transfers": {
+    "headers": {
+      "status": "Status",
+      "approval_status": "Audit Status",
+      "approval_operator": "Maker"
+    },
+    "audit": {
+      "buyer_evidence": "Buyer payment evidence",
+      "merchant_check": "Merchant bank check",
+      "bank_check_hint": "Please log in to your bank account and verify the actual credit.",
+      "approval_status": "Audit Status",
+      "approval_operator": "Maker",
+      "approval_form": "Bank check fields",
+      "actual_received_amount": "Amount actually received",
+      "actual_received_amount_required": "Enter the amount actually received",
+      "bank_transaction_at": "Bank transaction time",
+      "bank_transaction_at_required": "Select the bank transaction time",
+      "exception_note": "Exception note",
+      "exception_note_placeholder": "Required when the received amount differs from the order amount",
+      "exception_note_required": "An exception note is required when amounts differ",
+      "maker_ack": "I logged into the bank account and completed this check",
+      "maker_ack_required": "Tick the acknowledgement before submitting",
+      "approval_decision": "Audit Decision",
+      "errors": {
+        "confirmation_fields_required": "Fill in all required bank-check fields and tick the acknowledgement",
+        "exception_note_required": "Received amount differs from the order amount — add an exception note",
+        "checker_ack_required": "Tick the independent check acknowledgement",
+        "four_eyes_same_operator": "The confirmer must be a different operator from the maker",
+        "bank_txn_ref_reused": "This bank reference is already used on another successful receipt",
+        "not_confirmable": "This receipt cannot be actioned in its current state. Refresh and try again"
+      }
+    }
+  }
+}
