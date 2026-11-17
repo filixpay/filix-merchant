@@ -3,7 +3,10 @@
 import { usePathname, useRouter } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import { Alert, Layout, Menu, Spin } from "antd";
+import Box from "@mui/material/Box";
+import Alert from "@mui/material/Alert";
+import CircularProgress from "@mui/material/CircularProgress";
+import Typography from "@mui/material/Typography";
 import { useTranslations, useLocale } from "next-intl";
 import WorkspaceSwitcher from "./WorkspaceSwitcher";
 /** @deprecated Legacy merchant/group switcher — kept for transition; use MerchantBusinessSwitcher */
@@ -44,8 +47,7 @@ import { useDashboardContentMode } from "./dashboard-content-mode-context";
 import SidebarCollapseToggle from "./SidebarCollapseToggle";
 import DashboardHeader from "./DashboardHeader";
 import SupportFloatingEntry from "@/components/support/SupportFloatingEntry";
-
-const { Sider, Content } = Layout;
+import { MuiSidebarNav } from "./MuiSidebarNav";
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
@@ -154,13 +156,8 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         [t, activeMerchant, moneyGate, moneyCapability],
     );
     const menuItems = useMemo(() => {
-        const { main, footer } = splitDashboardMenuForSider(menuModel);
-        const closeMobile = () => setIsMobileMenuOpen(false);
-        return {
-            main: toAntdMenuItems(main, locale, closeMobile) ?? [],
-            footer: toAntdMenuItems(footer, locale, closeMobile) ?? [],
-        };
-    }, [menuModel, locale]);
+        return splitDashboardMenuForSider(menuModel);
+    }, [menuModel]);
 
     const selectedKey = getSelectedMenuKey(pathname, locale);
     const routeContentMode = getRouteDashboardContentMode(pathname);
@@ -199,9 +196,14 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
     if (status === "loading" && !session) {
         return (
-            <div className={styles.authGate}>
-                <Spin size="large" tip={tCommon("loading")} />
-            </div>
+            <Box className={styles.authGate}>
+                <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 2 }}>
+                    <CircularProgress size={36} />
+                    <Typography variant="body2" color="text.secondary">
+                        {tCommon("loading")}
+                    </Typography>
+                </Box>
+            </Box>
         );
     }
 
@@ -210,18 +212,14 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     }
 
     return (
-        <Layout className={`${styles.shell} dashboard-typography`} hasSider>
+        <Box className={`${styles.shell} dashboard-typography`} sx={{ display: "flex" }}>
             <div
                 className={`${styles.mobileOverlay} ${isMobileMenuOpen ? styles.mobileOverlayOpen : ""}`}
                 onClick={() => setIsMobileMenuOpen(false)}
             />
 
-            <Sider
+            <aside
                 className={`${styles.sider} dashboard-shell-sider ${isMobileMenuOpen ? styles.siderOpen : ""}`}
-                width={256}
-                collapsedWidth={64}
-                collapsed={isCollapsed}
-                trigger={null}
             >
                 <div className={styles.siderScroll}>
                     {(!isCollapsed || isMobileMenuOpen) && accessToken && (
@@ -248,30 +246,36 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                             accessToken={accessToken!}
                         />
                     )}
-                    <Menu
-                        mode="inline"
-                        inlineCollapsed={isCollapsed}
-                        selectedKeys={[selectedKey]}
-                        openKeys={isCollapsed ? undefined : openKeys}
-                        onOpenChange={setOpenKeys}
-                        items={menuItems.main}
-                        className={styles.menu}
-                    />
-                    {menuItems.footer.length > 0 ? (
-                        <Menu
-                            mode="inline"
-                            inlineCollapsed={isCollapsed}
-                            selectedKeys={[selectedKey]}
-                            items={menuItems.footer}
-                            className={`${styles.menu} ${styles.menuFooter}`}
+                    <Box sx={{ flex: 1, minHeight: 0, overflowY: "auto", overflowX: "hidden" }}>
+                        <MuiSidebarNav
+                            items={menuItems.main}
+                            locale={locale}
+                            selectedKey={selectedKey}
+                            openKeys={openKeys}
+                            onOpenChange={setOpenKeys}
+                            onNavigate={() => setIsMobileMenuOpen(false)}
+                            isCollapsed={isCollapsed && !isMobileMenuOpen}
                         />
+                    </Box>
+                    {menuItems.footer.length > 0 ? (
+                        <Box sx={{ borderTop: "1px solid #e2e8f0", bgcolor: "#ffffff" }}>
+                            <MuiSidebarNav
+                                items={menuItems.footer}
+                                locale={locale}
+                                selectedKey={selectedKey}
+                                openKeys={openKeys}
+                                onOpenChange={setOpenKeys}
+                                onNavigate={() => setIsMobileMenuOpen(false)}
+                                isCollapsed={isCollapsed && !isMobileMenuOpen}
+                            />
+                        </Box>
                     ) : null}
                 </div>
-            </Sider>
+            </aside>
 
             <SidebarCollapseToggle collapsed={isCollapsed} onToggle={toggleCollapsed} />
 
-            <Layout className={`${styles.mainLayout} dashboard-shell-main`}>
+            <Box component="main" className={`${styles.mainLayout} dashboard-shell-main`}>
                 <DashboardHeader
                     menuModel={menuModel}
                     locale={locale}
@@ -284,37 +288,36 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                     <TaskUrgencyBanner layout="strip" />
                 </div>
 
-                <Content className={contentClassName}>
+                <div className={contentClassName}>
                     {merchantScopeDenied ? (
                         <Alert
-                            type="warning"
-                            showIcon
-                            closable
+                            severity="warning"
                             onClose={acknowledgeMerchantScopeDenied}
-                            message={tOrganization("scope_denied")}
-                            style={{ marginBottom: 16 }}
-                        />
+                            sx={{ mb: 2 }}
+                        >
+                            {tOrganization("scope_denied")}
+                        </Alert>
                     ) : null}
                     {activeMerchant?.customerStatus === "SUSPENDED" ? (
                         <Alert
-                            type="warning"
-                            showIcon
-                            message="账户已暂停，无法发起交易或资料变更"
-                            style={{ marginBottom: 16 }}
-                        />
+                            severity="warning"
+                            sx={{ mb: 2 }}
+                        >
+                            账户已暂停，无法发起交易或资料变更
+                        </Alert>
                     ) : null}
                     {activeMerchant?.customerStatus === "RISK_FROZEN" ? (
                         <Alert
-                            type="error"
-                            showIcon
-                            message="账户已风控冻结，无法发起新交易，请联系客服或等待运营处理"
-                            style={{ marginBottom: 16 }}
-                        />
+                            severity="error"
+                            sx={{ mb: 2 }}
+                        >
+                            账户已风控冻结，无法发起新交易，请联系客服或等待运营处理
+                        </Alert>
                     ) : null}
                     {children}
-                </Content>
+                </div>
                 <SupportFloatingEntry />
-            </Layout>
-        </Layout>
+            </Box>
+        </Box>
     );
 }

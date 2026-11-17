@@ -4,7 +4,17 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import { Alert, Avatar, Button, Layout, Menu, Space, Spin } from "antd";
+import Box from "@mui/material/Box";
+import Alert from "@mui/material/Alert";
+import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
+import CircularProgress from "@mui/material/CircularProgress";
+import Typography from "@mui/material/Typography";
+import List from "@mui/material/List";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+import Tooltip from "@mui/material/Tooltip";
 import { LogOut, Menu as MenuIcon } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -26,8 +36,6 @@ import {
 import styles from "./layout.module.css";
 import SidebarCollapseToggle from "./SidebarCollapseToggle";
 import { sanitizeCallbackUrl } from "@/lib/auth/dashboard-route";
-
-const { Sider, Header, Content } = Layout;
 
 export default function EnterpriseDashboardLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
@@ -87,16 +95,10 @@ export default function EnterpriseDashboardLayout({ children }: { children: Reac
         [locale, router, selectEnterprise],
     );
 
-    const menuItems = useMemo(() => {
-        return buildEnterpriseMenuModel(tEnterprise, locale).map((item) => ({
-            key: item.key,
-            label: (
-                <Link href={item.href} onClick={() => setIsMobileMenuOpen(false)}>
-                    {item.label}
-                </Link>
-            ),
-        }));
-    }, [locale, tEnterprise]);
+    const menuItems = useMemo(
+        () => buildEnterpriseMenuModel(tEnterprise, locale),
+        [tEnterprise, locale],
+    );
 
     const selectedKey = getEnterpriseSelectedMenuKey(pathname, locale);
 
@@ -119,9 +121,14 @@ export default function EnterpriseDashboardLayout({ children }: { children: Reac
 
     if (status === "loading" && !session) {
         return (
-            <div className={styles.authGate}>
-                <Spin size="large" tip={tCommon("loading")} />
-            </div>
+            <Box className={styles.authGate}>
+                <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 2 }}>
+                    <CircularProgress size={36} />
+                    <Typography variant="body2" color="text.secondary">
+                        {tCommon("loading")}
+                    </Typography>
+                </Box>
+            </Box>
         );
     }
 
@@ -130,18 +137,14 @@ export default function EnterpriseDashboardLayout({ children }: { children: Reac
     }
 
     return (
-        <Layout className={`${styles.shell} dashboard-typography`} hasSider>
+        <Box className={`${styles.shell} dashboard-typography`} sx={{ display: "flex" }}>
             <div
                 className={`${styles.mobileOverlay} ${isMobileMenuOpen ? styles.mobileOverlayOpen : ""}`}
                 onClick={() => setIsMobileMenuOpen(false)}
             />
 
-            <Sider
+            <aside
                 className={`${styles.sider} dashboard-shell-sider ${isMobileMenuOpen ? styles.siderOpen : ""}`}
-                width={256}
-                collapsedWidth={64}
-                collapsed={isCollapsed}
-                trigger={null}
             >
                 <div className={styles.siderScroll}>
                     {(!isCollapsed || isMobileMenuOpen) && accessToken && (
@@ -157,31 +160,93 @@ export default function EnterpriseDashboardLayout({ children }: { children: Reac
                             onSelect={handleEnterpriseSelect}
                         />
                     )}
-                    <Menu
-                        mode="inline"
-                        inlineCollapsed={isCollapsed}
-                        selectedKeys={[selectedKey]}
-                        items={menuItems}
-                        className={styles.menu}
-                    />
+                    <Box sx={{ flex: 1, minHeight: 0, overflowY: "auto", overflowX: "hidden", px: 1, py: 0.5 }}>
+                        <List dense disablePadding>
+                            {menuItems.map((item) => {
+                                const isSelected = item.key === selectedKey;
+                                const itemContent = (
+                                    <ListItemButton
+                                        key={item.key}
+                                        component={Link}
+                                        href={item.href}
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                        selected={isSelected}
+                                        sx={{
+                                            minHeight: 32,
+                                            py: 0.5,
+                                            px: isCollapsed ? 1 : 1.5,
+                                            my: 0.25,
+                                            borderRadius: 1.5,
+                                            justifyContent: isCollapsed ? "center" : "flex-start",
+                                            color: isSelected ? "#2563eb" : "#64748b",
+                                            bgcolor: isSelected ? "#eff6ff !important" : "transparent",
+                                            position: "relative",
+                                            "&:hover": {
+                                                bgcolor: isSelected ? "#eff6ff" : "#f1f5f9",
+                                                color: isSelected ? "#2563eb" : "#0f172a",
+                                            },
+                                            ...(isSelected && {
+                                                "&::before": {
+                                                    content: '""',
+                                                    position: "absolute",
+                                                    left: 0,
+                                                    top: "50%",
+                                                    transform: "translateY(-50%)",
+                                                    width: 3,
+                                                    height: 16,
+                                                    bgcolor: "#2563eb",
+                                                    borderRadius: "0 4px 4px 0",
+                                                },
+                                            }),
+                                        }}
+                                    >
+                                        <ListItemText
+                                            primary={
+                                                <Typography
+                                                    sx={{
+                                                        fontSize: 13,
+                                                        fontWeight: isSelected ? 600 : 500,
+                                                        lineHeight: "20px",
+                                                    }}
+                                                >
+                                                    {isCollapsed ? item.label.slice(0, 1) : item.label}
+                                                </Typography>
+                                            }
+                                        />
+                                    </ListItemButton>
+                                );
+
+                                if (isCollapsed) {
+                                    return (
+                                        <Tooltip key={item.key} title={item.label} placement="right" arrow>
+                                            {itemContent}
+                                        </Tooltip>
+                                    );
+                                }
+                                return itemContent;
+                            })}
+                        </List>
+                    </Box>
                 </div>
-            </Sider>
+            </aside>
 
             <SidebarCollapseToggle
                 collapsed={isCollapsed}
                 onToggle={() => setIsCollapsed((value) => !value)}
             />
 
-            <Layout className={`${styles.mainLayout} dashboard-shell-main`}>
-                <Header className={styles.header}>
+            <Box component="main" className={`${styles.mainLayout} dashboard-shell-main`}>
+                <header className={styles.header}>
                     <div className={styles.headerLeft}>
-                        <Button
+                        <IconButton
                             className={styles.mobileToggle}
-                            type="text"
-                            icon={<MenuIcon size={20} strokeWidth={1.5} className={styles.headerIcon} />}
+                            size="small"
                             onClick={() => setIsMobileMenuOpen((open) => !open)}
                             aria-label="Toggle menu"
-                        />
+                            sx={{ color: "text.secondary" }}
+                        >
+                            <MenuIcon size={20} strokeWidth={1.5} className={styles.headerIcon} />
+                        </IconButton>
                         {activeEnterprise && (
                             <div className={styles.merchantInfo}>
                                 <div className={styles.merchantName}>{activeEnterprise.name}</div>
@@ -194,37 +259,50 @@ export default function EnterpriseDashboardLayout({ children }: { children: Reac
                         )}
                     </div>
                     <div className={styles.headerRight}>
-                        <Space className={styles.headerActions} size={12}>
+                        <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
                             <LanguageSwitcher />
-                            <Avatar className={styles.avatar}>
+                            <Avatar
+                                sx={{
+                                    width: 28,
+                                    height: 28,
+                                    fontSize: 13,
+                                    bgcolor: "primary.main",
+                                    fontWeight: 600,
+                                }}
+                            >
                                 {session?.user?.name?.[0] || "E"}
                             </Avatar>
                             <Button
-                                type="text"
-                                icon={<LogOut size={16} strokeWidth={1.5} />}
+                                size="small"
                                 onClick={handleLogout}
+                                startIcon={<LogOut size={16} strokeWidth={1.5} />}
+                                sx={{
+                                    color: "text.secondary",
+                                    textTransform: "none",
+                                    "&:hover": { color: "error.main" },
+                                }}
                             >
                                 {t("logout")}
                             </Button>
-                        </Space>
+                        </Box>
                     </div>
-                </Header>
+                </header>
 
-                <Content className={styles.content}>
+                <div className={styles.content}>
                     {!selectedEnterpriseCode &&
                         enterprises.length === 0 &&
                         !enterprisesLoading && (
                             <Alert
-                                type="info"
-                                showIcon
-                                message={tEnterprise("no_enterprises_title")}
-                                description={tEnterprise("no_enterprises_desc")}
-                                style={{ marginBottom: 16 }}
-                            />
+                                severity="info"
+                                sx={{ mb: 2 }}
+                            >
+                                <strong>{tEnterprise("no_enterprises_title")}</strong>
+                                <div>{tEnterprise("no_enterprises_desc")}</div>
+                            </Alert>
                         )}
                     {children}
-                </Content>
-            </Layout>
-        </Layout>
+                </div>
+            </Box>
+        </Box>
     );
 }

@@ -101,7 +101,7 @@ const DASHBOARD_ROUTE_PREFIXES = [
     "/dashboard",
 ].sort((first, second) => second.length - first.length);
 
-function localizedHref(locale: string, href: string) {
+export function localizedHref(locale: string, href: string) {
     return `/${locale}${href}`;
 }
 
